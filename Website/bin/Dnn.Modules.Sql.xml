@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dnn.Modules.Sql</name>
+    </assembly>
+    <members>
+        <member name="T:Dnn.Modules.Sql.Components.BusinessController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Dnn.Modules.Sql.Components.BusinessController.UpgradeModule(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="version"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Dnn.Modules.Sql.Sql">
+            -----------------------------------------------------------------------------
+            <summary>
+            The SQL PortalModuleBase is used run SQL Scripts on the Database
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:Dnn.Modules.Sql.Sql.lblSavedQuery">
+            <summary>
+            lblSavedQuery control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sql.Sql.ddlSavedQuery">
+            <summary>
+            ddlSavedQuery control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sql.Sql.btDelete">
+            <summary>
+            btDelete control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sql.Sql.uplSqlScript">
+            <summary>
+            uplSqlScript control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sql.Sql.cmdUpload">
+            <summary>
+            cmdUpload control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sql.Sql.plConnection">
+            <summary>
+            plConnection control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sql.Sql.ddlConnection">
+            <summary>
+            ddlConnection control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sql.Sql.valText">
+            <summary>
+            valText control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sql.Sql.txtQuery">
+            <summary>
+            txtQuery control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sql.Sql.cmdExecute">
+            <summary>
+            cmdExecute control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sql.Sql.pnlError">
+            <summary>
+            pnlError control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sql.Sql.errorLabel">
+            <summary>
+            errorLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sql.Sql.txtError">
+            <summary>
+            txtError control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sql.Sql.pnlResults">
+            <summary>
+            pnlResults control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sql.Sql.plTabs">
+            <summary>
+            plTabs control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sql.Sql.rptResults">
+            <summary>
+            rptResults control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sql.Sql.lblName">
+            <summary>
+            lblName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sql.Sql.txtName">
+            <summary>
+            txtName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sql.Sql.valName">
+            <summary>
+            valName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sql.Sql.lnkSave">
+            <summary>
+            lnkSave control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+    </members>
+</doc>

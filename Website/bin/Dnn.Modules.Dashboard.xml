@@ -1,0 +1,517 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dnn.Modules.Dashboard</name>
+    </assembly>
+    <members>
+        <member name="T:Dnn.Modules.Dashboard.Components.BusinessController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Dnn.Modules.Dashboard.Components.BusinessController.UpgradeModule(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="version"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Dnn.Modules.Dashboard.Components.Installers.DashboardInstaller.AllowableFiles">
+            -----------------------------------------------------------------------------
+            <summary>
+            Gets a list of allowable file extensions (in addition to the Host's List)
+            </summary>
+            <value>A String</value>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.Dashboard.Components.Installers.DashboardInstaller.ReadManifest(System.Xml.XPath.XPathNavigator)">
+            -----------------------------------------------------------------------------
+            <summary>
+            The ReadManifest method reads the manifest file for the Authentication compoent.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Dnn.Modules.Dashboard.Components.Server.ServerInfo">
+            <summary>
+            This class manages the Server Information for the site
+            </summary>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.DashboardControls.grdDashboardControls">
+            <summary>
+            grdDashboardControls control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.DashboardControls.cmdUpdate">
+            <summary>
+            cmdUpdate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.DashboardControls.cmdInstall">
+            <summary>
+            cmdInstall control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.DashboardControls.cmdRefresh">
+            <summary>
+            cmdRefresh control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.DashboardControls.cmdCancel">
+            <summary>
+            cmdCancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Database.ctlDbInfo">
+            <summary>
+            ctlDbInfo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Database.fldProductVersion">
+            <summary>
+            fldProductVersion control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Database.fldServicePack">
+            <summary>
+            fldServicePack control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Database.fldProductEdition">
+            <summary>
+            fldProductEdition control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Database.fldSoftwarePlatform">
+            <summary>
+            fldSoftwarePlatform control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Database.plBackups">
+            <summary>
+            plBackups control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Database.grdBackups">
+            <summary>
+            grdBackups control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Database.plFiles">
+            <summary>
+            plFiles control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Database.grdFiles">
+            <summary>
+            grdFiles control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Host.ctlHost">
+            <summary>
+            ctlHost control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Host.fldProduct">
+            <summary>
+            fldProduct control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Host.fldVersion">
+            <summary>
+            fldVersion control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Host.fldHostGUID">
+            <summary>
+            fldHostGUID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Host.fldPermissions">
+            <summary>
+            fldPermissions control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Host.fldDataProvider">
+            <summary>
+            fldDataProvider control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Host.fldCachingProvider">
+            <summary>
+            fldCachingProvider control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Host.fldLoggingProvider">
+            <summary>
+            fldLoggingProvider control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Host.fldHtmlEditorProvider">
+            <summary>
+            fldHtmlEditorProvider control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Host.fldFriendlyUrlProvider">
+            <summary>
+            fldFriendlyUrlProvider control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Host.fldFriendlyUrlEnabled">
+            <summary>
+            fldFriendlyUrlEnabled control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Host.fldFriendlyUrlType">
+            <summary>
+            fldFriendlyUrlType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Host.fldSchedulerMode">
+            <summary>
+            fldSchedulerMode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Host.fldWebFarmEnabled">
+            <summary>
+            fldWebFarmEnabled control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Host.fldjQueryVersion">
+            <summary>
+            fldjQueryVersion control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Host.fldjQueryUIVersion">
+            <summary>
+            fldjQueryUIVersion control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Modules.grdModules">
+            <summary>
+            grdModules control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Portals.grdPortals">
+            <summary>
+            grdPortals control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Server.ctlServer">
+            <summary>
+            ctlServer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Server.fldOsVersion">
+            <summary>
+            fldOsVersion control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Server.fldIISVersion">
+            <summary>
+            fldIISVersion control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Server.fldFramework">
+            <summary>
+            fldFramework control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Server.fldIdentity">
+            <summary>
+            fldIdentity control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Server.fldHostName">
+            <summary>
+            fldHostName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Server.fldPhysicalPath">
+            <summary>
+            fldPhysicalPath control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Server.fldUrl">
+            <summary>
+            fldUrl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Server.fldRelativePath">
+            <summary>
+            fldRelativePath control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Server.fldServerTime">
+            <summary>
+            fldServerTime control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Controls.Skins.grdSkins">
+            <summary>
+            grdSkins control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Dashboard.rptTabs">
+            <summary>
+            rptTabs control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Dashboard.rptControls">
+            <summary>
+            rptControls control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Dashboard.cmdInstall">
+            <summary>
+            cmdInstall control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Dashboard.cmdManage">
+            <summary>
+            cmdManage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Dashboard.Dashboard.cmdExport">
+            <summary>
+            cmdExport control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Admin.Dashboard.Export.plFileName">
+            <summary>
+            plFileName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Admin.Dashboard.Export.txtFileName">
+            <summary>
+            txtFileName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Admin.Dashboard.Export.valFileName">
+            <summary>
+            valFileName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Admin.Dashboard.Export.cmdSave">
+            <summary>
+            cmdSave control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Admin.Dashboard.Export.cmdCancel">
+            <summary>
+            cmdCancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+    </members>
+</doc>

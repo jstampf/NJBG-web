@@ -1,0 +1,268 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dnn.Modules.Sitemap</name>
+    </assembly>
+    <members>
+        <member name="T:Dnn.Modules.Sitemap.Components.SitemapController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Dnn.Modules.Sitemap.Components.SitemapController.UpgradeModule(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="version"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Dnn.Modules.Sitemap.SitemapSettings">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.lblSiteMap">
+            <summary>
+            lblSiteMap control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.lnkSiteMapUrl">
+            <summary>
+            lnkSiteMapUrl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.grdProviders">
+            <summary>
+            grdProviders control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.lblSectionCoreSettingsHelp">
+            <summary>
+            lblSectionCoreSettingsHelp control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.lblLevelPriority">
+            <summary>
+            lblLevelPriority control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.chkLevelPriority">
+            <summary>
+            chkLevelPriority control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.lblMinPagePriority">
+            <summary>
+            lblMinPagePriority control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.txtMinPagePriority">
+            <summary>
+            txtMinPagePriority control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.val2">
+            <summary>
+            val2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.lblIncludeHidden">
+            <summary>
+            lblIncludeHidden control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.chkIncludeHidden">
+            <summary>
+            chkIncludeHidden control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.lblSectionGeneralSettingsHelp">
+            <summary>
+            lblSectionGeneralSettingsHelp control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.lblExcludePriority">
+            <summary>
+            lblExcludePriority control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.txtExcludePriority">
+            <summary>
+            txtExcludePriority control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.RequiredFieldValidator1">
+            <summary>
+            RequiredFieldValidator1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.lblCache">
+            <summary>
+            lblCache control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.cmbDaysToCache">
+            <summary>
+            cmbDaysToCache control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.lnkResetCache">
+            <summary>
+            lnkResetCache control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.lblSectionSubmissionSettings">
+            <summary>
+            lblSectionSubmissionSettings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.lblSearchEngine">
+            <summary>
+            lblSearchEngine control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.cboSearchEngine">
+            <summary>
+            cboSearchEngine control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.cmdSubmitSitemap">
+            <summary>
+            cmdSubmitSitemap control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.lblVerification">
+            <summary>
+            lblVerification control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.txtVerification">
+            <summary>
+            txtVerification control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.cmdVerification">
+            <summary>
+            cmdVerification control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.lnkSaveAll">
+            <summary>
+            lnkSaveAll control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Sitemap.SitemapSettings.lnkRefresh">
+            <summary>
+            lnkRefresh control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dnn.Modules.GoogleAnalytics</name>
+    </assembly>
+    <members>
+        <member name="T:Dnn.Modules.GoogleAnalytics.Components.BusinessController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Dnn.Modules.GoogleAnalytics.Components.BusinessController.UpgradeModule(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="version"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Dnn.Modules.GoogleAnalytics.GoogleAnalyticsSettings.lblTrackingId">
+            <summary>
+            lblTrackingId control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.GoogleAnalytics.GoogleAnalyticsSettings.txtTrackingId">
+            <summary>
+            txtTrackingId control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.GoogleAnalytics.GoogleAnalyticsSettings.lblUrlParameter">
+            <summary>
+            lblUrlParameter control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.GoogleAnalytics.GoogleAnalyticsSettings.txtUrlParameter">
+            <summary>
+            txtUrlParameter control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.GoogleAnalytics.GoogleAnalyticsSettings.lblTrackForAdmin">
+            <summary>
+            lblTrackForAdmin control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.GoogleAnalytics.GoogleAnalyticsSettings.chkTrackForAdmin">
+            <summary>
+            chkTrackForAdmin control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.GoogleAnalytics.GoogleAnalyticsSettings.cmdUpdate">
+            <summary>
+            cmdUpdate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+    </members>
+</doc>

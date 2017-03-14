@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dnn.Modules.RecycleBin</name>
+    </assembly>
+    <members>
+        <member name="T:Dnn.Modules.RecycleBin.Components.RecycleBinController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Dnn.Modules.RecycleBin.Components.RecycleBinController.UpgradeModule(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="version"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DesktopModules.Admin.RecycleBin.RecycleBin">
+            <summary>
+            The RecycleBin PortalModuleBase allows Tabs and Modules to be recovered or
+            prmanentl deleted
+            </summary>
+            <remarks>
+            </remarks>
+        </member>
+        <member name="P:DesktopModules.Admin.RecycleBin.RecycleBin.DeletedTabs">
+            <summary>
+            Deleted Tabs List.
+            </summary>
+        </member>
+        <member name="P:DesktopModules.Admin.RecycleBin.RecycleBin.DeletedModules">
+            <summary>
+            Deleted Modules List.
+            </summary>
+        </member>
+        <member name="F:DesktopModules.Admin.RecycleBin.RecycleBin.divMode">
+            <summary>
+            divMode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DesktopModules.Admin.RecycleBin.RecycleBin.modeButtonList">
+            <summary>
+            modeButtonList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DesktopModules.Admin.RecycleBin.RecycleBin.tabsListBox">
+            <summary>
+            tabsListBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DesktopModules.Admin.RecycleBin.RecycleBin.divTabButtons">
+            <summary>
+            divTabButtons control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DesktopModules.Admin.RecycleBin.RecycleBin.cmdRestoreTab">
+            <summary>
+            cmdRestoreTab control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DesktopModules.Admin.RecycleBin.RecycleBin.cmdDeleteTab">
+            <summary>
+            cmdDeleteTab control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DesktopModules.Admin.RecycleBin.RecycleBin.modulesListBox">
+            <summary>
+            modulesListBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DesktopModules.Admin.RecycleBin.RecycleBin.divModuleButtons">
+            <summary>
+            divModuleButtons control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DesktopModules.Admin.RecycleBin.RecycleBin.cmdRestoreModule">
+            <summary>
+            cmdRestoreModule control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DesktopModules.Admin.RecycleBin.RecycleBin.cmdDeleteModule">
+            <summary>
+            cmdDeleteModule control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DesktopModules.Admin.RecycleBin.RecycleBin.cmdEmpty">
+            <summary>
+            cmdEmpty control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+    </members>
+</doc>

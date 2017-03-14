@@ -1,0 +1,396 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dnn.Modules.SiteWizard</name>
+    </assembly>
+    <members>
+        <member name="T:Dnn.Modules.SiteWizard.Components.SiteWizardController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Dnn.Modules.SiteWizard.Components.SiteWizardController.UpgradeModule(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="version"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Dnn.Modules.SiteWizard.SiteWizard">
+            -----------------------------------------------------------------------------
+            <summary>
+            The SiteWizard Wizard is a user-friendly Wizard that leads the user through the
+            process of setting up a new site
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.Wizard">
+            <summary>
+            Wizard control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.wizIntroduction">
+            <summary>
+            wizIntroduction control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.wizTemplate">
+            <summary>
+            wizTemplate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.lblTemplateMessage">
+            <summary>
+            lblTemplateMessage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.chkTemplate">
+            <summary>
+            chkTemplate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.lblTemplateList">
+            <summary>
+            lblTemplateList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.lstTemplate">
+            <summary>
+            lstTemplate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.lblTemplateDescription">
+            <summary>
+            lblTemplateDescription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.lblMergeModule">
+            <summary>
+            lblMergeModule control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.optMerge">
+            <summary>
+            optMerge control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.lblMergeWarning">
+            <summary>
+            lblMergeWarning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.wizSkin">
+            <summary>
+            wizSkin control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.ctlPortalSkin">
+            <summary>
+            ctlPortalSkin control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.wizContainer">
+            <summary>
+            wizContainer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.chkIncludeAll">
+            <summary>
+            chkIncludeAll control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.ctlPortalContainer">
+            <summary>
+            ctlPortalContainer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.wizDetails">
+            <summary>
+            wizDetails control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.lblPortalName">
+            <summary>
+            lblPortalName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.txtPortalName">
+            <summary>
+            txtPortalName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.lblDescription">
+            <summary>
+            lblDescription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.txtDescription">
+            <summary>
+            txtDescription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.lblKeyWords">
+            <summary>
+            lblKeyWords control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.txtKeyWords">
+            <summary>
+            txtKeyWords control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.lblLogo">
+            <summary>
+            lblLogo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.ctlLogo">
+            <summary>
+            ctlLogo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.wizComplete">
+            <summary>
+            wizComplete control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.lblWizardTitle">
+            <summary>
+            lblWizardTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.SiteWizard.SiteWizard.lblHelp">
+            <summary>
+            lblHelp control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:Dnn.Modules.SiteWizard.SiteWizard.BindContainers">
+            -----------------------------------------------------------------------------
+            <summary>
+            BindContainers manages the containers
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.SiteWizard.SiteWizard.GetContainers(Dnn.Modules.SiteWizard.SiteWizard.ContainerType,System.String,System.String)">
+            -----------------------------------------------------------------------------
+            <summary>
+            GetContainers gets the containers and binds the lists to the controls
+            the buttons
+            </summary>
+            <remarks>
+            </remarks>
+            <param name="type">An enum indicating what type of containers to load</param>
+            <param name="skinType">A string that identifies whether the skin is Host "[G]" or Site "[L]"</param>
+            <param name="strFolder">The folder to search for skins</param>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.SiteWizard.SiteWizard.GetSkins">
+            -----------------------------------------------------------------------------
+            <summary>
+            GetSkins gets the skins and containers and binds the lists to the controls
+            the buttons
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.SiteWizard.SiteWizard.GetTemplates">
+            -----------------------------------------------------------------------------
+            <summary>
+            GetTemplates gets the skins and containers and binds the lists to the control
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.SiteWizard.SiteWizard.UseTemplate">
+            -----------------------------------------------------------------------------
+            <summary>
+            UseTemplate sets the page ready to select a Template
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.SiteWizard.SiteWizard.OnLoad(System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.SiteWizard.SiteWizard.OnIncludeAllCheckChanged(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            chkIncludeAll_CheckedChanged runs when include all containers checkbox status is changed
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.SiteWizard.SiteWizard.OnTemplateCheckChanged(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            chkTemplate_CheckedChanged runs when use template checkbox status is changed
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.SiteWizard.SiteWizard.OnTemplateSelectedIndexChanged(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            lstTemplate_SelectedIndexChanged runs when the selected template is changed
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.SiteWizard.SiteWizard.OnWizardActiveStepChanged(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Wizard_ActiveStepChanged runs when the Wizard page has been changed
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.SiteWizard.SiteWizard.OnWizardFinishedClick(System.Object,System.Web.UI.WebControls.WizardNavigationEventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Wizard_FinishButtonClick runs when the Finish Button on the Wizard is clicked.
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.SiteWizard.SiteWizard.OnWizardNextClick(System.Object,System.Web.UI.WebControls.WizardNavigationEventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Wizard_NextButtonClickruns when the next Button is clicked.  It provides
+            a mechanism for cancelling the page change if certain conditions aren't met.
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+    </members>
+</doc>

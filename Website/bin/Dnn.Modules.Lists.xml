@@ -1,0 +1,617 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dnn.Modules.Lists</name>
+    </assembly>
+    <members>
+        <member name="T:Dnn.Modules.Lists.Components.ListsController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Dnn.Modules.Lists.Components.ListsController.UpgradeModule(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="version"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Dnn.Modules.Lists.ListEditor">
+            -----------------------------------------------------------------------------
+            <summary>
+            Manages Entry List
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.Lists.ListEditor.OnInit(System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Init runs when the control is initialised
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.Lists.ListEditor.OnLoad(System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+                Page load, bind tree and enable controls
+            </summary>
+            <param name="e"></param>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.Lists.ListEditor.OnPreRender(System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_PreRender runs just prior to the control being rendered
+            </summary>
+            <param name="e"></param>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.Lists.ListEditor.DNNTree_NodeClick(System.Object,Telerik.Web.UI.RadTreeNodeEventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+                Populate list entries based on value selected in DNNTree
+            </summary>
+            <param name="source"></param>
+            <param name="e"></param>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.Lists.ListEditor.cmdAddList_Click(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+                Handles Add New List command
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+            <remarks>
+                Using "CommandName" property of cmdSaveEntry to determine this is a new list
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEditor.listTree">
+            <summary>
+            listTree control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEditor.cmdAddList">
+            <summary>
+            cmdAddList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEditor.divNoList">
+            <summary>
+            divNoList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEditor.divDetails">
+            <summary>
+            divDetails control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEditor.lstEntries">
+            <summary>
+            lstEntries control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Dnn.Modules.Lists.ListEntries">
+            <summary>
+            Manages Entry List
+            </summary>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.rowListdetails">
+            <summary>
+            rowListdetails control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.rowListParent">
+            <summary>
+            rowListParent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.plListParent">
+            <summary>
+            plListParent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.lblListParent">
+            <summary>
+            lblListParent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.plListName">
+            <summary>
+            plListName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.lblListName">
+            <summary>
+            lblListName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.plEntryCount">
+            <summary>
+            plEntryCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.lblEntryCount">
+            <summary>
+            lblEntryCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.cmdAddEntry">
+            <summary>
+            cmdAddEntry control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.cmdDeleteList">
+            <summary>
+            cmdDeleteList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.rowEntryGrid">
+            <summary>
+            rowEntryGrid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.grdEntries">
+            <summary>
+            grdEntries control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.rowEntryEdit">
+            <summary>
+            rowEntryEdit control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.rowParentKey">
+            <summary>
+            rowParentKey control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.plParentKey">
+            <summary>
+            plParentKey control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.txtParentKey">
+            <summary>
+            txtParentKey control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.rowListName">
+            <summary>
+            rowListName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.plEntryName">
+            <summary>
+            plEntryName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.txtEntryName">
+            <summary>
+            txtEntryName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.valEntryName">
+            <summary>
+            valEntryName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.txtEntryID">
+            <summary>
+            txtEntryID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.rowSelectList">
+            <summary>
+            rowSelectList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.plSelectList">
+            <summary>
+            plSelectList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.ddlSelectList">
+            <summary>
+            ddlSelectList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.rowSelectParent">
+            <summary>
+            rowSelectParent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.plSelectParent">
+            <summary>
+            plSelectParent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.ddlSelectParent">
+            <summary>
+            ddlSelectParent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.plEntryText">
+            <summary>
+            plEntryText control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.txtEntryText">
+            <summary>
+            txtEntryText control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.valEntryText">
+            <summary>
+            valEntryText control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.plEntryValue">
+            <summary>
+            plEntryValue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.txtEntryValue">
+            <summary>
+            txtEntryValue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.valEntryValue">
+            <summary>
+            valEntryValue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.rowEnableSortOrder">
+            <summary>
+            rowEnableSortOrder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.plEnableSortOrder">
+            <summary>
+            plEnableSortOrder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.chkEnableSortOrder">
+            <summary>
+            chkEnableSortOrder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.cmdSaveEntry">
+            <summary>
+            cmdSaveEntry control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.cmdDelete">
+            <summary>
+            cmdDelete control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Lists.ListEntries.cmdCancel">
+            <summary>
+            cmdCancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="P:Dnn.Modules.Lists.ListEntries.DefinitionID">
+            <summary>
+                Gets and sets the DefinitionID of the current List
+            </summary>
+        </member>
+        <member name="P:Dnn.Modules.Lists.ListEntries.EnableSortOrder">
+            <summary>
+                Property to determine if this list has custom sort order
+            </summary>
+            <remarks>
+                Up/Down button in datagrid will be visibled based on this property.
+                If disable, list will be sorted anphabetically
+            </remarks>
+        </member>
+        <member name="P:Dnn.Modules.Lists.ListEntries.SelectedList">
+            <summary>
+            Gets the selected ListInfo
+            </summary>
+        </member>
+        <member name="P:Dnn.Modules.Lists.ListEntries.SelectedListItems">
+            <summary>
+            Gets the selected collection of List Items
+            </summary>
+        </member>
+        <member name="P:Dnn.Modules.Lists.ListEntries.SystemList">
+            <summary>
+                Property to determine if this list is system (DNN core)
+            </summary>
+            <remarks>
+                Default entries in system list can not be deleted
+                Entries in system list is sorted anphabetically
+            </remarks>
+        </member>
+        <member name="P:Dnn.Modules.Lists.ListEntries.ListName">
+            <summary>
+            Get or set the ListName for this set of List Entries
+            </summary>
+        </member>
+        <member name="P:Dnn.Modules.Lists.ListEntries.ListPortalID">
+            <summary>
+            Gets the portalId for this set of List Entries
+            </summary>
+        </member>
+        <member name="P:Dnn.Modules.Lists.ListEntries.ParentKey">
+            <summary>
+            Get or set the ParentKey for this set of List Entries
+            </summary>
+        </member>
+        <member name="P:Dnn.Modules.Lists.ListEntries.SelectedKey">
+            <summary>
+            Gets or sets the Selected key
+            </summary>
+        </member>
+        <member name="M:Dnn.Modules.Lists.ListEntries.BindGrid">
+            <summary>
+                Loads top level entry list
+            </summary>
+        </member>
+        <member name="M:Dnn.Modules.Lists.ListEntries.BindListInfo">
+            <summary>
+                Loads top level entry list
+            </summary>
+        </member>
+        <member name="M:Dnn.Modules.Lists.ListEntries.EnableEdit(System.Boolean)">
+            <summary>
+                Switching to edit mode, change controls visibility for editing depends on AddList params
+            </summary>
+        </member>
+        <member name="M:Dnn.Modules.Lists.ListEntries.EnableView(System.Boolean)">
+            <summary>
+                Switching to view mode, change controls visibility for viewing
+            </summary>
+            <param name="viewMode">Boolean value to determine View or Edit mode</param>
+        </member>
+        <member name="M:Dnn.Modules.Lists.ListEntries.InitList">
+            <summary>
+                Loads top level entry list
+            </summary>
+        </member>
+        <member name="M:Dnn.Modules.Lists.ListEntries.EntriesGridItemCommand(System.Object,Telerik.Web.UI.GridCommandEventArgs)">
+            <summary>
+                Handles events when clicking image button in the grid (Edit/Up/Down)
+            </summary>
+            <param name="source"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Dnn.Modules.Lists.ListEntries.SelectListIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+                Select a list in dropdownlist
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>        
+        </member>
+        <member name="M:Dnn.Modules.Lists.ListEntries.OnAddEntryClick(System.Object,System.EventArgs)">
+            <summary>
+                Handles Add New Entry command
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+            <remarks>
+                Using "CommandName" property of cmdSaveEntry to determine this is a new entry of an existing list
+            </remarks>
+        </member>
+        <member name="M:Dnn.Modules.Lists.ListEntries.OnSaveEntryClick(System.Object,System.EventArgs)">
+            <summary>
+                Handles cmdSaveEntry.Click
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+            <remarks>
+                Using "CommandName" property of cmdSaveEntry to determine action to take (ListUpdate/AddEntry/AddList)
+            </remarks>
+        </member>
+        <member name="M:Dnn.Modules.Lists.ListEntries.OnDeleteListClick(System.Object,System.EventArgs)">
+            <summary>
+                Delete List
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Dnn.Modules.Lists.ListEntries.OnDeleteClick(System.Object,System.EventArgs)">
+            <summary>
+                Delete List
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+            <remarks>
+                If deleting entry is not the last one in the list, rebinding the grid, otherwise return back to main page (rebinding DNNTree)
+            </remarks>
+        </member>
+        <member name="M:Dnn.Modules.Lists.ListEntries.OnCancelClick(System.Object,System.EventArgs)">
+            <summary>
+                Cancel
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>       
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,1602 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dnn.Modules.Languages</name>
+    </assembly>
+    <members>
+        <member name="F:Dnn.Modules.Languages.CLControl.mainContainer">
+            <summary>
+            mainContainer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.CLControl.rDnnModules">
+            <summary>
+            rDnnModules control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.CLControl.dummyGrid">
+            <summary>
+            dummyGrid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Dnn.Modules.Languages.Components.LanguagesController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Dnn.Modules.Languages.Components.LanguagesController.UpgradeModule(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="version"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Dnn.Modules.Languages.EditLanguage">
+            -----------------------------------------------------------------------------
+            <summary>
+              The EditLanguage ModuleUserControlBase is used to edit a Language
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.Languages.EditLanguage.BindLanguage">
+            -----------------------------------------------------------------------------
+            <summary>
+              This routine Binds the Language
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:Dnn.Modules.Languages.EditLanguage.languageLabel">
+            <summary>
+            languageLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.EditLanguage.languageLanguageLabel">
+            <summary>
+            languageLanguageLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.EditLanguage.languageComboBox">
+            <summary>
+            languageComboBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.EditLanguage.fallBackLabel">
+            <summary>
+            fallBackLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.EditLanguage.fallbackLanguageLabel">
+            <summary>
+            fallbackLanguageLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.EditLanguage.fallBackComboBox">
+            <summary>
+            fallBackComboBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.EditLanguage.translatorsRow">
+            <summary>
+            translatorsRow control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.EditLanguage.translatorsLabel">
+            <summary>
+            translatorsLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.EditLanguage.translatorRoles">
+            <summary>
+            translatorRoles control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.EditLanguage.cmdUpdate">
+            <summary>
+            cmdUpdate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.EditLanguage.cmdDelete">
+            <summary>
+            cmdDelete control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.EditLanguage.cmdCancel">
+            <summary>
+            cmdCancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.EnableLocalizedContent.headerLabel">
+            <summary>
+            headerLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.EnableLocalizedContent.siteDefaultLabel">
+            <summary>
+            siteDefaultLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.EnableLocalizedContent.defaultLanguageLabel">
+            <summary>
+            defaultLanguageLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.EnableLocalizedContent.AllPagesTranslatable">
+            <summary>
+            AllPagesTranslatable control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.EnableLocalizedContent.chkAllPagesTranslatable">
+            <summary>
+            chkAllPagesTranslatable control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.EnableLocalizedContent.updateButton">
+            <summary>
+            updateButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.EnableLocalizedContent.cancelButton">
+            <summary>
+            cancelButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.EnableLocalizedContent.progressManager">
+            <summary>
+            progressManager control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.EnableLocalizedContent.pageCreationProgressArea">
+            <summary>
+            pageCreationProgressArea control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.EnableLocalizedContent.scriptBlock">
+            <summary>
+            scriptBlock control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Dnn.Modules.Languages.LanguageEditor">
+            -----------------------------------------------------------------------------
+            <summary>
+              Manages translations for Resource files
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Dnn.Modules.Languages.LanguageEditor.eImageType">
+            -----------------------------------------------------------------------------
+            <summary>
+              Identifies images in TreeView
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="P:Dnn.Modules.Languages.LanguageEditor.SelectedResourceFile">
+            -----------------------------------------------------------------------------
+            <summary>
+              Saves / Gets the selected resource file being edited in viewstate
+            </summary>
+            <returns></returns>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.Languages.LanguageEditor.BindGrid(System.Boolean)">
+            -----------------------------------------------------------------------------
+            <summary>
+              Loads Resource information into the datagrid
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.Languages.LanguageEditor.LoadRootNodes">
+            -----------------------------------------------------------------------------
+            <summary>
+              Initializes ResourceFile treeView
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.Languages.LanguageEditor.LoadFile(System.String,System.String)">
+            -----------------------------------------------------------------------------
+            <summary>
+              Loads resources from file
+            </summary>
+            <param name = "mode">Active editor mode</param>
+            <param name = "type">Resource being loaded (edit or default)</param>
+            <returns></returns>
+            <remarks>
+              Depending on the editor mode, resources will be overrided using default DNN schema.
+              "Edit" resources will only load selected file.
+              When loading "Default" resources (to be used on the editor as helpers) fallback resource
+              chain will be used in order for the editor to be able to correctly see what 
+              is the current default value for the any key. This process depends on the current active
+              editor mode:
+              - System: when editing system base resources on en-US needs to be loaded
+              - Host: base en-US, and base locale especific resource
+              - Portal: base en-US, host override for en-US, base locale especific resource, and host override 
+              for locale
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.Languages.LanguageEditor.LoadResource(System.Collections.Hashtable,System.String)">
+            -----------------------------------------------------------------------------
+            <summary>
+              Loads resources from file into the HastTable
+            </summary>
+            <param name = "ht">Current resources HashTable</param>
+            <param name = "filepath">Resources file</param>
+            <returns>Base table updated with new resources </returns>
+            <remarks>
+              Returned hashtable uses resourcekey as key.
+              Value contains a Pair object where:
+              First=>value to be edited
+              Second=>default value
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.Languages.LanguageEditor.ResourceFile(System.String,System.String)">
+            -----------------------------------------------------------------------------
+            <summary>
+              Returns the resource file name for a given resource and language
+            </summary>
+            <param name="language">Language Name.</param>
+            <param name = "mode">Identifies the resource being searched (System, Host, Portal)</param>
+            <returns>Localized File Name</returns>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.Languages.LanguageEditor.ExpandDefault(System.Web.UI.Pair)">
+            -----------------------------------------------------------------------------
+            <summary>
+              Configures the initial visibility status of the default label
+            </summary>
+            <param name = "p"></param>
+            <returns></returns>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.Languages.LanguageEditor.OpenFullEditor(System.String)">
+            -----------------------------------------------------------------------------
+            <summary>
+              Builds the url for the lang. html editor control
+            </summary>
+            <param name = "name"></param>
+            <returns></returns>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.Languages.LanguageEditor.OnLoad(System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+              Loads suported locales and shows default values
+            </summary>
+            <param name = "e"></param>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.Languages.LanguageEditor.chkHighlight_CheckedChanged(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+              Rebinds the grid
+            </summary>
+            <param name = "sender"></param>
+            <param name = "e"></param>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.Languages.LanguageEditor.cmdDelete_Click(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+              Deletes the localized file for a given locale
+            </summary>
+            <param name = "sender"></param>
+            <param name = "e"></param>
+            <remarks>
+              System Default file cannot be deleted
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.Languages.LanguageEditor.cmdUpdate_Click(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+              Updates all values from the datagrid
+            </summary>
+            <param name = "sender"></param>
+            <param name = "e"></param>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.Languages.LanguageEditor.rbMode_SelectedIndexChanged(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+              Rebinds the grid
+            </summary>
+            <param name = "sender"></param>
+            <param name = "e"></param>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEditor.plResources">
+            <summary>
+            plResources control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEditor.resourceFiles">
+            <summary>
+            resourceFiles control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEditor.rowMode">
+            <summary>
+            rowMode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEditor.plMode">
+            <summary>
+            plMode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEditor.rbMode">
+            <summary>
+            rbMode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEditor.highlightLabel">
+            <summary>
+            highlightLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEditor.chkHighlight">
+            <summary>
+            chkHighlight control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEditor.plEditingLanguage">
+            <summary>
+            plEditingLanguage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEditor.languageLabel">
+            <summary>
+            languageLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEditor.plFolder">
+            <summary>
+            plFolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEditor.lblFolder">
+            <summary>
+            lblFolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEditor.plSelected">
+            <summary>
+            plSelected control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEditor.lblResourceFile">
+            <summary>
+            lblResourceFile control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEditor.resourcesGrid">
+            <summary>
+            resourcesGrid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEditor.cmdUpdate">
+            <summary>
+            cmdUpdate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEditor.cmdDelete">
+            <summary>
+            cmdDelete control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEditor.cmdCancel">
+            <summary>
+            cmdCancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Dnn.Modules.Languages.LanguageEditorExt">
+            -----------------------------------------------------------------------------
+            <summary>
+            Manages translations for Resource files
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.Languages.LanguageEditorExt.LoadFile(System.String,System.String)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Loads resources from file 
+            </summary>
+            <param name="mode">Active editor mode</param>
+            <param name="type">Resource being loaded (edit or default)</param>
+            <returns></returns>
+            <remarks>
+            Depending on the editor mode, resources will be overrided using default DNN schema.
+            "Edit" resources will only load selected file.
+            When loading "Default" resources (to be used on the editor as helpers) fallback resource
+            chain will be used in order for the editor to be able to correctly see what 
+            is the current default value for the any key. This process depends on the current active
+            editor mode:
+            - System: when editing system base resources on en-US needs to be loaded
+            - Host: base en-US, and base locale especific resource
+            - Portal: base en-US, host override for en-US, base locale especific resource, and host override 
+            for locale
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.Languages.LanguageEditorExt.LoadResource(System.String)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Loads resource from file
+            </summary>
+            <param name="filepath">Resources file</param>
+            <returns>Resource value</returns>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.Languages.LanguageEditorExt.ResourceFile(System.String,System.String)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Returns the resource file name for a given resource and language
+            </summary>
+            <param name="language"></param>
+            <param name="mode">Identifies the resource being searched (System, Host, Portal)</param>
+            <returns>Localized File Name</returns>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.Languages.LanguageEditorExt.OnLoad(System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Loads resource file and default data
+            </summary>
+            <param name="e"></param>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.Languages.LanguageEditorExt.cmdCancel_Click(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Returns to language editor control
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.Languages.LanguageEditorExt.cmdUpdate_Click(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Saves the translation to the resource file
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEditorExt.plFile">
+            <summary>
+            plFile control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEditorExt.lblFile">
+            <summary>
+            lblFile control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEditorExt.plName">
+            <summary>
+            plName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEditorExt.lblName">
+            <summary>
+            lblName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEditorExt.plDefault">
+            <summary>
+            plDefault control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEditorExt.lblDefault">
+            <summary>
+            lblDefault control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEditorExt.teContent">
+            <summary>
+            teContent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEditorExt.cmdUpdate">
+            <summary>
+            cmdUpdate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEditorExt.cmdCancel">
+            <summary>
+            cmdCancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Dnn.Modules.Languages.LanguageEnabler">
+            -----------------------------------------------------------------------------
+            <summary>
+              Manage languages for the portal
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.TabStrips">
+            <summary>
+            TabStrips control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.tabLanguages">
+            <summary>
+            tabLanguages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.tabContentLocalization">
+            <summary>
+            tabContentLocalization control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.tabSettings">
+            <summary>
+            tabSettings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.PanelLanguages">
+            <summary>
+            PanelLanguages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.cmdEnableLocalizedContent">
+            <summary>
+            cmdEnableLocalizedContent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.cmdDisableLocalization">
+            <summary>
+            cmdDisableLocalization control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.languagesGrid">
+            <summary>
+            languagesGrid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.enabledPublishedPlaceHolder">
+            <summary>
+            enabledPublishedPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.enabledPublishedLabel">
+            <summary>
+            enabledPublishedLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.enabledPublishedMessage">
+            <summary>
+            enabledPublishedMessage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.defaultPortalLabel">
+            <summary>
+            defaultPortalLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.defaultPortalMessage">
+            <summary>
+            defaultPortalMessage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.addLanguageLink">
+            <summary>
+            addLanguageLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.installLanguagePackLink">
+            <summary>
+            installLanguagePackLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.installAvailableLanguagePackLink">
+            <summary>
+            installAvailableLanguagePackLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.createLanguagePackLink">
+            <summary>
+            createLanguagePackLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.verifyLanguageResourcesLink">
+            <summary>
+            verifyLanguageResourcesLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.panelContentLocalization">
+            <summary>
+            panelContentLocalization control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.plPage">
+            <summary>
+            plPage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.ddlPages">
+            <summary>
+            ddlPages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.CLControl1">
+            <summary>
+            CLControl1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.NeutralMessage">
+            <summary>
+            NeutralMessage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.litNeutralMessage">
+            <summary>
+            litNeutralMessage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.cmdUpdate">
+            <summary>
+            cmdUpdate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.MakeTranslatable">
+            <summary>
+            MakeTranslatable control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.MakeNeutral">
+            <summary>
+            MakeNeutral control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.AddMissing">
+            <summary>
+            AddMissing control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.panelSettings">
+            <summary>
+            panelSettings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.systemDefaultLabel">
+            <summary>
+            systemDefaultLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.systemDefaultLanguageLabel">
+            <summary>
+            systemDefaultLanguageLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.siteDefaultLabel">
+            <summary>
+            siteDefaultLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.defaultLanguageLabel">
+            <summary>
+            defaultLanguageLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.languagesComboBox">
+            <summary>
+            languagesComboBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.urlRow">
+            <summary>
+            urlRow control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.plUrl">
+            <summary>
+            plUrl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.chkUrl">
+            <summary>
+            chkUrl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.detectBrowserLable">
+            <summary>
+            detectBrowserLable control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.chkBrowser">
+            <summary>
+            chkBrowser control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.allowUserCulture">
+            <summary>
+            allowUserCulture control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.chkUserCulture">
+            <summary>
+            chkUserCulture control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageEnabler.updateButton">
+            <summary>
+            updateButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguagePackWriter.lbLocale">
+            <summary>
+            lbLocale control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguagePackWriter.cboLanguage">
+            <summary>
+            cboLanguage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguagePackWriter.lblType">
+            <summary>
+            lblType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguagePackWriter.rbPackType">
+            <summary>
+            rbPackType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguagePackWriter.rowitems">
+            <summary>
+            rowitems control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguagePackWriter.lblItems">
+            <summary>
+            lblItems control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguagePackWriter.lstItems">
+            <summary>
+            lstItems control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguagePackWriter.rowFileName">
+            <summary>
+            rowFileName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguagePackWriter.lblName">
+            <summary>
+            lblName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguagePackWriter.Label2">
+            <summary>
+            Label2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguagePackWriter.txtFileName">
+            <summary>
+            txtFileName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguagePackWriter.lblFilenameFix">
+            <summary>
+            lblFilenameFix control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguagePackWriter.cmdCreate">
+            <summary>
+            cmdCreate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguagePackWriter.cmdCancel">
+            <summary>
+            cmdCancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguagePackWriter.pnlLogs">
+            <summary>
+            pnlLogs control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguagePackWriter.dshBasic">
+            <summary>
+            dshBasic control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguagePackWriter.divLog">
+            <summary>
+            divLog control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguagePackWriter.hypLink">
+            <summary>
+            hypLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguagePackWriter.lblMessage">
+            <summary>
+            lblMessage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Dnn.Modules.Languages.LanguageSettings">
+            -----------------------------------------------------------------------------
+            Project	 : DotNetNuke
+            Class	 : LanguageSettings
+            -----------------------------------------------------------------------------
+            <summary>
+              Supplies LanguageSettings functionality for the Extensions module
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageSettings.plUsePaging">
+            <summary>
+            plUsePaging control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageSettings.chkUsePaging">
+            <summary>
+            chkUsePaging control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageSettings.plPageSize">
+            <summary>
+            plPageSize control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageSettings.txtPageSize">
+            <summary>
+            txtPageSize control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageSettings.valPageSize2">
+            <summary>
+            valPageSize2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageSettings.valPageSize">
+            <summary>
+            valPageSize control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageSettings.plShowLanguages">
+            <summary>
+            plShowLanguages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageSettings.chkShowLanguages">
+            <summary>
+            chkShowLanguages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageSettings.plShowSettings">
+            <summary>
+            plShowSettings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LanguageSettings.chkShowSettings">
+            <summary>
+            chkShowSettings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:Dnn.Modules.Languages.LocalizePages.KeepConnectionAlive">
+            <summary>
+            This Write/Flush is needed periodically to avoid issue in Azure.
+            Azure Load Balancer silently dropping idle connections after 4 minutes.
+            Sending some data from time to time to the client from server side, 
+            the Azure Load balancer doesn't kill the TCP connection
+            </summary>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LocalizePages.headerLabel">
+            <summary>
+            headerLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LocalizePages.siteDefaultLabel">
+            <summary>
+            siteDefaultLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LocalizePages.defaultLanguageLabel">
+            <summary>
+            defaultLanguageLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LocalizePages.PagesToLocalizeLabel">
+            <summary>
+            PagesToLocalizeLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LocalizePages.PagesToLocalize">
+            <summary>
+            PagesToLocalize control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LocalizePages.updateButton">
+            <summary>
+            updateButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LocalizePages.cancelButton">
+            <summary>
+            cancelButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LocalizePages.progressManager">
+            <summary>
+            progressManager control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LocalizePages.pageCreationProgressArea">
+            <summary>
+            pageCreationProgressArea control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.LocalizePages.scriptBlock">
+            <summary>
+            scriptBlock control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Dnn.Modules.Languages.ResourceVerifier">
+            <summary>
+              Manages translations for Resource files
+            </summary>
+            <returns></returns>
+            <remarks>
+            </remarks>
+        </member>
+        <member name="M:Dnn.Modules.Languages.ResourceVerifier.GetResourceFiles(System.Collections.SortedList,System.String)">
+            <summary>
+              Gets all system default resource files
+            </summary>
+            <param name = "fileList">List of found resource files</param>
+            <param name = "path">Folder to search at</param>
+            <remarks>
+            </remarks>
+        </member>
+        <member name="M:Dnn.Modules.Languages.ResourceVerifier.ResourceFile(System.String,System.String)">
+            <summary>
+              Returns the resource file name for a given locale
+            </summary>
+            <param name = "filename">Resource file</param>
+            <param name = "language">Locale</param>
+            <returns></returns>
+            <remarks>
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.ResourceVerifier.PlaceHolder1">
+            <summary>
+            PlaceHolder1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.ResourceVerifier.cmdCancel">
+            <summary>
+            cmdCancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.TranslationStatus.pagesTreeView">
+            <summary>
+            pagesTreeView control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.TranslationStatus.localizeModuleButton">
+            <summary>
+            localizeModuleButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.TranslationStatus.delocalizeModuleButton">
+            <summary>
+            delocalizeModuleButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.TranslationStatus.markModuleTranslatedButton">
+            <summary>
+            markModuleTranslatedButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.Languages.TranslationStatus.markModuleUnTranslatedButton">
+            <summary>
+            markModuleUnTranslatedButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+    </members>
+</doc>

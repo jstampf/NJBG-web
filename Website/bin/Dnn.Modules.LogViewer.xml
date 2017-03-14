@@ -1,0 +1,612 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dnn.Modules.LogViewer</name>
+    </assembly>
+    <members>
+        <member name="T:Dnn.Modules.LogViewer.Components.LogViewerController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Dnn.Modules.LogViewer.Components.LogViewerController.UpgradeModule(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="version"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Dnn.Modules.LogViewer.EditLogTypes">
+            -----------------------------------------------------------------------------
+            Project	 : DotNetNuke
+            Class	 : EditLogTypes
+            
+            -----------------------------------------------------------------------------
+            <summary>
+            Manage the Log Types for the portal
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.LogViewer.EditLogTypes.OnLoad(System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.LogViewer.EditLogTypes.OnCancelClick(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            cmdCancel_Click runs when the cancel Button is clicked
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.LogViewer.EditLogTypes.OnDeleteClick(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            cmdDelete_Click runs when the delete Button is clicked
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Dnn.Modules.LogViewer.EditLogTypes.OnUpdateClick(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            cmdUpdate_Click runs when the Update Button is clicked
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.pnlLogTypeConfigInfo">
+            <summary>
+            pnlLogTypeConfigInfo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.dgLogTypeConfigInfo">
+            <summary>
+            dgLogTypeConfigInfo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.hlAdd">
+            <summary>
+            hlAdd control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.hlReturn">
+            <summary>
+            hlReturn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.pnlEditLogTypeConfigInfo">
+            <summary>
+            pnlEditLogTypeConfigInfo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.plIsActive">
+            <summary>
+            plIsActive control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.chkIsActive">
+            <summary>
+            chkIsActive control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.plLogTypeKey">
+            <summary>
+            plLogTypeKey control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.cboLogTypeKey">
+            <summary>
+            cboLogTypeKey control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.plLogTypePortalID">
+            <summary>
+            plLogTypePortalID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.cboLogTypePortalID">
+            <summary>
+            cboLogTypePortalID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.plKeepMostRecent">
+            <summary>
+            plKeepMostRecent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.cboKeepMostRecent">
+            <summary>
+            cboKeepMostRecent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.plEmailNotificationStatus">
+            <summary>
+            plEmailNotificationStatus control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.chkEmailNotificationStatus">
+            <summary>
+            chkEmailNotificationStatus control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.plThreshold">
+            <summary>
+            plThreshold control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.cboThreshold">
+            <summary>
+            cboThreshold control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.lblIn">
+            <summary>
+            lblIn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.cboThresholdNotificationTime">
+            <summary>
+            cboThresholdNotificationTime control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.cboThresholdNotificationTimeType">
+            <summary>
+            cboThresholdNotificationTimeType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.plMailFromAddress">
+            <summary>
+            plMailFromAddress control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.txtMailFromAddress">
+            <summary>
+            txtMailFromAddress control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.plMailToAddress">
+            <summary>
+            plMailToAddress control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.txtMailToAddress">
+            <summary>
+            txtMailToAddress control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.cmdUpdate">
+            <summary>
+            cmdUpdate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.cmdCancel">
+            <summary>
+            cmdCancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.cmdDelete">
+            <summary>
+            cmdDelete control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.EditLogTypes.scriptBlock1">
+            <summary>
+            scriptBlock1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Dnn.Modules.LogViewer.LogViewer">
+            -----------------------------------------------------------------------------
+            Project	 : DotNetNuke
+            Class	 : LogViewer
+            
+            -----------------------------------------------------------------------------
+            <summary>
+            Supplies the functionality for viewing the Site Logs
+            </summary>
+            <remarks>
+            </remarks>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.plPortalID">
+            <summary>
+            plPortalID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.ddlPortalid">
+            <summary>
+            ddlPortalid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.plLogType">
+            <summary>
+            plLogType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.ddlLogType">
+            <summary>
+            ddlLogType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.plRecordsPage">
+            <summary>
+            plRecordsPage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.ddlRecordsPerPage">
+            <summary>
+            ddlRecordsPerPage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.lbClickRow">
+            <summary>
+            lbClickRow control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.txtShowing">
+            <summary>
+            txtShowing control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.dlLog">
+            <summary>
+            dlLog control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.ctlPagingControlBottom">
+            <summary>
+            ctlPagingControlBottom control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.Label1">
+            <summary>
+            Label1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.Label2">
+            <summary>
+            Label2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.Label3">
+            <summary>
+            Label3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.Label4">
+            <summary>
+            Label4 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.Label8">
+            <summary>
+            Label8 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.Label9">
+            <summary>
+            Label9 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.Label10">
+            <summary>
+            Label10 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.Label5">
+            <summary>
+            Label5 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.Label6">
+            <summary>
+            Label6 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.Label7">
+            <summary>
+            Label7 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.plEmailAddress">
+            <summary>
+            plEmailAddress control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.txtEmailAddress">
+            <summary>
+            txtEmailAddress control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.plSubject">
+            <summary>
+            plSubject control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.txtSubject">
+            <summary>
+            txtSubject control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.plMessage">
+            <summary>
+            plMessage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.txtMessage">
+            <summary>
+            txtMessage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.btnEmail">
+            <summary>
+            btnEmail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.btnDelete">
+            <summary>
+            btnDelete control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.btnClear">
+            <summary>
+            btnClear control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Dnn.Modules.LogViewer.LogViewer.editSettings">
+            <summary>
+            editSettings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:Dnn.Modules.LogViewer.LogViewer.OnLoad(System.EventArgs)">
+            <summary>
+            The Page_Load runs when the page loads
+            </summary>
+            <param name="e"></param>
+            <remarks>
+            </remarks>
+        </member>
+    </members>
+</doc>
