@@ -497,3 +497,10 @@ Website/Portals/_default/Install/Dnn.CKEditorDefaultSettings.xml
 Website/Portals/_default/Install/Dnn.CKToolbarButtons.xml
 Website/Portals/_default/Install/Dnn.CKToolbarSets.xml
 
+
+############
+## Joe
+############
+Website/App_Data/DNN8DB.mdf
+Website/App_Data/DNN8DB_log.ldf
+
