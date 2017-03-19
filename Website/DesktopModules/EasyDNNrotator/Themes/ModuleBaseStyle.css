@@ -1,0 +1,27 @@
+﻿/* Style for main massages after Rotator install/add */
+div#EDDSwelcomeClass
+{
+    background-color:#E8E8E8;
+    margin:10px 10 px 10 px;
+    padding:10px 10 px 10 px;
+  -moz-box-shadow: 5px 5px 5px #ccc;
+  -webkit-box-shadow: 5px 5px 5px #ccc;
+  box-shadow: 5px 5px 5px #ccc;
+}
+    
+.infoWelcomeTitle
+{
+    font-family:Arial,Helvetica,sans-serif;
+    margin: 10px 10px 10px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color:#2E2E2E;
+}
+.infoWelcomeMasages
+{
+    font-family:Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #4A4A4A;
+    margin: 20px 10px 10px 10px;
+}

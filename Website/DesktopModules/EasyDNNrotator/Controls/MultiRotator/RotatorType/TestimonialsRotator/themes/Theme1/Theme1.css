@@ -1,0 +1,128 @@
+.edstmr__Theme1 {
+  -moz-transform: translate3d(0, 0, 1px);
+}
+.edstmr__Theme1 .ms-staff-carousel {
+  overflow: hidden;
+  margin: 25px auto;
+  position: relative;
+}
+.edstmr__Theme1 .ms-staff-carousel .ms-view {
+  overflow: visible;
+  background-color: transparent;
+}
+.edstmr__Theme1 .ms-staff-carousel .ms-nav-prev,
+.edstmr__Theme1 .ms-staff-carousel .ms-nav-next {
+  background: url("images/arrows.png") white no-repeat -7px -57px;
+  width: 35px;
+  height: 40px;
+  left: -35px;
+  margin-top: -17px;
+  box-shadow: 0px 1px 0px 0px #bebebe;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  z-index: 111;
+}
+.edstmr__Theme1 .ms-staff-carousel .ms-nav-next {
+  background-position: -6px -7px;
+  right: -35px;
+  left: auto;
+}
+.edstmr__Theme1 .ms-staff-carousel .ms-staff-info {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  max-width: 600px;
+  margin-top: 30px;
+  min-height: 100px;
+  color: #222222;
+}
+.edstmr__Theme1 .ms-staff-carousel .ms-staff-info h3,
+.edstmr__Theme1 .ms-staff-carousel .ms-staff-info h4 {
+  padding: 0;
+}
+.edstmr__Theme1 .ms-staff-carousel .ms-staff-info h3 {
+  margin: 0px;
+}
+.edstmr__Theme1 .ms-staff-carousel .ms-staff-info h4 {
+  margin: 3px;
+}
+.edstmr__Theme1 .ms-staff-carousel .ms-staff-info .email a {
+  text-decoration: none;
+  color: #3f95ab;
+}
+.edstmr__Theme1 .ms-staff-carousel .ms-staff-info p {
+  margin: 4px;
+  font-size: 11pt;
+}
+.edstmr__Theme1 .ms-staff-carousel .ms-staff-info .ms-socials {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  margin: 15px 0 0 0;
+  text-shadow: none;
+  zoom: 1;
+}
+.edstmr__Theme1 .ms-staff-carousel .ms-staff-info .ms-socials li {
+  float: left;
+}
+.edstmr__Theme1 .ms-staff-carousel .ms-staff-info .ms-socials li a {
+  text-indent: 9999px;
+  width: 35px;
+  height: 35px;
+  background: url("images/sicons.png");
+  margin: 0 2px;
+  display: block;
+}
+.edstmr__Theme1 .ms-staff-carousel .ms-staff-info .ms-socials .ms-ico-tw a {
+  background-position: 115px 0px;
+}
+.edstmr__Theme1 .ms-staff-carousel .ms-staff-info .ms-socials .ms-ico-gp a {
+  background-position: 75px 0px;
+}
+.edstmr__Theme1 .ms-staff-carousel .ms-staff-info .ms-socials .ms-ico-yt a {
+  background-position: 35px 0px;
+}
+.edstmr__Theme1 .ms-staff-carousel.ms-round .ms-slide-bgcont {
+  border-radius: 5000px;
+  border: solid 8px #e6e6e6;
+  margin: 0 -8px;
+}
+.edstmr__Theme1 .ms-staff-carousel.ms-round .ms-nav-prev,
+.edstmr__Theme1 .ms-staff-carousel.ms-round .ms-nav-next {
+  background-color: transparent;
+  box-shadow: none;
+  left: -45px;
+}
+.edstmr__Theme1 .ms-staff-carousel.ms-round .ms-nav-next {
+  left: auto;
+  right: -45px;
+}
+.edstmr__Theme1 .ms-slide-vpbtn,
+.edstmr__Theme1 .ms-video-btn {
+  width: 50px;
+  height: 51px;
+  background: url("images/light-skin-1.png") no-repeat -14px -150px;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+}
+.edstmr__Theme1 .ms-slide-vcbtn {
+  width: 30px;
+  height: 30px;
+  background: url("images/light-skin-1.png") no-repeat -24px -28px;
+  top: 18px;
+  right: 30px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .edstmr__Theme1 .ms-slide-vpbtn,
+  .edstmr__Theme1 .ms-video-btn,
+  .edstmr__Theme1 .ms-slide-vcbtn,
+  .edstmr__Theme1 .ms-nav-next,
+  .edstmr__Theme1 .ms-nav-prev {
+    background-image: url("images/light-skin-1-retina.png");
+    background-size: 152px 225px;
+  }
+}
+
+/*# sourceMappingURL=Theme1.css.map */

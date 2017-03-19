@@ -1,0 +1,36 @@
+﻿<!--HeaderTemplateBegin-->
+<div class="ms-staff-carousel">
+<!--HeaderTemplateEnd-->
+
+<!--ItemTemplateBegin-->
+	<div class="ms-slide">
+		<img src="[EasyDNNrotator:Image]" data-src="[EasyDNNrotator:Image]" alt="[EasyDNNrotator:Title]" [EasyDNNrotator:ResponsiveImages] />
+		[EasyDNNrotator:IfExists:SlideLink]<a href="[EasyDNNrotator:Link]" [EasyDNNrotator:DataType]>[EasyDNNrotator:Title]</a>[EasyDNNrotator:EndIf:SlideLink]
+		<div class="ms-info">
+			[EasyDNNrotator:IfExists:Title]<h3>[EasyDNNrotator:Title]</h3>[EasyDNNrotator:EndIf:Title]
+			[EasyDNNrotator:IfExists:Description]<div>[EasyDNNrotator:Description]</div>[EasyDNNrotator:EndIf:Description]
+		</div>
+	</div>
+<!--ItemTemplateEnd-->
+
+<!--FooterTemplateBegin-->
+	<div class="ms-staff-info" id="staff-info[EasyDNNrotator:ModuleID]"></div>
+</div>
+<!--FooterTemplateEnd-->
+
+<!--ScriptBegin-->
+
+	<!--EnabledOptionsBegin-->
+		[autoplay,speed,showtitle,showdescription,slidelink,grabCursor,swipe,mouseswipe,space,wheel,limittitle,limitdescription,stripdescription]
+	<!--EnabledOptionsEnd-->
+	<!--SetOptionsBegin-->
+		[view:'flow', preload:0, loop:true]
+	<!--SetOptionsEnd-->
+	<!--HiddenOptionsBegin-->
+		[thumbnail:width:240:height:240]
+	<!--HiddenOptionsEnd-->
+	<!--ControlBegin-->
+		slider.control('arrows');
+		slider.control('slideinfo',{insertTo:'#staff-info[EasyDNNrotator:ModuleID]'});
+	<!--ControlEnd-->
+<!--ScriptEnd-->

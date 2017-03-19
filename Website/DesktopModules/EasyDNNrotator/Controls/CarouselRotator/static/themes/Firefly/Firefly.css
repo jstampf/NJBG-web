@@ -1,0 +1,180 @@
+@import url(//fonts.googleapis.com/css?family=Arvo:400,700);
+.edr_carousel.Firefly .wrapper .slider ul li .EDR_box .EDR_image-container {
+  float: left;
+  margin: 0 10px 5px 0;
+  line-height: 0;
+  max-width: 100%; }
+  .edr_carousel.Firefly .wrapper .slider ul li .EDR_box .EDR_image-container img {
+    padding: 5px;
+    background-color: white;
+    border: solid 1px #e0deda;
+    border-radius: 4px;
+    max-width: 100%;
+    height: auto;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    .edr_carousel.Firefly .wrapper .slider ul li .EDR_box .EDR_image-container img:hover {
+      background-color: #eeeeee;
+      border-color: #bab8b4; }
+.edr_carousel.Firefly .wrapper .slider ul li .EDR_box .EDR_content {
+  font-family: Arial;
+  font-size: 13px;
+  line-height: 1.1;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
+  color: #4e4d49; }
+  .edr_carousel.Firefly .wrapper .slider ul li .EDR_box .EDR_content > h3 {
+    margin: 0 0 5px;
+    padding: 0;
+    line-height: 1;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: "Arvo", serif;
+    color: #505050;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4); }
+    .edr_carousel.Firefly .wrapper .slider ul li .EDR_box .EDR_content > h3 a {
+      color: #505050;
+      line-height: 1;
+      font-size: 18px;
+      font-weight: normal;
+      text-decoration: none;
+      font-family: "Arvo", serif;
+      -webkit-transition: color 0.2s ease-in-out;
+      -moz-transition: color 0.2s ease-in-out;
+      -ms-transition: color 0.2s ease-in-out;
+      -o-transition: color 0.2s ease-in-out;
+      transition: color 0.2s ease-in-out; }
+      .edr_carousel.Firefly .wrapper .slider ul li .EDR_box .EDR_content > h3 a:hover {
+        color: #c54823;
+        text-decoration: none; }
+.edr_carousel.Firefly .wrapper .slider ul li .EDR_box.EDR_big-rotator {
+  text-align: center; }
+  .edr_carousel.Firefly .wrapper .slider ul li .EDR_box.EDR_big-rotator .EDR_image-container {
+    padding: 6px; }
+    .edr_carousel.Firefly .wrapper .slider ul li .EDR_box.EDR_big-rotator .EDR_image-container img {
+      box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.07);
+      border-radius: 1px;
+      border: none; }
+      .edr_carousel.Firefly .wrapper .slider ul li .EDR_box.EDR_big-rotator .EDR_image-container img:hover {
+        background-color: transparent; }
+  .edr_carousel.Firefly .wrapper .slider ul li .EDR_box.EDR_big-rotator .EDR_content {
+    font-family: "Arvo", serif;
+    font-size: 16px;
+    text-shadow: none; }
+    .edr_carousel.Firefly .wrapper .slider ul li .EDR_box.EDR_big-rotator .EDR_content > h3 {
+      font-size: 46px; }
+      .edr_carousel.Firefly .wrapper .slider ul li .EDR_box.EDR_big-rotator .EDR_content > h3 a {
+        font-size: 46px; }
+.edr_carousel.Firefly .wrapper .slider ul li .EDR_box.EDR_content-over-image {
+  position: relative; }
+  .edr_carousel.Firefly .wrapper .slider ul li .EDR_box.EDR_content-over-image .EDR_image-container {
+    float: none;
+    margin: 0;
+    padding: 0; }
+    .edr_carousel.Firefly .wrapper .slider ul li .EDR_box.EDR_content-over-image .EDR_image-container img {
+      border: none;
+      padding: 0;
+      border-radius: 0; }
+  .edr_carousel.Firefly .wrapper .slider ul li .EDR_box.EDR_content-over-image .EDR_content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 94%;
+    padding: 10px 3%;
+    background-image: url(images/black-overlay.png);
+    text-shadow: none;
+    color: white;
+    font-size: 12px; }
+    .edr_carousel.Firefly .wrapper .slider ul li .EDR_box.EDR_content-over-image .EDR_content h3 {
+      font-size: 30px;
+      text-shadow: none; }
+      .edr_carousel.Firefly .wrapper .slider ul li .EDR_box.EDR_content-over-image .EDR_content h3 a {
+        color: white;
+        font-size: 30px; }
+        .edr_carousel.Firefly .wrapper .slider ul li .EDR_box.EDR_content-over-image .EDR_content h3 a:hover {
+          text-decoration: underline; }
+.edr_carousel.Firefly .wrapper .slider ul li .EDR_readmore {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: white;
+  font-weight: bold;
+  font-family: Arial;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  padding: 0 8px;
+  height: 24px;
+  line-height: 24px;
+  background-color: #c54823;
+  background-image: none;
+  border: solid 1px #ae3a17;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 1px -1px rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  -webkit-transition: background 0.2s ease-in-out;
+  -moz-transition: background 0.2s ease-in-out;
+  -ms-transition: background 0.2s ease-in-out;
+  -o-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out; }
+  .edr_carousel.Firefly .wrapper .slider ul li .EDR_readmore:hover {
+    background-color: #bb3811;
+    text-decoration: none;
+    color: white;
+    border-color: #ae3a17; }
+.edr_carousel.Firefly .pagination {
+  padding: 0; }
+  .edr_carousel.Firefly .pagination li {
+    margin: 0 1px;
+    padding: 0;
+    list-type: none;
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    background: transparent url(images/pagination-bg.png) center -68px no-repeat; }
+    .edr_carousel.Firefly .pagination li:hover {
+      background-position: center -34px; }
+    .edr_carousel.Firefly .pagination li.active {
+      background-position: center 0; }
+.edr_carousel.Firefly.blue .wrapper .slider ul li .EDR_box .EDR_content > h3 a:hover {
+  color: #335a97; }
+.edr_carousel.Firefly.blue .wrapper .slider ul li .EDR_readmore {
+  background-color: #4a4a4a;
+  border-color: #848483; }
+  .edr_carousel.Firefly.blue .wrapper .slider ul li .EDR_readmore:hover {
+    background-color: #393939;
+    border-color: #848483; }
+.edr_carousel.Firefly.blue .pagination li {
+  background-image: url(images/pagination-bg-blue.png); }
+.edr_carousel.Firefly.green .wrapper .slider ul li .EDR_box .EDR_content > h3 a:hover {
+  color: #af703c; }
+.edr_carousel.Firefly.green .wrapper .slider ul li .EDR_readmore {
+  background-color: #af703c;
+  border-color: #8d6d00; }
+  .edr_carousel.Firefly.green .wrapper .slider ul li .EDR_readmore:hover {
+    background-color: #985926;
+    border-color: #8d6d00; }
+.edr_carousel.Firefly.green .pagination li {
+  background-image: url(images/pagination-bg-green.png); }
+.edr_carousel.Firefly.grey .wrapper .slider ul li .EDR_box .EDR_content > h3 a:hover {
+  color: #e10202; }
+.edr_carousel.Firefly.grey .wrapper .slider ul li .EDR_readmore {
+  background-color: #4a4a4a;
+  border-color: #313130; }
+  .edr_carousel.Firefly.grey .wrapper .slider ul li .EDR_readmore:hover {
+    background-color: #313130;
+    border-color: #313130; }
+.edr_carousel.Firefly.grey .pagination li {
+  background-image: url(images/pagination-bg-grey.png); }
+.edr_carousel.Firefly.red .wrapper .slider ul li .EDR_box .EDR_content > h3 a:hover {
+  color: #bc0000; }
+.edr_carousel.Firefly.red .wrapper .slider ul li .EDR_readmore {
+  background-color: #4a4a4a;
+  border-color: #313130; }
+  .edr_carousel.Firefly.red .wrapper .slider ul li .EDR_readmore:hover {
+    background-color: #313130;
+    border-color: #313130; }
+.edr_carousel.Firefly.red .pagination li {
+  background-image: url(images/pagination-bg-red.png); }

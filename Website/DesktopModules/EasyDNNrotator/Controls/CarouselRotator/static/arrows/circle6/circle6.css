@@ -1,0 +1,30 @@
+.edr_carousel .navigation.circle6 {
+  text-indent: -10000px;
+  background: url(images/carousel-arrows.png) no-repeat;
+  width: 56px;
+  height: 56px;
+}
+.edr_carousel.horizontal .navigation.circle6.previous {
+  background-position: 0 0;
+}
+.edr_carousel.horizontal .navigation.circle6.previous:hover {
+  background-position: 0 -66px;
+}
+.edr_carousel.horizontal .navigation.circle6.next {
+  background-position: 0 -132px;
+}
+.edr_carousel.horizontal .navigation.circle6.next:hover {
+  background-position: 0 -198px;
+}
+.edr_carousel.vertical .navigation.circle6.previous {
+  background-position: 0 -264px;
+}
+.edr_carousel.vertical .navigation.circle6.previous:hover {
+  background-position: 0 -330px;
+}
+.edr_carousel.vertical .navigation.circle6.next {
+  background-position: 0 -396px;
+}
+.edr_carousel.vertical .navigation.circle6.next:hover {
+  background-position: 0 -462px;
+}

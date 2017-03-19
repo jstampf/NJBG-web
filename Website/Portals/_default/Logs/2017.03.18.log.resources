@@ -1,0 +1,285 @@
+2017-03-18 16:54:50,430 [Lenovo-PC][Thread:8][ERROR] DotNetNuke.Common.Initialize - The connection to the database has failed, however, the application is already completely installed, a 500 error page will be shown to visitors
+2017-03-18 16:56:24,955 [Lenovo-PC][Thread:12][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Cannot open database "DNN8DB" requested by the login. The login failed.
+Login failed for user 'DNN'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\PetaPoco\PetaPocoExt.cs:line 52
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\SqlDataProvider.cs:line 328
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Services\Log\EventLog\DBLoggingProvider.cs:line 387
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Common\Utilities\DataCache.cs:line 505
+ClientConnectionId:c38f5376-6da8-4b85-b659-b66d25d12cf0
+Error Number:4060,State:1,Class:11
+2017-03-18 16:56:25,008 [Lenovo-PC][Thread:12][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Cannot open database "DNN8DB" requested by the login. The login failed.
+Login failed for user 'DNN'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\PetaPoco\PetaPocoExt.cs:line 52
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\SqlDataProvider.cs:line 328
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Services\Log\EventLog\DBLoggingProvider.cs:line 387
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Common\Utilities\DataCache.cs:line 505
+ClientConnectionId:c38f5376-6da8-4b85-b659-b66d25d12cf0
+Error Number:4060,State:1,Class:11
+2017-03-18 16:56:25,019 [Lenovo-PC][Thread:12][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Cannot open database "DNN8DB" requested by the login. The login failed.
+Login failed for user 'DNN'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\PetaPoco\PetaPocoExt.cs:line 52
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\SqlDataProvider.cs:line 328
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Services\Log\EventLog\DBLoggingProvider.cs:line 387
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Common\Utilities\DataCache.cs:line 505
+ClientConnectionId:c38f5376-6da8-4b85-b659-b66d25d12cf0
+Error Number:4060,State:1,Class:11
+2017-03-18 16:56:25,029 [Lenovo-PC][Thread:12][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Cannot open database "DNN8DB" requested by the login. The login failed.
+Login failed for user 'DNN'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\PetaPoco\PetaPocoExt.cs:line 52
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\SqlDataProvider.cs:line 328
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Services\Log\EventLog\DBLoggingProvider.cs:line 387
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Common\Utilities\DataCache.cs:line 505
+ClientConnectionId:c38f5376-6da8-4b85-b659-b66d25d12cf0
+Error Number:4060,State:1,Class:11
+2017-03-18 16:56:25,038 [Lenovo-PC][Thread:12][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Cannot open database "DNN8DB" requested by the login. The login failed.
+Login failed for user 'DNN'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\PetaPoco\PetaPocoExt.cs:line 52
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\SqlDataProvider.cs:line 328
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Services\Log\EventLog\DBLoggingProvider.cs:line 387
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Common\Utilities\DataCache.cs:line 505
+ClientConnectionId:c38f5376-6da8-4b85-b659-b66d25d12cf0
+Error Number:4060,State:1,Class:11
+2017-03-18 16:56:25,048 [Lenovo-PC][Thread:12][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Cannot open database "DNN8DB" requested by the login. The login failed.
+Login failed for user 'DNN'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\PetaPoco\PetaPocoExt.cs:line 52
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\SqlDataProvider.cs:line 328
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Services\Log\EventLog\DBLoggingProvider.cs:line 387
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Common\Utilities\DataCache.cs:line 505
+ClientConnectionId:c38f5376-6da8-4b85-b659-b66d25d12cf0
+Error Number:4060,State:1,Class:11
+2017-03-18 16:56:25,058 [Lenovo-PC][Thread:12][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Cannot open database "DNN8DB" requested by the login. The login failed.
+Login failed for user 'DNN'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\PetaPoco\PetaPocoExt.cs:line 52
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\SqlDataProvider.cs:line 328
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Services\Log\EventLog\DBLoggingProvider.cs:line 387
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Common\Utilities\DataCache.cs:line 505
+ClientConnectionId:c38f5376-6da8-4b85-b659-b66d25d12cf0
+Error Number:4060,State:1,Class:11
+2017-03-18 16:56:25,068 [Lenovo-PC][Thread:12][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Cannot open database "DNN8DB" requested by the login. The login failed.
+Login failed for user 'DNN'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\PetaPoco\PetaPocoExt.cs:line 52
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\SqlDataProvider.cs:line 328
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Services\Log\EventLog\DBLoggingProvider.cs:line 387
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Common\Utilities\DataCache.cs:line 505
+ClientConnectionId:c38f5376-6da8-4b85-b659-b66d25d12cf0
+Error Number:4060,State:1,Class:11
+2017-03-18 16:56:25,078 [Lenovo-PC][Thread:12][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Cannot open database "DNN8DB" requested by the login. The login failed.
+Login failed for user 'DNN'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\PetaPoco\PetaPocoExt.cs:line 52
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\SqlDataProvider.cs:line 328
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Services\Log\EventLog\DBLoggingProvider.cs:line 387
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Common\Utilities\DataCache.cs:line 505
+ClientConnectionId:c38f5376-6da8-4b85-b659-b66d25d12cf0
+Error Number:4060,State:1,Class:11
+2017-03-18 16:56:25,089 [Lenovo-PC][Thread:12][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Cannot open database "DNN8DB" requested by the login. The login failed.
+Login failed for user 'DNN'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\PetaPoco\PetaPocoExt.cs:line 52
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\SqlDataProvider.cs:line 328
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Services\Log\EventLog\DBLoggingProvider.cs:line 387
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Common\Utilities\DataCache.cs:line 505
+ClientConnectionId:c38f5376-6da8-4b85-b659-b66d25d12cf0
+Error Number:4060,State:1,Class:11
+2017-03-18 16:56:25,099 [Lenovo-PC][Thread:12][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Cannot open database "DNN8DB" requested by the login. The login failed.
+Login failed for user 'DNN'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\PetaPoco\PetaPocoExt.cs:line 52
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\SqlDataProvider.cs:line 328
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Services\Log\EventLog\DBLoggingProvider.cs:line 387
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Common\Utilities\DataCache.cs:line 505
+ClientConnectionId:c38f5376-6da8-4b85-b659-b66d25d12cf0
+Error Number:4060,State:1,Class:11
+2017-03-18 16:56:25,109 [Lenovo-PC][Thread:12][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Cannot open database "DNN8DB" requested by the login. The login failed.
+Login failed for user 'DNN'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\PetaPoco\PetaPocoExt.cs:line 52
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\SqlDataProvider.cs:line 328
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Services\Log\EventLog\DBLoggingProvider.cs:line 387
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Common\Utilities\DataCache.cs:line 505
+ClientConnectionId:c38f5376-6da8-4b85-b659-b66d25d12cf0
+Error Number:4060,State:1,Class:11
+2017-03-18 16:56:25,121 [Lenovo-PC][Thread:12][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Cannot open database "DNN8DB" requested by the login. The login failed.
+Login failed for user 'DNN'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\PetaPoco\PetaPocoExt.cs:line 52
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\SqlDataProvider.cs:line 328
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Services\Log\EventLog\DBLoggingProvider.cs:line 387
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Common\Utilities\DataCache.cs:line 505
+ClientConnectionId:c38f5376-6da8-4b85-b659-b66d25d12cf0
+Error Number:4060,State:1,Class:11
+2017-03-18 16:56:25,145 [Lenovo-PC][Thread:12][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Cannot open database "DNN8DB" requested by the login. The login failed.
+Login failed for user 'DNN'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\PetaPoco\PetaPocoExt.cs:line 52
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\SqlDataProvider.cs:line 328
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Services\Log\EventLog\DBLoggingProvider.cs:line 387
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Common\Utilities\DataCache.cs:line 505
+ClientConnectionId:c38f5376-6da8-4b85-b659-b66d25d12cf0
+Error Number:4060,State:1,Class:11
+2017-03-18 16:56:25,155 [Lenovo-PC][Thread:12][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Cannot open database "DNN8DB" requested by the login. The login failed.
+Login failed for user 'DNN'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\PetaPoco\PetaPocoExt.cs:line 52
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Data\SqlDataProvider.cs:line 328
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Services\Log\EventLog\DBLoggingProvider.cs:line 387
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Common\Utilities\DataCache.cs:line 505
+ClientConnectionId:c38f5376-6da8-4b85-b659-b66d25d12cf0
+Error Number:4060,State:1,Class:11
+2017-03-18 16:56:46,568 [Lenovo-PC][Thread:6][ERROR] DotNetNuke.Common.Initialize - The connection to the database has failed, however, the application is already completely installed, a 500 error page will be shown to visitors
+2017-03-18 16:56:50,875 [Lenovo-PC][Thread:8][ERROR] DotNetNuke.Common.Initialize - The connection to the database has failed, however, the application is already completely installed, a 500 error page will be shown to visitors
+2017-03-18 17:08:16,289 [Lenovo-PC][Thread:20][ERROR] DotNetNuke.Common.Initialize - The connection to the database has failed, however, the application is already completely installed, a 500 error page will be shown to visitors
+2017-03-18 17:08:21,053 [Lenovo-PC][Thread:18][ERROR] DotNetNuke.Common.Initialize - The connection to the database has failed, however, the application is already completely installed, a 500 error page will be shown to visitors
+2017-03-18 17:09:27,705 [Lenovo-PC][Thread:20][ERROR] DotNetNuke.Common.Initialize - The connection to the database has failed, however, the application is already completely installed, a 500 error page will be shown to visitors
+2017-03-18 22:09:22,436 [Lenovo-PC][Thread:7][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+See http://go.microsoft.com/fwlink/?LinkID=314055 for more information. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: ::1
+	Port: 59867
+	Referer: http://localhost/
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0
+	ViewState: UHmC/4u6ESG4MtNMs9xiTDPCzpTh0YkzBMxHD9OGqjyQa6Li7cdpBHEC5scWN3Vl9Lp+RupTGEpYtuX87P6pVl9emzalTfczSEm3W9tcQFwNkm8LS5tQfc/YtYLNHD5sIG/YE10iTyH6i1KwvE5BwPIwjPH8UprJan7/ru/VCfHmU7eBP87PPLRGjRWQqqOWjsVTjrXg8w1zQ/N4/DjdLw9d0eTkg1hbA+/IZurqwSoZHc4pZ25Ck8e4q8x/PIIILQ9q5qJ98SAribmUyEPRkuxKnDWzHIoW397z2kctNP3IxGhaKdB9o3/MTwtEcy1IgJI//HOP2TAde2Kf5qj7Wn8k1/O8jqqQ7FhFr00r/18X/b2IZ7IcpCoyfTvZDFjmvlinFycWYyi6BAqW89M4HOYShIT7VYAxaFK09tzOYWWxQuRift4BliX/Z4hh4sP3YdW6iom2R9faEIfuEEhqLUH8Uy8msgiHaVYEiCfnsWQI8PDhmM0XqgSKCl7gQ02x2ZEx99DhKtkv7DmykZoxzCdnV7op3hNa4B6aFFFPWTqi4dOXw/67UQWuH2SVLnm3rdjJ6ywRaf1hLIdnaeo88gmwIqjvdonjjpSSyDqWLAEIVT+lALHx2nxk5qm3g8L/epPzJlCSS3rIF4Ui6kiD4EQNmwEUSWwDc1j+xp4upFOQIF11s0wQsKW8uhHILSx7UTf23ziJjMzU79RatXCQuy6ZV2T2f6lJr1GOBihQilGqDybdULdVYvJCWuGO+MOtJWy1JRH9cpoj0QwxkHFHM6/ELhawrft60/k8J6usJBjs+/LGmAaBobTGldFqqaiIwsZ0F...
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-03-18 22:09:22,461 [Lenovo-PC][Thread:7][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=71&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+See http://go.microsoft.com/fwlink/?LinkID=314055 for more information. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: ::1
+	Port: 59867
+	Referer: http://localhost/
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0
+	ViewState: UHmC/4u6ESG4MtNMs9xiTDPCzpTh0YkzBMxHD9OGqjyQa6Li7cdpBHEC5scWN3Vl9Lp+RupTGEpYtuX87P6pVl9emzalTfczSEm3W9tcQFwNkm8LS5tQfc/YtYLNHD5sIG/YE10iTyH6i1KwvE5BwPIwjPH8UprJan7/ru/VCfHmU7eBP87PPLRGjRWQqqOWjsVTjrXg8w1zQ/N4/DjdLw9d0eTkg1hbA+/IZurqwSoZHc4pZ25Ck8e4q8x/PIIILQ9q5qJ98SAribmUyEPRkuxKnDWzHIoW397z2kctNP3IxGhaKdB9o3/MTwtEcy1IgJI//HOP2TAde2Kf5qj7Wn8k1/O8jqqQ7FhFr00r/18X/b2IZ7IcpCoyfTvZDFjmvlinFycWYyi6BAqW89M4HOYShIT7VYAxaFK09tzOYWWxQuRift4BliX/Z4hh4sP3YdW6iom2R9faEIfuEEhqLUH8Uy8msgiHaVYEiCfnsWQI8PDhmM0XqgSKCl7gQ02x2ZEx99DhKtkv7DmykZoxzCdnV7op3hNa4B6aFFFPWTqi4dOXw/67UQWuH2SVLnm3rdjJ6ywRaf1hLIdnaeo88gmwIqjvdonjjpSSyDqWLAEIVT+lALHx2nxk5qm3g8L/epPzJlCSS3rIF4Ui6kiD4EQNmwEUSWwDc1j+xp4upFOQIF11s0wQsKW8uhHILSx7UTf23ziJjMzU79RatXCQuy6ZV2T2f6lJr1GOBihQilGqDybdULdVYvJCWuGO+MOtJWy1JRH9cpoj0QwxkHFHM6/ELhawrft60/k8J6usJBjs+/LGmAaBobTGldFqqaiIwsZ0F...
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

@@ -1,0 +1,394 @@
+﻿if '{objectQualifier}' <> ''
+BEGIN
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorModule]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorModule]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorModule]', N'{objectQualifier}EasyDNNRotatorModule', 'OBJECT'
+			EXECUTE sp_rename N'PK_EasyDNNRotatorModule', N'PK_{objectQualifier}EasyDNNRotatorModule', 'OBJECT'
+			EXECUTE sp_rename N'IX_EasyDNNRotatorModuleAndType', N'IX_{objectQualifier}EasyDNNRotatorModuleAndType', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNNewsGallery_EasyGallery', N'FK_{objectQualifier}EasyDNNNewsGallery_EasyGallery', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorChameleonRSettings_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorChameleonRSettings_EasyDNNRotatorModule', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorFlashCRSettings_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorFlashCRSettings_EasyDNNRotatorModule', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorModule_EasyDNNRotatorType', N'FK_{objectQualifier}EasyDNNRotatorModule_EasyDNNRotatorType', 'OBJECT'
+			EXECUTE sp_rename N'VezaModulID', N'FK_{objectQualifier}VezaModulID', 'OBJECT'
+			EXECUTE sp_rename N'VezaPortalID', N'FK_{objectQualifier}VezaPortalID', 'OBJECT'
+			EXECUTE sp_rename N'VezaRotatorList', N'FK_{objectQualifier}VezaRotatorList', 'OBJECT'
+			EXECUTE sp_rename N'VezaUserIDModule', N'FK_{objectQualifier}VezaUserIDModule', 'OBJECT'
+			EXECUTE sp_rename N'FK_Veza_Rotator_News_Bridge', N'FK_{objectQualifier}Veza_Rotator_News_Bridge', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorNewsSettings_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorNewsSettings_EasyDNNRotatorModule', 'OBJECT'
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorType]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorType]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorType]', N'{objectQualifier}EasyDNNRotatorType', 'OBJECT'
+			EXECUTE sp_rename N'PK_EasyDNNRotatorType', N'PK_{objectQualifier}EasyDNNRotatorType', 'OBJECT'
+			EXECUTE sp_rename N'IX_EasyDNNRotatorType', N'IX_{objectQualifier}EasyDNNRotatorType', 'OBJECT'
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorNewsBridge]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorNewsBridge]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorNewsBridge]', N'{objectQualifier}EasyDNNRotatorNewsBridge', 'OBJECT'
+			EXECUTE sp_rename N'PK_{objectQualifier}EasyDNNRotatorNewsBridge', N'PK_{objectQualifier}EasyDNNRotatorNewsBridge', 'OBJECT'
+			EXECUTE sp_rename N'FK_Veza_Rotator_News_Bridge', N'FK_{objectQualifier}Veza_Rotator_News_Bridge', 'OBJECT'
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorNewsSettings]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorNewsSettings]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorNewsSettings]', N'{objectQualifier}EasyDNNRotatorNewsSettings', 'OBJECT'
+			EXECUTE sp_rename N'PK_{objectQualifier}EasyDNNRotatorNewsSettings', N'PK_{objectQualifier}EasyDNNRotatorNewsSettings', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorNewsSettings_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorNewsSettings_EasyDNNRotatorModule', 'OBJECT'
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorChameleonRSettings]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorChameleonRSettings]', N'{objectQualifier}EasyDNNRotatorChameleonRSettings', 'OBJECT'
+			EXECUTE sp_rename N'PK_EasyDNNRotatorComplexRSettings', N'PK_{objectQualifier}EasyDNNRotatorComplexRSettings', 'OBJECT'
+			EXECUTE sp_rename N'FK_{objectQualifier}EasyDNNRotatorChameleonRSettings_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorChameleonRSettings_EasyDNNRotatorModule', 'OBJECT'
+			EXECUTE sp_rename N'FK_{objectQualifier}EasyDNNRotatorChameleonRSettings_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorChameleonRSettings_EasyDNNRotatorModule', 'OBJECT'
+		END
+	END
+END
+GO
+
+if not exists (select RotatorTypeID from {databaseOwner}[{objectQualifier}EasyDNNRotatorType] WHERE RotatorTypeID = 10)
+BEGIN
+	INSERT {databaseOwner}[{objectQualifier}EasyDNNRotatorType]([RotatorTypeID],[Name],[Description],[Identifier],[Position]) VALUES(10,'MultiCarousel','(Images + Title + Description)','CarouselRotator',10)
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorModule' and column_name = 'MainWidthType')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] ADD MainWidthType int CONSTRAINT DF_{objectQualifier}EasyDNNRotatorModule_MainWidthType DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorModule' and column_name = 'MainHeightType')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] ADD MainHeightType int CONSTRAINT DF_{objectQualifier}EasyDNNRotatorModule_MainHeightType DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorModule' and column_name = 'ItemWidthType')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] ADD ItemWidthType int CONSTRAINT DF_{objectQualifier}EasyDNNRotatorModule_ItemWidthType DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorModule' and column_name = 'ItemHeightType')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] ADD ItemHeightType int CONSTRAINT DF_{objectQualifier}EasyDNNRotatorModule_ItemHeightType DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorModule' and column_name = 'ScriptVersion')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] ADD ScriptVersion nvarchar(15) CONSTRAINT DF_{objectQualifier}EasyDNNRotatorModule_ScriptVersion DEFAULT('') NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorModule' and column_name = 'ScriptName')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] ADD ScriptName nvarchar(100) CONSTRAINT DF_{objectQualifier}EasyDNNRotatorModule_ScriptName DEFAULT('') NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorModule' and column_name = 'HtmTemplate')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] ADD HtmTemplate nvarchar(50) CONSTRAINT DF_{objectQualifier}EasyDNNRotatorModule_HtmTemplate DEFAULT('') NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorModule' and column_name = 'Randomize')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] ADD Randomize bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorModule_Randomize DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorNewsBridge' and column_name = 'DateAccessed')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsBridge] ADD DateAccessed datetime CONSTRAINT DF_{objectQualifier}EasyDNNRotatorNewsBridge_DateAccessed DEFAULT(getdate()) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorNewsSettings' and column_name = 'UseScheduler')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsSettings] ADD UseScheduler bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorModule_UseScheduler DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorNewsSettings' and column_name = 'CleanUpTime')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsSettings] ADD CleanUpTime int CONSTRAINT DF_{objectQualifier}EasyDNNRotatorNewsSettings_CleanUpTime DEFAULT(30) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorNewsSettings' and column_name = 'PermissionSource')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsSettings] ADD PermissionSource tinyint CONSTRAINT DF_{objectQualifier}EasyDNNRotatorNewsSettings_PermissionSource DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorNewsSettings' and column_name = 'PermissionModuleID')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsSettings] ADD PermissionModuleID int NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'SlideForceH')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD SlideForceH bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_SlideForceH DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'SlideForceV')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD SlideForceV bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_SlideForceV DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'MPPosVAsRatio')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD MPPosVAsRatio bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_MPPosVAsRatio DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'MPPosHAsRatio')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD MPPosHAsRatio bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_MPPosHAsRatio DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'ThumbContWAsRatio')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD ThumbContWAsRatio bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_ThumbContWAsRatio DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'ThumbContHAsRatio')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD ThumbContHAsRatio bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_ThumbContHAsRatio DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'ThumbContPosVAsRatio')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD ThumbContPosVAsRatio bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_ThumbContPosVAsRatio DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'ThumbContPosHAsRatio')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD ThumbContPosHAsRatio bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_ThumbContPosHAsRatio DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'ItemInfWAsRatio')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD ItemInfWAsRatio bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_ItemInfWAsRatio DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'ItemInfHAsRatio')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD ItemInfHAsRatio bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_ItemInfHAsRatio DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'ItemInfPosVAsRatio')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD ItemInfPosVAsRatio bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_ItemInfPosVAsRatio DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'ItemInfPosHAsRatio')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD ItemInfPosHAsRatio bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_ItemInfPosHAsRatio DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'ArrPrevPosVAsRatio')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD ArrPrevPosVAsRatio bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_ArrPrevPosVAsRatio DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'ArrPrevPosHAsRatio')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD ArrPrevPosHAsRatio bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_ArrPrevPosHAsRatio DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'ArrnextPosVAsRatio')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD ArrnextPosVAsRatio bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_ArrnextPosVAsRatio DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'ArrnextPosHAsRatio')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD ArrnextPosHAsRatio bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_ArrnextPosHAsRatio DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'APindPosVAsRatio')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD APindPosVAsRatio bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_APindPosVAsRatio DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'APindPosHAsRatio')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD APindPosHAsRatio bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_APindPosHAsRatio DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'APindWAsRatio')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD APindWAsRatio bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_APindWAsRatio DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'APindHAsRatio')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD APindHAsRatio bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_APindHAsRatio DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'ATTPosVAsRatio')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD ATTPosVAsRatio bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_ATTPosVAsRatio DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'ATTPosHAsRatio')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD ATTPosHAsRatio bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_ATTPosHAsRatio DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'PagiPosVAsRatio')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD PagiPosVAsRatio bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_PagiPosVAsRatio DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'PagiPosHAsRatio')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD PagiPosHAsRatio bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_PagiPosHAsRatio DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'SocialPosVAsRatio')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD SocialPosVAsRatio bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_SocialPosVAsRatio DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'SocialPosHAsRatio')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD SocialPosHAsRatio bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_SocialPosHAsRatio DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'DragNavigation')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD DragNavigation bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_DragNavigation DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'TooltipsDisplay')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD TooltipsDisplay bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_TooltipsDisplay DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'TooltipsTitle')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD TooltipsTitle bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_TooltipsTitle DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'TooltipsTitleLenght')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD TooltipsTitleLenght int CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_TooltipsTitleLenght DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'TooltipsDescription')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD TooltipsDescription bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_TooltipsDescription DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'TooltipsDescriptionLenght')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD TooltipsDescriptionLenght int CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_TooltipsDescriptionLenght DEFAULT(0) NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'TooltipsPosition')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD TooltipsPosition nvarchar(30) CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_TooltipsPosition DEFAULT('') NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'TooltipsCssClass')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD TooltipsCssClass nvarchar(30) CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_TooltipsCssClass DEFAULT('') NOT NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'StrechImage')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD StrechImage bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_StrechImage DEFAULT(0) NOT NULL
+END
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorCarouselRSettings]') AND type in (N'U'))
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorCarouselRSettings](
+		[ModuleID] [int] NOT NULL,
+		[RotatorTypeID]  AS ((10)) PERSISTED NOT NULL,
+		[SettingsViewState] [nvarchar](max) NOT NULL,
+		[Orientation] [nvarchar](30) NOT NULL,
+		[SlideDuration] [int] NOT NULL,
+		[SlideStep] [nvarchar](30) NOT NULL,
+		[Infinite] [bit] NOT NULL,
+		[NumOfRows] [int] NOT NULL,
+		[NumOfColumns] [int] NOT NULL,
+		[TitleLenght] [int] NOT NULL,
+		[DescriptionLenght] [int] NOT NULL,
+		[ArrDisplay] [bit] NOT NULL,
+		[ArrAutoHide] [bit] NOT NULL,
+		[ArrPrevPosV] [nvarchar](30) NOT NULL,
+		[ArrPrevPosH] [nvarchar](30) NOT NULL,
+		[ArrPrevPosHOff] [nvarchar](10) NOT NULL,
+		[ArrPrevPosVOff] [nvarchar](10) NOT NULL,
+		[ArrPrevHAsRatio] [bit] NOT NULL,
+		[ArrPrevVAsRatio] [bit] NOT NULL,
+		[ArrNextPosV] [nvarchar](30) NOT NULL,
+		[ArrNextPosH] [nvarchar](30) NOT NULL,
+		[ArrNextPosHOff] [nvarchar](10) NOT NULL,
+		[ArrNextPosVOff] [nvarchar](10) NOT NULL,
+		[ArrNextHAsRatio] [bit] NOT NULL,
+		[ArrNextVAsRatio] [bit] NOT NULL,
+		[ItemTopPadding] [int] NOT NULL,
+		[ItemRightPadding] [int] NOT NULL,
+		[ItemBottomPadding] [int] NOT NULL,
+		[ItemLeftPadding] [int] NOT NULL,
+		[WTopMargin] [int] NOT NULL,
+		[WRightMargin] [int] NOT NULL,
+		[WBottomMargin] [int] NOT NULL,
+		[WLeftMargin] [int] NOT NULL,
+		[PagiDisplay] [bit] NOT NULL,
+		[PagiPosV] [nvarchar](30) NOT NULL,
+		[PagiPosH] [nvarchar](30) NOT NULL,
+		[PagiPosVOff] [nvarchar](10) NOT NULL,
+		[PagiPosHOff] [nvarchar](10) NOT NULL,
+		[PagiVAsRatio] [bit] NOT NULL,
+		[PagiHAsRatio] [bit] NOT NULL,
+		[Easing] [nvarchar](30) NOT NULL,
+		[Interval] [int] NOT NULL,
+		[StripHtmlDesc] [bit] NOT NULL,
+		[IsDraggable] [bit] NOT NULL,
+		[ArrowsType] [nvarchar](30) NOT NULL,
+		[ArrowsStyle] [nvarchar](30) NOT NULL,
+		[RediOnClickTarget] [nvarchar](30) NOT NULL,
+		CONSTRAINT [PK_{objectQualifier}EasyDNNRotatorCarouselRSettings] PRIMARY KEY CLUSTERED ([ModuleID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[FK_{objectQualifier}EasyDNNRotatorCarouselRSettings_EasyDNNRotatorModule]') AND parent_object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorCarouselRSettings]'))
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorCarouselRSettings]  WITH CHECK ADD  CONSTRAINT [FK_{objectQualifier}EasyDNNRotatorCarouselRSettings_EasyDNNRotatorModule] FOREIGN KEY([ModuleID], [RotatorTypeID])
+REFERENCES {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] ([ModuleID], [RotatorTypeID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[FK_{objectQualifier}EasyDNNRotatorCarouselRSettings_EasyDNNRotatorModule]') AND parent_object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorCarouselRSettings]'))
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorCarouselRSettings] CHECK CONSTRAINT [FK_{objectQualifier}EasyDNNRotatorCarouselRSettings_EasyDNNRotatorModule]
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorUpdate]') AND type in (N'U'))
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdate](
+		[UpdateID] [int] IDENTITY(1,1) NOT NULL,
+		[UpdateVersion] [nvarchar](20) NOT NULL,
+		[Finished] [bit] NOT NULL,
+		CONSTRAINT [PK_{objectQualifier}EasyDNNRotatorUpdate] PRIMARY KEY CLUSTERED ([UpdateID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF),
+		CONSTRAINT [IX_{objectQualifier}EasyDNNRotatorUpdate] UNIQUE NONCLUSTERED ([UpdateVersion] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+if not exists (select UpdateVersion from {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdate] WHERE UpdateVersion = '04.05.00')
+BEGIN
+	INSERT {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdate]([UpdateVersion],[Finished]) VALUES(N'04.05.00',0)
+END
+GO

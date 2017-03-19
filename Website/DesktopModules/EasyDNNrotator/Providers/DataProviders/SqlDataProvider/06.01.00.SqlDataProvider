@@ -1,0 +1,7 @@
+﻿IF NOT EXISTS (SELECT * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'StripDescription')
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD StripDescription BIT CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_StripDescription DEFAULT(1) NOT NULL;
+END
+GO
+UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] SET [ScriptVersion] = '1.6.3' WHERE [RotatorTypeID] = 1;
+GO

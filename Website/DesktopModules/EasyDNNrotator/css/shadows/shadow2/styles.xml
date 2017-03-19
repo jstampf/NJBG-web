@@ -1,0 +1,5 @@
+<Styles>
+	<Style Name="Bottom both" Class="" Width="80" Height="42" />
+	<Style Name="Bottom left" Class="bottom_left" Width="40" Height="42" />
+	<Style Name="Bottom right" Class="bottom_right" Width="40" Height="42" />
+</Styles>

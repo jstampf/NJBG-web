@@ -1,0 +1,3021 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblContent.Text" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="lblContent.Help" xml:space="preserve">
+    <value>Enter the Content</value>
+  </data>
+  <data name="valContent.ErrorMessage" xml:space="preserve">
+    <value>&lt;br&gt;Content is required</value>
+  </data>
+  <data name="ModuleHelp.Text" xml:space="preserve">
+    <value>&lt;P&gt;A EasyDNNRotator module</value>
+  </data>
+  <data name="ControlTitle_edit.Text" xml:space="preserve">
+    <value>Edit EasyDNNRotator</value>
+  </data>
+  <data name="btnEditContent.Text" xml:space="preserve">
+    <value>Manage Content</value>
+  </data>
+  <data name="lblSaveRSettingsFail.Text" xml:space="preserve">
+    <value>Saving failed!</value>
+  </data>
+  <data name="lblSaveRSettingsSuccessful.Text" xml:space="preserve">
+    <value>Settings Saved!</value>
+  </data>
+  <data name="ddlCategoryEmpty.Text" xml:space="preserve">
+    <value>None created!</value>
+  </data>
+  <data name="ddlDefault.Text" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="ddlNoListIncategory.Text" xml:space="preserve">
+    <value>No List in Category.</value>
+  </data>
+  <data name="ddlOptionSelectCategory.Text" xml:space="preserve">
+    <value>Select Category</value>
+  </data>
+  <data name="ddlSelectOption.Text" xml:space="preserve">
+    <value>Select...</value>
+  </data>
+  <data name="lblFileNameRequired.Text" xml:space="preserve">
+    <value>Filename Required!</value>
+  </data>
+  <data name="lblXMLCreatedFail.Text" xml:space="preserve">
+    <value>Fail creating XML.</value>
+  </data>
+  <data name="lblXMLCreatedSuccesfuly.Text" xml:space="preserve">
+    <value>XML created successfully.</value>
+  </data>
+  <data name="lblXMLLoadFail.Text" xml:space="preserve">
+    <value>XML Load Fail!</value>
+  </data>
+  <data name="lblXMLLoadSuccesfuly.Text" xml:space="preserve">
+    <value>XML Loaded successfully.</value>
+  </data>
+  <data name="ddlEmptyDirectory.Text" xml:space="preserve">
+    <value>Empty Directory!</value>
+  </data>
+  <data name="lblSettingsLoadFailed.Text" xml:space="preserve">
+    <value>Settings load fail.</value>
+  </data>
+  <data name="lblSettingsLoadSuccess.Text" xml:space="preserve">
+    <value>Settings load successful.</value>
+  </data>
+  <data name="lblCRWH.Help" xml:space="preserve">
+    <value>The width/height of the rotator. Nothing in the rotator can be displayed outside of this container.</value>
+  </data>
+  <data name="lblCRWH.Text" xml:space="preserve">
+    <value>Rotator Width / Height:</value>
+  </data>
+  <data name="lblCRMainPictureWH.Text" xml:space="preserve">
+    <value>Item Width / Height:</value>
+  </data>
+  <data name="lblCRMainPictureWH.Help" xml:space="preserve">
+    <value>Width and height of main picture AND Container in pixels.</value>
+  </data>
+  <data name="lblMPPosV.Text" xml:space="preserve">
+    <value>Vertical Position and Offset:</value>
+  </data>
+  <data name="lblMPPosV.Help" xml:space="preserve">
+    <value>Vertical Position. If Top then offset is calculated from top, else Bottom.</value>
+  </data>
+  <data name="lblMPPosH.Text" xml:space="preserve">
+    <value>Horizontal Position and Offset:</value>
+  </data>
+  <data name="lblMPPosH.Help" xml:space="preserve">
+    <value>Horizontal Position. If Left then offset is calculated from left, else Right.</value>
+  </data>
+  <data name="lblKeyBrowse.Text" xml:space="preserve">
+    <value>Keyboard Navigation:</value>
+  </data>
+  <data name="lblKeyBrowse.Help" xml:space="preserve">
+    <value>Keyboard Navigation</value>
+  </data>
+  <data name="lblRediOnClick.Text" xml:space="preserve">
+    <value>Redirect on click:</value>
+  </data>
+  <data name="lblRediOnClick.Help" xml:space="preserve">
+    <value>Redirect on click</value>
+  </data>
+  <data name="lblRediOnClickTarget.Text" xml:space="preserve">
+    <value>Redirect On Click Target:</value>
+  </data>
+  <data name="lblRediOnClickTarget.Help" xml:space="preserve">
+    <value>Redirect On Click Target</value>
+  </data>
+  <data name="lblThumbsDisplay.Text" xml:space="preserve">
+    <value>Display Thumbs:</value>
+  </data>
+  <data name="lblThumbsDisplay.Help" xml:space="preserve">
+    <value>Display Thumbs</value>
+  </data>
+  <data name="lblThumbPagiDirection.Text" xml:space="preserve">
+    <value>Thumbnails Orientation:</value>
+  </data>
+  <data name="lblThumbPagiDirection.Help" xml:space="preserve">
+    <value>Thumbnails Orientation</value>
+  </data>
+  <data name="lblCRThumbWH.Text" xml:space="preserve">
+    <value>Thumb Picture Width / Height:</value>
+  </data>
+  <data name="lblCRThumbWH.Help" xml:space="preserve">
+    <value>Width, height of the thumbs in pixels</value>
+  </data>
+  <data name="lblThumbContWH.Text" xml:space="preserve">
+    <value>Container Width / Height:</value>
+  </data>
+  <data name="lblThumbContWH.Help" xml:space="preserve">
+    <value>The size of the container in witch all thumbnails are positioned</value>
+  </data>
+  <data name="lblThumbContPosV.Text" xml:space="preserve">
+    <value>Container Vertical position and Offset:</value>
+  </data>
+  <data name="lblThumbContPosV.Help" xml:space="preserve">
+    <value>Container Vertical Position. If Top then offset is calculated from top, else Bottom</value>
+  </data>
+  <data name="lblThumiContPosH.Text" xml:space="preserve">
+    <value>Container Horizontal position and Offset:</value>
+  </data>
+  <data name="lblThumiContPosH.Help" xml:space="preserve">
+    <value>Container Horizontal Position. If Left then offset is calculated from left, else Right</value>
+  </data>
+  <data name="lblThumbsAutoHide.Text" xml:space="preserve">
+    <value>Auto Hide:</value>
+  </data>
+  <data name="lblThumbsAutoHide.Help" xml:space="preserve">
+    <value>Auto Hide thumbnails</value>
+  </data>
+  <data name="lblThumbsHideSpeed.Text" xml:space="preserve">
+    <value>Hide Speed:</value>
+  </data>
+  <data name="lblThumbsHideSpeed.Help" xml:space="preserve">
+    <value>Thumbs Hide Speed</value>
+  </data>
+  <data name="lblThumbCaptions.Text" xml:space="preserve">
+    <value>Display Caption:</value>
+  </data>
+  <data name="lblThumbCaptions.Help" xml:space="preserve">
+    <value>Display each item's title over it's thumbnail if it has one</value>
+  </data>
+  <data name="lblThumbTitleLenght.Text" xml:space="preserve">
+    <value>Caption title length:</value>
+  </data>
+  <data name="lblThumbTitleLenght.Help" xml:space="preserve">
+    <value>Number of characters in title string to display in thumb caption</value>
+  </data>
+  <data name="lblThumbPagiDuration.Text" xml:space="preserve">
+    <value>Page switching duration:</value>
+  </data>
+  <data name="lblThumbPagiDuration.Help" xml:space="preserve">
+    <value>The time (in milliseconds) that the thumbnails page switch effect will take</value>
+  </data>
+  <data name="lblThumbPagiEasing.Text" xml:space="preserve">
+    <value>Page switching easing:</value>
+  </data>
+  <data name="lblThumbPagiEasing.Help" xml:space="preserve">
+    <value>The easing function that the thumbnails page switch effect will use. The default is swing.</value>
+  </data>
+  <data name="lblItemInfDisplay.Text" xml:space="preserve">
+    <value>Display the title and description:</value>
+  </data>
+  <data name="lblItemInfDisplay.Help" xml:space="preserve">
+    <value>Display the title and description</value>
+  </data>
+  <data name="lblItemInfWH.Text" xml:space="preserve">
+    <value>Width / Height:</value>
+  </data>
+  <data name="lblItemInfWH.Help" xml:space="preserve">
+    <value> The title and description container width / height in pixels</value>
+  </data>
+  <data name="lblItemInfPosV.Text" xml:space="preserve">
+    <value>Vertical position and Offset:</value>
+  </data>
+  <data name="lblItemInfPosV.Help" xml:space="preserve">
+    <value>Conteiner Vertical Position. If Top then offset is calculated from top, else Bottom</value>
+  </data>
+  <data name="lblItemInfPosH.Text" xml:space="preserve">
+    <value>Horizontal position and Offset:</value>
+  </data>
+  <data name="lblItemInfPosH.Help" xml:space="preserve">
+    <value>Conteiner Horizontal Position. If Left then offset is calculated from left, else Right</value>
+  </data>
+  <data name="lblItemInfTitleLenght.Text" xml:space="preserve">
+    <value>Title length:</value>
+  </data>
+  <data name="lblItemInfTitleLenght.Help" xml:space="preserve">
+    <value>Number of characters in title string to display in Item Container</value>
+  </data>
+  <data name="lblItemInfDescriptionLenght.Text" xml:space="preserve">
+    <value>Description length:</value>
+  </data>
+  <data name="lblItemInfDescriptionLenght.Help" xml:space="preserve">
+    <value>Number of characters in description string to display in Item Container. Depends on html css tags in string</value>
+  </data>
+  <data name="lblArrDisplay.Text" xml:space="preserve">
+    <value>Display Arrows:</value>
+  </data>
+  <data name="lblArrDisplay.Help" xml:space="preserve">
+    <value>Display Arrows</value>
+  </data>
+  <data name="lblArrAutoHide.Text" xml:space="preserve">
+    <value>Auto Hide:</value>
+  </data>
+  <data name="lblArrAutoHide.Help" xml:space="preserve">
+    <value>Auto hide arrows</value>
+  </data>
+  <data name="lblArrHideSpeed.Text" xml:space="preserve">
+    <value>Auto Hide Speed:</value>
+  </data>
+  <data name="lblArrHideSpeed.Help" xml:space="preserve">
+    <value>Auto Hide Speed</value>
+  </data>
+  <data name="lblArrPrevPosV.Text" xml:space="preserve">
+    <value>Previous Arrow Vertical position and Offset:</value>
+  </data>
+  <data name="lblArrPrevPosV.Help" xml:space="preserve">
+    <value>Arrow Vertical Position. If Top then offset is calculated from top, else Bottom.</value>
+  </data>
+  <data name="lblArrPrevPosH.Text" xml:space="preserve">
+    <value>Previous Arrow Horizontal position and Offset:</value>
+  </data>
+  <data name="lblArrPrevPosH.Help" xml:space="preserve">
+    <value>Arrow Horizontal Position. If Left then offset is calculated from left, else Right.</value>
+  </data>
+  <data name="lblArrNextPosV.Text" xml:space="preserve">
+    <value>Next Arrow Vertical position and Offset:</value>
+  </data>
+  <data name="lblArrNextPosV.Help" xml:space="preserve">
+    <value>Arrow Vertical Position. If Top then offset is calculated from top, else Bottom</value>
+  </data>
+  <data name="lblArrNextPosH.Text" xml:space="preserve">
+    <value>Next Arrow Horizontal position and Offset:</value>
+  </data>
+  <data name="lblArrNextPosH.Help" xml:space="preserve">
+    <value>Arrow Horizontal Position. If Left then offset is calculated from left, else Right</value>
+  </data>
+  <data name="lblCRAPEnabled.Text" xml:space="preserve">
+    <value>Autoplay:</value>
+  </data>
+  <data name="lblCRAPEnabled.Help" xml:space="preserve">
+    <value>Automaticaly start rotating items</value>
+  </data>
+  <data name="lblCRAPInterval.Text" xml:space="preserve">
+    <value>Interval:</value>
+  </data>
+  <data name="lblCRAPInterval.Help" xml:space="preserve">
+    <value>Autoplay interval</value>
+  </data>
+  <data name="lblAPPauseOnHover.Text" xml:space="preserve">
+    <value>Pause On Hover:</value>
+  </data>
+  <data name="lblAPPauseOnHover.Help" xml:space="preserve">
+    <value>Pause On Hover</value>
+  </data>
+  <data name="lblAPIndiDisplay.Text" xml:space="preserve">
+    <value>Display Indicator:</value>
+  </data>
+  <data name="lblAPIndiDisplay.Help" xml:space="preserve">
+    <value>Display Indicator</value>
+  </data>
+  <data name="lblAPIndPosV.Text" xml:space="preserve">
+    <value>Indicator Vertical Position:</value>
+  </data>
+  <data name="lblAPIndPosV.Help" xml:space="preserve">
+    <value>Indicator Vertical Position. If Top then offset is calculated from top, else Bottom</value>
+  </data>
+  <data name="lblAPIndPosH.Text" xml:space="preserve">
+    <value>Indicator Horizontal Position and Offset:</value>
+  </data>
+  <data name="lblAPIndPosH.Help" xml:space="preserve">
+    <value>Indicator Horizontal Position. If Left then offset is calculated from left, else Right</value>
+  </data>
+  <data name="lblAPIndOrientation.Text" xml:space="preserve">
+    <value>Indicator Orientation:</value>
+  </data>
+  <data name="lblAPIndOrientation.Help" xml:space="preserve">
+    <value>Indicator Orientation</value>
+  </data>
+  <data name="lblAPIndFlipDriect.Text" xml:space="preserve">
+    <value>Flip Direction:</value>
+  </data>
+  <data name="lblAPIndFlipDriect.Help" xml:space="preserve">
+    <value>If the direction is flipped, the indicator will "fill up" from the other side</value>
+  </data>
+  <data name="lblAPIndWH.Text" xml:space="preserve">
+    <value>Indicator Width / Height:</value>
+  </data>
+  <data name="lblAPIndWH.Help" xml:space="preserve">
+    <value>Indicator Width / Height</value>
+  </data>
+  <data name="lblAPTDisplay.Text" xml:space="preserve">
+    <value>Display play/stop button:</value>
+  </data>
+  <data name="lblAPTDisplay.Help" xml:space="preserve">
+    <value>Display play/stop button</value>
+  </data>
+  <data name="lblAPTAutoHide.Text" xml:space="preserve">
+    <value>Auto Hide</value>
+  </data>
+  <data name="lblAPTAutoHide.Help" xml:space="preserve">
+    <value>Auto hide play/stop button</value>
+  </data>
+  <data name="lblAPTHideSpeed.Text" xml:space="preserve">
+    <value>Auto Hide Speed:</value>
+  </data>
+  <data name="lblAPTHideSpeed.Help" xml:space="preserve">
+    <value>Auto Hide Speed</value>
+  </data>
+  <data name="lblAPTPosV.Text" xml:space="preserve">
+    <value>Vertical position and Offset:</value>
+  </data>
+  <data name="lblAPTPosV.Help" xml:space="preserve">
+    <value>Conteiner Vertical Position. If Top then offset is calculated from top, else Bottom</value>
+  </data>
+  <data name="lblAPTPosH.Text" xml:space="preserve">
+    <value>Horizontal position and Offset:</value>
+  </data>
+  <data name="lblAPTPosH.Help" xml:space="preserve">
+    <value>Conteiner Horizontal Position. If Left then offset is calculated from left, else Right</value>
+  </data>
+  <data name="lblPagiDisplay.Text" xml:space="preserve">
+    <value>Display Pagination:</value>
+  </data>
+  <data name="lblPagiDisplay.Help" xml:space="preserve">
+    <value>Display Pagination</value>
+  </data>
+  <data name="lblPagiPageAtOnce.Text" xml:space="preserve">
+    <value>Number of pages at once:</value>
+  </data>
+  <data name="lblPagiPageAtOnce.Help" xml:space="preserve">
+    <value>The maximum number of pages that will be visible</value>
+  </data>
+  <data name="lblPagiDirection.Text" xml:space="preserve">
+    <value>Direction:</value>
+  </data>
+  <data name="lblPagiDirection.Help" xml:space="preserve">
+    <value>Pagination Direction</value>
+  </data>
+  <data name="lblPagiPosV.Text" xml:space="preserve">
+    <value>Pagination Vertical Position:</value>
+  </data>
+  <data name="lblPagiPosV.Help" xml:space="preserve">
+    <value>Pagination Vertical Position. If Top then offset is calculated from top, else Bottom</value>
+  </data>
+  <data name="lblPagiPosH.Text" xml:space="preserve">
+    <value>Horizontal Position and Offset:</value>
+  </data>
+  <data name="lblPagiPosH.Help" xml:space="preserve">
+    <value>Pagination Horizontal Position. If Left then offset is calculated from left, else Right</value>
+  </data>
+  <data name="lblSocialDisplay.Text" xml:space="preserve">
+    <value>Display Social Buttons:</value>
+  </data>
+  <data name="lblSocialDisplay.Help" xml:space="preserve">
+    <value>Display Social Buttons</value>
+  </data>
+  <data name="lblSocialDirection.Text" xml:space="preserve">
+    <value>Social Buttons Orientation:</value>
+  </data>
+  <data name="lblSocialDirection.Help" xml:space="preserve">
+    <value>Social Buttons Orientation</value>
+  </data>
+  <data name="lblSocialPosV.Text" xml:space="preserve">
+    <value>Vertical Position and Offset:</value>
+  </data>
+  <data name="lblSocialPosV.Help" xml:space="preserve">
+    <value>Social Buttons Vertical Position. If Top then offset is calculated from top, else Bottom</value>
+  </data>
+  <data name="lblSocialPosH.Text" xml:space="preserve">
+    <value>Horizontal Position and Offset:</value>
+  </data>
+  <data name="lblSocialPosH.Help" xml:space="preserve">
+    <value>Social Buttons Horizontal Position. If Left then offset is calculated from left, else Right</value>
+  </data>
+  <data name="lblSocialLoadAfterEffect.Text" xml:space="preserve">
+    <value>Social Buttons Load After Effect:</value>
+  </data>
+  <data name="lblSocialLoadAfterEffect.Help" xml:space="preserve">
+    <value>If enabled, the social buttons for the current item will load only after the it's transition effect has completed</value>
+  </data>
+  <data name="lblSocialButtFace.Text" xml:space="preserve">
+    <value>Show Facebook Button:</value>
+  </data>
+  <data name="lblSocialButtFace.Help" xml:space="preserve">
+    <value>Show Facebook Button</value>
+  </data>
+  <data name="lblSocialButtGoogle.Text" xml:space="preserve">
+    <value>Show Google Button:</value>
+  </data>
+  <data name="lblSocialButtGoogle.Help" xml:space="preserve">
+    <value>Show Google Button</value>
+  </data>
+  <data name="lblSocialButtTwitter.Text" xml:space="preserve">
+    <value>Show Twitter Button:</value>
+  </data>
+  <data name="lblSocialButtTwitter.Help" xml:space="preserve">
+    <value>Show Twitter Button</value>
+  </data>
+  <data name="ddlNoShadow.Text" xml:space="preserve">
+    <value>No shadow</value>
+  </data>
+  <data name="lblCategoryGalleryEmpty.Text" xml:space="preserve">
+    <value>No gallery in category, go to manage content!</value>
+  </data>
+  <data name="lblCategoryListEmpty.Text" xml:space="preserve">
+    <value>No list in category, go to manage content!</value>
+  </data>
+  <data name="lblSelectCategoryGallery.Text" xml:space="preserve">
+    <value>Select category and gallery then rotator settings will show up!</value>
+  </data>
+  <data name="lblSelectCategoryList.Text" xml:space="preserve">
+    <value>Select category and list then rotator settings will show up!</value>
+  </data>
+  <data name="lblContentSourceError.Text" xml:space="preserve">
+    <value>Content source select error.</value>
+  </data>
+  <data name="btnTopclose.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="lblGallerySettingsTitle.Text" xml:space="preserve">
+    <value>&lt;b&gt;Rotator&lt;/b&gt; Settings</value>
+  </data>
+  <data name="lblGallerySettingsTitleAdjust.Text" xml:space="preserve">
+    <value>Adjust your Rotator for perfect view</value>
+  </data>
+  <data name="lblInfoIntegrateOptions.Text" xml:space="preserve">
+    <value>News module integration options:</value>
+  </data>
+  <data name="lblNewsCleanUpTime.HelpText" xml:space="preserve">
+    <value>Here you can set up the number of days prior to the clean-up of images.</value>
+  </data>
+  <data name="lblNewsCleanUpTime.Text" xml:space="preserve">
+    <value>Clean up images not used after:</value>
+  </data>
+  <data name="lblNewsCleanUpTimeDays.Text" xml:space="preserve">
+    <value>day(s).</value>
+  </data>
+  <data name="lblPermissionSource.HelpText" xml:space="preserve">
+    <value>Here you can select which permissions will be used by the rotator module to display articles to the users. In the rotator there are no permissions that could limit users' ability to see articles, but the rotator module can load permissions from the news module, thus displaying articles in accordance with permissions from the news module to the users. Available choices are None, Portal and Module. If None is selected, the rotator module will use no permissions at all. If Portal is selected, the rotator module will use permissions set up to be valid across the whole DNN portal for EasyDNNnews module. If Module is selected, you can choose between some of the EasyDNNnews module's instances on the portal whose permissions will be used.</value>
+  </data>
+  <data name="lblPermissionSource.Text" xml:space="preserve">
+    <value>Select permission source:</value>
+  </data>
+  <data name="lblPortalSharing.HelpText" xml:space="preserve">
+    <value>Select data source portal.</value>
+  </data>
+  <data name="lblPortalSharing.Text" xml:space="preserve">
+    <value>Portal sharing:</value>
+  </data>
+  <data name="lblSelectContentSource.Text" xml:space="preserve">
+    <value>Select content source:</value>
+  </data>
+  <data name="lblSelectViewTypeInfo.Text" xml:space="preserve">
+    <value>Select Rotator type:</value>
+  </data>
+  <data name="lblUseGeneralSettingsAll.Text" xml:space="preserve">
+    <value>Please contact your administrator to activate the module.</value>
+  </data>
+  <data name="lblUseScheduler.HelpText" xml:space="preserve">
+    <value>If this option is selected, the scheduler will automatically clean up the images and thumbnails not used in the rotator anymore. Images used in the news module will not be subjected to this clean-up.</value>
+  </data>
+  <data name="lblUseScheduler.Text" xml:space="preserve">
+    <value>Enable clean-up for this instance:</value>
+  </data>
+  <data name="liGalleryModule.Text" xml:space="preserve">
+    <value>Gallery module</value>
+  </data>
+  <data name="liList.Text" xml:space="preserve">
+    <value>Lists</value>
+  </data>
+  <data name="liModule.Text" xml:space="preserve">
+    <value>Module</value>
+  </data>
+  <data name="liNewsModule.Text" xml:space="preserve">
+    <value>News module</value>
+  </data>
+  <data name="liNone.Text" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="liPortal.Text" xml:space="preserve">
+    <value>Portal</value>
+  </data>
+  <data name="ClientValidateAuthors.ErrorMessage" xml:space="preserve">
+    <value>Please select at least one author.</value>
+  </data>
+  <data name="cvDinamicTreeView.ErrorMessage" xml:space="preserve">
+    <value>Please select at least one category.</value>
+  </data>
+  <data name="lblFeaturedArticles.HelpText" xml:space="preserve">
+    <value>If this option is selected, the rotator will only display those articles that are marked as Featured articles in the news module.</value>
+  </data>
+  <data name="lblFeaturedArticles.Text" xml:space="preserve">
+    <value>Display Featured articles only:</value>
+  </data>
+  <data name="lblNewsCategoriesSelect.HelpText" xml:space="preserve">
+    <value>Select the categories for the articles to be displayed from. 'Display All Articles' will display articles from all categories. If you unselect 'Display All Articles', you can choose individual categories for the articles to be displayed from.</value>
+  </data>
+  <data name="lblNewsCategoriesSelect.Text" xml:space="preserve">
+    <value>Select categories for articles to be displayed from:</value>
+  </data>
+  <data name="lblOpenInNewsModule.HelpText" xml:space="preserve">
+    <value>If you have multiple instances of the news module on your portal, here you can select that instance of the news module where you wish the article details to be opened.</value>
+  </data>
+  <data name="lblOpenInNewsModule.Text" xml:space="preserve">
+    <value>Select instance of the news module where articles will be opened:</value>
+  </data>
+  <data name="lblShowAllAuthors.HelpText" xml:space="preserve">
+    <value>Select the authors from the news module whose articles you wish to be displayed in the rotator. 'Display All Authors' will display the articles by all authors. If you unselect 'Display All Authors', you can choose individual authors whose articles you wish to be displayed in the rotator.</value>
+  </data>
+  <data name="lblShowAllAuthors.Text" xml:space="preserve">
+    <value>Select authors whose articles will be displayed:</value>
+  </data>
+  <data name="Alternating.Text" xml:space="preserve">
+    <value>Alternating</value>
+  </data>
+  <data name="BacktoSketch.Text" xml:space="preserve">
+    <value>Back to Sketch</value>
+  </data>
+  <data name="btnGaleryContentManagement.Text" xml:space="preserve">
+    <value>Content Management</value>
+  </data>
+  <data name="cbCRTooltips.Text" xml:space="preserve">
+    <value>Enable</value>
+  </data>
+  <data name="cbDisplayAllCategories.Text" xml:space="preserve">
+    <value>Display all categories.</value>
+  </data>
+  <data name="cbMPEffFade.Text" xml:space="preserve">
+    <value>Fade</value>
+  </data>
+  <data name="cbMPEffSlide.Text" xml:space="preserve">
+    <value>Slide</value>
+  </data>
+  <data name="cbShowAllAuthors.Text" xml:space="preserve">
+    <value>Display all authors.</value>
+  </data>
+  <data name="cvPastEventLimit.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="Effects.Text" xml:space="preserve">
+    <value>Effects:</value>
+  </data>
+  <data name="goToContentManagement.Text" xml:space="preserve">
+    <value>Content Management</value>
+  </data>
+  <data name="HideSketch.Text" xml:space="preserve">
+    <value>Hide Sketch</value>
+  </data>
+  <data name="lblChameleonBorder.HelpText" xml:space="preserve">
+    <value>Main container border size and color.</value>
+  </data>
+  <data name="lblChameleonBorder.Text" xml:space="preserve">
+    <value>Border size and color:</value>
+  </data>
+  <data name="lblChameleonDragNavigation.HelpText" xml:space="preserve">
+    <value>This option enables support for touch input devices such as iPhone, iPad... The chameleon can be controlled by mouse dragging or moving.</value>
+  </data>
+  <data name="lblChameleonDragNavigation.Text" xml:space="preserve">
+    <value>Touch &amp; swipe:</value>
+  </data>
+  <data name="lblChameleonStrechImage.HelpText" xml:space="preserve">
+    <value>If an image is smaller than the item panel, it will be stretched out to fit the panel.</value>
+  </data>
+  <data name="lblChameleonStrechImage.Text" xml:space="preserve">
+    <value>Stretch smaller images:</value>
+  </data>
+  <data name="lblCRItemInfo.Text" xml:space="preserve">
+    <value>Title/description panel:</value>
+  </data>
+  <data name="lblCRMainPanel.Text" xml:space="preserve">
+    <value>Main container:</value>
+  </data>
+  <data name="lblCRmainPanelImageAlign.HelpText" xml:space="preserve">
+    <value>Alignes image in main panel like selected value.</value>
+  </data>
+  <data name="lblCRmainPanelImageAlign.Text" xml:space="preserve">
+    <value>Align image in main panel:</value>
+  </data>
+  <data name="lblCropMethod.HelpText" xml:space="preserve">
+    <value>Resizes main image with selected method when generating images.</value>
+  </data>
+  <data name="lblCropMethod.Text" xml:space="preserve">
+    <value>Main image resize:</value>
+  </data>
+  <data name="lblCRThumbs.Text" xml:space="preserve">
+    <value>Thumbnails panel:</value>
+  </data>
+  <data name="lblCRToolTipClasss.Help" xml:space="preserve">
+    <value>Css styles for tooltip.</value>
+  </data>
+  <data name="lblCRToolTipClasss.Text" xml:space="preserve">
+    <value>Style:</value>
+  </data>
+  <data name="lblCRTooltipDescript.Help" xml:space="preserve">
+    <value>Displays description in tooltip.</value>
+  </data>
+  <data name="lblCRTooltipDescript.Text" xml:space="preserve">
+    <value>Display description in tooltip:</value>
+  </data>
+  <data name="lblCRTooltipDescriptLenght.Help" xml:space="preserve">
+    <value>Number of characters in description string to display in tooltip. Depends on html css tags in string.</value>
+  </data>
+  <data name="lblCRTooltipDescriptLenght.Text" xml:space="preserve">
+    <value>Description length:</value>
+  </data>
+  <data name="lblCRToolTipPosition.Help" xml:space="preserve">
+    <value>Position of tooltip box.</value>
+  </data>
+  <data name="lblCRToolTipPosition.Text" xml:space="preserve">
+    <value>Position:</value>
+  </data>
+  <data name="lblCRTooltips.HelpText" xml:space="preserve">
+    <value>Tooltip settings.</value>
+  </data>
+  <data name="lblCRTooltips.Text" xml:space="preserve">
+    <value>Tooltips:</value>
+  </data>
+  <data name="lblCRTooltipTitle.Help" xml:space="preserve">
+    <value>Displays title in tooltip.</value>
+  </data>
+  <data name="lblCRTooltipTitle.Text" xml:space="preserve">
+    <value>Display title in tooltip:</value>
+  </data>
+  <data name="lblCRTooltipTitleLenght.Help" xml:space="preserve">
+    <value>Number of characters in title string to display in Item Container</value>
+  </data>
+  <data name="lblCRTooltipTitleLenght.Text" xml:space="preserve">
+    <value>Title length:</value>
+  </data>
+  <data name="lblGalleryGaleries.Text" xml:space="preserve">
+    <value>Select gallery:</value>
+  </data>
+  <data name="lblHideUnlocalizedItems.HelpText" xml:space="preserve">
+    <value>Articles that do not have content for selected language won't be shown. For example on the sites with three different languages: English (default), German and Italian. Article is localized to Italian language. When selecting German language article won’t be visible because there is no localization. Article will only be shown on Italian and English language which is default. Hint: You can also turn off displaying languages on the default language. For articles that you do not want to show on the default language you need to go to Edit article &gt; Content localization and Turn on option “Do not show articles on the default language”.</value>
+  </data>
+  <data name="lblHideUnlocalizedItems.Text" xml:space="preserve">
+    <value>Do not show articles if they do not have content for selected language:</value>
+  </data>
+  <data name="lblHtmTemplate.HelpText" xml:space="preserve">
+    <value>Template is located at ../Controls/ControlName/static/themes/templates/ You can edit, modify, create new templates and combine them with tokens.</value>
+  </data>
+  <data name="lblHtmTemplate.Text" xml:space="preserve">
+    <value>Select custom htm template:</value>
+  </data>
+  <data name="lblIsSocialInstance.HelpText" xml:space="preserve">
+    <value>Displays user's and group's articles on the Activity feed. The articles are filtered by the UserID or GroupID querystring. If this option is enabled and the querystring UserID or GroupID is missing, then the articles won't show up.</value>
+  </data>
+  <data name="lblIsSocialInstance.Text" xml:space="preserve">
+    <value>Community mode:</value>
+  </data>
+  <data name="lblJpegImageQuality.HelpText" xml:space="preserve">
+    <value>Jpeg compression quality. (1 - 100)</value>
+  </data>
+  <data name="lblJpegImageQuality.Text" xml:space="preserve">
+    <value>Jpeg compression quality:</value>
+  </data>
+  <data name="lbljsFallback.HelpText" xml:space="preserve">
+    <value>Shows first image of selected list.</value>
+  </data>
+  <data name="lbljsFallback.Text" xml:space="preserve">
+    <value>If JavaScript is disabled, use fallback:</value>
+  </data>
+  <data name="lblLoadMainSettings.Text" xml:space="preserve">
+    <value>OR select from list:</value>
+  </data>
+  <data name="lblLoadSettingsHead.Text" xml:space="preserve">
+    <value>Load Settings</value>
+  </data>
+  <data name="lblMainPanelTitle.Text" xml:space="preserve">
+    <value>Item panel:</value>
+  </data>
+  <data name="lblMPTransDuration.HelpText" xml:space="preserve">
+    <value>Main Panel Transition Duration.</value>
+  </data>
+  <data name="lblMPTransDuration.Text" xml:space="preserve">
+    <value>Transition Duration:</value>
+  </data>
+  <data name="lblNewsDescriptionSource.HelpText" xml:space="preserve">
+    <value>Choose between two options. The first one, 'Use article summary as description' takes the article's summary and uses it as description in the rotator. The other option, 'Use article content as description' takes the article's content and uses it as description in the rotator.</value>
+  </data>
+  <data name="lblNewsDescriptionSource.Text" xml:space="preserve">
+    <value>Select description source:</value>
+  </data>
+  <data name="lblNewsEvents.HelpText" xml:space="preserve">
+    <value>If this option is selected, the rotator will only display events from the news module. Other articles, which are not events, will not be displayed.</value>
+  </data>
+  <data name="lblNewsEvents.Text" xml:space="preserve">
+    <value>Display Events only:</value>
+  </data>
+  <data name="lblNewsSelectMethod.HelKey" xml:space="preserve">
+    <value>Choose between two options. The first one, 'Display all articles from selected categories' will display all articles from selected categories, disregarding how many of them there are. The other option, 'Display a set number of articles from each category' limits the overall number of articles to be loaded from each selected category.</value>
+  </data>
+  <data name="lblNewsSelectMethod.Text" xml:space="preserve">
+    <value>Limiting number of articles:</value>
+  </data>
+  <data name="lblnsOnlyWithImages.HelpText" xml:space="preserve">
+    <value>If this option is selected, the rotator will only display those articles from the news module that contain a main article image. The main article image can be added from add/edit form of the news module.</value>
+  </data>
+  <data name="lblnsOnlyWithImages.Text" xml:space="preserve">
+    <value>Display articles with main article image only:</value>
+  </data>
+  <data name="lblNumOfNewsPerCat.Text" xml:space="preserve">
+    <value>Maximum number of articles per category:</value>
+  </data>
+  <data name="lblNumToRotate.HelpText" xml:space="preserve">
+    <value>Number of items that will be rotated. (0 for all)</value>
+  </data>
+  <data name="lblNumToRotate.Text" xml:space="preserve">
+    <value>Number of items that will be rotated:</value>
+  </data>
+  <data name="lblOrderArticlesBy.HelpText" xml:space="preserve">
+    <value>Choose the manner of listing the articles loaded from the news module.</value>
+  </data>
+  <data name="lblOrderArticlesBy.Text" xml:space="preserve">
+    <value>Order articles by:</value>
+  </data>
+  <data name="lblRandomizeContent.HelpText" xml:space="preserve">
+    <value>Selected content is randomized.</value>
+  </data>
+  <data name="lblRandomizeContent.Text" xml:space="preserve">
+    <value>Randomize content:</value>
+  </data>
+  <data name="lblRotatorInfoTheme.Text" xml:space="preserve">
+    <value>Theme select:</value>
+  </data>
+  <data name="lblRotatorLoadSettings.HelpText" xml:space="preserve">
+    <value>Settings from other Module instance(DB), and XML files(ModulePath/PreSettings/).</value>
+  </data>
+  <data name="lblRotatorTemplate.HelpText" xml:space="preserve">
+    <value>Select original or custom template control</value>
+  </data>
+  <data name="lblRotatorTemplate.Text" xml:space="preserve">
+    <value>Select custom template:</value>
+  </data>
+  <data name="lblRotatorTheme.HelpText" xml:space="preserve">
+    <value>Select theme and style for rotator.</value>
+  </data>
+  <data name="lblRotatorTheme.Text" xml:space="preserve">
+    <value>Select theme and style:</value>
+  </data>
+  <data name="lblschemaPre1.Text" xml:space="preserve">
+    <value>Hide Sketch</value>
+  </data>
+  <data name="lblSelectCategoryddl.Text" xml:space="preserve">
+    <value>Select category:</value>
+  </data>
+  <data name="lblSelectGalleryCategory.Text" xml:space="preserve">
+    <value>Select category:</value>
+  </data>
+  <data name="lblSelectGalleryforRotation.Text" xml:space="preserve">
+    <value>Select Gallery for Rotation:</value>
+  </data>
+  <data name="lblSelectList.Text" xml:space="preserve">
+    <value>Select List for Rotation:</value>
+  </data>
+  <data name="lblSelectListddl.Text" xml:space="preserve">
+    <value>Select list:</value>
+  </data>
+  <data name="lblShadowSelect.HelpText" xml:space="preserve">
+    <value>Select main container shadow.</value>
+  </data>
+  <data name="lblShadowSelect.Text" xml:space="preserve">
+    <value>Select main container shadow:</value>
+  </data>
+  <data name="lblShadowStyle.HelpText" xml:space="preserve">
+    <value>Select main container shadow style.</value>
+  </data>
+  <data name="lblShadowStyle.Text" xml:space="preserve">
+    <value>Select shadow style:</value>
+  </data>
+  <data name="lblthemeArrows.HelpText" xml:space="preserve">
+    <value>Select arrows type and style.</value>
+  </data>
+  <data name="lblthemeArrows.Text" xml:space="preserve">
+    <value>Select arrows type and style:</value>
+  </data>
+  <data name="liAscending.Text" xml:space="preserve">
+    <value>Ascending</value>
+  </data>
+  <data name="liBlank.Text" xml:space="preserve">
+    <value>Blank</value>
+  </data>
+  <data name="liblue.Text" xml:space="preserve">
+    <value>blue</value>
+  </data>
+  <data name="liBottom.Text" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="liBottom/Right.Text" xml:space="preserve">
+    <value>Bottom/Right</value>
+  </data>
+  <data name="liCenter-center.Text" xml:space="preserve">
+    <value>Center-center</value>
+  </data>
+  <data name="liCenter.Text" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="liDateadded.Text" xml:space="preserve">
+    <value>Date added</value>
+  </data>
+  <data name="liDescending.Text" xml:space="preserve">
+    <value>Descending</value>
+  </data>
+  <data name="liDisplayallarticles.Text" xml:space="preserve">
+    <value>Display all articles from selected categories.</value>
+  </data>
+  <data name="liDisplaymaximumnumber.Text" xml:space="preserve">
+    <value>Display maximum number of articles per category.</value>
+  </data>
+  <data name="liDown.Text" xml:space="preserve">
+    <value>Down</value>
+  </data>
+  <data name="liExpiredate.Text" xml:space="preserve">
+    <value>Expire date</value>
+  </data>
+  <data name="liForcehorizontalsliding.Text" xml:space="preserve">
+    <value>Force horizontal sliding</value>
+  </data>
+  <data name="liForceverticalsliding.Text" xml:space="preserve">
+    <value>Force vertical sliding</value>
+  </data>
+  <data name="ligreen.Text" xml:space="preserve">
+    <value>green</value>
+  </data>
+  <data name="ligrey.Text" xml:space="preserve">
+    <value>grey</value>
+  </data>
+  <data name="liHorizontal.Text" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="liLastmodified.Text" xml:space="preserve">
+    <value>Last modified</value>
+  </data>
+  <data name="liLeft.Text" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="liLimitDays.Text" xml:space="preserve">
+    <value>Limit to number of days</value>
+  </data>
+  <data name="liNewscontentasdescription.Text" xml:space="preserve">
+    <value>News content as description</value>
+  </data>
+  <data name="liNewssummaryasdescription.Text" xml:space="preserve">
+    <value>News summary as description</value>
+  </data>
+  <data name="liNumberofcomments.Text" xml:space="preserve">
+    <value>Number of comments</value>
+  </data>
+  <data name="liNumberofviews.Text" xml:space="preserve">
+    <value>Number of views</value>
+  </data>
+  <data name="liOuter.Text" xml:space="preserve">
+    <value>Outer</value>
+  </data>
+  <data name="liParent.Text" xml:space="preserve">
+    <value>Parent</value>
+  </data>
+  <data name="liProportionallyresize.Text" xml:space="preserve">
+    <value>Proportionally resize</value>
+  </data>
+  <data name="liPublishdate.Text" xml:space="preserve">
+    <value>Publish date</value>
+  </data>
+  <data name="liRandomize.Text" xml:space="preserve">
+    <value>Randomize</value>
+  </data>
+  <data name="liRating.Text" xml:space="preserve">
+    <value>Rating</value>
+  </data>
+  <data name="lired.Text" xml:space="preserve">
+    <value>red</value>
+  </data>
+  <data name="liResizeandcrop.Text" xml:space="preserve">
+    <value>Resize and crop</value>
+  </data>
+  <data name="liRight.Text" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="liSelect.Text" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="liSelectdirections.Text" xml:space="preserve">
+    <value>Select directions</value>
+  </data>
+  <data name="liSelf.Text" xml:space="preserve">
+    <value>Self</value>
+  </data>
+  <data name="liShowAll.Text" xml:space="preserve">
+    <value>Show all</value>
+  </data>
+  <data name="liSwing.Text" xml:space="preserve">
+    <value>Swing</value>
+  </data>
+  <data name="liTitle.Text" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="liTop-left.Text" xml:space="preserve">
+    <value>Top-left</value>
+  </data>
+  <data name="liTop.Text" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="liTop/Left.Text" xml:space="preserve">
+    <value>Top/Left</value>
+  </data>
+  <data name="liTopTarget.Text" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="liUp.Text" xml:space="preserve">
+    <value>Up</value>
+  </data>
+  <data name="liVertical.Text" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="LoadText.Text" xml:space="preserve">
+    <value>Load</value>
+  </data>
+  <data name="LocalizationText.Text" xml:space="preserve">
+    <value>Localization:</value>
+  </data>
+  <data name="Numberofstripes.Text" xml:space="preserve">
+    <value>Number of stripes:</value>
+  </data>
+  <data name="Orientation.Text" xml:space="preserve">
+    <value>Orientation:</value>
+  </data>
+  <data name="revRotatorBorderColor.ErrorMessage" xml:space="preserve">
+    <value>Enter color value</value>
+  </data>
+  <data name="rfvCategorySelect.ErrorMessage" xml:space="preserve">
+    <value>Please select Category.</value>
+  </data>
+  <data name="rfvCRMainPictureH.ErrorMessage" xml:space="preserve">
+    <value>Height Value Required!</value>
+  </data>
+  <data name="rfvCRMainPictureW.ErrorMessage" xml:space="preserve">
+    <value>Width Value Required!</value>
+  </data>
+  <data name="rfvCRSliderH.ErrorMessage" xml:space="preserve">
+    <value>Height Value Required!</value>
+  </data>
+  <data name="rfvCRSliderW.ErrorMessage" xml:space="preserve">
+    <value>Width Value Required!</value>
+  </data>
+  <data name="rfvCRThumbH.ErrorMessage" xml:space="preserve">
+    <value>Height Value Required!</value>
+  </data>
+  <data name="rfvCRThumbW.ErrorMessage" xml:space="preserve">
+    <value>Width Value Required!</value>
+  </data>
+  <data name="rfvCRTooltipDescriptLenght.ErrorMessage" xml:space="preserve">
+    <value>Value Required!</value>
+  </data>
+  <data name="rfvCRTooltipTitleLenght.ErrorMessage" xml:space="preserve">
+    <value>Value Required!</value>
+  </data>
+  <data name="rfvItemInfHeight.ErrorMessage" xml:space="preserve">
+    <value>Value Required!</value>
+  </data>
+  <data name="rfvItemInfWidth.ErrorMessage" xml:space="preserve">
+    <value>Value Required!</value>
+  </data>
+  <data name="rfvListSelect.ErrorMessage" xml:space="preserve">
+    <value>Please select List.</value>
+  </data>
+  <data name="rfvMPEffStripesNumOf.ErrorMessage" xml:space="preserve">
+    <value>Value Required!</value>
+  </data>
+  <data name="rfvMPPosHOff.ErrorMessage" xml:space="preserve">
+    <value>Value Required!</value>
+  </data>
+  <data name="rfvMPPosVOff.ErrorMessage" xml:space="preserve">
+    <value>Value Required!</value>
+  </data>
+  <data name="rfvMPTransDuration.ErrorMessage" xml:space="preserve">
+    <value>Value Required!</value>
+  </data>
+  <data name="rfvNumOfNewsPerCat.ErrorMessage" xml:space="preserve">
+    <value>Required Field!</value>
+  </data>
+  <data name="rfvNumToRotate.ErrorMessage" xml:space="preserve">
+    <value>Value Required!</value>
+  </data>
+  <data name="rfvPastEventLimit.ErrorMessage" xml:space="preserve">
+    <value>This filed is required.</value>
+  </data>
+  <data name="rfvRotatorBorderColor.ErrorMessage" xml:space="preserve">
+    <value>Value Required!</value>
+  </data>
+  <data name="rfvRotatorBorderSize.ErrorMessage" xml:space="preserve">
+    <value>Value Required!</value>
+  </data>
+  <data name="rfvtbxJpegQuality.ErrorMessage" xml:space="preserve">
+    <value>Value Required!</value>
+  </data>
+  <data name="rfvThumbContH.ErrorMessage" xml:space="preserve">
+    <value>Value Required!</value>
+  </data>
+  <data name="rfvThumbContPosHOff.ErrorMessage" xml:space="preserve">
+    <value>Value Required!</value>
+  </data>
+  <data name="rfvThumbContPosVOff.ErrorMessage" xml:space="preserve">
+    <value>Value Required!</value>
+  </data>
+  <data name="rfvThumbContW.ErrorMessage" xml:space="preserve">
+    <value>Value Required!</value>
+  </data>
+  <data name="rfvThumbPagiDuration.ErrorMessage" xml:space="preserve">
+    <value>Value Required!</value>
+  </data>
+  <data name="rfvThumbsHideSpeed.ErrorMessage" xml:space="preserve">
+    <value>Value Required!</value>
+  </data>
+  <data name="rfvThumbTitleLenght.ErrorMessage" xml:space="preserve">
+    <value>Value Required!</value>
+  </data>
+  <data name="rvCRMainPictureH.ErrorMessage" xml:space="preserve">
+    <value>(H) between 1 and 1200 px.</value>
+  </data>
+  <data name="rvCRMainPictureW.ErrorMessage" xml:space="preserve">
+    <value>(W) between 1 and 1980 px</value>
+  </data>
+  <data name="rvCRSliderH.ErrorMessage" xml:space="preserve">
+    <value>(H) between 1 and 2000 px.</value>
+  </data>
+  <data name="rvCRSliderW.ErrorMessage" xml:space="preserve">
+    <value>(W) between 1 and 5000 px</value>
+  </data>
+  <data name="rvCRThumbH.ErrorMessage" xml:space="preserve">
+    <value>(H) 10 - 800 px.</value>
+  </data>
+  <data name="rvCRThumbW.ErrorMessage" xml:space="preserve">
+    <value>(W) 10 - 800 px.</value>
+  </data>
+  <data name="rvCRTooltipDescriptLenght.ErrorMessage" xml:space="preserve">
+    <value>0 - 4000</value>
+  </data>
+  <data name="rvCRTooltipTitleLenght.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 500)</value>
+  </data>
+  <data name="rvItemInfHeight.ErrorMessage" xml:space="preserve">
+    <value>Range between   (0 - 1080).</value>
+  </data>
+  <data name="rvItemInfWidth.ErrorMessage" xml:space="preserve">
+    <value>Range between  (0 - 1920).</value>
+  </data>
+  <data name="rvMPEffStripesNumOf.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 1000).</value>
+  </data>
+  <data name="rvMPPosHOff.ErrorMessage" xml:space="preserve">
+    <value>Range between (-1000 - 20000).</value>
+  </data>
+  <data name="rvMPPosVOff.ErrorMessage" xml:space="preserve">
+    <value>Range between (-1000 - 20000).</value>
+  </data>
+  <data name="rvNumOfNewsPerCat.ErrorMessage" xml:space="preserve">
+    <value>Range (1-50)</value>
+  </data>
+  <data name="rvNumToRotate.ErrorMessage" xml:space="preserve">
+    <value>Range between 0 and 200</value>
+  </data>
+  <data name="rvPastEventLimit.ErrorMessage" xml:space="preserve">
+    <value>Range between 0 and 999</value>
+  </data>
+  <data name="rvRotatorBorderSize.ErrorMessage" xml:space="preserve">
+    <value>Range between 0 and 999</value>
+  </data>
+  <data name="rvtbxJpegQuality.ErrorMessage" xml:space="preserve">
+    <value>Range between 1 and 100</value>
+  </data>
+  <data name="rvtbxMPTransDuration.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 20000).</value>
+  </data>
+  <data name="rvThumbContH.ErrorMessage" xml:space="preserve">
+    <value>Positive number (0 - 1080).</value>
+  </data>
+  <data name="rvThumbContPosHOff.ErrorMessage" xml:space="preserve">
+    <value>Range between (-1000 - 20000).</value>
+  </data>
+  <data name="rvThumbContPosVOff.ErrorMessage" xml:space="preserve">
+    <value>Range between (-1000 - 20000).</value>
+  </data>
+  <data name="rvThumbContW.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 1920).</value>
+  </data>
+  <data name="rvThumbPagiDuration.ErrorMessage" xml:space="preserve">
+    <value>Range between  (0 - 20000).</value>
+  </data>
+  <data name="rvThumbsHideSpeed.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 20000).</value>
+  </data>
+  <data name="rvThumbTitleLenght.ErrorMessage" xml:space="preserve">
+    <value>Range between (1 - 500).</value>
+  </data>
+  <data name="ShowSketch.Text" xml:space="preserve">
+    <value>Show Sketch</value>
+  </data>
+  <data name="lblCRArrows.Text" xml:space="preserve">
+    <value>Navigation arrows:</value>
+  </data>
+  <data name="lblCRAutoplay.Text" xml:space="preserve">
+    <value>Autoplay:</value>
+  </data>
+  <data name="lblCRAutoplayToggle.Text" xml:space="preserve">
+    <value>Play/stop button:</value>
+  </data>
+  <data name="lblcrResizeToContent.Help" xml:space="preserve">
+    <value>Title, description box resizes depending on text length.</value>
+  </data>
+  <data name="lblcrResizeToContent.Text" xml:space="preserve">
+    <value>Resize to content:</value>
+  </data>
+  <data name="lblcrShowOnHover.Help" xml:space="preserve">
+    <value>Auto hide title/description panel.</value>
+  </data>
+  <data name="lblcrShowOnHover.Text" xml:space="preserve">
+    <value>Auto hide:</value>
+  </data>
+  <data name="lblCRSocialButtons.Text" xml:space="preserve">
+    <value>Social buttons:</value>
+  </data>
+  <data name="lblPagination.Text" xml:space="preserve">
+    <value>Pagination:</value>
+  </data>
+  <data name="rfvItemInfPosHOff.ErrorMessage" xml:space="preserve">
+    <value>Value Required!</value>
+  </data>
+  <data name="rfvItemInfPosVOff.ErrorMessage" xml:space="preserve">
+    <value>Value Required!</value>
+  </data>
+  <data name="rvAPIndHeight.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 1200).</value>
+  </data>
+  <data name="rvAPIndPosHOff.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 1000000).</value>
+  </data>
+  <data name="rvAPIndPosVOff.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 1000000).</value>
+  </data>
+  <data name="rvAPIndWidth.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 1920).</value>
+  </data>
+  <data name="rvAPInterval.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 1000000).</value>
+  </data>
+  <data name="rvAPTHideSpeed.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 20000).</value>
+  </data>
+  <data name="rvAPTPosHOff.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 20000).</value>
+  </data>
+  <data name="rvAPTPosVOff.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 20000).</value>
+  </data>
+  <data name="rvArrHideSpeed.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 20000).</value>
+  </data>
+  <data name="rvArrNextPosHOff.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 20000).</value>
+  </data>
+  <data name="rvArrNextPosVOff.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 20000).</value>
+  </data>
+  <data name="rvArrPrevPosHOff.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 20000).</value>
+  </data>
+  <data name="rvArrPrevPosVOff.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 20000).</value>
+  </data>
+  <data name="rvItemInfDescriptionLenght.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 4000).</value>
+  </data>
+  <data name="rvItemInfPosHOff.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 20000).</value>
+  </data>
+  <data name="rvItemInfPosVOff.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 20000).</value>
+  </data>
+  <data name="rvItemInfTitleLenght.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 500).</value>
+  </data>
+  <data name="rvPagiPageAtOnce.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 20000).</value>
+  </data>
+  <data name="rvPagiPosHOff.ErrorMessage" xml:space="preserve">
+    <value>Range between (-1000 - 20000).</value>
+  </data>
+  <data name="rvPagiPosVOff.ErrorMessage" xml:space="preserve">
+    <value>Range between (-1000 - 20000).</value>
+  </data>
+  <data name="rvSocialPosHOff.ErrorMessage" xml:space="preserve">
+    <value>Range between (-1000 - 20000).</value>
+  </data>
+  <data name="rvSocialPosVOff.ErrorMessage" xml:space="preserve">
+    <value>Range between (-1000 - 20000).</value>
+  </data>
+  <data name="Valuerequired.ErrorMessage" xml:space="preserve">
+    <value>Value Required!</value>
+  </data>
+  <data name="lblAdvancedShowHide.Text" xml:space="preserve">
+    <value>Hide Sketch</value>
+  </data>
+  <data name="lblAlignList.Help" xml:space="preserve">
+    <value>Aligne list left or right acording main rotator width.</value>
+  </data>
+  <data name="lblAlignList.Text" xml:space="preserve">
+    <value>Aligne List:</value>
+  </data>
+  <data name="lblARAutoplayIndicator.Text" xml:space="preserve">
+    <value>Autoplay indicator:</value>
+  </data>
+  <data name="lblARDescriptionLenght.Help" xml:space="preserve">
+    <value>Number of characters in description string to display in text box. Depends on html css tags in string.</value>
+  </data>
+  <data name="lblARDescriptionLenght.Text" xml:space="preserve">
+    <value>Description length:</value>
+  </data>
+  <data name="lblARMainImageTitle.Text" xml:space="preserve">
+    <value>Image panel:</value>
+  </data>
+  <data name="lblARMainPictureWH.Help" xml:space="preserve">
+    <value>Picture and container width / height:</value>
+  </data>
+  <data name="lblARMainPictureWH.Text" xml:space="preserve">
+    <value>Width and height of main picture and container in pixels.</value>
+  </data>
+  <data name="lblARSubTitleLenght.Help" xml:space="preserve">
+    <value>Number of characters in subtitle string to display in list item.</value>
+  </data>
+  <data name="lblARSubTitleLenght.Text" xml:space="preserve">
+    <value>Subtitle length:</value>
+  </data>
+  <data name="lblARThumbWH.Help" xml:space="preserve">
+    <value>Width, height of thumb in pixels.</value>
+  </data>
+  <data name="lblARThumbWH.Text" xml:space="preserve">
+    <value>Thumb picture width / height:</value>
+  </data>
+  <data name="lblARTitleLenght.Help" xml:space="preserve">
+    <value>Number of characters in title string to display in list item and description container.</value>
+  </data>
+  <data name="lblARTitleLenght.Text" xml:space="preserve">
+    <value>Title length:</value>
+  </data>
+  <data name="lblAutoAdjust.Help" xml:space="preserve">
+    <value>Items position are automatically adjusted when image rotates.</value>
+  </data>
+  <data name="lblAutoAdjust.Text" xml:space="preserve">
+    <value>Auto adjust:</value>
+  </data>
+  <data name="lblAutoCenter.Help" xml:space="preserve">
+    <value>Auto center images.</value>
+  </data>
+  <data name="lblAutoCenter.Text" xml:space="preserve">
+    <value>Auto center images.</value>
+  </data>
+  <data name="lblcbTISync.Help" xml:space="preserve">
+    <value>If true, text box appears after image transition is completed.</value>
+  </data>
+  <data name="lblcbTISync.Text" xml:space="preserve">
+    <value>Text - image sync:</value>
+  </data>
+  <data name="lblcpalig.Help" xml:space="preserve">
+    <value>The alignment of the control panel.</value>
+  </data>
+  <data name="lblcpalig.Text" xml:space="preserve">
+    <value>Control panel aligement:</value>
+  </data>
+  <data name="lblCPappears.Help" xml:space="preserve">
+    <value>Control panel appears only on mouseover and hides on mouseout.</value>
+  </data>
+  <data name="lblCPappears.Text" xml:space="preserve">
+    <value>Control panel appears:</value>
+  </data>
+  <data name="lblCurrImageNum.Help" xml:space="preserve">
+    <value>To specify if the current image number is visible.</value>
+  </data>
+  <data name="lblCurrImageNum.Text" xml:space="preserve">
+    <value>Display image number:</value>
+  </data>
+  <data name="lblDelay.Help" xml:space="preserve">
+    <value>The global time delay for image rotation in milliseconds. If delay is set per item, it will take precedence over this global delay</value>
+  </data>
+  <data name="lblDelay.Text" xml:space="preserve">
+    <value>Delay:</value>
+  </data>
+  <data name="lblDelayBlock.Help" xml:space="preserve">
+    <value>The delay until the next block transition occurs in sequence. (in milliseconds)</value>
+  </data>
+  <data name="lblDelayBlock.Text" xml:space="preserve">
+    <value>Delay of block:</value>
+  </data>
+  <data name="lblDelayHS.Help" xml:space="preserve">
+    <value>The delay until the next horizontal stripe transition occurs in sequence. (in milliseconds)</value>
+  </data>
+  <data name="lblDelayHS.Text" xml:space="preserve">
+    <value>Delay horizontal stripe:</value>
+  </data>
+  <data name="lblDelayVS.Help" xml:space="preserve">
+    <value>Delay of Vertical Stripe.</value>
+  </data>
+  <data name="lblDelayVS.Text" xml:space="preserve">
+    <value>Delay of vertical stripe:</value>
+  </data>
+  <data name="lblDisplayButton.Help" xml:space="preserve">
+    <value>To specify if the play/pause button is visible.</value>
+  </data>
+  <data name="lblDisplayButton.Text" xml:space="preserve">
+    <value>Display play button:</value>
+  </data>
+  <data name="lblDisplayOptions.Text" xml:space="preserve">
+    <value>Play/stop button:</value>
+  </data>
+  <data name="lblDisplayThumb.Help" xml:space="preserve">
+    <value>Display thumbs in list container.</value>
+  </data>
+  <data name="lblDisplayThumb.Text" xml:space="preserve">
+    <value>Display thumbs:</value>
+  </data>
+  <data name="lblHorizonStrip.Help" xml:space="preserve">
+    <value>The size of the horizontal stripes use for horizontal stripe transitions.</value>
+  </data>
+  <data name="lblHorizonStrip.Text" xml:space="preserve">
+    <value>Size of horizontal stripe:</value>
+  </data>
+  <data name="lblImageRotationStart0.Help" xml:space="preserve">
+    <value>Specify if image rotation initially starts.</value>
+  </data>
+  <data name="lblImageRotationStart0.Text" xml:space="preserve">
+    <value>Image rotation initially starts:</value>
+  </data>
+  <data name="lblItemSeize.Help" xml:space="preserve">
+    <value>The width, height a list item in pixel.</value>
+  </data>
+  <data name="lblItemSeize.Text" xml:space="preserve">
+    <value>List item width / height:</value>
+  </data>
+  <data name="lblListItemEdit.Text" xml:space="preserve">
+    <value>List panel:</value>
+  </data>
+  <data name="lblNumListItems.Help" xml:space="preserve">
+    <value>Number of list items in list items container.</value>
+  </data>
+  <data name="lblNumListItems.Text" xml:space="preserve">
+    <value>Number items in list:</value>
+  </data>
+  <data name="lblPlayOnce.Help" xml:space="preserve">
+    <value>Specify if rotation plays only once through.</value>
+  </data>
+  <data name="lblPlayOnce.Text" xml:space="preserve">
+    <value>Play only once:</value>
+  </data>
+  <data name="lblPouseMouseover.Help" xml:space="preserve">
+    <value>Rotation pauses on mouseover and resumes on mouseout.</value>
+  </data>
+  <data name="lblPouseMouseover.Text" xml:space="preserve">
+    <value>Rotation pause:</value>
+  </data>
+  <data name="lblScrollBar.Help" xml:space="preserve">
+    <value>To specify if the scroll bar indicator is visible.</value>
+  </data>
+  <data name="lblScrollBar.Text" xml:space="preserve">
+    <value>Scroll bar visible:</value>
+  </data>
+  <data name="lblScrollingType.Help" xml:space="preserve">
+    <value>The scrolling type use for navigating the list. If you specify &amp;quot;none&amp;quot;, navigation of list is done through item click.</value>
+  </data>
+  <data name="lblScrollingType.Text" xml:space="preserve">
+    <value>Scroling type in list:</value>
+  </data>
+  <data name="lblSelArrow.Help" xml:space="preserve">
+    <value>To specify if the selected item's arrow is visible.</value>
+  </data>
+  <data name="lblSelArrow.Text" xml:space="preserve">
+    <value>Display selected arrow:</value>
+  </data>
+  <data name="lblShuffle.Help" xml:space="preserve">
+    <value>To specify if items are displayed in random order.</value>
+  </data>
+  <data name="lblShuffle.Text" xml:space="preserve">
+    <value>Shuffle Items:</value>
+  </data>
+  <data name="lblSizeBlock.Help" xml:space="preserve">
+    <value>The size of the blocks use for block transitions.</value>
+  </data>
+  <data name="lblSizeBlock.Text" xml:space="preserve">
+    <value>Size of block:</value>
+  </data>
+  <data name="lblTBPosLeft.Help" xml:space="preserve">
+    <value>Margin left of text box.</value>
+  </data>
+  <data name="lblTBPosLeft.Text" xml:space="preserve">
+    <value>Position left:</value>
+  </data>
+  <data name="lblTBPosTop.Help" xml:space="preserve">
+    <value>Margin top for text box.</value>
+  </data>
+  <data name="lblTBPosTop.Text" xml:space="preserve">
+    <value>Position top:</value>
+  </data>
+  <data name="lblTBTitleLenght.Help" xml:space="preserve">
+    <value>Number of characters in title string to display in text box. Depends on html css tags in string.</value>
+  </data>
+  <data name="lblTBTitleLenght.Text" xml:space="preserve">
+    <value>Title length:</value>
+  </data>
+  <data name="lblTBWH.Help" xml:space="preserve">
+    <value>Dimensions of text box on top of main picture.</value>
+  </data>
+  <data name="lblTBWH.Text" xml:space="preserve">
+    <value>Container width / height</value>
+  </data>
+  <data name="lblTbxoptions.Text" xml:space="preserve">
+    <value>Title/description panel:</value>
+  </data>
+  <data name="lblTexBoxTran.Help" xml:space="preserve">
+    <value>Item container transition effects.</value>
+  </data>
+  <data name="lblTexBoxTran.Text" xml:space="preserve">
+    <value>Title, Desctiption container transition:</value>
+  </data>
+  <data name="lbltimeindicator.Help" xml:space="preserve">
+    <value>To specify if the timer indicator bar is visible.</value>
+  </data>
+  <data name="lbltimeindicator.Text" xml:space="preserve">
+    <value>Display timer indicator:</value>
+  </data>
+  <data name="lbltimeralign.Help" xml:space="preserve">
+    <value>The alignment of the timer indicator.</value>
+  </data>
+  <data name="lbltimeralign.Text" xml:space="preserve">
+    <value>Timer aligement:</value>
+  </data>
+  <data name="lblTransition.Help" xml:space="preserve">
+    <value>The global transition use for images. If transition is set per item, it will take precedence over this global transition.</value>
+  </data>
+  <data name="lblTransition.Text" xml:space="preserve">
+    <value>Transition:</value>
+  </data>
+  <data name="lblTransitionSpeed.Help" xml:space="preserve">
+    <value>The transition speed/duration use for image transition in milliseconds.</value>
+  </data>
+  <data name="lblTransitionSpeed.Text" xml:space="preserve">
+    <value>Transition speed:</value>
+  </data>
+  <data name="lbltxtBoxMouse0.Help" xml:space="preserve">
+    <value>Text box appears only on mouseover and hides on mouseout.</value>
+  </data>
+  <data name="lbltxtBoxMouse0.Text" xml:space="preserve">
+    <value>Text box appears on mouseover:</value>
+  </data>
+  <data name="lblVerStrip.Help" xml:space="preserve">
+    <value>Size of stripes.</value>
+  </data>
+  <data name="lblVerStrip.Text" xml:space="preserve">
+    <value>Size of vertical stripe:</value>
+  </data>
+  <data name="liBottomcenter.Text" xml:space="preserve">
+    <value>Bottom center</value>
+  </data>
+  <data name="liBottomleft.Text" xml:space="preserve">
+    <value>Bottom left</value>
+  </data>
+  <data name="liBottomright.Text" xml:space="preserve">
+    <value>Bottom right</value>
+  </data>
+  <data name="liExpanddown.Text" xml:space="preserve">
+    <value>Expand down</value>
+  </data>
+  <data name="liExpandleft.Text" xml:space="preserve">
+    <value>Expand left</value>
+  </data>
+  <data name="liExpandright.Text" xml:space="preserve">
+    <value>Expand right</value>
+  </data>
+  <data name="liExpandup.Text" xml:space="preserve">
+    <value>Expand up</value>
+  </data>
+  <data name="liFade.Text" xml:space="preserve">
+    <value>Fade</value>
+  </data>
+  <data name="liMouseclick.Text" xml:space="preserve">
+    <value>Mouse click</value>
+  </data>
+  <data name="liMousemove.Text" xml:space="preserve">
+    <value>Mouse move</value>
+  </data>
+  <data name="liMouseover.Text" xml:space="preserve">
+    <value>Mouse over</value>
+  </data>
+  <data name="liTopcenter.Text" xml:space="preserve">
+    <value>Top center</value>
+  </data>
+  <data name="liTopleft.Text" xml:space="preserve">
+    <value>Top left</value>
+  </data>
+  <data name="liTopright.Text" xml:space="preserve">
+    <value>Top right</value>
+  </data>
+  <data name="rvARDescriptionLenght.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 4000).</value>
+  </data>
+  <data name="rvARMainPictureH.ErrorMessage" xml:space="preserve">
+    <value>(H) between 1 and 1200 px</value>
+  </data>
+  <data name="rvARMainPictureW.ErrorMessage" xml:space="preserve">
+    <value>(W) between 1 and 1980 px</value>
+  </data>
+  <data name="rvARSubTitleLenght.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 500).</value>
+  </data>
+  <data name="rvARtbTBH.ErrorMessage" xml:space="preserve">
+    <value>Range between (1 - 1200).</value>
+  </data>
+  <data name="rvARtbTBW.ErrorMessage" xml:space="preserve">
+    <value>Range between (1 - 1920).</value>
+  </data>
+  <data name="rvARThumbH.ErrorMessage" xml:space="preserve">
+    <value>(H) 10 - 1200 px.</value>
+  </data>
+  <data name="rvARThumbW.ErrorMessage" xml:space="preserve">
+    <value>(W) 10 - 1920 px.</value>
+  </data>
+  <data name="rvARTitleLenght.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 500).</value>
+  </data>
+  <data name="rvARTitleLenght0.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 500).</value>
+  </data>
+  <data name="rvDelay.ErrorMessage" xml:space="preserve">
+    <value>Any positive number.</value>
+  </data>
+  <data name="rvDelayB.ErrorMessage" xml:space="preserve">
+    <value>Any positive number.</value>
+  </data>
+  <data name="rvDelayHS.ErrorMessage" xml:space="preserve">
+    <value>Any positive number.</value>
+  </data>
+  <data name="rvDelayVS.ErrorMessage" xml:space="preserve">
+    <value>Any positive number.</value>
+  </data>
+  <data name="rvItemH.ErrorMessage" xml:space="preserve">
+    <value>(H) 0 - 1200.</value>
+  </data>
+  <data name="rvItemW.ErrorMessage" xml:space="preserve">
+    <value>(W) 0 - 1920.</value>
+  </data>
+  <data name="rvSizeBlock.ErrorMessage" xml:space="preserve">
+    <value>Any positive number.</value>
+  </data>
+  <data name="rvSizeHStripe.ErrorMessage" xml:space="preserve">
+    <value>Any positive number.</value>
+  </data>
+  <data name="rvSizeVStripe.ErrorMessage" xml:space="preserve">
+    <value>Any positive number.</value>
+  </data>
+  <data name="rvtbPosLeft.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 1920).</value>
+  </data>
+  <data name="rvtbPosTop.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 1200).</value>
+  </data>
+  <data name="rvTBTitleLenght.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 4000).</value>
+  </data>
+  <data name="rvTransitionSpeed.ErrorMessage" xml:space="preserve">
+    <value>Any positive number.</value>
+  </data>
+  <data name="evFCRMenuColor1.ErrorMessage" xml:space="preserve">
+    <value>Enter color value.</value>
+  </data>
+  <data name="lblCarouselAutoplay.Help" xml:space="preserve">
+    <value>If 0 ms then autoplay is off.</value>
+  </data>
+  <data name="lblCarouselAutoplay.Text" xml:space="preserve">
+    <value>Autoplay interval (ms):</value>
+  </data>
+  <data name="lblCarouselEasing.Help" xml:space="preserve">
+    <value>Determines the animation style when changing items/pages.</value>
+  </data>
+  <data name="lblCarouselEasing.Text" xml:space="preserve">
+    <value>Easing:</value>
+  </data>
+  <data name="lblCarouselInfinite.Help" xml:space="preserve">
+    <value>Loop content. (Works if options are set like: Case 1: orientation is set to horizontal and rotator has only one row, Case 2: orientation is set to vertical and rotator has 1 column. In both cases width and height are set in pixels and it will work, else if either are set as fluid, it depends on how many rows/columns will be generated and may not work.)</value>
+  </data>
+  <data name="lblCarouselInfinite.Text" xml:space="preserve">
+    <value>Loop:</value>
+  </data>
+  <data name="lblCarouselLinkOpen.Help" xml:space="preserve">
+    <value>Redirect On Click Target.</value>
+  </data>
+  <data name="lblCarouselLinkOpen.Text" xml:space="preserve">
+    <value>Redirect On Click Target:</value>
+  </data>
+  <data name="lblCarouselnumOfColumns.Text" xml:space="preserve">
+    <value>Number of columns:</value>
+  </data>
+  <data name="lblCarouselnumOfRows.Text" xml:space="preserve">
+    <value>Number of rows:</value>
+  </data>
+  <data name="lblCarouselOrientation.Help" xml:space="preserve">
+    <value>Orientation.</value>
+  </data>
+  <data name="lblCarouselOrientation.Text" xml:space="preserve">
+    <value>Orientation:</value>
+  </data>
+  <data name="lblCarouselRSliderHPXInfo.Text" xml:space="preserve">
+    <value>((item height + item top and bottom padding) x rows + container top and bottom padding)</value>
+  </data>
+  <data name="lblCarouselRSliderWPXInfo.Text" xml:space="preserve">
+    <value>((item width + item left and right padding) x columns + container left and right padding)</value>
+  </data>
+  <data name="lblCarouselStep.Help" xml:space="preserve">
+    <value>Carousel Step.</value>
+  </data>
+  <data name="lblCarouselStep.Text" xml:space="preserve">
+    <value>Slide step:</value>
+  </data>
+  <data name="lblCaruselRMainPanel.Text" xml:space="preserve">
+    <value>Main container:</value>
+  </data>
+  <data name="lblFCMainPictureWH.Help" xml:space="preserve">
+    <value>Width and height of main picture and container in pixels.</value>
+  </data>
+  <data name="lblFCMainPictureWH.Text" xml:space="preserve">
+    <value>Picture and container width / height:</value>
+  </data>
+  <data name="lblFCRAutoplay.Help" xml:space="preserve">
+    <value>Number of seconds from one transition to another, if not stopped. Set to 0 to disable autoplay.</value>
+  </data>
+  <data name="lblFCRAutoplay.Text" xml:space="preserve">
+    <value>Autoplay:</value>
+  </data>
+  <data name="lblFCRControl.Text" xml:space="preserve">
+    <value>Control options:</value>
+  </data>
+  <data name="lblFCRControlAlpha.Help" xml:space="preserve">
+    <value>Alpha of a control, when mouse is not over.</value>
+  </data>
+  <data name="lblFCRControlAlpha.Text" xml:space="preserve">
+    <value>Control alpha:</value>
+  </data>
+  <data name="lblFCRControlAlphaOver.Help" xml:space="preserve">
+    <value>Alpha of a control, when mouse is over.</value>
+  </data>
+  <data name="lblFCRControlAlphaOver.Text" xml:space="preserve">
+    <value>Control alpha over:</value>
+  </data>
+  <data name="lblFCRControlColor1.Help" xml:space="preserve">
+    <value>Background color of the controls.</value>
+  </data>
+  <data name="lblFCRControlColor1.Text" xml:space="preserve">
+    <value>Control color 1:</value>
+  </data>
+  <data name="lblFCRControlColor2.Help" xml:space="preserve">
+    <value>Font color of the controls.</value>
+  </data>
+  <data name="lblFCRControlColor2.Text" xml:space="preserve">
+    <value>Control color 2:</value>
+  </data>
+  <data name="lblFCRControlDistance.Help" xml:space="preserve">
+    <value>Distance between the controls (from the borders).</value>
+  </data>
+  <data name="lblFCRControlDistance.Text" xml:space="preserve">
+    <value>Control distance:</value>
+  </data>
+  <data name="lblFCRControlsAlign.Help" xml:space="preserve">
+    <value>Type of alignment from the point [controlsX, controlsY] - can be center, left or right.</value>
+  </data>
+  <data name="lblFCRControlsAlign.Text" xml:space="preserve">
+    <value>Controls align:</value>
+  </data>
+  <data name="lblFCRControlSize.Help" xml:space="preserve">
+    <value>Size of the controls, which appear on rollover (play, stop, info, link).</value>
+  </data>
+  <data name="lblFCRControlSize.Text" xml:space="preserve">
+    <value>Control size:</value>
+  </data>
+  <data name="lblFCRControlsX.Help" xml:space="preserve">
+    <value>X-position of the point, which aligns the controls (measured from [0,0] of the image).</value>
+  </data>
+  <data name="lblFCRControlsX.Text" xml:space="preserve">
+    <value>Controls X:</value>
+  </data>
+  <data name="lblFCRControlsY.Help" xml:space="preserve">
+    <value>Y-position of the point, which aligns the controls (measured from [0,0] of the image).</value>
+  </data>
+  <data name="lblFCRControlsY.Text" xml:space="preserve">
+    <value>Controls Y:</value>
+  </data>
+  <data name="lblFCRCubeDistance.Help" xml:space="preserve">
+    <value>The distance between the cubes during transition. Values between 5 and 50 are recommended. But go for experiments.:).</value>
+  </data>
+  <data name="lblFCRCubeDistance.Text" xml:space="preserve">
+    <value>Distance between the cubes:</value>
+  </data>
+  <data name="lblFCRDelay.Help" xml:space="preserve">
+    <value>Delay between the start of one cube to the start of the next cube.</value>
+  </data>
+  <data name="lblFCRDelay.Text" xml:space="preserve">
+    <value>Delay between cubes:</value>
+  </data>
+  <data name="lblFCRDepthOffset.Help" xml:space="preserve">
+    <value>The offset during transition on the z-axis. Value between 100 and 1000 are recommended. But go for experiments. :)</value>
+  </data>
+  <data name="lblFCRDepthOffset.Text" xml:space="preserve">
+    <value>Offset during transition:</value>
+  </data>
+  <data name="lblFCRDropShadowAlpha.Help" xml:space="preserve">
+    <value>Alpha of the drop shadow - 0 == no shadow, 1 == opaque.</value>
+  </data>
+  <data name="lblFCRDropShadowAlpha.Text" xml:space="preserve">
+    <value>Drop shadow alpha:</value>
+  </data>
+  <data name="lblFCRDropShadowBlurX.Help" xml:space="preserve">
+    <value>Blur of the drop shadow on the x-axis.</value>
+  </data>
+  <data name="lblFCRDropShadowBlurX.Text" xml:space="preserve">
+    <value>Drop shadow blur X:</value>
+  </data>
+  <data name="lblFCRDropShadowBlurY.Help" xml:space="preserve">
+    <value>Blur of the drop shadow on the y-axis.</value>
+  </data>
+  <data name="lblFCRDropShadowBlurY.Text" xml:space="preserve">
+    <value>Drop shadow blur Y:</value>
+  </data>
+  <data name="lblFCRDropShadowScale.Help" xml:space="preserve">
+    <value>As the shadow is blurred, it appears wider that the actual image, when not resized. Thus it‘s a good idea to make it slightly smaller. - 1 would be no resizing at all.</value>
+  </data>
+  <data name="lblFCRDropShadowScale.Text" xml:space="preserve">
+    <value>Drop shadow scale:</value>
+  </data>
+  <data name="lblFCRFCRLoaderColor.Help" xml:space="preserve">
+    <value>Color of the cubes before the first image appears, also the color of the back sides of the cube, which become visible at some transition types.</value>
+  </data>
+  <data name="lblFCRFCRLoaderColor.Text" xml:space="preserve">
+    <value>Loader color:</value>
+  </data>
+  <data name="lblFCRFieldOfView.Help" xml:space="preserve">
+    <value>See the official Adobe Docs.</value>
+  </data>
+  <data name="lblFCRFieldOfView.Text" xml:space="preserve">
+    <value>Field of view:</value>
+  </data>
+  <data name="lblFCRInfoBackground.Help" xml:space="preserve">
+    <value>The background color of the info text field.</value>
+  </data>
+  <data name="lblFCRInfoBackground.Text" xml:space="preserve">
+    <value>Info background:</value>
+  </data>
+  <data name="lblFCRInfoBackgroundAlpha.Help" xml:space="preserve">
+    <value>The alpha of the background of the info text, the image shines through, when smaller than 1.</value>
+  </data>
+  <data name="lblFCRInfoBackgroundAlpha.Text" xml:space="preserve">
+    <value>Info background alpha:</value>
+  </data>
+  <data name="lblFCRInfoBox.Text" xml:space="preserve">
+    <value>Info box options:</value>
+  </data>
+  <data name="lblFCRInfoMargin.Help" xml:space="preserve">
+    <value>The margin of the text field in the info section to all sides.</value>
+  </data>
+  <data name="lblFCRInfoMargin.Text" xml:space="preserve">
+    <value>Info margin:</value>
+  </data>
+  <data name="lblFCRInfoSharpness.Help" xml:space="preserve">
+    <value>Sharpness of the info text (see above).</value>
+  </data>
+  <data name="lblFCRInfoSharpness.Text" xml:space="preserve">
+    <value>Info sharpness:</value>
+  </data>
+  <data name="lblFCRInfoThickness.Help" xml:space="preserve">
+    <value>Sharpness of the info text (see above).</value>
+  </data>
+  <data name="lblFCRInfoThickness.Text" xml:space="preserve">
+    <value>Info thickness:</value>
+  </data>
+  <data name="lblFCRInfoWidth.Help" xml:space="preserve">
+    <value>The width of the info text field.</value>
+  </data>
+  <data name="lblFCRInfoWidth.Text" xml:space="preserve">
+    <value>Info width:</value>
+  </data>
+  <data name="lblFCRInnerSideColor.Help" xml:space="preserve">
+    <value>Color of the inner sides of the cube when sliced.</value>
+  </data>
+  <data name="lblFCRInnerSideColor.Text" xml:space="preserve">
+    <value>Inner side color:</value>
+  </data>
+  <data name="lblFCRMenu.Text" xml:space="preserve">
+    <value>Menu options:</value>
+  </data>
+  <data name="lblFCRMenuColor1.Help" xml:space="preserve">
+    <value>Color of an inactive menu item.</value>
+  </data>
+  <data name="lblFCRMenuColor1.Text" xml:space="preserve">
+    <value>Menu color 1:</value>
+  </data>
+  <data name="lblFCRMenuColor2.Help" xml:space="preserve">
+    <value>Color of an active menu item.</value>
+  </data>
+  <data name="lblFCRMenuColor2.Text" xml:space="preserve">
+    <value>Menu color 2:</value>
+  </data>
+  <data name="lblFCRMenuColor3.Help" xml:space="preserve">
+    <value>Color of the inner circle of an active menu item. Should equal the background color of the whole thing.</value>
+  </data>
+  <data name="lblFCRMenuColor3.Text" xml:space="preserve">
+    <value>Menu color 3:</value>
+  </data>
+  <data name="lblFCRMenuDistanceX.Help" xml:space="preserve">
+    <value>Distance between two menu items (from center to center).</value>
+  </data>
+  <data name="lblFCRMenuDistanceX.Text" xml:space="preserve">
+    <value>Menu distance X:</value>
+  </data>
+  <data name="lblFCRMenuDistanceY.Help" xml:space="preserve">
+    <value>Distance of the menu from the bottom of the image.</value>
+  </data>
+  <data name="lblFCRMenuDistanceY.Text" xml:space="preserve">
+    <value>Menu distance Y:</value>
+  </data>
+  <data name="lblFCROptions.Text" xml:space="preserve">
+    <value>Rotator options:</value>
+  </data>
+  <data name="lblFCRPieces.Help" xml:space="preserve">
+    <value>Number of pieces to which the image is sliced.</value>
+  </data>
+  <data name="lblFCRPieces.Text" xml:space="preserve">
+    <value>Number of pieces:</value>
+  </data>
+  <data name="lblFCRSideShadowAlpha.Help" xml:space="preserve">
+    <value>Sides get darker when moved away from the front. This is the degree of darkness - 0 == no change, 1 == 100% black.</value>
+  </data>
+  <data name="lblFCRSideShadowAlpha.Text" xml:space="preserve">
+    <value>Side shadow alpha:</value>
+  </data>
+  <data name="lblFCRTime.Help" xml:space="preserve">
+    <value>Time for one cube to turn.</value>
+  </data>
+  <data name="lblFCRTime.Text" xml:space="preserve">
+    <value>Time for one cube to turn:</value>
+  </data>
+  <data name="lblFCRTooltip.Text" xml:space="preserve">
+    <value>Tooltip options:</value>
+  </data>
+  <data name="lblFCRTooltipColor.Help" xml:space="preserve">
+    <value>Color of the tooltip surface in the menu.</value>
+  </data>
+  <data name="lblFCRTooltipColor.Text" xml:space="preserve">
+    <value>Tooltip color:</value>
+  </data>
+  <data name="lblFCRTooltipHeight.Help" xml:space="preserve">
+    <value>Height of the tooltip surface in the menu.</value>
+  </data>
+  <data name="lblFCRTooltipHeight.Text" xml:space="preserve">
+    <value>Tooltip height:</value>
+  </data>
+  <data name="lblFCRTooltipMarginLeft.Help" xml:space="preserve">
+    <value>Margin of the text to the left end of the tooltip.</value>
+  </data>
+  <data name="lblFCRTooltipMarginLeft.Text" xml:space="preserve">
+    <value>Tooltip margin left:</value>
+  </data>
+  <data name="lblFCRTooltipMarginRight.Help" xml:space="preserve">
+    <value>Margin of the text to the right end of the tooltip.</value>
+  </data>
+  <data name="lblFCRTooltipMarginRight.Text" xml:space="preserve">
+    <value>Tooltip margin right:</value>
+  </data>
+  <data name="lblFCRTooltipTextColor.Help" xml:space="preserve">
+    <value>Color of the tooltip text.</value>
+  </data>
+  <data name="lblFCRTooltipTextColor.Text" xml:space="preserve">
+    <value>Tooltip text color:</value>
+  </data>
+  <data name="lblFCRTooltipTextSharpness.Help" xml:space="preserve">
+    <value>Sharpness of the tooltip text (-400 to 400) - see Adobe Docs.</value>
+  </data>
+  <data name="lblFCRTooltipTextSharpness.Text" xml:space="preserve">
+    <value>Tooltip text sharpness:</value>
+  </data>
+  <data name="lblFCRTooltipTextStyle.Help" xml:space="preserve">
+    <value>The style of the tooltip text, specified in the CSS file.</value>
+  </data>
+  <data name="lblFCRTooltipTextStyle.Text" xml:space="preserve">
+    <value>Tooltip text style:</value>
+  </data>
+  <data name="lblFCRTooltipTextThickness.Help" xml:space="preserve">
+    <value>Thickness of the tooltip text (-400 to 400) - see Adobe Docs.</value>
+  </data>
+  <data name="lblFCRTooltipTextThickness.Text" xml:space="preserve">
+    <value>Tooltip text thickness:</value>
+  </data>
+  <data name="lblFCRTooltipTextY.Help" xml:space="preserve">
+    <value>Y-distance of the tooltip text field from the top of the tooltip.</value>
+  </data>
+  <data name="lblFCRTooltipTextY.Text" xml:space="preserve">
+    <value>Tooltip text Y:</value>
+  </data>
+  <data name="lblFCRTrans.Text" xml:space="preserve">
+    <value>Transition options:</value>
+  </data>
+  <data name="lblFCRTransition.Help" xml:space="preserve">
+    <value>Select transition effect.</value>
+  </data>
+  <data name="lblFCRTransition.Text" xml:space="preserve">
+    <value>Transition effect:</value>
+  </data>
+  <data name="lblHeight.Text" xml:space="preserve">
+    <value>height:</value>
+  </data>
+  <data name="lblIsDraggable.Help" xml:space="preserve">
+    <value>This option enables support for touch input devices such as iPhone, iPad... The carousel can be controlled by mouse dragging or moving.</value>
+  </data>
+  <data name="lblIsDraggable.Text" xml:space="preserve">
+    <value>Touch &amp; Swipe:</value>
+  </data>
+  <data name="lblmcContainerHeight.Text" xml:space="preserve">
+    <value>Container height:</value>
+  </data>
+  <data name="lblmcContainerWidth.Text" xml:space="preserve">
+    <value>Container width:</value>
+  </data>
+  <data name="lblPx.Text" xml:space="preserve">
+    <value>px</value>
+  </data>
+  <data name="lblSlideDuration.Help" xml:space="preserve">
+    <value>The time (in milliseconds) that the thumbnails page switch effect will take.</value>
+  </data>
+  <data name="lblSlideDuration.Text" xml:space="preserve">
+    <value>Slide Duration:</value>
+  </data>
+  <data name="lblvDropShadowDistance.Help" xml:space="preserve">
+    <value>Distance of the shadow from the bottom of the image.</value>
+  </data>
+  <data name="lblvDropShadowDistance.Text" xml:space="preserve">
+    <value>Drop shadow distance:</value>
+  </data>
+  <data name="lblWidth.Text" xml:space="preserve">
+    <value>width:</value>
+  </data>
+  <data name="liFixedSize.Text" xml:space="preserve">
+    <value>fixed size (px)</value>
+  </data>
+  <data name="liFluid.Text" xml:space="preserve">
+    <value>fluid (%)</value>
+  </data>
+  <data name="revFCRControlColor2.ErrorMessage" xml:space="preserve">
+    <value>Enter color value.</value>
+  </data>
+  <data name="revFCRInfoBackground.ErrorMessage" xml:space="preserve">
+    <value>Enter color value.</value>
+  </data>
+  <data name="revFCRInnerSideColor.ErrorMessage" xml:space="preserve">
+    <value>Enter color value.</value>
+  </data>
+  <data name="revFCRLoaderColor.ErrorMessage" xml:space="preserve">
+    <value>Enter color value.</value>
+  </data>
+  <data name="revFCRMenuColor2.ErrorMessage" xml:space="preserve">
+    <value>Enter color value.</value>
+  </data>
+  <data name="revFCRMenuColor3.ErrorMessage" xml:space="preserve">
+    <value>Enter color value.</value>
+  </data>
+  <data name="revFCRTooltipColor.ErrorMessage" xml:space="preserve">
+    <value>Enter color value.</value>
+  </data>
+  <data name="revFCRTooltipTextColor.ErrorMessage" xml:space="preserve">
+    <value>Enter color value.</value>
+  </data>
+  <data name="rvCarouselAutoplay.ErrorMessage" xml:space="preserve">
+    <value>0 - 20000ms.</value>
+  </data>
+  <data name="rvCarouselRSliderH.ErrorMessage" xml:space="preserve">
+    <value>(H) between 1 and 5000 px.</value>
+  </data>
+  <data name="rvCarouselRSliderW.ErrorMessage" xml:space="preserve">
+    <value>(W) between 1 and 5000 px.</value>
+  </data>
+  <data name="rvFCMainPictureH.ErrorMessage" xml:space="preserve">
+    <value>(H) between 1 and 1200 px.</value>
+  </data>
+  <data name="rvFCMainPictureW.ErrorMessage" xml:space="preserve">
+    <value>(W) between 1 and 1980 px.</value>
+  </data>
+  <data name="rvFCRDropShadowAlpha.ErrorMessage" xml:space="preserve">
+    <value>Between 0 - 1.</value>
+  </data>
+  <data name="rvFCRDropShadowScale.ErrorMessage" xml:space="preserve">
+    <value>Between 0 - 1.</value>
+  </data>
+  <data name="rvFCRSideShadowAlpha.ErrorMessage" xml:space="preserve">
+    <value>Between 0 - 1.</value>
+  </data>
+  <data name="rvnumOfColumns.ErrorMessage" xml:space="preserve">
+    <value>1 - 500</value>
+  </data>
+  <data name="rvnumOfRows.ErrorMessage" xml:space="preserve">
+    <value>1 - 500</value>
+  </data>
+  <data name="rvSlideDuration.ErrorMessage" xml:space="preserve">
+    <value>Positive number (0 - 20000).</value>
+  </data>
+  <data name="tbxFCRControlColor1.ErrorMessage" xml:space="preserve">
+    <value>Enter color value.</value>
+  </data>
+  <data name="btnExportSettingsSave.Text" xml:space="preserve">
+    <value>Export settings</value>
+  </data>
+  <data name="cbExportSettings.Text" xml:space="preserve">
+    <value>Enable/Disable Export</value>
+  </data>
+  <data name="lbBottomClose.Text" xml:space="preserve">
+    <value>&lt;span&gt;Close&lt;/span&gt;</value>
+  </data>
+  <data name="lblCarouselArrAutoHide.Help" xml:space="preserve">
+    <value>Auto hide arrows.</value>
+  </data>
+  <data name="lblCarouselArrAutoHide.Text" xml:space="preserve">
+    <value>Auto Hide:</value>
+  </data>
+  <data name="lblCarouselArrNextPosH.Help" xml:space="preserve">
+    <value>Arrow Horizontal Position. If Left then offset is calculated from left, else Right</value>
+  </data>
+  <data name="lblCarouselArrNextPosH.Text" xml:space="preserve">
+    <value>Next Arrow Horizontal position and Offset:</value>
+  </data>
+  <data name="lblCarouselArrNextPosV.Help" xml:space="preserve">
+    <value>Arrow Vertical Position. If Top then offset is calculated from top, else Bottom</value>
+  </data>
+  <data name="lblCarouselArrNextPosV.Text" xml:space="preserve">
+    <value>Next Arrow Vertical position and Offset:</value>
+  </data>
+  <data name="lblCarouselArrPrevPosH.Help" xml:space="preserve">
+    <value>Arrow Horizontal Position. If Left then offset is calculated from left, else Right</value>
+  </data>
+  <data name="lblCarouselArrPrevPosH.Text" xml:space="preserve">
+    <value>Previous Arrow Horizontal position and Offset:</value>
+  </data>
+  <data name="lblCarouselItemInfDescriptionLenght.Help" xml:space="preserve">
+    <value>Number of characters in description string to display in Item Container. Depends on html css tags in string</value>
+  </data>
+  <data name="lblCarouselItemInfDescriptionLenght.Text" xml:space="preserve">
+    <value>Description length:</value>
+  </data>
+  <data name="lblCarouselItemInfTitleLenght.Help" xml:space="preserve">
+    <value>Number of characters in title string to display in Item Container</value>
+  </data>
+  <data name="lblCarouselItemInfTitleLenght.Text" xml:space="preserve">
+    <value>Title length:</value>
+  </data>
+  <data name="lblCarouselPagiInfo.Help" xml:space="preserve">
+    <value>Pagination is displayed only if loop option is disabled.</value>
+  </data>
+  <data name="lblCarouselPagination.Text" xml:space="preserve">
+    <value>Pagination:</value>
+  </data>
+  <data name="lblCarouselPagiPosH.Help" xml:space="preserve">
+    <value>Pagination Horizontal Position. If Left then offset is calculated from left, else Right</value>
+  </data>
+  <data name="lblCarouselPagiPosH.Text" xml:space="preserve">
+    <value>Horizontal Position and Offset:</value>
+  </data>
+  <data name="lblCarouselPagiPosV.Help" xml:space="preserve">
+    <value>Pagination Vertical Position. If Top then offset is calculated from top, else Bottom</value>
+  </data>
+  <data name="lblCarouselPagiPosV.Text" xml:space="preserve">
+    <value>Pagination Vertical Position:</value>
+  </data>
+  <data name="lblCarouselPicture.Text" xml:space="preserve">
+    <value>Thumbnail image:</value>
+  </data>
+  <data name="lblCarouselRArrows.Text" xml:space="preserve">
+    <value>Navigation arrows:</value>
+  </data>
+  <data name="lblCarouselRItemInfo.Text" xml:space="preserve">
+    <value>Title/description:</value>
+  </data>
+  <data name="lblCarouselStripHtml.Help" xml:space="preserve">
+    <value>Only text is displayed in rotator description place.</value>
+  </data>
+  <data name="lblCarouselStripHtml.Text" xml:space="preserve">
+    <value>Strip HTML from description:</value>
+  </data>
+  <data name="lblcontentPosition.Help" xml:space="preserve">
+    <value>Title/description position.</value>
+  </data>
+  <data name="lblcontentPosition.Text" xml:space="preserve">
+    <value>Title/description position:</value>
+  </data>
+  <data name="lblExport.Help" xml:space="preserve">
+    <value>Settings are added to DropDownList from where you can load those settings. Setting are Saved to path - ModulePath/PreSettings/</value>
+  </data>
+  <data name="lblExport.Text" xml:space="preserve">
+    <value>Save settings:</value>
+  </data>
+  <data name="lblExportSettingsName.Help" xml:space="preserve">
+    <value>Name of XML file. Location of file - ModulePath/PreSettings/. Try not too use existing file name or it will be overwriten!</value>
+  </data>
+  <data name="lblExportSettingsName.Text" xml:space="preserve">
+    <value>XML filename:</value>
+  </data>
+  <data name="lblNewsTickerOptions.Text" xml:space="preserve">
+    <value>Rotator options:</value>
+  </data>
+  <data name="lblntautoStart.Help" xml:space="preserve">
+    <value>Whether to start the news ticker animation automatically.</value>
+  </data>
+  <data name="lblntautoStart.Text" xml:space="preserve">
+    <value>Auto start:</value>
+  </data>
+  <data name="lblntpauseOnHover.Help" xml:space="preserve">
+    <value>Whether the animation should be paused when the mouse hovers over the news ticker.</value>
+  </data>
+  <data name="lblntpauseOnHover.Text" xml:space="preserve">
+    <value>Pause on hover:</value>
+  </data>
+  <data name="lblntshowControls.Help" xml:space="preserve">
+    <value>Whether to show the pause, resume, next and previous buttons.</value>
+  </data>
+  <data name="lblntshowControls.Text" xml:space="preserve">
+    <value>Show Controls:</value>
+  </data>
+  <data name="lblntShowTitleFromrescx.HElp" xml:space="preserve">
+    <value>Show/hide ticker title from NewsTickerRotator.ascx.resx file.</value>
+  </data>
+  <data name="lblntShowTitleFromrescx.Text" xml:space="preserve">
+    <value>Show ticker title:</value>
+  </data>
+  <data name="lblntStyle.Help" xml:space="preserve">
+    <value>Style.</value>
+  </data>
+  <data name="lblntStyle.Text" xml:space="preserve">
+    <value>Style:</value>
+  </data>
+  <data name="lblntstylespeed.Help" xml:space="preserve">
+    <value>Speed of selected style in milliseconds.</value>
+  </data>
+  <data name="lblntstylespeed.Text" xml:space="preserve">
+    <value>Speed of selected style:</value>
+  </data>
+  <data name="lblpkrautoplay.Help" xml:space="preserve">
+    <value>Automatically progress through slides.</value>
+  </data>
+  <data name="lblpkrautoplay.Text" xml:space="preserve">
+    <value>Autoplay:</value>
+  </data>
+  <data name="lblpkrautoplayInterval.Help" xml:space="preserve">
+    <value>The interval at which the autoplay should progress at in milliseconds. This option is only used if autoplay is turned on. (default: 5000)..</value>
+  </data>
+  <data name="lblpkrautoplayInterval.Text" xml:space="preserve">
+    <value>Autoplay interval:</value>
+  </data>
+  <data name="lblpkrbackOpacity.Help" xml:space="preserve">
+    <value>The opacity value of back images. (Value from 0 to 1).</value>
+  </data>
+  <data name="lblpkrbackOpacity.Text" xml:space="preserve">
+    <value>Back images opacity:</value>
+  </data>
+  <data name="lblpkrbackZoom.Help" xml:space="preserve">
+    <value>Back image dimension.</value>
+  </data>
+  <data name="lblpkrbackZoom.Text" xml:space="preserve">
+    <value>Back image dimension:</value>
+  </data>
+  <data name="lblpkrcarouselWidth.Help" xml:space="preserve">
+    <value>The width/height of the rotator in pixelst.</value>
+  </data>
+  <data name="lblpkrcarouselWidth.Text" xml:space="preserve">
+    <value>Rotator width/height:</value>
+  </data>
+  <data name="lblpkrdescription.Help" xml:space="preserve">
+    <value>Enable the description feature.</value>
+  </data>
+  <data name="lblpkrdescription.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblpkrDescriptionLenght.Help" xml:space="preserve">
+    <value>Number of characters in description string.</value>
+  </data>
+  <data name="lblpkrDescriptionLenght.Text" xml:space="preserve">
+    <value>Description length:</value>
+  </data>
+  <data name="lblpkrdirectionNav.Help" xml:space="preserve">
+    <value>Show navigation buttons.</value>
+  </data>
+  <data name="lblpkrdirectionNav.Text" xml:space="preserve">
+    <value>Show navigation buttons:</value>
+  </data>
+  <data name="lblpkrfrontWidth.Help" xml:space="preserve">
+    <value>The width/height of the front image in pixels.</value>
+  </data>
+  <data name="lblpkrfrontWidth.Text" xml:space="preserve">
+    <value>Front image width/height:</value>
+  </data>
+  <data name="lblpkrhAlign.Help" xml:space="preserve">
+    <value>Horizontally/Vertically aligned position of the front image.</value>
+  </data>
+  <data name="lblpkrhAlign.Text" xml:space="preserve">
+    <value>Front image horizontal/vertical aligement:</value>
+  </data>
+  <data name="lblpkrleft.Help" xml:space="preserve">
+    <value>This option is used if 'hAlign' option is set to left/right.</value>
+  </data>
+  <data name="lblpkrleft.Text" xml:space="preserve">
+    <value>Front image left/right position:</value>
+  </data>
+  <data name="lblpkrmouse.Help" xml:space="preserve">
+    <value>Enable mouse wheel navigation. (default: true).</value>
+  </data>
+  <data name="lblpkrmouse.Text" xml:space="preserve">
+    <value>Mouse wheel navigation:</value>
+  </data>
+  <data name="lblpkrpauseOnHover.Help" xml:space="preserve">
+    <value>Pause autoplay on mouse over:</value>
+  </data>
+  <data name="lblpkrpauseOnHover.Text" xml:space="preserve">
+    <value>Pause autoplay on mouse over.</value>
+  </data>
+  <data name="lblpkrreflection.Help" xml:space="preserve">
+    <value>Enable or disable image reflection.</value>
+  </data>
+  <data name="lblpkrreflection.Text" xml:space="preserve">
+    <value>Image reflection:</value>
+  </data>
+  <data name="lblpkrreflectionHeight.Help" xml:space="preserve">
+    <value>The height of the image reflection. The value is between 0 and 1.</value>
+  </data>
+  <data name="lblpkrreflectionHeight.Text" xml:space="preserve">
+    <value>Image reflection height:</value>
+  </data>
+  <data name="lblpkrreflectionOpacity.Help" xml:space="preserve">
+    <value>The starting opacity of the reflection. The range is 0 to 1.</value>
+  </data>
+  <data name="lblpkrreflectionOpacity.Text" xml:space="preserve">
+    <value>Image reflection opacity:</value>
+  </data>
+  <data name="lblpkrshadow.Help" xml:space="preserve">
+    <value>Enable the shadow effect.</value>
+  </data>
+  <data name="lblpkrshadow.Text" xml:space="preserve">
+    <value>Shadow effect:</value>
+  </data>
+  <data name="lblpkrspeed.Help" xml:space="preserve">
+    <value>Transition duration.</value>
+  </data>
+  <data name="lblpkrspeed.Text" xml:space="preserve">
+    <value>Transition duration:</value>
+  </data>
+  <data name="lblpkrTitleLenght.Help" xml:space="preserve">
+    <value>Number of characters in title string.</value>
+  </data>
+  <data name="lblpkrTitleLenght.Text" xml:space="preserve">
+    <value>Title length:</value>
+  </data>
+  <data name="lblpkrtop.Help" xml:space="preserve">
+    <value>The top/bottom position of the front image.</value>
+  </data>
+  <data name="lblpkrtop.Text" xml:space="preserve">
+    <value>Front image top/bottom position:</value>
+  </data>
+  <data name="lblpkrvbuttonNav.Help" xml:space="preserve">
+    <value>Type of navigation button that will be used: 'numbers', 'bullets', or 'none'. (default: 'none')..</value>
+  </data>
+  <data name="lblpkrvbuttonNav.Text" xml:space="preserve">
+    <value>Type of navigation button:</value>
+  </data>
+  <data name="lblPokerOptions.Text" xml:space="preserve">
+    <value>Rotator options:</value>
+  </data>
+  <data name="lblSaveSettingsErr.Text" xml:space="preserve">
+    <value>Processing files please wait</value>
+  </data>
+  <data name="lblSSautoPlay.Help" xml:space="preserve">
+    <value>Auto-cycle slider.</value>
+  </data>
+  <data name="lblSSautoPlay.Text" xml:space="preserve">
+    <value>Autoplay:</value>
+  </data>
+  <data name="lblSScaptionWidth.Help" xml:space="preserve">
+    <value>Int (default 50): Percentage of slide taken by caption.</value>
+  </data>
+  <data name="lblSScaptionWidth.Text" xml:space="preserve">
+    <value>Percentage of slide caption:</value>
+  </data>
+  <data name="lblSSdelay.Help" xml:space="preserve">
+    <value>Time between slides in ms (default 5000).</value>
+  </data>
+  <data name="lblSSdelay.Text" xml:space="preserve">
+    <value>Delay:</value>
+  </data>
+  <data name="lblSSdescriptionLenght.Help" xml:space="preserve">
+    <value>Number of characters in description string to display in Item Container. Depends on html css tags in string</value>
+  </data>
+  <data name="lblSSdescriptionLenght.Text" xml:space="preserve">
+    <value>Description length:</value>
+  </data>
+  <data name="lblSSkeyNav.Help" xml:space="preserve">
+    <value>Bool (default true): Use left/right arrow keys to switch slide.</value>
+  </data>
+  <data name="lblSSkeyNav.Text" xml:space="preserve">
+    <value>Use left/right arrow keys to switch slide:</value>
+  </data>
+  <data name="lblSSthumbMargin.Help" xml:space="preserve">
+    <value>Percentage width of thumb margin (default 3).</value>
+  </data>
+  <data name="lblSSthumbMargin.Text" xml:space="preserve">
+    <value>Width of thumb margin:</value>
+  </data>
+  <data name="lblSStitleLenght.Help" xml:space="preserve">
+    <value>Number of characters in title string to display in Item Container</value>
+  </data>
+  <data name="lblSStitleLenght.Text" xml:space="preserve">
+    <value>Title length:</value>
+  </data>
+  <data name="lblSStransition.Help" xml:space="preserve">
+    <value>Transition of images.</value>
+  </data>
+  <data name="lblSStransition.Text" xml:space="preserve">
+    <value>Transition:</value>
+  </data>
+  <data name="lblSStransitionDuration.Help" xml:space="preserve">
+    <value>Int (default 800): Transition length in ms.</value>
+  </data>
+  <data name="lblSStransitionDuration.Text" xml:space="preserve">
+    <value>Transition duration:</value>
+  </data>
+  <data name="lblSSuseArrows.Help" xml:space="preserve">
+    <value>Navigation with previous and next arrows.</value>
+  </data>
+  <data name="lblSSuseArrows.Text" xml:space="preserve">
+    <value>Navigation arrows:</value>
+  </data>
+  <data name="lblSSuseThumbs.Help" xml:space="preserve">
+    <value>Navigation thumbnails.</value>
+  </data>
+  <data name="lblSSuseThumbs.Text" xml:space="preserve">
+    <value>Thumbnails:</value>
+  </data>
+  <data name="lblssWidthHeight.Help" xml:space="preserve">
+    <value>The width/height of the rotator in pixelst.</value>
+  </data>
+  <data name="lblssWidthHeight.Text" xml:space="preserve">
+    <value>Rotator width/height:</value>
+  </data>
+  <data name="lbSaveAndClose.Text" xml:space="preserve">
+    <value>&lt;span&gt;Save &amp; close settings&lt;/span&gt;</value>
+  </data>
+  <data name="lbSaveSettings.Text" xml:space="preserve">
+    <value>&lt;span&gt;Save settings&lt;/span&gt;</value>
+  </data>
+  <data name="liBlockscale.Text" xml:space="preserve">
+    <value>Block scale</value>
+  </data>
+  <data name="liBottom-Left.Text" xml:space="preserve">
+    <value>Bottom-Left</value>
+  </data>
+  <data name="liBottom-Right.Text" xml:space="preserve">
+    <value>Bottom-Right</value>
+  </data>
+  <data name="liBullets.Text" xml:space="preserve">
+    <value>Bullets</value>
+  </data>
+  <data name="liFan.Text" xml:space="preserve">
+    <value>Fan</value>
+  </data>
+  <data name="liHorizontalblind.Text" xml:space="preserve">
+    <value>Horizontal blind</value>
+  </data>
+  <data name="liHorizontalslice.Text" xml:space="preserve">
+    <value>Horizontal slice</value>
+  </data>
+  <data name="liHorizontalslide.Text" xml:space="preserve">
+    <value>Horizontal slide</value>
+  </data>
+  <data name="liKaleidoscope.Text" xml:space="preserve">
+    <value>Kaleidoscope</value>
+  </data>
+  <data name="liNumbers.Text" xml:space="preserve">
+    <value>Numbers</value>
+  </data>
+  <data name="liRandom.Text" xml:space="preserve">
+    <value>Random</value>
+  </data>
+  <data name="liReveal.Text" xml:space="preserve">
+    <value>Reveal</value>
+  </data>
+  <data name="liScale.Text" xml:space="preserve">
+    <value>Scale</value>
+  </data>
+  <data name="liScroll.Text" xml:space="preserve">
+    <value>Scroll</value>
+  </data>
+  <data name="liTop-Right.Text" xml:space="preserve">
+    <value>Top-Right</value>
+  </data>
+  <data name="liVerticalblind.Text" xml:space="preserve">
+    <value>Vertical blind</value>
+  </data>
+  <data name="liVerticalslice.Text" xml:space="preserve">
+    <value>Vertical slice</value>
+  </data>
+  <data name="liVerticalslide.Text" xml:space="preserve">
+    <value>Vertical slide</value>
+  </data>
+  <data name="rfSSthumbMargin.ErrorMessage" xml:space="preserve">
+    <value>Range between 1 and 100.</value>
+  </data>
+  <data name="rvCarouselArrNextPosHOff.ErrorMessage" xml:space="preserve">
+    <value>Range between (-5000 to 5000).</value>
+  </data>
+  <data name="rvCarouselArrNextPosVOff.ErrorMessage" xml:space="preserve">
+    <value>Range between (-5000 to 5000).</value>
+  </data>
+  <data name="rvCarouselArrPrevPosHOff.ErrorMessage" xml:space="preserve">
+    <value>Range between  (-5000 to 5000).</value>
+  </data>
+  <data name="rvCarouselArrPrevPosVOff.ErrorMessage" xml:space="preserve">
+    <value>Range between (-5000 to 5000).</value>
+  </data>
+  <data name="rvCarouselItemInfDescriptionLenght.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 4000).</value>
+  </data>
+  <data name="rvCarouselItemInfTitleLenght.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 500).</value>
+  </data>
+  <data name="rvCarouselPagiPosHOff.ErrorMessage" xml:space="preserve">
+    <value>Range between (-1000 - 20000).</value>
+  </data>
+  <data name="rvCarouselPagiPosVOff.ErrorMessage" xml:space="preserve">
+    <value>Range between (-1000 - 20000).</value>
+  </data>
+  <data name="rvCarouselThumbH.ErrorMessage" xml:space="preserve">
+    <value>(H) 10 - 800 px.</value>
+  </data>
+  <data name="rvCarouselThumbW.ErrorMessage" xml:space="preserve">
+    <value>(W) 10 - 800 px.</value>
+  </data>
+  <data name="rvntstylespeed.ErrorMessage" xml:space="preserve">
+    <value>(W) between 1 and 50000</value>
+  </data>
+  <data name="rvpkrbackOpacity.ErrorMessage" xml:space="preserve">
+    <value>Between 0 and 1</value>
+  </data>
+  <data name="rvpkrDescriptionLenght.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 4000)</value>
+  </data>
+  <data name="rvpkrfrontHeight.ErrorMessage" xml:space="preserve">
+    <value>(H) between 1 and 1980</value>
+  </data>
+  <data name="rvpkrfrontWidth.ErrorMessage" xml:space="preserve">
+    <value>(W) between 1 and 1980</value>
+  </data>
+  <data name="rvpkrhMargin.ErrorMessage" xml:space="preserve">
+    <value>(W) between 1 and 100</value>
+  </data>
+  <data name="rvpkrpkrautoplayInterval.ErrorMessage" xml:space="preserve">
+    <value>(W) between 1 and 5000</value>
+  </data>
+  <data name="rvpkrpkrbottom.ErrorMessage" xml:space="preserve">
+    <value>(W) between 0 and 1980</value>
+  </data>
+  <data name="rvpkrpkrcarouselHeight.ErrorMessage" xml:space="preserve">
+    <value>(H) between 1 and 1980</value>
+  </data>
+  <data name="rvpkrpkrcarouselWidth.ErrorMessage" xml:space="preserve">
+    <value>(W) between 1 and 1980</value>
+  </data>
+  <data name="rvpkrpkrleft.ErrorMessage" xml:space="preserve">
+    <value>(W) between 0 and 1980</value>
+  </data>
+  <data name="rvpkrpkrright.ErrorMessage" xml:space="preserve">
+    <value>(H) between 0 and 1980</value>
+  </data>
+  <data name="rvpkrpkrspeed.ErrorMessage" xml:space="preserve">
+    <value>Range between 1 and 5000</value>
+  </data>
+  <data name="rvpkrpkrtop.ErrorMessage" xml:space="preserve">
+    <value>(W) between 0 and 1980</value>
+  </data>
+  <data name="rvpkrreflectionHeight.ErrorMessage" xml:space="preserve">
+    <value>(W) between 0 and 1</value>
+  </data>
+  <data name="rvpkrreflectionOpacity.ErrorMessage" xml:space="preserve">
+    <value>(W) between 0 and 1</value>
+  </data>
+  <data name="rvpkrTitleLenght.ErrorMessage" xml:space="preserve">
+    <value>Range between (0 - 500)</value>
+  </data>
+  <data name="rvpkrvMargin.ErrorMessage" xml:space="preserve">
+    <value>(W) between 1 and 100</value>
+  </data>
+  <data name="rvSizeShifterHeight.ErrorMessage" xml:space="preserve">
+    <value>(W) between 1 and 1980</value>
+  </data>
+  <data name="rvSizeShifterWidth.ErrorMessage" xml:space="preserve">
+    <value>(W) between 1 and 1980</value>
+  </data>
+  <data name="rvSSdelay.ErrorMessage" xml:space="preserve">
+    <value>Between 1 and 100000</value>
+  </data>
+  <data name="rvSSdescriptionLenght.ErrorMessage" xml:space="preserve">
+    <value>Renge between 0 and 4000.</value>
+  </data>
+  <data name="rvSStransitionDuration.ErrorMessage" xml:space="preserve">
+    <value>Renge between 1 and 100.</value>
+  </data>
+  <data name="rvtbxSScaptionWidth.ErrorMessage" xml:space="preserve">
+    <value>Between 0 and 100</value>
+  </data>
+  <data name="rvtbxSStitleLenght.ErrorMessage" xml:space="preserve">
+    <value>Renge between 0 and 500.</value>
+  </data>
+  <data name="ssRotatorOptions.Text" xml:space="preserve">
+    <value>Rotator options:</value>
+  </data>
+  <data name="lblDynamicallyFilterByCategory.Help" xml:space="preserve">
+    <value>If this option is selected, the rotator will only display articles from the currently selected category of the news module, while navigating through multiple news categories on the page.</value>
+  </data>
+  <data name="lblDynamicallyFilterByCategory.Text" xml:space="preserve">
+    <value>Dynamically display current category's content:</value>
+  </data>
+  <data name="SaveSettingsError1.Text" xml:space="preserve">
+    <value>Current portal does not have any news module instance with selected portal sharing settings.</value>
+  </data>
+  <data name="SaveSettingsError2.Text" xml:space="preserve">
+    <value>There is no category on selected news portal, please select another portal or create category or check display all categories.</value>
+  </data>
+  <data name="SaveSettingsError3.Text" xml:space="preserve">
+    <value>No News Instance on selected Sharing Portal. Please add news module instance. &lt;br /&gt;</value>
+  </data>
+  <data name="SaveSettingsError4.Text" xml:space="preserve">
+    <value>No News Instance, please add news module instance. &lt;br /&gt;</value>
+  </data>
+  <data name="SaveSettingsError5.Text" xml:space="preserve">
+    <value>FlashCube XML Failed to save!</value>
+  </data>
+  <data name="lblCRVideoAutoPlay.HelpText" xml:space="preserve">
+    <value>Video starts automatically.</value>
+  </data>
+  <data name="lblCRVideoAutoPlay.Text" xml:space="preserve">
+    <value>Auto start video:</value>
+  </data>
+  <data name="lbBottomClose.ToolTip" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="lbSaveAndClose.ToolTip" xml:space="preserve">
+    <value>Save &amp; close settings</value>
+  </data>
+  <data name="lbSaveSettings.ToolTip" xml:space="preserve">
+    <value>Save settings</value>
+  </data>
+  <data name="lblSSusePagination.HelpText" xml:space="preserve">
+    <value>Display an item pagination.</value>
+  </data>
+  <data name="lblSSusePagination.Text" xml:space="preserve">
+    <value>Pagination:</value>
+  </data>
+  <data name="CacheContent.HelpText" xml:space="preserve">
+    <value>Content is cached according to portal settings.</value>
+  </data>
+  <data name="CacheContent.Text" xml:space="preserve">
+    <value>Cache content:</value>
+  </data>
+  <data name="lblCacheContent.HelpText" xml:space="preserve">
+    <value>If this option is switched on, the rotator's content will be cached. The rotator uses DNN portal's cache settings (Host &gt; Host Settings &gt; Advanced &gt; Performance Settings).</value>
+  </data>
+  <data name="lblCacheContent.Text" xml:space="preserve">
+    <value>Cache content:</value>
+  </data>
+  <data name="lblModuleVisibility.HelpText" xml:space="preserve">
+    <value>Here you can set when you wish the module to be visible on the page. If 'Module always visible' option is selected, the module is visible all the time. If 'Show module only when the news module displays the list of articles' option is selected, the rotator will only be visible when the news module displays the list of articles, yet it won't be visible when article details are displayed. If 'Show module only when the news module displays article details' option is selected, the rotator will only be visible when article details are displayed, yet it won't be visible when the list of articles is displayed. Note: The module is always visible to admin and host users.</value>
+  </data>
+  <data name="lblModuleVisibility.Text" xml:space="preserve">
+    <value>Module visibility:</value>
+  </data>
+  <data name="lblChameleonHeightReferencesWidth.HelpText" xml:space="preserve">
+    <value>Calculate the rotator's height as a ratio of it's width, i.e. if the height is set to 50%, the rotator's height will be exactely half of it's width.</value>
+  </data>
+  <data name="lblChameleonHeightReferencesWidth.Text" xml:space="preserve">
+    <value>Proportionaly resize:</value>
+  </data>
+  <data name="liGravityGallery.Text" xml:space="preserve">
+    <value>Gravity gallery</value>
+  </data>
+  <data name="lblNewsFilterBy.HelpText" xml:space="preserve">
+    <value>This option allows for displaying articles only, or events only, or both.</value>
+  </data>
+  <data name="lblNewsFilterBy.Text" xml:space="preserve">
+    <value>Display articles and events:</value>
+  </data>
+  <data name="lblFilterByArticleTags.HelpText" xml:space="preserve">
+    <value>If this option is selected, the rotator will only display related articles by tags.</value>
+  </data>
+  <data name="lblFilterByArticleTags.Text" xml:space="preserve">
+    <value>Dynamically display related articles:</value>
+  </data>
+  <data name="liStartDate.Text" xml:space="preserve">
+    <value>Event start date</value>
+  </data>
+  <data name="lblChameleonStripHtml.HelpText" xml:space="preserve">
+    <value>Only text is displayed in rotator description place.</value>
+  </data>
+  <data name="lblChameleonStripHtml.Text" xml:space="preserve">
+    <value>Strip HTML from description:</value>
+  </data>
+  <data name="MostPopularDisplays.Text" xml:space="preserve">
+    <value>Most Popular Displays</value>
+  </data>
+  <data name="OtherDisplays.Text" xml:space="preserve">
+    <value>Other Displays</value>
+  </data>
+  <data name="On.Text" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="Off.Text" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="SelectedListIsEmpty.Text" xml:space="preserve">
+    <value>List "{0}" is empty!</value>
+  </data>
+  <data name="AdvancedRotatorSettings.Text" xml:space="preserve">
+    <value>Advanced Rotator Settings</value>
+  </data>
+  <data name="Carousel3dSettings.Text" xml:space="preserve">
+    <value>Carousel 3D Settings</value>
+  </data>
+  <data name="ChameleonRotatorSettings.Text" xml:space="preserve">
+    <value>Chameleon Rotator Settings</value>
+  </data>
+  <data name="DeviceRotatorSettings.Text" xml:space="preserve">
+    <value>Device Rotator Settings</value>
+  </data>
+  <data name="FlashCubeRotatorSettings.Text" xml:space="preserve">
+    <value>Flash Cube Rotator Settings</value>
+  </data>
+  <data name="MultiCarouselSettings.Text" xml:space="preserve">
+    <value>MultiCarousel Settings</value>
+  </data>
+  <data name="NewsTickerSettings.Text" xml:space="preserve">
+    <value>NewsTicker Settings</value>
+  </data>
+  <data name="PokerCarouselSettings.Text" xml:space="preserve">
+    <value>PokerCarousel Settings</value>
+  </data>
+  <data name="SizeShifterSettings.Text" xml:space="preserve">
+    <value>SizeShifter Settings</value>
+  </data>
+  <data name="TabRotatorSettings.Text" xml:space="preserve">
+    <value>Tab Rotator Settings</value>
+  </data>
+  <data name="TestimonialsRotatorSettings.Text" xml:space="preserve">
+    <value>Testimonials Rotator Settings</value>
+  </data>
+  <data name="ThumbnailRotatorSettings.Text" xml:space="preserve">
+    <value>Thumbnail Rotator Settings</value>
+  </data>
+  <data name="SliderWithAnimatedLayersSettings.Text" xml:space="preserve">
+    <value>Slider With Animated Layers Settings</value>
+  </data>
+  <data name="lblMultiRWidthHeight.Text" xml:space="preserve">
+    <value>Rotator width/height:</value>
+  </data>
+  <data name="lblMultiRWidthHeight.Help" xml:space="preserve">
+    <value>The base width/height of slides. It helps the slider to resize in correct ratio.</value>
+  </data>
+  <data name="lblMultiRShowTitle.Text" xml:space="preserve">
+    <value>Show title:</value>
+  </data>
+  <data name="lblMultiRShowTitle.Help" xml:space="preserve">
+    <value>Show title.</value>
+  </data>
+  <data name="lblMultiRTitleLength.Text" xml:space="preserve">
+    <value>Title Length:</value>
+  </data>
+  <data name="lblMultiRTitleLength.Help" xml:space="preserve">
+    <value>Title Length. Enter 0 for unlimited</value>
+  </data>
+  <data name="rvMultiRTitleLength.ErrorMessage" xml:space="preserve">
+    <value>Between 0 and 9999</value>
+  </data>
+  <data name="lblMultiRDescriptionLength.Text" xml:space="preserve">
+    <value>Description Length:</value>
+  </data>
+  <data name="lblMultiRDescriptionLength.Help" xml:space="preserve">
+    <value>Description Length. Enter 0 for unlimited</value>
+  </data>
+  <data name="rvMultiRDescriptionLength.ErrorMessage" xml:space="preserve">
+    <value>Between 0 and 9999</value>
+  </data>
+  <data name="lblMultiRShowReadMore.Text" xml:space="preserve">
+    <value>Show Read more button:</value>
+  </data>
+  <data name="lblMultiRShowReadMore.Help" xml:space="preserve">
+    <value>Show Read more button.</value>
+  </data>
+  <data name="lblMultiRStart.Text" xml:space="preserve">
+    <value>Start:</value>
+  </data>
+  <data name="lblMultiRStart.Help" xml:space="preserve">
+    <value>The slider starting slide number.</value>
+  </data>
+  <data name="rvMultiRStart.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="lblMultiRSpace.Text" xml:space="preserve">
+    <value>Space:</value>
+  </data>
+  <data name="lblMultiRSpace.Help" xml:space="preserve">
+    <value>The spacing value between slides in pixels.</value>
+  </data>
+  <data name="rvMultiRSpace.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="lblMultiRGrabCursor.Text" xml:space="preserve">
+    <value>Grab Cursor:</value>
+  </data>
+  <data name="lblMultiRGrabCursor.Help" xml:space="preserve">
+    <value>Whether the slider uses grab mouse cursor.</value>
+  </data>
+  <data name="lblMultiRSwipe.Text" xml:space="preserve">
+    <value>Swipe:</value>
+  </data>
+  <data name="lblMultiRSwipe.Help" xml:space="preserve">
+    <value>Whether the drag/swipe navigation is enabled.</value>
+  </data>
+  <data name="lblMultiRWheel.Text" xml:space="preserve">
+    <value>Wheel:</value>
+  </data>
+  <data name="lblMultiRWheel.Help" xml:space="preserve">
+    <value>Enables mouse scroll wheel navigation.</value>
+  </data>
+  <data name="lblMultiRAutoplay.Text" xml:space="preserve">
+    <value>Autoplay:</value>
+  </data>
+  <data name="lblMultiRAutoplay.Help" xml:space="preserve">
+    <value>Enables the autoplay slideshow.</value>
+  </data>
+  <data name="lblMultiRLoop.Text" xml:space="preserve">
+    <value>Loop:</value>
+  </data>
+  <data name="lblMultiRLoop.Help" xml:space="preserve">
+    <value>Enables the continuous sliding mode.</value>
+  </data>
+  <data name="lblMultiRShuffle.Text" xml:space="preserve">
+    <value>Shuffle:</value>
+  </data>
+  <data name="lblMultiRShuffle.Help" xml:space="preserve">
+    <value>Enables the shuffle slide order.</value>
+  </data>
+  <data name="lblMultiRPreload.Text" xml:space="preserve">
+    <value>Preload:</value>
+  </data>
+  <data name="lblMultiRPreload.Help" xml:space="preserve">
+    <value>Specifies number of slides which will be loaded by slider. 0 value means slider will load slides in sequence and 'all' value means slider will load all of the slides at starting. This option is only effective for images which has 'data-src' attribute.</value>
+  </data>
+  <data name="rvMultiRThumbListPreload.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="lblMultiRFullwidth.Text" xml:space="preserve">
+    <value>Full width:</value>
+  </data>
+  <data name="lblMultiRFullwidth.Help" xml:space="preserve">
+    <value>It enables the slider to adapt width to its parent element. It's very useful for creating full-width sliders. In default it takes max width as its base width value.</value>
+  </data>
+  <data name="lblMultiRFullheight.Text" xml:space="preserve">
+    <value>Full height:</value>
+  </data>
+  <data name="lblMultiRFullheight.Help" xml:space="preserve">
+    <value>It enables the slider to adapt height to its parent element.</value>
+  </data>
+  <data name="lblMultiRAutofill.Text" xml:space="preserve">
+    <value>Auto fill:</value>
+  </data>
+  <data name="lblMultiRAutofill.Help" xml:space="preserve">
+    <value>It enables the slider to adapt width and height to its parent element. It's very useful for creating fullscreen slider.</value>
+  </data>
+  <data name="lblMultiRHeightLimit.Text" xml:space="preserve">
+    <value>Height limit:</value>
+  </data>
+  <data name="lblMultiRHeightLimit.Help" xml:space="preserve">
+    <value>It force the slide to use max height value as its base specified height value.</value>
+  </data>
+  <data name="lblMultiRAutoHeight.Text" xml:space="preserve">
+    <value>Auto Height:</value>
+  </data>
+  <data name="lblMultiRAutoHeight.Help" xml:space="preserve">
+    <value>Whether the slider adapts its height to each slide height or not. It overrides heightLimit option.</value>
+  </data>
+  <data name="lblMultiRSmoothHeight.Text" xml:space="preserve">
+    <value>Smooth Height:</value>
+  </data>
+  <data name="lblMultiRSmoothHeight.Help" xml:space="preserve">
+    <value>Whether the slider uses smooth animation while its height changes.</value>
+  </data>
+  <data name="lblMultiREndPause.Text" xml:space="preserve">
+    <value>End Pause:</value>
+  </data>
+  <data name="lblMultiREndPause.Help" xml:space="preserve">
+    <value>Whether the slider pauses slideshow when it reachs to last slide.</value>
+  </data>
+  <data name="lblMultiROverPause.Text" xml:space="preserve">
+    <value>Over pause:</value>
+  </data>
+  <data name="lblMultiROverPause.Help" xml:space="preserve">
+    <value>Whether the slider pauses slideshow on hover.</value>
+  </data>
+  <data name="lblMultiRFillMode.Text" xml:space="preserve">
+    <value>Fill mode:</value>
+  </data>
+  <data name="lblMultiRFillMode.Help" xml:space="preserve">
+    <value>Specifies the slide background scaling method. Its acceptable values are 'fill', 'fit', 'stretch', 'center' and 'tile'.</value>
+  </data>
+  <data name="lblMultiRCenterControls.Text" xml:space="preserve">
+    <value>Center controls:</value>
+  </data>
+  <data name="lblMultiRCenterControls.Help" xml:space="preserve">
+    <value>Whether the slider aligns UI controls to center. This option is only effective in full width mode.</value>
+  </data>
+  <data name="lblMultiRLayersMode.Text" xml:space="preserve">
+    <value>Layers Mode:</value>
+  </data>
+  <data name="lblMultiRLayersMode.Help" xml:space="preserve">
+    <value>It accepts two values 'center' and 'full'. The 'center' value indicates that the slider aligns layers to the center. This option is only effective in full width mode.</value>
+  </data>
+  <data name="lblMultiRHideLayers.Text" xml:space="preserve">
+    <value>Hide Layers:</value>
+  </data>
+  <data name="lblMultiRHideLayers.Help" xml:space="preserve">
+    <value>Whether the slider hides all layers before changing slide.</value>
+  </data>
+  <data name="lblMultiRBorder.Text" xml:space="preserve">
+    <value>Border:</value>
+  </data>
+  <data name="lblMultiRBorder.Help" xml:space="preserve">
+    <value>Slider border.</value>
+  </data>
+  <data name="lblMultiRSlideLink.Text" xml:space="preserve">
+    <value>Slide link:</value>
+  </data>
+  <data name="lblMultiRSlideLink.Help" xml:space="preserve">
+    <value>Slide link.</value>
+  </data>
+  <data name="lblMultiRSpeed.Text" xml:space="preserve">
+    <value>Speed:</value>
+  </data>
+  <data name="lblMultiRSpeed.Help" xml:space="preserve">
+    <value>Specifies slide changing speed. It accepts float values between 0 and 100.</value>
+  </data>
+  <data name="rvMultiRThumbListSpeed.ErrorMessage" xml:space="preserve">
+    <value>Speed between 0 and 100</value>
+  </data>
+  <data name="lblMultiRDir.Text" xml:space="preserve">
+    <value>Direction:</value>
+  </data>
+  <data name="lblMultiRDir.Help" xml:space="preserve">
+    <value>Specifies slide changing direction. It accepts two values 'h' (horizontal) and 'v' (vertical).</value>
+  </data>
+  <data name="lblMultiRTransitionType.Text" xml:space="preserve">
+    <value>Transition types:</value>
+  </data>
+  <data name="lblMultiRTransitionType.Help" xml:space="preserve">
+    <value>You can change type of slide transitions in slider options.</value>
+  </data>
+  <data name="lblMultiRfullscreen.Text" xml:space="preserve">
+    <value>Fullscreen:</value>
+  </data>
+  <data name="lblMultiRfullscreen.Help" xml:space="preserve">
+    <value>Forces the slider to adapt width and height to the browser window dimension.</value>
+  </data>
+  <data name="lblMultiRfullscreenMargin.Text" xml:space="preserve">
+    <value>Fullscreen margin:</value>
+  </data>
+  <data name="lblMultiRfullscreenMargin.Help" xml:space="preserve">
+    <value>Specifies margin space at the bottom of slider.</value>
+  </data>
+  <data name="rvMultiRfullscreenMargin.ErrorMessage" xml:space="preserve">
+    <value>Value between 1 and 7680.</value>
+  </data>
+</root>

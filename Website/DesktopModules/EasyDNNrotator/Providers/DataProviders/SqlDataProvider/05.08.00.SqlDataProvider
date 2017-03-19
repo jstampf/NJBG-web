@@ -1,0 +1,5 @@
+﻿IF NOT EXISTS  (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorUpdate' and column_name = 'InstallDate')
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdate] ADD InstallDate DateTime CONSTRAINT DF_{objectQualifier}EasyDNNRotatorUpdate_InstallDate DEFAULT(GETUTCDATE()) NOT NULL
+END
+GO

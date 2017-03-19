@@ -1,0 +1,35 @@
+﻿<div>
+	<figure class="edr_imageOverlay">
+		<div></div>
+		<a href="[EasyDNNrotator:Link]" target="[EasyDNNrotator:LinkTarget]"></a>
+		<img src="[EasyDNNrotator:Thumb]" alt="" [EasyDNNrotator:Image:Visibility]/>
+		<div class="edr_iconBox">
+			[EDNcf:IfExists:engine]
+			<span class="edr_overlayIcons"><span><i class="fa fa-tint"></i></span> [EDNcf:engine]</span>
+			[EDNcf:EndIf:engine]
+			[EDNcf:IfExists:model]
+			<span class="edr_overlayIcons"><span><i class="fa fa-gear"></i></span> [EDNcf:model]</span>
+			[EDNcf:EndIf:model]
+			[EDNcf:IfExists:year]
+			<span class="edr_overlayIcons"><span><i class="fa fa-key"></i></span> [EDNcf:year]</span>
+			[EDNcf:EndIf:year]
+			[EDNcf:IfExists:country]
+			<span class="edr_overlayIcons"><span><i class="fa fa-flag"></i></span> [EDNcf:country]</span>
+			[EDNcf:EndIf:country]
+			[EDNcf:IfExists:propertytype]
+			<span class="edr_overlayIcons"><span><i class="fa fa-home"></i></span> [EDNcf:propertytype]</span>
+			[EDNcf:EndIf:propertytype]
+			[EDNcf:IfExists:livingarea]
+			<span class="edr_overlayIcons"><span><i class="fa fa-arrows-alt"></i></span> [EDNcf:livingarea]</span>
+			[EDNcf:EndIf:livingarea]
+			[EDNcf:IfExists:Bedrooms]
+			<span class="edr_overlayIcons"><span><i class="fa fa-bed"></i></span> [EDNcf:Bedrooms]</span>
+			[EDNcf:EndIf:Bedrooms]
+		</div>
+	</figure>
+	<a class="edr_readMore" href="[EasyDNNrotator:Link]" target="[EasyDNNrotator:LinkTarget]">
+		[EDNcf:IfExists:price]
+		<span>[EDNcf:price]</span>
+		[EDNcf:EndIf:price]
+	</a>
+</div>

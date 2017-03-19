@@ -1,0 +1,35 @@
+.edr_carousel .navigation.square4 {
+  text-indent: -10000px;
+  background: #f1f1f1 url(images/carousel-arrows.png) no-repeat center center;
+  width: 22px;
+  height: 22px;
+  border: solid 1px #cecece;
+}
+.edr_carousel .navigation.square4:hover {
+  border-color: #ff6633;
+  background-color: #ff7e00;
+}
+.edr_carousel.horizontal .navigation.square4.previous {
+  background-position: center 0;
+}
+.edr_carousel.horizontal .navigation.square4.previous:hover {
+  background-position: center -22px;
+}
+.edr_carousel.horizontal .navigation.square4.next {
+  background-position: center -44px;
+}
+.edr_carousel.horizontal .navigation.square4.next:hover {
+  background-position: center -66px;
+}
+.edr_carousel.vertical .navigation.square4.previous {
+  background-position: center -88px;
+}
+.edr_carousel.vertical .navigation.square4.previous:hover {
+  background-position: center -110px;
+}
+.edr_carousel.vertical .navigation.square4.next {
+  background-position: center -132px;
+}
+.edr_carousel.vertical .navigation.square4.next:hover {
+  background-position: center -154px;
+}

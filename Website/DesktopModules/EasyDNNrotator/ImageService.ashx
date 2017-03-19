@@ -1,0 +1,1 @@
+﻿<%@ WebHandler Language="C#" CodeBehind="ImageService.ashx.cs" Class="EasyDNNSolutions.Modules.EasyDNNRotator.Administration.ImageService" %>

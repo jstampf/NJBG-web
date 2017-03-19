@@ -1,0 +1,30 @@
+.edr_carousel .navigation.circle4 {
+  text-indent: -10000px;
+  width: 18px;
+  height: 18px;
+  background: url(images/circle4.png) no-repeat;
+}
+.edr_carousel.horizontal .navigation.circle4.next {
+  background-position: 0 0;
+}
+.edr_carousel.horizontal .navigation.circle4.next:hover {
+  background-position: 0 -19px;
+}
+.edr_carousel.horizontal .navigation.circle4.previous {
+  background-position: 0 -38px;
+}
+.edr_carousel.horizontal .navigation.circle4.previous:hover {
+  background-position: 0 -57px;
+}
+.edr_carousel.vertical .navigation.circle4.previous {
+  background-position: -21px 0;
+}
+.edr_carousel.vertical .navigation.circle4.previous:hover {
+  background-position: -21px -19px;
+}
+.edr_carousel.vertical .navigation.circle4.next {
+  background-position: -21px -38px;
+}
+.edr_carousel.vertical .navigation.circle4.next:hover {
+  background-position: -21px -57px;
+}

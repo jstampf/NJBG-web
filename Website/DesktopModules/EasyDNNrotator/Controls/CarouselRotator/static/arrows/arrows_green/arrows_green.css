@@ -1,0 +1,25 @@
+.edr_carousel .navigation.arrows_green {
+  text-indent: -10000px;
+  background: url(images/carousel-arrows.png) no-repeat; }
+.edr_carousel.horizontal .navigation.arrows_green {
+  width: 26px;
+  height: 27px; }
+  .edr_carousel.horizontal .navigation.arrows_green.previous {
+    background-position: center 0; }
+    .edr_carousel.horizontal .navigation.arrows_green.previous:hover {
+      background-position: center -32px; }
+  .edr_carousel.horizontal .navigation.arrows_green.next {
+    background-position: center -64px; }
+    .edr_carousel.horizontal .navigation.arrows_green.next:hover {
+      background-position: center -95px; }
+.edr_carousel.vertical .navigation.arrows_green {
+  width: 26px;
+  height: 22px; }
+  .edr_carousel.vertical .navigation.arrows_green.previous {
+    background-position: center -128px; }
+    .edr_carousel.vertical .navigation.arrows_green.previous:hover {
+      background-position: center -156px; }
+  .edr_carousel.vertical .navigation.arrows_green.next {
+    background-position: center -185px; }
+    .edr_carousel.vertical .navigation.arrows_green.next:hover {
+      background-position: center -213px; }

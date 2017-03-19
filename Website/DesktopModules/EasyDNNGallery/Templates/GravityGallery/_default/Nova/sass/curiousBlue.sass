@@ -1,0 +1,429 @@
+.eds_GravityGallery_Nova.edsgg_style_curiousBlue
+
+	.edsgg_breadcrumbs
+		border-bottom-color: $curiousBlue
+
+		a
+
+			&:hover
+				color: $curiousBlue
+
+			&:last-child
+				color: $curiousBlue
+
+	.edsgg__itemsListContainer
+
+		.edsgg__itemContainer
+
+			&.edsgg_moreActive
+
+				.edsgg_moreContainer
+					border-color: $curiousBlue
+
+					&::after
+						border-bottom-color: $curiousBlue
+
+					> div,
+					> .edsgg__mediaRatingValue
+						border-right-color: $curiousBlue
+
+						&::after,
+						&::before
+							border-bottom-color: $curiousBlue
+
+	.edsgg_moreContainer
+
+		> div
+
+			+ .edsgg_moreAction
+				border-left-color: $curiousBlue
+				border-bottom-color: $curiousBlue
+
+				&::before
+					color: $curiousBlue
+
+				&:hover
+					background-color: $curiousBlue
+
+					&::before
+						color: #fff
+
+	.edsgg_thumbnailWrapper
+		border-color: $curiousBlue
+
+	.edsgg_mediaContainer
+
+		> a
+
+			.edsgg_imageThumbnail
+
+				&::after
+					background-color: $curiousBlue
+
+				.edsgg_numberOfItems
+					background-color: $curiousBlue
+
+			&:hover
+
+				.edsgg_title
+					color: $curiousBlue
+
+	.edsgg_list
+
+		.edsgg_thumbnailWrapper
+
+			.edsgg_mediaContainer
+				border-right-color: $curiousBlue
+				@include small-device-width
+					border-bottom-color: $curiousBlue
+
+		.edsgg_mediaDetails
+
+			> li
+
+				&.edsgg_GalleryOwner
+
+					> div
+						border-left-color: $curiousBlue
+
+				&.edsgg_mediaRatingAction
+
+					> div
+						border-right-color: $curiousBlue
+
+					//.edsgg__mediaRatingValue
+						//border-right-color: $curiousBlue
+
+	.edsgg__peopleWhoLiked
+		border-top-color: $curiousBlue
+		border-bottom-color: $curiousBlue
+
+		&::before
+			color: $curiousBlue
+
+		> ul
+
+			> li
+
+				> a
+					border-color: $curiousBlue
+
+					> span
+
+						&:before
+							border-color: $curiousBlue transparent transparent
+
+					&:hover
+						border-color: $curiousBlue - 40
+
+						> span
+							border-color: $curiousBlue
+
+	.edsgg__likeAction
+		background-color: $curiousBlue
+
+	.edsgg_mediaDetails
+
+		> li
+			border-bottom-color: $curiousBlue
+
+			&:first-child
+
+				&::before
+					border-top-color: $curiousBlue
+
+			> a,
+			> span
+				color: $curiousBlue
+				border-color: $curiousBlue
+
+			> a
+
+				&:hover
+					color: #fff
+					background-color: $curiousBlue
+
+			&.edsgg_GalleryOwner
+
+				> div
+					border-left-color: $curiousBlue
+
+					&:hover
+						background-color: $curiousBlue
+
+			&.edsgg_numberOfViews
+
+				> span
+
+					&:before
+						color: $curiousBlue
+
+			.edsgg_numberOfGalleryItems
+
+				> li
+
+					&:last-child
+						border-right-color: $curiousBlue
+
+		&.edsgg_inDetails
+
+			> li
+
+				&:first-child
+
+					&::after
+						border-bottom-color: $curiousBlue
+
+				&:last-child
+
+					&::before
+						border-left-color: $curiousBlue
+
+					&::after
+						border-right-color: $curiousBlue
+
+				> div,
+				> span,
+				> a
+					border-color: $curiousBlue
+
+				&.edsgg_likeContainer
+
+					.edsgg__likeAction
+
+						&:hover
+
+							> span
+
+								&::before
+									color: $curiousBlue - 40
+
+				&.edsgg_reportMediaItem
+
+					> a
+						border-left-color: $curiousBlue
+
+	.edsgg_numberOfGalleryItems
+
+		> li
+
+			&::before
+				color: $curiousBlue
+
+	.edsgg_GalleryOwner
+
+		> div
+
+			&::before
+				color: $curiousBlue
+
+			&:hover
+
+				&::before
+					color: $curiousBlue - 40
+
+	.edsgg_ItemDescription
+		color: $curiousBlue
+
+	.edsgg_emailLink,
+	.edsgg_mediaDownload,
+	.edsgg_reportMediaItem
+
+		> a
+			color: $curiousBlue
+
+			&:hover
+				color: $defaultColor
+
+				&::before
+					color: $curiousBlue
+
+	.edsgg_reportMediaItem
+
+		> a
+
+			&::before
+				color: $curiousBlue
+
+			> span
+				color: $curiousBlue !important
+
+			&:hover
+
+				> span
+					color: $defaultColor !important
+
+	.edsgg_detailItemNavigation
+
+		a
+
+			&:hover
+
+				&::before
+					color: $curiousBlue
+
+	.edsgg_pagination
+
+		> ul
+			border-color: $curiousBlue
+
+			> li
+
+				> a
+					color: $curiousBlue
+					border-color: solid 3px $curiousBlue
+
+					&:hover
+						background-color: $curiousBlue
+						color: #fff
+
+				> a:hover::before,
+				&.active > a
+					background-color: $curiousBlue
+					color: #fff
+
+	.edsgg__loadMediaWrapper
+
+		.edsgg__loadMediaTrigger
+			border-color: $curiousBlue
+
+			> span
+				color: $curiousBlue
+
+			&:hover
+
+				.edsgg__loadMediaTriggerText
+					color: #fff
+					background-color: $curiousBlue
+
+	.edsgg_numberOfComments
+
+		> span
+			background-color: $curiousBlue
+
+	.edsgg__itemCommentsWrapper
+
+		.edsgg__commentsListContainer
+
+			.edsgg__itemCommentContainer
+
+				.edsgg_comment
+
+					> p
+						color: $curiousBlue
+
+					.edsgg__editCommentContainer
+
+						textarea
+
+							&:hover,
+							&:focus
+								border-color: $curiousBlue
+
+		.edsgg__commentsCommentFormWrapper
+
+			> h3
+
+				&::before
+					color: $curiousBlue
+
+			.edsgg_addComment
+
+				> .edsgg__replyingToMessage
+					border-bottom-color: $curiousBlue
+
+					> a
+						color: $curiousBlue
+
+						&:hover
+							color: $curiousBlue
+
+				.edsgg_inputWrapper
+
+					label
+						color: $curiousBlue
+
+					input[type=text],
+					input[type=text]:hover,
+					input[type=text]:focus,
+					textarea,
+					textarea:focus,
+					textarea:hover,
+						border-color: $curiousBlue
+
+				.edsgg__commentsSubmitComment
+					border-color: $curiousBlue
+					color: $curiousBlue
+
+					&:hover
+						color: #fff
+						background-color: $curiousBlue
+
+	.edsgg__exifData
+
+		.edsgg__exifDataHeaderWrapper
+			background-color: $curiousBlue - 40
+
+		.edsgg__extendedExifTableToggleWrapper
+
+			> span
+				background-color: $curiousBlue
+
+				&:hover
+					background-color: $curiousBlue - 40
+
+	.edsgg_listRssWrapper
+		margin: 20px 0
+
+		a
+
+			span
+
+				&::before
+					color: $curiousBlue
+
+			&:hover
+
+				span
+					color: $curiousBlue
+
+	.edsgg_myGalleriesLink
+		color: $curiousBlue
+		border-color: $curiousBlue
+
+		&:hover
+			background-color: $curiousBlue
+			color: #fff
+
+	.edsgg_newsArticleLink
+		background-color: $curiousBlue
+		border: solid 3px $curiousBlue
+
+		&:hover
+			background-color: #fff
+			color: $curiousBlue
+
+	.edsgg_votes
+
+		.edsgg__commentVoting_trigger
+
+			> span
+
+				&::before
+					color: $curiousBlue
+
+			&.edsgg__commentVoting_voted
+
+				.edsgg__commentVoting_goodVotes
+
+					&:hover
+
+						&::before
+							color: $curiousBlue
+
+				.edsgg__commentVoting_badVotes
+
+					&:hover
+
+						&::before
+							color: $curiousBlue

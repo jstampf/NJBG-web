@@ -1,0 +1,5 @@
+﻿IF NOT EXISTS (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorNewsTickerRSettings' and column_name = 'RedirectOnClickTarget')
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsTickerRSettings] ADD RedirectOnClickTarget NVARCHAR(10) CONSTRAINT DF_{objectQualifier}EasyDNNRotatorNewsTickerRSettings_RedirectOnClickTarget DEFAULT('_self') NOT NULL
+END
+GO

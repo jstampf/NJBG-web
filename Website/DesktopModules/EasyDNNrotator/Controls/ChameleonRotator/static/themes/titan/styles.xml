@@ -1,0 +1,7 @@
+<Classes>
+	<Class DisplayName="Blue" RealName="blue" />
+	<Class DisplayName="Brown" RealName="brown" />
+	<Class DisplayName="Green" RealName="green" />
+	<Class DisplayName="Purple" RealName="purple" />
+	<Class DisplayName="Red" RealName="red" />
+</Classes>

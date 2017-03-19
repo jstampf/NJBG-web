@@ -1,0 +1,21 @@
+.edr_carousel .navigation.square3_red {
+  text-indent: -10000px;
+  background: #ff0b03 url(images/carousell-arrows-square.png) no-repeat;
+  width: 30px;
+  height: 34px;
+}
+.edr_carousel .navigation.square3_red:hover {
+  background-color: #de0c05;
+}
+.edr_carousel.horizontal .navigation.square3_red.previous {
+  background-position: 0 -68px;
+}
+.edr_carousel.horizontal .navigation.square3_red.next {
+  background-position: -30px -68px;
+}
+.edr_carousel.vertical .navigation.square3_red.previous {
+  background-position: -30px 0;
+}
+.edr_carousel.vertical .navigation.square3_red.next {
+  background-position: 0 0;
+}

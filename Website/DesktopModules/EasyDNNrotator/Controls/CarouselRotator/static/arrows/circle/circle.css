@@ -1,0 +1,30 @@
+.edr_carousel .navigation.circle {
+  text-indent: -10000px;
+  width: 21px;
+  height: 21px;
+  background: url(images/silver.png) no-repeat;
+}
+.edr_carousel.horizontal .navigation.circle.previous {
+  background-position: 0 0;
+}
+.edr_carousel.horizontal .navigation.circle.previous:hover {
+  background-position: 0 -21px;
+}
+.edr_carousel.horizontal .navigation.circle.next {
+  background-position: -21px 0;
+}
+.edr_carousel.horizontal .navigation.circle.next:hover {
+  background-position: -21px -21px;
+}
+.edr_carousel.vertical .navigation.circle.previous {
+  background-position: -42px 0;
+}
+.edr_carousel.vertical .navigation.circle.previous:hover {
+  background-position: -63px 0;
+}
+.edr_carousel.vertical .navigation.circle.next {
+  background-position: -42px -21px;
+}
+.edr_carousel.vertical .navigation.circle.next:hover {
+  background-position: -63px -21px;
+}

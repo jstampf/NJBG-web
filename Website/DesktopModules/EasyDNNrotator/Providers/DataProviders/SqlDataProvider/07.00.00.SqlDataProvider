@@ -1,0 +1,51 @@
+﻿UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] SET [ScriptVersion] = '1.2' WHERE [RotatorTypeID] = 10;
+GO
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.columns WHERE table_name = '{objectQualifier}EasyDNNRotatorMultiRSettings' AND column_name = 'View')
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorMultiRSettings] ALTER COLUMN [View] NVARCHAR(20);
+END
+GO
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.columns WHERE table_name = '{objectQualifier}EasyDNNRotatorGallerySettings' AND column_name = 'PortalSharingID')
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorGallerySettings] ADD PortalSharingID INT NULL;
+END
+GO
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.columns WHERE table_name = '{objectQualifier}EasyDNNRotatorCarouselRSettings' AND column_name = 'StepPageEffect')
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorCarouselRSettings] ADD StepPageEffect NVARCHAR(30) NULL;
+END
+GO
+IF NOT EXISTS (SELECT RotatorTypeID FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorType] WHERE RotatorTypeID = 16)
+BEGIN
+	INSERT {databaseOwner}[{objectQualifier}EasyDNNRotatorType] ([RotatorTypeID],[Name],[Description],[Identifier],[Position]) VALUES(16,'Testimonials rotator','(Images + Title + Description)','TestimonialsRotator',16)
+END
+GO
+IF NOT EXISTS (SELECT RotatorTypeID FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorType] WHERE RotatorTypeID = 17)
+BEGIN
+	INSERT {databaseOwner}[{objectQualifier}EasyDNNRotatorType] ([RotatorTypeID],[Name],[Description],[Identifier],[Position]) VALUES(17,'Device rotator','(Images + Title + Description)','DeviceRotator',17)
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorNewsComparer]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsComparer]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorNewsPartitionComparer]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsPartitionComparer]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGetNews5ItemsLoc]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorGetNews5ItemsLoc]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGetNews5ItemsAndPartitonLoc]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorGetNews5ItemsAndPartitonLoc]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGetNewsItems]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorGetNewsItems]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGetNewsItemsAndPartiton]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorGetNewsItemsAndPartiton]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGetNewsItemsLoc]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorGetNewsItemsLoc]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGetNewsItemsAndPartitonLoc]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorGetNewsItemsAndPartitonLoc]
+GO

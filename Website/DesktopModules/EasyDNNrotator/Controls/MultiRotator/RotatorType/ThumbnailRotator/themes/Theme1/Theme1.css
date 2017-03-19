@@ -1,0 +1,390 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300&subset=latin,latin-ext);
+.edsthr__Theme1 {
+  margin: 0 auto;
+  max-width: 100%;
+}
+.edsthr__Theme1 .ms-gallery-botcont {
+  height: 55px;
+  background: black;
+  color: white;
+  font-size: 18px;
+  position: relative;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+.edsthr__Theme1 .ms-gal-playbtn {
+  width: 55px;
+  height: 100%;
+  float: left;
+  cursor: pointer;
+  background: url("images/btns.png") no-repeat 6px 6px;
+}
+.edsthr__Theme1 .ms-gal-playbtn.btn-pause {
+  background: url("images/btns.png") no-repeat -55px 7px;
+}
+.edsthr__Theme1 .ms-gal-thumbtoggle {
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  width: 55px;
+  height: 100%;
+  cursor: pointer;
+  background: url("images/btns.png") no-repeat -53px -41px;
+}
+.edsthr__Theme1 .ms-gal-thumbtoggle.btn-hide {
+  background: url("images/btns.png") no-repeat 4px -41px;
+}
+.edsthr__Theme1 .ms-slide-num {
+  float: left;
+  padding: 17px 9px;
+  color: #727272;
+}
+.edsthr__Theme1 .ms-slide-info {
+  padding: 14px 8px;
+  position: relative;
+  float: left;
+  width: auto;
+}
+@media handheld, only screen and (max-width: 570px), only screen and (max-device-width: 570px) {
+  .edsthr__Theme1 .ms-slide-info {
+    display: none;
+  }
+}
+.edsthr__Theme1 .ms-bullets.ms-dir-h {
+  position: absolute;
+  bottom: 18px;
+  right: 55px;
+  width: 100px;
+}
+.edsthr__Theme1 .ms-bullets.ms-dir-h .ms-bullets-count {
+  right: 0;
+}
+.edsthr__Theme1 .ms-bullet {
+  width: 8px;
+  height: 8px;
+  background: #1e1e1e;
+  margin: 4px;
+  border-radius: 15px;
+}
+.edsthr__Theme1 .ms-bullet-selected {
+  background-color: white;
+}
+.edsthr__Theme1 .ms-timerbar {
+  width: 100%;
+  top: -4px;
+  height: 4px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.32);
+}
+.edsthr__Theme1 .ms-thumb-list.ms-dir-h {
+  width: 100%;
+  background: black;
+  background: rgba(0, 0, 0, 0.95);
+  padding-top: 1px;
+}
+.edsthr__Theme1 .ms-thumb-frame {
+  cursor: pointer;
+  float: left;
+  width: 175px;
+  overflow: hidden;
+  opacity: 0.5;
+  -webkit-transition: opacity 400ms;
+  -moz-transition: opacity 400ms;
+  -ms-transition: opacity 400ms;
+  -o-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+.edsthr__Theme1 .ms-thumb-frame-selected {
+  opacity: 1;
+}
+.edsthr__Theme1 .ms-gal-thumbcont {
+  overflow: hidden;
+  width: 100%;
+  height: 115px;
+  position: absolute;
+  top: -115px;
+  left: 0;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+.edsthr__Theme1 .ms-gal-thumbcont.hide-thumbs {
+  height: 0;
+  top: 0;
+}
+.edsthr__Theme1 .ms-layer.video-title {
+  color: white;
+  font-size: 42px;
+  margin: 0px;
+  letter-spacing: 0px;
+}
+.edsthr__Theme1 .ms-layer.video-title.video-top-title {
+  font-size: 16px;
+  color: gray;
+}
+.edsthr__Theme1 .ms-layer.video-title.video-sub-title {
+  font-size: 22px;
+}
+.edsthr__Theme1 .ms-nav-next,
+.edsthr__Theme1 .ms-nav-prev {
+  position: absolute;
+  cursor: pointer;
+  z-index: 111;
+  width: 45px;
+  height: 45px;
+  background: url("images/black-skin-2.png") #000;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  background-position: -88px -26px;
+  border: solid 3px white;
+  border-color: rgba(255, 255, 255, 0.4);
+  top: 50%;
+  left: 30px;
+  margin-top: -22px;
+  border-radius: 90px;
+}
+.edsthr__Theme1 .ms-nav-next:hover,
+.edsthr__Theme1 .ms-nav-prev:hover {
+  background-color: #3d3d3d;
+}
+.edsthr__Theme1 .ms-nav-next {
+  right: 30px;
+  left: auto;
+  background-position: -86px -103px;
+}
+.edsthr__Theme1 .ms-time-bar {
+  height: 3px;
+  background: #000000;
+}
+.edsthr__Theme1 .ms-tooltip {
+  position: absolute;
+  z-index: 210;
+  cursor: auto;
+  max-width: 200px;
+}
+.edsthr__Theme1 .ms-tooltip-top .ms-tooltip-arrow,
+.edsthr__Theme1 .ms-tooltip-bottom .ms-tooltip-arrow {
+  border-left: solid 10px transparent;
+  border-right: solid 10px transparent;
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+}
+.edsthr__Theme1 .ms-tooltip-top .ms-tooltip-arrow {
+  border-top: solid 10px;
+  border-top-color: silver;
+  border-top-color: rgba(240, 240, 240, 0.88);
+  bottom: -10px;
+}
+.edsthr__Theme1 .ms-tooltip-bottom .ms-tooltip-arrow {
+  border-bottom: solid 10px;
+  border-bottom-color: silver;
+  border-bottom-color: rgba(240, 240, 240, 0.88);
+  top: -10px;
+}
+.edsthr__Theme1 .ms-tooltip-right .ms-tooltip-arrow,
+.edsthr__Theme1 .ms-tooltip-left .ms-tooltip-arrow {
+  border-top: solid 10px transparent;
+  border-bottom: solid 10px transparent;
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+}
+.edsthr__Theme1 .ms-tooltip-right .ms-tooltip-arrow {
+  border-right: solid 10px;
+  border-right-color: silver;
+  border-right-color: rgba(240, 240, 240, 0.88);
+  left: -10px;
+}
+.edsthr__Theme1 .ms-tooltip-left .ms-tooltip-arrow {
+  border-left: solid 10px;
+  border-left-color: silver;
+  border-left-color: rgba(240, 240, 240, 0.88);
+  right: -10px;
+}
+.edsthr__Theme1 .ms-tooltip-point {
+  cursor: pointer;
+}
+.edsthr__Theme1 .ms-tooltip-point .ms-point-center {
+  width: 12px;
+  height: 12px;
+  border-radius: 15px;
+  border: solid 2px #BBB;
+  background: white;
+  margin: -8px 0 0 -8px;
+  position: absolute;
+  z-index: 105;
+}
+.edsthr__Theme1 .ms-tooltip-point .ms-point-border {
+  width: 22px;
+  height: 22px;
+  background: black;
+  background: rgba(0, 0, 0, 0.36);
+  margin: -11px 0 0 -11px;
+  position: absolute;
+  border-radius: 15px;
+  animation: point-anim 1.5s infinite;
+  -moz-animation: point-anim 1.5s infinite;
+  -webkit-animation: point-anim 1.5s infinite;
+  -o-animation: point-anim 1.5s infinite;
+}
+.edsthr__Theme1 .ms-tooltip-cont {
+  padding: 10px;
+  background: silver;
+  background: rgba(240, 240, 240, 0.88);
+  text-shadow: 0 1px 0px white;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.04);
+}
+.edsthr__Theme1 .ms-slide .ms-slide-vpbtn,
+.edsthr__Theme1 .ms-video-btn {
+  width: 45px;
+  height: 45px;
+  background: url("images/black-skin-2.png") black no-repeat -16px -103px;
+  border: solid 3px white;
+  border-color: rgba(255, 255, 255, 0.4);
+  -webkit-background-clip: padding-box;
+  top: 50%;
+  left: 50%;
+  margin: -23px 0 0 -23px;
+  border-radius: 90px;
+}
+.edsthr__Theme1 .ms-slide .ms-slide-vpbtn:hover,
+.edsthr__Theme1 .ms-video-btn:hover {
+  background-color: #3D3D3D;
+}
+.edsthr__Theme1.edsthr__style_light .ms-gallery-botcont {
+  background-color: #e7e7e7;
+  color: #000;
+}
+.edsthr__Theme1.edsthr__style_light .ms-slide .ms-slide-vpbtn,
+.edsthr__Theme1.edsthr__style_light .ms-video-btn {
+  background: url("images/light-skin-1.png") no-repeat -14px -150px transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  margin: -25px 0 0 -25px;
+  border-radius: 0;
+  border: none;
+}
+.edsthr__Theme1.edsthr__style_light .ms-slide .ms-slide-vcbtn {
+  background: url("images/light-skin-1.png") no-repeat -24px -28px transparent;
+}
+.edsthr__Theme1.edsthr__style_light .ms-nav-next,
+.edsthr__Theme1.edsthr__style_light .ms-nav-prev {
+  background: url("images/light-skin-1.png") transparent;
+  background-position: -89px -26px;
+  border: none;
+}
+.edsthr__Theme1.edsthr__style_light .ms-nav-next {
+  background-position: -71px -103px;
+}
+.edsthr__Theme1.edsthr__style_light .ms-bullet {
+  background: url("images/light-skin-1.png") no-repeat transparent;
+  background-position: -34px -117px;
+}
+.edsthr__Theme1.edsthr__style_light .ms-bullet-selected {
+  background-position: -34px -84px;
+}
+.edsthr__Theme1.edsthr__style_light .ms-time-bar {
+  background: #FFFFFF;
+  border-top: solid 1px rgba(0, 0, 0, 0.41);
+}
+.edsthr__Theme1.edsthr__style_light .ms-tooltip-top .ms-tooltip-arrow,
+.edsthr__Theme1.edsthr__style_light .ms-tooltip-bottom .ms-tooltip-arrow {
+  border-left: solid 10px transparent;
+  border-right: solid 10px transparent;
+  left: 50%;
+  margin-left: -10px;
+}
+.edsthr__Theme1.edsthr__style_light .ms-tooltip-top .ms-tooltip-arrow {
+  border-top: solid 10px;
+  border-top-color: silver;
+  border-top-color: rgba(240, 240, 240, 0.88);
+  bottom: -10px;
+}
+.edsthr__Theme1.edsthr__style_light .ms-tooltip-bottom .ms-tooltip-arrow {
+  border-bottom: solid 10px;
+  border-bottom-color: silver;
+  border-bottom-color: rgba(240, 240, 240, 0.88);
+  top: -10px;
+}
+.edsthr__Theme1.edsthr__style_light .ms-tooltip-right .ms-tooltip-arrow,
+.edsthr__Theme1.edsthr__style_light .ms-tooltip-left .ms-tooltip-arrow {
+  border-top: solid 10px transparent;
+  border-bottom: solid 10px transparent;
+  top: 50%;
+  margin-top: -10px;
+}
+.edsthr__Theme1.edsthr__style_light .ms-tooltip-right .ms-tooltip-arrow {
+  border-right: solid 10px;
+  border-right-color: silver;
+  border-right-color: rgba(240, 240, 240, 0.88);
+  left: -10px;
+}
+.edsthr__Theme1.edsthr__style_light .ms-tooltip-left .ms-tooltip-arrow {
+  border-left: solid 10px;
+  border-left-color: silver;
+  border-left-color: rgba(240, 240, 240, 0.88);
+  right: -10px;
+}
+.edsthr__Theme1.edsthr__style_light .ms-tooltip-point .ms-point-center {
+  border-radius: 15px;
+  border: solid 2px #BBB;
+  background: white;
+  margin: -8px 0 0 -8px;
+}
+.edsthr__Theme1.edsthr__style_light .ms-tooltip-point .ms-point-border {
+  background: black;
+  background: rgba(0, 0, 0, 0.36);
+  animation: point-anim 1.5s infinite;
+  -moz-animation: point-anim 1.5s infinite;
+  -webkit-animation: point-anim 1.5s infinite;
+  -o-animation: point-anim 1.5s infinite;
+}
+.edsthr__Theme1.edsthr__style_light .ms-tooltip-cont {
+  padding: 10px;
+  background: silver;
+  background: rgba(240, 240, 240, 0.88);
+  text-shadow: 0 1px 0px white;
+  margin-left: -1px;
+}
+.edsthr__Theme1.edsthr__style_light .ms-gal-playbtn {
+  background-image: url("images/btnsl.png");
+}
+.edsthr__Theme1.edsthr__style_light .ms-gal-playbtn.btn-pause {
+  background-image: url("images/btnsl.png");
+}
+.edsthr__Theme1.edsthr__style_light .ms-gal-thumbtoggle {
+  background-image: url("images/btnsl.png");
+}
+.edsthr__Theme1.edsthr__style_light .ms-gal-thumbtoggle.btn-hide {
+  background-image: url("images/btnsl.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .edsthr__Theme1 .ms-slide .ms-slide-vpbtn,
+  .edsthr__Theme1 .ms-video-btn,
+  .edsthr__Theme1 .ms-slide .ms-slide-vcbtn,
+  .edsthr__Theme1 .ms-nav-next,
+  .edsthr__Theme1 .ms-nav-prev {
+    background-image: url("images/black-skin-2-retina.png");
+    background-size: 152px 225px;
+  }
+  .edsthr__Theme1.edsthr__style_light .ms-slide .ms-slide-vpbtn,
+  .edsthr__Theme1.edsthr__style_light .ms-video-btn,
+  .edsthr__Theme1.edsthr__style_light .ms-slide .ms-slide-vcbtn,
+  .edsthr__Theme1.edsthr__style_light .ms-nav-next,
+  .edsthr__Theme1.edsthr__style_light .ms-nav-prev,
+  .edsthr__Theme1.edsthr__style_light .ms-bullet {
+    background-image: url("images/light-skin-1-retina.png");
+    background-size: 152px 225px;
+  }
+}
+
+/*# sourceMappingURL=Theme1.css.map */

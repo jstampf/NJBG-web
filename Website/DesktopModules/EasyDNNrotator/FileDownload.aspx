@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="EasyDNNSolutions.Modules.EasyDNNRotator.Administration.FileDownload, App_Web_filedownload.aspx.74110c5a" enableviewstate="false" viewStateEncryptionMode="Always" %>

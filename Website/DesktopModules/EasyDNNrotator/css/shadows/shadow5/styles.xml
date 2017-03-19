@@ -1,0 +1,13 @@
+<Styles>
+	<Style Name="All corners" Class="" Width="94" Height="114" />
+	<Style Name="Top" Class="top" Width="94" Height="57" />
+	<Style Name="Bottom" Class="bottom" Width="94" Height="57" />
+	<Style Name="Left" Class="left" Width="47" Height="114" />
+	<Style Name="Right" Class="right" Width="47" Height="114" />
+	<Style Name="Top left" Class="top_left" Width="47" Height="57" />
+	<Style Name="Top right" Class="top_right" Width="47" Height="57" />
+	<Style Name="Bottom left" Class="bottom_left" Width="47" Height="57" />
+	<Style Name="Bottom right" Class="bottom_right" Width="47" Height="57" />
+	<Style Name="Top left diagonal" Class="top_left_diagonal" Width="94" Height="114" />
+	<Style Name="Top right diagonal" Class="top_right_diagonal" Width="94" Height="114" />
+</Styles>

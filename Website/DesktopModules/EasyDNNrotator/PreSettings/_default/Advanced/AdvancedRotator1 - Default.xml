@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+    <MainSettings>
+        <SettingsName>AdvancedRotator1 - Default</SettingsName>
+        <PictureW>550</PictureW>
+        <PictureH>380</PictureH>
+        <ThumbW>90</ThumbW>
+        <ThumbH>70</ThumbH>
+        <NumToRotate>20</NumToRotate>
+        <ControlName>AdvancedRotator.ascx</ControlName>
+        <ThemeName>SimpleGray.css</ThemeName>
+        <CssClass>0</CssClass>
+        <ImageUrl>PreSettings/_default/Advanced/images/AdvancedRotator1.jpg</ImageUrl>
+        <Version>05.00.00</Version>
+        <Description>Description</Description>
+        <ShadowCss>0</ShadowCss>
+        <ShadowStyle />
+        <MCBorderSize>0</MCBorderSize>
+        <MCBorderColor>ffffff</MCBorderColor>
+        <Randomize>False</Randomize>
+        <GlobalJpegQuality>97</GlobalJpegQuality>
+        <CropMethod>0</CropMethod>
+    </MainSettings>
+    <RotatorSettings>
+        <ItemWidth>300</ItemWidth>
+        <ItemHeight>95</ItemHeight>
+        <NumListItems>4</NumListItems>
+        <TitleLenght>50</TitleLenght>
+        <SubTitleLenght>80</SubTitleLenght>
+        <DescriptionLenght>200</DescriptionLenght>
+        <AligneList>right</AligneList>
+        <ScrolType>none</ScrolType>
+        <RotationStart>True</RotationStart>
+        <Delay>5000</Delay>
+        <Transition>h.slide</Transition>
+        <TransitionSpeed>800</TransitionSpeed>
+        <SizeBlock>75</SizeBlock>
+        <SizeVStripe>50</SizeVStripe>
+        <SizeHStripe>50</SizeHStripe>
+        <DelayBlock>30</DelayBlock>
+        <DelayVStripe>90</DelayVStripe>
+        <DelayHStripe>180</DelayHStripe>
+        <CenterImages>True</CenterImages>
+        <DisplayButton>False</DisplayButton>
+        <DisplayNumber>False</DisplayNumber>
+        <DisplayIndicator>True</DisplayIndicator>
+        <DisplaySelArrow>True</DisplaySelArrow>
+        <DisplayThumb>True</DisplayThumb>
+        <ScrollVisible>True</ScrollVisible>
+        <PauseRotation>True</PauseRotation>
+        <CPappears>False</CPappears>
+        <TBappears>False</TBappears>
+        <TBtransition>fade</TBtransition>
+        <TISync>True</TISync>
+        <CPaligment>TL</CPaligment>
+        <Timeraligment>bottom</Timeraligment>
+        <AutoAjust>True</AutoAjust>
+        <Shuffle>False</Shuffle>
+        <PlayOnce>False</PlayOnce>
+        <TextBoxW>520</TextBoxW>
+        <TextBoxH>50</TextBoxH>
+        <TBPosTop>260</TBPosTop>
+        <TBPosLeft>15</TBPosLeft>
+        <TBTitleLenght>15</TBTitleLenght>
+    </RotatorSettings>
+</Settings>

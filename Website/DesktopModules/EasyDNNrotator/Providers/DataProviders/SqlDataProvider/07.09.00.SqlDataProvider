@@ -1,0 +1,85 @@
+﻿IF OBJECT_ID (N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGetContent]', 'P' ) IS NOT NULL 
+    DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorGetContent];
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorGetContent]
+	@ModuleID INT = NULL,
+	@ListID INT,
+	@Limit INT,
+	@Type NVARCHAR(40) = 'AdvancedRotator',
+	@LocalCode NVARCHAR(20) = NULL,
+	@Randomize BIT = 0,
+	@HideUnlocalizedItems BIT = 0
+AS
+
+SET NOCOUNT ON;
+DECLARE @sqlcommand NVARCHAR(MAX);
+DECLARE @paramList NVARCHAR(2000);
+
+SET @paramList = N'
+	 @ModuleID INT
+	,@ListID INT
+	,@Limit INT
+	,@LocalCode NVARCHAR(20)'
+
+SET @sqlcommand = N'
+SET NOCOUNT ON;
+DECLARE @CurrentDate datetime;
+SET @CurrentDate = GETUTCDATE();
+
+SELECT TOP (@Limit) rc.[ContentID],rc.[UserID] '
+
+IF @LocalCode IS NULL
+SET @sqlcommand = @sqlcommand + N'
+,rc.[Title],rc.[SubTitle],rc.[Description],rc.[HTMLContent],rc.[Link] '
+ELSE
+SET @sqlcommand = @sqlcommand + N'
+,CASE WHEN rlcsq.[Title] IS NULL THEN rc.[Title] ELSE rlcsq.[Title] END AS [Title]
+,CASE WHEN rlcsq.[SubTitle] IS NULL THEN rc.[SubTitle] ELSE rlcsq.[SubTitle] END AS [SubTitle]
+,CASE WHEN rlcsq.[Description] IS NULL THEN rc.[Description] ELSE rlcsq.[Description] END AS [Description]
+,CASE WHEN rlcsq.[HTMLContent] IS NULL THEN rc.[HTMLContent] ELSE rlcsq.[HTMLContent] END AS [HTMLContent]
+,CASE WHEN rlcsq.[Link] IS NULL THEN rc.[Link] ELSE rlcsq.[Link] END AS [Link] '
+
+SET @sqlcommand = @sqlcommand + N'
+,rc.[FileLocation],rc.[FileSystemName],rc.[ContentName],rc.[FileExtension],rc.[ThumbLocation],rc.[ThumbSystemName]
+,rc.[ThumbName],rc.[ThumbExtension],rc.[Width],rc.[Height],rc.[VideoEmbedData],rc.[ContentType],rc.[DateCreated]
+,rc.[LastModified],rc.[Visible],rc.[StartDate] AS PublishDate,rc.[EndDate] AS [ExpireDate],ilc.[Position],cs.ImageSizes
+FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorContent] AS rc
+	INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] AS ilc ON ilc.ContentID = rc.ContentID
+	LEFT OUTER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorContentInfo] as cs ON cs.ContentID = rc.ContentID AND cs.ModuleID = @ModuleID '
+
+IF @LocalCode IS NOT NULL
+BEGIN
+	IF @HideUnlocalizedItems = 0
+	SET @sqlcommand = @sqlcommand + N' LEFT OUTER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLoc] as rlcsq ON rc.ContentID = rlcsq.ContentID AND rlcsq.LocalCode=@LocalCode ';
+	ELSE
+	SET @sqlcommand = @sqlcommand + N' INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLoc] as rlcsq ON rc.ContentID = rlcsq.ContentID AND rlcsq.LocalCode=@LocalCode ';
+END
+
+SET @sqlcommand = @sqlcommand + N'
+WHERE ilc.ListID = @ListID '
+
+IF @Type <> 'AllContentGVLoc'
+	SET @sqlcommand = @sqlcommand + N' AND ((rc.[StartDate] IS NULL AND rc.[EndDate] IS NULL) OR (@CurrentDate BETWEEN rc.[StartDate] AND rc.[EndDate])) '
+
+IF @Type = 'AdvancedRotator'
+	SET @sqlcommand = @sqlcommand + N' AND rc.ContentType = ''Image'' '
+ELSE IF @Type = 'ImageEmbedHTML'
+	SET @sqlcommand = @sqlcommand + N' AND (rc.ContentType = ''Image'' OR rc.ContentType = ''EmbedVideo'' OR rc.ContentType = ''HTML'' OR rc.ContentType = ''Video'' OR rc.ContentType = ''AmazonS3'') '
+ELSE IF @Type = 'FlashCubeRotator'
+	SET @sqlcommand = @sqlcommand + N' AND (rc.ContentType = ''Image'' OR rc.ContentType = ''Video'') '
+
+IF @Randomize = 0
+	SET @sqlcommand = @sqlcommand + N' ORDER BY ilc.[Position] ';
+ELSE
+	SET @sqlcommand = @sqlcommand + N' ORDER BY NEWID() ';
+	
+exec sp_executesql @statement = @sqlcommand
+	,@paramList = @paramList
+	,@ModuleID = @ModuleID
+	,@ListID = @ListID
+	,@Limit = @Limit
+	,@LocalCode = @LocalCode

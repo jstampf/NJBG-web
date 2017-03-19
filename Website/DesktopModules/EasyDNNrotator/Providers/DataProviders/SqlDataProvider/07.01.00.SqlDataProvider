@@ -1,0 +1,23 @@
+﻿IF NOT EXISTS (SELECT RotatorTypeID FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorType] WHERE RotatorTypeID = 18)
+BEGIN
+	INSERT {databaseOwner}[{objectQualifier}EasyDNNRotatorType] ([RotatorTypeID],[Name],[Description],[Identifier],[Position]) VALUES(18,'Thumbnail Rotator','(Images + Title + Description)','ThumbnailRotator',18)
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNrotatorNews6GetAllContent]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNrotatorNews6GetAllContent]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNrotatorNews6GetArticles]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNrotatorNews6GetArticles]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNrotatorNews6GetEvents]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNrotatorNews6GetEvents]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNrotatorNews6PartitionGetAllContent]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNrotatorNews6PartitionGetAllContent]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNrotatorNews6PartitionGetArticles]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNrotatorNews6PartitionGetArticles]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNrotatorNews6PartitionGetEvents]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNrotatorNews6PartitionGetEvents]
+GO

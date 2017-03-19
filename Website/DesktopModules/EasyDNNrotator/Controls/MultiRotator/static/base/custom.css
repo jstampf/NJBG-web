@@ -1,0 +1,19 @@
+.eds_rotatorWrapper .ms-loading-container .ms-loading,
+.eds_rotatorWrapper .ms-slide .ms-slide-loading {
+  background: url("loading-custom.gif") no-repeat scroll center center rgba(255, 255, 255, 0.7);
+  border: 2px solid #999;
+  border-radius: 50%;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  height: 60px;
+  left: 50%;
+  margin: -31px;
+  opacity: 0.3;
+  position: absolute;
+  top: 50%;
+  width: 60px;
+}
+.eds_rotatorWrapper .ms-view {
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=custom.css.map */

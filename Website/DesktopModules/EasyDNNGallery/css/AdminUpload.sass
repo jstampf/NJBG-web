@@ -1,0 +1,5743 @@
+@charset "UTF-8"
+
+@mixin box-shadow ($left: 0, $top: 0, $radius: 10px, $offset: 0, $color: #000, $inset: false)
+	@if $left == none
+		box-shadow: none
+		-webkit-box-shadow: none
+		-moz-box-shadow: none
+	@else if $inset == false
+		box-shadow: $left $top $radius $offset $color
+		-webkit-box-shadow: $left $top $radius $offset $color
+		-moz-box-shadow: $left $top $radius $offset $color
+
+	@else
+		box-shadow: inset $left $top $radius $offset $color
+		-webkit-box-shadow: inset $left $top $radius $offset $color
+		-moz-box-shadow: inset $left $top $radius $offset $color
+
+@mixin box-sizing ($sizing...)
+	box-sizing: $sizing
+	-webkit-box-sizing: $sizing
+	-moz-box-sizing: $sizing
+
+@mixin transition ($args...)
+	transition: $args
+	-webkit-transition: $args
+	-moz-transition: $args
+	-o-transition: $args
+
+@import url(//fonts.googleapis.com/css?family=Roboto+Condensed:700)
+
+@import url("../static/font-awesome/css/font-awesome.min.css")
+
+$baseStyleColor: #189fd3
+$baseTextColor: #636363
+$color1: #189fd3 /*blue*/
+$color2: #41c981 /*green*/
+$color3: #7dc7d2 /*light blue*/
+$color4: #e07171 /*red*/
+$color5: #b0b0b0 /*grey*/
+$color6: #F1F1F1 /*lightgrey*/
+$color7: #faaa2b /*yellow*/
+$fontIcon: "FontAwesome"
+
+@mixin fa-fixedWidth()
+	width: (18em / 14)
+	text-align: center
+
+html, body, button, input, select, textarea,
+h1, h2, h3, h4, h5, h6,
+p, span, a
+	font: 14px/1.3 FreeSans, Arimo, "Droid Sans", Verdana, Helvetica, Arial, sans-serif
+
+h1, h2, h3, h4, h5, h6
+	color: $baseTextColor
+	margin: 0
+	padding: 0
+	letter-spacing: normal
+
+#Body
+	background: #e6e6e6
+	margin: 0
+	padding: 0
+
+#Form
+	display: block
+	color: $baseTextColor
+
+	> table
+		display: block
+
+		> tbody
+			display: block
+
+			> tr
+				display: block
+
+				> td
+					display: block
+
+	.dnnDragHint,
+	.actionMenu
+		display: none !important
+
+#EDGAdminContent
+
+	.mainContentWrapper
+		padding-top: 52px
+
+	*,
+	*:before,
+	*:after
+		-webkit-box-sizing: content-box
+		-moz-box-sizing: content-box
+		box-sizing: content-box
+
+	.dnnTooltip
+
+		.dnnHelpText,
+		.dnnFormHelp
+			color: #999
+			text-decoration: none
+
+		.dnnFormHelp
+			padding-right: 20px
+			color: $baseTextColor !important
+
+	p
+		margin: 0
+
+		& + p
+			margin-top: 7px
+
+	td
+		vertical-align: middle
+
+	table
+		border-collapse: collapse
+		width: 100%
+		border-spacing: 0
+		border: none
+
+		td
+			border-collapse: collapse
+			vertical-align: middle
+
+			&.textTop
+				vertical-align: top !important
+
+			&.textMiddle
+				vertical-align: middle !important
+
+			&.textBottom
+				vertical-align: top !important
+
+			&.textLeft
+				text-align: left !important
+
+			&.textCenter
+				text-align: center !important
+
+			&.textRight
+				text-align: right !important
+
+		&.textLeft
+
+			tr
+
+				td
+					text-align: left !important
+
+		&.textCenter
+
+			tr
+
+				td
+					text-align: center !important
+
+		&.textRight
+
+			tr
+
+				td
+					text-align: right !important
+
+		&.styledRadio
+			width: auto
+
+			tr
+
+				td
+					width: auto !important
+
+		&.styledCheckbox
+			width: auto
+
+			tr
+
+				td
+					width: auto !important
+					white-space: nowrap
+					text-align: left !important
+
+		&.clearWidth
+			width: auto !important
+
+			tr
+
+				td
+					width: auto !important
+
+			&.fullWidthTable
+				width: 100% !important
+
+			tr
+
+				td
+					width: auto !important
+
+		&.halfWidthTd
+
+			tr
+
+				td
+					width: 50%
+					-webkit-box-sizing: border-box
+					-moz-box-sizing: border-box
+					box-sizing: border-box
+
+		&.noTdBorders
+
+			tr
+				border: none !important
+
+				td
+					border: none !important
+
+	.clearWidth
+
+		table
+			width: auto !important
+
+			tr
+
+				td
+					width: auto !important
+
+			&.fullWidthTable
+				width: 100% !important
+
+			tr
+
+				td
+					width: auto !important
+
+	a
+		text-decoration: none
+		color: $color1
+		@include transition(color 150ms linear)
+
+		&:hover
+			color: $color1
+			text-decoration: underline
+
+	label
+		display: inline
+		margin: 0
+		padding: 0
+		font-weight: normal
+
+	input[type='text'],
+	textarea
+		border: solid 1px #c7c7c7
+			radius: 2px
+		box-shadow: none
+		color: $baseTextColor
+		background: #fff none
+		padding: 3px 5px
+		font-size: 12px
+		text-shadow: none !important
+		max-width: none
+		margin: 3px 0
+
+		&:hover,
+		&:focus
+			box-shadow: none
+			color: $baseTextColor + 20
+
+		&.xsmall
+			width: 30px
+
+		&.small
+			width: 60px
+
+		&.medium
+			width: 250px
+
+		&.large
+			width: 400px
+
+		&.fullWidth
+			width: 97%
+			padding-left: 1%
+			padding-right: 1%
+
+		&.textCenter
+			text-align: center
+
+	input[type="text"]
+
+		&.higher
+			padding-top: 8px
+			padding-bottom: 8px
+
+	input[type='file']
+		color: $baseTextColor
+
+	select
+		border: 1px solid #c5c5c5
+		background-color: #fff
+		box-shadow: none
+		border-radius: 2px
+
+	.styledCheckbox
+		margin: 0 0 3px
+
+		*,
+		*:before,
+		*:after
+			-webkit-box-sizing: border-box
+			-moz-box-sizing: border-box
+			box-sizing: border-box
+
+		input[type='checkbox']
+			display: none
+
+			& + label
+				position: relative
+				margin: 0 0 0 18px
+				display: inline-block
+
+				&:before
+					position: absolute
+					top: 0
+					left: -18px
+					width: 16px
+					height: 16px
+					display: block
+					border: 2px solid #919191
+					background: transparent
+					margin: 0
+					padding: 0
+					content: ''
+					font-size: 12px
+					line-height: 12px
+					text-indent: 1px
+					color: #919191
+					@include transition(all ease-in-out .2s)
+					display: block
+
+				&:hover
+
+					&:before
+						border-color: #60cb20 !important
+						color: #60cb20 !important
+
+			&:checked
+
+				& + label
+
+					&:before
+						content: '\2714'
+						border-color: $color1
+						color: $color1
+
+			&:disabled
+
+				& + label
+
+					&:before
+						opacity: .4
+						cursor: not-allowed
+
+					&:hover
+
+						&:before
+							border-color: #919191 !important
+							color: #919191 !important
+
+				&:checked
+
+					& + label
+
+						&:hover
+
+							&:before
+								border-color: $color1 !important
+								color: $color1 !important
+
+		&.noLabel
+
+			input[type='checkbox']
+
+				& + label
+					font-size: 0
+					line-height: 0
+					margin: 0
+					height: 16px
+
+					&:before
+						position: static
+						display: inline-block
+						vertical-align: middle
+
+			&.big
+
+				input[type='checkbox']
+
+					& + label
+						height: 24px
+
+		&.displayInline
+			display: inline-block
+			margin: 0 10px
+
+		&.big
+
+			input[type='checkbox']
+
+				& + label
+					margin: 0 0 0 30px
+					line-height: 24px
+
+					&:before
+						position: absolute
+						top: 0
+						left: -30px
+						width: 24px
+						height: 24px
+						display: block
+						border-radius: 2px
+						font-size: 16px
+						line-height: 19px
+						text-indent: 4px
+
+					~ label
+						margin-left: 50px
+
+		table
+			width: auto
+
+			tr
+
+				td
+					width: auto !important
+					text-align: left !important
+					padding: 0 10px 10px 0 !important
+
+	.styledRadio
+
+		*,
+		*:before,
+		*:after
+			-webkit-box-sizing: border-box
+			-moz-box-sizing: border-box
+			box-sizing: border-box
+
+		input[type='radio']
+			display: none
+
+			& + label
+				display: inline-block
+				position: relative
+				margin: 0
+				padding: 6px 0 0 29px
+				vertical-align: baseline
+				min-height: 30px
+				border-radius: 50% 0 0 50%
+
+				&:before,
+				&:after
+					position: absolute
+					top: 5px
+					left: 5px
+					width: 20px
+					height: 20px
+					display: block
+					border: 5px solid #fff
+						radius: 50%
+					background: #fff
+					margin: 0
+					padding: 0
+					content: ''
+					font-size: 0
+					line-height: 0
+					@include transition(all ease-in-out .2s)
+					display: block
+
+				&:after
+					border: 2px solid #919191
+					background: transparent
+					width: 24px
+					height: 24px
+					top: 3px
+					left: 3px
+
+				&:hover
+
+					&:before
+						background: #60cb20 !important
+
+					&:after
+						border-color: #60cb20 !important
+
+			&:checked
+
+				& + label
+
+					&:before
+						background: $color1
+
+					&:after
+						border-color: $color1
+
+			&:disabled
+				cursor: not-allowed
+
+				& + label
+
+					&:before,
+					&:after
+						cursor: not-allowed
+						opacity: .4
+
+					&:hover
+
+						&:before
+							background-color: #fff !important
+
+						&:after
+							border-color: #919191 !important
+
+				&:checked
+
+					& + label
+
+						&:before,
+						&:after
+							opacity: .4
+
+						&:hover
+
+							&:before
+								background-color: $color1 !important
+
+							&:after
+								border-color: $color1 !important
+
+		&.small
+
+			input[type='radio']
+
+				& + label
+					padding: 5px 10px 5px 19px
+					vertical-align: baseline
+					min-height: 20px
+					line-height: 1
+
+					&:before
+						border-width: 3px
+						width: 15px
+						height: 15px
+						left: 1px
+						top: 4px
+
+					&:after
+						border-width: 2px
+						width: 17px
+						height: 17px
+						left: 0
+
+		td
+			border: none !important
+			padding: 0 10px 0 0 !important
+			text-align: left
+			width: auto
+
+	.toggleCheckbox
+		width: 55px
+		height: 30px
+		background: #0e8aba
+		margin: 20px auto
+		position: relative
+		border-radius: 15px
+		box-shadow: 0 1px 0 rgba(255, 255, 255, .2)
+
+		*,
+		*:before,
+		*:after
+			-webkit-box-sizing: border-box
+			-moz-box-sizing: border-box
+			box-sizing: border-box
+
+		label
+			display: block
+			width: 45px
+			height: 20px
+			cursor: pointer
+			position: absolute
+			top: 5px
+			left: 5px
+			background: #da4949
+			border: 0
+				radius: 10px
+			@include transition(all .2s ease-in-out)
+			box-shadow: 0 1px 0 rgba(255, 255, 255, .3) inset
+			font-size: 0
+			line-height: 0
+
+			&:after
+				display: block
+				width: 25px
+				height: 20px
+				cursor: pointer
+				position: absolute
+				top: 0
+				left: 0
+				right: auto
+				bottom: auto
+				background: #fff
+				border: 0
+					radius: 10px
+				@include transition(all .2s ease-in-out)
+				box-shadow: 0 0 3px rgba(0, 0, 0, .3), 0 0 3px rgba(0, 0, 0, .2) inset
+				z-index: 1
+				content: ''
+
+			&:hover
+				background: #da4949 + 20
+
+		input[type="checkbox"]
+			visibility: hidden
+
+			&:checked + label
+				background: #2ebc2c
+
+				&:hover
+					background: #2ebc2c + 20
+
+				&:after
+					left: 20px
+
+	.styledSelect
+		position: relative
+		border: solid 1px #c5c5c5
+			radius: 2px
+		display: inline-block
+		overflow: hidden
+		background-color: #fff
+		vertical-align: middle
+		margin-right: 10px
+
+		> select
+			border: none !important
+			background: none transparent !important
+			box-shadow: none !important
+			position: relative
+			z-index: 1
+			width: 130%
+			margin: 0
+			padding: 2px 5px
+			line-height: 1
+			color: $baseTextColor
+			font-size: 12px
+
+			&:disabled
+				color: #ccc
+				cursor: not-allowed
+
+		&:after
+			position: absolute
+			content: "\f107"
+			font-family: $fontIcon
+			color: #fff
+			top: -1px
+			right: -1px
+			bottom: -1px
+			left: auto
+			width: 18px
+			background-color: $color1
+			display: inline-block
+			text-align: center
+			border-radius: 0 2px 2px 0
+			z-index: 0
+			font-size: 14px
+			line-height: 22px
+
+		&.smallSelect
+
+			> select
+				width: 150%
+
+		&.fullWidth
+			display: block
+
+			> select
+				width: 105%
+
+		&.large
+			width: 410px
+
+		&.middle
+			width: 160px
+
+		&.small
+			width: 80px
+
+		&.higher
+			padding-top: 5px
+			padding-bottom: 5px
+			padding-right: 40px
+
+			> select
+				width: 166%
+
+			&:after
+				width: 40px
+				font-size: 28px
+				line-height: 34px
+
+			&.fullWidth
+
+				> select
+					width: 115%
+
+		.dnnLabel
+			position: absolute !important
+			top: 0px
+			right: 30px
+
+	button,
+	.button
+		border: 1px solid #e3e3e3
+			radius: 3px
+		background: #f3f3f3
+		margin: 0
+		padding: 7px 14px
+		color: #555
+		@include transition(all ease-in-out .2s)
+
+		&:hover
+			border-color: $color1
+			background: $color1
+			color: #fff
+
+		&:active
+			border-color: $color1 - 40
+			background: $color1 - 40
+			color: #fff
+
+	.inputWithIcon
+
+		.fa
+			float: left
+			margin: 10px
+
+	.textBoxAndButton
+		border-radius: 4px
+		border: solid 1px #dbdbdb
+		box-shadow: 0 0 2px #dbdbdb
+		overflow: hidden
+		display: inline-block
+		vertical-align: middle
+
+		input[type="text"]
+			float: left
+			box-shadow: none !important
+			border: none !important
+			background: none transparent !important
+			padding: 0 2%
+			width: 81%
+			line-height: 38px
+			margin: 0
+
+		a
+			float: right
+			margin: -1px -1px -1px 0
+			width: 15%
+			background-color: $color1
+			color: #fff
+			font-size: 12px
+			text-decoration: none
+			line-height: 40px
+			text-align: center
+
+			&:hover
+				color: #fff
+				text-decoration: none
+				background-color: $color1 + 20
+
+	.ui-dropdownchecklist-selector-wrapper
+
+		position: relative
+		border: solid 1px #c5c5c5
+			radius: 2px
+		background-color: #fff
+		vertical-align: middle
+
+		&:after
+			position: absolute
+			content: "\f107"
+			font-family: $fontIcon
+			color: #fff
+			top: -1px
+			right: -1px
+			bottom: -1px
+			left: auto
+			width: 18px
+			background-color: $color1
+			display: inline-block
+			text-align: center
+			border-radius: 0 2px 2px 0
+			z-index: 0
+			font-size: 14px
+			line-height: 22px
+
+	.ui-dropdownchecklist-dropcontainer-wrapper
+		background-color: #fff
+		border: solid 1px #c5c5c5
+		box-shadow: 0 0  3px rgba(0, 0, 0, .4)
+		margin: 4px 0
+
+	.ui-dropdownchecklist-text
+		line-height: 1
+		color: $baseTextColor
+		font-size: 12px
+
+		> span
+			line-height: 1
+			color: $baseTextColor
+			font-size: 12px
+
+	.ui-dropdownchecklist-selector
+		line-height: 0
+		font-size: 0
+
+		.ui-dropdownchecklist-text
+			padding: 4px 5px 1px
+
+	.topBarWrapper
+		background: none
+		margin: 0
+		padding: 0
+		box-shadow: none
+		display: block
+		border: 0
+		position: fixed
+		font-size: 0
+		line-height: 0
+		z-index: 1000
+		width: 100%
+
+		&:after
+			content: ''
+			display: block
+			width: 100%
+			height: 6px
+			position: absolute
+			background: $color1
+			top: 0
+			left: 0
+			right: auto
+			bottom: auto
+
+		&:before
+			content: ''
+			display: block
+			width: 100%
+			height: 46px
+			position: absolute
+			background: #d4d4d4
+			top: 6px
+			left: 0
+			right: auto
+			bottom: auto
+			background: #365c7b
+			box-shadow: 0 2px 2px rgba(31, 31, 31, .27)
+
+		> .wrapper
+			max-width: 1200px
+			width: 100%
+			display: block
+			margin: 0 auto
+			position: relative
+			z-index: 1
+
+			ul.links
+				display: block
+				margin: 0
+				padding: 0
+				border: 0
+
+				> li
+					float: left
+					margin: 0 25px 0 0
+					padding: 0
+					border: 0
+					list-style: none
+
+					> a
+						background: transparent
+						font-size: 16px
+						line-height: 1.3
+						border: 0
+						margin: 0
+						padding: 0
+						color: #fff
+						text-shadow: 1px 1px 0 rgba(255, 255, 255, .15)
+						@include transition(all ease-in-out .2s)
+						vertical-align: middle
+						text-decoration: none
+						box-shadow: none
+						position: relative
+						top: 18px
+						left: auto
+						right: auto
+						bottom: auto
+
+						&:hover
+							color: #E3EEF2
+
+					> span,
+					> a.active
+						font-size: 18px
+						line-height: 1.3
+						color: #fff
+						text-shadow: 1px 1px 2px rgba(0, 0, 0, .15)
+						padding: 22px 30px 0
+						margin: 0
+						display: inline-block
+						background: $baseStyleColor
+						vertical-align: middle
+						border-radius: 0 0 5px 5px
+						height: 41px
+						top: 0
+
+			> ul.actions
+				position: absolute
+				left: auto
+				right: 0
+				border: 0
+					left: 1px solid #fff
+				margin: 0
+				padding: 0
+
+				> li
+					list-style: none
+					float: left
+					margin: 0
+					padding: 0
+					border: 0
+
+					> a
+						font-size: 16px
+						line-height: 1.3
+						border: 0
+						margin: 0
+						padding: 18px 17px 0 35px
+						color: #fff
+						@include transition(all ease-in-out .1s)
+						text-decoration: none
+						box-shadow: none
+						position: relative
+						border: 0
+							right: 1px solid #fff
+						display: inline-block
+						height: 34px
+						background: #E1E1E1
+						text-shadow: 1px 1px 0 rgba(0, 0, 0, .15)
+
+						&:after
+							position: absolute
+							display: inline-block
+							font:
+								family: FontAwesome
+								size: 16px
+							line-height: 1.3
+							padding: 0
+							margin: 0
+							border: 0
+							@include transition(all ease .2s)
+							text-align: center
+							color: #fff
+							top: 18px
+							left: 13px
+							right: auto
+							bottom: auto
+							@include fa-fixedWidth()
+							text-shadow: none
+
+						&:before
+							position: absolute
+							display: block
+							width: 100%
+							height: 6px
+							top: 0
+							left: 0
+							right: auto
+							bottom: auto
+							margin: 0
+							padding: 0
+							bottom: 0
+							content: ''
+
+					&.save
+
+						> a
+							background: #41c981
+
+							&:after
+								content: "\f0c7"
+								color: #18894d
+
+							&:before
+								background: #18894d
+
+							&:hover
+								background: #41c981 + 20
+
+					&.saveAndClose
+
+						> a
+							background: #f6b96a
+							padding: 18px 17px 0
+
+							&:after
+								display: none
+
+							&:before
+								background: #d28420
+
+							&:hover
+								background: #f6b96a + 20
+
+					&.back
+
+						> a
+							background: #f6b96a
+
+							&:after
+								content: "\f060"
+								color: #d28420
+
+							&:before
+								background: #d28420
+
+							&:hover
+								background: #f6b96a + 20
+
+					&.close
+
+						> a
+							background: $color4
+
+							&:after
+								content: "\f011"
+								color: #ab2d2d
+
+							&:before
+								background: #ab2d2d
+
+							&:hover
+								background: $color4 + 20
+
+					&.dashboardBtn
+
+						> a
+							background: #f6b96a
+
+							&:after
+								content: "\f085"
+								color: #d28420
+
+							&:before
+								background: #d28420
+
+							&:hover
+								background: #f6b96a + 20
+
+			> .flashMessage
+				display: block
+				position: absolute
+				top: 80px
+				width: 100%
+				left: 0
+				right: auto
+				bottom: auto
+				text-align: center
+
+				p
+					display: inline-block
+					width: auto
+					margin: 0
+					padding: 10px 20px 11px
+					border: 1px solid #fff
+						radius: 5px
+					background: #3DBC3C
+					color: #fff
+					font-size: 14px
+					line-height: 1.3
+					box-shadow: 0 0 4px rgba(0, 0, 0, .4)
+
+					&.negative
+						background: #CB1919
+
+	.textBoxAndButtonLabel
+		font-size: 12px
+		line-height: 38px
+		padding-right: 10px
+		display: inline-block
+		vertical-align: middle
+
+	.lastModifiedGalleries
+		width: 1200px
+		margin: 40px auto
+		background-color: #f2f3f3
+		border: solid 1px #b0b0b0
+			radius: 4px
+		overflow: hidden
+
+		.numberOfGalleriesPerPage
+			padding: 20px
+			text-align: center
+			border-top: solid 1px #b0b0b0
+
+			.dnnLabel
+				width: auto
+				float: none
+
+			.labeltext
+				font-size: 12px
+				color: $baseTextColor
+
+		&.expanded
+
+			.lastAddedModifiedGalleriesHeader
+				border-bottom-left-radius: 4px
+
+				.lastModifiedGalleriesHeaderToggle
+
+					&:before
+						content: "\f102"
+
+	.lastAddedModifiedGalleriesHeader
+		height: 37px
+		float: right
+		border-bottom: solid 1px #b0b0b0
+		border-left: solid 1px #b0b0b0
+		margin-bottom: -1px
+
+		> h3
+			display: inline-block
+			vertical-align: top
+			background-color: $color1
+			line-height: 0
+			font-size: 0
+			margin: 0
+			padding: 0 40px
+
+			> span
+				font-family: Arial
+				color: #fff
+				line-height: 37px
+				font-size: 17px
+				font-weight: normal
+				white-space: nowrap
+				display: inline-block
+
+			&:before
+				font-family: $fontIcon
+				color: #fff
+				content: "\f03e"
+				font-size: 15px
+				line-height: 37px
+				vertical-align: top
+				margin-right: 10px
+				float: left
+
+	.lastAddedModifiedGalleriesListWrapper
+		height: 37px
+
+	.lastAddedModifiedGalleriesList
+		padding: 5px 40px 10px
+		margin: 0
+		min-height: 37px
+
+		li
+			list-style-type: none
+			margin: 0 20px 0 0
+			display: inline
+
+			a
+				font-weight: bold
+				line-height: 26px
+
+				&:before
+					padding-right: 5px
+					content: "\2022"
+
+				&:hover
+					text-decoration: none
+					color: #365c7b
+
+			span
+				font-size: 11px
+
+	.lastModifiedGalleriesHeaderToggle
+		cursor: pointer
+		float: right
+		height: 37px
+		width: 37px
+		background-color: $color1
+		font-size: 0
+		line-height: 0
+		text-align: center
+		border-left: solid 1px #fff
+		margin-bottom: -1px
+
+		&:before
+			content: "\f103"
+			font-size: 20px
+			color: #fff
+			line-height: 37px
+			vertical-align: top
+			font-family: $fontIcon
+
+		&:hover
+			background-color: $color1 + 20
+
+	.sectionHeader
+		position: relative
+		padding: 40px 40px 40px 213px
+
+		&:after
+			content: ""
+			display: table
+			width: 100%
+			height: 0
+			clear: both
+
+		&:before
+			position: absolute
+			bottom: -16px
+			left: 50%
+			border-style: solid
+			border-width: 8px 18px
+			border-color: transparent
+			content: ""
+			margin-left: -18px
+
+		&.onlyTitleAndNumber
+			padding-left: 160px
+
+			.titleAndNumber
+				margin-top: 0
+
+				&:before
+					font-size: 81px
+					left: -120px
+
+	.titleAndNumber
+		position: relative
+		border-left: solid 1px #fff
+		padding-left: 30px
+		float: left
+		margin-top: 20px
+
+		> h4
+			font-size: 0
+			line-height: 0
+			margin: 0 0 20px
+			padding: 0
+
+			> span
+				font-size: 36px
+				font-weight: bold
+				color: #fff
+				line-height: 1
+
+		> p
+			margin: 0
+			padding: 0
+
+			> span
+				font-size: 17px
+				font-weight: bold
+
+			.numberOfItemsInSection
+				color: #fff
+
+		&:before
+			position: absolute
+			left: -160px
+			top: 0
+			display: inline-block
+			line-height: 1
+			font-size: 125px
+			color: #fff
+			font-family: $fontIcon
+
+		&.categoriesTitleAndNumber
+
+			&:before
+				content: "\f02c"
+				text-shadow: 1px 1px 0 #187aa0
+
+		&.galleriesTitleAndNumber
+
+			&:before
+				content: "\f03e"
+				text-shadow: 1px 1px 0 #298b57
+
+		&.mediaManagerTitleAndNumber
+
+			&:before
+				content: "\f108"
+				text-shadow: 1px 1px 0 #3f8f9b
+
+		&.cropContentTitleAndNumber
+
+			&:before
+				content: "\f125"
+				text-shadow: 1px 1px 0 #3f8f9b
+				top: -10px
+
+		&.settingsTitle
+			margin-top: 0
+
+			&:before
+				content: "\f013"
+				text-shadow: 1px 1px 0 #187aa0
+				top: -7px
+				left: -140px
+
+	.headerActionBox
+		float: right
+		width: 410px
+		border: solid 1px #365c7b
+		border-radius: 2px
+		background-color: #fff
+
+		> h4
+			font-size: 0
+			line-height: 0
+			margin: 0
+			padding: 10px 15px
+			background-color: #365c7b
+
+			> span
+				color: #fff
+				font-size: 16px
+				line-height: 1
+
+		> div
+			padding: 15px
+
+			&:after
+				content: ""
+				display: table
+				clear: both
+				width: 100%
+
+			> div
+				float: left
+				width: 244px
+
+				input[type="text"]
+					width: 220px
+
+					& + *
+						margin-top: 5px
+
+				.styledSelect
+					width: 230px
+
+				.ui-dropdownchecklist-text
+					width: 220px !important
+
+				.ui-dropdownchecklist-selector
+					width: 230px !important
+
+			.dnnLabel
+				display: block
+				text-align: left
+				width: auto
+
+				.tooltip
+					position: static
+					opacity: 1
+					display: block
+					visibility: visible
+					color: #0c82b0
+					font-size: 11px
+
+				.dnnFormHelp
+					background-size: cover
+					background-position: 0 0
+					width: 10px
+					height: 9px
+
+		.headerActionButton
+			display: inline-block
+			margin: 25px
+			border-radius: 4px
+			color: #fff
+			text-decoration: none
+			padding: 7px 10px
+			line-height: 1
+			font-size: 19px
+			text-transform: uppercase
+
+			&:before
+				font-family: $fontIcon
+				font-size: 15px
+				content: "\f055"
+				padding-right: 5px
+				font-size: 21px
+
+			&.moveCopy
+				font-size: 14px
+
+				&:before
+					display: none
+
+		&.elementInlineBlock
+
+			> div
+
+				> div
+					width: 50%
+					margin-top: 4px
+
+			.headerActionButton
+				float: right
+				margin: 0 0 0 10px
+
+		&.userGalleryPrivacyWrapper
+			margin: 0 !important
+			width: 400px
+
+	.numberOfMediaFiles
+		font-size: 12px
+		margin: 30px 40px 0
+		padding: 0
+		color: $baseTextColor
+
+		span
+			color: $baseTextColor
+			font-size: 12px
+
+	.contentSectionWrapper
+		box-shadow: 0 0 3px rgba(0, 0, 0, .4)
+		border-radius: 3px
+		background: #fff
+		margin: 40px auto
+		width: 1200px
+
+		&.color1
+
+			.sectionHeader
+				background-color: $color1
+
+				&:before
+					border-top-color: $color1
+
+			.titleAndNumber
+
+				> p
+					color: #365c7b
+
+			.headerActionBox
+
+				.headerActionButton
+					background-color: $color1
+
+					&:hover
+						background-color: $color1 - 20
+
+		&.color2
+
+			.sectionHeader
+				background-color: $color2
+
+				&:before
+					border-top-color: $color2
+
+			a
+				color: $color2
+
+				&:hover
+					color: $color2
+
+			.titleAndNumber
+
+				> p
+					color: #1b7d49
+
+			.headerActionBox
+				border-color: #18894d
+
+				> h4
+					background-color: #18894d
+
+				.headerActionButton
+					background-color: $color2
+					color: #fff
+
+					&:hover
+						background-color: $color2 - 20
+
+				> div .dnnLabel
+
+					.tooltip
+						color: #18894d
+
+			.listItems
+
+				.listItemsTable
+
+					tr
+
+						th
+							background-color: $color2
+
+							a
+								color: #fff
+
+								&:hover
+									color: #fff
+
+						td
+							color: $color2
+
+			.itemActions
+
+				&.itemPrimaryActions
+
+					> a
+
+						&:before
+							color: #18894d
+
+						&:hover
+							color: #18894d
+
+				& .footerActions
+
+					a
+						color: $color2
+
+						&:hover
+							text-decoration: none
+							color: #18894d
+
+		&.color3
+
+			.sectionHeader
+				background-color: $color3
+
+				&:before
+					border-top-color: $color3
+
+			a
+				color: $color2
+
+				&:hover
+					color: $color2
+
+			.titleAndNumber
+
+				> p
+					color: #438994
+
+					> span
+
+						&:first-child
+							padding-right: 20px
+
+			.headerActionBox
+				border-color: #d9d9d9
+				box-shadow: 0 0 2px #d4d8d9
+				margin: 40px 40px 0 40px
+
+				> h4
+					background-color: $color3
+
+				.headerActionButton
+					background-color: $color3
+					color: #fff
+
+					&:hover
+						background-color: $color3 - 20
+
+				> div .dnnLabel
+
+					.tooltip
+						color: #18894d
+
+			.listItems
+
+				.listItemsTable
+
+					tr
+
+						th
+							background-color: $color2
+
+							a
+								color: #fff
+
+								&:hover
+									color: #fff
+
+						td
+							color: $color2
+
+			.itemActions
+
+				&.itemPrimaryActions
+
+					> a
+
+						&:before
+							color: #18894d
+
+						&:hover
+							color: #18894d
+
+				&.footerActions
+
+					a
+						color: $color2
+
+						&:hover
+							text-decoration: none
+							color: #18894d
+
+		&:after
+			content: ""
+			display: table
+			width: 100%
+			clear: both
+
+	.listItems
+		margin: 40px
+		border: solid 1px #dadada
+			radius: 3px
+		box-shadow: 0 0 2px #dadada
+		overflow: hidden
+
+		& + .numberOfItemsPerPage
+			margin-top: -15px
+
+		&.owerFlowVisible
+			overflow: visible
+			box-shadow: 2px 0 2px #dadada
+
+	.sectionBox
+		margin: 40px 0
+		border: solid 1px #dadada
+			radius: 3px
+		box-shadow: 0 0 2px #dadada
+		overflow: hidden
+		background-color: #fff
+		position: relative
+
+		.sectionBoxHeader
+			background-color: $color1
+			padding: 15px 40px
+			text-align: left
+			position: relative
+
+			> h4
+				font-size: 19px
+				line-height: 1
+				color: #ffffff
+				font-weight: normal
+
+				> span
+					font-size: 19px
+					line-height: 1
+					color: #ffffff
+					font-weight: normal
+					display: inline-block
+					vertical-align: middle
+
+				.fa
+					font-size: 32px
+					margin: 0 15px 0 0
+
+			.onOffToggle
+				position: absolute
+				top: 14px
+				right: 40px
+				border-color: #fff !important
+
+			.styledCheckbox
+				position: absolute
+				background-color: #fff
+				border-radius: 3px
+				padding: 5px
+				top: 17px
+				right: 17px
+
+				&.big
+					top: 15px
+					right: 15px
+
+			&.color2
+				background-color: $color2
+
+			&.color4
+				background-color: $color4
+
+			&.color5
+				background-color: $color5
+
+			&.color7
+				background-color: $color7
+
+			&.small
+				padding-top: 8px
+				padding-bottom: 8px
+
+				> h4
+					font-size: 16px
+
+					> span
+						font-size: 16px
+
+					.fa
+						font-size: 20px
+
+				.styledCheckbox
+					top: 4px
+					right: 4px
+
+					&.big
+						top: 1px
+						right: 1px
+
+		&.insideSectionBox
+			margin: 40px
+
+		&.noShadow
+			box-shadow: none
+
+		&.noBorder
+			border: none
+				radius: none
+
+		&.edgdisabled
+
+			&:before
+				position: absolute
+				top: 0
+				right: 0
+				bottom: 0
+				left: 0
+				content: "\f057"
+				background-color: rgba(255, 255, 255, 0.6)
+				font-family: "FontAwesome"
+				text-align: center
+				line-height: 220px
+				color: #FB7D7D
+				z-index: 2
+				font-size: 70px
+
+	.listItemsTable
+		width: 100%
+		border: none
+
+		tr
+			background-color: #fff
+			border: none
+
+			&:nth-child(even)
+				background-color: #e9e9e9
+
+			th
+				background-color: $color1
+				color: #fff
+				font-size: 19px
+				line-height: 1
+				font-weight: normal
+				padding: 15px
+				text-align: center
+				vertical-align: middle
+				border: none
+
+				a
+					color: #fff
+					font-size: 19px
+					text-decoration: underline
+
+					&:hover
+						color: #fff
+						text-decoration: none
+
+			td
+				text-align: center
+				padding: 10px
+				border: solid 1px #dadada
+					top: none
+					right: none
+				color: $color1
+				word-break: break-all
+
+				&.actionsCell
+					white-space: nowrap
+
+				&.arrangeItems
+					width: 15%
+
+					> div
+						width: 100px
+						text-align: left
+						margin: 5px auto
+						font-size: 0
+						line-height: 0
+
+						input
+							font-size: 12px
+							height: 17px
+							vertical-align: middle
+
+				&.selectItem
+					width: 16px
+
+				&.lastModified
+					white-space: nowrap
+
+				&.thumbnailCell
+					width: 150px
+
+					img
+						max-width: 150px
+						max-height: 150px
+
+					> span
+						font-size: 11px
+						color: #9f9f9f
+						line-height: 1
+						display: block
+
+					.thumbnail
+						margin: 0
+
+				.dnnLabel
+					width: auto
+					display: block
+					float: none
+					text-align: right
+
+				&.approveCell
+
+					span
+						font-size: 11px
+						color: #9f9f9f
+
+						&.approvedUserName
+							color: $color2
+							font-weight: bold
+
+					> div
+						margin: 5px 0 10px
+
+			&.editItemState
+				background-color: #FCEFDD
+
+			&.itemsListFooter
+				border-bottom: solid 1px #dadada
+				background-color: #fff
+
+				td
+					border: none
+
+			&.highLighted
+
+				td
+					padding-top: 30px
+					padding-bottom: 30px
+
+			&.color1HighLighted
+				background-color: $color1 !important
+
+				td,
+				span
+					color: #fff
+
+			&.color2HighLighted
+				background-color: $color2 !important
+				height: 45px
+
+				td,
+				span
+					color: #fff
+
+			&.color3HighLighted
+				background-color: $color3 !important
+
+				td,
+				span
+					color: #fff
+
+					.dnnLabel
+
+						> label
+							color: #fff
+
+							> span
+								color: #fff
+
+					.dnnFormHelp
+
+						> span
+							color: #fff
+
+			&.color5HighLighted
+				background-color: $color5 !important
+
+				td,
+				span
+					color: #fff
+
+			&.color6HighLighted
+				background-color: $color6 !important
+
+		&.reported
+
+			tr
+
+				th
+					background-color: $color4 !important
+
+				&.reportDismissed
+
+					td
+						color: #BFBFBF !important
+
+	.listItemsTableTabs
+		margin: 20px 20px 0
+
+		> a
+			display: inline-block
+			padding: 10px 40px
+			font-size: 15px
+			text-decoration: none
+			color: #fff !important
+			margin-right: 5px
+			border-radius: 4px 4px 0 0
+
+			&:hover
+				text-decoration: none
+				color: #fff !important
+
+			&.approveTab
+				background-color: $color2
+
+				&:hover
+					background-color: $color2 + 20
+
+			&.reportedTab
+				background-color: $color4
+
+				&:hover
+					background-color: $color4 + 20
+
+	.move
+		display: inline-block
+		width: 23px
+		height: 25px
+		line-height: 0
+		font-size: 0
+		background-color: $color1
+		text-decoration: none
+		text-align: center
+		border-radius: 2px
+		vertical-align: middle
+		margin-left: 5px
+
+		&:hover
+			background-color: $color1 + 20
+			text-decoration: none
+
+		&:after
+			font-family: $fontIcon
+			line-height: 23px
+			font-size: 20px
+			color: #fff
+			text-decoration: none
+
+		&.moveUp
+
+			&:after
+				content: "\f106"
+
+		&.moveDown
+
+			&:after
+				content: "\f107"
+
+	.positionItems
+		float: right
+
+		> a
+			display: inline-block
+			height: 38px
+			line-height: 38px
+			border-radius: 3px
+			color: #fff !important
+			font-size: 15px
+
+			&:hover
+				color: #fff
+				text-decoration: none
+
+			&:before
+				font-family: $fontIcon
+				font-size: 18px
+
+		.savePositions
+			background-color: #41c981
+			padding: 0 15px
+
+			&:hover
+				background-color: #41c981 + 20
+
+			&:before
+				content: "\f0c7"
+				color: #18894d !important
+				padding-right: 10px
+
+		.rearangePositions
+			background-color: #f6b96a
+			padding: 0 10px
+			margin-left: 10px
+
+			&:hover
+				background-color: #f6b96a + 20
+
+			&:before
+				content: "\f01e"
+				color: #af8043
+
+	.contentPagination
+		background: none transparent !important
+		border: none
+		text-align: center
+
+		table
+			margin: 0 auto
+			width: auto
+
+			td
+				border: none !important
+				background: none transparent !important
+				padding: 0 !important
+
+		a,
+		span
+			display: inline-block
+			margin: 6px 3px
+			line-height: 1
+			border-radius: 2px
+			min-width: 5px
+			line-height: 25px
+			padding: 0 10px
+			font-size: 12px
+
+		a
+			color: $baseTextColor !important
+
+			&:hover
+				color: #fff !important
+				text-decoration: none
+				background-color: $color2
+
+		span,
+		a.active
+			background-color: $color2
+			color: #fff !important
+			text-decoration: none
+
+	.mediaType
+		font-size: 12px
+		line-height: 1
+		display: block
+		text-align: center
+
+		&:before
+			font-family: $fontIcon
+			color: $color2
+			font-size: 25px
+			display: block
+
+		&.typeImage
+
+			&:before
+				content: "\f03e"
+
+		&.typeVideo,
+		&.typeEmbededVideo,
+		&.typeEmbedVideo,
+		&.typeAmazonS3
+
+			&:before
+				content: "\f1c8"
+
+		&.typeAudio
+
+			&:before
+				content: "\f1c7"
+
+		&.typeHTML
+
+			&:before
+				content: "\f121"
+
+	.numberOfItemsPerPage
+		text-align: center
+		margin: 25px
+
+		.dnnLabel
+			float: none
+			width: auto
+
+			label
+				font-size: 12px
+				color: $baseTextColor
+
+				span
+					font-size: 12px
+					color: $baseTextColor
+
+		> div
+			display: inline-block
+			vertical-align: top
+
+	.userGalleryLinks
+
+		> a
+			display: inline-block
+			padding: 5px 10px
+			border-radius: 3px
+			background-color: $color1
+			color: #fff !important
+			font-size: 15px
+			margin: 15px 0 15px 15px
+
+			&:hover
+				background-color: $color1 + 20
+				text-decoration: none
+				color: #fff !important
+
+	.selectedCategory
+		background-color: $color2
+		border-radius: 4px
+		padding: 8px 14px
+		margin: 40px 40px 0
+		display: inline-block
+
+		&:before
+			content: "\f058"
+			color: #fff
+			font-size: 19px
+			font-family: $fontIcon
+			padding-right: 5px
+
+		span
+			line-height: 1
+			color: #fff
+			font-size: 16px
+
+		.selectedCategoryName
+			font-weight: bold
+			margin-bottom: 10px
+
+		&.selectedCategoryMediaManager
+			background-color: $color3
+
+		& ~ .selectedCategory
+			margin-top: 10px
+
+	.moveMultipleGalleries
+		display: inline-block
+		margin: 10px
+
+		> div
+			display: inline-block
+			vertical-align: middle
+
+	.mediaSelect
+		margin: 0
+		padding: 0
+		text-align: center
+		position: relative
+		font-size: 0
+		line-height: 0
+
+		li
+			display: inline-block
+			list-style-type: none
+			margin: 0 7px
+
+			a
+				display: inline-block
+				color: #fff !important
+				text-decoration: none
+				border-radius: 3px 3px 0 0
+				text-transform: uppercase
+				line-height: 47px
+				font-size: 16px
+				padding: 0 30px
+
+				&:hover
+					text-decoration: none
+					color: #fff !important
+
+				&:before
+					font-family: $fontIcon
+					font-size: 15px
+					padding-right: 8px
+
+				&:after
+					position: absolute
+					height: 11px
+					bottom: -11px
+					left: 0
+					right: 0
+					content: ""
+					display: none
+
+				&.active
+					padding-bottom: 1px
+
+					&:after
+						display: block
+
+			&.imageUpload
+
+				a
+					background-color: #fa6900
+
+					&:hover
+						background-color: #fa6900 + 20
+
+					&:before
+						content: "\f03e"
+						color: #994000
+
+					&:after
+						background-color: #fa6900
+
+			&.videoUpload
+
+				a
+					background-color: #ffc33c
+
+					&:hover
+						background-color: #ffc33c + 20
+
+					&:before
+						content: "\f03d"
+						color: #cd930f
+
+					&:after
+						background-color: #ffc33c
+
+			&.audioUpload
+
+				a
+					background-color: #53a491
+
+					&:hover
+						background-color: #53a491 + 20
+
+					&:before
+						content: "\f028"
+						color: #2f7262
+
+					&:after
+						background-color: #53a491
+
+			&.addHtml
+
+				a
+					background-color: #53a491
+
+					&:hover
+						background-color: #53a491 + 20
+
+					&:before
+						content: "\f121"
+						color: #2f7262
+
+					&:after
+						background-color: #53a491
+
+	.itemActions
+		text-align: center
+
+		&.itemPrimaryActions
+
+			> a
+				font-size: 16px
+				text-decoration: none
+
+				&:before
+					font-family: $fontIcon
+					color: #365c7b
+					display: inline-block
+					vertical-align: top
+					font-size: 14px
+					line-height: 22px
+					padding-right: 5px
+
+				&:hover
+					text-decoration: none
+					color: #365c7b
+
+				& + a
+					margin-left: 10px
+
+				&.openAction
+
+					&:before
+						content: "\f07c"
+
+				&.editAction
+
+					&:before
+						content: "\f013"
+
+				&.deleteAction
+
+					&:before
+						content: "\f014"
+
+				&.cropAction
+
+					&:before
+						content: "\f125"
+
+				&.approveAction
+					color: $color3 !important
+					position: relative
+					padding-left: 16px
+
+					&:before
+						content: "\f096"
+						color: $color3 !important
+						position: absolute
+						left: 0
+						top: 0
+
+					&:hover
+						color: $color3 - 20 !important
+
+						&:before
+							content: "\f046"
+
+				&.unApproveAction
+					color: $color4 !important
+					position: relative
+					padding-left: 16px
+
+					&:before
+						content: "\f046"
+						color: $color4 !important
+						position: absolute
+						left: 0
+						top: 0
+
+					&:hover
+						color: $color4 - 20 !important
+
+						&:before
+							content: "\f096"
+
+		&.itemSecondaryActions
+
+			> a
+				display: block
+				color: #9f9f9f
+				font-size: 12px
+				line-height: 1.1
+
+				&:hover
+					color: #9f9f9f
+
+		&.itemEditActions
+			display: inline-block
+
+			> a,
+			> input[type="button"],
+			> input[type="submit"]
+				display: inline-block
+				font-size: 13px
+				color: #fff
+				padding: 5px 10px
+				line-height: 1
+				border-radius: 2px
+				word-break: normal
+
+				& + a
+					margin-left: 10px
+
+				&:hover
+					color: #fff
+					text-decoration: none
+
+				&.itemEditUpdate
+					background-color: #41c981
+
+					&:hover
+						background-color: #41c981 + 20
+
+				&.itemEditCancel
+					background-color: $color4
+
+					&:hover
+						background-color: $color4 + 20
+
+				&.itemEditRemove
+					background-color: $color4
+
+					&:hover
+						background-color: $color4 + 20
+
+				&.itemEditCopy
+					background-color: #189fd3
+
+					&:hover
+						background-color: #189fd3 + 20
+
+				&.itemEditAdd
+					background-color: $color1
+
+					&:hover
+						background-color:  $color1 + 20
+
+				&.itemEditMove
+					background-color: #41c981
+
+					&:hover
+						background-color: #41c981 + 20
+
+				&.itemEditRotate
+					background-color: $color3
+
+					&:hover
+						background-color: $color3 + 20
+
+					&:before
+						margin-right: 10px
+						font-family: $fontIcon
+						color: #fff
+
+					&.rotateLeft
+
+						&:before
+							content: "\f0e2"
+
+					&.rotateRight
+
+						&:before
+							content: "\f01e"
+
+			> input[type="button"],
+			> input[type="submit"]
+				border: none
+				outline: none
+				cursor: pointer
+
+			> a + a,
+			> input[type="button"] + input[type="button"],
+			> input[type="submit"] + input[type="submit"]
+				margin-left: 10px
+
+			&.small
+
+				> a,
+				> input[type="button"],
+				> input[type="submit"]
+					font-size: 10px
+
+			&.big
+
+				> a,
+				> input[type="button"],
+				> input[type="submit"]
+					font-size: 15px
+					padding: 9px 15px
+
+		&.footerActions
+			float: left
+			margin: 10px
+
+			a
+				display: inline-block
+				margin: 0 20px
+
+		&.itemMoveActions
+
+			> a
+				display: inline-block
+				font-size: 13px
+				color: #fff
+				padding: 5px 10px
+				line-height: 1
+				border-radius: 2px
+
+				&:hover
+					color: #fff
+					text-decoration: none
+
+				&.itemMoveMove
+					background-color: #41c981
+
+					&:hover
+						background-color: #41c981 + 20
+
+				&.itemMoveCopy
+					background-color: #0D8BFF
+
+					&:hover
+						background-color: #0D8BFF + 20
+
+				&.itemMoveCancel
+					background-color: $color4
+
+					&:hover
+						background-color: #41c981 + 20
+
+		&.bulkActions
+			float: right
+
+			> a
+				border-radius: 3px
+				color: #ffffff !important
+				display: inline-block
+				font-size: 15px
+				height: 38px
+				line-height: 38px
+				padding: 0 15px 0 35px
+				position: relative
+				text-decoration: none !important
+
+				&:before
+					font-family: $fontIcon
+					font-size: 18px
+					position: absolute
+					left: 10px
+					top: 8px
+					font-size: 21px
+					line-height: 1
+					color: #fff
+					text-decoration: none !important
+
+				&.bulkApprove
+					background-color: $color2
+
+					&:before
+						content: "\f046"
+
+					&:hover
+						background-color: $color2 + 20
+
+				&.bulkUnapprove
+					background-color: $color7
+
+					&:before
+						content: "\f096"
+
+					&:hover
+						background-color: $color7 + 20
+
+				&.bulkDelete
+					background-color: $color4
+
+					&:before
+						content: "\f014"
+
+					&:hover
+						background-color: $color4 + 20
+
+		&.alignTop
+			vertical-align: top
+
+	.mainActions
+		text-align: center
+		margin: 20px 0
+
+		> a
+			display: inline-block
+			padding: 12px 30px
+			border-radius: 3px
+			font-size: 16px
+			text-decoration: none
+			color: #fff !important
+			margin: 10px
+
+			&:hover
+				text-decoration: none
+
+			&:before
+				font-family: $fontIcon
+				font-size: 22px
+				line-height: 1
+				padding-right: 10px
+
+			&.downSaveClose
+				background-color: #f6b96a
+
+				&:before
+					content: "\f0c7"
+					color: #d28420
+
+				&:hover
+					background-color: #f6b96a + 20
+
+			&.downSave
+				background-color: $color1
+
+				&:before
+					content: "\f0c7"
+					color: #075a7a
+
+				&:hover
+					background-color: $color1 + 20
+
+			&.downClose
+				background-color: $color4
+
+				&:before
+					color: #fff
+					content: "\f057"
+
+				&:hover
+					background-color: $color4 + 20
+
+			&.upload
+				background-color: #7dc7d2
+
+				&:before
+					content: "\f093"
+					color: #fff
+
+				&:hover
+					background-color: #7dc7d2 + 20
+
+			&.add
+				background-color: #7dc7d2
+
+				&:before
+					content: "\f055"
+					color: #fff
+
+				&:hover
+					background-color: #7dc7d2 + 20
+
+			&.copy
+				background-color: $color1
+
+				&:before
+					content: "\f0c5"
+					color: #fff
+
+				&:hover
+					background-color: $color1 + 20
+
+			&.moveAction
+				background-color: $color2
+
+				&:before
+					content: "\f101"
+					color: #fff
+
+				&:hover
+					background-color: $color2 + 20
+
+			&.resetAction
+				background-color: $color5
+
+				&:before
+					content: "\f0e2"
+					color: #fff
+
+				&:hover
+					background-color: $color5 + 20
+
+		.cropSave
+			background-color: #f6b96a
+			display: inline-block
+			padding: 12px 30px
+			border-radius: 3px
+			font-size: 16px
+			text-decoration: none
+			color: #fff !important
+			margin: 10px
+			cursor: pointer
+
+			&:before
+				font-family: $fontIcon
+				font-size: 22px
+				line-height: 1
+				padding-right: 10px
+				content: "\f125"
+				color: #d28420
+
+			&:hover
+				background-color: #f6b96a + 20
+
+		&.color1
+
+			> a
+
+				&.downSaveClose,
+				&.downClose
+					background-color: $color1
+
+					&:hover
+						background-color: $color1 + 20
+
+					&:before
+						color: #075a7a
+
+		&.alignLeft
+			text-align: left
+
+	.additionalOptions
+
+		> h2
+			padding: 15px 30px
+			margin: 0 0 30px
+			border-bottom: solid 1px #c7c7c7
+
+			> span,
+			label > span,
+			.dnnFormHelp > span
+				font-weight: normal
+				color: #fff
+				font-size: 18px
+				line-height: 1
+
+			&:before
+				font-family: $fontIcon
+				font-size: 25px
+				line-height: 1
+				color: #fff
+				content: "\f013"
+
+			.dnnLabel
+				position: static
+				float: none
+				width: auto
+
+		> p
+			text-align: center
+			padding: 0
+			margin: 0 0 30px
+			color: #5a5a5a
+
+		.additionalOptionsList
+			border: 1px solid #dadada
+			box-shadow: 0 0 2px #dadada
+			margin: 0 auto 30px
+			width: 460px
+
+			&.fullWidthTable
+				width: 100%
+				border-left: none
+				border-right: none
+				box-shadow: none
+				margin: 0
+
+				tr
+
+					td
+
+						&:first-child
+							border-left: none
+
+						&:last-child
+							border-right: none
+
+			&.bottomTdBorders
+
+				tr
+					border-left: none
+					border-right: none
+					border-top: none
+
+					td
+						border-left: none
+						border-right: none
+						border-top: none
+
+			&.noTableBorder
+				border: none
+				box-shadow: none
+
+			tr
+
+				th
+					padding: 10px
+					color: #fff
+					font-size: 16px
+					line-height: 1
+					font-weight: normal
+					border: none
+					text-align: center
+
+					&:before
+						font-family: $fontIcon
+						line-height: 1
+						padding-right: 5px
+						font-size: 16px
+
+					&.roleName
+						text-align: left
+
+						&:before
+							content: "\f007"
+
+					&.permView
+
+						&:before
+							content: "\f06e"
+
+					&.permEdit
+
+						&:before
+							content: "\f013"
+
+				td
+					border: 1px solid #dadada
+					border-collapse: collapse
+					color: $baseTextColor
+					padding: 8px 15px
+
+					span
+						color: $baseTextColor
+
+					&.subjectName
+						text-align: right
+						width: 40%
+
+						&.short
+							width: 30%
+
+			&.modeTime
+
+				tr
+
+					th
+						text-align: left
+
+					td
+
+						&.subjectName
+							width: 10%
+
+						.dnnLabel
+							float: none
+							width: auto
+							margin: 0
+
+							label
+								font-size: 12px
+								color: $baseTextColor
+
+								span
+									font-size: 12px
+									color: $baseTextColor
+
+			.dnnLabel
+				float: none
+				width: auto
+
+				label
+					color: $baseTextColor
+
+					span
+						color: $baseTextColor
+
+			.dnnFormItem
+
+				table
+
+					tr
+
+						td
+							padding: 0
+							border: none
+							width: auto
+
+				> div
+					margin-top: 10px
+
+					> .dnnLabel
+						float: left
+						width: auto
+						margin-top: 7px
+
+						label
+							font-size: 12px
+
+							span
+								font-size: 12px
+
+					> table
+						width: 50%
+
+						tr
+
+							td
+								text-align: left
+
+		&.color1
+
+			> h2
+				background-color: $color1
+
+			> p
+
+				.itemName
+					color: $color1
+
+			.additionalOptionsList
+
+				tr
+
+					th
+						background-color: $color1
+
+		&.color2
+
+			> h2
+				background-color: $color2
+
+			> p
+
+				.itemName
+					color: $color2
+
+			.additionalOptionsList
+
+				tr
+
+					th
+						background-color: $color2
+
+			.textBoxAndButton
+
+				a
+					color: #fff !important
+					background-color: $color2
+
+					&:hover
+						background-color: $color2 + 20
+
+		&.color3
+
+			> h2
+				background-color: $color3
+
+		&.imageEdit,
+		&.videoEdit,
+		&.audioEdit,
+		&.htmlEdit
+
+			> h2
+				padding: 30px
+				position: relative
+
+				> span
+					font-size: 36px
+					border-left: solid 1px #fff
+					padding-left: 28px
+					display: inline-block
+					vertical-align: middle
+					overflow: hidden
+					font-weight: bold
+
+				&:before
+					font-size: 75px
+					line-height: 0
+					padding-right: 15px
+					display: inline-block
+					vertical-align: middle
+					text-shadow: 1px 1px 0 rgba(0, 0, 0, .4)
+
+				&:after
+					position: absolute
+					bottom: -16px
+					left: 50%
+					border-style: solid
+					border-width: 8px 18px
+					border-color: transparent
+					content: ""
+					margin-left: -18px
+
+		&.imageEdit
+
+			> h2
+				background-color: #fa6900
+
+				&:before
+					content: "\f044"
+					color: #994000
+
+				&:after
+					border-top-color: #fa6900
+
+		&.videoEdit
+
+			> h2
+				background-color: #ffc33c
+
+				&:before
+					content: "\f044"
+					color: #cd930f
+
+				&:after
+					border-top-color: #ffc33c
+
+		&.audioEdit
+
+			> h2
+				background-color: #53a491
+
+				&:before
+					content: "\f044"
+					color: #2f7262
+
+				&:after
+					border-top-color: #53a491
+
+		&.htmlEdit
+
+			> h2
+				background-color: #53a491
+
+				&:before
+					content: "\f121"
+					color: #2f7262
+
+				&:after
+					border-top-color: #53a491
+
+		&.mediaReports
+
+			> h2
+				margin-bottom: 0
+
+				&:before
+					content: "\f071"
+
+				> span
+
+					> span
+						display: block
+						font-size: 14px
+						border-top: dotted 1px #fff
+						margin-top: 10px
+						padding-top: 10px
+
+						&:before
+							font-family: $fontIcon
+							margin-right: 10px
+							margin-left: 9px
+							color: #fff
+							content: "\f129"
+							font-size: 20px
+
+	.specialOptions
+		background-color: #dcdcdc
+		padding: 30px 40px
+		margin-top: 11px
+
+		> h2,
+		.optionsList
+			display: inline-block
+			vertical-align: middle
+
+		> h2
+			display: inline-block
+			position: relative
+			margin-left: 100px
+			margin-right: 40px
+			padding-left: 13px
+			border-left: solid 1px #b8b8b8
+
+			> span,
+			label > span,
+			.dnnFormHelp > span
+				color: #b8b8b8
+				font-size: 32px
+				line-height: 1
+				font-weight: bold
+				text-transform: uppercase
+
+			.dnnLabel
+				position: static
+				float: none
+				width: auto
+
+			&:before
+				position: absolute
+				top: -3px
+				left: -90px
+				font-size: 70px
+				color: #b8b8b8
+				line-height: 1
+				font-family: $fontIcon
+
+		.optionsListLabel
+			display: inline-block
+			vertical-align: middle
+			margin-right: 15px
+
+	.content
+		background-color: #ebebeb
+		padding: 30px 40px
+
+		> h4
+			margin-bottom: 25px
+			text-align: center
+
+			> span
+				font-size: 20px
+				color: #b8b8b8
+				line-height: 20px
+
+				&:before
+					font-family: $fontIcon
+					font-size: 19px
+					line-height: 20px
+					color: #999
+					padding-right: 8px
+
+				&.singleImageUplad
+
+					&:before
+						content: "\f03e"
+
+				&.multiImageUplad
+
+					&:before
+						content: "\f03e"
+
+				&.zipFileUplad
+
+					&:before
+						content: "\f1c6"
+
+				&.videoUpload
+
+					&:before
+						content: "\f1c8"
+
+				&.amazonS3
+
+					&:before
+						content: "\f1c8"
+
+				&.uploadToWistia
+
+					&:before
+						content: "\f1c8"
+
+				&.uploadAudio
+
+					&:before
+						content: "\f1c7"
+
+				&.multiUploadAudio
+
+					&:before
+						content: "\f1c7"
+
+				&.amazonS3Upload
+
+					&:before
+						content: "\f1c7"
+
+			.dnnLabel
+				float: none
+				width: auto
+
+				label
+					color: #b8b8b8
+
+					span
+						color: #b8b8b8
+						font-size: 20px
+
+		> .optionsList
+			text-align: center
+			margin: 20px auto
+
+			> table
+				margin: 0 auto
+
+		.optionsPanel
+
+			> table
+				border: none
+
+				tr
+
+					th
+						padding: 1%
+						font-weight: bold
+						text-align: center
+						font-size: 15px
+
+						label,
+						span
+							font-weight: bold
+							font-size: 15px
+
+					td
+						padding: 1%
+						vertical-align: top
+
+						div + div
+							margin-top: 7px
+
+						&.labels
+							width: 40%
+							text-align: right
+
+			.dnnLabel
+				float: none
+				width: auto
+
+				label
+					color: $baseTextColor
+
+					span
+						color: $baseTextColor
+
+			> .panelSubtitle
+				margin: 0 0 10px
+				padding: 0 0 5px
+				border-bottom: solid 1px #fff
+				display: block
+				font-size: 15px
+				font-weight: bold
+				color: #7b7b7b
+
+		&.noTopPadding
+			padding-top: 0
+
+	.contentSection
+
+		&.imageUpload
+
+			.specialOptions
+
+				> h2
+
+					&:before
+						content: "\f03e"
+
+		&.videoUpload
+
+			.specialOptions
+
+				> h2
+
+					&:before
+						content: "\f03d"
+
+				.optionsList
+					margin-left: 20px
+
+		&.audioUpload
+
+			.specialOptions
+
+				> h2
+
+					&:before
+						content: "\f028"
+
+				> .optionsList
+
+					.styledRadio
+
+						&.small
+
+							label
+								font-size: 11px
+								line-height: 1.2
+
+		&.addHtml
+
+			.specialOptions
+
+				> h2
+
+					&:before
+						content: "\f121"
+
+		&.gallerySettings
+
+			.specialOptions
+				margin-top: 0
+
+				> h2
+					margin-left: 85px
+
+					> span
+						font-size: 24px
+
+					&:before
+						content: "\f108"
+						font-size: 30px
+						left: -50px
+						top: 0
+
+		&.lightBoxSelect
+
+			.specialOptions
+				margin-top: 0
+				padding-top: 5px
+				padding-bottom: 5px
+
+				> h2
+					margin-left: 40px
+					margin-right: 0
+
+					> span,
+					label > span,
+					.dnnFormHelp > span
+						font-size: 14px
+
+					&:before
+						content: "\f08e"
+						font-size: 20px
+						left: -33px
+						top: 0
+
+				.optionsList
+
+					.styledRadio
+
+						label
+							font-size: 12px
+
+							span
+								font-size: 12px
+								color: #63a5af
+
+		&.blogIntegration
+
+			.specialOptions
+				margin-top: 0
+				padding-top: 5px
+				padding-bottom: 5px
+
+				> h2
+					margin-left: 40px
+					margin-right: 40px
+
+					> span,
+					label > span,
+					.dnnFormHelp > span
+						font-size: 14px
+
+					&:before
+						content: "\f03c"
+						font-size: 20px
+						left: -33px
+						top: 0
+
+		&.userUpload
+
+			.specialOptions
+				margin-top: 0
+				padding-top: 5px
+				padding-bottom: 5px
+
+				> h2
+					margin-left: 40px
+					margin-right: 40px
+
+					> span,
+					label > span,
+					.dnnFormHelp > span
+						font-size: 14px
+
+					&:before
+						content: "\f007"
+						font-size: 20px
+						left: -33px
+						top: 0
+
+		&.exportSettings
+
+			.specialOptions
+				margin-top: 0
+				padding-top: 5px
+				padding-bottom: 5px
+
+				> h2
+					margin-left: 40px
+					margin-right: 40px
+
+					> span,
+					label > span,
+					.dnnFormHelp > span
+						font-size: 14px
+
+					&:before
+						content: "\f03c"
+						font-size: 20px
+						left: -33px
+						top: 0
+
+			.saveLoadSettings
+				padding: 20px
+				background-color: #fff
+
+			.styledSelect
+				vertical-align: top
+
+			.dnnLabel
+				float: none
+				width: auto
+
+				label
+					color: $baseTextColor
+
+					span
+						color: $baseTextColor
+
+			table
+
+				tr
+
+					td
+						padding: 5px
+
+						&:first-child
+							text-align: right
+
+		&.selectSource
+
+			.specialOptions
+				margin-top: 0
+				padding-top: 7px
+				padding-bottom: 7px
+				background-color: $color3
+				border-top: solid 2px $color1
+				border-bottom: solid 2px $color1
+
+				> h2
+					margin-left: 40px
+					margin-right: 20px
+					border-left-color: #fff
+
+					> span,
+					label > span,
+					.dnnFormHelp > span,
+						font-size: 14px
+						color: #fff
+
+					&:before
+						content: "\f07c"
+						font-size: 20px
+						left: -33px
+						top: 0
+						color: #fff
+
+				.styledRadio
+
+					label
+						color: #fff
+
+		&.moduleVisibility
+
+			.specialOptions
+				margin-top: 0
+				padding-top: 5px
+				padding-bottom: 5px
+
+				> h2
+					margin-left: 40px
+					margin-right: 0
+
+					> span,
+					label > span,
+					.dnnFormHelp > span
+						font-size: 14px
+
+					&:before
+						content: "\f06e"
+						font-size: 20px
+						left: -33px
+						top: 0
+
+				.optionsList
+
+					.styledRadio
+
+						label
+							font-size: 12px
+
+							span
+								font-size: 12px
+
+		&.localization
+
+			.specialOptions
+				margin-top: 0
+				padding-top: 5px
+				padding-bottom: 5px
+
+				> h2
+					margin-left: 40px
+					margin-right: 40px
+
+					> span,
+					label > span,
+					.dnnFormHelp > span
+						font-size: 14px
+
+					&:before
+						content: "\f1ab"
+						font-size: 20px
+						left: -33px
+						top: 0
+
+				.dnnLabel
+					width: auto
+					float: none
+					vertical-align: middle
+
+		&.cacheContent
+
+			.specialOptions
+				margin-top: 0
+				padding-top: 5px
+				padding-bottom: 5px
+
+				> h2
+					margin-left: 40px
+					margin-right: 40px
+
+					> span,
+					label > span,
+					.dnnFormHelp > span
+						font-size: 14px
+
+					&:before
+						content: "\f021"
+						font-size: 20px
+						left: -33px
+						top: 0
+
+				.dnnLabel
+					width: auto
+					float: none
+					vertical-align: middle
+					margin-right: 0
+
+	.addSubject
+		margin: 40px
+
+		.smallInfo
+			text-align: center
+			display: block
+
+		> div
+			text-align: center
+
+			.textBoxAndButtonLabel
+				width: 200px
+				text-align: right
+				margin-left: -214px
+
+			> div
+				width: 460px
+
+	.approveState
+		display: inline-block
+		text-align: center
+		font-size: 0 !important
+		line-height: 0 !important
+		width: 28px
+		height: 28px
+		border-radius: 5px
+
+		&:before
+			display: block
+			color: #fff
+			font-size: 20px !important
+			line-height: 28px !important
+			font-family: $fontIcon
+
+		&.approved
+			background-color: $color2
+
+			&:before
+				content: "\f00c"
+
+		&.unapproved
+			background-color: $color4
+
+			&:before
+				content: "\f00d"
+
+	.approveLink
+		font-size: 12px
+		color: $baseTextColor !important
+
+		&:hover
+			text-decoration: none
+
+		&.approve
+
+			&:hover
+				color: $color2 !important
+
+		&.unApprove
+
+			&:hover
+				color: $color4 !important
+
+	.userGalleryPrivacy
+		margin: 20px
+
+		.dnnLabel
+			float: none
+			width: auto
+			display: inline-block
+			vertical-align: top
+
+			label
+				font-size: 12px
+				color: $baseTextColor
+
+				.tooltip
+					position: static
+					opacity: 1
+					display: block
+					visibility: visible
+					color: $baseTextColor
+					font-size: 12px
+
+		tr
+
+			td
+				font-size: 12px
+				color: $baseTextColor
+				padding: 6px
+				text-align: right
+
+				&.labels
+					width: 40%
+					text-align: right
+
+					.dnnLabel
+						float: none
+						width: auto
+
+						label
+							color: $baseTextColor
+
+							span
+								color: $baseTextColor
+
+	.settingsList
+		margin-top: 20px
+		margin-bottom: 20px
+		background-color: #fff
+
+		> h3
+			background-color: $color2
+			padding: 15px 40px
+			margin: 0 0 30px
+			line-height: 1
+			font-size: 37px
+			text-align: center
+
+			> span
+				color: #fff
+				line-height: 1
+				font-size: 37px
+
+		.settingsTable
+
+			.dnnLabel
+				float: none
+				width: auto
+				margin: 0
+
+			label, span, td, p
+				font-size: 12px
+				color: $baseTextColor
+
+			input[type="text"],
+			.styledSelect
+				vertical-align: middle
+
+			> table
+
+				tr
+
+					td
+						padding: 5px 1%
+						text-align: center
+
+						&:first-child
+							text-align: right
+							width: 48%
+
+						&:last-child
+							text-align: left
+							width: 48%
+
+					&.highLighted
+
+						td
+							padding-top: 30px
+							padding-bottom: 30px
+
+					&.color1HighLighted
+						background-color: $color1
+
+						td,
+						span
+							color: #fff
+
+					&.color2HighLighted
+						background-color: $color2
+						height: 45px
+
+						td,
+						span
+							color: #fff
+
+					&.color3HighLighted
+						background-color: $color3
+
+						td,
+						span
+							color: #fff
+
+							.dnnLabel
+
+								> label
+									color: #fff
+
+									> span
+										color: #fff
+
+							.dnnFormHelp
+
+								> span
+									color: #fff
+
+					&.color5HighLighted
+						background-color: $color5
+
+						td,
+						span
+							color: #fff
+
+					&.color6HighLighted
+						background-color: $color6
+
+					&.rotatorPanel
+
+						> td
+							height: 45px
+							padding: 0
+
+						td,
+						span
+							color: #fff
+
+					&.color1HighLighted,
+					&.color2HighLighted,
+					&.color5HighLighted,
+					&.color6HighLighted,
+					&.rotatorPanel
+
+						> td
+							position: relative
+
+						.settingsList
+							background-color: transparent
+
+						.onOffToggle
+							position: absolute
+							top: 5px
+							right: 40px
+							border-color: #fff !important
+
+						.dnnLabel
+							vertical-align: top
+
+		.nestedGalleryList
+
+			tr
+
+				td
+					text-align: left !important
+					padding-left: 0 !important
+
+	.infoMessages
+		margin: 10px 0
+		display: block
+		line-height: 1.1 !important
+		font-size: 16px !important
+		color: #fff !important
+		padding: 14px 25px 15px
+		border-radius: 2px
+		margin: 5px
+		text:
+			align: left
+			shadow: 0 1px 0 rgba(0, 0, 0, .4)
+
+		&:before
+			font-size: 21px
+			color: #fff !important
+			font-family: $fontIcon
+			padding-right: 20px
+			line-height: 1
+			position: relative
+			top: 1px
+
+		&.success
+			background-color: #00be9c
+
+			&:before
+				content: "\f058"
+
+		&.info
+			background-color: #189fd3
+
+			&:before
+				content: "\f05a"
+
+		&.warning
+			background-color: #f3c500
+
+			&:before
+				content: "\f071"
+
+		&.error
+			background-color: #e07171
+
+			&:before
+				content: "\f06a"
+
+	.flashMessages
+		position: fixed
+		top: 200px
+		left: 0
+		right: 0
+		text-align: center
+		z-index: 10
+
+		.infoMessages
+			display: inline-block
+			border-style: solid
+			border-width: 2px
+			border-radius: 4px
+			box-shadow: 0 0 3px rgba(0, 0, 0, 0.5)
+
+			&.success
+				background-color: rgba(0, 190, 156, .85)
+				border-color: #00be9c
+
+			&.info
+				background-color: rgba(24, 159, 211, .85)
+				border-color: #189fd3
+
+			&.warning
+				background-color: rgba(247, 197, 0, .85)
+				border-color: #f3c500
+
+			&.error
+				background-color: rgba(224, 113, 113, .85)
+				border-color: #e07171
+
+			& + .infoMessages
+				margin-top: 30px
+
+	.smallInfo
+		margin: 5px 0
+		font-size: 11px !important
+		line-height: 16px !important
+
+		&:before
+			font-size: 15px
+			padding-right: 5px
+			font-family: $fontIcon
+			line-height: 1
+
+		&.success
+			color: #02a700 !important
+
+			&:before
+				color: #08DA37 !important
+				content: "\f058"
+
+		&.info
+			color: #006bdd !important
+
+			&:before
+				color: #189fd3 !important
+				content: "\f05a"
+
+		&.warning
+			color: #fa6900 !important
+
+			&:before
+				color: #f3c500 !important
+				content: "\f071"
+
+		&.error
+			color: #C82020 !important
+
+			&:before
+				color: #e07171 !important
+				content: "\f06a"
+
+		&.inline
+			display: inline-block
+
+	.thumbnail
+		padding: 5px
+		background-color: #fff
+		border: solid 1px #dadada
+			radius: 1px
+		display: inline-block
+		margin: 0 7px 7px 0
+		line-height: 0
+		font-size: 0
+
+		img
+			border: none
+
+	.optionsBox
+		border: solid 1px #c9c9c9
+			radius: 4px
+		background-color: #fff
+		padding: 20px
+		margin: 15px
+		overflow: hidden
+		position: relative
+
+		> h4
+			margin: -20px -20px 20px
+			padding: 5px 20px
+			line-height: 1
+			font-size: 16px
+			font-weight: normal
+
+			span
+				font-size: 16px
+				line-height: 1
+				color: #fff
+				font-weight: normal
+
+		&:before
+			position: absolute
+			left: 20px
+			top: 40px
+			font-family: $fontIcon
+			color: #fff
+			line-height: 1
+			font-size: 32px
+
+		&.color1
+
+			> h4
+				background-color: $color1
+
+		&.color2
+
+			> h4
+				background-color: $color2
+
+		&.color3
+
+			> h4
+				background-color: $color3
+
+		&.color4
+
+			> h4
+				background-color: $color4
+
+		&.color5
+
+			> h4
+				background-color: $color5
+
+		&.portalSharing
+
+			&:before
+				content: "\f10c"
+				color: $color5
+
+			> div
+				margin-left: 60px
+
+			.styledSelect
+				border-color: $color5
+
+				&:after
+					background-color: $color5
+
+		&.categorySelect
+			background-color: $color3
+
+			&:before
+				content: "\f02c"
+
+			> h4
+				background-color: #63aab5
+
+			> div
+				margin-left: 60px
+
+			.styledSelect
+				border-color: #63aab5
+
+				&:after
+					background-color: #63aab5
+
+		&.gallerySelect
+			background-color: #41c981
+
+			&:before
+				content: "\f03e"
+
+			> h4
+				background-color: #2aa865
+
+			> div
+				margin-left: 60px
+
+			.styledSelect
+				border-color: #2aa865
+
+				&:after
+					background-color: #2aa865
+
+		&.selectLastModifiedGallery
+
+			&:before
+				content: "\f017"
+				color: $color2
+
+			> div
+				margin-left: 60px
+
+			.styledSelect
+				border-color: $color2
+
+				&:after
+					background-color: $color2
+
+	.paddingTopBottom
+		padding-top: 10px
+		padding-bottom: 10px
+
+	.paddingTop
+		padding-top: 10px
+
+	.paddingBottom
+		padding-bottom: 10px
+
+	.paddingLeftRight
+		padding-left: 10px
+		padding-right: 10px
+
+	.noPadding
+		padding: 0 !important
+
+	.noLeftRightPadding
+		padding-left: 0 !important
+		padding-right: 0 !important
+
+	.negativeMargins40
+		margin-left: -40px
+		margin-right: -40px
+
+	.marginTop30
+		margin-top: 30px !important
+
+	.separator
+		border-top: solid 1px #c4c5c5
+		margin-top: 15px
+		padding-top: 15px
+
+	.displayType
+		display: block
+
+		*
+			-webkit-box-sizing: border-box
+			-moz-box-sizing: border-box
+			box-sizing: border-box
+
+		> span
+			display: inline-block
+			text-align: left
+			overflow: hidden
+			vertical-align: top
+
+			& + .displaySettingsTitle
+				margin-top: 10px
+
+		.displayTypeThumbnail
+			position: relative
+			background-color: #fff
+			padding: 15px
+			border: solid 1px #c7c7c7
+				radius: 4px
+			font-size: 0
+			line-height: 0
+			background-repeat: no-repeat
+			background-position: 14px 14px
+
+			&:before
+				position: absolute
+				top: 0
+				right: 0
+				width: 42px
+				height: 42px
+				background-color: #f2f3f3
+				border: solid 1px #c7c7c7
+					top: none
+					right: none
+				border-bottom-left-radius: 4px
+				content: ""
+
+			&:hover
+				border-color: $color2
+
+			&.checked
+				border-color: $color2
+				box-shadow: 0 0 0 5px $color2
+				border-radius: 1px
+
+				&:before
+					background-color: $color2
+					border-color: $color2
+
+				.aditional
+					background-color: $color2
+
+				input[type="radio"]
+
+					&:checked
+
+						& + label
+
+							&:after
+								border-color: #2c9b60
+
+							&:before
+								background-color: #2c9b60
+
+			&.threeInRow
+				width: 280px
+				height: 270px
+				margin: 20px
+				background-size: 250px auto
+
+				input[type="radio"]
+
+					& + label
+						padding-top: 170px
+						padding-left: 14px
+
+			&.fourInRow
+				width: 240px
+				height: 260px
+				margin: 20px
+				background-size: 210px
+
+				input[type="radio"]
+
+					& + label
+						padding-top: 160px
+						padding-left: 14px
+
+			&.gravityGallery
+				background-image: url("../Images/preset-gravityGallery.jpg")
+
+			&.chameleonGallery
+				background-image: url("../Images/preset-chameleonGallery.jpg")
+
+			&.portfolioPro
+				background-image: url("../Images/preset-portfolioPro.jpg")
+
+			&.lightBoxGallery
+				background-image: url("../Images/preset-lightBoxGallery.jpg")
+
+			&.lightBoxPortfolioGallery
+				background-image: url("../Images/preset-lightBoxPortfolioGallery.jpg")
+
+			&.imageSlider1
+				background-image: url("../Images/preset-imageSlider1.jpg")
+
+			&.imageCarousel
+				background-image: url("../Images/preset-imageCarousel.jpg")
+
+			&.slideshowWithThumbnails3
+				background-image: url("../Images/preset-slideshowWithThumbnails3.jpg")
+
+			&.chameleonRotator
+				background-image: url("../Images/preset-chameleonRotator.jpg")
+
+			&.multiCarouselRotator
+				background-image: url("../Images/preset-multiCarouselRotator.jpg")
+
+			&.tabRotator
+				background-image: url("../Images/preset-tabRotator.jpg")
+
+			&.sizeShifterRotator
+				background-image: url("../Images/preset-sizeShifterRotator.jpg")
+
+			&.carousel3DRotator
+				background-image: url("../Images/preset-carousel3DRotator.jpg")
+
+			&.testimonialsRotator
+				background-image: url("../Images/preset-testimonialsRotator.jpg")
+
+			&.deviceRotator
+				background-image: url("../Images/preset-deviceRotator.jpg")
+
+			&.thumbnailRotator
+				background-image: url("../Images/preset-thumbnailRotator.jpg")
+
+			&.newsTickerRotator
+				background-image: url("../Images/preset-newsTickerRotator.jpg")
+
+			&.sliderWithAnimatedLayers
+				background-image: url("../Images/preset-sliderWithAnimatedLayers.jpg")
+
+			input[type="radio"]
+
+				& + label
+					position: absolute
+					top: 0
+					bottom: 0
+					left: 0
+					right: 0
+					cursor: pointer
+
+					&:before
+						right: 10px
+						top: 10px
+						left: auto
+
+					&:after
+						right: 8px
+						top: 8px
+						left: auto
+
+					> span
+						display: block
+
+			.presetName
+				margin: 0
+				padding: 0
+				color: $color2
+				font-size: 21px
+				line-height: 1
+				font-weight: normal
+
+			.selectPreSettings
+				position: absolute
+				background: transparent url("../Images/blank.png")
+				top: 0
+				right: 0
+				bottom: 0
+				left: 0
+
+			.aditional
+				background-color: #c7c7c7
+				display: block
+				padding: 7px 15px
+				position: absolute
+				bottom: 0
+				left: 0
+				right: 0
+				text-align: center
+				color: #fff
+				font-size: 16px
+				line-height: 1
+				text-transform: uppercase
+
+				&:before
+					content: "\f07e"
+					font-family: $fontIcon
+					font-size: 23px
+					padding-right: 10px
+					vertical-align: top
+					line-height: 17px
+
+		.twoInRow
+			width: 45%
+			margin: 3px 20px
+
+		.threeInRow
+			margin: 3px 20px
+
+		.displaySettingsTitle
+			display: block
+			margin: 0 -40px 10px
+
+			input[type="radio"]
+				display: none
+
+				& + label
+					display: block
+					padding: 0 40px
+					background-color: $color1
+					font-size: 15px
+					border-radius: 0
+					color: #fff
+					font-size: 15px
+					font-weight: bold
+					line-height: 45px
+					height: 45px
+
+					&:after,
+					&:before
+						display: none
+
+	.predefinedThumbnails
+
+		td
+			text-align: center !important
+			vertical-align: top !important
+			width: auto !important
+
+		*
+			-webkit-box-sizing: border-box
+			-moz-box-sizing: border-box
+			box-sizing: border-box
+
+		.thumbnail
+			border: solid 1px #cdcdcd
+				radius: 4px
+			padding: 14px
+			background-color: #fff
+			text-align: center
+			position: relative
+			margin: 10px
+			height: 240px
+			width: 250px
+
+		.presetImage
+			max-width: 100%
+			border: solid 1px #41c981
+			max-height: 130px
+
+		.presetName
+			font-size: 14px
+			line-height: 1
+			position: absolute
+			bottom: 60px
+			left: 10px
+			right: 10px
+
+			> span
+
+				font-weight: normal
+				font-size: 14px
+				line-height: 1
+
+		.selectPreSettings
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			background: transparent url("../Images/blank.png")
+			text-decoration: none
+
+			> span
+				display: inline-block
+				padding: 12px 0
+				width: 100px
+				background-color: $color2
+				color: #fff
+				font-size: 12px
+				text-transform: uppercase
+				text-decoration: none
+				position: absolute
+				bottom: 14px
+				left: 50%
+				margin-left: -50px
+				line-height: 1
+				border-radius: 3px
+
+			&:hover
+
+				> span
+					background-color: $color2 + 20
+
+		.selected_frame
+
+			.thumbnail
+				background-color: #41c981
+				border-color: #31aa6a
+
+			.presetName
+
+				> span
+					color: #fff
+
+			.selectPreSettings
+
+				> span
+					background-color: $color2 - 40
+
+		&.threeInRow
+
+			.thumbnail
+				height: 210px
+				width: 325px
+
+			.presetImage
+				max-height: 110px
+
+		&.oneInRow
+
+			.thumbnail
+				height: 160px
+				width: 680px
+
+			.presetImage
+				max-height: 50px
+
+	.EDS_simpleFineUploader
+
+		> .uploadDetails
+
+			> ol
+
+				&.fileUploadList
+
+					> li
+						background-color: #dcdcdc
+						border: none
+							radius: 3px
+
+						> .thumbnail
+							background-color: #fff
+							border: solid 1px #c3c3c3 !important
+								radius: 2px
+							padding: 1px
+
+						> .details
+
+							> p
+
+								&.filename
+									color: $baseTextColor
+									text-shadow: none
+
+								&.uploadInfo
+									color: #48b4c4
+									text-shadow: none
+
+							> .actions
+
+								> span
+									display: inline-block
+									font-size: 11px
+									color: #fff
+									padding: 3px 5px
+									line-height: 1
+									border-radius: 2px
+									text-shadow: none
+									font-weight: normal
+
+									&:hover
+										color: #fff
+										text-shadow: none
+
+									&.retry
+										background-color: $color1
+
+										&:hover
+											background-color: $color1 + 20
+
+									&.cancel
+										background-color: $color4
+
+										&:hover
+											background-color: $color4 + 20
+
+									&.ok
+										background-color: $color2
+
+										&:hover
+											background-color: $color2 + 20
+
+		> .uploadControls
+
+			> .actions
+				text-align: center
+
+				.action
+					border: none
+						radius: 3px
+					background-image: none
+					background-color: #7dc7d2
+					padding: 12px 30px
+
+					> span
+						color: #fff
+						font-weight: normal
+						font-size: 16px
+
+					&:before
+						padding-right: 10px
+						line-height: 1
+						font-size: 22px
+						color: #fff
+						font-family: $fontIcon
+
+					&:hover
+						background-color: #7dc7d2 + 20
+
+					&.fileSelection
+
+						&:before
+							content: "\f03e"
+
+					&.upload
+
+						&:before
+							content: "\f093"
+
+	.multiuploadcontrol span.dnnSecondaryAction
+		display: none!important
+
+	.clearfix
+
+		&:after
+			clear: both
+			display: table
+			width: 100%
+			font-size: 0
+			line-height: 0
+			content: ""
+
+	.nowrap
+		white-space: nowrap
+
+	.edsgg_admin_sectionTogglesWrapper
+		text-align: center
+
+		> .section
+			background: #fff no-repeat
+			margin: 15px
+			padding: 0
+			display: inline-block
+			width: 220px
+			height: 240px
+			position: relative
+			border: solid 1px #d9d9d9
+				radius: 2px
+			box-shadow: 0 0 1px rgba(0, 0, 0, .2)
+			vertical-align: top
+
+			h3
+				margin: 0
+				padding: 0 20px
+				background: none
+				font: 13px/30px Arial
+				letter-spacing: normal
+				color: #fff
+				text-transform: uppercase
+
+			> div
+				height: 60px
+				border-top: solid 1px #d9d9d9
+				margin-top: 149px
+				text-align: center
+				padding-top: 12px
+
+			&.categories
+				background:
+					image: url("../Images/icons/edgCategoryLevelImage.png")
+					position: center 63px
+
+				h3
+					background-color: $color1
+
+				&.edgdisabled
+
+					&:before
+						position: absolute
+						top: 0
+						right: 0
+						bottom: 0
+						left: 0
+						content: "\f057"
+						background-color: rgba(255, 255, 255, 0.6)
+						font-family: "FontAwesome"
+						text-align: center
+						line-height: 220px
+						color: #FB7D7D
+						z-index: 2
+						font-size: 70px
+
+			&.galleries
+				background:
+					image: url("../Images/icons/edgGalleryLevelImage.png")
+					position: center 66px
+
+				h3
+					background-color: $color2
+
+			&.items
+				background:
+					image: url("../Images/icons/edgItems.png")
+					position: center 69px
+
+				h3
+					background-color: $color7
+
+			&.details
+				background:
+					image: url("../Images/icons/edgItemDetails.png")
+					position: center 68px
+
+				h3
+					background-color: $color4
+
+			&.categories,
+			&.galleries,
+			&.items
+
+				&:after
+					position: absolute
+					content: ""
+					width: 58px
+					height: 32px
+					background: transparent url("../Images/icons/arrow-1.png") no-repeat center center
+					top: 42px
+					right: -43px
+					z-index: 1
+
+			&.galleries
+
+				&:after
+					background-image: url("../Images/icons/arrow-2.png")
+					top: 140px
+
+	.onOffToggle
+		background-color: #e2e2e2
+		border: solid 1px #7c7c7c
+			radius: 4px
+		margin: 0
+		padding: 0
+		position: relative
+		display: inline-block
+		width: 110px
+		height: 34px
+		cursor: pointer
+		z-index: 1
+		text-align: center
+		@include transition(all .1s ease-in-out)
+		overflow: hidden
+		white-space: normal
+
+		.normalCheckBox
+			position: absolute
+			top: 0
+			left: 100%
+			margin: 0
+			padding: 0
+			border: 0
+
+		input
+			margin: 0
+			padding: 0
+			border: 0
+
+		> .offText,
+		> .onText
+			position: absolute
+			top: 0
+			margin: 0
+			padding: 0
+			width: 55px
+			display: inline-block
+			font: 12px/34px Arial
+			text-transform: uppercase
+			font-weight: normal
+			z-index: 1
+			@include transition(all .2s ease-in-out)
+
+		> .offText
+			right: 0
+			color: #484b57 !important
+			opacity: 0
+
+		> .onText
+			left: 0
+			color: #fff !important
+
+		> .slider
+			position: absolute
+			top: 0
+			left: 0px
+			width: 55px
+			height: 35px
+			background-color: $color1
+			border-radius: 2px
+			@include transition(left .2s linear)
+
+			&:hover
+				background-color: $color1 - 20
+
+		&.off
+
+			> .offText
+				color: #fff !important
+				opacity: 1
+
+			> .onText
+				color: #484b57 !important
+				opacity: 0
+
+			> .slider
+				right: 0px
+				left: auto
+				background-color: #7c7c7c !important
+				border-color: #7c7c7c !important
+
+		&.color7
+
+			> .slider
+				background-color: $color7
+
+				&:hover
+					background-color: $color1 - 20
+
+		&.color2
+
+			> .slider
+				background-color: $color2
+
+				&:hover
+					background-color: $color2 - 20
+
+		&.color4
+
+			> .slider
+				background-color: $color4
+
+				&:hover
+					background-color: $color4 - 20
+
+	.displayContent
+
+		> div
+			display: table
+			width: 100%
+
+			> div
+				display: table-cell
+				vertical-align: top
+
+		.displayLevel
+			background-color: #f2f3f3
+			background-repeat: no-repeat
+			background-position: center 50px
+			text-align: center
+			width: 200px
+
+			> p
+				font-size: 50px
+				margin: 150px 0 0
+				padding: 0
+
+			&.category
+				background-image: url("../Images/icons/edgCategoryLevelImage.png")
+
+			&.gallery
+				background-image: url("../Images/icons/edgGalleryLevelImage.png")
+
+			&.item
+				background-image: url("../Images/icons/edgItems.png")
+
+			&.details
+				background-image: url("../Images/icons/edgItemDetails.png")
+
+		.displayContentTable
+
+			.dnnLabel
+				position: static
+				float: none
+				width: auto
+				text-align: left
+
+			.fa
+				margin-right: 10px
+
+			> table
+
+				tr
+					border-bottom: solid 1px #cacaca
+
+					&:last-child
+						border-bottom: none
+
+					td
+						padding: 8px 20px
+						height: 40px
+
+						&.label
+							width: 300px
+
+						label,
+						span
+							font-size: 12px
+
+				table
+
+					tr
+						border: none
+
+						td
+							padding: 5px
+							width: auto
+							height: auto
+
+		&.color1
+
+			.displayContentTable
+
+				.fa
+					color: $color1
+
+			.displayLevel
+
+				> p
+					color: $color1
+
+		&.color2
+
+			.displayContentTable
+
+				.fa
+					color: $color2
+
+			.displayLevel
+
+				> p
+					color: $color2
+
+		&.color4
+
+			.displayContentTable
+
+				.fa
+					color: $color4
+
+			.displayLevel
+
+				> p
+					color: $color4
+
+		&.color7
+
+			.displayContentTable
+
+				.fa
+					color: $color7
+
+			.displayLevel
+
+				> p
+					color: $color7
+
+	.aditionalOptions
+
+		.displayContent
+
+			.displayContentTable
+
+				> table
+
+					tr
+
+						td
+							padding: 8px 0 8px 40px
+							height: 30px
+
+							&.label
+								width: 250px
+
+					table
+
+						tr
+							border: none
+
+							td
+								padding: 5px
+								width: auto
+								height: auto
+
+	.permissionsNotifications
+		margin: 0 0 15px
+
+		tr
+
+			&.second
+				background-color: #f1f1f1
+
+				td.subjectName
+					background: #E3E3E3
+
+					span
+						text-shadow: 1px 1px #e8e8e8
+
+			th
+				border: none
+				font-size: 11px
+				height: 35px
+				line-height: normal
+				width: 95px
+
+				&.header_cell
+					background: white
+					height: 35px
+
+			td
+				border: none
+				text-align: center
+
+				&.subjectName
+					text-align: right
+
+				.dnnCheckbox
+					position: relative
+					top: 4px
+
+				&.subjectName
+					text-align: right !important
+					vertical-align: middle !important
+					background: #F1F1F1
+					padding-right: 10px !important
+
+					p
+						width: 140px
+						overflow: hidden
+						padding: 0
+						margin: 0
+
+					span
+						font-size: 10px
+						font-weight: normal
+						color: #434343
+						text-shadow: 1px 1px white
+
+	.itemSelectionContainer
+		position: relative
+
+		.itemSelection_processingOverlay
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			border: 0
+			margin: 0
+			padding: 0
+			background: #fff url("../Images/animations/processing/white_circular.gif") center center no-repeat
+			opacity: 0.8
+
+		.itemSelection_itemList
+			display: block
+			padding: 40px
+			margin: 0
+			border: 0
+			font: 0/0 Arial
+
+			> span
+				font-size: 0
+
+		.itemSelection_itemList .itemSelection_item,
+		.itemSelection_selectedItemsContainer .itemSelection_selectedItemsList > li
+			border: 1px solid #c7c7c7
+			background: #fff
+			border-radius: 4px
+			display: inline-block
+			padding: 0
+			margin: 3px
+			cursor: pointer
+			width: 150px
+			vertical-align: top
+			overflow: hidden
+			word-break: break-all
+			@include transition(all .1s ease-in-out)
+			list-style-type: none
+			position: relative
+			font-size: 0
+
+			> span
+
+				&.name
+					font-size: 12px
+					line-height: 1
+					color: #939393
+					display: block
+					text-align: center
+					padding: 3px
+					@include transition(all .1s ease-in-out)
+
+				&.image
+					height: 80px
+					overflow: hidden
+					display: block
+					text-align: center
+
+					> img
+						width: 150px
+
+			&:hover
+				background-color: $color1
+				border-color: $color1
+
+				> span.name
+					color: #fff
+
+		.itemSelection_itemList .itemSelection_item
+
+			&:before
+				content: "\f055"
+				position: absolute
+				left: 0
+				right: 0
+				top: 0
+				height: 80px
+				line-height: 80px
+				background-color: #fff
+				opacity: 0
+				text-align: center
+				font-family: $fontIcon
+				color: #939393
+				font-size: 21px
+				@include transition(all .2s ease-in-out)
+
+			&:hover
+
+				&:before
+					opacity: .8
+
+		.itemSelection_selectedItemsContainer
+
+			.itemSelection_selectedItemsTitle
+				border: 1px solid #c7c7c7
+				background: #dcdcdc
+				display: block
+				margin: 0 -1px
+				padding: 9px 40px
+
+				> span
+					color: #919191
+					font-size: 16px
+
+				.fa
+					margin-right: 10px
+					color: #919191
+					font-size: 21px
+
+			.itemSelection_noItemsSelectedMsg
+				display: none
+				text-align: center
+				margin: 0
+				padding: 0
+				border: 0
+
+			.itemSelection_selectedItemsList
+				display: block
+				padding: 40px
+				margin: 0
+				border: 0
+				font: 0/0 Arial
+				background-color: #ebebeb
+
+				> li
+					position: relative
+					cursor: default
+
+					> .remove
+						position: absolute
+						top: 0
+						right: 0
+						display: inline-block
+						width: 26px
+						height: 26px
+						background-color: #fff
+						opacity: .8
+						border: 0
+						padding: 0
+						margin: 0
+						cursor: pointer
+						border-radius: 0 0 0 3px
+						text-align: center
+
+						&:before
+							content: "\f057"
+							color: $color4
+							font-size: 21px
+							line-height: 26px
+							font-family: $fontIcon
+
+						&:hover
+							background-color: #fff
+							opacity: 1
+
+							&:before
+								color: $color4 - 20
+
+			&.noItemsSelected
+
+				.itemSelection_selectedItemsList
+					display: none
+
+				.itemSelection_noItemsSelectedMsg
+					display: block
+
+		.contentPagination
+			padding: 30px 0
+			border-top: solid 1px #d9d9d9
+
+	.galleries
+
+		.itemSelectionContainer
+
+			.itemSelection_itemList .itemSelection_item:hover,
+			.itemSelection_selectedItemsContainer .itemSelection_selectedItemsList > li:hover
+
+				&:hover
+					background-color: $color2
+					border-color: $color2
+
+	.dashboard
+		padding: 0 0 32px 16px
+		border: 1px solid #e2e1e1
+			top: 0 none
+		background: #f4f4f4
+		border-bottom: none
+
+		&.customfields
+			overflow: hidden
+
+			ul.links
+				overflow: visible
+
+		ul.links
+			padding: 0
+			overflow: hidden
+			margin: 0 auto
+
+			&.bigger_margin
+				margin-top: 50px
+
+			li
+				display: block
+				list-style-type: none
+				display: block
+				float: left
+				margin: 32px 18px 0 0
+				background: url("../Images/dashboard/dashboard_icons_bg.png") no-repeat 0 0
+
+				&.activelink
+					background-position: -131px 0
+					border-radius: 6px 6px 6px 6px
+					box-shadow: 1px 1px 3px #888888
+					border: 1px solid #bae9ff
+
+					a
+						color: #094A78
+
+				&:hover
+					background-position: -131px 0
+
+				a
+					display: block
+					width: 123px
+					height: 40px
+					overflow: hidden
+					padding: 84px 4px 1px
+					color: #808080
+					font-size: 13px
+					font-weight: bold
+					text-align: center
+					text-decoration: none
+
+					&:hover
+						text-decoration: none
+
+					&.icon
+						background: no-repeat center 15px
+
+						&.global_settings
+							background-image: url("../Images/dashboard/icons/dashboard_global_settings.png")
+
+						&.general_settings
+							background-image: url("../Images/dashboard/icons/dashboard_genera_settings.png")
+
+						&.module_settings
+							background-image: url("../Images/dashboard/icons/dashboard_module_settings.png")
+							font-size: 12px
+							line-height: 12px
+
+						&.tags
+							background-image: url("../Images/dashboard/icons/dashboard_tags.png")
+
+						&.category_manager
+							background-image: url("../Images/dashboard/icons/dashboard_categories.png")
+
+						&.comments
+							background-image: url("../Images/dashboard/icons/dashboard_comments.png")
+
+						&.approve_articles
+							background-image: url("../Images/dashboard/icons/dashboard_approve_articles.png")
+
+						&.article_manager
+							background-image: url("../Images/dashboard/icons/dashboard_articles.png")
+
+						&.add_article
+							background-image: url("../Images/dashboard/icons/dashboard_add_article.png")
+
+						&.tokens
+							background-image: url("../Images/dashboard/icons/dashboard_tokens.png")
+
+						&.gallery
+							background-image: url("../Images/dashboard/icons/dashboard_gallery.png")
+							font-size: 12px
+
+							&.not_installed
+								background-image: url("../Images/dashboard/icons/dashboard_gallery_not_installed.png")
+
+						&.communitymode
+							background-image: url("../Images/dashboard/icons/dashboard_communitymode.png")
+
+						&.atom
+							background-image: url("../Images/dashboard/icons/dashboard_atom.png")
+
+						&.cross
+							background-image: url("../Images/dashboard/icons/dashboard_crossportal.png")
+
+						&.snotifications
+							background-image: url("../Images/dashboard/icons/dashboard_systemnotifications.png")
+
+						&.apiconnections
+							background-image: url("../Images/dashboard/icons/dashboard_apiconnections.png")
+
+						&.customfileds
+							background-image: url("../Images/dashboard/icons/dashboard_custom_fileds.png")
+
+						&.customfiledsadd
+							background-image: url("../Images/dashboard/icons/dashboard_custom_fileds_add.png")
+
+						&.customfields_group
+							background-image: url("../Images/dashboard/icons/dashboard_customfields_group.png")
+
+						&.customfields_currency
+							background-image: url("../Images/dashboard/icons/dashboard_customfields_currency.png")
+
+						&.customfields_export
+							background-image: url("../Images/dashboard/icons/dashboard_custom_fileds_export.png")
+
+						&.content_export
+							background-image: url("../Images/dashboard/icons/export-icon.png")
+
+						&.content_import
+							background-image: url("../Images/dashboard/icons/import-icon.png")
+
+						&.crop_tool
+							background-image: url("../Images/dashboard/icons/dashboard_crop.png")
+
+	.edn_admin_progress_overlay_container
+		position: relative
+
+		.edn_admin_progress_overlay
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			background: #fff url("../Images/saveloader.gif") center 90% no-repeat
+			opacity: 0.8
+			width: 100%
+			z-index: 999
+
+	.rotate90
+		-ms-transform: rotate(90deg)
+		-webkit-transform: rotate(90deg)
+		transform: rotate(90deg)
+
+	.rotate180
+		-ms-transform: rotate(180deg)
+		-webkit-transform: rotate(180deg)
+		transform: rotate(180deg)
+
+	.rotate270
+		-ms-transform: rotate(270deg)
+		-webkit-transform: rotate(270deg)
+		transform: rotate(270deg)
+
+	.schemaPrev
+		cursor: pointer
+		background-color: $color3
+		padding: 13px 40px
+		text-align: center
+		margin: 15px 0
+
+		> span
+			color: #fff !important
+
+		&:hover
+			background-color: $color3 + 20
+
+	.colorPickBox
+		width: 20px
+		height: 20px
+		border: solid 1px #c7c7c7
+		display: inline-block
+		vertical-align: middle
+
+	.carousel_dimensions_calculator
+		background: url(../Images/carousel_calculator_bg.png) no-repeat
+		width: 750px
+		height: 447px
+		margin: 20px auto
+		padding: 0
+		border: 0
+		position: relative
+		overflow: hidden
+
+	.clear
+		clear: both
+
+
+	.text
+		color: #4b4b4b
+		font: 14px Arial
+		margin: 0 0 5px
+		padding: 0
+
+
+		&.bold
+			font-weight: bold
+
+
+		&.small
+			font-size: 9px
+
+
+	.columns_and_rows
+		position: absolute
+		left: 120px
+		top: 25px
+
+		label
+			margin-left: 15px
+
+	.container
+		position: absolute
+		left: 515px
+		top: 110px
+
+		.unit_selection
+			margin: 0 0 6px
+
+			label
+				font-size: 14px
+
+		.explanation
+			float: right
+			width: 110px
+
+		.fixedsize
+			text-align: right
+			background: none
+			border: 0
+			font-size: 14px
+			font-weight: bold
+
+	.model
+		position: absolute
+		left: 30px
+		top: 85px
+		width: 412px
+		height: 259px
+		overflow: hidden
+
+		input.padding
+			position: absolute
+			text-align: center
+			width: 30px
+			height: 16px
+
+			&.container
+				padding: 1px 0 0
+				color: #4b4b4b
+				background: #fff
+				border: 1px solid #999
+				color: #444
+				box-shadow: 1px 1px 2px #9F9F9F inset
+
+				&.top
+					top: 7px
+					left: 50%
+					margin: 0 0 0 -15px
+
+				&.bottom
+					top: auto
+					bottom: 5px
+					left: 50%
+					margin: 0 0 0 -15px
+
+				&.left
+					top: 50%
+					left: 6px
+					margin: -7px 0 0
+
+				&.right
+					top: 50%
+					left: auto
+					right: 6px
+					margin: -7px 0 0
+
+			&.item
+				position: absolute
+				background: #fb7b55
+				border: 1px solid #f33b04
+				color: #fff
+				box-shadow: 1px 1px 2px #D95229 inset
+				margin: 0
+				padding: 0
+
+				&.top
+					top: 43px
+					left: 50%
+					margin-left: -15px
+
+				&.left
+					top: 50%
+					left: 53px
+					margin-top: -7px
+
+		.item_size
+			position: absolute
+			top: 0
+			left: 0
+			padding: 0
+			margin: 0
+
+			&.width
+				top: 115px
+				left: 160px
+
+			&.height
+				top: 145px
+				left: 155px
+
+			input
+				border: 1px solid #959595
+				background: #fff
+				text-align: center
+				width: 30px
+				margin: 0
+				padding: 1px 3px 2px
+
+	.saveLoader
+		padding: 20px 0
+		text-align: center
+
+		img
+			margin: 0 auto
+
+	.cropButtonsContainer
+		background-color: $color1
+		padding: 10px 0 0 0
+		text-align: center
+		border-radius: 3px 3px 0 0
+
+	.topLiButton
+		color: #fff !important
+		font-size: 16px
+		text-decoration: none !important
+		margin-right: 5px
+		line-height: 1
+		padding: 10px 20px
+		border: solid 2px #fff
+			bottom: none
+			radius: 3px 3px 0 0
+		background-color: $color1
+		display: inline-block
+
+		&.active
+			background-color: #fff
+			border-color: $color1 + 20
+			color: $color1 !important
+
+			&:hover
+				background-color: #fff
+				border-color: $color1 + 20
+				color: $color1 !important
+
+		&:hover
+			background-color: $color1 + 20
+			color: #fff !important
+
+	.cropWrapper
+		padding: 40px
+
+		.cropContainer
+			box-shadow: 0 0 4px 0 rgba(0, 0, 0, .4)
+			border: solid 1px #aeaeae !important
+			margin: 0 auto
+
+		.thumbnail
+			display: block
+			margin: 40px
+
+		.infoDiv
+			margin: 0 0 10px
+			padding: 0 0 5px
+			border-bottom: solid 1px #ddd
+			text-align: center
+
+			> span
+				font-size: 15px
+				font-weight: bold
+				color: #7b7b7b
+
+	.rightGoToContainer
+		text-align: right
+
+	.rightGoTo
+		display: inline-block
+		border: 1px solid rgba(23, 158, 211, 0.4)
+			radius: 2px
+		background-color: rgba(23, 158, 211, 0.1)
+		text-decoration: none !important
+		padding: 4px 10px
+		line-height: 1
+		font-size: 11px
+		color: $color1
+		margin: 5px 40px
+		@include transition(all 150ms linear)
+
+		&:before
+			content: "\f062"
+			font-family: $fontIcon
+			margin-right: 10px
+			color: $color1
+
+		&:hover
+			border-color: $color1
+			background-color: rgba(23, 158, 211, 0.6)
+			color: #fff !important
+
+	.edn_advanced_tree_view
+		padding: 0
+		margin: 0
+		border: 1px solid #B3B3B3
+			radius: 3px
+		overflow: hidden
+		box-shadow: 0 0 3px #fff
+
+		ul
+			padding: 0
+			margin: 0
+
+		li
+			list-style: none
+			font-size: 0
+			line-height: 0
+
+			> div
+				border: 0
+				border-top: 1px solid white
+				border-bottom: 1px solid #dedede
+				background-color: #ebeaea
+				overflow: hidden
+				padding: 2px 40px 2px 100px
+				position: relative
+
+				a
+					display: none
+
+				.expand_collapse
+					display: block
+					height: 21px
+					width: 21px
+					margin: 0 2px 0 4px
+					cursor: pointer
+					position: absolute
+					right: 4px
+					left: auto
+					font-size: 0
+					line-height: 0
+					text-align: center
+					text-decoration: none
+
+					&:before
+						content: "\f13a"
+						font-family: $fontIcon
+						color: $color1
+						font-size: 21px
+						line-height: 1
+
+					&:hover
+
+						&:before
+							color: $color1 -20
+
+					&.collapse
+
+						&:before
+							content: "\f139"
+
+				> span
+					font-size: 11px
+					color: #333333
+					display: inline
+					line-height: 1
+
+					&.category_selection input
+						margin: 0 2px 0 0
+						position: relative
+						top: 2px
+
+					&.drop_down_selector
+						float: right
+						font-size: 10px
+
+						> select
+							width: 180px
+							height: 18px
+							font-size: 11px
+							padding: 0
+							color: #333333
+
+				a
+
+					&.category
+						font-size: 11px
+						color: #333333
+						display: inline
+						line-height: 10px
+
+						span
+							color: #898989
+
+					&:hover
+						color: #b50909
+
+				> img,
+				> a.image > img
+					border-radius: 4px
+					float: left
+					margin: 0 7px 5px 0
+
+				> a.image
+					float: left
+					display: block
+					margin: 0 7px 5px 0
+
+				> a.image > img
+					margin: 0
+					float: none
+
+			&.active > div > a.category
+				font-weight: bold
+
+		> li
+
+			> div
+				padding-left: 20px
+				vertical-align: middle
+
+		> li
+
+			ul
+
+				li
+
+					> div
+						background-color: #f0f0f0
+						vertical-align: middle
+
+			li
+
+				&.level_1 > div
+					padding-left: 30px
+
+				&.level_2 > div
+					padding-left: 40px
+
+				&.level_3 > div
+					padding-left: 50px
+
+				&.level_4 > div
+					padding-left: 60px
+
+				&.level_5 > div
+					padding-left: 70px
+
+				&.level_6 > div
+					padding-left: 80px
+
+				&.level_7 > div
+					padding-left: 90px
+
+				&.level_8 > div
+					padding-left: 100px
+
+	.settings_table
+
+		& + .settingsTable
+			margin-top: 15px
+
+		& ~ .settings_table
+			margin-top: 5px
+
+	/*.RadEditor.reWrapper
+		border: solid 1px #828282 !important
+
+		.reToolbar
+			width: auto !important*/
+
+div.time-picker,
+div.datepick-popup
+	z-index: 1000 !important

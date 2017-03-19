@@ -1,0 +1,66 @@
+﻿<!--HeaderTemplateBegin-->
+<div class="ms-caro3d-template edsms_layout3">
+<!--HeaderTemplateEnd-->
+
+<!--ItemTemplateBegin-->
+	<div class="ms-slide">
+		<img src="[EasyDNNrotator:Image]" data-src="[EasyDNNrotator:Image]" alt="[EasyDNNrotator:Title]" [EasyDNNrotator:ResponsiveImages] />
+		[EasyDNNrotator:IfExists:SlideLink]<a href="[EasyDNNrotator:Link]" [EasyDNNrotator:DataType]>[EasyDNNrotator:Title]</a>[EasyDNNrotator:EndIf:SlideLink]
+		<div class="ms-layer edsms_slideContent3"
+			data-effect="right(long)"
+			data-duration="1500"
+			data-delay="0"
+			data-ease="easeInOutBack"
+			data-hide-effect="left(long)"
+			data-hide-ease="easeInOutBack">
+			<h3>[EasyDNNrotator:Title]</h3>
+			<div>[EasyDNNrotator:Description]</div>
+		</div>
+		[EasyDNNrotator:IfExists:Readmore]
+		<div class="ms-layer edsms_slideReadMore3"
+			data-effect="right(long)"
+			data-duration="1500"
+			data-delay="250"
+			data-ease="easeInOutBack"
+			data-hide-effect="left(long)"
+			data-hide-ease="easeInOutBack">
+			<a href="[EasyDNNrotator:Link]"><span class="edsms_readMoreText1">[EasyDNNrotator:LocalizedText:Readmore]</span></a>
+		</div>
+		[EasyDNNrotator:EndIf:Readmore]
+		[EasyDNNrotator:IfExists:Event]
+		<div class="ms-layer edsms_eventContainer"
+			data-effect="top(long)"
+			data-duration="1500"
+			data-delay="0"
+			data-ease="easeInOutBack">
+			<div class="edsms_eventHeader">
+				<span class="edsms_eventDate">[EasyDNNrotator:EventDate]</span>[EasyDNNrotator:IfExists:Location]<span class="edsms_eventLocation">[EasyDNNrotator:Location]</span>[EasyDNNrotator:EndIf:Location]
+			</div>
+			<div class="edsms_eventCounter">
+				<div><span class="edsms_number">[EasyDNNrotator:EventCounter:Days]</span><span class="edsms_text">[EasyDNNrotator:LocalizedText:days]</span></div>
+				<div><span class="edsms_number">[EasyDNNrotator:EventCounter:Hours:d]</span><span class="edsms_text">[EasyDNNrotator:LocalizedText:hours]</span></div>
+				<div><span class="edsms_number">[EasyDNNrotator:EventCounter:Minutes:h]</span><span class="edsms_text">[EasyDNNrotator:LocalizedText:minutes]</span></div>
+			</div>
+		</div>
+		[EasyDNNrotator:EndIf:Event]
+	</div>
+<!--ItemTemplateEnd-->
+
+<!--FooterTemplateBegin-->
+</div>
+<!--FooterTemplateEnd-->
+
+<!--ScriptBegin-->
+	<!--EnabledOptionsBegin-->
+		[autoplay,speed,slidelink,grabCursor,swipe,mouseswipe,wheel,limittitle,limitdescription,stripdescription,preload]
+	<!--EnabledOptionsEnd-->
+	<!--SetOptionsBegin-->
+		[space:0, view:'wave', loop:true]
+	<!--SetOptionsEnd-->
+	<!--HiddenOptionsBegin-->
+		[thumbnail:width:640:height:480]
+	<!--HiddenOptionsEnd-->
+	<!--ControlBegin-->
+		slider.control('arrows');
+	<!--ControlEnd-->
+<!--ScriptEnd-->

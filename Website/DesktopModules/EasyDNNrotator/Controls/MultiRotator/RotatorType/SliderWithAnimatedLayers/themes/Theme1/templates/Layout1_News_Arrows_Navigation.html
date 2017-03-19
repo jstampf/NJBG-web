@@ -1,0 +1,96 @@
+﻿<!--HeaderTemplateBegin-->
+
+<!--HeaderTemplateEnd-->
+
+<!--ItemTemplateBegin-->
+	<div class="ms-slide" [EasyDNNrotator:SlideDelay]>
+		<img src="[EasyDNNrotator:Thumb]" data-src="[EasyDNNrotator:Thumb]" alt="[EasyDNNrotator:Title]" class="ms-thumb" [EasyDNNrotator:ResponsiveImages] />
+		[EasyDNNrotator:IfExists:SlideLink]<a href="[EasyDNNrotator:Link]" [EasyDNNrotator:DataType]>[EasyDNNrotator:Title]</a>[EasyDNNrotator:EndIf:SlideLink]
+		[EasyDNNrotator:IfExists:Title]
+		<h2 style="font-size:50px"
+			class="ms-layer edsms_slideTitle"
+			data-type="text"
+			data-origin="ml"
+			data-effect="left(long)"
+			data-duration="1500"
+			data-delay="0"
+			data-offset-x="100"
+			data-offset-y="0"
+			data-ease="easeInOutBack">
+			[EasyDNNrotator:Title]
+		</h2>
+		[EasyDNNrotator:EndIf:Title]
+		[EasyDNNrotator:IfExists:Description]
+		<div style="font-size:20px;color:#fff"
+			class="ms-layer edsms_slideDescription"
+			data-type="text"
+			data-origin="bl"
+			data-effect="right(long)"
+			data-duration="1500"
+			data-delay="0"
+			data-offset-x="100"
+			data-offset-y="180"
+			data-ease="easeInOutBack">
+			[EasyDNNrotator:Description]
+		</div>
+		[EasyDNNrotator:EndIf:Description]
+		[EasyDNNrotator:IfExists:Readmore]
+		<div class="ms-layer edsms_slideLink"
+			data-type="text"
+			data-origin="br"
+			data-effect="left(long)"
+			data-duration="900"
+			data-delay="500"
+			data-offset-x="100"
+			data-offset-y="100"
+			data-ease="easeInOutBack">
+			<a href="[EasyDNNrotator:Link]">[EasyDNNrotator:LocalizedText:Readmore]</a>
+		</div>
+		[EasyDNNrotator:EndIf:Readmore]
+		[EasyDNNrotator:IfExists:Event]
+		<div class="ms-layer edsms_slideEventDate"
+			data-type="text"
+			data-origin="tr"
+			data-effect="right(long)"
+			data-duration="1500"
+			data-delay="0"
+			data-offset-x="300"
+			data-offset-y="180"
+			data-ease="easeInOutBack">
+			[EasyDNNrotator:EventDate]
+		</div>
+		[EasyDNNrotator:EndIf:Event]
+		[EasyDNNrotator:IfExists:Location]
+		<div class="ms-layer edsms_slideEventLocation"
+			data-type="text"
+			data-origin="tr"
+			data-effect="left(long)"
+			data-duration="1500"
+			data-delay="0"
+			data-offset-x="300"
+			data-offset-y="230"
+			data-ease="easeInOutBack">
+			[EasyDNNrotator:Location]
+		</div>
+		[EasyDNNrotator:EndIf:Location]
+	</div>
+<!--ItemTemplateEnd-->
+
+<!--FooterTemplateBegin-->
+
+<!--FooterTemplateEnd-->
+
+<!--ScriptBegin-->
+
+	<!--EnabledOptionsBegin-->
+		[autoplay,speed,space,fullwidth,view,swipe,mouseswipe,wheel,overPause,slidelink,showtitle,showdescription,limittitle,limitdescription,stripdescription,showreadmore,fullscreen,grabCursor,preload,loop]
+	<!--EnabledOptionsEnd-->
+	<!--SetOptionsBegin-->
+	<!--SetOptionsEnd-->
+	<!--HiddenOptionsBegin-->
+	<!--HiddenOptionsEnd-->
+	<!--ControlBegin-->
+		slider.control('arrows');
+	<!--ControlEnd-->
+
+<!--ScriptEnd-->

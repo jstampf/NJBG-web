@@ -1,0 +1,64 @@
+﻿IF NOT EXISTS (SELECT UpdateVersion FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdate] WHERE UpdateVersion = '06.03.00')
+BEGIN
+	INSERT INTO {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdate]([UpdateVersion],[Finished]) VALUES(N'06.03.00',0)
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateHTMLContent]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateHTMLContent]
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateHTMLContent]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateHTMLContent]
+	@ContentID INT,
+	@ListID INT, 
+	@UserID INT,
+	@Title NVARCHAR(500) = '''',
+	@HTMLContent NVARCHAR(max) = '''',
+	@ThumbLocation NVARCHAR(500) = ''Y'',
+	@ThumbSystemName NVARCHAR(250) = '''',
+	@ThumbName NVARCHAR(200) = '''',
+	@ThumbExtension NVARCHAR(15) = '''',
+	@ContentType NVARCHAR(20),
+	@Visible BIT,
+	@StartDate DATETIME = NULL,
+	@EndDate DATETIME = NULL
+AS
+SET NOCOUNT ON;
+
+DECLARE @LastModified DATETIME;
+SET @LastModified = GETUTCDATE();
+
+DECLARE @posContentID INT;
+SET @posContentID = 0;
+
+IF @ThumbLocation = ''Y''
+	UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorContent]
+	SET [Title] = @Title
+		,[HTMLContent] = @HTMLContent
+		,[LastModified] = @LastModified
+		,[StartDate] = @StartDate
+		,[EndDate] = @EndDate
+	WHERE ContentID = @ContentID;
+ELSE
+	UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorContent]
+	SET [Title] = @Title
+		,[HTMLContent] = @HTMLContent
+		,[ThumbLocation] = @ThumbLocation
+		,[ThumbSystemName] = @ThumbSystemName
+		,[ThumbName] = @ThumbName
+		,[ThumbExtension] = @ThumbExtension
+		,[LastModified] = @LastModified
+		,[StartDate] = @StartDate
+		,[EndDate] = @EndDate
+	WHERE ContentID = @ContentID;
+
+UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorList] SET [LastModified] = @LastModified WHERE ListID=@ListID;
+SET @posContentID = 1;
+    
+RETURN @posContentID;' 
+END
+GO

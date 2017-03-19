@@ -1,0 +1,156 @@
+.edsdr__Tablet {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.edsdr__Tablet .ms-tablet-template .ms-tablet-cont {
+  max-width: 691px;
+  position: relative;
+  margin: 0 auto;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.edsdr__Tablet .ms-tablet-template .ms-tablet-cont .ms-view {
+  background-color: #17171a;
+}
+.edsdr__Tablet .ms-tablet-template .ms-lt-slider-cont {
+  position: relative;
+  padding: 8.51% 22.18% 20%;
+  max-width: 383px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.edsdr__Tablet .ms-tablet-template .ms-tablet-bg {
+  max-width: 100%;
+  position: absolute;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.edsdr__Tablet .ms-tablet-template .edsms_slideTitle {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 14px;
+  top: 20px;
+  left: 20px;
+  margin: 0;
+  color: #fff;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  max-width: 80%;
+  border-radius: 3px;
+}
+.edsdr__Tablet .ms-tablet-template .edsms_slideDescription {
+  padding: 10px 14px;
+  color: #c0c0c0;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.7);
+  bottom: 20px;
+  left: 20px;
+  max-width: 80%;
+  border-radius: 3px;
+}
+@media handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+  .edsdr__Tablet .ms-tablet-template .edsms_slideDescription {
+    display: none !important;
+  }
+}
+.edsdr__Tablet .ms-tablet-template .edsms_slideDescription > p {
+  margin: 0;
+  padding: 0;
+}
+.edsdr__Tablet .ms-tablet-template .ms-nav-prev,
+.edsdr__Tablet .ms-tablet-template .ms-nav-next {
+  background: url("images/skin.png") no-repeat -11px -9px;
+  width: 35px;
+  height: 40px;
+  left: -120px;
+  margin-top: -17px;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  z-index: 111;
+}
+.edsdr__Tablet .ms-tablet-template .ms-nav-next {
+  background-position: -59px -9px;
+  right: -120px;
+  left: auto;
+}
+.edsdr__Tablet .ms-tablet-template .ms-bullets.ms-dir-h {
+  position: absolute;
+  bottom: -23%;
+  right: 50%;
+  width: 100px;
+}
+.edsdr__Tablet .ms-tablet-template .ms-bullets.ms-dir-h .ms-bullets-count {
+  position: relative;
+  right: -50%;
+}
+.edsdr__Tablet .ms-tablet-template .ms-bullet {
+  width: 10px;
+  height: 10px;
+  background: url("images/skin.png") no-repeat -112px -25px;
+  margin: 4px;
+}
+.edsdr__Tablet .ms-tablet-template .ms-bullet-selected {
+  background-position: -143px -25px;
+}
+.edsdr__Tablet .ms-tablet-template.ms-tablet-land .ms-tablet-cont {
+  max-width: 972px;
+}
+.edsdr__Tablet .ms-tablet-template.ms-tablet-land .ms-lt-slider-cont {
+  padding: 6.69% 18.05% 15%;
+  max-width: 621px;
+}
+.edsdr__Tablet .ms-tablet-template.ms-tablet-flat .ms-tablet-cont {
+  max-width: 594px;
+}
+.edsdr__Tablet .ms-tablet-template.ms-tablet-flat .ms-lt-slider-cont {
+  padding: 11.7% 10.8% 25%;
+  max-width: 466px;
+}
+.edsdr__Tablet .ms-tablet-template.ms-tablet-flat .ms-bullets.ms-dir-h {
+  bottom: -17%;
+}
+.edsdr__Tablet .ms-tablet-template.ms-tablet-flat.ms-tablet-land .ms-tablet-cont {
+  max-width: 761px;
+}
+.edsdr__Tablet .ms-tablet-template.ms-tablet-flat.ms-tablet-land .ms-lt-slider-cont {
+  padding: 8.3% 9.1% 18%;
+  max-width: 622px;
+}
+.edsdr__Tablet .ms-tablet-template.ms-tablet-flat.ms-tablet-land .ms-bullets.ms-dir-h {
+  bottom: -23%;
+}
+.edsdr__Tablet .ms-slide-vpbtn,
+.edsdr__Tablet .ms-video-btn {
+  width: 50px;
+  height: 51px;
+  background: url("images/light-skin-1.png") no-repeat -14px -150px;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+}
+.edsdr__Tablet .ms-slide-vcbtn {
+  width: 30px;
+  height: 30px;
+  background: url("images/light-skin-1.png") no-repeat -24px -28px;
+  top: 18px;
+  right: 30px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .edsdr__Tablet .ms-slide-vpbtn,
+  .edsdr__Tablet .ms-video-btn,
+  .edsdr__Tablet .ms-slide-vcbtn,
+  .edsdr__Tablet .ms-nav-next,
+  .edsdr__Tablet .ms-nav-prev {
+    background-image: url("images/light-skin-1-retina.png");
+    background-size: 152px 225px;
+  }
+}
+
+/*# sourceMappingURL=Tablet.css.map */

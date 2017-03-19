@@ -1,0 +1,33 @@
+﻿<!--HeaderTemplateBegin-->
+
+<!--HeaderTemplateEnd-->
+
+<!--ItemTemplateBegin-->
+	<div class="ms-slide">
+		<img src="[EasyDNNrotator:Image]" data-src="[EasyDNNrotator:Image]" alt="[EasyDNNrotator:Title]" [EasyDNNrotator:ResponsiveImages] />
+		<img src="[EasyDNNrotator:Thumb]" data-src="[EasyDNNrotator:Thumb]" alt="[EasyDNNrotator:Title]" class="ms-thumb"/>
+		<div class="ms-info">[EasyDNNrotator:IfExists:Title][EasyDNNrotator:Title][EasyDNNrotator:EndIf:Title]</div>
+		[EasyDNNrotator:IfExists:SlideLink]<a href="[EasyDNNrotator:Link]" [EasyDNNrotator:DataType]>[EasyDNNrotator:Title]</a>[EasyDNNrotator:EndIf:SlideLink]
+	</div>
+<!--ItemTemplateEnd-->
+
+<!--FooterTemplateBegin-->
+
+<!--FooterTemplateEnd-->
+
+<!--ScriptBegin-->
+
+	<!--EnabledOptionsBegin-->
+		[autoplay,speed,showtitle,grabCursor,swipe,mouseswipe,wheel,view,space,loop,limittitle]
+	<!--EnabledOptionsEnd-->
+	<!--SetOptionsBegin-->
+		[preload:'3']
+	<!--SetOptionsEnd-->
+	<!--HiddenOptionsBegin-->
+		[thumbnail:width:175:height:115]
+	<!--HiddenOptionsEnd-->
+	<!--ControlBegin-->
+		slider.control('arrows');
+	<!--ControlEnd-->
+
+<!--ScriptEnd-->

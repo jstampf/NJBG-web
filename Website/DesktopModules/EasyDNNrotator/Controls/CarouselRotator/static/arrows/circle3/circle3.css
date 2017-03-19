@@ -1,0 +1,30 @@
+.edr_carousel .navigation.circle3 {
+  text-indent: -10000px;
+  width: 23px;
+  height: 23px;
+  background: url(images/circle3.png) no-repeat;
+}
+.edr_carousel.horizontal .navigation.circle3.previous {
+  background-position: 0 0;
+}
+.edr_carousel.horizontal .navigation.circle3.previous:hover {
+  background-position: 0 -23px;
+}
+.edr_carousel.horizontal .navigation.circle3.next {
+  background-position: -23px 0;
+}
+.edr_carousel.horizontal .navigation.circle3.next:hover {
+  background-position: -23px -23px;
+}
+.edr_carousel.vertical .navigation.circle3.previous {
+  background-position: -46px 0;
+}
+.edr_carousel.vertical .navigation.circle3.previous:hover {
+  background-position: -69px 0;
+}
+.edr_carousel.vertical .navigation.circle3.next {
+  background-position: -46px -23px;
+}
+.edr_carousel.vertical .navigation.circle3.next:hover {
+  background-position: -69px -23px;
+}

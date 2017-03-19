@@ -1,0 +1,17 @@
+.slider_shadows_wrapper.shadow3 {
+  margin: 0 49px 0;
+}
+.slider_shadows_wrapper.shadow3 .shadow.left_top {
+  left: -49px;
+  top: 0;
+  width: 49px;
+  height: 100%;
+  background: url(images/left.png) no-repeat center right;
+}
+.slider_shadows_wrapper.shadow3 .shadow.right_top {
+  right: -49px;
+  top: 0;
+  width: 49px;
+  height: 100%;
+  background: url(images/right.png) no-repeat center left;
+}

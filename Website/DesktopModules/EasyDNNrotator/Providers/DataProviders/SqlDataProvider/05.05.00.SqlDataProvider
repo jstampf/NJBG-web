@@ -1,0 +1,74 @@
+﻿EXEC (N'
+BEGIN TRY
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N''{databaseOwner}[{objectQualifier}EasyDNNNews]'') AND type in (N''U''))
+BEGIN
+	IF NOT EXISTS (select * from INFORMATION_SCHEMA.columns where table_name = ''{objectQualifier}EasyDNNNews'' and column_name = ''HideDefaultLocale'')
+	BEGIN
+		IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N''{databaseOwner}[{objectQualifier}EasyDNNRotatorModuleUpdate]'') AND type in (N''U''))
+		BEGIN
+			CREATE TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorModuleUpdate](
+				[Id] [int] NOT NULL,
+				[Name] [nvarchar](1000) NOT NULL,
+				[OperationDelete] [bit] NOT NULL,
+			 CONSTRAINT [PK_{objectQualifier}EasyDNNRotatorModuleUpdate] PRIMARY KEY CLUSTERED  ( [Id] ASC )WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+			)
+		END
+
+		IF NOT EXISTS (SELECT Id FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorModuleUpdate] WHERE Id = ''1'')
+		BEGIN
+			INSERT INTO {databaseOwner}[{objectQualifier}EasyDNNRotatorModuleUpdate] ([Id],[Name],[OperationDelete]) VALUES (1,''Rotator news stored procedures for version news 5. Fix'',''1'')
+		END
+
+		ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNNews] ADD HideDefaultLocale BIT CONSTRAINT DF_{objectQualifier}HideDefaultLocale DEFAULT (0) NOT NULL
+
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N''{databaseOwner}[{objectQualifier}EasyDNNNewsModuleSettings]'') AND type in (N''U''))
+		BEGIN
+			IF NOT EXISTS (select * from INFORMATION_SCHEMA.columns where table_name = ''{objectQualifier}EasyDNNNewsModuleSettings'' and column_name = ''PermissionsPMSource'')
+			BEGIN
+				ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNNewsModuleSettings] ADD PermissionsPMSource BIT CONSTRAINT DF_{objectQualifier}PermissionsPMSource DEFAULT (0) NOT NULL
+			END
+		END
+	END
+END
+END TRY
+BEGIN CATCH
+	SELECT 0;
+END CATCH
+')
+GO
+/****** Check news table and generate column if neaded ******/
+EXEC (N'
+BEGIN TRY
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N''{databaseOwner}[{objectQualifier}EasyDNNNews]'') AND type in (N''U''))
+BEGIN
+	if exists (select * from INFORMATION_SCHEMA.columns where table_name = ''{objectQualifier}EasyDNNNews'' and column_name = ''HideDefaultLocale'')
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N''{databaseOwner}[{objectQualifier}EasyDNNRotatorModuleUpdate]'') AND type in (N''U''))
+		BEGIN
+			IF EXISTS (SELECT Id FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorModuleUpdate] WHERE Id = ''1'')
+			BEGIN
+			
+				ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNNews] DROP CONSTRAINT [DF_{objectQualifier}HideDefaultLocale]
+				ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNNews] DROP COLUMN [HideDefaultLocale]
+				
+				IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N''{databaseOwner}[{objectQualifier}EasyDNNNewsModuleSettings]'') AND type in (N''U''))
+				BEGIN
+					IF EXISTS (select * from INFORMATION_SCHEMA.columns where table_name = ''{objectQualifier}EasyDNNNewsModuleSettings'' and column_name = ''PermissionsPMSource'')
+					BEGIN
+						ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNNewsModuleSettings] DROP CONSTRAINT [DF_{objectQualifier}PermissionsPMSource]
+						ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNNewsModuleSettings] DROP COLUMN [PermissionsPMSource]
+					END
+				END
+
+				DROP TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorModuleUpdate]
+
+			END
+		END
+	END
+END
+END TRY
+BEGIN CATCH
+	SELECT 0;
+END CATCH
+')
+GO

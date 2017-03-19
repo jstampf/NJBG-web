@@ -1,0 +1,64 @@
+.edr_carousel {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  position: relative;
+}
+.edr_carousel .wrapper {
+  position: absolute;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.edr_carousel .wrapper .slider {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.edr_carousel .wrapper .slider > ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  float: left;
+  display: block;
+}
+.edr_carousel .wrapper .slider > ul > li {
+  float: left;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: block;
+  overflow: hidden;
+}
+.edr_carousel .wrapper .slider > ul > li img {
+  pointer-events: none;
+  max-width: 100%;
+  height: auto;
+}
+.edr_carousel .navigation {
+  position: absolute;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  cursor: pointer;
+  display: block;
+}
+.edr_carousel .pagination {
+  position: absolute;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  display: block;
+}
+
+/*# sourceMappingURL=base.css.map */

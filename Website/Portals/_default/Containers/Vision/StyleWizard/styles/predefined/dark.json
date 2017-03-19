@@ -1,0 +1,197 @@
+{
+  "templateGroups": {
+    "default": {
+      "name": "Dark",
+      "colors": [
+        "#000000"
+      ]
+    },
+    "hilite": {
+      "name": "Dark",
+      "colors": [
+        "#1b2023"
+      ]
+    },
+    "centerTitle": {
+      "name": "Dark",
+      "colors": [
+        "#000000"
+      ]
+    }
+  },
+  "show": [
+    "default",
+    "hilite",
+    "centerTitle"
+  ],
+  "values": {
+    "properties": {
+      "titleFont": {
+        "default": {
+          "disabled": [
+            "shadows",
+            "weight",
+            "lineHeight",
+            "transform",
+            "decorations",
+            "style"
+          ],
+          "values": {
+            "fontFamily": "BenchNine",
+            "color": "#ffffff",
+            "size": {
+              "value": 30,
+              "unit": "px"
+            },
+            "shadows": {
+              "show": true,
+              "list": []
+            },
+            "weight": "normal",
+            "lineHeight": {
+              "value": 1,
+              "unit": ""
+            },
+            "transform": "none",
+            "decorations": {
+              "underline": false
+            }
+          }
+        }
+      },
+      "titleBorderColor": {
+        "default": {
+          "values": {
+            "color": "#ffffff"
+          }
+        }
+      },
+      "hilitebackground": {
+        "default": {
+          "disabled": [
+            "image",
+            "repeat",
+            "position"
+          ],
+          "values": {
+            "color": "#1b2023",
+            "image": {},
+            "repeat": "repeat",
+            "position": {
+              "horizontal": {
+                "value": 0,
+                "unit": "%"
+              },
+              "vertical": {
+                "value": 0,
+                "unit": "%"
+              }
+            }
+          }
+        }
+      },
+      "hiliteTitleFont": {
+        "default": {
+          "disabled": [
+            "shadows",
+            "weight",
+            "lineHeight",
+            "transform",
+            "decorations",
+            "style"
+          ],
+          "values": {
+            "fontFamily": "BenchNine",
+            "color": "#959595",
+            "size": {
+              "value": 26,
+              "unit": "px"
+            },
+            "shadows": {
+              "show": true,
+              "list": []
+            },
+            "weight": "normal",
+            "lineHeight": {
+              "value": 1.2,
+              "unit": ""
+            },
+            "transform": "none",
+            "decorations": {
+              "underline": false
+            }
+          }
+        }
+      },
+      "hiliteTitleBorderColor": {
+        "default": {
+          "values": {
+            "color": "#959595"
+          }
+        }
+      },
+      "hiliteTextColor": {
+        "default": {
+          "disabled": [
+            "shadows"
+          ],
+          "values": {
+            "color": "#959595",
+            "shadows": {
+              "show": true,
+              "list": []
+            }
+          }
+        }
+      },
+      "centerTitleFont": {
+        "default": {
+          "disabled": [
+            "weight",
+            "lineHeight",
+            "transform",
+            "decorations",
+            "style"
+          ],
+          "values": {
+            "fontFamily": "BenchNine",
+            "color": "#ffffff",
+            "size": {
+              "value": 28,
+              "unit": "px"
+            },
+            "shadows": {
+              "show": true,
+              "list": [
+                {
+                  "x": {
+                    "value": -1,
+                    "unit": "px"
+                  },
+                  "y": {
+                    "value": -1,
+                    "unit": "px"
+                  },
+                  "radius": {
+                    "value": 0,
+                    "unit": "px"
+                  },
+                  "color": "rgba(0, 0, 0, 0.5)"
+                }
+              ]
+            },
+            "weight": "bold",
+            "lineHeight": {
+              "value": 1,
+              "unit": ""
+            },
+            "transform": "none",
+            "decorations": {
+              "underline": false
+            }
+          }
+        }
+      }
+    }
+  }
+}

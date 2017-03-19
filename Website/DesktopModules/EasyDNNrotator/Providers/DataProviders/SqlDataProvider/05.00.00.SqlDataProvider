@@ -1,0 +1,25 @@
+﻿IF OBJECT_ID ( 'EasyDNNRotatorGetContentByID', 'P' ) IS NOT NULL 
+    DROP PROCEDURE EasyDNNRotatorGetContentByID;
+
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorPortalSettings]') AND type in (N'U'))
+BEGIN
+CREATE TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorPortalSettings](
+	[PortalID] [int] NOT NULL,
+	[DaylightSavingTime] [bit] NOT NULL,
+	CONSTRAINT [PK_{objectQualifier}EasyDNNRotatorPortalSettings] PRIMARY KEY CLUSTERED ([PortalID] ASC)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+)
+END
+GO
+
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[FK_{objectQualifier}EasyDNNRotatorPortalSettings_Portals]') AND parent_object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorPortalSettings]'))
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorPortalSettings]  WITH CHECK ADD  CONSTRAINT [FK_{objectQualifier}EasyDNNRotatorPortalSettings_Portals] FOREIGN KEY([PortalID])
+REFERENCES {databaseOwner}[{objectQualifier}Portals] ([PortalID]) ON DELETE CASCADE
+GO
+IF EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[FK_{objectQualifier}EasyDNNRotatorPortalSettings_Portals]') AND parent_object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorPortalSettings]'))
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorPortalSettings] CHECK CONSTRAINT [FK_{objectQualifier}EasyDNNRotatorPortalSettings_Portals]
+GO

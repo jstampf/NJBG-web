@@ -1,0 +1,30 @@
+﻿IF NOT EXISTS (SELECT UpdateVersion FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdate] WHERE UpdateVersion = '08.00.00')
+BEGIN
+	INSERT INTO {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdate]([UpdateVersion],[Finished],[InstallType]) VALUES(N'08.00.00',0,'DNN')
+END
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorPermissions]') AND type in (N'U'))
+BEGIN
+CREATE TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorPermissions](
+	[RoleId] [int] NOT NULL,
+	[ManageContent] [bit] NOT NULL,
+	[EditSettings] [bit] NOT NULL,
+ CONSTRAINT [PK_{objectQualifier}EasyDNNRotatorPermissions] PRIMARY KEY CLUSTERED 
+(
+	[RoleId] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF)
+)
+END
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{objectQualifier}[FK_{objectQualifier}EasyDNNRotatorPermissions_Roles]') AND parent_object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorPermissions]'))
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorPermissions]  WITH CHECK ADD  CONSTRAINT [FK_{objectQualifier}EasyDNNRotatorPermissions_Roles] FOREIGN KEY([RoleId])
+REFERENCES {databaseOwner}[{objectQualifier}Roles] ([RoleID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{objectQualifier}[FK_{objectQualifier}EasyDNNRotatorPermissions_Roles]') AND parent_object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorPermissions]'))
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorPermissions] CHECK CONSTRAINT [FK_{objectQualifier}EasyDNNRotatorPermissions_Roles]
+GO

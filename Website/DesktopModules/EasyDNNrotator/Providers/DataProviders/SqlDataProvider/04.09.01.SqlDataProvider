@@ -1,0 +1,74 @@
+﻿if '{objectQualifier}' <> ''
+BEGIN
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorModule]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorModule]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorModule]', N'{objectQualifier}EasyDNNRotatorModule', 'OBJECT'
+			EXECUTE sp_rename N'PK_EasyDNNRotatorModule', N'PK_{objectQualifier}EasyDNNRotatorModule', 'OBJECT'
+			EXECUTE sp_rename N'IX_EasyDNNRotatorModuleAndType', N'IX_{objectQualifier}EasyDNNRotatorModuleAndType', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNNewsGallery_EasyGallery', N'FK_{objectQualifier}EasyDNNNewsGallery_EasyGallery', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorChameleonRSettings_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorChameleonRSettings_EasyDNNRotatorModule', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorFlashCRSettings_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorFlashCRSettings_EasyDNNRotatorModule', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorModule_EasyDNNRotatorType', N'FK_{objectQualifier}EasyDNNRotatorModule_EasyDNNRotatorType', 'OBJECT'
+			EXECUTE sp_rename N'VezaModulID', N'FK_{objectQualifier}VezaModulID', 'OBJECT'
+			EXECUTE sp_rename N'VezaPortalID', N'FK_{objectQualifier}VezaPortalID', 'OBJECT'
+			EXECUTE sp_rename N'VezaRotatorList', N'FK_{objectQualifier}VezaRotatorList', 'OBJECT'
+			EXECUTE sp_rename N'VezaUserIDModule', N'FK_{objectQualifier}VezaUserIDModule', 'OBJECT'
+			EXECUTE sp_rename N'FK_Veza_Rotator_News_Bridge', N'FK_{objectQualifier}Veza_Rotator_News_Bridge', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorNewsSettings_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorNewsSettings_EasyDNNRotatorModule', 'OBJECT'
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorType]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorType]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorType]', N'{objectQualifier}EasyDNNRotatorType', 'OBJECT'
+			EXECUTE sp_rename N'PK_EasyDNNRotatorType', N'PK_{objectQualifier}EasyDNNRotatorType', 'OBJECT'
+			EXECUTE sp_rename N'IX_EasyDNNRotatorType', N'IX_{objectQualifier}EasyDNNRotatorType', 'OBJECT'
+		END
+	END
+END
+GO
+
+UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] SET [ScriptVersion] = '1.1.1' WHERE [RotatorTypeID] = 10;
+GO
+
+IF NOT EXISTS (SELECT RotatorTypeID FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorType] WHERE RotatorTypeID = 13)
+BEGIN
+	INSERT {databaseOwner}[{objectQualifier}EasyDNNRotatorType] ([RotatorTypeID],[Name],[Description],[Identifier],[Position]) VALUES(13,'SizeShifter responsive rotator','(Images + Title + Description)','SizeShifterRotator',13)
+END
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorSizeShifterRSettings]') AND type in (N'U'))
+BEGIN
+CREATE TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorSizeShifterRSettings](
+	[ModuleID] [int] NOT NULL,
+	[RotatorTypeID]  AS ((13)) PERSISTED NOT NULL,
+	[SettingsViewState] [nvarchar](max) NOT NULL,
+	[transition] [nvarchar](50) NOT NULL,
+	[fallback3d] [nvarchar](50) NOT NULL,
+	[useThumbs] [bit] NOT NULL,
+	[useArrows] [bit] NOT NULL,
+	[thumbMargin] [int] NOT NULL,
+	[autoPlay] [bit] NOT NULL,
+	[delay] [int] NOT NULL,
+	[transitionDuration] [int] NOT NULL,
+	[keyNav] [bit] NOT NULL,
+	[captionWidth] [int] NOT NULL,
+	[titleLenght] [int] NOT NULL,
+	[descriptionLenght] [int] NOT NULL,
+	[contentPosition] [nvarchar](50) NOT NULL,
+	CONSTRAINT [PK_{objectQualifier}EasyDNNRotatorSizeShifterRSettings] PRIMARY KEY CLUSTERED  ([ModuleID] ASC) WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF))
+END
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[FK_{objectQualifier}EasyDNNRotatorSizeShifterRSettings_EasyDNNRotatorType]') AND parent_object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorSizeShifterRSettings]'))
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorSizeShifterRSettings]  WITH CHECK ADD  CONSTRAINT [FK_{objectQualifier}EasyDNNRotatorSizeShifterRSettings_EasyDNNRotatorType] FOREIGN KEY([RotatorTypeID])
+REFERENCES {databaseOwner}[{objectQualifier}EasyDNNRotatorType] ([RotatorTypeID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[FK_{objectQualifier}EasyDNNRotatorSizeShifterRSettings_EasyDNNRotatorType]') AND parent_object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorSizeShifterRSettings]'))
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorSizeShifterRSettings] CHECK CONSTRAINT [FK_{objectQualifier}EasyDNNRotatorSizeShifterRSettings_EasyDNNRotatorType]
+GO

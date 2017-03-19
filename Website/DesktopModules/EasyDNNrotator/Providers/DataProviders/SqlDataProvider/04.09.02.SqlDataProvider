@@ -1,0 +1,21 @@
+﻿if '{objectQualifier}' <> ''
+BEGIN TRY
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorChameleonRSettings]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorChameleonRSettings]', N'{objectQualifier}EasyDNNRotatorChameleonRSettings', 'OBJECT'
+			EXECUTE sp_rename N'PK_EasyDNNRotatorComplexRSettings', N'PK_{objectQualifier}EasyDNNRotatorComplexRSettings', 'OBJECT'
+			EXECUTE sp_rename N'FK_{objectQualifier}EasyDNNRotatorChameleonRSettings_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorChameleonRSettings_EasyDNNRotatorModule', 'OBJECT'
+			EXECUTE sp_rename N'FK_{objectQualifier}EasyDNNRotatorChameleonRSettings_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorChameleonRSettings_EasyDNNRotatorModule', 'OBJECT'
+		END
+	END
+END TRY
+BEGIN CATCH
+END CATCH
+GO
+IF NOT EXISTS (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'ItemInfShowOnHover')
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD ItemInfShowOnHover bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_ItemInfShowOnHover DEFAULT(0) NOT NULL
+END
+GO

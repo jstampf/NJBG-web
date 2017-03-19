@@ -1,0 +1,53 @@
+﻿<!--HeaderTemplateBegin-->
+<div class="ms-tablet-template ms-tablet-flat">
+	<div class="ms-tablet-cont">
+		<img src="[EasyDNNrotator:ThemePath]/images/tablet_flat.png" class="ms-tablet-bg" />
+		<div class="ms-lt-slider-cont">
+<!--HeaderTemplateEnd-->
+
+<!--ItemTemplateBegin-->
+			<div class="ms-slide">
+				<img src="[EasyDNNrotator:Image]" data-src="[EasyDNNrotator:Image]" alt="[EasyDNNrotator:Title]" [EasyDNNrotator:ResponsiveImages] />
+				[EasyDNNrotator:IfExists:SlideLink]<a href="[EasyDNNrotator:Link]" [EasyDNNrotator:DataType]>[EasyDNNrotator:Title]</a>[EasyDNNrotator:EndIf:SlideLink]
+				[EasyDNNrotator:IfExists:Title]
+				<h3 class="ms-layer edsms_slideTitle"
+					data-effect="fade(short)"
+					data-duration="1500"
+					data-delay="0"
+					data-ease="easeInOutBack">
+					[EasyDNNrotator:Title]
+				</h3>
+				[EasyDNNrotator:EndIf:Title]
+				[EasyDNNrotator:IfExists:Description]
+				<div class="ms-layer edsms_slideDescription"
+					data-effect="fade(long)"
+					data-duration="1500"
+					data-delay="0"
+					data-ease="easeInOutBack">
+					[EasyDNNrotator:Description]
+				</div>
+				[EasyDNNrotator:EndIf:Description]
+			</div>
+<!--ItemTemplateEnd-->
+
+<!--FooterTemplateBegin-->
+		</div>
+	</div>
+</div>
+<!--FooterTemplateEnd-->
+
+<!--ScriptBegin-->
+	<!--EnabledOptionsBegin-->
+		[autoplay,speed,showtitle,showdescription,slidelink,loop,grabCursor,swipe,mouseswipe,view,wheel,limittitle,limitdescription,stripdescription,preload]
+	<!--EnabledOptionsEnd-->
+	<!--SetOptionsBegin-->
+		[width:466, height:622]
+	<!--SetOptionsEnd-->
+	<!--HiddenOptionsBegin-->
+		[thumbnail:width:466:height:622]
+	<!--HiddenOptionsEnd-->
+	<!--ControlBegin-->
+		slider.control('arrows');
+		slider.control('bullets',{autohide:false});
+	<!--ControlEnd-->
+<!--ScriptEnd-->

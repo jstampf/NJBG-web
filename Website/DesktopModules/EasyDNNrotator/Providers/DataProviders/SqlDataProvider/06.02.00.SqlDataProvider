@@ -1,0 +1,21 @@
+﻿IF (OBJECT_ID('FK_{objectQualifier}VezaUserIDModule', 'F') IS NOT NULL)
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] DROP CONSTRAINT FK_{objectQualifier}VezaUserIDModule
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] ALTER COLUMN [UserID] INT NULL
+
+	IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[FK_{objectQualifier}VezaUserIDModule]') AND parent_object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorModule]'))
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule]  WITH CHECK ADD  CONSTRAINT [FK_{objectQualifier}VezaUserIDModule] FOREIGN KEY([UserID])
+	REFERENCES {databaseOwner}[{objectQualifier}Users] ([UserID]) ON DELETE SET NULL
+
+	IF EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[FK_{objectQualifier}VezaUserIDModule]') AND parent_object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorModule]'))
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] CHECK CONSTRAINT [FK_{objectQualifier}VezaUserIDModule]
+END
+ELSE
+BEGIN
+	BEGIN TRY
+		ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] ALTER COLUMN [UserID] INT NULL
+	END TRY
+	BEGIN CATCH
+	END CATCH
+END
+GO

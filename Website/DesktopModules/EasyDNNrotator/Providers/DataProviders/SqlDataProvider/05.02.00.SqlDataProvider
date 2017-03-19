@@ -1,0 +1,2483 @@
+﻿if '{objectQualifier}' <> ''
+BEGIN TRY
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorAdvancedRSettings]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorAdvancedRSettings]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorAdvancedRSettings]', N'{objectQualifier}EasyDNNRotatorAdvancedRSettings', 'OBJECT'
+			BEGIN TRY
+			EXECUTE sp_rename N'PK_EasyDNNRotatorAdvancedRSettings', N'PK_{objectQualifier}EasyDNNRotatorAdvancedRSettings', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorAdvancedRSettings_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorAdvancedRSettings_EasyDNNRotatorModule', 'OBJECT'
+			END TRY
+			BEGIN CATCH
+			END CATCH
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorArticleLink]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorArticleLink]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorArticleLink]', N'{objectQualifier}EasyDNNRotatorArticleLink', 'OBJECT'
+			BEGIN TRY
+			EXECUTE sp_rename N'PK_EasyDNNRotatorArticleLink_1', N'PK_{objectQualifier}EasyDNNRotatorArticleLink_1', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorArticleLink_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorArticleLink_EasyDNNRotatorModule', 'OBJECT'
+			END TRY
+			BEGIN CATCH
+			END CATCH
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorCarouselRSettings]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorCarouselRSettings]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorCarouselRSettings]', N'{objectQualifier}EasyDNNRotatorCarouselRSettings', 'OBJECT'
+			BEGIN TRY
+			EXECUTE sp_rename N'PK_EasyDNNRotatorCarouselRSettings', N'PK_{objectQualifier}EasyDNNRotatorCarouselRSettings', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorCarouselRSettings_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorCarouselRSettings_EasyDNNRotatorModule', 'OBJECT'
+			END TRY
+			BEGIN CATCH
+			END CATCH
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorCategory]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorCategory]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorCategory]', N'{objectQualifier}EasyDNNRotatorCategory', 'OBJECT'
+			BEGIN TRY
+			EXECUTE sp_rename N'PK_EasyDNNRotatorCategory', N'PK_{objectQualifier}EasyDNNRotatorCategory', 'OBJECT'
+			END TRY
+			BEGIN CATCH
+			END CATCH
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorCategoryLoc]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorCategoryLoc]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorCategoryLoc]', N'{objectQualifier}EasyDNNRotatorCategoryLoc', 'OBJECT'
+			BEGIN TRY
+			EXECUTE sp_rename N'PK_EasyDNNRotatorCategoryLoc', N'PK_{objectQualifier}EasyDNNRotatorCategoryLoc', 'OBJECT'
+			EXECUTE sp_rename N'FK_Loc_Category', N'FK_{objectQualifier}Loc_Category', 'OBJECT'
+			END TRY
+			BEGIN CATCH
+			END CATCH
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorChameleonRSettings]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorChameleonRSettings]', N'{objectQualifier}EasyDNNRotatorChameleonRSettings', 'OBJECT'
+			BEGIN TRY
+			EXECUTE sp_rename N'PK_EasyDNNRotatorComplexRSettings', N'PK_{objectQualifier}EasyDNNRotatorComplexRSettings', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorChameleonRSettings_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorChameleonRSettings_EasyDNNRotatorModule', 'OBJECT'
+			END TRY
+			BEGIN CATCH
+			END CATCH
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorContent]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorContent]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorContent]', N'{objectQualifier}EasyDNNRotatorContent', 'OBJECT'
+			BEGIN TRY
+			EXECUTE sp_rename N'PK_EasyDNNRotatorContent', N'PK_{objectQualifier}EasyDNNRotatorContent', 'OBJECT'
+			END TRY
+			BEGIN CATCH
+			END CATCH
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorContentLoc]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorContentLoc]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorContentLoc]', N'{objectQualifier}EasyDNNRotatorContentLoc', 'OBJECT'
+			BEGIN TRY
+			EXECUTE sp_rename N'PK_EasyDNNRotatorContentLoc', N'PK_{objectQualifier}EasyDNNRotatorContentLoc', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorContentLoc_EasyDNNRotatorContent', N'FK_{objectQualifier}EasyDNNRotatorContentLoc_EasyDNNRotatorContent', 'OBJECT'
+			END TRY
+			BEGIN CATCH
+			END CATCH
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorData]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorData]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorData]', N'{objectQualifier}EasyDNNRotatorData', 'OBJECT'
+			BEGIN TRY
+			EXECUTE sp_rename N'IX_EasyDNNRotatorData_EntryID', N'IX_{objectQualifier}EasyDNNRotatorData_EntryID', 'OBJECT'
+			END TRY
+			BEGIN CATCH
+			END CATCH
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorFlashCRSettings]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorFlashCRSettings]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorFlashCRSettings]', N'{objectQualifier}EasyDNNRotatorFlashCRSettings', 'OBJECT'
+			BEGIN TRY
+			EXECUTE sp_rename N'PK_{objectQualifier}EasyDNNRotatorFlashCRSettings', N'PK_{objectQualifier}EasyDNNRotatorFlashCRSettings', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorFlashCRSettings_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorFlashCRSettings_EasyDNNRotatorModule', 'OBJECT'
+			END TRY
+			BEGIN CATCH
+			END CATCH
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGalleryBridge]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorGalleryBridge]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorGalleryBridge]', N'{objectQualifier}EasyDNNRotatorGalleryBridge', 'OBJECT'
+			BEGIN TRY
+			EXECUTE sp_rename N'PK_EasyDNNRotatorGallerySettings', N'PK_{objectQualifier}EasyDNNRotatorGallerySettings', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorGallerySettings_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorGallerySettings_EasyDNNRotatorModule', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorGallerySettings_EasyGallery', N'FK_{objectQualifier}EasyDNNRotatorGallerySettings_EasyGallery', 'OBJECT'
+			END TRY
+			BEGIN CATCH
+			END CATCH
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGallTempContent]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorGallTempContent]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorGallTempContent]', N'{objectQualifier}EasyDNNRotatorGallTempContent', 'OBJECT'
+			BEGIN TRY
+			EXECUTE sp_rename N'PK_EasyDNNRotatorGallTempContent', N'PK_{objectQualifier}EasyDNNRotatorGallTempContent', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorGallTempContent_EasyDNNRotatorGalleryBridge', N'FK_{objectQualifier}EasyDNNRotatorGallTempContent_EasyDNNRotatorGalleryBridge', 'OBJECT'
+			END TRY
+			BEGIN CATCH
+			END CATCH
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorInfo]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorInfo]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorInfo]', N'{objectQualifier}EasyDNNRotatorInfo', 'OBJECT'
+			BEGIN TRY
+			EXECUTE sp_rename N'PK_EasyDNNRotatorInfo', N'PK_{objectQualifier}EasyDNNRotatorInfo', 'OBJECT'
+			END TRY
+			BEGIN CATCH
+			END CATCH
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorItemsListContent]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorItemsListContent]', N'{objectQualifier}EasyDNNRotatorItemsListContent', 'OBJECT'
+			BEGIN TRY
+			EXECUTE sp_rename N'PK_EasyDNNItemsListContent', N'PK_{objectQualifier}EasyDNNItemsListContent', 'OBJECT'
+			EXECUTE sp_rename N'FK_VezaItemsContent', N'FK_{objectQualifier}VezaItemsContent', 'OBJECT'
+			EXECUTE sp_rename N'FK_VezaListItems', N'FK_{objectQualifier}VezaListItems', 'OBJECT'
+			END TRY
+			BEGIN CATCH
+			END CATCH
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorList]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorList]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorList]', N'{objectQualifier}EasyDNNRotatorList', 'OBJECT'
+			BEGIN TRY
+			EXECUTE sp_rename N'PK_{objectQualifier}EasyDNNRotatorList_1', N'PK_{objectQualifier}EasyDNNRotatorList_1', 'OBJECT'
+			EXECUTE sp_rename N'FK_VezaListaKategorija', N'FK_{objectQualifier}VezaListaKategorija', 'OBJECT'
+			END TRY
+			BEGIN CATCH
+			END CATCH
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorListLoc]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorListLoc]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorListLoc]', N'{objectQualifier}EasyDNNRotatorListLoc', 'OBJECT'
+			BEGIN TRY
+			EXECUTE sp_rename N'PK_EasyDNNRotatorListLoc', N'PK_{objectQualifier}EasyDNNRotatorListLoc', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorListLoc_EasyDNNRotatorList', N'FK_{objectQualifier}EasyDNNRotatorListLoc_EasyDNNRotatorList', 'OBJECT'
+			END TRY
+			BEGIN CATCH
+			END CATCH
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorModule]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorModule]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorModule]', N'{objectQualifier}EasyDNNRotatorModule', 'OBJECT'
+			BEGIN TRY
+			EXECUTE sp_rename N'PK_EasyDNNRotatorModule', N'PK_{objectQualifier}EasyDNNRotatorModule', 'OBJECT'
+			EXECUTE sp_rename N'IX_EasyDNNRotatorModuleAndType', N'IX_{objectQualifier}EasyDNNRotatorModuleAndType', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorModule_EasyDNNRotatorType', N'FK_{objectQualifier}EasyDNNRotatorModule_EasyDNNRotatorType', 'OBJECT'
+			EXECUTE sp_rename N'FK_VezaModulID', N'FK_{objectQualifier}VezaModulID', 'OBJECT'
+			EXECUTE sp_rename N'FK_VezaPortalID', N'FK_{objectQualifier}VezaPortalID', 'OBJECT'
+			EXECUTE sp_rename N'FK_VezaRotatorList', N'FK_{objectQualifier}VezaRotatorList', 'OBJECT'
+			EXECUTE sp_rename N'FK_VezaUserIDModule', N'FK_{objectQualifier}VezaUserIDModule', 'OBJECT'
+			END TRY
+			BEGIN CATCH
+			END CATCH
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorNewsBridge]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorNewsBridge]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorNewsBridge]', N'{objectQualifier}EasyDNNRotatorNewsBridge', 'OBJECT'
+			BEGIN TRY
+			EXECUTE sp_rename N'PK_EasyDNNRotatorNewsBridge', N'PK_{objectQualifier}EasyDNNRotatorNewsBridge', 'OBJECT'
+			EXECUTE sp_rename N'FK_Veza_Rotator_News_Bridge', N'FK_{objectQualifier}Veza_Rotator_News_Bridge', 'OBJECT'
+			END TRY
+			BEGIN CATCH
+			END CATCH
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorNewsSettings]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorNewsSettings]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorNewsSettings]', N'{objectQualifier}EasyDNNRotatorNewsSettings', 'OBJECT'
+			BEGIN TRY
+			EXECUTE sp_rename N'PK_{objectQualifier}EasyDNNRotatorNewsSettings', N'PK_{objectQualifier}EasyDNNRotatorNewsSettings', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorNewsSettings_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorNewsSettings_EasyDNNRotatorModule', 'OBJECT'
+			END TRY
+			BEGIN CATCH
+			END CATCH
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorNewsTickerRSettings]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorNewsTickerRSettings]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorNewsTickerRSettings]', N'{objectQualifier}EasyDNNRotatorNewsTickerRSettings', 'OBJECT'
+			BEGIN TRY
+			EXECUTE sp_rename N'PK_EasyDNNRotatorNewsTickerRSettings', N'PK_{objectQualifier}EasyDNNRotatorNewsTickerRSettings', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorNewsTickerRSettings_EasyDNNRotatorType', N'FK_{objectQualifier}EasyDNNRotatorNewsTickerRSettings_EasyDNNRotatorType', 'OBJECT'
+			END TRY
+			BEGIN CATCH
+			END CATCH
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorPokerCarouselRSettings]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorPokerCarouselRSettings]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorPokerCarouselRSettings]', N'{objectQualifier}EasyDNNRotatorPokerCarouselRSettings', 'OBJECT'
+			BEGIN TRY
+			EXECUTE sp_rename N'PK_EasyDNNRotatorPokerCarouselRSettings', N'PK_{objectQualifier}EasyDNNRotatorPokerCarouselRSettings', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorPokerCarouselRSettings_EasyDNNRotatorType', N'FK_{objectQualifier}EasyDNNRotatorPokerCarouselRSettings_EasyDNNRotatorType', 'OBJECT'
+			END TRY
+			BEGIN CATCH
+			END CATCH
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorPortalSettings]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorPortalSettings]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorPortalSettings]', N'{objectQualifier}EasyDNNRotatorPortalSettings', 'OBJECT'
+			BEGIN TRY
+			EXECUTE sp_rename N'PK_EasyDNNRotatorPokerCarouselRSettings', N'PK_{objectQualifier}EasyDNNRotatorPokerCarouselRSettings', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorPokerCarouselRSettings_EasyDNNRotatorType', N'FK_{objectQualifier}EasyDNNRotatorPokerCarouselRSettings_EasyDNNRotatorType', 'OBJECT'
+			END TRY
+			BEGIN CATCH
+			END CATCH
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorSizeShifterRSettings]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorSizeShifterRSettings]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorSizeShifterRSettings]', N'{objectQualifier}EasyDNNRotatorSizeShifterRSettings', 'OBJECT'
+			BEGIN TRY
+			EXECUTE sp_rename N'PK_EasyDNNRotatorSizeShifterRSettings', N'PK_{objectQualifier}EasyDNNRotatorSizeShifterRSettings', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorSizeShifterRSettings_EasyDNNRotatorType', N'FK_{objectQualifier}EasyDNNRotatorSizeShifterRSettings_EasyDNNRotatorType', 'OBJECT'
+			END TRY
+			BEGIN CATCH
+			END CATCH
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorType]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorType]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorType]', N'{objectQualifier}EasyDNNRotatorType', 'OBJECT'
+			BEGIN TRY
+			EXECUTE sp_rename N'PK_EasyDNNRotatorType', N'PK_{objectQualifier}EasyDNNRotatorType', 'OBJECT'
+			EXECUTE sp_rename N'IX_EasyDNNRotatorType', N'IX_{objectQualifier}EasyDNNRotatorType', 'OBJECT'
+			END TRY
+			BEGIN CATCH
+			END CATCH
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorUpdate]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorUpdate]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorUpdate]', N'{objectQualifier}EasyDNNRotatorUpdate', 'OBJECT'
+			BEGIN TRY
+			EXECUTE sp_rename N'PK_EasyDNNRotatorUpdate', N'PK_{objectQualifier}EasyDNNRotatorUpdate', 'OBJECT'
+			EXECUTE sp_rename N'IX_EasyDNNRotatorUpdate', N'IX_{objectQualifier}EasyDNNRotatorUpdate', 'OBJECT'
+			END TRY
+			BEGIN CATCH
+			END CATCH
+		END
+	END
+END TRY
+BEGIN CATCH
+END CATCH
+GO
+/***** Create all stored procedures with objectqualifier, except news *****/
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EDSRotator_StringListToTable]') AND type in (N'FN', N'IF', N'TF', N'FS', N'FT'))
+DROP FUNCTION {databaseOwner}[{objectQualifier}EDSRotator_StringListToTable]
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EDSRotator_StringListToTable]') AND type in (N'FN', N'IF', N'TF', N'FS', N'FT'))
+BEGIN
+execute dbo.sp_executesql @statement = N'CREATE FUNCTION {databaseOwner}[{objectQualifier}EDSRotator_StringListToTable]
+(  
+    @List		nvarchar(max)
+) 
+RETURNS @TableOfValues TABLE 
+(  
+	KeyID	int	not null primary key
+) 
+AS 
+BEGIN
+	DECLARE @CategoryID varchar(10), @Pos int
+	SET @List = LTRIM(RTRIM(@List))+ '',''
+	SET @Pos = CHARINDEX('','', @List, 1)
+	IF REPLACE(@List, '','', '''') <> ''''
+		BEGIN
+			WHILE @Pos > 0
+			BEGIN
+				SET @CategoryID = LTRIM(RTRIM(LEFT(@List, @Pos - 1)))
+				IF @CategoryID <> ''''
+					BEGIN
+						INSERT INTO @TableOfValues (KeyID) VALUES (CAST(@CategoryID AS int))
+					END
+				SET @List = RIGHT(@List, LEN(@List) - @Pos)
+				SET @Pos = CHARINDEX('','', @List, 1)
+			END
+		END	
+RETURN
+END
+' 
+END
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorDelGalleryBridge]    Script Date: 07/08/2013 10:45:02 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorDelGalleryBridge]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorDelGalleryBridge]
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorGetGalleryContentLocProc]    Script Date: 07/08/2013 10:45:02 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGetGalleryContentLocProc]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorGetGalleryContentLocProc]
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorIUGalleryBridge]    Script Date: 07/08/2013 10:45:02 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorIUGalleryBridge]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorIUGalleryBridge]
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorIUFlashCRSettings]    Script Date: 07/08/2013 10:45:02 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorIUFlashCRSettings]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorIUFlashCRSettings]
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsBridgeIU]    Script Date: 07/08/2013 10:45:02 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorNewsBridgeIU]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsBridgeIU]
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorMoveList]    Script Date: 07/08/2013 10:45:02 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorMoveList]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorMoveList]
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorGroupsAndAuthors]    Script Date: 07/08/2013 10:45:02 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGroupsAndAuthors]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorGroupsAndAuthors]
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorMoveListContent]    Script Date: 07/08/2013 10:45:02 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorMoveListContent]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorMoveListContent]
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorCopyListContent]    Script Date: 07/08/2013 10:45:02 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorCopyListContent]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorCopyListContent]
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorExchangeContentPosition]    Script Date: 07/08/2013 10:45:02 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorExchangeContentPosition]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorExchangeContentPosition]
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorInsertContentToList]    Script Date: 07/08/2013 10:45:02 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorInsertContentToList]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorInsertContentToList]
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorGetListsLoc]    Script Date: 07/08/2013 10:45:02 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGetListsLoc]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorGetListsLoc]
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorGetContentLocProc]    Script Date: 07/08/2013 10:45:02 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGetContentLocProc]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorGetContentLocProc]
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLocSaveProc]    Script Date: 07/08/2013 10:45:02 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorContentLocSaveProc]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLocSaveProc]
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorGetCategoryLoc]    Script Date: 07/08/2013 10:45:02 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGetCategoryLoc]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorGetCategoryLoc]
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorIUModuleSettings]    Script Date: 07/08/2013 15:12:04 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorIUModuleSettings]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorIUModuleSettings]
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorIUList]    Script Date: 07/08/2013 10:45:02 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorIUList]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorIUList]
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorExchangeListPosition]    Script Date: 07/08/2013 10:45:02 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorExchangeListPosition]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorExchangeListPosition]
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorCopyListToCategory]    Script Date: 07/08/2013 10:45:02 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorCopyListToCategory]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorCopyListToCategory]
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateContent]    Script Date: 07/08/2013 10:45:02 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateContent]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateContent]
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateEmbedContent]    Script Date: 07/08/2013 10:45:02 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateEmbedContent]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateEmbedContent]
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateHTMLContent]    Script Date: 07/08/2013 10:45:02 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateHTMLContent]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateHTMLContent]
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateVideo]    Script Date: 07/08/2013 10:45:02 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateVideo]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateVideo]
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorExchangeCategoryPosition]    Script Date: 07/08/2013 10:45:02 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorExchangeCategoryPosition]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorExchangeCategoryPosition]
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorIUCategory]    Script Date: 07/08/2013 10:45:02 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorIUCategory]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorIUCategory]
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorIUCategory]    Script Date: 07/08/2013 10:45:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorIUCategory]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorIUCategory]
+	@CategoryID int = null,
+    @PortalID int, 
+    @Name nvarchar(150), 
+    @Description nvarchar(800)=''''  
+AS
+SET NOCOUNT ON;
+IF @CategoryID IS NULL
+BEGIN
+	DECLARE @Position int;
+	SET @Position = (SELECT CASE WHEN MAX(Position) IS NULL THEN 10 ELSE MAX(Position) + 10 END FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorCategory] WHERE PortalID=@PortalID);
+	INSERT INTO {databaseOwner}[{objectQualifier}EasyDNNRotatorCategory] (PortalId, Name, Description, DateCreated, Position) values (@PortalId, @Name, @Description, GETUTCDATE(), @Position); 
+END
+ELSE
+BEGIN
+	UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorCategory] SET Name=@Name, Description=@Description WHERE CategoryID=@CategoryID;	
+END
+
+' 
+END
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorExchangeCategoryPosition]    Script Date: 07/08/2013 10:45:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorExchangeCategoryPosition]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorExchangeCategoryPosition]
+(
+	@CategoryID int,
+	@ComandType int,
+	@PortalID	int              
+)
+AS
+SET NOCOUNT ON;
+DECLARE @CurrentPosition int;
+SET @CurrentPosition = 0;
+DECLARE @MaxMinPosition int;
+SET @MaxMinPosition = 0;
+DECLARE @ContentUpDownID int;
+SET @ContentUpDownID = 0;
+DECLARE @PositionOneUpDown int;
+SET @PositionOneUpDown = 0;
+BEGIN TRANSACTION;
+BEGIN TRY
+        -- SET NOCOUNT ON added to prevent extra result sets from
+        -- interfering with SELECT statements.
+
+        -- UPDATE Contact table
+        
+        IF (@ComandType = 1) -- ovo je za pomicanje gore, prema vrhu, tj prema prvome koj ije dodan u listu
+        BEGIN
+			SELECT @CurrentPosition = Position FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorCategory] WHERE CategoryID = @CategoryID;
+			SELECT @MaxMinPosition = min(Position) FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorCategory] WHERE PortalID = @PortalID;
+			IF (@CurrentPosition <> @MaxMinPosition) -- tu se mo?e usporediti kad je to min value
+				BEGIN
+					SELECT @PositionOneUpDown = max(Position) FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorCategory] WHERE PortalID = @PortalID AND Position < @CurrentPosition;
+					UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorCategory] SET Position = @CurrentPosition WHERE Position = @PositionOneUpDown;
+					UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorCategory] SET Position = @PositionOneUpDown WHERE CategoryID = @CategoryID;
+				END
+        END
+        ELSE IF(@ComandType = 0) -- ovo je za pomicanje dolje -- zna?i da je commandType jednako 0, ali budemo mi to provjerili za svaki slu?aj
+		BEGIN
+			SELECT @CurrentPosition = Position FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorCategory] WHERE CategoryID = @CategoryID;
+			SELECT @MaxMinPosition = max(Position) FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorCategory] WHERE PortalID = @PortalID;
+			IF (@CurrentPosition <> @MaxMinPosition)
+				BEGIN
+					SELECT @PositionOneUpDown = min(Position) FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorCategory] WHERE PortalID = @PortalID AND Position > @CurrentPosition;
+					UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorCategory] SET Position = @CurrentPosition WHERE Position = @PositionOneUpDown;
+					UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorCategory] SET Position = @PositionOneUpDown WHERE CategoryID = @CategoryID;
+				END
+		END        
+END TRY
+BEGIN CATCH
+    IF @@TRANCOUNT > 0
+        ROLLBACK TRANSACTION;
+END CATCH;
+
+IF @@TRANCOUNT > 0
+    COMMIT TRANSACTION;
+
+' 
+END
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateVideo]    Script Date: 07/08/2013 10:45:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateVideo]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateVideo]
+	@ContentID int,
+	@ListID int, 
+	@UserID nvarchar(200) = '''',
+	@Title nvarchar(500) = '''',
+	@Description nvarchar(max) = '''',
+	@Link nvarchar(300) = '''',
+	@FileLocation nvarchar(500) = ''Y'',
+	@FileSystemName nvarchar(250) = '''',
+	@ContentName nvarchar(200) = '''',
+	@FileExtension nvarchar(15) = '''',
+	@ThumbLocation nvarchar(500) = ''Y'',
+	@ThumbSystemName nvarchar(250) = '''',
+	@ThumbName nvarchar(200) = '''',
+	@ThumbExtension nvarchar(15) = '''',
+	@Width smallint = 0,
+	@Height smallint = 0,
+	@ContentType nvarchar(20),
+	@Visible bit = 1,
+	@StartDate datetime = NULL,
+	@EndDate datetime = NULL
+AS
+SET NOCOUNT ON;
+BEGIN TRANSACTION;
+BEGIN TRY
+	DECLARE @LastModified datetime;
+	DECLARE @posContentID int;
+	SET @posContentID = 0;
+	SET @LastModified = GETUTCDATE();
+    IF @FileLocation = ''Y'' AND @ThumbLocation = ''Y''
+	BEGIN
+		UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorContent] 
+		SET [Title] = @Title
+			,[Description] = @Description
+			,[Width] = @Width
+			,[Height] = @Height
+			,[LastModified] = @LastModified
+			,[Visible] = @Visible
+			,[StartDate] = @StartDate
+		    ,[EndDate] = @EndDate
+		WHERE ContentID = @ContentID
+	END
+	ELSE IF @FileLocation = ''Y'' AND @ThumbLocation <> ''Y''
+	BEGIN
+		UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorContent]
+		SET [Title] = @Title
+			,[Description] = @Description
+			,[ThumbLocation] = @ThumbLocation
+			,[ThumbSystemName] = @ThumbSystemName
+			,[ThumbName] = @ThumbName
+			,[ThumbExtension] = @ThumbExtension
+			,[Width] = @Width
+			,[Height] = @Height
+			,[LastModified] = @LastModified
+			,[Visible] = @Visible
+			,[StartDate] = @StartDate
+		    ,[EndDate] = @EndDate
+		WHERE ContentID = @ContentID
+	END		
+	ELSE IF @FileLocation <> ''Y'' AND @ThumbLocation = ''Y''
+	BEGIN
+		UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorContent]
+		SET [Title] = @Title
+			,[Description] = @Description
+			,[FileLocation] = @FileLocation
+			,[FileSystemName] = @FileSystemName
+			,[ContentName] = @ContentName
+			,[FileExtension] = @FileExtension
+			,[Width] = @Width
+			,[Height] = @Height
+			,[LastModified] = @LastModified
+			,[Visible] = @Visible
+		    ,[StartDate] = @StartDate
+		    ,[EndDate] = @EndDate
+		WHERE ContentID = @ContentID
+	END	
+	ELSE IF @FileLocation <> ''Y'' AND @ThumbLocation <> ''Y''
+	BEGIN
+		UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorContent]
+		SET [Title] = @Title
+			,[Description] = @Description
+			,[FileLocation] = @FileLocation
+			,[FileSystemName] = @FileSystemName
+			,[ContentName] = @ContentName
+			,[FileExtension] = @FileExtension
+			,[ThumbLocation] = @ThumbLocation
+			,[ThumbSystemName] = @ThumbSystemName
+			,[ThumbName] = @ThumbName
+			,[ThumbExtension] = @ThumbExtension
+			,[Width] = @Width
+			,[Height] = @Height
+			,[LastModified] = @LastModified
+			,[Visible] = @Visible
+			,[StartDate] = @StartDate
+		    ,[EndDate] = @EndDate
+		WHERE ContentID = @ContentID
+	END	
+	
+	UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorList] SET [LastModified] = @LastModified WHERE ListID=@ListID;
+	SET @posContentID = 1;
+	
+END TRY
+BEGIN CATCH
+    IF @@TRANCOUNT > 0 ROLLBACK TRANSACTION;
+END CATCH;
+IF @@TRANCOUNT > 0 COMMIT TRANSACTION;
+    
+RETURN @posContentID;
+
+' 
+END
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateHTMLContent]    Script Date: 07/08/2013 10:45:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateHTMLContent]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateHTMLContent]
+	@ContentID int,
+	@ListID int, 
+	@UserID nvarchar(200) = '''',
+	@Title nvarchar(500) = '''',
+	@HTMLContent nvarchar(max) = '''',
+	@ThumbLocation nvarchar(500) = ''Y'',
+	@ThumbSystemName nvarchar(250) = '''',
+	@ThumbName nvarchar(200) = '''',
+	@ThumbExtension nvarchar(15) = '''',
+	@ContentType nvarchar(20),
+	@Visible bit,
+	@StartDate datetime = NULL,
+	@EndDate datetime = NULL
+AS
+SET NOCOUNT ON;
+BEGIN TRANSACTION;
+BEGIN TRY
+	DECLARE @LastModified datetime;
+	DECLARE @posContentID int;
+	SET @posContentID = 0;
+	SET @LastModified = GETUTCDATE();
+	IF @ThumbLocation = ''Y''
+	BEGIN
+		UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorContent]
+		SET [Title] = @Title
+			,[HTMLContent] = @HTMLContent
+			,[LastModified] = @LastModified
+		WHERE ContentID = @ContentID
+	END
+	ELSE
+	BEGIN
+		UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorContent]
+		SET [Title] = @Title
+			,[HTMLContent] = @HTMLContent
+			,[ThumbLocation] = @ThumbLocation
+			,[ThumbSystemName] = @ThumbSystemName
+			,[ThumbName] = @ThumbName
+			,[ThumbExtension] = @ThumbExtension
+			,[LastModified] = @LastModified
+		WHERE ContentID = @ContentID
+	END		
+
+	UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorList] SET [LastModified] = @LastModified WHERE ListID=@ListID;
+	SET @posContentID = 1;
+	
+END TRY
+BEGIN CATCH
+    IF @@TRANCOUNT > 0 ROLLBACK TRANSACTION;
+END CATCH;
+IF @@TRANCOUNT > 0 COMMIT TRANSACTION;
+    
+RETURN @posContentID;' 
+END
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateEmbedContent]    Script Date: 07/08/2013 10:45:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateEmbedContent]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateEmbedContent]
+	@ContentID int,
+	@ListID int, 
+	@UserID nvarchar(200) = '''',
+	@Title nvarchar(500) = '''',
+	@Description nvarchar(max) = '''',
+	@FileLocation nvarchar(1000),
+	@ThumbLocation nvarchar(500) = ''Y'',
+	@ThumbSystemName nvarchar(250) = '''',
+	@ThumbName nvarchar(200) = '''',
+	@ThumbExtension nvarchar(15) = '''',
+	@VideoEmbedData nvarchar(1000),
+	@ContentType nvarchar(20),
+	@Visible bit,
+	@StartDate datetime = NULL,
+	@EndDate datetime = NULL
+AS
+SET NOCOUNT ON;
+BEGIN TRANSACTION;
+BEGIN TRY
+	DECLARE @LastModified datetime;
+	DECLARE @posContentID int;
+	SET @posContentID = 0;
+	SET @LastModified = GETUTCDATE();
+	
+	IF @ThumbLocation = ''Y''
+	BEGIN
+		UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorContent]
+		SET [Title] = @Title
+			,[Description] = @Description
+			,[FileLocation] = @FileLocation
+			,[VideoEmbedData] = @VideoEmbedData
+			,[LastModified] = @LastModified
+			,[StartDate] = @StartDate
+			,[EndDate] = @EndDate
+		WHERE ContentID = @ContentID
+	END
+	ELSE
+	BEGIN
+		UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorContent]
+		SET [Title] = @Title
+			,[Description] = @Description
+			,[FileLocation] = @FileLocation
+			,[VideoEmbedData] = @VideoEmbedData
+			,[ThumbLocation] = @ThumbLocation
+			,[ThumbSystemName] = @ThumbSystemName
+			,[ThumbName] = @ThumbName
+			,[ThumbExtension] = @ThumbExtension
+			,[LastModified] = @LastModified
+			,[StartDate] = @StartDate
+			,[EndDate] = @EndDate
+		WHERE ContentID = @ContentID
+	END		
+
+	UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorList] SET [LastModified] = @LastModified WHERE ListID=@ListID;
+	SET @posContentID = 1;
+	
+END TRY
+BEGIN CATCH
+    IF @@TRANCOUNT > 0 ROLLBACK TRANSACTION;
+END CATCH;
+IF @@TRANCOUNT > 0 COMMIT TRANSACTION;
+    
+RETURN @posContentID;' 
+END
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateContent]    Script Date: 07/08/2013 10:45:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateContent]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdateContent]
+	@ContentID int,
+	@ListID int, 
+	@UserID int = '''',
+	@Title nvarchar(500) = '''',
+	@SubTitle nvarchar(500) = '''',
+	@Description nvarchar(max) = '''',
+	@HTMLContent nvarchar(max) = '''',
+	@Link nvarchar(300) = '''',
+	@FileLocation nvarchar(500) = ''Y'',
+	@FileSystemName nvarchar(250) = '''',
+	@ContentName nvarchar(200) = '''',
+	@FileExtension nvarchar(15) = '''',
+	@ThumbLocation nvarchar(500) = '''',
+	@ThumbSystemName nvarchar(250) = '''',
+	@ThumbName nvarchar(200) = '''',
+	@ThumbExtension nvarchar(15) = '''',
+	@Width smallint = 0,
+	@Height smallint = 0,
+	@VideoEmbedData nvarchar(1000) = '''',
+	@ContentType nvarchar(20),
+	@Visible bit = 1,
+	@StartDate datetime = NULL,
+	@EndDate datetime = NULL
+AS
+SET NOCOUNT ON;
+BEGIN TRANSACTION;
+BEGIN TRY
+	DECLARE @LastModified datetime;
+	DECLARE @posContentID int;
+	SET @posContentID = 0;
+	SET @LastModified = GETUTCDATE();
+	IF @FileLocation = ''Y''
+	BEGIN
+		UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorContent] SET [Title] = @Title
+		  ,[SubTitle] = @SubTitle
+		  ,[Description] = @Description
+		  ,[HTMLContent] = @HTMLContent
+		  ,[Link] = @Link
+		  ,[Width] = @Width
+		  ,[Height] = @Height
+		  ,[VideoEmbedData] = @VideoEmbedData
+		  ,[LastModified] = @LastModified
+		  ,[Visible] = @Visible
+		  ,[StartDate] = @StartDate
+		  ,[EndDate] = @EndDate
+		WHERE ContentID = @ContentID
+	END
+	ELSE
+	BEGIN
+		UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorContent]
+		   SET [Title] = @Title
+			  ,[SubTitle] = @SubTitle
+			  ,[Description] = @Description
+			  ,[HTMLContent] = @HTMLContent
+			  ,[Link] = @Link
+			  ,[FileLocation] = @FileLocation
+			  ,[FileSystemName] = @FileSystemName
+			  ,[ContentName] = @ContentName
+			  ,[FileExtension] = @FileExtension
+			  ,[ThumbLocation] = @ThumbLocation
+			  ,[ThumbSystemName] = @ThumbSystemName
+			  ,[ThumbName] = @ThumbName
+			  ,[ThumbExtension] = @ThumbExtension
+			  ,[Width] = @Width
+			  ,[Height] = @Height
+			  ,[VideoEmbedData] = @VideoEmbedData
+			  ,[LastModified] = @LastModified
+			  ,[Visible] = @Visible
+			  ,[StartDate] = @StartDate
+			  ,[EndDate] = @EndDate
+		WHERE ContentID = @ContentID
+	END		
+
+	UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorList] SET [LastModified] = @LastModified WHERE ListID=@ListID;
+	SET @posContentID = 1;
+END TRY
+BEGIN CATCH
+    IF @@TRANCOUNT > 0 ROLLBACK TRANSACTION;
+END CATCH;
+IF @@TRANCOUNT > 0 COMMIT TRANSACTION;
+    
+RETURN @posContentID;' 
+END
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorCopyListToCategory]    Script Date: 07/08/2013 10:45:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorCopyListToCategory]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorCopyListToCategory]
+	@ListID int,
+    @CategoryToCopyID int
+AS 
+DECLARE @MaxPosition int;
+SET @MaxPosition = 10;
+DECLARE @InsertContentID int;
+SET @InsertContentID = 0;
+DECLARE @ReturnVal int;
+SET @ReturnVal = 0;
+DECLARE @DateCreated datetime;
+SET @DateCreated = GETUTCDATE();
+SET NOCOUNT ON;
+BEGIN TRANSACTION;
+BEGIN TRY
+IF EXISTS (SELECT Position FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorList] WHERE [CategoryID] = @CategoryToCopyID)
+	BEGIN
+		SELECT @MaxPosition = max(Position) FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorList] WHERE [CategoryID] = @CategoryToCopyID;
+		SET @MaxPosition = @MaxPosition + 10;
+	END
+INSERT INTO {databaseOwner}[{objectQualifier}EasyDNNRotatorList] SELECT [CategoryID] = @CategoryToCopyID, rl.[Name], rl.[Description], [DateCreated] = @DateCreated, [LastModified] = @DateCreated, rl.[Owner],[Position] = @MaxPosition FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorList] AS rl WHERE rl.[ListID]=@ListID
+SET @ReturnVal = SCOPE_IDENTITY();
+END TRY
+BEGIN CATCH
+    IF @@TRANCOUNT > 0
+        ROLLBACK TRANSACTION;
+END CATCH;
+
+IF @@TRANCOUNT > 0
+    COMMIT TRANSACTION;
+    
+RETURN @ReturnVal;
+' 
+END
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorExchangeListPosition]    Script Date: 07/08/2013 10:45:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorExchangeListPosition]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorExchangeListPosition]
+(
+	@ListID int,
+	@ComandType int,
+	@CategoryID int              
+)
+AS
+SET NOCOUNT ON;
+DECLARE @CurrentPosition int;
+SET @CurrentPosition = 0;
+DECLARE @MaxMinPosition int;
+SET @MaxMinPosition = 0;
+DECLARE @ContentUpDownID int;
+SET @ContentUpDownID = 0;
+DECLARE @PositionOneUpDown int;
+SET @PositionOneUpDown = 0;
+BEGIN TRANSACTION;
+BEGIN TRY
+        -- SET NOCOUNT ON added to prevent extra result sets from
+        -- interfering with SELECT statements.
+
+        -- UPDATE Contact table
+        
+        IF (@ComandType = 1) -- ovo je za pomicanje gore, prema vrhu, tj prema prvome koj ije dodan u listu
+        BEGIN
+			SELECT @CurrentPosition = Position FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorList] WHERE ListID = @ListID;
+			SELECT @MaxMinPosition = min(Position) FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorList] WHERE CategoryID = @CategoryID;
+			IF (@CurrentPosition <> @MaxMinPosition) -- tu se mo?e usporediti kad je to min value
+				BEGIN
+					SELECT @PositionOneUpDown = max(Position) FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorList] WHERE CategoryID = @CategoryID AND Position < @CurrentPosition;
+					UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorList] SET Position = @CurrentPosition WHERE Position = @PositionOneUpDown;
+					UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorList] SET Position = @PositionOneUpDown WHERE ListID = @ListID;
+				END
+        END
+        ELSE IF(@ComandType = 0) -- ovo je za pomicanje dolje -- zna?i da je commandType jednako 0, ali budemo mi to provjerili za svaki slu?aj
+		BEGIN
+			SELECT @CurrentPosition = Position FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorList] WHERE ListID= @ListID;
+			SELECT @MaxMinPosition = max(Position) FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorList] WHERE CategoryID = @CategoryID;
+			IF (@CurrentPosition <> @MaxMinPosition)
+				BEGIN
+					SELECT @PositionOneUpDown = min(Position) FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorList] WHERE CategoryID = @CategoryID AND Position > @CurrentPosition;
+					UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorList] SET Position = @CurrentPosition WHERE Position = @PositionOneUpDown;
+					UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorList] SET Position = @PositionOneUpDown WHERE ListID = @ListID;
+				END
+		END        
+END TRY
+BEGIN CATCH
+    IF @@TRANCOUNT > 0
+        ROLLBACK TRANSACTION;
+END CATCH;
+
+IF @@TRANCOUNT > 0
+    COMMIT TRANSACTION;
+
+' 
+END
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorIUModuleSettings]    Script Date: 07/08/2013 15:12:04 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorIUModuleSettings]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorIUModuleSettings]
+	        @ModuleID int
+           ,@PortalID int
+           ,@RotatorTypeID int
+           ,@ListID int = NULL
+           ,@UserID int
+           ,@ListNewsGallery int
+           ,@SettingsName nvarchar(150)
+           ,@PictureW int = 750
+           ,@PictureH int = 400
+           ,@ThumbW int = 64
+           ,@ThumbH int = 64
+           ,@NumToRotate int = 0
+           ,@ControlName nvarchar(150) = ''''
+           ,@ThemeName nvarchar(150) = ''''   
+           ,@CssClass nvarchar(150) = ''0''
+           ,@ShadowCss nvarchar(50) = '''' 
+           ,@ShadowStyle nvarchar(50) = ''''  
+           ,@MCBorderSize int = 0
+		   ,@MCBorderColor nvarchar(10) = ''ffffff''
+		   ,@FullRotatorW int = 0
+		   ,@FullRotatorH int = 0
+		   ,@Fallback int = false
+		   ,@MainWidthType bit = 0
+		   ,@MainHeightType bit = 0
+		   ,@ItemWidthType bit = 0
+           ,@ItemHeightType bit = 0
+		   ,@ScriptVersion nvarchar(15)
+		   ,@ScriptName nvarchar(200)
+		   ,@HtmTemplate nvarchar(50) = ''''
+		   ,@Randomize bit = 0
+		   ,@GlobalJpegQuality int = 97
+		   ,@CropMethod smallint = 0
+		   ,@HideUnlocalizedItems bit = 0
+		   ,@Visibility tinyint = 0  
+AS
+SET NOCOUNT ON;
+DECLARE @previuosType int;
+DECLARE @success int;
+SET @success = 1;
+BEGIN TRY
+
+     IF exists (SELECT RotatorTypeID FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] WHERE ModuleID = @ModuleID)
+     BEGIN
+     	SELECT @previuosType = RotatorTypeID FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] WHERE ModuleID = @ModuleID; 
+			IF @previuosType = 1
+			BEGIN
+			DELETE FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] WHERE ModuleID = @ModuleID;
+			END
+			ELSE IF @previuosType = 2
+			BEGIN
+			DELETE FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorAdvancedRSettings] WHERE ModuleID = @ModuleID;
+			END
+			ELSE IF @previuosType = 5
+			BEGIN
+			DELETE FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorFlashCRSettings] WHERE ModuleID = @ModuleID
+			END
+			ELSE IF @previuosType = 10
+			BEGIN
+			DELETE FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorCarouselRSettings] WHERE ModuleID = @ModuleID;
+			END	
+			ELSE IF @previuosType = 11
+			BEGIN
+			DELETE FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorPokerCarouselRSettings] WHERE ModuleID = @ModuleID;
+			END			
+			ELSE IF @previuosType = 12
+			BEGIN
+			DELETE FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsTickerRSettings] WHERE ModuleID = @ModuleID;
+			END	
+			ELSE IF @previuosType = 13
+			BEGIN
+			DELETE FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorSizeShifterRSettings] WHERE ModuleID = @ModuleID;
+			END	
+		DELETE FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] WHERE ModuleID = @ModuleID;
+     END
+INSERT INTO {databaseOwner}[{objectQualifier}EasyDNNRotatorModule]
+           ([ModuleID]
+           ,[RotatorTypeID]
+           ,[PortalID]
+           ,[ListID]
+           ,[UserID]
+           ,[DateCreated]
+           ,[ListNewsGallery]
+           ,[SettingsName]
+           ,[PictureW]
+           ,[PictureH]
+           ,[ThumbW]
+           ,[ThumbH]
+           ,[NumToRotate]
+           ,[ControlName]
+           ,[ThemeName]
+           ,[CssClass]
+           ,[ShadowCss]
+           ,[ShadowStyle]
+           ,[MCBorderSize]
+           ,[MCBorderColor]
+           ,[FullRotatorW]
+           ,[FullRotatorH]
+           ,[Fallback]
+           ,[MainWidthType]
+           ,[MainHeightType]
+           ,[HtmTemplate]
+           ,[ScriptVersion]
+           ,[ScriptName]
+           ,[ItemWidthType]
+           ,[ItemHeightType]
+           ,[Randomize]
+           ,[GlobalJpegQuality]
+           ,[CropMethod]
+           ,[HideUnlocalizedItems]
+           ,[Visibility])
+     VALUES
+           (@ModuleID
+           ,@RotatorTypeID
+           ,@PortalID
+           ,@ListID
+           ,@UserID
+           ,GETUTCDATE()
+           ,@ListNewsGallery
+           ,@SettingsName
+           ,@PictureW
+           ,@PictureH
+           ,@ThumbW
+           ,@ThumbH
+           ,@NumToRotate
+           ,@ControlName
+           ,@ThemeName
+           ,@CssClass
+           ,@ShadowCss
+           ,@ShadowStyle
+           ,@MCBorderSize
+           ,@MCBorderColor
+           ,@FullRotatorW
+           ,@FullRotatorH
+           ,@Fallback
+           ,@MainWidthType
+           ,@MainHeightType
+           ,@HtmTemplate
+           ,@ScriptVersion
+           ,@ScriptName
+           ,@ItemWidthType
+           ,@ItemHeightType
+           ,@Randomize
+           ,@GlobalJpegQuality
+           ,@CropMethod
+           ,@HideUnlocalizedItems
+           ,@Visibility)
+END TRY
+BEGIN CATCH
+	SET @success = 0;
+END CATCH;
+return @success;' 
+END
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorIUList]    Script Date: 07/08/2013 10:45:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorIUList]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorIUList]
+	@ListID int = null,
+	@CategoryID int,
+    @Name nvarchar(150), 
+    @Description nvarchar(800)='''',
+    @Owner int 
+AS 
+SET NOCOUNT ON;
+DECLARE @DateCreated datetime;
+SET @DateCreated = GETUTCDATE();
+
+IF @ListID IS NULL
+BEGIN
+	DECLARE @Position int;
+	SET @Position = (SELECT CASE WHEN MAX(Position) IS NULL THEN 10 ELSE MAX(Position) + 10 END FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorList] WHERE CategoryID=@CategoryID);
+	INSERT INTO {databaseOwner}[{objectQualifier}EasyDNNRotatorList] (CategoryID, Name, Description, DateCreated, LastModified, Owner, Position) values (@CategoryID, @Name, @Description, @DateCreated, @DateCreated, @Owner, @Position)
+END
+ELSE
+BEGIN
+	UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorList] SET Name=@Name, Description=@Description, LastModified=@DateCreated  WHERE ListID=@ListID;	
+END
+
+
+' 
+END
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorGetCategoryLoc]    Script Date: 07/08/2013 10:45:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGetCategoryLoc]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorGetCategoryLoc]
+    @PortalID int,
+    @LocalCode nvarchar(20) = ''Default''
+AS 
+SET NOCOUNT ON  
+IF @LocalCode = ''Default''
+BEGIN
+	SELECT rc.CategoryID as CategoryID, rc.Name as Name, rc.Description as Description, rc.DateCreated as DateCreated, COUNT(rl.ListID) AS ''NumOfLists'', rc.Position  FROM ({databaseOwner}[{objectQualifier}EasyDNNRotatorCategory] AS rc LEFT JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorList] AS rl ON rc.CategoryID = rl.CategoryID)  WHERE rc.PortalID=@PortalID GROUP BY rc.CategoryID, rc.Name, rc.Description, rc.DateCreated, rc.Position ORDER BY rc.Position;
+END
+ELSE
+BEGIN
+	DECLARE @smece TABLE ( 
+	CategoryID int,
+	Name nvarchar(150),
+	Description nvarchar(800),
+	DateCreated datetime,
+	NumOfLists int,
+	Position int);
+	INSERT @smece SELECT rc.CategoryID as CategoryID, rc.Name as Name, rc.Description as Description, rc.DateCreated as DateCreated, COUNT(rl.ListID) AS ''NumOfLists'', rc.Position FROM ({databaseOwner}[{objectQualifier}EasyDNNRotatorCategory] AS rc LEFT JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorList] AS rl ON rc.CategoryID = rl.CategoryID) WHERE NOT EXISTS (SELECT rcl.CategoryID FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorCategoryLoc] AS rcl WHERE rcl.CategoryID=rc.CategoryID AND rcl.LocalCode=@LocalCode) AND (rc.PortalID = @PortalID) GROUP BY rc.CategoryID, rc.Name, rc.Description, rc.DateCreated, rc.Position;
+	INSERT @smece SELECT rc.CategoryID as CategoryID, rcl.Name as Name, rcl.Description as Description, rc.DateCreated as DateCreated, COUNT(rl.ListID) AS ''NumOfLists'', rc.Position FROM ({databaseOwner}[{objectQualifier}EasyDNNRotatorCategory] AS rc LEFT JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorList] AS rl ON rc.CategoryID = rl.CategoryID) INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorCategoryLoc] AS rcl ON (rcl.CategoryID = rc.CategoryID) AND (rcl.LocalCode=@LocalCode) AND (rc.PortalID = @PortalID) GROUP BY rc.CategoryID, rcl.Name, rcl.Description, rc.DateCreated, rc.Position;
+	SELECT * from @smece ORDER BY Position ASC;
+END
+
+
+
+' 
+END
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLocSaveProc]    Script Date: 07/08/2013 10:45:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorContentLocSaveProc]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLocSaveProc]
+    @ContentID int,
+    @Title nvarchar(200) = '''',
+    @SubTitle nvarchar (200) = '''',
+    @Description nvarchar(max) = '''',
+    @HTMLContent nvarchar(max) = '''',
+    @Link nvarchar(300) = '''',    
+    @LocalCode nvarchar(10),
+    @LocalString nvarchar(150),
+    @TypeOfContent nvarchar(10) = ''null''     
+AS 
+SET NOCOUNT ON;
+IF @TypeOfContent = ''Image''
+BEGIN
+ IF exists (SELECT rcl.ContentID FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLoc] AS rcl WHERE rcl.ContentID = @ContentID AND LocalCode=@LocalCode)
+	 BEGIN
+	 UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLoc] SET Title=@Title, SubTitle=@SubTitle, Description=@Description, HTMLContent=@HTMLContent, Link=@Link  WHERE ContentID = @ContentID AND LocalCode=@LocalCode;
+	 END
+ ELSE
+	 BEGIN
+	 INSERT INTO {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLoc] (ContentID, Title, SubTitle, Description, HTMLContent, Link, LocalCode, LocalString) VALUES (@ContentID, @Title, @SubTitle, @Description, @HTMLContent, @Link, @LocalCode, @LocalString);
+	 END 
+END
+ELSE IF @TypeOfContent = ''HTML''
+BEGIN
+IF exists (SELECT rcl.ContentID FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLoc] AS rcl WHERE rcl.ContentID = @ContentID AND LocalCode=@LocalCode)
+	 BEGIN
+	 UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLoc] SET Title=@Title, HTMLContent=@HTMLContent  WHERE ContentID = @ContentID AND LocalCode=@LocalCode;
+	 END
+ ELSE
+	 BEGIN
+	 INSERT INTO {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLoc] (ContentID, Title, SubTitle, Description, HTMLContent, Link, LocalCode, LocalString) VALUES (@ContentID, @Title, @SubTitle, @Description, @HTMLContent, @Link, @LocalCode, @LocalString);
+	 END 
+END
+ELSE IF @TypeOfContent = ''Video''
+BEGIN
+IF exists (SELECT rcl.ContentID FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLoc] AS rcl WHERE rcl.ContentID = @ContentID AND LocalCode=@LocalCode)
+	 BEGIN
+	 UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLoc] SET Title=@Title, Description=@Description WHERE ContentID = @ContentID AND LocalCode=@LocalCode;
+	 END
+ ELSE
+	 BEGIN
+	 INSERT INTO {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLoc] (ContentID, Title, SubTitle, Description, HTMLContent, Link, LocalCode, LocalString) VALUES (@ContentID, @Title, @SubTitle, @Description, @HTMLContent, @Link, @LocalCode, @LocalString);
+	 END 
+END
+ELSE IF @TypeOfContent = ''EmbedVideo''
+BEGIN
+IF exists (SELECT rcl.ContentID FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLoc] AS rcl WHERE rcl.ContentID = @ContentID AND LocalCode=@LocalCode)
+	 BEGIN
+	 UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLoc] SET Title=@Title, Description=@Description  WHERE ContentID = @ContentID AND LocalCode=@LocalCode;
+	 END
+ ELSE
+	 BEGIN
+	 INSERT INTO {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLoc] (ContentID, Title, SubTitle, Description, HTMLContent, Link, LocalCode, LocalString) VALUES (@ContentID, @Title, @SubTitle, @Description, @HTMLContent, @Link, @LocalCode, @LocalString);
+	 END 
+END
+
+
+' 
+END
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorGetContentLocProc]    Script Date: 07/08/2013 10:45:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGetContentLocProc]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorGetContentLocProc]
+    @ListID int,
+    @Limit int = 200,
+    @Type nvarchar(40) = ''AdvancedRotator'',
+    @LocalCode nvarchar(20) = '''',
+    @Randomize bit = 0,
+    @HideUnlocalizedItems bit = 0
+AS
+
+SET NOCOUNT ON;
+DECLARE @CurrentDate datetime;
+SET @CurrentDate = GETUTCDATE();
+IF @LocalCode = ''''
+BEGIN
+	DECLARE @smece TABLE (
+		idx smallint Primary Key IDENTITY(1,1)
+	   ,ContentID int
+	   ,UserID int
+	   ,Title nvarchar(500)
+	   ,SubTitle nvarchar(500)
+	   ,Description nvarchar(max)
+	   ,HTMLContent nvarchar(max)
+	   ,Link nvarchar(300)
+	   ,FileLocation nvarchar(1000)
+	   ,FileSystemName nvarchar(250)
+	   ,ContentName nvarchar(200)
+	   ,FileExtension nvarchar(15)
+	   ,ThumbLocation nvarchar(500)
+	   ,ThumbSystemName nvarchar(250)
+	   ,ThumbName nvarchar(200)
+	   ,ThumbExtension nvarchar(15)
+	   ,Width smallint
+	   ,Height smallint
+	   ,VideoEmbedData nvarchar(1000)
+	   ,ContentType nvarchar(20)
+	   ,DateCreated datetime
+	   ,LastModified datetime
+	   ,Visible bit
+	   ,[PublishDate] datetime
+	   ,[ExpireDate] datetime
+	   ,Position int
+	)
+END         
+IF @Type = ''AdvancedRotator''
+BEGIN
+	IF @LocalCode = ''''
+	BEGIN
+		;WITH cteResult AS (
+			SELECT TOP (@Limit) rc.*,ilc.[Position] FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorList] as rl
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] as ilc ON ilc.[ListID] = rl.[ListID] AND rl.[ListID] = @ListID
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorContent] as rc ON rc.[ContentID] = ilc.[ContentID] AND rc.[ContentType] = ''Image''
+			WHERE ((rc.[StartDate] IS NULL AND rc.[EndDate] IS NULL) OR (rc.[StartDate] <= @CurrentDate AND rc.[EndDate] >= @CurrentDate))
+			ORDER BY ilc.[Position]
+		)		
+		SELECT * from cteResult ORDER BY
+			 CASE WHEN @Randomize = 0 THEN [Position] END,
+			 CASE WHEN @Randomize = 1 THEN NEWID() END;
+	END
+	ELSE
+	BEGIN
+		IF @HideUnlocalizedItems = 0
+		BEGIN
+		INSERT @smece -- nelokalizirano
+			SELECT rc.[ContentID]
+				  ,rc.[UserID],rc.[Title],rc.[SubTitle],rc.[Description],rc.[HTMLContent],rc.[Link],rc.[FileLocation]
+				  ,rc.[FileSystemName],rc.[ContentName],rc.[FileExtension],rc.[ThumbLocation],rc.[ThumbSystemName]
+				  ,rc.[ThumbName],rc.[ThumbExtension],rc.[Width],rc.[Height],rc.[VideoEmbedData],rc.[ContentType]
+				  ,rc.[DateCreated],rc.[LastModified],rc.[Visible],rc.[StartDate],rc.[EndDate],ilc.[Position]
+			FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorList] as rl
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] as ilc ON ilc.ListID = rl.ListID AND rl.ListID = @ListID 
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorContent] as rc ON rc.ContentID = ilc.ContentID AND rc.ContentType = ''Image''
+				 AND rc.ContentID NOT IN (SELECT rcl.ContentID FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLoc] as rcl WHERE rcl.ContentID=rc.ContentID AND rcl.LocalCode=@LocalCode)
+			WHERE ((rc.[StartDate] IS NULL AND rc.[EndDate] IS NULL) OR (rc.[StartDate] <= @CurrentDate AND rc.[EndDate] >= @CurrentDate))
+		END
+		INSERT @smece -- lokalizirano
+			SELECT rc.[ContentID],rc.[UserID],rlcsq.[Title],rlcsq.[SubTitle],rlcsq.[Description] ,rlcsq.[HTMLContent],rc.[Link],rc.[FileLocation]
+				  ,rc.[FileSystemName],rc.[ContentName],rc.[FileExtension],rc.[ThumbLocation],rc.[ThumbSystemName],rc.[ThumbName],rc.[ThumbExtension]
+				  ,rc.[Width],rc.[Height],rc.[VideoEmbedData],rc.[ContentType],rc.[DateCreated],rc.[LastModified],rc.[Visible],rc.[StartDate],rc.[EndDate],ilc.[Position] as Position
+			FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorList] as rl
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] as ilc ON ilc.ListID = rl.ListID
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorContent] as rc ON rc.ContentID = ilc.ContentID
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLoc] as rlcsq ON rc.ContentID = rlcsq.ContentID AND rlcsq.LocalCode=@LocalCode AND rl.ListID = @ListID AND rc.ContentType = ''Image''
+			WHERE ((rc.[StartDate] IS NULL AND rc.[EndDate] IS NULL) OR (rc.[StartDate] <= @CurrentDate AND rc.[EndDate] >= @CurrentDate))
+		IF @Randomize = 0
+		BEGIN
+			SELECT TOP (@Limit) * from @smece ORDER BY Position ASC;
+		END
+		ELSE
+		BEGIN
+			;WITH cteResult AS
+			(
+				SELECT TOP (@Limit)* from @smece ORDER BY Position ASC
+			)
+			SELECT * from cteResult ORDER BY NEWID();
+		END	
+	END
+END
+ELSE IF @Type = ''ImageEmbedHTML''
+BEGIN
+	IF @LocalCode = ''''
+	BEGIN
+		;WITH cteResult AS (
+			SELECT TOP (@Limit) rc.*,ilc.[Position] FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorList] as rl
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] as ilc ON ilc.ListID = rl.ListID AND rl.ListID = @ListID
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorContent] as rc ON rc.ContentID = ilc.ContentID
+			WHERE (rc.ContentType = ''Image'' OR rc.ContentType = ''EmbedVideo'' OR rc.ContentType = ''HTML'' OR rc.ContentType = ''Video'' OR rc.ContentType = ''AmazonS3'')
+				AND ((rc.StartDate IS NULL AND rc.EndDate IS NULL) OR (rc.StartDate <= @CurrentDate AND rc.EndDate >= @CurrentDate))
+			ORDER BY ilc.Position
+		)		
+		SELECT * from cteResult ORDER BY
+			 CASE WHEN @Randomize = 0 THEN Position END,
+			 CASE WHEN @Randomize = 1 THEN NEWID() END;
+	END
+	ELSE
+	BEGIN
+		IF @HideUnlocalizedItems = 0
+		BEGIN
+		INSERT @smece -- nelokalizirano
+			SELECT rc.[ContentID]
+				  ,rc.[UserID],rc.[Title],rc.[SubTitle],rc.[Description],rc.[HTMLContent],rc.[Link],rc.[FileLocation]
+				  ,rc.[FileSystemName],rc.[ContentName],rc.[FileExtension],rc.[ThumbLocation],rc.[ThumbSystemName]
+				  ,rc.[ThumbName],rc.[ThumbExtension],rc.[Width],rc.[Height],rc.[VideoEmbedData],rc.[ContentType]
+				  ,rc.[DateCreated],rc.[LastModified],rc.[Visible],rc.[StartDate],rc.[EndDate],ilc.[Position]
+			FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorList] as rl
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] as ilc ON ilc.ListID = rl.ListID AND rl.ListID = @ListID 
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorContent] as rc ON rc.ContentID = ilc.ContentID AND (rc.ContentType = ''Image'' OR rc.ContentType = ''EmbedVideo'' OR rc.ContentType = ''HTML'' OR rc.ContentType = ''Video'' OR rc.ContentType = ''AmazonS3'')
+				AND rc.ContentID NOT IN (SELECT rcl.ContentID FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLoc] as rcl WHERE rcl.ContentID=rc.ContentID AND rcl.LocalCode=@LocalCode)
+			WHERE ((rc.StartDate IS NULL AND rc.EndDate IS NULL) OR (rc.StartDate <= @CurrentDate AND rc.EndDate >= @CurrentDate))
+		END
+		INSERT @smece -- lokalizirano
+			SELECT rc.[ContentID],rc.[UserID],rlcsq.[Title],rlcsq.[SubTitle],rlcsq.[Description] ,rlcsq.[HTMLContent],rc.[Link],rc.[FileLocation]
+				  ,rc.[FileSystemName],rc.[ContentName],rc.[FileExtension],rc.[ThumbLocation],rc.[ThumbSystemName],rc.[ThumbName],rc.[ThumbExtension]
+				  ,rc.[Width],rc.[Height],rc.[VideoEmbedData],rc.[ContentType],rc.[DateCreated],rc.[LastModified],rc.[Visible],rc.[StartDate],rc.[EndDate],ilc.[Position] as Position
+			FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorList] as rl
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] as ilc ON ilc.ListID = rl.ListID
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorContent] as rc ON rc.ContentID = ilc.ContentID
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLoc] as rlcsq ON rc.ContentID = rlcsq.ContentID AND rlcsq.LocalCode=@LocalCode AND rl.ListID = @ListID AND (rc.ContentType = ''Image'' OR rc.ContentType = ''EmbedVideo'' OR rc.ContentType = ''HTML'' OR rc.ContentType = ''Video'' OR rc.ContentType = ''AmazonS3'')
+			WHERE ((rc.StartDate IS NULL AND rc.EndDate IS NULL) OR (rc.StartDate <= @CurrentDate AND rc.EndDate >= @CurrentDate))
+		IF @Randomize = 0
+		BEGIN
+			SELECT TOP (@Limit) * from @smece ORDER BY Position ASC;
+		END
+		ELSE
+		BEGIN
+			;WITH cteResult AS
+			(
+				SELECT TOP (@Limit)* from @smece ORDER BY Position ASC
+			)
+			SELECT * from cteResult ORDER BY NEWID();
+		END	
+		
+		END
+END
+ELSE IF @Type = ''FlashCubeRotator''
+BEGIN
+	IF @LocalCode = ''''
+	BEGIN
+		;WITH cteResult AS (
+			SELECT TOP (@Limit) rc.*,ilc.[Position] FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorList] as rl
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] as ilc ON ilc.ListID = rl.ListID AND rl.ListID = @ListID
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorContent] as rc ON rc.ContentID = ilc.ContentID AND (rc.ContentType = ''Image'' OR rc.ContentType = ''Video'')
+			WHERE ((rc.StartDate IS NULL AND rc.EndDate IS NULL) OR (rc.StartDate <= @CurrentDate AND rc.EndDate >= @CurrentDate))
+			ORDER BY ilc.Position
+		)		
+		SELECT * from cteResult ORDER BY
+			 CASE WHEN @Randomize = 0 THEN Position END,
+			 CASE WHEN @Randomize = 1 THEN NEWID() END;
+			 
+	END
+	ELSE
+	BEGIN
+		IF @HideUnlocalizedItems = 0
+		BEGIN
+			INSERT @smece -- nelokalizirano
+			SELECT rc.[ContentID]
+				  ,rc.[UserID],rc.[Title],rc.[SubTitle],rc.[Description],rc.[HTMLContent],rc.[Link],rc.[FileLocation]
+				  ,rc.[FileSystemName],rc.[ContentName],rc.[FileExtension],rc.[ThumbLocation],rc.[ThumbSystemName]
+				  ,rc.[ThumbName],rc.[ThumbExtension],rc.[Width],rc.[Height],rc.[VideoEmbedData],rc.[ContentType]
+				  ,rc.[DateCreated],rc.[LastModified],rc.[Visible],rc.[StartDate],rc.[EndDate],ilc.[Position]
+			FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorList] as rl
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] as ilc ON ilc.ListID = rl.ListID AND rl.ListID = @ListID 
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorContent] as rc ON rc.ContentID = ilc.ContentID AND (rc.ContentType = ''Image'' OR rc.ContentType = ''Video'')
+				 AND rc.ContentID NOT IN (SELECT rcl.ContentID FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLoc] as rcl WHERE rcl.ContentID=rc.ContentID AND rcl.LocalCode=@LocalCode)
+			WHERE ((rc.StartDate IS NULL AND rc.EndDate IS NULL) OR (rc.StartDate <= @CurrentDate AND rc.EndDate >= @CurrentDate))
+		END
+		INSERT @smece -- lokalizirano
+			SELECT rc.[ContentID],rc.[UserID],rlcsq.[Title],rlcsq.[SubTitle],rlcsq.[Description] ,rlcsq.[HTMLContent],rc.[Link],rc.[FileLocation]
+				  ,rc.[FileSystemName],rc.[ContentName],rc.[FileExtension],rc.[ThumbLocation],rc.[ThumbSystemName],rc.[ThumbName],rc.[ThumbExtension]
+				  ,rc.[Width],rc.[Height],rc.[VideoEmbedData],rc.[ContentType],rc.[DateCreated],rc.[LastModified],rc.[Visible],rc.[StartDate],rc.[EndDate],ilc.[Position] as Position
+			FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorList] as rl
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] as ilc ON ilc.ListID = rl.ListID
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorContent] as rc ON rc.ContentID = ilc.ContentID
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLoc] as rlcsq ON rc.ContentID = rlcsq.ContentID AND rlcsq.LocalCode=@LocalCode AND rl.ListID = @ListID AND (rc.ContentType = ''Image'' OR rc.ContentType = ''Video'')
+			WHERE ((rc.StartDate IS NULL AND rc.EndDate IS NULL) OR (rc.StartDate <= @CurrentDate AND rc.EndDate >= @CurrentDate))
+		IF @Randomize = 0
+		BEGIN
+			SELECT TOP (@Limit) * from @smece ORDER BY Position ASC;
+		END
+		ELSE
+		BEGIN
+			;WITH cteResult AS
+			(
+				SELECT TOP (@Limit)* from @smece ORDER BY Position ASC
+			)
+			SELECT * from cteResult ORDER BY NEWID();
+		END	
+		END
+END
+ELSE IF @Type = ''AllContentGVLoc''
+BEGIN
+	IF @LocalCode = ''''
+	BEGIN
+		;WITH cteResult AS (
+			SELECT TOP (@Limit) rc.*,ilc.[Position] FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorList] as rl
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] as ilc ON ilc.ListID = rl.ListID AND rl.ListID = @ListID
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorContent] as rc ON rc.ContentID = ilc.ContentID
+			ORDER BY ilc.Position
+		)		
+		SELECT * from cteResult ORDER BY
+			 CASE WHEN @Randomize = 0 THEN Position END,
+			 CASE WHEN @Randomize = 1 THEN NEWID() END;	
+	END
+	ELSE
+	BEGIN
+		INSERT @smece -- nelokalizirano
+			SELECT rc.[ContentID]
+				  ,rc.[UserID],rc.[Title],rc.[SubTitle],rc.[Description],rc.[HTMLContent],rc.[Link],rc.[FileLocation]
+				  ,rc.[FileSystemName],rc.[ContentName],rc.[FileExtension],rc.[ThumbLocation],rc.[ThumbSystemName]
+				  ,rc.[ThumbName],rc.[ThumbExtension],rc.[Width],rc.[Height],rc.[VideoEmbedData],rc.[ContentType]
+				  ,rc.[DateCreated],rc.[LastModified],rc.[Visible],rc.[StartDate],rc.[EndDate],ilc.[Position]
+			FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorList] as rl
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] as ilc ON ilc.ListID = rl.ListID AND rl.ListID = @ListID 
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorContent] as rc ON rc.ContentID = ilc.ContentID
+				 AND rc.ContentID NOT IN (SELECT rcl.ContentID FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLoc] as rcl WHERE rcl.ContentID=rc.ContentID AND rcl.LocalCode=@LocalCode);
+		
+		INSERT @smece -- lokalizirano
+			SELECT rc.[ContentID],rc.[UserID],rlcsq.[Title],rlcsq.[SubTitle],rlcsq.[Description] ,rlcsq.[HTMLContent],rc.[Link],rc.[FileLocation]
+				  ,rc.[FileSystemName],rc.[ContentName],rc.[FileExtension],rc.[ThumbLocation],rc.[ThumbSystemName],rc.[ThumbName],rc.[ThumbExtension]
+				  ,rc.[Width],rc.[Height],rc.[VideoEmbedData],rc.[ContentType],rc.[DateCreated],rc.[LastModified],rc.[Visible],rc.[StartDate],rc.[EndDate],ilc.[Position] as Position
+			FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorList] as rl
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] as ilc ON ilc.ListID = rl.ListID
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorContent] as rc ON rc.ContentID = ilc.ContentID
+				INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLoc] as rlcsq ON rc.ContentID = rlcsq.ContentID AND rlcsq.LocalCode=@LocalCode AND rl.ListID = @ListID;
+
+		IF @Randomize = 0
+		BEGIN
+			SELECT TOP (@Limit) * from @smece ORDER BY Position ASC;
+		END
+		ELSE
+		BEGIN
+			;WITH cteResult AS
+			(
+				SELECT TOP (@Limit)* from @smece ORDER BY Position ASC
+			)
+			SELECT * from cteResult ORDER BY NEWID();
+		END	
+	END
+END' 
+END
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorGetListsLoc]    Script Date: 07/08/2013 10:45:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGetListsLoc]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorGetListsLoc]
+    @CategoryID int,
+    @LocalCode nvarchar(20) = ''Default''
+AS
+SET NOCOUNT ON ;
+DECLARE @smece TABLE ( 
+	ListID int,
+	Name nvarchar(150),
+	Description nvarchar(800),
+	DateCreated datetime,
+	NumOfItems int,
+	Owner int,		
+	Position int);
+IF @LocalCode = ''Default''
+BEGIN
+	SELECT rl.ListID, rl.Name, rl.Description, rl.DateCreated, COUNT(ilc.ListID) AS ''NumOfItems'', rl.Owner, rl.Position FROM ({databaseOwner}[{objectQualifier}EasyDNNRotatorList] rl LEFT JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] ilc ON rl.ListID = ilc.ListID) WHERE rl.CategoryID = @CategoryID  GROUP BY rl.ListID, rl.Name, rl.Description, rl.DateCreated, rl.Owner, rl.Position ORDER BY rl.Position;
+END
+ELSE
+BEGIN
+	INSERT @smece SELECT rl.ListID, rl.Name, rl.Description, rl.DateCreated, COUNT(ilc.ListID) AS ''NumOfItems'', rl.Owner, rl.Position FROM ({databaseOwner}[{objectQualifier}EasyDNNRotatorList] AS rl LEFT JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] AS ilc ON rl.ListID = ilc.ListID) WHERE NOT EXISTS (SELECT rll.ListID FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorListLoc] AS rll WHERE rll.ListID=rl.ListID AND rll.LocalCode=@LocalCode) AND rl.CategoryID = @CategoryID  GROUP BY rl.ListID, rl.Name, rl.Description, rl.DateCreated, rl.Owner, rl.Position;
+	INSERT @smece SELECT rl.ListID, rll.Name, rll.Description, rl.DateCreated, COUNT(ilc.ListID) AS ''NumOfItems'', rl.Owner, rl.Position FROM ({databaseOwner}[{objectQualifier}EasyDNNRotatorList] AS rl LEFT JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] AS ilc ON rl.ListID = ilc.ListID) INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorListLoc] AS rll ON (rll.ListID=rl.ListID) AND (rll.LocalCode=@LocalCode) AND rl.CategoryID = @CategoryID  GROUP BY rl.ListID, rll.Name, rll.Description, rl.DateCreated, rl.Owner, rl.Position;
+	SELECT * from @smece ORDER BY Position ASC;
+END
+
+
+' 
+END
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorInsertContentToList]    Script Date: 07/08/2013 10:45:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorInsertContentToList]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorInsertContentToList]
+	@ListID int, 
+	@UserID int,
+	@Title nvarchar(500) = '''',
+	@SubTitle nvarchar(500) = '''',
+	@Description nvarchar(max) = '''',
+	@HTMLContent nvarchar(max) = '''',
+	@Link nvarchar(300) = '''',
+	@FileLocation nvarchar(1000) = '''',
+	@FileSystemName nvarchar(250) = '''',
+	@ContentName nvarchar(200) = '''',
+	@FileExtension nvarchar(15) = '''',
+	@ThumbLocation nvarchar(500) = '''',
+	@ThumbSystemName nvarchar(250) = '''',
+	@ThumbName nvarchar(200) = '''',
+	@ThumbExtension nvarchar(15) = '''',
+	@Width smallint = 0,
+	@Height smallint = 0,
+	@VideoEmbedData nvarchar(1000) = '''',
+	@ContentType nvarchar(20),
+	@Visible bit = 1,
+	@StartDate datetime = NULL,
+	@EndDate datetime = NULL
+AS 
+BEGIN TRY
+	SET NOCOUNT ON; 	
+	DECLARE @DateCreated datetime;
+	DECLARE @posContentID int;
+	SET @posContentID = 0;
+	SET @DateCreated = GETUTCDATE();
+	   
+	INSERT INTO {databaseOwner}[{objectQualifier}EasyDNNRotatorContent]([UserID],[Title],[SubTitle],[Description],[HTMLContent],[Link],[FileLocation],[FileSystemName],[ContentName],[FileExtension]
+			   ,[ThumbLocation],[ThumbSystemName],[ThumbName],[ThumbExtension],[Width],[Height],[VideoEmbedData],[ContentType],[DateCreated],[LastModified],[Visible],[StartDate],[EndDate])
+		 VALUES
+			   (@UserID,@Title,@SubTitle,@Description,@HTMLContent,@Link,@FileLocation,@FileSystemName,@ContentName,@FileExtension,@ThumbLocation,@ThumbSystemName
+			   ,@ThumbName,@ThumbExtension,@Width,@Height,@VideoEmbedData,@ContentType,@DateCreated,@DateCreated,@Visible,@StartDate,@EndDate)
+
+	SET @posContentID = SCOPE_IDENTITY();       
+	DECLARE @Position int;
+	SET @Position = (SELECT CASE WHEN MAX(Position) IS NULL THEN 10 ELSE MAX(Position) + 10 END FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] WHERE ListID = @ListID);
+	INSERT INTO {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] ([ListID],[ContentID],[DateCreated],[Position]) 
+	VALUES (@ListID,@posContentID,@DateCreated, @Position);
+	UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorList] SET [LastModified] = @DateCreated WHERE ListID=@ListID;   
+END TRY
+BEGIN CATCH
+	SET @posContentID = 0;
+END CATCH;
+RETURN @posContentID;
+
+' 
+END
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorExchangeContentPosition]    Script Date: 07/08/2013 10:45:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorExchangeContentPosition]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorExchangeContentPosition]
+(
+	@ContentID int,
+	@ComandType int,
+	@ListID int               
+)
+AS
+SET NOCOUNT ON;
+DECLARE @CurrentPosition int;
+SET @CurrentPosition = 0;
+DECLARE @MaxMinPosition int;
+SET @MaxMinPosition = 0;
+DECLARE @ContentUpDownID int;
+SET @ContentUpDownID = 0;
+DECLARE @PositionOneUpDown int;
+SET @PositionOneUpDown = 0;
+BEGIN TRANSACTION;
+BEGIN TRY
+    IF (@ComandType = 1) -- ovo je za pomicanje gore, prema vrhu, tj prema prvome koj ije dodan u listu
+    BEGIN
+		SELECT @CurrentPosition = Position FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] WHERE ContentID = @ContentID AND ListID = @ListID;
+		SELECT @MaxMinPosition = min(Position) FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] WHERE ListID = @ListID;
+		IF (@CurrentPosition <> @MaxMinPosition) -- tu se može usporediti kad je to min value
+			BEGIN
+				SELECT @PositionOneUpDown = max(Position) FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] WHERE ListID = @ListID AND Position < @CurrentPosition;
+				UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] SET Position = @CurrentPosition WHERE Position = @PositionOneUpDown AND ListID = @ListID;
+				UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] SET Position = @PositionOneUpDown WHERE ContentID = @ContentID AND ListID = @ListID;
+			END
+    END
+    ELSE IF(@ComandType = 0) -- ovo je za pomicanje dolje -- znači da je commandType jednako 0, ali budemo mi to provjerili za svaki slučaj
+	BEGIN
+		SELECT @CurrentPosition = Position FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] WHERE ContentID = @ContentID AND ListID = @ListID;
+		SELECT @MaxMinPosition = max(Position) FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] WHERE ListID = @ListID;
+		IF (@CurrentPosition <> @MaxMinPosition)
+			BEGIN
+				SELECT @PositionOneUpDown = min(Position) FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] WHERE ListID = @ListID AND Position > @CurrentPosition;
+				UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] SET Position = @CurrentPosition WHERE Position = @PositionOneUpDown AND ListID = @ListID;
+				UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] SET Position = @PositionOneUpDown WHERE ContentID = @ContentID AND ListID = @ListID;
+			END
+	END        
+END TRY
+BEGIN CATCH
+    IF @@TRANCOUNT > 0
+        ROLLBACK TRANSACTION;
+END CATCH;
+
+IF @@TRANCOUNT > 0
+    COMMIT TRANSACTION;
+' 
+END
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorCopyListContent]    Script Date: 07/08/2013 10:45:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorCopyListContent]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorCopyListContent]
+	@ContentID int,
+    @CopyToListID int,
+    @FileLocation nvarchar(500) = '''',
+    @FileSystemName nvarchar(200) = '''',
+    @ThumbLocation nvarchar(500) = '''',
+    @ThumbSystemName nvarchar(200) = ''''
+AS
+SET NOCOUNT ON;
+DECLARE @MaxPosition int;
+SET @MaxPosition = 10;
+DECLARE @InsertContentID int;
+SET @InsertContentID = 0;
+DECLARE @ReturnVal int;
+SET @ReturnVal = 0;
+BEGIN TRANSACTION;
+BEGIN TRY
+	INSERT INTO {databaseOwner}[{objectQualifier}EasyDNNRotatorContent]
+	SELECT rc.[UserID]
+		  ,rc.[Title]
+		  ,rc.[SubTitle]
+		  ,rc.[Description]
+		  ,rc.[HTMLContent]
+		  ,rc.[Link]
+		  ,@FileLocation
+		  ,@FileSystemName
+		  ,rc.[ContentName]
+		  ,rc.[FileExtension]
+		  ,@ThumbLocation
+		  ,@ThumbSystemName
+		  ,rc.[ThumbName]
+		  ,rc.[ThumbExtension]
+		  ,rc.[Width]
+		  ,rc.[Height]
+		  ,rc.[VideoEmbedData]
+		  ,rc.[ContentType]
+		  ,GETUTCDATE()
+		  ,GETUTCDATE()
+		  ,[Visible]
+		  ,StartDate
+		  ,EndDate
+	FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorContent] AS rc WHERE ContentID=@ContentID 
+	
+	SET @InsertContentID = SCOPE_IDENTITY();
+	
+	UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorList] SET [LastModified] = GETUTCDATE() WHERE ListID = @CopyToListID
+
+	IF EXISTS (SELECT Position FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] WHERE [ListID] = @CopyToListID)
+		BEGIN
+			SELECT @MaxPosition = max(Position) FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] WHERE [ListID] = @CopyToListID;
+			SET @MaxPosition = @MaxPosition + 10;
+		END
+	INSERT INTO {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent]([ListID],[ContentID],[DateCreated],[Position])
+		 VALUES (@CopyToListID, @InsertContentID, GETUTCDATE(), @MaxPosition)
+	INSERT {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLoc] SELECT [ContentID] = @InsertContentID, rcl.[LocalCode], rcl.[LocalString], rcl.[Title], rcl.[SubTitle], rcl.[Description], rcl.[HTMLContent], rcl.[Link] FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorContentLoc] AS rcl WHERE ContentID = @ContentID;
+	SET @ReturnVal = 1;
+END TRY
+BEGIN CATCH
+	SET @ReturnVal = 0;
+    IF @@TRANCOUNT > 0
+        ROLLBACK TRANSACTION;
+END CATCH;
+
+IF @@TRANCOUNT > 0
+    COMMIT TRANSACTION;
+    
+RETURN @ReturnVal;
+' 
+END
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorMoveListContent]    Script Date: 07/08/2013 10:45:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorMoveListContent]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorMoveListContent] 
+	@ContentID int,
+    @ListIDOld int,
+    @ListIDNew int,
+    @FileLocation nvarchar(500) = '''',
+    @FileSystemName nvarchar(200) = '''',
+    @ThumbLocation nvarchar(500) = '''',
+    @ThumbSystemName nvarchar(200) = ''''
+AS
+SET NOCOUNT ON;
+DECLARE @MaxPosition int;
+SET @MaxPosition = 10;
+DECLARE @ReturnVal int;
+SET @ReturnVal = 0;
+BEGIN TRANSACTION;
+BEGIN TRY
+	IF EXISTS (SELECT Position FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] WHERE [ListID] = @ListIDNew)
+	BEGIN
+		SELECT @MaxPosition = max(Position) FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent] WHERE [ListID] = @ListIDNew;
+		SET @MaxPosition = @MaxPosition + 10;
+	END
+
+	UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorContent]
+	   SET [FileLocation] = @FileLocation
+		  ,[FileSystemName] = @FileSystemName
+		  ,[ThumbLocation] = @ThumbLocation
+		  ,[ThumbSystemName] = @ThumbSystemName
+	 WHERE ContentID = @ContentID
+	 
+	UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorItemsListContent]
+	SET [ListID] = @ListIDNew,[DateCreated] = GETUTCDATE(),[Position] = @MaxPosition
+	WHERE [ListID] = @ListIDOld AND [ContentID] = @ContentID
+
+	UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorList] SET [LastModified] = GETUTCDATE() WHERE ListID = @ListIDNew
+
+	SET @ReturnVal = 1;
+END TRY
+BEGIN CATCH
+    IF @@TRANCOUNT > 0
+        ROLLBACK TRANSACTION;
+END CATCH;
+
+IF @@TRANCOUNT > 0
+    COMMIT TRANSACTION;  
+RETURN @ReturnVal;
+' 
+END
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorGroupsAndAuthors]    Script Date: 07/08/2013 10:45:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGroupsAndAuthors]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorGroupsAndAuthors]
+	@PortalID int,
+	@ModuleID int,
+	@NotInGroupPosition bit, -- 0 gore, 1 dolje
+	@DisplayAll bit = 1,
+	@RoleID int = -1
+AS
+SET NOCOUNT ON;
+
+DECLARE @i Int, @MaxI Int, @GroupID Int;
+DECLARE @TableGroups Table (
+   [GroupID] int not null
+  ,[GroupName] nvarchar(250) not null
+  ,[Position] int
+  ,[MyRowCount] Int Identity(1,1))
+DECLARE @resultTable Table (
+   [OrderBy] Int Identity(1,1)
+  ,[UserID] int null
+  ,[DisplayName] nvarchar(128) null
+  ,[AuthorProfileID] int null
+  ,[GroupID] int null
+  ,[GroupName] nvarchar(250) null
+  ,[Position] int)     
+IF @RoleID <> -1
+BEGIN
+INSERT INTO @resultTable SELECT
+   u.[UserID]
+  ,u.[DisplayName]
+  ,ap.[AuthorProfileID]
+  ,null,null,null
+FROM {databaseOwner}[{objectQualifier}Users] AS u INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNNewsAuthorProfile] AS ap ON u.UserID = ap.UserID INNER JOIN {databaseOwner}[{objectQualifier}UserRoles] AS ur ON ur.UserID = ap.UserID WHERE ap.PortalID = @PortalID AND ur.RoleID = @RoleID ORDER BY [DisplayName]
+END
+ELSE
+BEGIN
+IF @NotInGroupPosition = 0
+BEGIN
+IF @DisplayAll = 1
+  BEGIN
+	  INSERT INTO @resultTable SELECT
+		   u.[UserID]
+		  ,u.[DisplayName]
+		  ,ap.[AuthorProfileID]
+		  ,null,null,null
+	  FROM {databaseOwner}[{objectQualifier}Users] AS u INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNNewsAuthorProfile] AS ap ON u.UserID = ap.UserID WHERE ap.PortalID = @PortalID AND ap.AuthorProfileID NOT IN (SELECT AuthorProfileID FROM {databaseOwner}[{objectQualifier}EasyDNNNewsAutorGroupItems]) ORDER BY [DisplayName]
+  END
+ELSE
+  BEGIN
+	INSERT INTO @resultTable SELECT
+		   u.[UserID]
+		  ,u.[DisplayName]
+		  ,ap.[AuthorProfileID]
+		  ,null,null,null
+	  FROM {databaseOwner}[{objectQualifier}Users] AS u INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNNewsAuthorProfile] AS ap ON u.UserID = ap.UserID INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNNewsModuleAuthorsItems] as mai ON mai.UserID = ap.UserID AND mai.ModuleID = @ModuleID WHERE ap.PortalID = @PortalID AND ap.AuthorProfileID NOT IN (SELECT AuthorProfileID FROM {databaseOwner}[{objectQualifier}EasyDNNNewsAutorGroupItems] as agi INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNNewsModuleGroupItems] as mgi ON agi.GroupId = mgi.GroupID WHERE mgi.ModuleID = @ModuleID) ORDER BY [DisplayName]
+  END
+END
+IF @DisplayAll = 1
+BEGIN
+INSERT INTO @TableGroups SELECT
+   nag.[GroupID]
+  ,nag.[GroupName]
+  ,nag.[Position]
+FROM {databaseOwner}[{objectQualifier}EasyDNNNewsAuthorGroups] AS nag WHERE nag.[GroupID] IN (SELECT DISTINCT nag.GroupID FROM {databaseOwner}[{objectQualifier}EasyDNNNewsAuthorGroups] as nag INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNNewsAutorGroupItems] AS agi ON agi.GroupID = nag.GroupID WHERE nag.PortalID = @PortalID) ORDER BY Position;
+END
+ELSE
+BEGIN
+INSERT INTO @TableGroups SELECT DISTINCT
+   nag.[GroupID]
+  ,nag.[GroupName]
+  ,nag.[Position]
+FROM {databaseOwner}[{objectQualifier}EasyDNNNewsAuthorGroups] AS nag WHERE nag.[GroupID] IN (SELECT DISTINCT nag.GroupID FROM {databaseOwner}[{objectQualifier}EasyDNNNewsAuthorGroups] as nag INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNNewsAutorGroupItems] AS agi
+ON agi.GroupID = nag.GroupID INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNNewsModuleGroupItems] AS mgi ON nag.GroupID = mgi.GroupID
+WHERE mgi.ModuleID = @ModuleID AND nag.PortalID = @PortalID) ORDER BY Position;
+END
+SELECT @MaxI = @@RowCount;
+SELECT @i = 0;
+While @i < @MaxI
+Begin
+SET @i = @i + 1;
+Select @GroupID = GroupID from @TableGroups Where MyRowCount = @i
+INSERT INTO @resultTable SELECT
+   null,null,null
+  ,[GroupID]
+  ,[GroupName]
+  ,[Position]
+  from @TableGroups WHERE MyRowCount = @i
+INSERT INTO @resultTable SELECT
+   u.[UserID]
+  ,u.[DisplayName]
+  ,ap.[AuthorProfileID]
+  ,null,null,null
+FROM {databaseOwner}[{objectQualifier}Users] AS u INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNNewsAuthorProfile] AS ap ON u.UserID = ap.UserID INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNNewsAutorGroupItems] AS agi ON agi.AuthorProfileID = ap.AuthorProfileID WHERE agi.GroupID = @GroupID
+End
+IF @NotInGroupPosition = 1
+BEGIN
+IF @DisplayAll = 1
+  BEGIN
+	  INSERT INTO @resultTable SELECT
+		   u.[UserID]
+		  ,u.[DisplayName]
+		  ,ap.[AuthorProfileID]
+		  ,null,null,null
+	  FROM {databaseOwner}[{objectQualifier}Users] AS u INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNNewsAuthorProfile] AS ap ON u.UserID = ap.UserID WHERE ap.PortalID = @PortalID AND ap.AuthorProfileID NOT IN (SELECT AuthorProfileID FROM {databaseOwner}[{objectQualifier}EasyDNNNewsAutorGroupItems]) ORDER BY [DisplayName]
+  END
+ELSE
+  BEGIN
+	INSERT INTO @resultTable SELECT
+		   u.[UserID]
+		  ,u.[DisplayName]
+		  ,ap.[AuthorProfileID]
+		  ,null,null,null
+	  FROM {databaseOwner}[{objectQualifier}Users] AS u INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNNewsAuthorProfile] AS ap ON u.UserID = ap.UserID INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNNewsModuleAuthorsItems] as mai ON mai.UserID = ap.UserID AND mai.ModuleID = @ModuleID WHERE ap.PortalID = @PortalID AND ap.AuthorProfileID NOT IN (SELECT AuthorProfileID FROM {databaseOwner}[{objectQualifier}EasyDNNNewsAutorGroupItems] as agi INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNNewsModuleGroupItems] as mgi ON agi.GroupId = mgi.GroupID WHERE mgi.ModuleID = @ModuleID) ORDER BY [DisplayName]
+  END
+END
+END
+
+SELECT * FROM @resultTable ORDER BY OrderBy;' 
+END
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorMoveList]    Script Date: 07/08/2013 10:45:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorMoveList]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorMoveList]
+    @ListID int,
+    @CategoryToMoveID int 
+AS
+SET NOCOUNT ON;
+DECLARE @MaxPosition int;
+SET @MaxPosition = 10;
+DECLARE @ReturnVal int;
+SET @ReturnVal = 0;
+BEGIN TRANSACTION;
+BEGIN TRY
+UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule]
+   SET [ListID] = NULL
+ WHERE [ListID] = @ListID;
+IF EXISTS (SELECT Position FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorList] WHERE [CategoryID] = @CategoryToMoveID)
+	BEGIN
+		SELECT @MaxPosition = max(Position) FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorList] WHERE [CategoryID] = @CategoryToMoveID;
+		SET @MaxPosition = @MaxPosition + 10;
+	END
+ UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorList]
+   SET [CategoryID] = @CategoryToMoveID
+	  ,[LastModified] = GETUTCDATE()
+      ,[Position] = @MaxPosition
+ WHERE [ListID] = @ListID;
+ SET @ReturnVal = 1;
+END TRY
+BEGIN CATCH
+    IF @@TRANCOUNT > 0
+        ROLLBACK TRANSACTION;
+END CATCH;
+
+IF @@TRANCOUNT > 0
+    COMMIT TRANSACTION;  
+RETURN @ReturnVal;
+' 
+END
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsBridgeIU]    Script Date: 07/08/2013 10:45:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorNewsBridgeIU]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsBridgeIU]
+	@ArticleID int,
+	@RotatorID int,
+	@ArticleImage NVarChar(550),
+	@Flag tinyint
+AS
+SET NOCOUNT ON;
+
+IF EXISTS (SELECT [ArticleID] FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsBridge] WHERE ArticleID = @ArticleID AND RotatorID = @RotatorID)
+BEGIN
+	UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsBridge] SET ArticleImage = @ArticleImage, Flag=@Flag, DateAccessed=GETUTCDATE() WHERE ArticleID = @ArticleID AND RotatorID = @RotatorID;
+END
+ELSE
+BEGIN
+	INSERT INTO {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsBridge] (ArticleID, RotatorID, ArticleImage, Flag, DateAccessed) values (@ArticleID, @RotatorID, @ArticleImage, @Flag, GETUTCDATE());
+END' 
+END
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorIUFlashCRSettings]    Script Date: 07/08/2013 10:45:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorIUFlashCRSettings]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorIUFlashCRSettings]
+	 @ModuleID int
+	,@TitleLenght int = ''100'',
+	@SubTitleLenght int = ''500'',
+	@DescriptionLenght int = ''1500'',
+	
+	@LoaderColor nvarchar(30) = ''0x333333'',
+	@InnerSideColor nvarchar(30) = ''0x222222'',
+	@SideShadowAlpha nvarchar(10) = ''0.8'',
+	@DropShadowAlpha nvarchar(10) = ''0.7'',
+	@DropShadowDistance nvarchar(10) = ''25'',
+	@DropShadowScale nvarchar(10) = ''0.95'',
+	@DropShadowBlurX nvarchar(10) = ''40'',
+	@DropShadowBlurY nvarchar(10) = ''4'',
+	@MenuDistanceX nvarchar(10) = ''20'',
+	@MenuDistanceY nvarchar(10) = ''50'',
+	@MenuColor1 nvarchar(30) = ''0x999999'',
+	@MenuColor2 nvarchar(30) = ''0x333333'',
+	@MenuColor3 nvarchar(30) = ''0xFFFFFF'',
+	@ControlSize nvarchar(10) = ''100'',
+	@ControlDistance nvarchar(10) = ''20'',
+	@ControlColor1 nvarchar(30) = ''0x222222'',
+	@ControlColor2 nvarchar(30) = ''0xFFFFFF'',
+	@ControlAlpha nvarchar(10) = ''0.8'',
+	@ControlAlphaOver nvarchar(10) = ''0.95'',
+	@ControlsX nvarchar(10) = ''450'',
+	@ControlsY nvarchar(10) = ''280'',
+	@ControlsAlign nvarchar(30) = ''center'',
+	@TooltipHeight nvarchar(10) = ''31'',
+	@TooltipColor nvarchar(30) = ''0x222222'',
+	@TooltipTextY nvarchar(10) = ''5'',
+	@TooltipTextStyle nvarchar(30) = ''P-Italic'',
+	@TooltipTextColor nvarchar(30) = ''0xFFFFFF'',
+	@TooltipMarginLeft nvarchar(10) = ''5'',
+	@TooltipMarginRight nvarchar(10) = ''7'',
+	@TooltipTextSharpness nvarchar(10) = ''50'',
+	@TooltipTextThickness nvarchar(10) = ''-100'',
+	@InfoWidth nvarchar(10) = ''400'',
+	@InfoBackground nvarchar(30) = ''0xFFFFFF'',
+	@InfoBackgroundAlpha nvarchar(10) = ''0.95'',
+	@InfoMargin nvarchar(10) = ''15'',
+	@InfoSharpness nvarchar(10) = ''0'',
+	@InfoThickness nvarchar(10) = ''0'',
+	@Autoplay nvarchar(10) = ''10'',
+	@FieldOfView nvarchar(10) = ''45'',
+	
+	@Transition nvarchar(30) = ''easeInOutBack'',
+	@Pieces nvarchar(10) = ''9'',
+	@Time nvarchar(10) = ''1.2'',
+	@Delay nvarchar(10) = ''0.1'',
+	@DepthOffset nvarchar(10) = ''300'',
+	@CubeDistance nvarchar(10) = ''30''   
+AS
+	DECLARE @success int;
+	SET @success = 1;
+BEGIN TRY
+     SET NOCOUNT ON 
+INSERT INTO {databaseOwner}[{objectQualifier}EasyDNNRotatorFlashCRSettings]
+           ([ModuleID]
+           ,[TitleLenght]
+           ,[LoaderColor]
+           ,[InnerSideColor]
+           ,[SideShadowAlpha]
+           ,[DropShadowAlpha]
+           ,[DropShadowDistance]
+           ,[DropShadowScale]
+           ,[DropShadowBlurX]
+           ,[DropShadowBlurY]
+           ,[MenuDistanceX]
+           ,[MenuDistanceY]
+           ,[MenuColor1]
+           ,[MenuColor2]
+           ,[MenuColor3]
+           ,[ControlSize]
+           ,[ControlDistance]
+           ,[ControlColor1]
+           ,[ControlColor2]
+           ,[ControlAlpha]
+           ,[ControlAlphaOver]
+           ,[ControlsX]
+           ,[ControlsY]
+           ,[ControlsAlign]
+           ,[TooltipHeight]
+           ,[TooltipColor]
+           ,[TooltipTextY]
+           ,[TooltipTextStyle]
+           ,[TooltipTextColor]
+           ,[TooltipMarginLeft]
+           ,[TooltipMarginRight]
+           ,[TooltipTextSharpness]
+           ,[TooltipTextThickness]
+           ,[InfoWidth]
+           ,[InfoBackground]
+           ,[InfoBackgroundAlpha]
+           ,[InfoMargin]
+           ,[InfoSharpness]
+           ,[InfoThickness]
+           ,[Autoplay]
+           ,[FieldOfView]
+           ,[Transition]
+           ,[Pieces]
+           ,[Time]
+           ,[Delay]
+           ,[DepthOffset]
+           ,[CubeDistance])
+     VALUES
+           (@ModuleID
+           ,@TitleLenght
+           ,@LoaderColor
+           ,@InnerSideColor
+           ,@SideShadowAlpha
+           ,@DropShadowAlpha
+           ,@DropShadowDistance
+           ,@DropShadowScale
+           ,@DropShadowBlurX
+           ,@DropShadowBlurY
+           ,@MenuDistanceX
+           ,@MenuDistanceY
+           ,@MenuColor1
+           ,@MenuColor2
+           ,@MenuColor3
+           ,@ControlSize
+           ,@ControlDistance
+           ,@ControlColor1
+           ,@ControlColor2
+           ,@ControlAlpha
+           ,@ControlAlphaOver
+           ,@ControlsX
+           ,@ControlsY
+           ,@ControlsAlign
+           ,@TooltipHeight
+           ,@TooltipColor
+           ,@TooltipTextY
+           ,@TooltipTextStyle
+           ,@TooltipTextColor
+           ,@TooltipMarginLeft
+           ,@TooltipMarginRight
+           ,@TooltipTextSharpness
+           ,@TooltipTextThickness
+           ,@InfoWidth
+           ,@InfoBackground
+           ,@InfoBackgroundAlpha
+           ,@InfoMargin
+           ,@InfoSharpness
+           ,@InfoThickness
+           ,@Autoplay
+           ,@FieldOfView
+           ,@Transition
+           ,@Pieces
+           ,@Time
+           ,@Delay
+           ,@DepthOffset
+           ,@CubeDistance);
+END TRY
+BEGIN CATCH
+SET @success = 0;
+END CATCH;
+RETURN @success;
+' 
+END
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorGetGalleryContentLocProc]    Script Date: 07/08/2013 10:45:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGetGalleryContentLocProc]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorGetGalleryContentLocProc]
+    @RotatorID int, 
+    @GalleryID int,
+    @Limit int = 200,
+    @Type nvarchar(40) = ''AdvancedRotator'',
+    @LocalCode nvarchar(20) = ''Default'',
+    @Randomize bit = 0
+AS
+BEGIN TRY
+    SET NOCOUNT ON;
+	DECLARE @smece TABLE	
+		   (PictureID int
+		   ,PortalID int
+		   ,ModuleID int
+		   ,UserID int
+		   ,GalleryID int
+		   ,CategoryID int
+		   ,Title nvarchar(250)
+		   ,Description nvarchar(4000)
+		   ,FileName nvarchar(2500)
+		   ,ThumbUrl nvarchar(250)
+		   ,Position int
+		   ,ContentType nvarchar(30)
+		   ,ShortEmbedUrl nvarchar(250)
+		   ,ViewerThumb nvarchar(250)
+		   ,Info nvarchar(250)
+		   ,FileExtension nvarchar(5)
+		   ,ImageUrl nvarchar(1500)
+		   ,MediaApproved nvarchar(5)
+		   ,DateUploaded datetime)
+    IF @Type = ''Image''
+    BEGIN
+		IF @LocalCode = ''Default''
+			BEGIN
+				INSERT @smece
+				SELECT gp.[PictureID]
+					  ,gp.[PortalID]
+					  ,gp.[ModuleID]
+					  ,gp.[UserID]
+					  ,gp.[GalleryID]
+					  ,gp.[CategoryID]
+					  ,gp.[Title]
+					  ,gp.[Description]
+					  ,gp.[FileName]
+					  ,gp.[ThumbUrl]
+					  ,gp.[Position]
+					  ,gp.[MediaType]
+					  ,gp.[ShortEmbedUrl]
+					  ,gp.[ViewerThumb]
+					  ,gp.[Info]
+					  ,gp.[FileExtension]
+					  ,gp.[ImageUrl]
+					  ,gp.[MediaApproved]
+					  ,gp.[DateUploaded]
+						FROM {databaseOwner}[{objectQualifier}EasyGalleryPictures] as gp INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorGallTempContent] as rgtc ON gp.PictureID = rgtc.PictureID WHERE rgtc.RotatorID = @RotatorID AND rgtc.GalleryID = @GalleryID AND (gp.MediaApproved != ''False'' OR gp.MediaApproved IS NULL) AND gp.MediaType = ''Image''
+			END
+		ELSE
+			BEGIN
+				INSERT @smece
+				SELECT     gp.[PictureID]
+						  ,gp.[PortalID]
+						  ,gp.[ModuleID]
+						  ,gp.[UserID]
+						  ,gp.[GalleryID]
+						  ,gp.[CategoryID]
+						  ,gp.[Title]
+						  ,gp.[Description]
+						  ,gp.[FileName]
+						  ,gp.[ThumbUrl]
+						  ,gp.[Position]
+						  ,gp.[MediaType]
+						  ,gp.[ShortEmbedUrl]
+						  ,gp.[ViewerThumb]
+						  ,gp.[Info]
+						  ,gp.[FileExtension]
+						  ,gp.[ImageUrl]
+						  ,gp.[MediaApproved]
+						  ,gp.[DateUploaded]
+							FROM {databaseOwner}[{objectQualifier}EasyGalleryPictures] as gp INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorGallTempContent] as rgtc ON gp.PictureID = rgtc.PictureID
+							WHERE NOT EXISTS (SELECT rgl.PictureID FROM {databaseOwner}[{objectQualifier}EasyDNNMediaLocalization] as rgl WHERE rgl.PictureID=gp.PictureID AND rgl.LocaleCode=@LocalCode) AND gp.GalleryID = @GalleryID AND (gp.MediaApproved != ''False'' OR gp.MediaApproved IS NULL) AND gp.MediaType = ''Image'' AND rgtc.RotatorID = @RotatorID  AND rgtc.GalleryID = @GalleryID;
+				INSERT @smece
+				SELECT     gp.[PictureID]
+						  ,gp.[PortalID]
+						  ,gp.[ModuleID]
+						  ,gp.[UserID]
+						  ,gp.[GalleryID]
+						  ,gp.[CategoryID]
+						  ,rgl.[Title]
+						  ,rgl.[Description]
+						  ,gp.[FileName]
+						  ,gp.[ThumbUrl]
+						  ,gp.[Position]
+						  ,gp.[MediaType]
+						  ,gp.[ShortEmbedUrl]
+						  ,gp.[ViewerThumb]
+						  ,gp.[Info]
+						  ,gp.[FileExtension]
+						  ,gp.[ImageUrl]
+						  ,gp.[MediaApproved]
+						  ,gp.[DateUploaded]
+							FROM {databaseOwner}[{objectQualifier}EasyGalleryPictures] as gp INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorGallTempContent] as rgtc ON gp.PictureID = rgtc.PictureID INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNMediaLocalization] as rgl ON gp.[PictureID] = rgl.PictureID AND rgl.LocaleCode=@LocalCode AND gp.GalleryID = @GalleryID AND (gp.MediaApproved != ''False'' OR gp.MediaApproved IS NULL) AND gp.MediaType = ''Image'' AND rgtc.RotatorID = @RotatorID AND rgtc.GalleryID = @GalleryID;
+			END
+		END
+	ELSE IF @Type = ''ImageEmbedVideo''
+	BEGIN
+		IF @LocalCode = ''Default''
+			BEGIN
+				INSERT @smece
+				SELECT gp.[PictureID]
+					  ,gp.[PortalID]
+					  ,gp.[ModuleID]
+					  ,gp.[UserID]
+					  ,gp.[GalleryID]
+					  ,gp.[CategoryID]
+					  ,gp.[Title]
+					  ,gp.[Description]
+					  ,gp.[FileName]
+					  ,gp.[ThumbUrl]
+					  ,gp.[Position]
+					  ,gp.[MediaType]
+					  ,gp.[ShortEmbedUrl]
+					  ,gp.[ViewerThumb]
+					  ,gp.[Info]
+					  ,gp.[FileExtension]
+					  ,gp.[ImageUrl]
+					  ,gp.[MediaApproved]
+					  ,gp.[DateUploaded]
+						FROM {databaseOwner}[{objectQualifier}EasyGalleryPictures] as gp INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorGallTempContent] as rgtc ON gp.PictureID = rgtc.PictureID WHERE rgtc.RotatorID = @RotatorID AND rgtc.GalleryID = @GalleryID
+			END
+		ELSE
+			BEGIN
+			INSERT @smece
+			SELECT     gp.[PictureID]
+					  ,gp.[PortalID]
+					  ,gp.[ModuleID]
+					  ,gp.[UserID]
+					  ,gp.[GalleryID]
+					  ,gp.[CategoryID]
+					  ,gp.[Title]
+					  ,gp.[Description]
+					  ,gp.[FileName]
+					  ,gp.[ThumbUrl]
+					  ,gp.[Position]
+					  ,gp.[MediaType]
+					  ,gp.[ShortEmbedUrl]
+					  ,gp.[ViewerThumb]
+					  ,gp.[Info]
+					  ,gp.[FileExtension]
+					  ,gp.[ImageUrl]
+					  ,gp.[MediaApproved]
+					  ,gp.[DateUploaded]
+						FROM {databaseOwner}[{objectQualifier}EasyGalleryPictures] as gp INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorGallTempContent] as rgtc ON gp.PictureID = rgtc.PictureID
+						WHERE NOT EXISTS (SELECT rgl.PictureID FROM {databaseOwner}[{objectQualifier}EasyDNNMediaLocalization] as rgl WHERE rgl.PictureID=gp.PictureID AND rgl.LocaleCode=@LocalCode) AND (gp.GalleryID = @GalleryID AND (gp.MediaApproved != ''False'' OR gp.MediaApproved IS NULL) AND (gp.MediaType = ''Image'' OR gp.MediaType = ''Embeded Video'' OR gp.MediaType = ''Video'')) AND rgtc.RotatorID = @RotatorID AND rgtc.GalleryID = @GalleryID;
+			INSERT @smece
+			SELECT     gp.[PictureID]
+					  ,gp.[PortalID]
+					  ,gp.[ModuleID]
+					  ,gp.[UserID]
+					  ,gp.[GalleryID]
+					  ,gp.[CategoryID]
+					  ,rgl.[Title]
+					  ,rgl.[Description]
+					  ,gp.[FileName]
+					  ,gp.[ThumbUrl]
+					  ,gp.[Position]
+					  ,gp.[MediaType]
+					  ,gp.[ShortEmbedUrl]
+					  ,gp.[ViewerThumb]
+					  ,gp.[Info]
+					  ,gp.[FileExtension]
+					  ,gp.[ImageUrl]
+					  ,gp.[MediaApproved]
+					  ,gp.[DateUploaded]
+					FROM {databaseOwner}[{objectQualifier}EasyGalleryPictures] as gp INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNRotatorGallTempContent] as rgtc ON gp.PictureID = rgtc.PictureID INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNMediaLocalization] as rgl ON gp.[PictureID] = rgl.PictureID AND rgl.LocaleCode=@LocalCode AND (gp.GalleryID = @GalleryID AND (gp.MediaApproved != ''False'' OR gp.MediaApproved IS NULL) AND (gp.MediaType = ''Image'' OR gp.MediaType = ''Embeded Video'' OR gp.MediaType = ''Video'')) AND rgtc.RotatorID = @RotatorID AND rgtc.GalleryID = @GalleryID;
+			
+			END
+	END
+	IF @Randomize = 0
+	BEGIN
+		SET ROWCOUNT @Limit;
+		SELECT * from @smece ORDER BY Position ASC;
+	END
+	ELSE
+	BEGIN
+	DECLARE @smeceTemp TABLE	
+		   (PictureID int
+		   ,PortalID int
+		   ,ModuleID int
+		   ,UserID int
+		   ,GalleryID int
+		   ,CategoryID int
+		   ,Title nvarchar(250)
+		   ,Description nvarchar(4000)
+		   ,FileName nvarchar(2500)
+		   ,ThumbUrl nvarchar(250)
+		   ,Position int
+		   ,ContentType nvarchar(30)
+		   ,ShortEmbedUrl nvarchar(250)
+		   ,ViewerThumb nvarchar(250)
+		   ,Info nvarchar(250)
+		   ,FileExtension nvarchar(5)
+		   ,ImageUrl nvarchar(1500)
+		   ,MediaApproved nvarchar(5)
+		   ,DateUploaded datetime)
+		SET ROWCOUNT @Limit;
+		INSERT @smeceTemp
+		SELECT * from @smece ORDER BY Position ASC;
+		SELECT * from @smeceTemp ORDER BY NEWID();
+	END
+END TRY
+BEGIN CATCH
+
+END CATCH;
+' 
+END
+GO
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}EasyDNNRotatorDelGalleryBridge]    Script Date: 07/08/2013 10:45:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorDelGalleryBridge]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorDelGalleryBridge]
+	@RotatorID int,
+	@DelBridge bit = 1
+AS
+DECLARE @success int;
+SET @success = 1;
+BEGIN TRY
+    SET NOCOUNT ON 
+
+	DELETE FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorGallTempContent] WHERE	RotatorID = @RotatorID;
+	IF @DelBridge = 1
+    BEGIN
+		DELETE FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorGalleryBridge] WHERE RotatorID = @RotatorID;
+	END
+END TRY
+BEGIN CATCH
+	SET @success = 0;
+END CATCH;
+return @success;' 
+END
+GO

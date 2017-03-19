@@ -1,0 +1,212 @@
+{
+  "templateGroups": {
+    "footerBox": {
+      "name": "Orange",
+      "colors": [
+        "#f88454"
+      ]
+    },
+    "hilite": {
+      "name": "Orange",
+      "colors": [
+        "#c33301"
+      ]
+    },
+    "centerTitle": {
+      "name": "Orange",
+      "colors": [
+        "#c33301"
+      ]
+    }
+  },
+  "show": [
+    "footerBox",
+    "hilite",
+    "centerTitle"
+  ],
+  "values": {
+    "properties": {
+      "footerBoxtitleFont": {
+        "default": {
+          "disabled": [
+            "weight",
+            "lineHeight",
+            "transform",
+            "decorations",
+            "style"
+          ],
+          "values": {
+            "fontFamily": "BenchNine",
+            "color": "#ffffff",
+            "size": {
+              "value": 30,
+              "unit": "px"
+            },
+            "shadows": {
+              "show": true,
+              "list": [
+                {
+                  "x": {
+                    "value": -1,
+                    "unit": "px"
+                  },
+                  "y": {
+                    "value": -1,
+                    "unit": "px"
+                  },
+                  "radius": {
+                    "value": 1,
+                    "unit": "px"
+                  },
+                  "color": "rgba(18, 18, 18, 0.7)"
+                }
+              ]
+            },
+            "weight": "normal",
+            "lineHeight": {
+              "value": 1,
+              "unit": ""
+            },
+            "transform": "none",
+            "decorations": {
+              "underline": false
+            }
+          }
+        }
+      },
+      "footerBoxtitleBorderColor": {
+        "default": {
+          "values": {
+            "color": "#f58150"
+          }
+        }
+      },
+      "hilitebackground": {
+        "default": {
+          "disabled": [
+            "image",
+            "repeat",
+            "position"
+          ],
+          "values": {
+            "color": "#c33301",
+            "image": {},
+            "repeat": "repeat",
+            "position": {
+              "horizontal": {
+                "value": 0,
+                "unit": "%"
+              },
+              "vertical": {
+                "value": 0,
+                "unit": "%"
+              }
+            }
+          }
+        }
+      },
+      "hiliteTitleFont": {
+        "default": {
+          "disabled": [
+            "shadows",
+            "weight",
+            "lineHeight",
+            "transform",
+            "decorations",
+            "style"
+          ],
+          "values": {
+            "fontFamily": "BenchNine",
+            "color": "#ffffff",
+            "size": {
+              "value": 26,
+              "unit": "px"
+            },
+            "shadows": {
+              "show": true,
+              "list": []
+            },
+            "weight": "normal",
+            "lineHeight": {
+              "value": 1.2,
+              "unit": ""
+            },
+            "transform": "none",
+            "decorations": {
+              "underline": false
+            }
+          }
+        }
+      },
+      "hiliteTitleBorderColor": {
+        "default": {
+          "values": {
+            "color": "#ffffff"
+          }
+        }
+      },
+      "hiliteTextColor": {
+        "default": {
+          "disabled": [
+            "shadows"
+          ],
+          "values": {
+            "color": "#ffffff",
+            "shadows": {
+              "show": true,
+              "list": []
+            }
+          }
+        }
+      },
+      "centerTitleFont": {
+        "default": {
+          "disabled": [
+            "weight",
+            "lineHeight",
+            "transform",
+            "decorations",
+            "style"
+          ],
+          "values": {
+            "fontFamily": "BenchNine",
+            "color": "#c33301",
+            "size": {
+              "value": 28,
+              "unit": "px"
+            },
+            "shadows": {
+              "show": true,
+              "list": [
+                {
+                  "x": {
+                    "value": 1,
+                    "unit": "px"
+                  },
+                  "y": {
+                    "value": 1,
+                    "unit": "px"
+                  },
+                  "radius": {
+                    "value": 1,
+                    "unit": "px"
+                  },
+                  "color": "rgba(255, 255, 255, 0.5)"
+                }
+              ]
+            },
+            "weight": "bold",
+            "lineHeight": {
+              "value": 1,
+              "unit": ""
+            },
+            "transform": "none",
+            "decorations": {
+              "underline": false
+            }
+          }
+        }
+      }
+    }
+  }
+}

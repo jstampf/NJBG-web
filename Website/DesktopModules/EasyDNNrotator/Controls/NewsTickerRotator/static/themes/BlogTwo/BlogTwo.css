@@ -1,0 +1,149 @@
+.newsticker_wrapper.BlogTwo
+{
+	background: #dfdfdf url(images/ticker_bg.png) repeat-x 0 0;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #333;
+	border: 1px solid #a9a9a9;
+	padding: 0 !important;
+	line-height: 23px;
+	-webkit-text-size-adjust: none;
+	border-radius: 3px;
+	height:27px;
+}
+
+.newsticker_wrapper.BlogTwo.dark
+{
+	background: #151515;
+	color: #bdbdbd;
+	border: 1px solid #000;
+}
+
+.newsticker_wrapper.BlogTwo h4
+{
+	color: #363636;
+	padding: 6px 9px;
+	margin: 0 10px 0 0;
+	font: 12px Arial, Helvetica, sans-serif;
+	overflow: hidden;
+	background: #a9a9a9 url(images/title_bg.png) repeat-x 0 0;
+	text-shadow: 1px 1px 1px #E8E8E8;
+	height:27px;
+}
+
+.newsticker_wrapper.BlogTwo.dark h4
+{
+	color: #737373;
+	background: #0e0e0e url(images/dark/title_bg.png) repeat-x 0 0;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.newsticker_wrapper.BlogTwo .newsticker
+{
+	margin: 0;
+	padding: 0;
+}
+
+.newsticker_wrapper.BlogTwo .newsticker li
+{
+	padding: 0 15px;
+	margin: 2px;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.newsticker_wrapper.BlogTwo .newsticker li a
+{
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #333;
+	text-decoration: none;
+	line-height: 23px;
+}
+
+.newsticker_wrapper.BlogTwo.dark .newsticker li a
+{
+	color: #bdbdbd;
+}
+
+.newsticker_wrapper.BlogTwo .newsticker li a:hover
+{
+	color: #000;
+	text-decoration: none;
+}
+
+.newsticker_wrapper.BlogTwo.dark .newsticker li a:hover
+{
+	color: #fff;
+}
+
+.newsticker_wrapper.BlogTwo .newsticker_controls
+{
+	position: absolute;
+	top: 0;
+	left: auto;
+	right: 0;
+	list-style-type: none;
+	list-style-image: none;
+	margin: 0 0 0 10px;
+	padding: 0;
+}
+
+.newsticker_wrapper.BlogTwo .newsticker_controls li
+{
+	float: left;
+	height: 27px;
+	width: 15px;
+	background: url(images/buttons.png) no-repeat;
+	cursor: pointer;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.newsticker_wrapper.BlogTwo .newsticker_controls .pause
+{
+	background-position: -11px 7px;
+}
+
+.newsticker_wrapper.BlogTwo .newsticker_controls .resume
+{
+	background-position: -11px -21px;
+}
+
+.newsticker_wrapper.BlogTwo .newsticker_controls .previous
+{
+	background-position: 4px 7px;
+}
+
+.newsticker_wrapper.BlogTwo .newsticker_controls .next
+{
+	background-position: -26px 7px;
+}
+
+
+/* Reveal */
+.newsticker_wrapper.BlogTwo.newsticker_style_reveal .newsticker li
+{
+	left: 15px !important;
+}
+
+/* Scroll */
+.newsticker_wrapper.BlogTwo.newsticker_style_scroll .newsticker li
+{
+	margin-right: 80px;
+	margin-top: 2px;
+	padding: 0;
+}
+
+/*
+THE MARKUP:
+
+<div class="newsticker_wrapper">
+	<h4>The Latest</h4>
+	<ul class="newsticker">
+		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</li>
+		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</li>
+		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</li>
+		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</li>
+		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</li>
+	</ul>
+</div>
+*/

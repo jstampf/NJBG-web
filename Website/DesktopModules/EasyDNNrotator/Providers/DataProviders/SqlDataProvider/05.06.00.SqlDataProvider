@@ -1,0 +1,14 @@
+﻿IF NOT EXISTS (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorSizeShifterRSettings' and column_name = 'usePagination')
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorSizeShifterRSettings] ADD usePagination bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorSizeShifterRSettings_usePagination DEFAULT(0) NOT NULL
+END
+GO
+IF NOT EXISTS (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorModule' and column_name = 'CacheContent')
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] ADD CacheContent bit CONSTRAINT DF_{objectQualifier}EasyDNNRotatorModule_CacheContent DEFAULT(1) NOT NULL
+END
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorIUModuleSettings]') AND type in (N'P', N'PC'))
+	DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorIUModuleSettings]
+GO

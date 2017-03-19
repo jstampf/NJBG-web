@@ -1,0 +1,70 @@
+﻿if '{objectQualifier}' <> ''
+BEGIN
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorModule]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorModule]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorModule]', N'{objectQualifier}EasyDNNRotatorModule', 'OBJECT'
+			EXECUTE sp_rename N'PK_EasyDNNRotatorModule', N'PK_{objectQualifier}EasyDNNRotatorModule', 'OBJECT'
+			EXECUTE sp_rename N'IX_EasyDNNRotatorModuleAndType', N'IX_{objectQualifier}EasyDNNRotatorModuleAndType', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNNewsGallery_EasyGallery', N'FK_{objectQualifier}EasyDNNNewsGallery_EasyGallery', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorChameleonRSettings_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorChameleonRSettings_EasyDNNRotatorModule', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorFlashCRSettings_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorFlashCRSettings_EasyDNNRotatorModule', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorModule_EasyDNNRotatorType', N'FK_{objectQualifier}EasyDNNRotatorModule_EasyDNNRotatorType', 'OBJECT'
+			EXECUTE sp_rename N'VezaModulID', N'FK_{objectQualifier}VezaModulID', 'OBJECT'
+			EXECUTE sp_rename N'VezaPortalID', N'FK_{objectQualifier}VezaPortalID', 'OBJECT'
+			EXECUTE sp_rename N'VezaRotatorList', N'FK_{objectQualifier}VezaRotatorList', 'OBJECT'
+			EXECUTE sp_rename N'VezaUserIDModule', N'FK_{objectQualifier}VezaUserIDModule', 'OBJECT'
+			EXECUTE sp_rename N'FK_Veza_Rotator_News_Bridge', N'FK_{objectQualifier}Veza_Rotator_News_Bridge', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorNewsSettings_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorNewsSettings_EasyDNNRotatorModule', 'OBJECT'
+		END
+	END
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorChameleonRSettings]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorChameleonRSettings]', N'{objectQualifier}EasyDNNRotatorChameleonRSettings', 'OBJECT'
+			EXECUTE sp_rename N'PK_EasyDNNRotatorComplexRSettings', N'PK_{objectQualifier}EasyDNNRotatorComplexRSettings', 'OBJECT'
+			EXECUTE sp_rename N'FK_{objectQualifier}EasyDNNRotatorChameleonRSettings_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorChameleonRSettings_EasyDNNRotatorModule', 'OBJECT'
+			EXECUTE sp_rename N'FK_{objectQualifier}EasyDNNRotatorChameleonRSettings_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorChameleonRSettings_EasyDNNRotatorModule', 'OBJECT'
+		END
+	END
+END
+GO
+
+BEGIN TRY
+	UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings]
+	SET SettingsViewState = Replace([SettingsViewState], '{ content_source:', '{ flowplayer_src: ''/DesktopModules/EasyDNNRotator/flowplayer/flowplayer.swf'', content_source:')
+	WHERE [RotatorTypeID] = 1 AND NOT (SettingsViewState LIKE '%flowplayer_src%')
+END TRY
+BEGIN CATCH
+END CATCH
+GO
+
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNNews]') AND type in (N'U'))
+BEGIN
+	IF NOT EXISTS (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNNewsContentLocalization' and column_name = 'clTitleLink')
+	BEGIN
+		ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNNewsContentLocalization] ADD clTitleLink nvarchar(200) CONSTRAINT DF_{objectQualifier}EasyDNNNewsContentLocalization_clTitleLink DEFAULT('') NOT NULL
+	END
+	IF NOT EXISTS (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNNewsContentLocalization' and column_name = 'MetaDecription')
+	BEGIN
+		ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNNewsContentLocalization] ADD MetaDecription nvarchar(1000) CONSTRAINT DF_{objectQualifier}EasyDNNNewsContentLocalization_MetaDecription DEFAULT('') NOT NULL
+	END
+	IF NOT EXISTS (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNNewsContentLocalization' and column_name = 'MetaKeywords')
+	BEGIN
+		ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNNewsContentLocalization] ADD MetaKeywords nvarchar(500) CONSTRAINT DF_{objectQualifier}EasyDNNNewsContentLocalization_MetaKeywords DEFAULT('') NOT NULL
+	END
+END
+GO
+
+IF NOT EXISTS (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorModule' and column_name = 'CropMethod')
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] ADD CropMethod smallint CONSTRAINT DF_{objectQualifier}EasyDNNRotatorModule_CropMethod DEFAULT(0) NOT NULL
+END
+GO
+IF NOT EXISTS (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorChameleonRSettings' and column_name = 'MainPanelImageAlign')
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorChameleonRSettings] ADD MainPanelImageAlign smallint CONSTRAINT DF_{objectQualifier}EasyDNNRotatorChameleonRSettings_MainPanelImageAlign DEFAULT(0) NOT NULL
+END
+GO

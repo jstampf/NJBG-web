@@ -1,0 +1,1023 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Actions.HeaderText" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="BoundFieldResource2.HeaderText" xml:space="preserve">
+    <value>HTML Content</value>
+  </data>
+  <data name="btnAddHTML.Text" xml:space="preserve">
+    <value>HTML</value>
+  </data>
+  <data name="btnAddImages.Text" xml:space="preserve">
+    <value>images</value>
+  </data>
+  <data name="btnAddVideo.Text" xml:space="preserve">
+    <value>video</value>
+  </data>
+  <data name="btnCancleResource1.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="btnCategoryAdd.Tooltip" xml:space="preserve">
+    <value>Add Category</value>
+  </data>
+  <data name="btnCloseLocalization.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="btnCloseLocalization.ToolTip" xml:space="preserve">
+    <value>Close localization</value>
+  </data>
+  <data name="btnCloseManageContent.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="btnCloseManageContent.ToolTip" xml:space="preserve">
+    <value>Exit Manage Content</value>
+  </data>
+  <data name="btnCloseMediaManager.ToolTip" xml:space="preserve">
+    <value>Close Media Manager and return to Rotator Content Manager</value>
+  </data>
+  <data name="btnCloseResource1.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="btnCopyList.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="btnEditHTMLClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="btnEditHTMLClose.ToolTip" xml:space="preserve">
+    <value>Close Edit HTML</value>
+  </data>
+  <data name="btnEditHTMLSave.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="btnEditHTMLSave.ToolTip" xml:space="preserve">
+    <value>Save Edit HTML</value>
+  </data>
+  <data name="btnEditImageClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="btnEditImageClose.ToolTip" xml:space="preserve">
+    <value>Close Edit Image</value>
+  </data>
+  <data name="btnEditImageSave.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="btnEditImageSave.ToolTip" xml:space="preserve">
+    <value>Save Edit Image</value>
+  </data>
+  <data name="btnListAdd.ToolTip" xml:space="preserve">
+    <value>Add List</value>
+  </data>
+  <data name="btnLoadLocalization.Text" xml:space="preserve">
+    <value>Load</value>
+  </data>
+  <data name="btnLoadLocalization.ToolTip" xml:space="preserve">
+    <value>Load Localized values</value>
+  </data>
+  <data name="btnLocalizeContent.Text" xml:space="preserve">
+    <value>Localize Content</value>
+  </data>
+  <data name="btnLocalizeContent.ToolTip" xml:space="preserve">
+    <value>Localize Content</value>
+  </data>
+  <data name="btnMoveList.Text" xml:space="preserve">
+    <value>Move</value>
+  </data>
+  <data name="btnMoveMediaClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="btnMoveMediaCopy.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="btnMoveMediaMove.Text" xml:space="preserve">
+    <value>Move</value>
+  </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="btnSaveLocalization.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="btnSaveLocalization.ToolTip" xml:space="preserve">
+    <value>Save localization</value>
+  </data>
+  <data name="btnUpload.Text" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="Content.HeaderText" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="Created.HeaderText" xml:space="preserve">
+    <value>Created</value>
+  </data>
+  <data name="ddlSelectDefault.Text" xml:space="preserve">
+    <value>Select...</value>
+  </data>
+  <data name="ddlSelectEmpty.Text" xml:space="preserve">
+    <value>Empty</value>
+  </data>
+  <data name="Description.HeaderText" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ManageCategories.Text" xml:space="preserve">
+    <value>Manage categories</value>
+  </data>
+  <data name="Id.HeaderText" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="lbCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="lbContentLocalization.Text" xml:space="preserve">
+    <value>Localize</value>
+  </data>
+  <data name="lbDelete.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="lbEdit.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="lblAddEditDeleteTitle.Text" xml:space="preserve">
+    <value>Add | Edit | Delete</value>
+  </data>
+  <data name="lblAddHTML.Text" xml:space="preserve">
+    <value>Add&lt;br&gt;HTML</value>
+  </data>
+  <data name="lblAddHTMLContent.HelpKey" xml:space="preserve">
+    <value>Add the slide content in HTML form. Some slideshows don't support HTML.</value>
+  </data>
+  <data name="lblAddHTMLContent.Text" xml:space="preserve">
+    <value>HTML:</value>
+  </data>
+  <data name="lblAddHTMLTitle.HelpKey" xml:space="preserve">
+    <value>Enter a title.</value>
+  </data>
+  <data name="lblAddHTMLTitle.Text" xml:space="preserve">
+    <value>Title:</value>
+  </data>
+  <data name="lblAddImage.HelpKey" xml:space="preserve">
+    <value>Select picture for upload (jpeg, jpg, gif, bmp).</value>
+  </data>
+  <data name="lblAddImage.Text" xml:space="preserve">
+    <value>Image:</value>
+  </data>
+  <data name="lblAddImageDescription.HelpKey" xml:space="preserve">
+    <value>Enter a description.</value>
+  </data>
+  <data name="lblAddImageDescription.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblAddImageLink.HelpKey" xml:space="preserve">
+    <value>Enter a link where a visitor will be redirected if he or she clicks on a slide. The redirect option has to be enabled in the rotator settings</value>
+  </data>
+  <data name="lblAddImageLink.Text" xml:space="preserve">
+    <value>OnClick redirect to URL:</value>
+  </data>
+  <data name="lblAddImageResultSuccesInfo.Text" xml:space="preserve">
+    <value>Image and Content successfully uploaded!</value>
+  </data>
+  <data name="lblAddImages.Text" xml:space="preserve">
+    <value>Add&lt;br&gt;images</value>
+  </data>
+  <data name="lblAddImageSubTitle.HelpKey" xml:space="preserve">
+    <value>Enter a subtitle.</value>
+  </data>
+  <data name="lblAddImageSubTitle.Text" xml:space="preserve">
+    <value>Subtitle:</value>
+  </data>
+  <data name="lblAddImageTitle.HelpKey" xml:space="preserve">
+    <value>Enter a title.</value>
+  </data>
+  <data name="lblAddImageTitle.Text" xml:space="preserve">
+    <value>Title:</value>
+  </data>
+  <data name="lblAddImageVideoHtml.Text" xml:space="preserve">
+    <value>| Images | Video | HTML</value>
+  </data>
+  <data name="lblAddNewCategory.Text" xml:space="preserve">
+    <value>Add NEW Category</value>
+  </data>
+  <data name="lblAddNewList.Text" xml:space="preserve">
+    <value>Add NEW List</value>
+  </data>
+  <data name="lblAddVideo.Text" xml:space="preserve">
+    <value>Add&lt;br&gt;video</value>
+  </data>
+  <data name="lblAddVideoTitle.HelpKey" xml:space="preserve">
+    <value>Enter a title.</value>
+  </data>
+  <data name="lblAddVideoTitle.Text" xml:space="preserve">
+    <value>Title:</value>
+  </data>
+  <data name="lblAddVideoUpload.HelpKey" xml:space="preserve">
+    <value>Choose a video file which you want to upload. Supported video formats: mp4, flv, swf.</value>
+  </data>
+  <data name="lblAddVideoUpload.Text" xml:space="preserve">
+    <value>Upload video file:</value>
+  </data>
+  <data name="lblCategoryGVDescriptionLoc.HelpKey" xml:space="preserve">
+    <value>Enter Description</value>
+  </data>
+  <data name="lblCategoryGVDescriptionLoc.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblCategoryGVNameLoc.HelpKey" xml:space="preserve">
+    <value>Enter Name</value>
+  </data>
+  <data name="lblCategoryGVNameLoc.Text" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="lblCategoryLocalization.Text" xml:space="preserve">
+    <value>Category Localization</value>
+  </data>
+  <data name="lblDefaultPortalLanguage.Text" xml:space="preserve">
+    <value>Default Portal Language:</value>
+  </data>
+  <data name="lblEditHTMLContent.HelpKey" xml:space="preserve">
+    <value>HTML content of one item.</value>
+  </data>
+  <data name="lblEditHTMLContent.Text" xml:space="preserve">
+    <value>HTML Content:</value>
+  </data>
+  <data name="lblEditHTMLContentTitle.Text" xml:space="preserve">
+    <value>Edit HTML rotator item:</value>
+  </data>
+  <data name="lblEditHTMLTitle.HelpKey" xml:space="preserve">
+    <value>Enter title.</value>
+  </data>
+  <data name="lblEditHTMLTitle.Text" xml:space="preserve">
+    <value>Title:</value>
+  </data>
+  <data name="lbleditImageChangePicture.HelpKey" xml:space="preserve">
+    <value>Upload and change picture.</value>
+  </data>
+  <data name="lbleditImageChangePicture.Text" xml:space="preserve">
+    <value>Change current Picture:</value>
+  </data>
+  <data name="lblEditImageContentTitle.Text" xml:space="preserve">
+    <value>Edit image content</value>
+  </data>
+  <data name="lblEditImageDescription.HelpKey" xml:space="preserve">
+    <value>Enter description of image.</value>
+  </data>
+  <data name="lblEditImageDescription.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblEditImageDirectory.HelpKey" xml:space="preserve">
+    <value>Path to image.</value>
+  </data>
+  <data name="lblEditImageDirectory.Text" xml:space="preserve">
+    <value>Image path:</value>
+  </data>
+  <data name="lblEditImageLink.HelpKey" xml:space="preserve">
+    <value>Link for image content.</value>
+  </data>
+  <data name="lblEditImageLink.Text" xml:space="preserve">
+    <value>Link:</value>
+  </data>
+  <data name="lblEditImageName.HelpKey" xml:space="preserve">
+    <value>Name of image file.</value>
+  </data>
+  <data name="lblEditImageName.Text" xml:space="preserve">
+    <value>Image Saved Name:</value>
+  </data>
+  <data name="lblEditImageSubtitle.HelpKey" xml:space="preserve">
+    <value>Enter Subtitle.</value>
+  </data>
+  <data name="lblEditImageSubtitle.Text" xml:space="preserve">
+    <value>Subtitle:</value>
+  </data>
+  <data name="lblEditImageThumb.HelpKey" xml:space="preserve">
+    <value>Picture Thumb.</value>
+  </data>
+  <data name="lblEditImageThumb.Text" xml:space="preserve">
+    <value>Thumb picture:</value>
+  </data>
+  <data name="lblEditImageTitle.HelpKey" xml:space="preserve">
+    <value>Enter title.</value>
+  </data>
+  <data name="lblEditImageTitle.Text" xml:space="preserve">
+    <value>Title:</value>
+  </data>
+  <data name="lblEnterNewCategoryDescription.HelpKey" xml:space="preserve">
+    <value>Enter the description for the new category.</value>
+  </data>
+  <data name="lblEnterNewCategoryDescription.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblEnterNewCategoryName.HelpKey" xml:space="preserve">
+    <value>Enter the name for the new category.</value>
+  </data>
+  <data name="lblEnterNewCategoryName.Text" xml:space="preserve">
+    <value>Category name:</value>
+  </data>
+  <data name="lblEnterNewListDescription.HelpKey" xml:space="preserve">
+    <value>Enter description of new list.</value>
+  </data>
+  <data name="lblEnterNewListDescription.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblEnterNewListName.HelpKey" xml:space="preserve">
+    <value>Enter the name of new list.</value>
+  </data>
+  <data name="lblEnterNewListName.Text" xml:space="preserve">
+    <value>List name:</value>
+  </data>
+  <data name="lblHTMLContentLocalizeDescription.HelpKey" xml:space="preserve">
+    <value>Add HTML content.</value>
+  </data>
+  <data name="lblHTMLContentLocalizeDescription.Text" xml:space="preserve">
+    <value>HTML Content:</value>
+  </data>
+  <data name="lblHTMLContentLocalizeTitle.HelpKey" xml:space="preserve">
+    <value>Enter title.</value>
+  </data>
+  <data name="lblHTMLContentLocalizeTitle.Text" xml:space="preserve">
+    <value>Title:</value>
+  </data>
+  <data name="lblHTMLLocalization.Text" xml:space="preserve">
+    <value>HTML Content Localization</value>
+  </data>
+  <data name="lblImageDescriptionLoc.HelpKey" xml:space="preserve">
+    <value>Enter description of image.</value>
+  </data>
+  <data name="lblImageDescriptionLoc.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblImageErrorMassage.Text" xml:space="preserve">
+    <value>Select image (.jpg .jpeg .gif .bmp ...) !</value>
+  </data>
+  <data name="lblImageLinkLoc.HelpKey" xml:space="preserve">
+    <value>Enter link.</value>
+  </data>
+  <data name="lblImageLinkLoc.Text" xml:space="preserve">
+    <value>Link:</value>
+  </data>
+  <data name="lblImageLocalization.Text" xml:space="preserve">
+    <value>Image Content Localization</value>
+  </data>
+  <data name="lblImageSubTitleLoc.HelpKey" xml:space="preserve">
+    <value>Enter Subtitle.</value>
+  </data>
+  <data name="lblImageSubTitleLoc.Text" xml:space="preserve">
+    <value>Subtitle:</value>
+  </data>
+  <data name="lblImagesVideoAudioTitle.Text" xml:space="preserve">
+    <value>Images | Video | HTML</value>
+  </data>
+  <data name="lblImageTitleLoc.HelpKey" xml:space="preserve">
+    <value>Enter title.</value>
+  </data>
+  <data name="lblImageTitleLoc.Text" xml:space="preserve">
+    <value>Title:</value>
+  </data>
+  <data name="lblLastModifiedListsTitle.Text" xml:space="preserve">
+    <value>&lt;b&gt;Last&lt;/b&gt; added/modified List</value>
+  </data>
+  <data name="lblListDescriptionLoc.HelpKey" xml:space="preserve">
+    <value>Enter Description.</value>
+  </data>
+  <data name="lblListDescriptionLoc.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblListLocalization.Text" xml:space="preserve">
+    <value>List Localization</value>
+  </data>
+  <data name="lblListNameLoc.HelpKey" xml:space="preserve">
+    <value>Enter Name.</value>
+  </data>
+  <data name="lblListNameLoc.Text" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="selected" xml:space="preserve">
+    <value>Load values from selected language.</value>
+  </data>
+  <data name="lblLoadLocalizedLangFrom.Text" xml:space="preserve">
+    <value>Load values from:</value>
+  </data>
+  <data name="lblLocalizationEmpty.Text" xml:space="preserve">
+    <value>Not Localized !</value>
+  </data>
+  <data name="lblLocalizationFalse.Text" xml:space="preserve">
+    <value>Go to Admin, languages, and add some languages!</value>
+  </data>
+  <data name="lblLocalizationValue.Text" xml:space="preserve">
+    <value>Loaded:</value>
+  </data>
+  <data name="lblManageCategoriesTitle.Text" xml:space="preserve">
+    <value>Manage&lt;br /&gt;categories</value>
+  </data>
+  <data name="lblManageListTitle.Text" xml:space="preserve">
+    <value>Manage&lt;br /&gt;Lists</value>
+  </data>
+  <data name="lblMediaManagerTitle.Text" xml:space="preserve">
+    <value>Media&lt;br&gt;manager</value>
+  </data>
+  <data name="lblMediaMoveID.HelpKey" xml:space="preserve">
+    <value>ID of the selected media.</value>
+  </data>
+  <data name="lblMediaMoveID.Text" xml:space="preserve">
+    <value>ID:</value>
+  </data>
+  <data name="lblMediaMoveType.HelpKey" xml:space="preserve">
+    <value>Type of the selected media.</value>
+  </data>
+  <data name="lblMediaMoveType.Text" xml:space="preserve">
+    <value>Media Type:</value>
+  </data>
+  <data name="lblMedijaMoveListSelect.HelpKey" xml:space="preserve">
+    <value>Select the list to move or copy media to:</value>
+  </data>
+  <data name="lblMedijaMoveListSelect.Text" xml:space="preserve">
+    <value>Select List:</value>
+  </data>
+  <data name="lblMoveCopyTitle.Text" xml:space="preserve">
+    <value>Move or copy List to another category:</value>
+  </data>
+  <data name="lblMoveMediaSelectCategory.HelpKey" xml:space="preserve">
+    <value>Select the category to move or copy media to:</value>
+  </data>
+  <data name="lblMoveMediaSelectCategory.Text" xml:space="preserve">
+    <value>Select category:</value>
+  </data>
+  <data name="lblMoveMediaTitle.HelpKey" xml:space="preserve">
+    <value>Title of the selected media.</value>
+  </data>
+  <data name="lblMoveMediaTitle.Text" xml:space="preserve">
+    <value>Title:</value>
+  </data>
+  <data name="lblMoveORCopyMedia.Text" xml:space="preserve">
+    <value>Move or copy selected media</value>
+  </data>
+  <data name="lblNumberOfCatSelect.HelpKey" xml:space="preserve">
+    <value>Select the number of categories to display on one page.</value>
+  </data>
+  <data name="lblNumberOfCatSelect.Text" xml:space="preserve">
+    <value>Categories per page:</value>
+  </data>
+  <data name="lblNumberOfLastModifiedListsPerPage.HelpKey" xml:space="preserve">
+    <value>Select the number of Lists to display on one page:</value>
+  </data>
+  <data name="lblNumberOfLastModifiedListsPerPage.Text" xml:space="preserve">
+    <value>Select the number of lists per page:</value>
+  </data>
+  <data name="lblNumberOfLists.Text" xml:space="preserve">
+    <value>Number of Lists:</value>
+  </data>
+  <data name="lblNumberOfMediaFiles.Text" xml:space="preserve">
+    <value>Number of media files in List:</value>
+  </data>
+  <data name="lblNumOfCats.Text" xml:space="preserve">
+    <value>Number of categories:</value>
+  </data>
+  <data name="lblRotatorCategory.Text" xml:space="preserve">
+    <value>Category name:</value>
+  </data>
+  <data name="lblRotatorCategoryDescr.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblSelectedCatName.Text" xml:space="preserve">
+    <value>Selected category name:</value>
+  </data>
+  <data name="lblSelectedListID.Text" xml:space="preserve">
+    <value>Selected List ID:</value>
+  </data>
+  <data name="lblSelectedListNameTitle.Text" xml:space="preserve">
+    <value>Selected List Name:</value>
+  </data>
+  <data name="lblSelectLangForLocalization.HelpKey" xml:space="preserve">
+    <value>Select language for localization.</value>
+  </data>
+  <data name="lblSelectLangForLocalization.Text" xml:space="preserve">
+    <value>Select language to localize</value>
+  </data>
+  <data name="lbMediaMoveCopy.Text" xml:space="preserve">
+    <value>Move / Copy</value>
+  </data>
+  <data name="lbSelect.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="Link.HeaderText" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="Name.HeaderText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NumberOfItems.HeaderText" xml:space="preserve">
+    <value>No. of Items</value>
+  </data>
+  <data name="NumberOfLists.HeaderText" xml:space="preserve">
+    <value>No. of Lists</value>
+  </data>
+  <data name="pnlRottatorCategoryHead.Text" xml:space="preserve">
+    <value>Add new category</value>
+  </data>
+  <data name="Position.HeaderText" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="rfvCategoryname.Text" xml:space="preserve">
+    <value>Category name!</value>
+  </data>
+  <data name="rfvCategorySelect.ErrorMessage" xml:space="preserve">
+    <value>Please select Category.</value>
+  </data>
+  <data name="rfvListSelect.ErrorMessage" xml:space="preserve">
+    <value>Please select List.</value>
+  </data>
+  <data name="rfvValue.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="Title.HeaderText" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="lblNumberOfListsSelect.HelpKey" xml:space="preserve">
+    <value>Select the number of Lists to display on one page.</value>
+  </data>
+  <data name="lblNumberOfListsSelect.Text" xml:space="preserve">
+    <value>Lists per page:</value>
+  </data>
+  <data name="lblNumberOfContentGrid.HelpKey" xml:space="preserve">
+    <value>Select the number of content to display on one page.</value>
+  </data>
+  <data name="lblNumberOfContentGrid.Text" xml:space="preserve">
+    <value>Content per page:</value>
+  </data>
+  <data name="lblInfoMoveCopySelectErr.Text" xml:space="preserve">
+    <value>Select List from drop down menu!</value>
+  </data>
+  <data name="lblInfoMoveCopyMoveErr.Text" xml:space="preserve">
+    <value>Can't use Move content to &lt;b&gt; SAME  &lt;/b&gt; list! Use Copy!</value>
+  </data>
+  <data name="lblMoveCopyListInfoNoneSel.Text" xml:space="preserve">
+    <value>Please select category!</value>
+  </data>
+  <data name="lblMoveCopyListInfoSameList.Text" xml:space="preserve">
+    <value>Can't use Move List to &lt;b&gt; SAME  &lt;/b&gt; list! Use Copy!</value>
+  </data>
+  <data name="cvVideoUploadWidth.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="lblVideoThumb.HelpKey" xml:space="preserve">
+    <value>Upload a new thumbnail for the video or use a predefined thumbnail.</value>
+  </data>
+  <data name="lblVideoThumb.Text" xml:space="preserve">
+    <value>Video thumbnail:</value>
+  </data>
+  <data name="lblVideoUploadDescription.HelpKey" xml:space="preserve">
+    <value>Enter a description:</value>
+  </data>
+  <data name="lblVideoUploadDescription.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblVideoUploadHeight.Text" xml:space="preserve">
+    <value>Height of video:</value>
+  </data>
+  <data name="lblVideoUploadWidth.HelpKey" xml:space="preserve">
+    <value>Enter a width of a video in pixels.</value>
+  </data>
+  <data name="lblVideoUploadWidth.Text" xml:space="preserve">
+    <value>Width of video:</value>
+  </data>
+  <data name="lblVideoUploadHeight.HelpKey" xml:space="preserve">
+    <value>Enter a height of a video in pixels.</value>
+  </data>
+  <data name="lblUpdateInfoFail.Text" xml:space="preserve">
+    <value>Update Failed!</value>
+  </data>
+  <data name="lblUpdateInfoSuccessful.Text" xml:space="preserve">
+    <value>Successful Update.</value>
+  </data>
+  <data name="ddlEmptyDirectory.Text" xml:space="preserve">
+    <value>Empty Directory!</value>
+  </data>
+  <data name="ddlliVideoThumbStandard.Text" xml:space="preserve">
+    <value>Use standard image</value>
+  </data>
+  <data name="ddlliVideoThumbUpload.Text" xml:space="preserve">
+    <value>Upload thumbnail</value>
+  </data>
+  <data name="lblVideoStandardThumbSelect.HelpKey" xml:space="preserve">
+    <value>Select one of predefined thumbnails. Location - ModulePath/Thumbs/Video.</value>
+  </data>
+  <data name="lblVideoStandardThumbSelect.Text" xml:space="preserve">
+    <value>Select predefined thumbnail:</value>
+  </data>
+  <data name="lblVideoThumbUpload.HelpKey" xml:space="preserve">
+    <value>Select thumbnail to upload. (Thumbnail is uploaded to List Content, location - Portals/PortalID/EasyDNNRotator/Originals/ListID/VideoThumb/).</value>
+  </data>
+  <data name="lblVideoThumbUpload.Text" xml:space="preserve">
+    <value>Select Thumbnail:</value>
+  </data>
+  <data name="lblVideoThumbUploadNoFileError.Text" xml:space="preserve">
+    <value>Please select file THUMBnail for upload (File doesnt exist!).</value>
+  </data>
+  <data name="lblVideoUploadExtError.Text" xml:space="preserve">
+    <value>Please upload jpeg, jpg, gif, bmp, png thumb picture.</value>
+  </data>
+  <data name="lblVideoUploadFileExtError.Text" xml:space="preserve">
+    <value>Wrong file! Please select .mp4, flv, swf, mov, 3gp file format for upload.</value>
+  </data>
+  <data name="lblVideoUploadNoFileError.Text" xml:space="preserve">
+    <value>Please select file for upload (File to copy not found).</value>
+  </data>
+  <data name="lblHTMLStandardThumbSelect.HelpKey" xml:space="preserve">
+    <value>Select one of predefined thumbnails. Location - ModulePath/Thumbs/HTML/.</value>
+  </data>
+  <data name="lblHTMLStandardThumbSelect.Text" xml:space="preserve">
+    <value>Select standard thumbnail:</value>
+  </data>
+  <data name="lblHTMLThumb.HelpKey" xml:space="preserve">
+    <value>Upload a new thumbnail for the slide or use a predefined thumbnail. Some slideshows require a thumbnail to work correctly.</value>
+  </data>
+  <data name="lblHTMLThumb.Text" xml:space="preserve">
+    <value>Thumbnail for slide:</value>
+  </data>
+  <data name="lblHTMLThumbUpload.HelpKey" xml:space="preserve">
+    <value>Select thumbnail to upload. (Thumbnail is uploaded to List Content, location - Portals/PortalID/EasyDNNRotator/Originals/ListID/HTML/)</value>
+  </data>
+  <data name="lblHTMLThumbUpload.Text" xml:space="preserve">
+    <value>Select Thumbnail:</value>
+  </data>
+  <data name="lblHTMLUploadExtError.Text" xml:space="preserve">
+    <value>Wrong file! Please select .jpeg, jpg, gif, png, bmp file format for upload.</value>
+  </data>
+  <data name="lblHTMLUploadFail.Text" xml:space="preserve">
+    <value>HTML Upload Failed! </value>
+  </data>
+  <data name="lblHTMLUploadNoFileError.Text" xml:space="preserve">
+    <value>Please select file for upload (File to copy not found).</value>
+  </data>
+  <data name="lblHTMLUploadSuccess.Text" xml:space="preserve">
+    <value>HTML successfully uploaded!</value>
+  </data>
+  <data name="lblVideoUploadFail.Text" xml:space="preserve">
+    <value>Video upload Failed!</value>
+  </data>
+  <data name="lblVideoUploadSuccess.Text" xml:space="preserve">
+    <value>Video successfully uploaded!</value>
+  </data>
+  <data name="lblMoveCopyListInfoMoved.Text" xml:space="preserve">
+    <value>List moved.</value>
+  </data>
+  <data name="lblInfoMoveCopyFail.Text" xml:space="preserve">
+    <value>Copy Fail!</value>
+  </data>
+  <data name="EmbedCodeNotValid.Text" xml:space="preserve">
+    <value>Embed code not valid! To short!</value>
+  </data>
+  <data name="VideoSourceSelect.Text" xml:space="preserve">
+    <value>Select video source.</value>
+  </data>
+  <data name="ddlDirectoryNoExist.Text" xml:space="preserve">
+    <value>Directory does not exist!</value>
+  </data>
+  <data name="lblAddVideoUpdate.HelpKey" xml:space="preserve">
+    <value>Update video.</value>
+  </data>
+  <data name="lblAddVideoUpdate.Text" xml:space="preserve">
+    <value>Video update?</value>
+  </data>
+  <data name="lblEditHTMLThumb.HelpKey" xml:space="preserve">
+    <value>Upload the thumbnail for HTML content or use standard image. Some rotators must have thumbnail to work properly.</value>
+  </data>
+  <data name="lblEditHTMLThumb.Text" xml:space="preserve">
+    <value>Change HTML Thumbnail:</value>
+  </data>
+  <data name="lblEditVideo.Text" xml:space="preserve">
+    <value>Edit Video</value>
+  </data>
+  <data name="lblEditVideoDirectory.HelpKey" xml:space="preserve">
+    <value>Video path.</value>
+  </data>
+  <data name="lblEditVideoDirectory.Text" xml:space="preserve">
+    <value>Video directory path:</value>
+  </data>
+  <data name="lblEditVideoName.HelpKey" xml:space="preserve">
+    <value>Name of video file.</value>
+  </data>
+  <data name="lblEditVideoName.Text" xml:space="preserve">
+    <value>Video name:</value>
+  </data>
+  <data name="lblEditVideoThumb.HelpKey" xml:space="preserve">
+    <value>Preview of thumbnail for video file. Some rotators must have thumbnail to work properly.</value>
+  </data>
+  <data name="lblEditVideoThumb.Text" xml:space="preserve">
+    <value>Video Thumbnail:</value>
+  </data>
+  <data name="lblEditVideoThumbDirectory.HelpKey" xml:space="preserve">
+    <value>Video thumb path.</value>
+  </data>
+  <data name="lblEditVideoThumbDirectory.Text" xml:space="preserve">
+    <value>Video thumb path:</value>
+  </data>
+  <data name="lblEditVideoThumbUpdate.HelpKey" xml:space="preserve">
+    <value>Update the thumbnail for video file or use standard image. Some rotators must have thumbnail to work properly.</value>
+  </data>
+  <data name="lblEditVideoThumbUpdate.Text" xml:space="preserve">
+    <value>Update video thumb:</value>
+  </data>
+  <data name="lblThumbFileNotSelected.Text" xml:space="preserve">
+    <value>Thumb imege not selected.</value>
+  </data>
+  <data name="lblHTMLThumbUploadNoFileError.Text" xml:space="preserve">
+    <value>Please select thumbnail.</value>
+  </data>
+  <data name="lblEmptyCategory.Text" xml:space="preserve">
+    <value>Empty category, create list.</value>
+  </data>
+  <data name="lblEmptyContentList.Text" xml:space="preserve">
+    <value>Empty list, add some content.</value>
+  </data>
+  <data name="btnMultiUpload.Text" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="ClearQueue.Text" xml:space="preserve">
+    <value>Clear Queue</value>
+  </data>
+  <data name="btnEditVideoUpdate.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="lblAmazonVideoUploadFileExtError.Text" xml:space="preserve">
+    <value>Wrong file link! Please select .mp4, flv, swf, mov, 3gp file format for upload.</value>
+  </data>
+  <data name="lblImgThumbSelectError.Text" xml:space="preserve">
+    <value>Please select thumb for upload. (jpg, jpeg, gif, png, bmp)</value>
+  </data>
+  <data name="lblEndDate.HelpKey" xml:space="preserve">
+    <value>An end date and time for displaying slides.</value>
+  </data>
+  <data name="lblEndDate.Text" xml:space="preserve">
+    <value>End date and time:</value>
+  </data>
+  <data name="lblResizeImages.HelpKey" xml:space="preserve">
+    <value>Proportionally resize the image.</value>
+  </data>
+  <data name="lblResizeImages.Text" xml:space="preserve">
+    <value>Resize</value>
+  </data>
+  <data name="lblStartDate.Text" xml:space="preserve">
+    <value>Start date and time:</value>
+  </data>
+  <data name="lblStartDate.HelpKey" xml:space="preserve">
+    <value>A start date and time for displaying slides.</value>
+  </data>
+  <data name="lblStartExpire.HelpKey" xml:space="preserve">
+    <value>This option enables you to set a start date and time, and an end date and time. A slide will be displayed from the start date and time and it will stop to display at the end date and time.</value>
+  </data>
+  <data name="lblStartExpire.Text" xml:space="preserve">
+    <value>Set start and end date:</value>
+  </data>
+  <data name="liEmbedVideo.Text" xml:space="preserve">
+    <value>Embed video</value>
+  </data>
+  <data name="liExternalVideoLink.Text" xml:space="preserve">
+    <value>Add external video link</value>
+  </data>
+  <data name="liMultiImageUpload.Text" xml:space="preserve">
+    <value>Upload multiple images</value>
+  </data>
+  <data name="liSingleImageUpload.Text" xml:space="preserve">
+    <value>Upload single image</value>
+  </data>
+  <data name="liUploadVideo.Text" xml:space="preserve">
+    <value>Upload video</value>
+  </data>
+  <data name="revEndTime.ErrorMessage" xml:space="preserve">
+    <value>Time required.</value>
+  </data>
+  <data name="rfvEndDate.ErrorMessage" xml:space="preserve">
+    <value>Date required.</value>
+  </data>
+  <data name="rfvStartDate.ErrorMessage" xml:space="preserve">
+    <value>Date required.</value>
+  </data>
+  <data name="rfvStartTime.ErrorMessage" xml:space="preserve">
+    <value>Time required.</value>
+  </data>
+  <data name="btnCategoryAdd.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnListAdd.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="BackToCategoryManagment.Text" xml:space="preserve">
+    <value>Back to Manage categories</value>
+  </data>
+  <data name="BackToListManagment.Text" xml:space="preserve">
+    <value>Back to Manage lists</value>
+  </data>
+  <data name="BackToContentManagment.Text" xml:space="preserve">
+    <value>Back to Manage content</value>
+  </data>
+  <data name="Cancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="NoPreviewAvalible.Text" xml:space="preserve">
+    <value>No preview avalible</value>
+  </data>
+  <data name="NumberOfAddedImages.Text" xml:space="preserve">
+    <value>Number of added images: {0}.</value>
+  </data>
+  <data name="Of.Text" xml:space="preserve">
+    <value>of</value>
+  </data>
+  <data name="Queued.Text" xml:space="preserve">
+    <value>Queued</value>
+  </data>
+  <data name="Retry.Text" xml:space="preserve">
+    <value>Retry</value>
+  </data>
+  <data name="Uploadfailed.Text" xml:space="preserve">
+    <value>Upload failed</value>
+  </data>
+  <data name="ManageLists.Text" xml:space="preserve">
+    <value>Manage lists</value>
+  </data>
+  <data name="MediaManager.Text" xml:space="preserve">
+    <value>Media manager</value>
+  </data>
+  <data name="NoCategory.Text" xml:space="preserve">
+    <value>Create category!</value>
+  </data>
+  <data name="lblAmazonVideoThumb.HelpKey" xml:space="preserve">
+    <value>Upload a new thumbnail for the video or use a predefined thumbnail.</value>
+  </data>
+  <data name="lblAmazonVideoThumb.Text" xml:space="preserve">
+    <value>Video thumbnail:</value>
+  </data>
+  <data name="lblAmazonVideotitle.HelpKey" xml:space="preserve">
+    <value>Enter a title.</value>
+  </data>
+  <data name="lblAmazonVideotitle.Text" xml:space="preserve">
+    <value>Title:</value>
+  </data>
+  <data name="lblAmazonVideoUploadDescription.HelpKey" xml:space="preserve">
+    <value>Enter the video description:</value>
+  </data>
+  <data name="lblAmazonVideoUploadDescription.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblAmazonVideoUploadHeight.HelpKey" xml:space="preserve">
+    <value>Enter a height of a video in pixels.</value>
+  </data>
+  <data name="lblAmazonVideoUploadHeight.Text" xml:space="preserve">
+    <value>Height of video:</value>
+  </data>
+  <data name="lblAmazonVideoUploadWidth.HelpKey" xml:space="preserve">
+    <value>Enter a width of a video in pixels.</value>
+  </data>
+  <data name="lblAmazonVideoUploadWidth.Text" xml:space="preserve">
+    <value>Width of video:</value>
+  </data>
+  <data name="lblEembedVideoUrl.HelpText" xml:space="preserve">
+    <value>Enter video url.</value>
+  </data>
+  <data name="lblEembedVideoUrl.Text" xml:space="preserve">
+    <value>Video url:</value>
+  </data>
+  <data name="lblEmbedVideoCode.HelpText" xml:space="preserve">
+    <value>Enter video embed code.</value>
+  </data>
+  <data name="lblEmbedVideoCode.Text" xml:space="preserve">
+    <value>Embed code:</value>
+  </data>
+  <data name="lblEmbedVideoDescription.HelpText" xml:space="preserve">
+    <value>Enter a description.</value>
+  </data>
+  <data name="lblEmbedVideoDescription.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblEmbedVideoEnterTitle.HelpText" xml:space="preserve">
+    <value>Enter video title.</value>
+  </data>
+  <data name="lblEmbedVideoEnterTitle.Text" xml:space="preserve">
+    <value>Video title:</value>
+  </data>
+  <data name="lblMultiPictureWH.HelpKey" xml:space="preserve">
+    <value>Enter the desired image dimensions.</value>
+  </data>
+  <data name="lblMultiPictureWH.Text" xml:space="preserve">
+    <value>Resize width / height:</value>
+  </data>
+  <data name="NoUpdateThumb.Text" xml:space="preserve">
+    <value>Don't update thumb</value>
+  </data>
+</root>

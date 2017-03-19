@@ -1,0 +1,227 @@
+/* jQuery RefineSlide plugin v0.3
+ * Copyright 2012, Alex Dunphy
+ * MIT License (http://www.opensource.org/licenses/mit-license.php)
+ *
+ * Base styles
+ */
+.edsSizeShifter {
+  /* ===[ Slider ]=== */
+  /* ===[ Thumbnails ]=== */
+  /* ===[ Captions ]=== */
+  /* ===[ Grid ]=== */
+}
+.edsSizeShifter .rs-wrap:after,
+.edsSizeShifter .rs-slider:after,
+.edsSizeShifter .rs-thumb-wrap:after,
+.edsSizeShifter .rs-arrows:after,
+.edsSizeShifter .rs-caption:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  line-height: 0;
+  visibility: hidden;
+}
+.edsSizeShifter .rs-wrap {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+}
+.edsSizeShifter .rs-slide-bg {
+  *zoom: 1;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.edsSizeShifter .rs-slider {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.edsSizeShifter .rs-slider > li {
+  list-style: none;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 -100% 0 0;
+  padding: 0;
+  border: 0;
+  float: left;
+  position: relative;
+}
+.edsSizeShifter .rs-slider > li > a {
+  display: block;
+  padding: 0;
+  background: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.edsSizeShifter .rs-slider > li img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  -ms-interpolation-mode: bicubic;
+}
+.edsSizeShifter .rs-pagination {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  margin: 1% auto 0;
+  padding: 0;
+  border: 0;
+  height: auto;
+  text-align: center;
+  line-height: 0;
+  font-size: 0;
+}
+.edsSizeShifter .rs-pagination li {
+  display: inline-block;
+  margin: 0 0 0 5px;
+  padding: 0;
+  border: 0;
+  width: 20px;
+  height: 20px;
+  background: black;
+  list-style: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+.edsSizeShifter .rs-pagination li p,
+.edsSizeShifter .rs-pagination li p span {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.edsSizeShifter .rs-pagination li:first-child {
+  margin: 0;
+}
+.edsSizeShifter .rs-pagination li:hover {
+  background: red;
+}
+.edsSizeShifter .rs-thumb-wrap {
+  *zoom: 1;
+}
+.edsSizeShifter .rs-thumb-wrap > a {
+  display: block;
+  float: left;
+  position: relative;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.edsSizeShifter .rs-thumb-wrap > a > img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  -ms-interpolation-mode: bicubic;
+}
+.edsSizeShifter .rs-thumb-wrap > a:first-child {
+  margin-left: 0 !important;
+}
+.edsSizeShifter .rs-caption {
+  position: absolute;
+  max-height: 100%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  left: 0;
+}
+.edsSizeShifter .rs-caption.rs-top-left {
+  top: 0;
+  bottom: auto;
+}
+.edsSizeShifter .rs-caption.rs-top-right {
+  top: 0;
+  right: 0;
+  left: auto;
+  bottom: auto;
+}
+.edsSizeShifter .rs-caption.rs-bottom-left {
+  bottom: 0;
+  left: 0;
+}
+.edsSizeShifter .rs-caption.rs-bottom-right {
+  right: 0;
+  left: auto;
+  border-bottom: none;
+  border-right: none;
+}
+.edsSizeShifter .rs-caption.rs-top {
+  top: 0;
+  bottom: auto;
+  width: 100% !important;
+}
+.edsSizeShifter .rs-caption.rs-bottom {
+  width: 100% !important;
+}
+.edsSizeShifter .rs-caption.rs-left {
+  top: 0;
+  height: 100%;
+}
+.edsSizeShifter .rs-caption.rs-right {
+  top: 0;
+  left: auto;
+  right: 0;
+  height: 100%;
+}
+.edsSizeShifter .rs-caption .rs-caption-wrapper {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.edsSizeShifter .rs-caption .rs-caption-wrapper > h4,
+.edsSizeShifter .rs-caption .rs-caption-wrapper > div,
+.edsSizeShifter .rs-caption .rs-caption-wrapper > div p {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.edsSizeShifter .rs-caption .rs-caption-wrapper > h4 a {
+  text-decoration: none;
+}
+.edsSizeShifter .rs-caption .rs-caption-wrapper > h4 a:hover {
+  text-decoration: none;
+}
+.edsSizeShifter .rs-prev,
+.edsSizeShifter .rs-next {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  bottom: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  z-index: 2;
+}
+.edsSizeShifter .rs-prev {
+  left: 0;
+}
+.edsSizeShifter .rs-next {
+  right: 0;
+}
+.edsSizeShifter .rs-grid {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.edsSizeShifter .rs-gridlet {
+  position: absolute;
+  opacity: 1;
+}

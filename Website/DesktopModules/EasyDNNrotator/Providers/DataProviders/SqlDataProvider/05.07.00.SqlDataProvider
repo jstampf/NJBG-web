@@ -1,0 +1,2 @@
+﻿UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] SET [ScriptVersion] = '1.5.4' WHERE [RotatorTypeID] = 1;
+GO

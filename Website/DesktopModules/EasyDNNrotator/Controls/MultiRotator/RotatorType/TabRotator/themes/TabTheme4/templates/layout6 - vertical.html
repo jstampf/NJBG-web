@@ -1,0 +1,77 @@
+﻿<!--HeaderTemplateBegin-->
+<div class="ms-tabs-template ms-tabs-vertical-template edsms_layout6">
+<!--HeaderTemplateEnd-->
+
+<!--ItemTemplateBegin-->
+	<div class="ms-slide" data-delay="5">
+		<img src="[EasyDNNrotator:Image]" data-src="[EasyDNNrotator:Image]" alt="[EasyDNNrotator:Title]" [EasyDNNrotator:ResponsiveImages] />
+		<div class="ms-thumb">
+			<img src="[EasyDNNrotator:Thumb]" data-src="[EasyDNNrotator:Thumb]" width="63" height="63" alt="[EasyDNNrotator:Title]" />
+			<h3>[EasyDNNrotator:Title:Limit:60]</h3>
+		</div>
+		[EasyDNNrotator:IfExists:SlideLink]<a href="[EasyDNNrotator:Link]" [EasyDNNrotator:DataType]>[EasyDNNrotator:Title]</a>[EasyDNNrotator:EndIf:SlideLink]
+		<div class="ms-layer edsms_slideContentBackground"
+			data-effect="top(long)"
+			data-duration="1000"
+			data-delay="0"
+			data-ease="easeInOutBack"
+			data-hide-effect="left(long)"
+			data-hide-ease="easeInOutBack">
+		</div>
+		<div class="ms-layer edsms_slideContent6"
+			data-effect="left(long)"
+			data-duration="1500"
+			data-delay="200"
+			data-ease="easeInOutBack">
+			<h3>[EasyDNNrotator:Title]</h3>
+			<div>[EasyDNNrotator:Description]</div>
+		</div>
+		[EasyDNNrotator:IfExists:Readmore]
+		<div class="ms-layer edsms_slideLink6"
+			data-effect="left(long)"
+			data-duration="900"
+			data-delay="500"
+			data-ease="easeInOutBack">
+			<a href="[EasyDNNrotator:Link]">[EasyDNNrotator:LocalizedText:Readmore]</a>
+		</div>
+		[EasyDNNrotator:EndIf:Readmore]
+		[EasyDNNrotator:IfExists:Event]
+		<div class="ms-layer edsms_slideEventDate"
+			data-effect="right(long)"
+			data-duration="1500"
+			data-delay="0"
+			data-ease="easeInOutBack">
+			[EasyDNNrotator:EventDate]
+		</div>
+		[EasyDNNrotator:EndIf:Event]
+		[EasyDNNrotator:IfExists:Location]
+		<div class="ms-layer edsms_slideEventLocation"
+			data-effect="left(long)"
+			data-duration="1500"
+			data-delay="0"
+			data-ease="easeInOutBack">
+			[EasyDNNrotator:Location]
+		</div>
+		[EasyDNNrotator:EndIf:Location]
+	</div>
+<!--ItemTemplateEnd-->
+
+<!--FooterTemplateBegin-->
+</div>
+<!--FooterTemplateEnd-->
+
+<!--ScriptBegin-->
+	<!--EnabledOptionsBegin-->
+		[autoplay,speed,fullwidth,border,showreadmore,slidelink,view,grabCursor,swipe,mouseswipe,wheel,limittitle,limitdescription,stripdescription,preload,loop]
+	<!--EnabledOptionsEnd-->
+	<!--HiddenOptionsBegin-->
+		[thumbnail:width:63:height:63]
+	<!--HiddenOptionsEnd-->
+	<!--SetOptionsBegin-->
+		[space:0]
+	<!--SetOptionsEnd-->
+	<!--ControlBegin-->
+		slider.control('arrows');
+		slider.control('thumblist' , {autohide:false, dir:'v', type:'tabs', width:229, height:101, align:'right', space:0, margin:0, hideUnder:480});
+	<!--ControlEnd-->
+<!--ScriptEnd-->

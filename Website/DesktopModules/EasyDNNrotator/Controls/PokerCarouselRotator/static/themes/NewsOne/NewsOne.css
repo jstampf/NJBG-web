@@ -1,0 +1,343 @@
+﻿
+.PokerCarousel.NewsOne
+{
+	position: relative;
+	margin: 0 auto;
+	width: 960px;
+	height: auto;
+	border: none;
+	overflow: hidden;
+}
+
+/* _______________________________________________ */
+
+/* CAROUSEL */
+/* _______________________________________________ */
+
+/* slide container */
+.PokerCarousel.NewsOne .slides
+{
+	margin: 0;
+	padding: 0;
+	border: none;
+	list-style: none;
+	position: relative;
+	overflow: visible;
+}
+
+/* slide item */
+.PokerCarousel.NewsOne .slides .slideItem 
+{
+	position: absolute;
+	cursor: pointer;
+	overflow: visible;
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+.PokerCarousel.NewsOne .slides .slideItem a.item_link
+{
+	display: block;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+}
+
+.PokerCarousel.NewsOne .slides .slideItem img
+{
+	margin: 0;
+	padding: 0;
+	border: none;
+	width: 100%;
+	height: 100%;
+}
+
+.PokerCarousel.NewsOne .slides .slideItem .description
+{
+	position: absolute;
+	top: 0;
+	bottom: auto;
+	left: 0;
+	width: 100%;
+	display: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: url(images/description_shadow_bg.png) repeat;
+}
+
+.PokerCarousel.NewsOne .slides .slideItem .description > h1,
+.PokerCarousel.NewsOne .slides .slideItem .description > h1 > a,
+.PokerCarousel.NewsOne .slides .slideItem .description > h1 > a:hover
+{
+	font: 18px Verdana;
+	color: #fff;
+	line-height: 1.3;
+	padding: 0;
+	border: 0;
+	margin: 8px 12px 0;
+	text-decoration: none
+}
+
+.PokerCarousel.NewsOne .slides .slideItem .description > h1 > a
+{
+	margin: 0;
+}
+
+.PokerCarousel.NewsOne .slides .slideItem .description > div
+{
+	font: 11px Verdana;
+	color: #fff;
+	line-height: 1.3;
+	padding: 0;
+	border: 0;
+	margin: 4px 12px 10px;
+}
+
+/* _______________________________________________ */
+
+/* NEXT/PREV BUTTON */
+/* _______________________________________________ */
+
+.PokerCarousel.NewsOne .nextButton
+{
+	position: absolute;
+	right: 10px;
+	top: 0;
+	width: 46px;
+	height: 46px;
+	background: url("images/sprite.png") no-repeat -46px 0;
+	cursor: pointer;
+	z-index: 9999;
+	display: block;
+	visibility: hidden;
+}
+
+.PokerCarousel.NewsOne .nextButton:hover
+{
+	background-position: -46px -46px;
+}
+
+.PokerCarousel.NewsOne .prevButton
+{
+	position: absolute ;
+	left: 10px;
+	top: 0;
+	width: 46px;
+	height: 46px;
+	background: url("images/sprite.png") no-repeat 0 0;
+	cursor: pointer;
+	z-index: 9999;
+	display: block;
+	visibility: hidden;
+}
+
+.PokerCarousel.NewsOne .prevButton:hover
+{
+	background-position: 0 -46px;
+}
+
+
+.PokerCarousel.NewsOne.red .nextButton
+{
+	background-position: -322px 0;
+}
+
+.PokerCarousel.NewsOne.red .nextButton:hover
+{
+	background-position: -322px -46px;
+}
+
+.PokerCarousel.NewsOne.red .prevButton
+{
+	background-position: -276px 0;
+}
+
+.PokerCarousel.NewsOne.red .prevButton:hover
+{
+	background-position: -276px -46px;
+}
+
+
+.PokerCarousel.NewsOne.blue .nextButton
+{
+	background-position: -230px 0;
+}
+
+.PokerCarousel.NewsOne.blue .nextButton:hover
+{
+	background-position: -230px -46px;
+}
+
+.PokerCarousel.NewsOne.blue .prevButton
+{
+	background-position: -184px 0;
+}
+
+.PokerCarousel.NewsOne.blue .prevButton:hover
+{
+	background-position: -184px -46px;
+}
+
+
+.PokerCarousel.NewsOne.green .nextButton
+{
+	background-position: -138px 0;
+}
+
+.PokerCarousel.NewsOne.green .nextButton:hover
+{
+	background-position: -138px -46px;
+}
+
+.PokerCarousel.NewsOne.green .prevButton
+{
+	background-position: -92px 0;
+}
+
+.PokerCarousel.NewsOne.green .prevButton:hover
+{
+	background-position: -92px -46px;
+}
+
+/* _______________________________________________ */
+
+/* NAVIGATION BUTTON */
+/* _______________________________________________ */
+
+/* buttons container */
+.PokerCarousel.NewsOne .buttonNav
+{
+	position: relative;
+	margin: 0 auto;
+}
+
+/* numbers */
+.PokerCarousel.NewsOne .buttonNav .numbers 
+{
+	position: relative;
+	float: left;
+	margin: 5px;
+	color: #828282;
+	cursor: pointer;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 1em;
+	font-family: Arial, Verdana;
+}
+
+.PokerCarousel.NewsOne .buttonNav .numbers:hover
+{
+	color: #000;
+	text-decoration: underline;
+}
+
+.PokerCarousel.NewsOne .buttonNav .numberActive
+{
+	background: none;
+	color: #000;
+	cursor: default;
+}
+
+/* bullets */
+.PokerCarousel.NewsOne .buttonNav .bullet
+{
+	position: relative;
+	float: left;
+	width: 12px;
+	height: 12px;
+	background: url(images/sprite.png) no-repeat 0 -92px;
+	margin: 2px;
+	float: left;
+	cursor: pointer;
+	display: block;
+}
+
+.PokerCarousel.NewsOne .buttonNav .bullet:hover
+{
+	background-position: -12px -92px;
+}
+
+.PokerCarousel.NewsOne .buttonNav .bulletActive
+{
+	background-position: -24px -92px;
+	cursor: default;
+}
+
+.PokerCarousel.NewsOne .buttonNav .bulletActive:hover
+{
+	background-position: -24px -92px;
+}
+
+/* ____________________________________________________________ */
+
+/* VIDEO */
+/* ____________________________________________________________ */
+
+.PokerCarousel.NewsOne .slides .videoOverlay
+{
+	background: url("images/video.png") no-repeat center; /* play button */
+}
+
+.PokerCarousel.NewsOne .slides .spinner
+{
+	background: #000 url("images/loading.gif") no-repeat center; /* video preloader */
+}
+
+/* gradient color for old Opera */
+.PokerCarousel.NewsOne .gradient
+{
+	background-image: url(../scripts/gradient.svg);
+}
+
+/* _____________________________ *
+
+/* SHADOW */
+/* _____________________________ */
+
+.PokerCarousel.NewsOne .jShadow
+{
+	width: 100%;
+	height: 82px;
+}
+
+.PokerCarousel.NewsOne .jShadow .shadowLeft
+{
+	background: url("images/shadowLeft.png") no-repeat;
+	width: 100px;
+	height: 82px;
+	
+	/* fix png problems in ie */
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowLeft.png, sizingmethod=scale)"; /* IE8 */   
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowLeft.png, sizingmethod=scale);   /* IE6 & 7 */                     
+}
+
+.PokerCarousel.NewsOne .jShadow .shadowMiddle
+{
+	height: 82px;
+	background: url("images/shadowTile.png") repeat-x;
+	
+	/* fix png problems in ie */
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowTile.png, sizingmethod=scale)"; /* IE8 */   
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowTile.png, sizingmethod=scale);   /* IE6 & 7 */                     
+}
+
+.PokerCarousel.NewsOne .jShadow .shadowRight
+{
+	width: 100px;
+	height: 82px;
+	background: url("images/shadowRight.png") no-repeat;
+	
+	/* fix png problems in ie */
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowRight.png, sizingmethod=scale)"; /* IE8 */   
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowRight.png, sizingmethod=scale);   /* IE6 & 7 */                     
+}

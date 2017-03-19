@@ -1,0 +1,12 @@
+﻿IF NOT EXISTS (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorUpdate' and column_name = 'InstallType')
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdate] ADD InstallType NVARCHAR(10) CONSTRAINT DF_{objectQualifier}EasyDNNRotatorUpdate_InstallType DEFAULT (N'DNN') NOT NULL
+END
+GO
+IF EXISTS (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorData' AND column_name = 'Value')
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorData] ALTER COLUMN Value NVARCHAR(MAX) NULL
+END
+GO
+UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] SET [ScriptVersion] = '1.3' WHERE [RotatorTypeID] = 10;
+GO

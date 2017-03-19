@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EasyDNNrotator>
+    <Preview>
+        <SettingsName>Theme2 - layout4 - horizontal</SettingsName>
+        <ImageUrl>PreSettings/_default/TabRotator/images/03-Theme2-layout4-horizontal.jpg</ImageUrl>
+        <Version>06.00.00</Version>
+        <Description>Theme2 - layout4 - horizontal</Description>
+    </Preview>
+    <RotatorSettings>
+        <ModuleID>2803</ModuleID>
+        <RotatorTypeID>14</RotatorTypeID>
+        <PortalID>0</PortalID>
+        <UserID>1</UserID>
+        <DateCreated>2014-04-14T21:51:12.420</DateCreated>
+        <ListNewsGallery>1</ListNewsGallery>
+        <SettingsName>TabRotator - 2803</SettingsName>
+        <PictureW>800</PictureW>
+        <PictureH>400</PictureH>
+        <ThumbW>173</ThumbW>
+        <ThumbH>70</ThumbH>
+        <NumToRotate>20</NumToRotate>
+        <ControlName>MultiRotator.ascx</ControlName>
+        <ThemeName>TabTheme2.css</ThemeName>
+        <CssClass></CssClass>
+        <ShadowCss></ShadowCss>
+        <ShadowStyle></ShadowStyle>
+        <MCBorderSize>0</MCBorderSize>
+        <MCBorderColor>ffff</MCBorderColor>
+        <FullRotatorW>800</FullRotatorW>
+        <FullRotatorH>400</FullRotatorH>
+        <Fallback>0</Fallback>
+        <MainWidthType>0</MainWidthType>
+        <MainHeightType>0</MainHeightType>
+        <ItemWidthType>0</ItemWidthType>
+        <ItemHeightType>0</ItemHeightType>
+        <ScriptVersion></ScriptVersion>
+        <ScriptName>multislider.min.js</ScriptName>
+        <HtmTemplate>layout4 - horizontal.html</HtmTemplate>
+        <Randomize>0</Randomize>
+        <GlobalJpegQuality>97</GlobalJpegQuality>
+        <CropMethod>0</CropMethod>
+        <Visibility>0</Visibility>
+        <HideUnlocalizedItems>0</HideUnlocalizedItems>
+        <CacheContent>1</CacheContent>
+        <CreateMainPicture>1</CreateMainPicture>
+        <CreateThumbnail>1</CreateThumbnail>
+    </RotatorSettings>
+    <TabRotatorSettings>
+        <ModuleID>2803</ModuleID>
+        <SettingsViewState>width:800,height:400,autoplay:true,speed:17,fullwidth:false</SettingsViewState>
+        <Width>800</Width>
+        <Height>400</Height>
+        <Autoplay>1</Autoplay>
+        <Fullwidth>0</Fullwidth>
+        <Speed>17</Speed>
+        <TitleLength>100</TitleLength>
+        <DescriptionLength>200</DescriptionLength>
+        <StripDescription>1</StripDescription>
+        <Border>0</Border>
+        <ShowTitle>1</ShowTitle>
+        <ShowDescription>1</ShowDescription>
+        <ShowReadMore>1</ShowReadMore>
+    </TabRotatorSettings>
+    <RotatorNewsSettings>
+        <ModuleID>2803</ModuleID>
+        <NewsModuleToOpen>444:1459</NewsModuleToOpen>
+        <FeaturedArticles>0</FeaturedArticles>
+        <CategoriesToDisplay>0</CategoriesToDisplay>
+        <ViewPerCategory>0</ViewPerCategory>
+        <OrderBy1>PublishDate</OrderBy1>
+        <OrderType1>DESC</OrderType1>
+        <OrderBy2>0</OrderBy2>
+        <OrderType2>DESC</OrderType2>
+        <OrderBy3>0</OrderBy3>
+        <OrderType3>DESC</OrderType3>
+        <UseScheduler>0</UseScheduler>
+        <CleanUpTime>30</CleanUpTime>
+        <PermissionSource>0</PermissionSource>
+        <DescriptionSource>1</DescriptionSource>
+        <OnlyEvents>1</OnlyEvents>
+        <ShowAllEvents>0</ShowAllEvents>
+        <LimitEventsByDay>0</LimitEventsByDay>
+        <OnlyWithImages>1</OnlyWithImages>
+        <IsSocialInstance>0</IsSocialInstance>
+        <ShowAllAuthors>1</ShowAllAuthors>
+        <DynamicallyFilterByCategory>0</DynamicallyFilterByCategory>
+        <ShowArticles>1</ShowArticles>
+        <FilterByArticleTags>0</FilterByArticleTags>
+    </RotatorNewsSettings>
+    <CategoryFilter>
+        <Category CategoryID="6" TabID="444" NewsModuleID="1459" />
+    </CategoryFilter>
+    <PortalGUID>fc6ee062-fe3a-477e-b8a2-25163124e36b</PortalGUID>
+</EasyDNNrotator>

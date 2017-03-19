@@ -1,0 +1,105 @@
+﻿if '{objectQualifier}' <> ''
+BEGIN
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorType]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorType]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorType]', N'{objectQualifier}EasyDNNRotatorType', 'OBJECT'
+			EXECUTE sp_rename N'PK_EasyDNNRotatorType', N'PK_{objectQualifier}EasyDNNRotatorType', 'OBJECT'
+			EXECUTE sp_rename N'IX_EasyDNNRotatorType', N'IX_{objectQualifier}EasyDNNRotatorType', 'OBJECT'
+		END
+	END
+END
+GO
+
+IF NOT EXISTS (SELECT RotatorTypeID from {databaseOwner}[{objectQualifier}EasyDNNRotatorType] WHERE RotatorTypeID = 11)
+BEGIN
+	INSERT {databaseOwner}[{objectQualifier}EasyDNNRotatorType] ([RotatorTypeID],[Name],[Description],[Identifier],[Position]) VALUES(11,'PokerCarousel Rotator','(Images + Title + Description)','CarouselRotator',11)
+END
+GO
+IF NOT EXISTS (SELECT RotatorTypeID from {databaseOwner}[{objectQualifier}EasyDNNRotatorType] WHERE RotatorTypeID = 12)
+BEGIN
+	INSERT {databaseOwner}[{objectQualifier}EasyDNNRotatorType] ([RotatorTypeID],[Name],[Description],[Identifier],[Position]) VALUES(12,'NewsTicker Rotator','(Images + Title + Description)','NewsTickerRotator',12)
+END
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorPokerCarouselRSettings]') AND type in (N'U'))
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorPokerCarouselRSettings](
+		[ModuleID] [int] NOT NULL,
+		[RotatorTypeID]  AS ((11)) PERSISTED NOT NULL,
+		[SettingsViewState] [nvarchar](max) NOT NULL,
+		[hAlign] [nvarchar](15) NOT NULL,
+		[vAlign] [nvarchar](15) NOT NULL,
+		[hMargin] [nvarchar](15) NOT NULL,
+		[vMargin] [nvarchar](15) NOT NULL,
+		[frontWidth] [int] NOT NULL,
+		[frontHeight] [int] NOT NULL,
+		[carouselWidth] [int] NOT NULL,
+		[carouselHeight] [int] NOT NULL,
+		[left] [int] NOT NULL,
+		[right] [int] NOT NULL,
+		[top] [int] NOT NULL,
+		[bottom] [int] NOT NULL,
+		[backZoom] [nvarchar](15) NOT NULL,
+		[speed] [int] NOT NULL,
+		[buttonNav] [nvarchar](15) NOT NULL,
+		[directionNav] [bit] NOT NULL,
+		[autoplay] [bit] NOT NULL,
+		[autoplayInterval] [int] NOT NULL,
+		[pauseOnHover] [bit] NOT NULL,
+		[mouse] [bit] NOT NULL,
+		[shadow] [bit] NOT NULL,
+		[reflection] [bit] NOT NULL,
+		[reflectionHeight] [nvarchar](15) NOT NULL,
+		[reflectionOpacity] [nvarchar](15) NOT NULL,
+		[reflectionColor] [nvarchar](15) NOT NULL,
+		[description] [bit] NOT NULL,
+		[backOpacity] [nvarchar](15) NOT NULL,
+		[before] [nvarchar](15) NOT NULL,
+		[after] [nvarchar](15) NOT NULL,
+		[titleLenght] [int] NOT NULL,
+		[descriptionLenght] [int] NOT NULL,
+		CONSTRAINT [PK_{objectQualifier}EasyDNNRotatorPokerCarouselRSettings] PRIMARY KEY CLUSTERED ([ModuleID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+	IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[FK_{objectQualifier}EasyDNNRotatorPokerCarouselRSettings_EasyDNNRotatorType]') AND parent_object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorPokerCarouselRSettings]'))
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorPokerCarouselRSettings]  WITH CHECK ADD  CONSTRAINT [FK_{objectQualifier}EasyDNNRotatorPokerCarouselRSettings_EasyDNNRotatorType] FOREIGN KEY([RotatorTypeID])
+	REFERENCES {databaseOwner}[{objectQualifier}EasyDNNRotatorType] ([RotatorTypeID])ON DELETE CASCADE
+
+	IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[FK_{objectQualifier}EasyDNNRotatorPokerCarouselRSettings_EasyDNNRotatorType]') AND parent_object_id = OBJECT_ID(N'[{databaseOwner}[{objectQualifier}EasyDNNRotatorPokerCarouselRSettings]'))
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorPokerCarouselRSettings] CHECK CONSTRAINT [FK_{objectQualifier}EasyDNNRotatorPokerCarouselRSettings_EasyDNNRotatorType]
+END
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorNewsTickerRSettings]') AND type in (N'U'))
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsTickerRSettings](
+		[ModuleID] [int] NOT NULL,
+		[RotatorTypeID]  AS ((12)) PERSISTED NOT NULL,
+		[SettingsViewState] [nvarchar](max) NOT NULL,
+		[style] [nvarchar](15) NOT NULL,
+		[stylespeed] [int] NOT NULL,
+		[showControls] [bit] NOT NULL,
+		[tickerTitle] [nvarchar](250) NOT NULL,
+		[autoStart] [bit] NOT NULL,
+		[pauseOnHover] [bit] NOT NULL,
+		[showTickerTitle] [bit] NOT NULL,
+		CONSTRAINT [PK_{objectQualifier}EasyDNNRotatorNewsTickerRSettings] PRIMARY KEY CLUSTERED ([ModuleID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[FK_{objectQualifier}EasyDNNRotatorNewsTickerRSettings_EasyDNNRotatorType]') AND parent_object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorNewsTickerRSettings]'))
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsTickerRSettings]  WITH CHECK ADD  CONSTRAINT [FK_{objectQualifier}EasyDNNRotatorNewsTickerRSettings_EasyDNNRotatorType] FOREIGN KEY([RotatorTypeID])
+REFERENCES {databaseOwner}[{objectQualifier}EasyDNNRotatorType] ([RotatorTypeID]) ON DELETE CASCADE
+GO
+IF EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[FK_{objectQualifier}EasyDNNRotatorNewsTickerRSettings_EasyDNNRotatorType]') AND parent_object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorNewsTickerRSettings]'))
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsTickerRSettings] CHECK CONSTRAINT [FK_{objectQualifier}EasyDNNRotatorNewsTickerRSettings_EasyDNNRotatorType]
+GO

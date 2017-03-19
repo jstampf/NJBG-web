@@ -1,0 +1,202 @@
+﻿IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.columns WHERE table_name = '{objectQualifier}EasyDNNRotatorModule' AND column_name = 'HtmTemplate')
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] ALTER COLUMN HtmTemplate NVARCHAR(300);
+END
+GO
+UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] SET [ScriptVersion] = '1.6.1' WHERE [RotatorTypeID] = 1;
+GO
+
+IF NOT EXISTS (SELECT RotatorTypeID FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorType] WHERE RotatorTypeID = 14)
+BEGIN
+	INSERT {databaseOwner}[{objectQualifier}EasyDNNRotatorType] ([RotatorTypeID],[Name],[Description],[Identifier],[Position]) VALUES(14,'Tab rotator','(Images + Title + Description)','TabRotator',14)
+END
+GO
+IF NOT EXISTS (SELECT RotatorTypeID FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorType] WHERE RotatorTypeID = 15)
+BEGIN
+	INSERT {databaseOwner}[{objectQualifier}EasyDNNRotatorType] ([RotatorTypeID],[Name],[Description],[Identifier],[Position]) VALUES(15,'Carousel 3d','(Images + Title + Description)','Carousel3d',15)
+END
+GO
+
+IF NOT EXISTS (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorNewsSettings' and column_name = 'ShowArticles')
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsSettings] ADD ShowArticles BIT CONSTRAINT DF_{objectQualifier}EasyDNNRotatorNewsSettings_ShowArticles DEFAULT(1) NOT NULL;
+	BEGIN TRY
+		EXEC dbo.sp_executesql @statement = N'UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsSettings] SET [ShowArticles] = 0 WHERE [OnlyEvents] = 1; UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsSettings] SET [OnlyEvents] = 1, [ShowAllEvents] = 0, [LimitEventsByDay] = 0 WHERE [OnlyEvents] = 0;';
+	END TRY
+	BEGIN CATCH
+	END CATCH
+END
+GO
+
+IF NOT EXISTS (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorGallTempContent' and column_name = 'FileSystemName')
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorGallTempContent] ADD FileSystemName NVARCHAR(250) CONSTRAINT DF_{objectQualifier}EasyDNNRotatorGallTempContent_FileSystemName DEFAULT('') NOT NULL;
+	BEGIN TRY
+		EXEC dbo.sp_executesql @statement = N'UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorGallTempContent] SET [FileSystemName] = REVERSE(SUBSTRING(REVERSE([FileName]),0,CHARINDEX(''/'',REVERSE([FileName])))) WHERE MediaType = ''Image'';';
+	END TRY
+	BEGIN CATCH
+	END CATCH
+
+	BEGIN TRY
+		EXEC dbo.sp_executesql @statement = N'UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorGallTempContent] SET [FileSystemName] = REVERSE(SUBSTRING(REVERSE([ThumbUrl]),0,CHARINDEX(''/'',REVERSE([ThumbUrl])))) WHERE MediaType <> ''Image'';';
+	END TRY
+	BEGIN CATCH
+	END CATCH
+END
+GO
+
+
+IF NOT EXISTS (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorModule' and column_name = 'CreateMainPicture')
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] ADD CreateMainPicture BIT CONSTRAINT DF_{objectQualifier}EasyDNNRotatorModule_CreateMainPicture DEFAULT(1) NOT NULL;
+	BEGIN TRY
+		EXEC dbo.sp_executesql @statement = N'UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] SET [CreateMainPicture] = 0 WHERE [RotatorTypeID] IN (10,12);';
+	END TRY
+	BEGIN CATCH
+	END CATCH
+END
+GO
+
+IF NOT EXISTS (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorModule' and column_name = 'CreateThumbnail')
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] ADD CreateThumbnail BIT CONSTRAINT DF_{objectQualifier}EasyDNNRotatorModule_CreateThumbnail DEFAULT(1) NOT NULL;
+	BEGIN TRY
+		EXEC dbo.sp_executesql @statement = N'UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] SET [CreateThumbnail] = 0 WHERE [RotatorTypeID] IN (11,12,13);';
+	END TRY
+	BEGIN CATCH
+	END CATCH
+END
+GO
+
+IF NOT EXISTS (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorNewsSettings' and column_name = 'FilterByArticleTags')
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsSettings] ADD FilterByArticleTags BIT CONSTRAINT DF_{objectQualifier}EasyDNNRotatorNewsSettings_FilterByArticleTags DEFAULT(0) NOT NULL;
+END
+GO
+
+/*** NIJE GOTOV Multi rotator ***/
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorMultiRSettings]') AND type in (N'U'))
+BEGIN
+CREATE TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorMultiRSettings](
+	[ModuleID] [int] NOT NULL,
+	[SettingsViewState] [nvarchar](4000) NULL,
+	[Width] [int] NULL,
+	[Height] [int] NULL,
+	[Start] [int] NULL,
+	[Space] [int] NULL,
+	[GrabCursor] [bit] NULL,
+	[Swipe] [bit] NULL,
+	[Mouse] [bit] NULL,
+	[Wheel] [bit] NULL,
+	[Autoplay] [bit] NULL,
+	[Loop] [bit] NULL,
+	[Shuffle] [bit] NULL,
+	[Preload] [int] NULL,
+	[Fullwidth] [bit] NULL,
+	[Fullheight] [bit] NULL,
+	[Autofill] [bit] NULL,
+	[HeightLimit] [bit] NULL,
+	[AutoHeight] [bit] NULL,
+	[SmoothHeight] [bit] NULL,
+	[EndPause] [bit] NULL,
+	[OverPause] [bit] NULL,
+	[FillMode] [nvarchar](10) NULL,
+	[CenterControls] [bit] NULL,
+	[LayersMode] [nvarchar](10) NULL,
+	[HideLayers] [bit] NULL,
+	[Speed] [int] NULL,
+	[Dir] [nvarchar](10) NULL,
+	[View] [nvarchar](10) NULL,
+	[ShowTitle] [bit] NOT NULL,
+	[TitleLength] [int] NOT NULL,
+	[ShowDescription] [bit] NOT NULL,
+	[DescriptionLength] [int] NOT NULL,
+	[StripDescription] [bit] NOT NULL,
+	[Border] [bit] NULL,
+	[ShowReadMore] [bit] NOT NULL,
+	[SlideLink] [bit] NOT NULL
+ CONSTRAINT [PK_{objectQualifier}EasyDNNRotatorMultiRSettings] PRIMARY KEY CLUSTERED ( [ModuleID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+)
+END
+GO
+
+
+/*** NIJE GOTOVO NEMA PROVJERA ZA GALERIJU ***/
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGallerySettings]') AND type in (N'U'))
+BEGIN
+CREATE TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorGallerySettings](
+	[RotatorModuleID] [int] NOT NULL,
+	[DisplayAllCategories] [bit] NOT NULL,
+	[OrderBy] [nvarchar](50) NOT NULL,
+	[OrderType] [nvarchar](10) NOT NULL,
+	[OpenInGalleryModuleID] [int] NULL,
+	[OpenInTabID] [int] NULL,
+	[UseScheduler] [bit] NOT NULL,
+	[CleanUpTime] [int] NOT NULL,
+ CONSTRAINT [PK_{objectQualifier}EasyDNNRotatorGallerySettings_1] PRIMARY KEY CLUSTERED ([RotatorModuleID] ASC)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+ )
+END
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGalleryCategoryItems]') AND type in (N'U'))
+BEGIN
+CREATE TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorGalleryCategoryItems](
+	[RotatorModuleID] [int] NOT NULL,
+	[GalleryCategoryID] [int] NOT NULL,
+ CONSTRAINT [PK_{objectQualifier}EasyDNNRotatorGalleryCategoryItems] PRIMARY KEY CLUSTERED ([RotatorModuleID] ASC,[GalleryCategoryID] ASC)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+)
+END
+GO
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyGalleryCategory]') AND type in (N'U'))
+BEGIN
+
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}[FK_{objectQualifier}EasyDNNRotatorGalleryCategoryItems_EasyGalleryCategory]') AND parent_object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGalleryCategoryItems]'))
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorGalleryCategoryItems]  WITH CHECK ADD  CONSTRAINT [FK_{objectQualifier}EasyDNNRotatorGalleryCategoryItems_EasyGalleryCategory] FOREIGN KEY([GalleryCategoryID])
+REFERENCES {databaseOwner}[{objectQualifier}EasyGalleryCategory] ([CategoryID]) ON DELETE CASCADE
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}[FK_{objectQualifier}EasyDNNRotatorGalleryCategoryItems_EasyGalleryCategory]') AND parent_object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGalleryCategoryItems]'))
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorGalleryCategoryItems] CHECK CONSTRAINT [FK_{objectQualifier}EasyDNNRotatorGalleryCategoryItems_EasyGalleryCategory]
+
+END
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}[FK_{objectQualifier}EasyDNNRotatorGalleryCategoryItems_Modules]') AND parent_object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGalleryCategoryItems]'))
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorGalleryCategoryItems]  WITH CHECK ADD  CONSTRAINT [FK_{objectQualifier}EasyDNNRotatorGalleryCategoryItems_Modules] FOREIGN KEY([RotatorModuleID])
+REFERENCES {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] ([ModuleID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}[FK_{objectQualifier}EasyDNNRotatorGalleryCategoryItems_Modules]') AND parent_object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGalleryCategoryItems]'))
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorGalleryCategoryItems] CHECK CONSTRAINT [FK_{objectQualifier}EasyDNNRotatorGalleryCategoryItems_Modules]
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}[FK_{objectQualifier}EasyDNNRotatorGallerySettings_EasyDNNRotatorModule_1]') AND parent_object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGallerySettings]'))
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorGallerySettings]  WITH CHECK ADD  CONSTRAINT [FK_{objectQualifier}EasyDNNRotatorGallerySettings_EasyDNNRotatorModule_1] FOREIGN KEY([RotatorModuleID])
+REFERENCES {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] ([ModuleID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}[FK_{objectQualifier}EasyDNNRotatorGallerySettings_EasyDNNRotatorModule_1]') AND parent_object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGallerySettings]'))
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorGallerySettings] CHECK CONSTRAINT [FK_{objectQualifier}EasyDNNRotatorGallerySettings_EasyDNNRotatorModule_1]
+GO
+
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[FK_{objectQualifier}EasyDNNRotatorGallTempContent_EasyDNNRotatorGalleryBridge]') AND parent_object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGallTempContent]'))
+ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorGallTempContent] DROP CONSTRAINT [FK_{objectQualifier}EasyDNNRotatorGallTempContent_EasyDNNRotatorGalleryBridge]
+GO
+
+UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] SET [HtmTemplate] = 'default.html' WHERE [RotatorTypeID] = 1;
+GO
+
+/*** Gallery SP DELETE ***/
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorIUGalleryBridge]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorIUGalleryBridge]
+GO

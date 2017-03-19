@@ -1,0 +1,19 @@
+﻿if '{objectQualifier}' <> ''
+BEGIN
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorNewsSettings]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorNewsSettings]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorNewsSettings]', N'{objectQualifier}EasyDNNRotatorNewsSettings', 'OBJECT'
+			EXECUTE sp_rename N'PK_{objectQualifier}EasyDNNRotatorNewsSettings', N'PK_{objectQualifier}EasyDNNRotatorNewsSettings', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorNewsSettings_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorNewsSettings_EasyDNNRotatorModule', 'OBJECT'
+		END
+	END
+END
+GO
+
+IF NOT EXISTS (select * from INFORMATION_SCHEMA.columns where table_name = '{objectQualifier}EasyDNNRotatorNewsSettings' and column_name = 'SharingPortalID')
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsSettings] ADD SharingPortalID int NULL
+END
+GO

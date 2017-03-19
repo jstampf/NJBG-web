@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+    <MainSettings>
+        <SettingsName>Ticker4</SettingsName>
+        <PictureW>64</PictureW>
+        <PictureH>64</PictureH>
+        <ThumbW>64</ThumbW>
+        <ThumbH>64</ThumbH>
+        <NumToRotate>20</NumToRotate>
+        <ControlName>NewsTickerRotator.ascx</ControlName>
+        <ThemeName>BlogTwo.css</ThemeName>
+        <CssClass>0</CssClass>
+        <Fallback>False</Fallback>
+        <ImageUrl>PreSettings/_default/NewsTicker/images/ticker4.jpg</ImageUrl>
+        <Version>04.08.00</Version>
+        <Description>Only css change.</Description>
+    </MainSettings>
+    <RotatorSettings>
+        <style>scroll</style>
+        <stylespeed>500</stylespeed>
+        <showControls>True</showControls>
+        <autoStart>True</autoStart>
+        <pauseOnHover>True</pauseOnHover>
+        <showTickerTitle>True</showTickerTitle>
+    </RotatorSettings>
+</Settings>

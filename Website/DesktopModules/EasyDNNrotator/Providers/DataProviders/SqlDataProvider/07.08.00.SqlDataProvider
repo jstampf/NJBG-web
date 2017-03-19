@@ -1,0 +1,90 @@
+﻿IF NOT EXISTS (SELECT UpdateVersion FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdate] WHERE UpdateVersion = '07.08.00')
+BEGIN
+	INSERT INTO {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdate]([UpdateVersion],[Finished],[InstallType]) VALUES(N'07.08.00',0,'DNN')
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EDS_NewsViewCategoriesMultiPortal]') AND type in (N'FN', N'IF', N'TF', N'FS', N'FT'))
+DROP FUNCTION {databaseOwner}[{objectQualifier}EDS_NewsViewCategoriesMultiPortal]
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EDS_NewsViewCategoriesMultiPortal]') AND type in (N'FN', N'IF', N'TF', N'FS', N'FT'))
+BEGIN
+execute dbo.sp_executesql @statement = N'
+CREATE FUNCTION {databaseOwner}[{objectQualifier}EDS_NewsViewCategoriesMultiPortal]
+(
+	@RotatorModuleID INT,
+	@UserID INT,
+	@PortalID INT,
+	@AdminOrSuperUser BIT,
+	@PermissionSettingsSource TINYINT, -- can be only my module or none
+	@PermissionsModuleID INT,
+	@CurrentDate DATETIME
+)
+RETURNS
+@UserViewCategories TABLE (CategoryID INT NOT NULL PRIMARY KEY)
+AS
+BEGIN
+	IF @AdminOrSuperUser = 1 OR @PermissionSettingsSource = 0
+		INSERT INTO @UserViewCategories
+		SELECT c.[CategoryID]
+		FROM {databaseOwner}[{objectQualifier}EasyDNNNewsCategoryList] AS c
+		WHERE EXISTS (
+			SELECT SharingPortalID FROM {databaseOwner}[{objectQualifier}EasyDNNNewsModulePortals] AS mp
+			WHERE mp.ModuleID = @RotatorModuleID
+				AND mp.SharingPortalID = c.PortalID
+		);
+	-- can be only by module when portal sharing
+	ELSE IF @UserID = -1
+	BEGIN
+		
+		IF EXISTS (SELECT 1 FROM {databaseOwner}[{objectQualifier}EasyDNNNewsRolePremissionSettings] AS rps WHERE rps.ModuleID = @PermissionsModuleID AND rps.RoleID IS NULL AND rps.ShowAllCategories = 1)
+			INSERT INTO @UserViewCategories
+			SELECT c.[CategoryID]
+			FROM {databaseOwner}[{objectQualifier}EasyDNNNewsCategoryList] AS c
+			WHERE EXISTS (
+				SELECT SharingPortalID FROM {databaseOwner}[{objectQualifier}EasyDNNNewsModulePortals] AS mp
+				WHERE mp.ModuleID = @RotatorModuleID
+					AND mp.SharingPortalID = c.PortalID
+			);
+		ELSE
+			INSERT INTO @UserViewCategories
+			SELECT rpsc.[CategoryID] FROM {databaseOwner}[{objectQualifier}EasyDNNNewsRolePremissionsShowCategories] AS rpsc
+			INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNNewsRolePremissionSettings] AS rps ON rps.PremissionSettingsID = rpsc.PremissionSettingsID
+			WHERE rps.ModuleID = @PermissionsModuleID AND rps.RoleID IS NULL;
+	END
+	ELSE -- registrirani korisnik
+	BEGIN
+		IF EXISTS (SELECT 1 FROM {databaseOwner}[{objectQualifier}EasyDNNNewsRolePremissionSettings] AS rps
+				INNER JOIN {databaseOwner}[{objectQualifier}EDS_UserInRoles](@UserID,@PortalID,@CurrentDate) AS uir ON rps.RoleID = uir.RoleID
+				WHERE rps.PortalID = @PortalID AND rps.ModuleID = @PermissionsModuleID AND rps.ShowAllCategories = 1)
+		OR EXISTS (SELECT 1 FROM {databaseOwner}[{objectQualifier}EasyDNNNewsUserPremissionSettings] AS ups
+			WHERE ups.UserID = @UserID AND ups.PortalID = @PortalID AND ups.ModuleID = @PermissionsModuleID AND ups.ShowAllCategories = 1
+		)
+			INSERT INTO @UserViewCategories
+			SELECT c.[CategoryID]
+			FROM {databaseOwner}[{objectQualifier}EasyDNNNewsCategoryList] AS c
+			WHERE EXISTS (
+				SELECT SharingPortalID FROM {databaseOwner}[{objectQualifier}EasyDNNNewsModulePortals] AS mp
+				WHERE mp.ModuleID = @RotatorModuleID
+					AND mp.SharingPortalID = c.PortalID
+			);
+		ELSE
+			INSERT INTO @UserViewCategories
+			SELECT rpsc.[CategoryID] FROM {databaseOwner}[{objectQualifier}EasyDNNNewsRolePremissionsShowCategories] AS rpsc
+			INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNNewsRolePremissionSettings] AS rps ON rps.PremissionSettingsID = rpsc.PremissionSettingsID
+			INNER JOIN {databaseOwner}[{objectQualifier}EDS_UserInRoles](@UserID,@PortalID,@CurrentDate) AS uir ON rps.RoleID = uir.RoleID
+			WHERE rps.PortalID = @PortalID AND rps.ModuleID = @PermissionsModuleID
+			UNION
+			SELECT upsc.[CategoryID] FROM {databaseOwner}[{objectQualifier}EasyDNNNewsUserPremissionsShowCategories] AS upsc
+			INNER JOIN {databaseOwner}[{objectQualifier}EasyDNNNewsUserPremissionSettings] AS ups ON ups.PremissionSettingsID = upsc.PremissionSettingsID
+			WHERE ups.UserID = @UserID AND ups.PortalID = @PortalID AND ups.ModuleID = @PermissionsModuleID;
+	END
+		
+	RETURN 
+END
+' 
+END
+GO

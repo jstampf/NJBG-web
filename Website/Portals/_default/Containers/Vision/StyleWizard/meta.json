@@ -1,0 +1,242 @@
+{
+  "name": "Vision",
+  "version": 1,
+  "customFontFamilies": [
+    {
+      "name": "BenchNine",
+      "importUrl": "//fonts.googleapis.com/css?family=BenchNine:400,700&subset=latin,latin-ext"
+    },
+    {
+      "name": "Denk One",
+      "importUrl": "//fonts.googleapis.com/css?family=Denk+One&subset=latin,latin-ext"
+    },
+    {
+      "name": "Share Tech Mono",
+      "importUrl": "//fonts.googleapis.com/css?family=Share+Tech+Mono&subset=latin,latin-ext"
+    },
+    {
+      "name": "Chela One",
+      "importUrl": "//fonts.googleapis.com/css?family=Chela+One&subset=latin,latin-ext"
+    },
+    {
+      "name": "Caesar Dressing",
+      "importUrl": "//fonts.googleapis.com/css?family=Caesar+Dressing&subset=latin,latin-ext"
+    },
+    {
+      "name": "Akronim",
+      "importUrl": "//fonts.googleapis.com/css?family=Akronim&subset=latin,latin-ext"
+    },
+    {
+      "name": "Oregano",
+      "importUrl": "//fonts.googleapis.com/css?family=Oregano&subset=latin,latin-ext"
+    },
+    {
+      "name": "Crafty Girls",
+      "importUrl": "//fonts.googleapis.com/css?family=Crafty+Girls&subset=latin,latin-ext"
+    },
+    {
+      "name": "Courgette",
+      "importUrl": "//fonts.googleapis.com/css?family=Courgette&subset=latin,latin-ext"
+    },
+    {
+      "name": "Offside",
+      "importUrl": "//fonts.googleapis.com/css?family=Offside&subset=latin,latin-ext"
+    }
+  ],
+  "activeStyles": {
+    "Dark": {
+      "type": "predefined",
+      "id": "dark"
+    }
+  },
+  "activeThemeObjectSettings": {},
+  "assetsClientPath": "",
+  "styleDefinitions": {
+    "properties": {
+      "titleFont": {
+        "type": "text",
+        "name": "Title",
+        "show": [
+          "default"
+        ],
+        "states": [
+          {
+            "id": "default",
+            "selectors": [
+              " .EDC_container-title span"
+            ],
+            "name": "Normal"
+          }
+        ]
+      },
+      "titleBorderColor": {
+        "type": "border",
+        "name": "Border Color",
+        "show": [
+          "default"
+        ],
+        "states": [
+          {
+            "id": "default",
+            "selectors": [
+              " .EDC_container-title"
+            ],
+            "name": "Normal",
+            "forbidden": [
+              "width",
+              "style",
+              "leftSide",
+              "topSide",
+              "rightSide"
+            ]
+          }
+        ]
+      },
+      "footerBoxtitleFont": {
+        "type": "text",
+        "name": "Title",
+        "show": [
+          "footerBox"
+        ],
+        "states": [
+          {
+            "id": "default",
+            "selectors": [
+              " .EDC_container-title span"
+            ],
+            "name": "Normal"
+          }
+        ]
+      },
+      "footerBoxtitleBorderColor": {
+        "type": "border",
+        "name": "Border Color",
+        "show": [
+          "footerBox"
+        ],
+        "states": [
+          {
+            "id": "default",
+            "selectors": [
+              " .EDC_container-title"
+            ],
+            "name": "Normal",
+            "forbidden": [
+              "width",
+              "style",
+              "leftSide",
+              "topSide",
+              "rightSide"
+            ]
+          }
+        ]
+      },
+      "hilitebackground": {
+        "type": "background",
+        "name": "Background",
+        "show": [
+          "hilite"
+        ],
+        "states": [
+          {
+            "id": "default",
+            "selectors": [
+              ".eds_templateGroup_hilite"
+            ],
+            "name": "Normal",
+            "forbidden": [
+              "attachment"
+            ]
+          }
+        ]
+      },
+      "hiliteTitleFont": {
+        "type": "text",
+        "name": "Title",
+        "show": [
+          "hilite"
+        ],
+        "states": [
+          {
+            "id": "default",
+            "selectors": [
+              " .EDC_container-title span"
+            ],
+            "name": "Normal"
+          }
+        ]
+      },
+      "hiliteTitleBorderColor": {
+        "type": "border",
+        "name": "Border Color",
+        "show": [
+          "hilite"
+        ],
+        "states": [
+          {
+            "id": "default",
+            "selectors": [
+              " .EDC_container-title"
+            ],
+            "name": "Normal",
+            "forbidden": [
+              "width",
+              "style",
+              "leftSide",
+              "topSide",
+              "rightSide"
+            ]
+          }
+        ]
+      },
+      "hiliteTextColor": {
+        "type": "text",
+        "name": "Text Color",
+        "show": [
+          "hilite"
+        ],
+        "states": [
+          {
+            "id": "default",
+            "selectors": [
+              " .DNNModuleContent .Normal",
+              " .DNNModuleContent .NormalDisabled",
+              " .DNNModuleContent .NormalDeleted",
+              " .DNNModuleContent h1",
+              " .DNNModuleContent h2",
+              " .DNNModuleContent h3",
+              " .DNNModuleContent h4",
+              " .DNNModuleContent h5"
+            ],
+            "name": "Normal",
+            "forbidden": [
+              "fontFamily",
+              "size",
+              "style",
+              "weight",
+              "lineHeight",
+              "transform",
+              "decorations"
+            ]
+          }
+        ]
+      },
+      "centerTitleFont": {
+        "type": "text",
+        "name": "Title",
+        "show": [
+          "centerTitle"
+        ],
+        "states": [
+          {
+            "id": "default",
+            "selectors": [
+              " .EDC_container-title span"
+            ],
+            "name": "Normal"
+          }
+        ]
+      }
+    }
+  }
+}

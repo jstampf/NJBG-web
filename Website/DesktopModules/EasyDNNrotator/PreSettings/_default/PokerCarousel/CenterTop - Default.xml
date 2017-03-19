@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+    <MainSettings>
+        <SettingsName>CenterTop</SettingsName>
+        <PictureW>500</PictureW>
+        <PictureH>300</PictureH>
+        <ThumbW>64</ThumbW>
+        <ThumbH>64</ThumbH>
+        <NumToRotate>10</NumToRotate>
+        <ControlName>PokerCarouselRotator.ascx</ControlName>
+        <ThemeName>NewsOne.css</ThemeName>
+        <CssClass>0</CssClass>
+        <Fallback>False</Fallback>
+        <ImageUrl>PreSettings/_default/PokerCarousel/images/centertop.jpg</ImageUrl>
+        <Version>04.08.00</Version>
+        <Description>Horizontal and vertical centered images.</Description>
+    </MainSettings>
+    <RotatorSettings>
+        <hAlign>center</hAlign>
+        <vAlign>top</vAlign>
+        <hMargin>0.4</hMargin>
+        <vMargin>0.2</vMargin>
+        <frontWidth>500</frontWidth>
+        <frontHeight>300</frontHeight>
+        <carouselWidth>900</carouselWidth>
+        <carouselHeight>330</carouselHeight>
+        <left>0</left>
+        <right>0</right>
+        <top>0</top>
+        <bottom>0</bottom>
+        <backZoom>0.8</backZoom>
+        <speed>1000</speed>
+        <buttonNav>bullets</buttonNav>
+        <autoplay>True</autoplay>
+        <autoplayInterval>5000</autoplayInterval>
+        <pauseOnHover>True</pauseOnHover>
+        <mouse>True</mouse>
+        <shadow>True</shadow>
+        <reflection>False</reflection>
+        <reflectionHeight>0.2</reflectionHeight>
+        <reflectionOpacity>0.5</reflectionOpacity>
+        <description>True</description>
+        <backOpacity>1</backOpacity>
+        <titleLenght>100</titleLenght>
+        <descriptionLenght>250</descriptionLenght>
+    </RotatorSettings>
+</Settings>

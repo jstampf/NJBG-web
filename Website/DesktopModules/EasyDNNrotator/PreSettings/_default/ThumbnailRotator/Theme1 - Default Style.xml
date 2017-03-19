@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EasyDNNrotator>
+  <Preview>
+    <SettingsName>01 Theme1 - Default Style</SettingsName>
+    <ImageUrl>PreSettings/_default/ThumbnailRotator/images/Default.jpg</ImageUrl>
+    <Version>07.01.00</Version>
+    <Description>01 Theme1 - Default Style</Description>
+  </Preview>
+  <RotatorSettings>
+    <ModuleID>504</ModuleID>
+    <RotatorTypeID>18</RotatorTypeID>
+    <PortalID>0</PortalID>
+    <ListID>3</ListID>
+    <UserID>1</UserID>
+    <DateCreated>2015-07-09T16:56:16.353</DateCreated>
+    <ListNewsGallery>0</ListNewsGallery>
+    <SettingsName>Thumbnail Rotator - 504</SettingsName>
+    <PictureW>800</PictureW>
+    <PictureH>600</PictureH>
+    <ThumbW>175</ThumbW>
+    <ThumbH>115</ThumbH>
+    <NumToRotate>20</NumToRotate>
+    <ControlName>MultiRotator.ascx</ControlName>
+    <ThemeName>Theme1.css</ThemeName>
+    <CssClass></CssClass>
+    <ShadowCss></ShadowCss>
+    <ShadowStyle></ShadowStyle>
+    <MCBorderSize>0</MCBorderSize>
+    <MCBorderColor>ffff</MCBorderColor>
+    <FullRotatorW>800</FullRotatorW>
+    <FullRotatorH>600</FullRotatorH>
+    <Fallback>0</Fallback>
+    <MainWidthType>0</MainWidthType>
+    <MainHeightType>0</MainHeightType>
+    <ItemWidthType>0</ItemWidthType>
+    <ItemHeightType>0</ItemHeightType>
+    <ScriptVersion></ScriptVersion>
+    <ScriptName>multislider.min.js</ScriptName>
+    <HtmTemplate>Layout1.html</HtmTemplate>
+    <Randomize>0</Randomize>
+    <GlobalJpegQuality>97</GlobalJpegQuality>
+    <CropMethod>0</CropMethod>
+    <Visibility>0</Visibility>
+    <HideUnlocalizedItems>0</HideUnlocalizedItems>
+    <CacheContent>1</CacheContent>
+    <CreateMainPicture>1</CreateMainPicture>
+    <CreateThumbnail>1</CreateThumbnail>
+  </RotatorSettings>
+  <ThumbnailRotatorSettings>
+    <ModuleID>504</ModuleID>
+    <SettingsViewState>width:800,height:600,autoplay:true,speed:17,grabCursor:true,swipe:true,mouseSwipe:true,wheel:true,view:'basic',space:0,loop:true</SettingsViewState>
+    <Width>800</Width>
+    <Height>600</Height>
+    <Space>0</Space>
+    <GrabCursor>1</GrabCursor>
+    <Swipe>1</Swipe>
+    <Mouse>1</Mouse>
+    <Wheel>1</Wheel>
+    <Autoplay>1</Autoplay>
+    <Loop>1</Loop>
+    <Speed>17</Speed>
+    <View>basic</View>
+    <TitleLength>50</TitleLength>
+    <DescriptionLength>0</DescriptionLength>
+    <StripDescription>0</StripDescription>
+    <ShowTitle>1</ShowTitle>
+    <ShowDescription>1</ShowDescription>
+    <ShowReadMore>1</ShowReadMore>
+    <SlideLink>1</SlideLink>
+  </ThumbnailRotatorSettings>
+  <PortalGUID>dc736bb3-3ec2-4ad9-862a-b32418815b82</PortalGUID>
+</EasyDNNrotator>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+    <MainSettings>
+        <SettingsName>Title Below Image - Default</SettingsName>
+        <ItemW>220</ItemW>
+        <ItemH>230</ItemH>
+        <ThumbW>220</ThumbW>
+        <ThumbH>140</ThumbH>
+        <NumToRotate>20</NumToRotate>
+        <ControlName>CarouselRotator.ascx</ControlName>
+        <ThemeName>NewsOne.css</ThemeName>
+        <CssClass>0</CssClass>
+        <MainWidthType>false</MainWidthType>
+        <MainHeightType>false</MainHeightType>
+        <HtmTemplate>Title_below_image.html</HtmTemplate>
+        <FullRotatorW>720</FullRotatorW>
+        <FullRotatorH>290</FullRotatorH>
+        <ImageUrl>PreSettings/_default/Carousel/images/TitleBelowImage.jpg</ImageUrl>
+        <Version>04.05.00</Version>
+        <Description>Description</Description>
+    </MainSettings>
+    <RotatorSettings>
+        <WLeftMargin>0</WLeftMargin>
+        <WRightMargin>0</WRightMargin>
+        <WTopMargin>10</WTopMargin>
+        <WBottomMargin>20</WBottomMargin>
+        <Orientation>horizontal</Orientation>
+        <SlideDuration>1000</SlideDuration>
+        <SlideStep>page</SlideStep>
+        <Easing>swing</Easing>
+        <Interval>False</Interval>
+        <IsDraggable>True</IsDraggable>
+        <AutoplayInterval>0</AutoplayInterval>
+        <RediOnClickTarget>_self</RediOnClickTarget>
+        <ArrowsType>square.css</ArrowsType>
+        <ArrowsStyle />
+        <NumOfRows>1</NumOfRows>
+        <NumOfColumns>3</NumOfColumns>
+        <ItemTopPadding>15</ItemTopPadding>
+        <ItemLeftPadding>15</ItemLeftPadding>
+        <TitleLenght>120</TitleLenght>
+        <StripHTMLDescription>True</StripHTMLDescription>
+        <DescriptionLenght>180</DescriptionLenght>
+        <ArrDisplay>True</ArrDisplay>
+        <ArrAutoHide>True</ArrAutoHide>
+        <ArrPrevPosV>top</ArrPrevPosV>
+        <ArrPrevPosH>left</ArrPrevPosH>
+        <ArrPrevPosHOff>-10</ArrPrevPosHOff>
+        <ArrPrevPosVOff>50</ArrPrevPosVOff>
+        <ArrPrevHAsRatio>false</ArrPrevHAsRatio>
+        <ArrPrevVAsRatio>true</ArrPrevVAsRatio>
+        <ArrNextPosV>top</ArrNextPosV>
+        <ArrNextPosH>right</ArrNextPosH>
+        <ArrNextPosHOff>-10</ArrNextPosHOff>
+        <ArrNextPosvOff>50</ArrNextPosvOff>
+        <ArrNextHAsRatio>false</ArrNextHAsRatio>
+        <ArrNextVAsRatio>true</ArrNextVAsRatio>
+        <PagiDisplay>True</PagiDisplay>
+        <PagiPosV>bottom</PagiPosV>
+        <PagiPosH>left</PagiPosH>
+        <PagiPosVOff>0</PagiPosVOff>
+        <PagiPosHOff>50</PagiPosHOff>
+        <PagiVAsRatio>false</PagiVAsRatio>
+        <PagiHAsRatio>true</PagiHAsRatio>
+    </RotatorSettings>
+</Settings>

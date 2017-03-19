@@ -1,0 +1,70 @@
+﻿if '{objectQualifier}' <> ''
+BEGIN
+	IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorModule]') AND type in (N'U'))
+	BEGIN
+		IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[EasyDNNRotatorModule]') AND type in (N'U'))
+		BEGIN
+			EXECUTE sp_rename N'{databaseOwner}[EasyDNNRotatorModule]', N'{objectQualifier}EasyDNNRotatorModule', 'OBJECT'
+			EXECUTE sp_rename N'PK_EasyDNNRotatorModule', N'PK_{objectQualifier}EasyDNNRotatorModule', 'OBJECT'
+			EXECUTE sp_rename N'IX_EasyDNNRotatorModuleAndType', N'IX_{objectQualifier}EasyDNNRotatorModuleAndType', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNNewsGallery_EasyGallery', N'FK_{objectQualifier}EasyDNNNewsGallery_EasyGallery', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorChameleonRSettings_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorChameleonRSettings_EasyDNNRotatorModule', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorFlashCRSettings_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorFlashCRSettings_EasyDNNRotatorModule', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorModule_EasyDNNRotatorType', N'FK_{objectQualifier}EasyDNNRotatorModule_EasyDNNRotatorType', 'OBJECT'
+			EXECUTE sp_rename N'VezaModulID', N'FK_{objectQualifier}VezaModulID', 'OBJECT'
+			EXECUTE sp_rename N'VezaPortalID', N'FK_{objectQualifier}VezaPortalID', 'OBJECT'
+			EXECUTE sp_rename N'VezaRotatorList', N'FK_{objectQualifier}VezaRotatorList', 'OBJECT'
+			EXECUTE sp_rename N'VezaUserIDModule', N'FK_{objectQualifier}VezaUserIDModule', 'OBJECT'
+			EXECUTE sp_rename N'FK_Veza_Rotator_News_Bridge', N'FK_{objectQualifier}Veza_Rotator_News_Bridge', 'OBJECT'
+			EXECUTE sp_rename N'FK_EasyDNNRotatorNewsSettings_EasyDNNRotatorModule', N'FK_{objectQualifier}EasyDNNRotatorNewsSettings_EasyDNNRotatorModule', 'OBJECT'
+		END
+	END
+END
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGalleryBridge]') AND type in (N'U'))
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorGalleryBridge](
+		[RotatorID] [int] NOT NULL,
+		[GalleryID] [int] NOT NULL,
+		[Flag] [int] NOT NULL,
+		CONSTRAINT [PK_{objectQualifier}EasyDNNRotatorGallerySettings] PRIMARY KEY CLUSTERED ([RotatorID] ASC,[GalleryID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorGalleryBridge]  WITH CHECK ADD  CONSTRAINT [FK_{objectQualifier}EasyDNNRotatorGallerySettings_EasyDNNRotatorModule] FOREIGN KEY([RotatorID])
+	REFERENCES {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] ([ModuleID]) ON DELETE CASCADE
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorGalleryBridge] CHECK CONSTRAINT [FK_{objectQualifier}EasyDNNRotatorGallerySettings_EasyDNNRotatorModule]
+
+	IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyGallery]') AND type in (N'U'))
+	BEGIN
+		ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorGalleryBridge]  WITH CHECK ADD  CONSTRAINT [FK_{objectQualifier}EasyDNNRotatorGallerySettings_EasyGallery] FOREIGN KEY([GalleryID])
+		REFERENCES {databaseOwner}[{objectQualifier}EasyGallery] ([GalleryID]) ON DELETE CASCADE
+		ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorGalleryBridge] CHECK CONSTRAINT [FK_{objectQualifier}EasyDNNRotatorGallerySettings_EasyGallery]
+	END
+END
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorGallTempContent]') AND type in (N'U'))
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorGallTempContent](
+		[RotatorID] [int] NOT NULL,
+		[GalleryID] [int] NOT NULL,
+		[PictureID] [int] NOT NULL,
+		[Flag] [int] NOT NULL,
+		[FileName] [nvarchar](2500) NOT NULL,
+		[ThumbUrl] [nvarchar](2500) NOT NULL,
+		[MediaType] [nvarchar](30) NOT NULL,
+		CONSTRAINT [PK_{objectQualifier}EasyDNNRotatorGallTempContent] PRIMARY KEY CLUSTERED ([RotatorID] ASC,[GalleryID] ASC,[PictureID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorGallTempContent]  WITH CHECK ADD  CONSTRAINT [FK_{objectQualifier}EasyDNNRotatorGallTempContent_EasyDNNRotatorGalleryBridge] FOREIGN KEY([RotatorID], [GalleryID])
+	REFERENCES {databaseOwner}[{objectQualifier}EasyDNNRotatorGalleryBridge] ([RotatorID], [GalleryID])ON DELETE CASCADE
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorGallTempContent] CHECK CONSTRAINT [FK_{objectQualifier}EasyDNNRotatorGallTempContent_EasyDNNRotatorGalleryBridge]
+END
+GO

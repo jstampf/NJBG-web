@@ -1,0 +1,74 @@
+﻿<!--HeaderTemplateBegin-->
+<div class="ms-caro3d-template edsms_layout1">
+<!--HeaderTemplateEnd-->
+
+<!--ItemTemplateBegin-->
+	<div class="ms-slide">
+		<img src="[EasyDNNrotator:Image]" data-src="[EasyDNNrotator:Image]" alt="[EasyDNNrotator:Title]" [EasyDNNrotator:ResponsiveImages] />
+		[EasyDNNrotator:IfExists:SlideLink]<a href="[EasyDNNrotator:Link]" [EasyDNNrotator:DataType]>[EasyDNNrotator:Title]</a>[EasyDNNrotator:EndIf:SlideLink]
+		[EasyDNNrotator:IfExists:Title]
+		<h3 class="ms-layer edsms_slideTitle"
+			data-effect="left(long)"
+			data-duration="1500"
+			data-delay="0"
+			data-ease="easeInOutBack">
+			[EasyDNNrotator:Title]
+		</h3>
+		[EasyDNNrotator:EndIf:Title]
+		[EasyDNNrotator:IfExists:Description]
+		<div class="ms-layer edsms_slideDescription"
+			data-effect="right(long)"
+			data-duration="1500"
+			data-delay="0"
+			data-ease="easeInOutBack">
+			[EasyDNNrotator:Description]
+		</div>
+		[EasyDNNrotator:EndIf:Description]
+		[EasyDNNrotator:IfExists:Readmore]
+		<div class="ms-layer edsms_slideLink"
+			data-effect="left(long)"
+			data-duration="900"
+			data-delay="500"
+			data-ease="easeInOutBack">
+			<a href="[EasyDNNrotator:Link]">[EasyDNNrotator:LocalizedText:Readmore]</a>
+		</div>
+		[EasyDNNrotator:EndIf:Readmore]
+		[EasyDNNrotator:IfExists:Event]
+		<div class="ms-layer edsms_slideEventDate"
+			data-effect="right(long)"
+			data-duration="1500"
+			data-delay="0"
+			data-ease="easeInOutBack">
+			[EasyDNNrotator:EventDate]
+		</div>
+		[EasyDNNrotator:EndIf:Event]
+		[EasyDNNrotator:IfExists:Location]
+		<div class="ms-layer edsms_slideEventLocation"
+			data-effect="left(long)"
+			data-duration="1500"
+			data-delay="0"
+			data-ease="easeInOutBack">
+			[EasyDNNrotator:Location]
+		</div>
+		[EasyDNNrotator:EndIf:Location]
+	</div>
+<!--ItemTemplateEnd-->
+
+<!--FooterTemplateBegin-->
+</div>
+<!--FooterTemplateEnd-->
+
+<!--ScriptBegin-->
+	<!--EnabledOptionsBegin-->
+		[autoplay,speed,showreadmore,showtitle,showdescription,space,slidelink,grabCursor,view,swipe,mouseswipe,wheel,limittitle,limitdescription,stripdescription,preload]
+	<!--EnabledOptionsEnd-->
+	<!--SetOptionsBegin-->
+		[loop:true]
+	<!--SetOptionsEnd-->
+	<!--HiddenOptionsBegin-->
+		[thumbnail:width:640:height:480]
+	<!--HiddenOptionsEnd-->
+	<!--ControlBegin-->
+		slider.control('arrows');
+	<!--ControlEnd-->
+<!--ScriptEnd-->

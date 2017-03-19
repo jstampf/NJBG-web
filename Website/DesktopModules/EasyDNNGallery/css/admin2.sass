@@ -1,0 +1,227 @@
+@charset "UTF-8"
+
+@import url("../static/font-awesome/css/font-awesome.min.css")
+
+@mixin xsmall-device-width
+	@media handheld, only screen and (max-width:480px), only screen and (max-device-width:480px)
+		@content
+
+/*Admin Menu*/
+
+.eds_galleryWrapper
+	position: relative
+
+	&.eds_galleryManageMenuVisible .eds_galleryManageMenu > ul,
+	&.eds_initialState .eds_galleryManageMenu > ul,
+	.eds_galleryManageMenu:hover > ul
+		background-color: rgba(0, 0, 0, 0.6)
+		border-radius: 3px
+		opacity: 1
+		padding: 13px 13px 0
+		position: absolute
+		right: -33px
+		top: 45px
+		visibility: visible
+		@include xsmall-device-width
+			right: -20px
+
+		> li
+			display: block
+
+			&:first-child
+
+				> a
+
+					&:after
+						@include xsmall-device-width
+							right: 27px
+
+	&.eds_initialState
+
+		.eds_galleryManageMenu
+			text-align: left
+			position: static
+
+			> ul
+				background-color: transparent
+				padding: 0
+				position: static
+				margin: 10px 0
+
+				> li
+					display: inline-block
+					margin-left: -1px
+					margin-bottom: 0
+					margin-top: -1px
+
+					> a
+						border-radius: 0
+
+					&:first-child
+
+						> a
+							border-radius: 3px 0 0 3px
+
+							&:after
+								display: none
+
+					&:last-child
+
+						> a
+							border-radius: 0 3px 3px 0
+
+		.eds_galleryManageMenuTrigger
+			display: none
+
+	.eds_galleryManageMenu
+		position: absolute
+		right: 100px
+		top: 0
+		font-size: 0
+		line-height: 0
+		text-align: center
+		z-index: 99
+		@include xsmall-device-width
+			right: 15px
+			top: 0
+
+		> ul
+			display: inline-block
+			margin: 0
+			padding: 0
+			opacity: 0
+			visibility: hidden
+			-webkit-transition: padding 200ms ease-in-out, opacity 200ms ease-in-out
+			transition: padding 200ms ease-in-out, opacity 200ms ease-in-out
+
+			> li
+				list-style-type: none
+				margin: 0 0 13px
+				padding: 0
+				display: none
+
+				> a
+					display: block
+					white-space: nowrap
+					padding: 12px 25px
+					line-height: 1
+					font-size: 16px
+					font-family: "Arial"
+					color: #189fd3
+					text-decoration: none
+					-webkit-transition: all 200ms linear
+					transition: all 200ms linear
+					border: solid 1px #dadada
+						radius: 3px
+					background-color: #fff
+					text-align: left
+					@include xsmall-device-width
+						font-size: 0
+						line-height: 0
+
+					&:hover
+						color: #fff
+						background-color: #2b93dd
+						text-decoration: none
+
+					&:before
+						font-family: "FontAwesome"
+						color: #aeaeae
+						padding-right: 10px
+						font-size: 14px
+						font-size: 21px !important
+						line-height: 1 !important
+						@include xsmall-device-width
+							font-size: 0
+							line-height: 0
+							padding-right: 0
+
+					&:hover
+
+						&:before
+							color: #fff
+
+				&.eds_galleryManageContent
+
+					a
+
+						&:before
+							content: "\f055"
+
+
+				&.eds_gallerySettings
+
+					a
+
+						&:before
+							content: "\f013"
+
+
+				&.eds_galleryCropContent
+
+					a
+
+						&:before
+							content: "\f125"
+
+				&.eds_galleryDashboard
+
+					a
+
+						&:before
+							content: "\f085"
+
+				&:first-child
+
+					> a
+						position: relative
+
+						&:after
+							position: absolute
+							top: -8px
+							right: 35px
+							width: 14px
+							height: 14px
+							background-color: #fff
+							border-style: solid
+							border-width: 1px
+							border-color: #dadada transparent transparent #dadada
+							-ms-transform: rotate(45deg)
+							-webkit-transform: rotate(45deg)
+							transform: rotate(45deg)
+							content: ""
+							-webkit-transition: all 200ms linear
+							transition: all 200ms linear
+
+						&:hover
+
+							&:after
+								background-color: #2b93dd
+
+	.eds_galleryManageMenuTrigger
+		display: block
+		text-align: center
+
+		> span
+			display: inline-block
+			font-size: 0
+			line-height: 0
+			height: 41px
+			width: 48px
+			background-color: #2b93dd
+			text-align: center
+			border-radius: 3px
+			cursor: pointer
+
+			&:before
+				font-size: 25px
+				color: #fff
+				font-family: "FontAwesome"
+				line-height: 41px
+				content: "\f013"
+
+		&:hover
+			padding-bottom: 20px
+
+			> span
+				background-color: #2b93dd + 20

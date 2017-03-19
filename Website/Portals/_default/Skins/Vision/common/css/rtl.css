@@ -1,0 +1,148 @@
+body, html {
+  direction: rtl;
+  text-align: right;
+}
+
+.EasyDNNSkin_Vision .Normal .info,
+.EasyDNNSkin_Vision .Normal .success,
+.EasyDNNSkin_Vision .Normal .warning,
+.EasyDNNSkin_Vision .Normal .error,
+.EasyDNNSkin_Vision .NormalDisabled .info,
+.EasyDNNSkin_Vision .NormalDisabled .success,
+.EasyDNNSkin_Vision .NormalDisabled .warning,
+.EasyDNNSkin_Vision .NormalDisabled .error,
+.EasyDNNSkin_Vision .NormalDeleted .info,
+.EasyDNNSkin_Vision .NormalDeleted .success,
+.EasyDNNSkin_Vision .NormalDeleted .warning,
+.EasyDNNSkin_Vision .NormalDeleted .error {
+  background-position: 99% 5px;
+  padding: 12px 50px 12px 12px;
+}
+.EasyDNNSkin_Vision .Normal ul, .EasyDNNSkin_Vision .Normal ol,
+.EasyDNNSkin_Vision .NormalDisabled ul,
+.EasyDNNSkin_Vision .NormalDisabled ol,
+.EasyDNNSkin_Vision .NormalDeleted ul,
+.EasyDNNSkin_Vision .NormalDeleted ol {
+  padding-left: 0;
+  padding-right: 15px;
+}
+.EasyDNNSkin_Vision .Normal .greenBullet li:before,
+.EasyDNNSkin_Vision .Normal .blueBullet li:before,
+.EasyDNNSkin_Vision .Normal .redBullet li:before,
+.EasyDNNSkin_Vision .Normal .orangeBullet li:before,
+.EasyDNNSkin_Vision .Normal .whiteBullet li:before,
+.EasyDNNSkin_Vision .NormalDisabled .greenBullet li:before,
+.EasyDNNSkin_Vision .NormalDisabled .blueBullet li:before,
+.EasyDNNSkin_Vision .NormalDisabled .redBullet li:before,
+.EasyDNNSkin_Vision .NormalDisabled .orangeBullet li:before,
+.EasyDNNSkin_Vision .NormalDisabled .whiteBullet li:before,
+.EasyDNNSkin_Vision .NormalDeleted .greenBullet li:before,
+.EasyDNNSkin_Vision .NormalDeleted .blueBullet li:before,
+.EasyDNNSkin_Vision .NormalDeleted .redBullet li:before,
+.EasyDNNSkin_Vision .NormalDeleted .orangeBullet li:before,
+.EasyDNNSkin_Vision .NormalDeleted .whiteBullet li:before {
+  margin: -0.5% -2% 0 0.5%;
+}
+.EasyDNNSkin_Vision .EDS_tabs > ul {
+  margin: 0;
+  padding: 0;
+}
+.EasyDNNSkin_Vision .EDS_tabs > ul .edsTabulator_tabTrigger {
+  float: right;
+}
+.EasyDNNSkin_Vision .EDS_accordion .edsAccordion_section .edsAccordion_title {
+  background-position: 3% center;
+  padding: 8px 15px 7px 60px;
+}
+.EasyDNNSkin_Vision .EDS_mini-gallery li {
+  float: right;
+}
+.EasyDNNSkin_Vision .EDS_header-bg .EDS_header .logo {
+  float: right;
+}
+.EasyDNNSkin_Vision .EDS_header-bg .EDS_header .login-wrapper {
+  float: left;
+}
+.EasyDNNSkin_Vision .EDS_header-bg .EDS_header .login-wrapper #login ul {
+  float: right;
+}
+.EasyDNNSkin_Vision .EDS_header-bg .EDS_header .login-wrapper #login ul li {
+  float: right;
+}
+.EasyDNNSkin_Vision .EDS_header-bg .EDS_header .login-wrapper #login ul li.userMessages a span, .EasyDNNSkin_Vision .EDS_header-bg .EDS_header .login-wrapper #login ul li.userNotifications a span {
+  float: left;
+}
+.EasyDNNSkin_Vision .EDS_header-bg .EDS_header .login-wrapper #login .loginGroup {
+  float: left;
+}
+.EasyDNNSkin_Vision .EDS_header-bg .EDS_header .language-search {
+  float: left;
+}
+.EasyDNNSkin_Vision .EDS_header-bg .EDS_header .language-search .language {
+  float: left;
+}
+.EasyDNNSkin_Vision .EDS_header-bg .EDS_header .language-search .search {
+  float: left;
+}
+.EasyDNNSkin_Vision .EDS_header-bg .responsAbilityMenu > .raMenuWrapper #dnn_main_menu > ol > li {
+  float: right;
+}
+@media handheld, only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
+  .EasyDNNSkin_Vision .EDS_header-bg .responsAbilityMenu > .raMenuWrapper #dnn_main_menu > ol > li {
+    float: none;
+  }
+}
+.EasyDNNSkin_Vision .EDS_header-bg .responsAbilityMenu > .raMenuWrapper #dnn_main_menu > ol > li > span .edsmm_itemContainer {
+  float: right;
+}
+@media handheld, only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
+  .EasyDNNSkin_Vision .EDS_header-bg .responsAbilityMenu > .raMenuWrapper #dnn_main_menu > ol > li > span .edsmm_itemContainer {
+    float: none;
+  }
+}
+.EasyDNNSkin_Vision .EDS_header-bg .responsAbilityMenu > .raMenuWrapper #dnn_main_menu ol li > div {
+  left: auto;
+  right: 0;
+  box-shadow: -3px 3px 4px 0 rgba(0, 0, 0, 0.67);
+}
+@media handheld, only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
+  .EasyDNNSkin_Vision .EDS_header-bg .responsAbilityMenu > .raMenuWrapper #dnn_main_menu ol li > div {
+    right: 0;
+    box-shadow: none;
+  }
+}
+.EasyDNNSkin_Vision .EDS_header-bg .responsAbilityMenu > .raMenuWrapper #dnn_main_menu ol li > div ol li > div {
+  left: auto;
+  right: 100%;
+}
+@media handheld, only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
+  .EasyDNNSkin_Vision .EDS_header-bg .responsAbilityMenu > .raMenuWrapper #dnn_main_menu ol li > div ol li > div {
+    right: 0;
+  }
+}
+@media handheld, only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
+  .EasyDNNSkin_Vision .EDS_header-bg .responsAbilityMenu > .raMenuWrapper #dnn_main_menu ol li.edsmm_hasChild > span > .edsmm_childIndicator {
+    right: auto;
+    left: 5px;
+  }
+}
+.EasyDNNSkin_Vision .EDS_header-bg .responsAbilityMenu > .raMenuTriggerWrapper .raMenuTrigger {
+  background-position: 4% center;
+}
+.EasyDNNSkin_Vision .EDS_bottom-content-bg .EDS_bottom-content .box {
+  float: right;
+  margin: 15px 2% 43px 0;
+}
+@media handheld, only screen and (max-width: 768px), only screen and (max-device-width: 768px) {
+  .EasyDNNSkin_Vision .EDS_bottom-content-bg .EDS_bottom-content .box {
+    margin: 0 4% 20px 0;
+  }
+}
+.EasyDNNSkin_Vision .EDS_bottom-content-bg .EDS_bottom-content .box:first-child {
+  margin-right: 0;
+}
+@media handheld, only screen and (max-width: 768px), only screen and (max-device-width: 768px) {
+  .EasyDNNSkin_Vision .EDS_bottom-content-bg .EDS_bottom-content .box.three {
+    margin-right: 0;
+  }
+}

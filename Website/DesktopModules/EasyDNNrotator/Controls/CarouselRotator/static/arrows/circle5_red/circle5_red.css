@@ -1,0 +1,30 @@
+.edr_carousel .navigation.circle5_red {
+  text-indent: -10000px;
+  background: url(images/carousell-arrows.png) no-repeat;
+  width: 43px;
+  height: 43px;
+}
+.edr_carousel.horizontal .navigation.circle5_red.previous {
+  background-position: 0 0;
+}
+.edr_carousel.horizontal .navigation.circle5_red.previous:hover {
+  background-position: 0 -43px;
+}
+.edr_carousel.horizontal .navigation.circle5_red.next {
+  background-position: -43px 0;
+}
+.edr_carousel.horizontal .navigation.circle5_red.next:hover {
+  background-position: -43px -43px;
+}
+.edr_carousel.vertical .navigation.circle5_red.previous {
+  background-position: 0 -86px;
+}
+.edr_carousel.vertical .navigation.circle5_red.previous:hover {
+  background-position: 0px -129px;
+}
+.edr_carousel.vertical .navigation.circle5_red.next {
+  background-position: -43px -86px;
+}
+.edr_carousel.vertical .navigation.circle5_red.next:hover {
+  background-position: -43px -129px;
+}

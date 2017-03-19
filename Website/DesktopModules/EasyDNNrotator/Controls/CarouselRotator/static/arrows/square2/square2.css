@@ -1,0 +1,36 @@
+.edr_carousel .navigation.square2 {
+  text-indent: -10000px;
+  background: url(images/sqare2.png) no-repeat;
+}
+.edr_carousel.horizontal .navigation.square2 {
+  width: 26px;
+  height: 44px;
+}
+.edr_carousel.horizontal .navigation.square2.previous {
+  background-position: 0 0;
+}
+.edr_carousel.horizontal .navigation.square2.previous:hover {
+  background-position: 0 -44px;
+}
+.edr_carousel.horizontal .navigation.square2.next {
+  background-position: -26px 0;
+}
+.edr_carousel.horizontal .navigation.square2.next:hover {
+  background-position: -26px -44px;
+}
+.edr_carousel.vertical .navigation.square2 {
+  height: 26px;
+  width: 44px;
+}
+.edr_carousel.vertical .navigation.square2.previous {
+  background-position: -52px 0;
+}
+.edr_carousel.vertical .navigation.square2.previous:hover {
+  background-position: -96px 0;
+}
+.edr_carousel.vertical .navigation.square2.next {
+  background-position: -52px -26px;
+}
+.edr_carousel.vertical .navigation.square2.next:hover {
+  background-position: -96px -26px;
+}

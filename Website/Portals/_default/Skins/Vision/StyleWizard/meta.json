@@ -1,0 +1,3517 @@
+{
+  "name": "Vision",
+  "version": 1,
+  "customFontFamilies": [
+    {
+      "name": "BenchNine",
+      "importUrl": "//fonts.googleapis.com/css?family=BenchNine:400,700&subset=latin,latin-ext"
+    },
+    {
+      "name": "Denk One",
+      "importUrl": "//fonts.googleapis.com/css?family=Denk+One&subset=latin,latin-ext"
+    },
+    {
+      "name": "Share Tech Mono",
+      "importUrl": "//fonts.googleapis.com/css?family=Share+Tech+Mono&subset=latin,latin-ext"
+    },
+    {
+      "name": "Chela One",
+      "importUrl": "//fonts.googleapis.com/css?family=Chela+One&subset=latin,latin-ext"
+    },
+    {
+      "name": "Caesar Dressing",
+      "importUrl": "//fonts.googleapis.com/css?family=Caesar+Dressing&subset=latin,latin-ext"
+    },
+    {
+      "name": "Akronim",
+      "importUrl": "//fonts.googleapis.com/css?family=Akronim&subset=latin,latin-ext"
+    },
+    {
+      "name": "Oregano",
+      "importUrl": "//fonts.googleapis.com/css?family=Oregano&subset=latin,latin-ext"
+    },
+    {
+      "name": "Crafty Girls",
+      "importUrl": "//fonts.googleapis.com/css?family=Crafty+Girls&subset=latin,latin-ext"
+    },
+    {
+      "name": "Courgette",
+      "importUrl": "//fonts.googleapis.com/css?family=Courgette&subset=latin,latin-ext"
+    },
+    {
+      "name": "Offside",
+      "importUrl": "//fonts.googleapis.com/css?family=Offside&subset=latin,latin-ext"
+    },
+    {
+      "name": "Roboto Slab",
+      "importUrl": "//fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,latin-ext"
+    }
+  ],
+  "activeStyles": {},
+  "activeThemeObjectSettings": {},
+  "assetsClientPath": "styles/",
+  "styleDefinitions": {
+    "properties": {
+      "backgroundColor": {
+        "type": "background",
+        "name": "Background Color",
+        "states": [
+          {
+            "id": "default",
+            "selectors": [
+              "#Body"
+            ],
+            "name": "Normal",
+            "forbidden": [
+              "image",
+              "repeat",
+              "attachment",
+              "position"
+            ]
+          }
+        ]
+      }
+    },
+    "sections": {
+      "header": {
+        "name": "Header",
+        "properties": {
+          "background": {
+            "type": "background",
+            "name": "Background",
+            "sharedImageDirectories": [
+              "sharedBackgrounds/"
+            ],
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Vision .EDS_header-bg"
+                ],
+                "name": "Normal",
+                "forbidden": [
+                  "attachment"
+                ]
+              }
+            ]
+          },
+          "boxShadow": {
+            "type": "boxShadow",
+            "name": "Box Shadow",
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Vision .EDS_header-bg"
+                ],
+                "name": "Normal"
+              }
+            ]
+          },
+          "borderColor": {
+            "type": "border",
+            "name": "Border Color",
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Vision .EDS_header-bg",
+                  ".EasyDNNSkin_Vision .EDS_header-bg .EDS_header .login-wrapper #login"
+                ],
+                "name": "Normal",
+                "forbidden": [
+                  "width",
+                  "style"
+                ]
+              }
+            ]
+          }
+        },
+        "sections": {
+          "loginMenu": {
+            "name": "User Login Menu",
+            "properties": {
+              "backgroundColor": {
+                "type": "background",
+                "name": "Background Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_header-bg .EDS_header .login-wrapper",
+                      ".EasyDNNSkin_Vision"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "image",
+                      "repeat",
+                      "attachment",
+                      "position"
+                    ]
+                  }
+                ]
+              },
+              "textColor": {
+                "type": "text",
+                "name": "Text Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_header-bg .EDS_header .login-wrapper #login .registerGroup a",
+                      ".EasyDNNSkin_Vision .EDS_header-bg .EDS_header .login-wrapper #login .registerGroup * a",
+                      ".EasyDNNSkin_Vision .EDS_header-bg .EDS_header .login-wrapper #login .loginGroup a",
+                      ".EasyDNNSkin_Vision .EDS_header-bg .EDS_header .login-wrapper #login .loginGroup * a"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations",
+                      "shadows"
+                    ]
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_header-bg .EDS_header .login-wrapper #login .registerGroup a:hover",
+                      ".EasyDNNSkin_Vision .EDS_header-bg .EDS_header .login-wrapper #login .registerGroup * a:hover",
+                      ".EasyDNNSkin_Vision .EDS_header-bg .EDS_header .login-wrapper #login .loginGroup a:hover",
+                      ".EasyDNNSkin_Vision .EDS_header-bg .EDS_header .login-wrapper #login .loginGroup * a:hover"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations",
+                      "shadows"
+                    ]
+                  }
+                ]
+              },
+              "userNotificationsBackgroundColor": {
+                "type": "background",
+                "name": "User Notifications Background Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_header-bg .EDS_header .login-wrapper #login ul li.userMessages a span",
+                      ".EasyDNNSkin_Vision .EDS_header-bg .EDS_header .login-wrapper #login ul li.userNotifications a span",
+                      ".EasyDNNSkin_Vision .ui-tabs .ui-tabs-nav li a span",
+                      ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesCoreMessaging #smMainContent #dnnCoreMessaging .dnnCoreMessagingContent .smListings .messages > li ul li .msgActionItems li .ActiveToggle",
+                      ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesCoreMessaging #smMainContent #dnnCoreMessaging .dnnCoreMessagingContent .smListings .messages > li.active ul li .msgActionItems li .ActiveToggle:hover",
+                      ".EasyDNNSkin_Vision .DnnModule-ViewProfile .UserProfileControls ul",
+                      ".EasyDNNSkin_Vision .DnnModule-ViewProfile #UserProfileImg"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "image",
+                      "repeat",
+                      "attachment",
+                      "position"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "search": {
+            "name": "Search",
+            "properties": {
+              "backgroundColor": {
+                "type": "background",
+                "name": "Background Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_header-bg .EDS_header .language-search .search input[type='text']"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "image",
+                      "repeat",
+                      "attachment",
+                      "position"
+                    ]
+                  }
+                ]
+              },
+              "borderColor": {
+                "type": "border",
+                "name": "Border Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_header-bg .EDS_header .language-search .search input[type='text']"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "width",
+                      "style"
+                    ]
+                  }
+                ]
+              },
+              "textColor": {
+                "type": "text",
+                "name": "Text Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_header-bg .EDS_header .language-search .search input[type='text']"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations",
+                      "shadows"
+                    ]
+                  }
+                ]
+              },
+              "icon": {
+                "type": "background",
+                "name": "Icon",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_header-bg .EDS_header .language-search .search a.SkinObject"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "color",
+                      "repeat",
+                      "attachment",
+                      "position"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "headerContent": {
+            "name": "Header Content",
+            "properties": {
+              "background": {
+                "type": "background",
+                "name": "Background",
+                "sharedImageDirectories": [
+                  "sharedBackgrounds/"
+                ],
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_subheader-bg"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "attachment"
+                    ]
+                  }
+                ]
+              },
+              "headingsColor": {
+                "type": "text",
+                "name": "Headings Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_subheader-bg h1",
+                      ".EasyDNNSkin_Vision .EDS_subheader-bg h2",
+                      ".EasyDNNSkin_Vision .EDS_subheader-bg h3",
+                      ".EasyDNNSkin_Vision .EDS_subheader-bg h4",
+                      ".EasyDNNSkin_Vision .EDS_subheader-bg h5"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  }
+                ]
+              },
+              "textColor": {
+                "type": "text",
+                "name": "Text Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_subheader-bg .Normal",
+                      ".EasyDNNSkin_Vision .EDS_subheader-bg .NormalDisabled",
+                      ".EasyDNNSkin_Vision .EDS_subheader-bg .NormalDeleted"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "mainMenu": {
+        "name": "Main Menu",
+        "properties": {
+          "backgroundColor": {
+            "type": "background",
+            "name": "Background Color",
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Vision .responsAbilityMenu > .raMenuWrapper #dnn_main_menu",
+                  ".EasyDNNSkin_Vision .responsAbilityMenu > .raMenuWrapper #dnn_main_menu ol li > div",
+                  ".EasyDNNSkin_Vision .responsAbilityMenu > .raMenuTriggerWrapper .raMenuTrigger"
+                ],
+                "name": "Normal",
+                "forbidden": [
+                  "image",
+                  "repeat",
+                  "attachment",
+                  "position"
+                ]
+              }
+            ]
+          },
+          "boxShadow": {
+            "type": "boxShadow",
+            "name": "Box Shadow",
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Vision .responsAbilityMenu > .raMenuWrapper #dnn_main_menu",
+                  ".EasyDNNSkin_Vision .responsAbilityMenu > .raMenuTriggerWrapper .raMenuTrigger"
+                ],
+                "name": "Normal"
+              }
+            ]
+          }
+        },
+        "sections": {
+          "items": {
+            "name": "Items",
+            "properties": {
+              "text": {
+                "type": "text",
+                "name": "Text",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .responsAbilityMenu > .raMenuWrapper #dnn_main_menu > ol > li > span .edsmm_itemContainer",
+                      ".EasyDNNSkin_Vision .responsAbilityMenu > .raMenuWrapper #dnn_main_menu > ol > li > div .edsmm_menuListsContainer ol li > span .edsmm_itemContainer",
+                      ".EasyDNNSkin_Vision .responsAbilityMenu > .raMenuTriggerWrapper .raMenuTrigger"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .responsAbilityMenu > .raMenuWrapper #dnn_main_menu > ol > li:hover > span .edsmm_itemContainer",
+                      ".EasyDNNSkin_Vision .responsAbilityMenu > .raMenuWrapper #dnn_main_menu > ol > li > div .edsmm_menuListsContainer ol li:hover > span .edsmm_itemContainer",
+                      ".EasyDNNSkin_Vision .responsAbilityMenu > .raMenuTriggerWrapper .raMenuTrigger:hover"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform"
+                    ]
+                  },
+                  {
+                    "id": "active",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .responsAbilityMenu > .raMenuWrapper #dnn_main_menu ol li.edsmm_active > span .edsmm_itemContainer",
+                      ".EasyDNNSkin_Vision .responsAbilityMenu > .raMenuWrapper #dnn_main_menu > ol > li > div .edsmm_menuListsContainer ol li.edsmm_active > span .edsmm_itemContainer",
+                      ".EasyDNNSkin_Vision .responsAbilityMenu.raMenuOpened > .raMenuTriggerWrapper .raMenuTrigger"
+                    ],
+                    "name": "Active",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  }
+                ]
+              },
+              "hoverBackgroundColor": {
+                "type": "background",
+                "name": "Hover Background Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .responsAbilityMenu > .raMenuWrapper #dnn_main_menu > ol > li:hover > span .edsmm_itemContainer"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "image",
+                      "repeat",
+                      "attachment",
+                      "position"
+                    ]
+                  }
+                ]
+              },
+              "hoverBorderColor": {
+                "type": "border",
+                "name": "Hover Border Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .responsAbilityMenu > .raMenuWrapper #dnn_main_menu > ol > li:hover > span .edsmm_itemContainer"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "width",
+                      "style"
+                    ]
+                  }
+                ]
+              },
+              "hoverBoxShadow": {
+                "type": "boxShadow",
+                "name": "Hover Shadow",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .responsAbilityMenu > .raMenuWrapper #dnn_main_menu > ol > li:hover > span .edsmm_itemContainer"
+                    ],
+                    "name": "Normal"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "content": {
+        "name": "Content",
+        "properties": {
+          "background": {
+            "type": "background",
+            "name": "Background",
+            "sharedImageDirectories": [
+              "sharedBackgrounds/"
+            ],
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Vision .EDS_content-bg"
+                ],
+                "name": "Normal"
+              }
+            ]
+          },
+          "bottomBorderColor": {
+            "type": "border",
+            "name": "Bottom Border Color",
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Vision .EDS_content-bg"
+                ],
+                "name": "Normal",
+                "forbidden": [
+                  "width",
+                  "style",
+                  "topSide",
+                  "leftSide",
+                  "rightSide"
+                ]
+              }
+            ]
+          }
+        },
+        "sections": {
+          "contentTopAbove": {
+            "name": "Content Top Above",
+            "properties": {
+              "background": {
+                "type": "background",
+                "name": "Background",
+                "show": [
+                  "home"
+                ],
+                "sharedImageDirectories": [
+                  "sharedBackgrounds/"
+                ],
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_top-content-bg-above .EDS_top-content-above-pane"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "attachment"
+                    ]
+                  }
+                ]
+              },
+              "border": {
+                "type": "border",
+                "name": "Border",
+                "show": [
+                  "home"
+                ],
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_top-content-bg-above .EDS_top-content-above-pane"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "rightSide",
+                      "leftSide"
+                    ]
+                  }
+                ]
+              },
+              "headingsColor": {
+                "type": "text",
+                "name": "Headings Color",
+                "show": [
+                  "home"
+                ],
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_top-content-bg-above .EDS_top-content-above-pane h1",
+                      ".EasyDNNSkin_Vision .EDS_top-content-bg-above .EDS_top-content-above-pane h2",
+                      ".EasyDNNSkin_Vision .EDS_top-content-bg-above .EDS_top-content-above-pane h2",
+                      ".EasyDNNSkin_Vision .EDS_top-content-bg-above .EDS_top-content-above-pane h4",
+                      ".EasyDNNSkin_Vision .EDS_top-content-bg-above .EDS_top-content-above-pane h5"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  }
+                ]
+              },
+              "textColor": {
+                "type": "text",
+                "name": "Text Color",
+                "show": [
+                  "home"
+                ],
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_top-content-bg .EDS_top-content-bg-above .EDS_top-content-above-pane",
+                      ".EasyDNNSkin_Vision .EDS_top-content-bg .EDS_top-content-bg-above .EDS_top-content-above-pane .Normal",
+                      ".EasyDNNSkin_Vision .EDS_top-content-bg .EDS_top-content-bg-above .EDS_top-content-above-pane .NormalDisabled",
+                      ".EasyDNNSkin_Vision .EDS_top-content-bg .EDS_top-content-bg-above .EDS_top-content-above-pane .NormalDeleted"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations",
+                      "shadows"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "contentTop": {
+            "name": "TopContent",
+            "properties": {
+              "background": {
+                "type": "background",
+                "name": "Background",
+                "sharedImageDirectories": [
+                  "sharedBackgrounds/"
+                ],
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_top-content-bg"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "attachment"
+                    ]
+                  }
+                ]
+              },
+              "headingsColor": {
+                "type": "text",
+                "name": "Headings Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_top-content-bg .EDS_top-content-pane h1",
+                      ".EasyDNNSkin_Vision .EDS_top-content-bg .EDS_top-content-pane h2",
+                      ".EasyDNNSkin_Vision .EDS_top-content-bg .EDS_top-content-pane h2",
+                      ".EasyDNNSkin_Vision .EDS_top-content-bg .EDS_top-content-pane h4",
+                      ".EasyDNNSkin_Vision .EDS_top-content-bg .EDS_top-content-pane h5"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  }
+                ]
+              },
+              "textColor": {
+                "type": "text",
+                "name": "Text Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_top-content-bg .EDS_top-content-pane",
+                      ".EasyDNNSkin_Vision .EDS_top-content-bg .EDS_top-content-pane .Normal",
+                      ".EasyDNNSkin_Vision .EDS_top-content-bg .EDS_top-content-pane .NormalDisabled",
+                      ".EasyDNNSkin_Vision .EDS_top-content-bg .EDS_top-content-pane .NormalDeleted"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations",
+                      "shadows"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "bottom1": {
+            "name": "Bottom 1",
+            "properties": {
+              "background": {
+                "type": "background",
+                "name": "Background",
+                "show": [
+                  "home"
+                ],
+                "sharedImageDirectories": [
+                  "sharedBackgrounds/"
+                ],
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_bottom1 .EDS_bottom1-pane"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "attachment"
+                    ]
+                  }
+                ]
+              },
+              "border": {
+                "type": "border",
+                "name": "Border",
+                "show": [
+                  "home"
+                ],
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_bottom1 .EDS_bottom1-pane"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "rightSide",
+                      "leftSide"
+                    ]
+                  }
+                ]
+              },
+              "headingsColor": {
+                "type": "text",
+                "name": "Headings Color",
+                "show": [
+                  "home"
+                ],
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_bottom1 .EDS_bottom1-pane h1",
+                      ".EasyDNNSkin_Vision .EDS_bottom1 .EDS_bottom1-pane h2",
+                      ".EasyDNNSkin_Vision .EDS_bottom1 .EDS_bottom1-pane h2",
+                      ".EasyDNNSkin_Vision .EDS_bottom1 .EDS_bottom1-pane h4",
+                      ".EasyDNNSkin_Vision .EDS_bottom1 .EDS_bottom1-pane h5"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  }
+                ]
+              },
+              "textColor": {
+                "type": "text",
+                "name": "Text Color",
+                "show": [
+                  "home"
+                ],
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_bottom1 .EDS_bottom1-pane",
+                      ".EasyDNNSkin_Vision .EDS_bottom1 .EDS_bottom1-pane .Normal",
+                      ".EasyDNNSkin_Vision .EDS_bottom1 .EDS_bottom1-pane .NormalDisabled",
+                      ".EasyDNNSkin_Vision .EDS_bottom1 .EDS_bottom1-pane .NormalDeleted"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations",
+                      "shadows"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "footer": {
+        "name": "Footer",
+        "properties": {
+          "background": {
+            "type": "background",
+            "name": "Background",
+            "sharedImageDirectories": [
+              "sharedBackgrounds/"
+            ],
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Vision .EDS_bottom-content-bg"
+                ],
+                "name": "Normal",
+                "forbidden": [
+                  "attachment"
+                ]
+              }
+            ]
+          },
+          "topBorder": {
+            "type": "border",
+            "name": "Top Border Color",
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Vision .EDS_bottom-content-bg"
+                ],
+                "name": "Normal",
+                "forbidden": [
+                  "width",
+                  "style",
+                  "leftSide",
+                  "rightSide",
+                  "bottomSide"
+                ]
+              }
+            ]
+          },
+          "headingsColor": {
+            "type": "text",
+            "name": "Headings Color",
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Vision .EDS_bottom-content-bg .EDS_bottom-content h1",
+                  ".EasyDNNSkin_Vision .EDS_bottom-content-bg .EDS_bottom-content h2",
+                  ".EasyDNNSkin_Vision .EDS_bottom-content-bg .EDS_bottom-content h3",
+                  ".EasyDNNSkin_Vision .EDS_bottom-content-bg .EDS_bottom-content h4",
+                  ".EasyDNNSkin_Vision .EDS_bottom-content-bg .EDS_bottom-content h5"
+                ],
+                "name": "Normal",
+                "forbidden": [
+                  "fontFamily",
+                  "size",
+                  "style",
+                  "weight",
+                  "lineHeight",
+                  "transform",
+                  "decorations"
+                ]
+              }
+            ]
+          },
+          "textColor": {
+            "type": "text",
+            "name": "Text Color",
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Vision .EDS_bottom-content-bg .EDS_bottom-content .Normal",
+                  ".EasyDNNSkin_Vision .EDS_bottom-content-bg .EDS_bottom-content .NormalDisabled",
+                  ".EasyDNNSkin_Vision .EDS_bottom-content-bg .EDS_bottom-content .NormalDeleted",
+                  ".EasyDNNSkin_Vision .EDS_bottom-content-bg .EDS_bottom-content .EDS_footer-links li a"
+                ],
+                "name": "Normal",
+                "forbidden": [
+                  "fontFamily",
+                  "size",
+                  "style",
+                  "weight",
+                  "lineHeight",
+                  "transform",
+                  "decorations"
+                ]
+              }
+            ]
+          },
+          "termsAndCopyrightColor": {
+            "type": "text",
+            "name": "Terms & Copyright Color",
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EDS_footer-bg .EDS_footer p.copyright",
+                  ".EDS_footer-bg .EDS_footer p.terms",
+                  ".EDS_footer-bg .EDS_footer a"
+                ],
+                "name": "Normal",
+                "forbidden": [
+                  "fontFamily",
+                  "size",
+                  "style",
+                  "weight",
+                  "lineHeight",
+                  "transform",
+                  "decorations"
+                ]
+              }
+            ]
+          }
+        },
+        "sections": {
+          "backToTop": {
+            "name": "Back To Top Link",
+            "properties": {
+              "background": {
+                "type": "background",
+                "name": "Background",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EDS_footer-bg .EDS_footer .top-link"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "color",
+                      "repeat",
+                      "position",
+                      "attachment"
+                    ]
+                  }
+                ]
+              },
+              "arrow": {
+                "type": "background",
+                "name": "Arrow",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EDS_footer-bg .EDS_footer .top-link span"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "color",
+                      "repeat",
+                      "position",
+                      "attachment"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "elements": {
+        "name": "Elements",
+        "properties": {
+          "anchor": {
+            "type": "text",
+            "name": "Anchor",
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Vision a",
+                  ".EasyDNNSkin_Vision .EDS_bottom-content-bg .EDS_bottom-content .EDS_footer-links li a:hover",
+                  ".EasyDNNSkin_Vision .ModSocialGroupsC .dnnForm.dnnGroupDirectory .dgdMainContent .dgdGroupQuickInfoWrap .dgdGroupQuickInfo h3 a",
+                  ".EasyDNNSkin_Vision .DnnModule-Journal #journalItems .journalrow .juser:hover",
+                  ".EasyDNNSkin_Vision .DnnModule-ViewProfile .pContact ul li a",
+                  ".EasyDNNSkin_Vision .EDS_bottom-content-bg .EDS_bottom-content .EDS_footer-links li a:hover"
+                ],
+                "name": "Normal",
+                "forbidden": [
+                  "fontFamily",
+                  "size",
+                  "style",
+                  "weight",
+                  "lineHeight",
+                  "transform",
+                  "shadows"
+                ]
+              },
+              {
+                "id": "hover",
+                "selectors": [
+                  ".EasyDNNSkin_Vision a:hover",
+                  ".EasyDNNSkin_Vision .ModSocialGroupsC .dnnForm.dnnGroupDirectory .dgdMainContent .dgdGroupQuickInfoWrap .dgdGroupQuickInfo h3 a:hover"
+                ],
+                "name": "Hover",
+                "forbidden": [
+                  "fontFamily",
+                  "size",
+                  "style",
+                  "weight",
+                  "lineHeight",
+                  "transform",
+                  "shadows"
+                ]
+              }
+            ]
+          }
+        },
+        "sections": {
+          "buttons": {
+            "name": "Buttons",
+            "sections": {
+              "primary": {
+                "name": "Primary",
+                "properties": {
+                  "text": {
+                    "type": "text",
+                    "name": "Text",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Vision input[type='submit']",
+                          ".EasyDNNSkin_Vision .dnnPrimaryAction",
+                          ".EasyDNNSkin_Vision .DnnModule-Journal .journalTools #journalEditor #btnShare",
+                          ".EasyDNNSkin_Vision .DnnModule-Journal #journalItems .journalrow .journalitem .jcmt .cmtbtn a"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "size",
+                          "style",
+                          "weight",
+                          "lineHeight",
+                          "transform",
+                          "decorations"
+                        ]
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".EasyDNNSkin_Vision input[type='submit']:hover",
+                          ".EasyDNNSkin_Vision .dnnPrimaryAction:hover",
+                          ".EasyDNNSkin_Vision .DnnModule-Journal .journalTools #journalEditor #btnShare:hover",
+                          ".EasyDNNSkin_Vision .DnnModule-Journal #journalItems .journalrow .journalitem .jcmt .cmtbtn a:hover"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "fontFamily",
+                          "size",
+                          "style",
+                          "weight",
+                          "lineHeight",
+                          "transform",
+                          "decorations"
+                        ]
+                      }
+                    ]
+                  },
+                  "backgroundColor": {
+                    "type": "background",
+                    "name": "Background Color",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Vision input[type='submit']",
+                          ".EasyDNNSkin_Vision .dnnPrimaryAction",
+                          ".EasyDNNSkin_Vision .DnnModule-Journal .journalTools #journalEditor #btnShare",
+                          ".EasyDNNSkin_Vision .DnnModule-Journal #journalItems .journalrow .journalitem .jcmt .cmtbtn a",
+                          ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesMemberDirectory .dnnMemberDirectory #mdMemberList li .mdMemberDetails .mdHoverActions .mdComposeMessage"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "image",
+                          "repeat",
+                          "attachment",
+                          "position"
+                        ]
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".EasyDNNSkin_Vision input[type='submit']:hover",
+                          ".EasyDNNSkin_Vision .dnnPrimaryAction:hover",
+                          ".EasyDNNSkin_Vision .DnnModule-Journal .journalTools #journalEditor #btnShare:hover",
+                          ".EasyDNNSkin_Vision .DnnModule-Journal #journalItems .journalrow .journalitem .jcmt .cmtbtn a:hover"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "image",
+                          "repeat",
+                          "attachment",
+                          "position"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "secondary": {
+                "name": "Secondary",
+                "properties": {
+                  "text": {
+                    "type": "text",
+                    "name": "Text",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Vision .dnnSecondaryAction",
+                          ".EasyDNNSkin_Vision .DnnModule-Journal .journalTools #journalOptionArea .fileUploadArea .journal_onlineFileShare .dnnSecondaryAction",
+                          ".EasyDNNSkin_Vision .DnnModule-Journal .journalTools #journalOptionArea .fileUploadArea .journal_localFileShare .dnnSecondaryAction"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "size",
+                          "style",
+                          "weight",
+                          "lineHeight",
+                          "transform",
+                          "decorations"
+                        ]
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".EasyDNNSkin_Vision .dnnSecondaryAction:hover",
+                          ".EasyDNNSkin_Vision .DnnModule-Journal .journalTools #journalOptionArea .fileUploadArea .journal_onlineFileShare .dnnSecondaryAction:hover",
+                          ".EasyDNNSkin_Vision .DnnModule-Journal .journalTools #journalOptionArea .fileUploadArea .journal_localFileShare .dnnSecondaryAction:hover"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "fontFamily",
+                          "size",
+                          "style",
+                          "weight",
+                          "lineHeight",
+                          "transform",
+                          "decorations"
+                        ]
+                      }
+                    ]
+                  },
+                  "backgroundColor": {
+                    "type": "background",
+                    "name": "Background Color",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Vision .dnnSecondaryAction",
+                          ".EasyDNNSkin_Vision .DnnModule-Journal .journalTools #journalOptionArea .fileUploadArea .journal_onlineFileShare .dnnSecondaryAction",
+                          ".EasyDNNSkin_Vision .DnnModule-Journal .journalTools #journalOptionArea .fileUploadArea .journal_localFileShare .dnnSecondaryAction"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "image",
+                          "repeat",
+                          "attachment",
+                          "position"
+                        ]
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".EasyDNNSkin_Vision .dnnSecondaryAction:hover",
+                          ".EasyDNNSkin_Vision .DnnModule-Journal .journalTools #journalOptionArea .fileUploadArea .journal_onlineFileShare .dnnSecondaryAction:hover",
+                          ".EasyDNNSkin_Vision .DnnModule-Journal .journalTools #journalOptionArea .fileUploadArea .journal_localFileShare .dnnSecondaryAction:hover"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "image",
+                          "repeat",
+                          "attachment",
+                          "position"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "bigButton": {
+                "name": "Big Button",
+                "properties": {
+                  "text": {
+                    "type": "text",
+                    "name": "Text",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Vision .bigButton"
+                        ],
+                        "name": "Normal"
+                      }
+                    ]
+                  },
+                  "background": {
+                    "type": "background",
+                    "name": "Background",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Vision .bigButton"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "attachment"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "inputFields": {
+            "name": "Input Fields",
+            "properties": {
+              "textColor": {
+                "type": "text",
+                "name": "Text Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision input[type='text']",
+                      ".EasyDNNSkin_Vision input[type='password']",
+                      ".EasyDNNSkin_Vision select",
+                      ".EasyDNNSkin_Vision textarea",
+                      ".EasyDNNSkin_Vision .DnnModule-Journal .journalTools #journalEditor #journalContent",
+                      ".EasyDNNSkin_Vision .DnnModule-Journal .journalTools #journalEditor #journalPlaceholder",
+                      ".EasyDNNSkin_Vision .DnnModule-Journal #journalItems .journalrow .journalitem .jcmt .cmteditarea .editorPlaceholder",
+                      ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesMemberDirectory .dnnMemberDirectory .mdSearch .mdSearchBar input[type='text']",
+                      ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesMemberDirectory .dnnMemberDirectory .mdSearch .mdSearchBar input[type='text']:hover",
+                      ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesMemberDirectory .dnnMemberDirectory .mdSearch .mdSearchBar input[type='text']:focus"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations",
+                      "shadows"
+                    ]
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision input[type='text']:hover",
+                      ".EasyDNNSkin_Vision input[type='password']:hover",
+                      ".EasyDNNSkin_Vision select:hover",
+                      ".EasyDNNSkin_Vision textarea:hover"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations",
+                      "shadows"
+                    ]
+                  },
+                  {
+                    "id": "focus",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision input[type='text']:focus",
+                      ".EasyDNNSkin_Vision input[type='password']:focus",
+                      ".EasyDNNSkin_Vision select:focus",
+                      ".EasyDNNSkin_Vision textarea:focus"
+                    ],
+                    "name": "Focus",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations",
+                      "shadows"
+                    ]
+                  }
+                ]
+              },
+              "backgroundColor": {
+                "type": "background",
+                "name": "Background Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision input[type='text']",
+                      ".EasyDNNSkin_Vision input[type='password']",
+                      ".EasyDNNSkin_Vision select",
+                      ".EasyDNNSkin_Vision textarea",
+                      ".EasyDNNSkin_Vision .DnnModule-Journal .journalTools #journalEditor #journalContent",
+                      ".EasyDNNSkin_Vision .DnnModule-Journal #journalItems .journalrow .journalitem .jcmt .cmteditarea",
+                      ".EasyDNNSkin_Vision .DnnModule-Journal #journalItems .journalrow .journalitem .jcmt .cmteditarea textarea",
+                      ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesMemberDirectory .dnnMemberDirectory .mdSearch .mdSearchBar input[type='text']",
+                      ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesMemberDirectory .dnnMemberDirectory .mdSearch .mdSearchBar input[type='text']:hover",
+                      ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesMemberDirectory .dnnMemberDirectory .mdSearch .mdSearchBar input[type='text']:focus"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "image",
+                      "repeat",
+                      "attachment",
+                      "position"
+                    ]
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision input[type='text']:hover",
+                      ".EasyDNNSkin_Vision input[type='password']:hover",
+                      ".EasyDNNSkin_Vision select:hover",
+                      ".EasyDNNSkin_Vision textarea:hover"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "image",
+                      "repeat",
+                      "attachment",
+                      "position"
+                    ]
+                  },
+                  {
+                    "id": "focus",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision input[type='text']:focus",
+                      ".EasyDNNSkin_Vision input[type='password']:focus",
+                      ".EasyDNNSkin_Vision select:focus",
+                      ".EasyDNNSkin_Vision textarea:focus"
+                    ],
+                    "name": "Focus",
+                    "forbidden": [
+                      "image",
+                      "repeat",
+                      "attachment",
+                      "position"
+                    ]
+                  }
+                ]
+              },
+              "borderColor": {
+                "type": "border",
+                "name": "Border Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision input[type='text']",
+                      ".EasyDNNSkin_Vision input[type='password']",
+                      ".EasyDNNSkin_Vision select",
+                      ".EasyDNNSkin_Vision textarea",
+                      ".EasyDNNSkin_Vision .DnnModule-Journal .journalTools",
+                      ".EasyDNNSkin_Vision .DnnModule-Journal .journalTools #journalEditor #journalContent",
+                      ".EasyDNNSkin_Vision .DnnModule-Journal #journalItems .journalrow .journalitem .jcmt .cmteditarea",
+                      ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesMemberDirectory .dnnMemberDirectory .mdSearch .mdSearchBar input[type='text']",
+                      ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesMemberDirectory .dnnMemberDirectory .mdSearch .mdSearchBar input[type='text']:hover",
+                      ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesMemberDirectory .dnnMemberDirectory .mdSearch .mdSearchBar input[type='text']:focus",
+                      ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesMemberDirectory .dnnMemberDirectory .mdSearch .mdSearchBar .dnnPrimaryAction"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "width",
+                      "style"
+                    ]
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision input[type='text']:hover",
+                      ".EasyDNNSkin_Vision input[type='password']:hover",
+                      ".EasyDNNSkin_Vision select:hover",
+                      ".EasyDNNSkin_Vision textarea:hover"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "width",
+                      "style"
+                    ]
+                  },
+                  {
+                    "id": "focus",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision input[type='text']:focus",
+                      ".EasyDNNSkin_Vision input[type='password']:focus",
+                      ".EasyDNNSkin_Vision select:focus",
+                      ".EasyDNNSkin_Vision textarea:focus"
+                    ],
+                    "name": "Focus",
+                    "forbidden": [
+                      "width",
+                      "style"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "buttonWithGlyphicon": {
+            "name": "Button With Glyphicon",
+            "properties": {
+              "backgroundColor": {
+                "type": "background",
+                "name": "Background Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .iconButton .glyphicon"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "image",
+                      "position",
+                      "repeat",
+                      "attachment"
+                    ]
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .iconButton:hover .glyphicon"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "image",
+                      "position",
+                      "repeat",
+                      "attachment"
+                    ]
+                  }
+                ]
+              },
+              "glyphiconColor": {
+                "type": "text",
+                "name": "Glyphicon Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .iconButton .glyphicon:before"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .iconButton:hover .glyphicon:before"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  }
+                ]
+              },
+              "glyphiconSize": {
+                "type": "text",
+                "name": "Glyphicon Size",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .iconButton .glyphicon:before"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "color",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations",
+                      "shadows"
+                    ]
+                  },
+                  {
+                    "id": "small",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .iconButton.small .glyphicon:before"
+                    ],
+                    "name": "Small",
+                    "forbidden": [
+                      "fontFamily",
+                      "color",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations",
+                      "shadows"
+                    ]
+                  },
+                  {
+                    "id": "large",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .iconButton.large .glyphicon:before"
+                    ],
+                    "name": "Large",
+                    "forbidden": [
+                      "fontFamily",
+                      "color",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations",
+                      "shadows"
+                    ]
+                  }
+                ]
+              },
+              "text": {
+                "type": "text",
+                "name": "Text",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .iconButton .iconTitle"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "size",
+                      "lineHeight"
+                    ]
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .iconButton:hover .iconTitle"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform"
+                    ]
+                  }
+                ]
+              },
+              "textSize": {
+                "type": "text",
+                "name": "Text Size",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .iconButton .iconTitle"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "color",
+                      "style",
+                      "weight",
+                      "transform",
+                      "decorations",
+                      "shadows"
+                    ]
+                  },
+                  {
+                    "id": "small",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .iconButton.small .iconTitle"
+                    ],
+                    "name": "Small",
+                    "forbidden": [
+                      "fontFamily",
+                      "color",
+                      "style",
+                      "weight",
+                      "transform",
+                      "decorations",
+                      "shadows"
+                    ]
+                  },
+                  {
+                    "id": "large",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .iconButton.large .iconTitle"
+                    ],
+                    "name": "Large",
+                    "forbidden": [
+                      "fontFamily",
+                      "color",
+                      "style",
+                      "weight",
+                      "transform",
+                      "decorations",
+                      "shadows"
+                    ]
+                  }
+                ]
+              },
+              "separator": {
+                "type": "border",
+                "name": "Separator",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .row [class*=\"col-sm\"] .iconButton"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "topSide",
+                      "rightSide",
+                      "bottomSide"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "tabsNavigation": {
+            "name": "Tabs Navigation",
+            "properties": {
+              "backgroundColor": {
+                "type": "background",
+                "name": "Background Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_tabs > ul .edsTabulator_tabTrigger",
+                      ".EasyDNNSkin_Vision .ui-tabs .ui-tabs-nav li.ui-state-default a"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "image",
+                      "repeat",
+                      "attachment",
+                      "position"
+                    ]
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_tabs > ul .edsTabulator_tabTrigger:hover",
+                      ".EasyDNNSkin_Vision .EDS_tabs > ul .edsTabulator_tabTrigger.edsTabulator_active:hover",
+                      ".EasyDNNSkin_Vision .ui-tabs .ui-tabs-nav li.ui-state-default a:hover"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "image",
+                      "repeat",
+                      "attachment",
+                      "position"
+                    ]
+                  },
+                  {
+                    "id": "active",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_tabs > ul > .edsTabulator_tabTrigger.edsTabulator_active",
+                      ".EasyDNNSkin_Vision .ui-tabs .ui-tabs-nav li.ui-state-active a:hover",
+                      ".EasyDNNSkin_Vision .ui-tabs .ui-tabs-nav li.ui-state-active a"
+                    ],
+                    "name": "Active",
+                    "forbidden": [
+                      "image",
+                      "repeat",
+                      "attachment",
+                      "position"
+                    ]
+                  }
+                ]
+              },
+              "text": {
+                "type": "text",
+                "name": "Text",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_tabs > ul .edsTabulator_tabTrigger"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_tabs > ul .edsTabulator_tabTrigger:hover",
+                      ".EasyDNNSkin_Vision .EDS_tabs > ul .edsTabulator_tabTrigger.edsTabulator_active:hover"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  },
+                  {
+                    "id": "active",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_tabs > ul .edsTabulator_tabTrigger.edsTabulator_active"
+                    ],
+                    "name": "Active",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  }
+                ]
+              },
+              "bottomBorderColor": {
+                "type": "border",
+                "name": "Bottom Border Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_tabs > ul",
+                      ".EasyDNNSkin_Vision .ui-tabs .ui-tabs-nav"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "width",
+                      "style",
+                      "topSide",
+                      "leftSide",
+                      "rightSide"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "accordionExpandableHead": {
+            "name": "Accordion Header",
+            "properties": {
+              "backgroundColor": {
+                "type": "background",
+                "name": "Background Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_accordion .edsAccordion_section .edsAccordion_title"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "image",
+                      "repeat",
+                      "attachment",
+                      "position"
+                    ]
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_accordion .edsAccordion_section .edsAccordion_title:hover"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "image",
+                      "repeat",
+                      "attachment",
+                      "position"
+                    ]
+                  },
+                  {
+                    "id": "active",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_accordion .edsAccordion_section.edsAccordion_active > .edsAccordion_title"
+                    ],
+                    "name": "Active",
+                    "forbidden": [
+                      "image",
+                      "repeat",
+                      "attachment",
+                      "position"
+                    ]
+                  }
+                ]
+              },
+              "expandIcon": {
+                "type": "background",
+                "name": "Expand Icon",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_accordion .edsAccordion_section .edsAccordion_title"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "color",
+                      "repeat",
+                      "attachment"
+                    ]
+                  },
+                  {
+                    "id": "active",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_accordion .edsAccordion_section.edsAccordion_active > .edsAccordion_title"
+                    ],
+                    "name": "Active",
+                    "forbidden": [
+                      "color",
+                      "repeat",
+                      "attachment"
+                    ]
+                  }
+                ]
+              },
+              "text": {
+                "type": "text",
+                "name": "Text",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_accordion .edsAccordion_section .edsAccordion_title"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "decorations"
+                    ]
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_accordion .edsAccordion_section .edsAccordion_title:hover"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  },
+                  {
+                    "id": "active",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .EDS_accordion .edsAccordion_section.edsAccordion_active .edsAccordion_title"
+                    ],
+                    "name": "Active",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "sideMenu": {
+            "name": "Side Menu",
+            "properties": {
+              "textStyleForAll": {
+                "type": "text",
+                "name": "Text Style For All",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .eds_sideMenu ul li a"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "size"
+                    ]
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .eds_sideMenu ul li a:hover"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform"
+                    ]
+                  },
+                  {
+                    "id": "active",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .eds_sideMenu ul li.eds_active > a"
+                    ],
+                    "name": "Active",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform"
+                    ]
+                  }
+                ]
+              },
+              "rootItems": {
+                "type": "text",
+                "name": "Root Items",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .eds_sideMenu > ul > li > a"
+                    ],
+                    "name": "Normal"
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .eds_sideMenu > ul > li > a:hover"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform"
+                    ]
+                  },
+                  {
+                    "id": "active",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .eds_sideMenu > ul > li.eds_active > a"
+                    ],
+                    "name": "Active",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform"
+                    ]
+                  }
+                ]
+              },
+              "childItems": {
+                "type": "text",
+                "name": "Child Items",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .eds_sideMenu ul li ul li a"
+                    ],
+                    "name": "Normal"
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .eds_sideMenu ul li ul li a:hover"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform"
+                    ]
+                  },
+                  {
+                    "id": "active",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .eds_sideMenu ul li ul li.eds_active > a"
+                    ],
+                    "name": "Active",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform"
+                    ]
+                  }
+                ]
+              },
+              "itemsBorder": {
+                "type": "border",
+                "name": "Items Border",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision .eds_sideMenu ul li"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "rightSide",
+                      "bottomSide",
+                      "leftSide"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "floatingMenu1": {
+            "name": "Floating Menu 1",
+            "properties": {
+              "iconBackground": {
+                "type": "background",
+                "name": "Icon Background Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".eds_floatingMenuStyle1 > ul > li:before"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "image",
+                      "position",
+                      "repeat",
+                      "attachment",
+                      "animation"
+                    ]
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".eds_floatingMenuStyle1 > ul > li:hover:before"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "image",
+                      "position",
+                      "repeat",
+                      "attachment",
+                      "animation"
+                    ]
+                  }
+                ]
+              },
+              "iconShadow": {
+                "type": "boxShadow",
+                "name": "Icon Shadow",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".eds_floatingMenuStyle1 > ul > li:before"
+                    ],
+                    "name": "Normal"
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".eds_floatingMenuStyle1 > ul > li:hover:before"
+                    ],
+                    "name": "Hover"
+                  }
+                ]
+              },
+              "iconBorderRadius": {
+                "type": "borderRadius",
+                "name": "Icon Border Radius",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".eds_floatingMenuStyle1 > ul > li:before"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "second"
+                    ]
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".eds_floatingMenuStyle1 > ul > li:hover:before"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "second"
+                    ]
+                  }
+                ]
+              },
+              "iconColor": {
+                "type": "text",
+                "name": "Icon Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".eds_floatingMenuStyle1 > ul > li .eds_icon"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".eds_floatingMenuStyle1 > ul > li:hover .eds_icon"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  }
+                ]
+              },
+              "hoverPointerColor": {
+                "type": "border",
+                "name": "Hover Pointer Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".eds_floatingMenuStyle1 > ul > li > a:before"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "width",
+                      "style",
+                      "topSide",
+                      "rightSide",
+                      "bottomSide"
+                    ]
+                  }
+                ]
+              },
+              "linkText": {
+                "type": "text",
+                "name": "Link Text",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".eds_floatingMenuStyle1 > ul > li > a"
+                    ],
+                    "name": "Normal",
+                    "important": [
+                      "color",
+                      "decorations"
+                    ]
+                  }
+                ]
+              },
+              "linkBackgroundColor": {
+                "type": "background",
+                "name": "Link Text Background Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".eds_floatingMenuStyle1 > ul > li > a:after",
+                      ".eds_floatingMenuStyle1 > ul > li:after"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "image",
+                      "position",
+                      "repeat",
+                      "attachment",
+                      "animation"
+                    ]
+                  }
+                ]
+              },
+              "linkBorderRadius": {
+                "type": "borderRadius",
+                "name": "Link Border Radius",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".eds_floatingMenuStyle1 > ul > li > a:after"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "second",
+                      "topLeft",
+                      "bottomLeft"
+                    ]
+                  }
+                ]
+              }
+            },
+            "sections": {
+              "menuToggleButton": {
+                "name": "Menu Toggle Button",
+                "properties": {
+                  "background": {
+                    "type": "background",
+                    "name": "Background",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".eds_floatingMenuStyle1 > span"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "attachment",
+                          "animation"
+                        ]
+                      },
+                      {
+                        "id": "active",
+                        "selectors": [
+                          ".eds_floatingMenuStyle1.eds_floatingMenuActive > span"
+                        ],
+                        "name": "Active",
+                        "forbidden": [
+                          "attachment",
+                          "animation"
+                        ]
+                      }
+                    ]
+                  },
+                  "shadows": {
+                    "type": "boxShadow",
+                    "name": "Shadows",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".eds_floatingMenuStyle1 > span"
+                        ],
+                        "name": "Normal"
+                      },
+                      {
+                        "id": "active",
+                        "selectors": [
+                          ".eds_floatingMenuStyle1.eds_floatingMenuActive > span"
+                        ],
+                        "name": "Active"
+                      }
+                    ]
+                  },
+                  "borderRadius": {
+                    "type": "borderRadius",
+                    "name": "Border Radius",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".eds_floatingMenuStyle1 > span"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "second"
+                        ]
+                      }
+                    ]
+                  },
+                  "icon": {
+                    "type": "text",
+                    "name": "Icon",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".eds_floatingMenuStyle1 > span:before",
+                          ".eds_floatingMenuStyle1 > span:after"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "fontFamily",
+                          "style",
+                          "weight",
+                          "transform",
+                          "decorations"
+                        ]
+                      },
+                      {
+                        "id": "active",
+                        "selectors": [
+                          ".eds_floatingMenuStyle1.eds_floatingMenuActive > span:before",
+                          ".eds_floatingMenuStyle1.eds_floatingMenuActive > span:after"
+                        ],
+                        "name": "Active",
+                        "forbidden": [
+                          "fontFamily",
+                          "size",
+                          "style",
+                          "weight",
+                          "lineHeight",
+                          "transform",
+                          "decorations"
+                        ]
+                      }
+                    ]
+                  },
+                  "opacity": {
+                    "type": "opacity",
+                    "name": "Opacity",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".eds_floatingMenuStyle1 > span"
+                        ],
+                        "name": "Normal"
+                      },
+                      {
+                        "id": "active",
+                        "selectors": [
+                          ".eds_floatingMenuStyle1.eds_floatingMenuActive > span"
+                        ],
+                        "name": "Active"
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "floatingMenu2": {
+            "name": "Floating Menu 2",
+            "properties": {
+              "bulletBackground": {
+                "type": "background",
+                "name": "Bullet Background",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".eds_floatingMenuStyle2 > ul > li:before"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "attachment",
+                      "animation"
+                    ]
+                  }
+                ]
+              },
+              "bulletShadow": {
+                "type": "boxShadow",
+                "name": "Bullet Shadow",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".eds_floatingMenuStyle2 > ul > li:before"
+                    ],
+                    "name": "Normal"
+                  }
+                ]
+              },
+              "guideLine": {
+                "type": "background",
+                "name": "Guide Line",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".eds_floatingMenuStyle2 > ul > li:after"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "image",
+                      "position",
+                      "repeat",
+                      "attachment",
+                      "animation"
+                    ]
+                  }
+                ]
+              },
+              "iconBackground": {
+                "type": "background",
+                "name": "Icon Background Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".eds_floatingMenuStyle2 > ul > li .eds_icon"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "image",
+                      "position",
+                      "repeat",
+                      "attachment",
+                      "animation"
+                    ]
+                  }
+                ]
+              },
+              "iconShadow": {
+                "type": "boxShadow",
+                "name": "Icon Shadow",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".eds_floatingMenuStyle2 > ul > li .eds_icon"
+                    ],
+                    "name": "Normal"
+                  }
+                ]
+              },
+              "iconBorderRadius": {
+                "type": "borderRadius",
+                "name": "Icon Border Radius",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".eds_floatingMenuStyle2 > ul > li .eds_icon"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "second"
+                    ]
+                  }
+                ]
+              },
+              "iconColor": {
+                "type": "text",
+                "name": "Icon Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".eds_floatingMenuStyle2 > ul > li .eds_icon"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  }
+                ]
+              },
+              "linkText": {
+                "type": "text",
+                "name": "Link Text",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".eds_floatingMenuStyle2 > ul > li > a"
+                    ],
+                    "name": "Normal"
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".eds_floatingMenuStyle2 > ul > li:hover > a",
+                      ".eds_floatingMenuStyle2 > ul > li.edsfnl_active > a"
+                    ],
+                    "name": "Hover/Active",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform"
+                    ]
+                  }
+                ]
+              },
+              "linkHoverBackgroundColor": {
+                "type": "background",
+                "name": "Link Hover/Active Background Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".eds_floatingMenuStyle2 > ul > li > a:after"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "image",
+                      "position",
+                      "repeat",
+                      "attachment",
+                      "animation"
+                    ]
+                  }
+                ]
+              },
+              "linkBorderRadius": {
+                "type": "borderRadius",
+                "name": "Link Border Radius",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".eds_floatingMenuStyle2 > ul > li > a:after"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "second",
+                      "topLeft",
+                      "bottomLeft"
+                    ]
+                  }
+                ]
+              }
+            },
+            "sections": {
+              "menuToggleButton": {
+                "name": "Menu Toggle Button",
+                "properties": {
+                  "background": {
+                    "type": "background",
+                    "name": "Background",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".eds_floatingMenuStyle2 > span"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "attachment",
+                          "animation"
+                        ]
+                      },
+                      {
+                        "id": "active",
+                        "selectors": [
+                          ".eds_floatingMenuStyle2.eds_floatingMenuActive > span"
+                        ],
+                        "name": "Active",
+                        "forbidden": [
+                          "attachment",
+                          "animation"
+                        ]
+                      }
+                    ]
+                  },
+                  "shadows": {
+                    "type": "boxShadow",
+                    "name": "Shadows",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".eds_floatingMenuStyle2 > span"
+                        ],
+                        "name": "Normal"
+                      },
+                      {
+                        "id": "active",
+                        "selectors": [
+                          ".eds_floatingMenuStyle2.eds_floatingMenuActive > span"
+                        ],
+                        "name": "Active"
+                      }
+                    ]
+                  },
+                  "borderRadius": {
+                    "type": "borderRadius",
+                    "name": "Border Radius",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".eds_floatingMenuStyle2 > span"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "second"
+                        ]
+                      }
+                    ]
+                  },
+                  "icon": {
+                    "type": "text",
+                    "name": "Icon",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".eds_floatingMenuStyle2 > span:before",
+                          ".eds_floatingMenuStyle2 > span:after"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "fontFamily",
+                          "style",
+                          "weight",
+                          "transform",
+                          "decorations"
+                        ]
+                      },
+                      {
+                        "id": "active",
+                        "selectors": [
+                          ".eds_floatingMenuStyle2.eds_floatingMenuActive > span:before",
+                          ".eds_floatingMenuStyle2.eds_floatingMenuActive > span:after"
+                        ],
+                        "name": "Active",
+                        "forbidden": [
+                          "fontFamily",
+                          "size",
+                          "style",
+                          "weight",
+                          "lineHeight",
+                          "transform",
+                          "decorations"
+                        ]
+                      }
+                    ]
+                  },
+                  "opacity": {
+                    "type": "opacity",
+                    "name": "Opacity",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".eds_floatingMenuStyle2 > span"
+                        ],
+                        "name": "Normal"
+                      },
+                      {
+                        "id": "active",
+                        "selectors": [
+                          ".eds_floatingMenuStyle2.eds_floatingMenuActive > span"
+                        ],
+                        "name": "Active"
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "circlularMenu": {
+            "name": "Circular Menu",
+            "sections": {
+              "menuToggleButton": {
+                "name": "Menu Toggle Button",
+                "properties": {
+                  "background": {
+                    "type": "background",
+                    "name": "Background",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".eds_circularMenu > span"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "attachment",
+                          "animation"
+                        ]
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".eds_circularMenu > span:hover"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "attachment",
+                          "animation"
+                        ]
+                      },
+                      {
+                        "id": "active",
+                        "selectors": [
+                          ".eds_circularMenu.eds_floatingMenuActive > span"
+                        ],
+                        "name": "Active",
+                        "forbidden": [
+                          "attachment",
+                          "animation"
+                        ]
+                      }
+                    ]
+                  },
+                  "shadows": {
+                    "type": "boxShadow",
+                    "name": "Shadows",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".eds_circularMenu > span"
+                        ],
+                        "name": "Normal"
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".eds_circularMenu > span:hover"
+                        ],
+                        "name": "Hover"
+                      },
+                      {
+                        "id": "active",
+                        "selectors": [
+                          ".eds_circularMenu.eds_floatingMenuActive > span"
+                        ],
+                        "name": "Active"
+                      }
+                    ]
+                  },
+                  "icon": {
+                    "type": "text",
+                    "name": "Icon",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".eds_circularMenu > span:before"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "fontFamily",
+                          "style",
+                          "weight",
+                          "transform",
+                          "decorations"
+                        ]
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".eds_circularMenu > span:hover:before"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "fontFamily",
+                          "size",
+                          "style",
+                          "weight",
+                          "lineHeight",
+                          "transform",
+                          "decorations"
+                        ]
+                      },
+                      {
+                        "id": "active",
+                        "selectors": [
+                          ".eds_circularMenu.eds_floatingMenuActive > span:after"
+                        ],
+                        "name": "Active",
+                        "forbidden": [
+                          "fontFamily",
+                          "size",
+                          "style",
+                          "weight",
+                          "lineHeight",
+                          "transform",
+                          "decorations"
+                        ]
+                      },
+                      {
+                        "id": "activeHover",
+                        "selectors": [
+                          ".eds_circularMenu.eds_floatingMenuActive > span:hover:after"
+                        ],
+                        "name": "Active Hover",
+                        "forbidden": [
+                          "fontFamily",
+                          "size",
+                          "style",
+                          "weight",
+                          "lineHeight",
+                          "transform",
+                          "decorations"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "menuItems": {
+                "name": "Menu Items",
+                "properties": {
+                  "background": {
+                    "type": "background",
+                    "name": "Background",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".eds_circularMenu.eds_floatingMenuActive > ul li"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "attachment",
+                          "animation"
+                        ]
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".eds_circularMenu > ul li",
+                          ".eds_circularMenu.eds_floatingMenuActive > ul li:hover",
+                          ".eds_circularMenu.eds_floatingMenuActive > ul li.edsfnl_active"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "attachment",
+                          "animation"
+                        ]
+                      }
+                    ]
+                  },
+                  "shadows": {
+                    "type": "boxShadow",
+                    "name": "Shadows",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".eds_circularMenu.eds_floatingMenuActive > ul li"
+                        ],
+                        "name": "Normal"
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".eds_circularMenu.eds_floatingMenuActive > ul li:hover",
+                          ".eds_circularMenu.eds_floatingMenuActive > ul li.edsfnl_active"
+                        ],
+                        "name": "Hover"
+                      }
+                    ]
+                  },
+                  "icon": {
+                    "type": "text",
+                    "name": "Icon",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".eds_circularMenu.eds_floatingMenuActive > ul li .eds_icon"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "fontFamily",
+                          "style",
+                          "weight",
+                          "transform",
+                          "decorations"
+                        ]
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".eds_circularMenu.eds_floatingMenuActive > ul li:hover .eds_icon"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "fontFamily",
+                          "size",
+                          "style",
+                          "weight",
+                          "lineHeight",
+                          "transform",
+                          "decorations"
+                        ]
+                      }
+                    ]
+                  },
+                  "text": {
+                    "type": "text",
+                    "name": "Text",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".eds_circularMenu > ul li > a"
+                        ],
+                        "name": "Normal"
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".eds_circularMenu.eds_floatingMenuActive > ul li:hover > a",
+                          ".eds_circularMenu.eds_floatingMenuActive > ul li.edsfnl_active > a"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "fontFamily",
+                          "size",
+                          "style",
+                          "weight",
+                          "lineHeight",
+                          "transform"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "socialPagesElements": {
+            "name": "Social Pages Elements",
+            "show": [
+              "socialPages"
+            ],
+            "sections": {
+              "groupAndAuthorBox": {
+                "name": "Group And Author Box",
+                "properties": {
+                  "backgroundColor": {
+                    "type": "background",
+                    "name": "Background Color",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Vision .ModSocialGroupsC .dnnForm.dnnGroupDirectory .dgdMainContent .dgdGroupQuickInfoWrap",
+                          ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesMemberDirectory .dnnMemberDirectory #mdMemberList > li",
+                          ".EasyDNNSkin_Vision .DnnModule-Journal .journalTools #journalOptionArea .fileUploadArea",
+                          ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesCoreMessaging #smMainContent .messageControls .messageSelect > ul > li ul",
+                          ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesMemberDirectory .dnnMemberDirectory .mdAdvancedSearchForm"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "image",
+                          "repeat",
+                          "attachment",
+                          "position"
+                        ]
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesMemberDirectory .dnnMemberDirectory #mdMemberList > li:hover"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "image",
+                          "repeat",
+                          "attachment",
+                          "position"
+                        ]
+                      }
+                    ]
+                  },
+                  "borderColor": {
+                    "type": "border",
+                    "name": "Border Color",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Vision .ModSocialGroupsC .dnnForm.dnnGroupDirectory .dgdMainContent .dgdGroupQuickInfoWrap",
+                          ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesMemberDirectory .dnnMemberDirectory #mdMemberList > li"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "width",
+                          "style"
+                        ]
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesMemberDirectory .dnnMemberDirectory #mdMemberList > li:hover"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "width",
+                          "style"
+                        ]
+                      }
+                    ]
+                  },
+                  "avatarBorderColor": {
+                    "type": "background",
+                    "name": "Avatar Border Color",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Vision .ModSocialGroupsC .dnnForm.dnnGroupDirectory .dgdMainContent .dgdGroupQuickInfoWrap .dgdAvatar",
+                          ".EasyDNNSkin_Vision .DnnModule-SocialGroups .GroupViewTop .dgdAvatar",
+                          ".EasyDNNSkin_Vision .DnnModule-Journal #journalItems .journalrow .author img",
+                          ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesMemberDirectory .dnnMemberDirectory #mdMemberList li .mdMemberDetails .mdMemberImg",
+                          ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesCoreMessaging #smMainContent #dnnCoreMessaging .dnnCoreMessagingContent .smListings .profileImg"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "image",
+                          "repeat",
+                          "attachment",
+                          "position"
+                        ]
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesMemberDirectory .dnnMemberDirectory #mdMemberList li .mdMemberDetails .mdMemberImg:hover",
+                          ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesCoreMessaging #smMainContent #dnnCoreMessaging .dnnCoreMessagingContent .smListings .profileImg:hover"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "image",
+                          "repeat",
+                          "attachment",
+                          "position"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "sections": {
+                  "detailsList": {
+                    "name": "Details List",
+                    "properties": {
+                      "backgroundColor": {
+                        "type": "background",
+                        "name": "Background Color",
+                        "states": [
+                          {
+                            "id": "default",
+                            "selectors": [
+                              ".EasyDNNSkin_Vision .ModSocialGroupsC .dnnForm.dnnGroupDirectory .dgdMainContent .dgdGroupQuickInfoWrap .dgdGroupQuickInfo ul",
+                              ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesMemberDirectory .dnnMemberDirectory #mdMemberList li .mdMemberDetails .mdHoverActions"
+                            ],
+                            "name": "Normal",
+                            "forbidden": [
+                              "image",
+                              "repeat",
+                              "attachment",
+                              "position"
+                            ]
+                          }
+                        ]
+                      },
+                      "textColor": {
+                        "type": "text",
+                        "name": "Text Color",
+                        "states": [
+                          {
+                            "id": "default",
+                            "selectors": [
+                              ".EasyDNNSkin_Vision .ModSocialGroupsC .dnnForm.dnnGroupDirectory .dgdMainContent .dgdGroupQuickInfoWrap .dgdGroupQuickInfo ul li",
+                              ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesMemberDirectory .dnnMemberDirectory #mdMemberList li .mdMemberDetails .mdHoverActions li",
+                              ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesMemberDirectory .dnnMemberDirectory #mdMemberList li .mdMemberDetails .mdHoverActions li p",
+                              ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesMemberDirectory .dnnMemberDirectory #mdMemberList li .mdMemberDetails .mdHoverActions li a",
+                              ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesMemberDirectory .dnnMemberDirectory #mdMemberList li .mdMemberDetails .MdMemberInfo li"
+                            ],
+                            "name": "Normal",
+                            "forbidden": [
+                              "fontFamily",
+                              "size",
+                              "style",
+                              "weight",
+                              "lineHeight",
+                              "transform",
+                              "decorations",
+                              "shadows"
+                            ]
+                          }
+                        ]
+                      },
+                      "groupIcons": {
+                        "type": "background",
+                        "name": "Group Icons",
+                        "states": [
+                          {
+                            "id": "default",
+                            "selectors": [
+                              ".EasyDNNSkin_Vision .ModSocialGroupsC .dnnForm.dnnGroupDirectory .dgdMainContent .dgdGroupQuickInfoWrap .dgdGroupQuickInfo ul li"
+                            ],
+                            "name": "Normal",
+                            "forbidden": [
+                              "color",
+                              "repeat",
+                              "attachment",
+                              "position"
+                            ]
+                          }
+                        ]
+                      },
+                      "authorIcons": {
+                        "type": "background",
+                        "name": "Author Icons",
+                        "states": [
+                          {
+                            "id": "default",
+                            "selectors": [
+                              ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesMemberDirectory .dnnMemberDirectory #mdMemberList li .mdMemberDetails .mdHoverActions li.mdFriendRequest a",
+                              ".EasyDNNSkin_Vision .DnnModule-DotNetNukeModulesMemberDirectory .dnnMemberDirectory #mdMemberList li .mdMemberDetails .mdHoverActions li.mdFollow a"
+                            ],
+                            "name": "Normal",
+                            "forbidden": [
+                              "color",
+                              "repeat",
+                              "attachment",
+                              "position"
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "console": {
+                "name": "Console",
+                "properties": {
+                  "textColor": {
+                    "type": "text",
+                    "name": "Text Color",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Vision .DnnModule-Console .console .console-none div h3"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "fontFamily",
+                          "size",
+                          "style",
+                          "weight",
+                          "lineHeight",
+                          "transform",
+                          "decorations"
+                        ]
+                      },
+                      {
+                        "id": "active",
+                        "selectors": [
+                          ".EasyDNNSkin_Vision .DnnModule-Console .console .console-none div.active h3"
+                        ],
+                        "name": "Active",
+                        "forbidden": [
+                          "fontFamily",
+                          "size",
+                          "style",
+                          "weight",
+                          "lineHeight",
+                          "transform",
+                          "decorations"
+                        ]
+                      }
+                    ]
+                  },
+                  "borderColor": {
+                    "type": "border",
+                    "name": "Border Color",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Vision .DnnModule-Console h4",
+                          ".EasyDNNSkin_Vision .DnnModule-Console .console .console-none div"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "width",
+                          "style",
+                          "topSide",
+                          "leftSide",
+                          "rightSide"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "fonts": {
+        "name": "Fonts",
+        "properties": {
+          "headingsFont": {
+            "type": "text",
+            "name": "Headings",
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Vision h1",
+                  ".EasyDNNSkin_Vision h2",
+                  ".EasyDNNSkin_Vision h3",
+                  ".EasyDNNSkin_Vision h4",
+                  ".EasyDNNSkin_Vision h5",
+                  ".EasyDNNSkin_Vision .DnnModule-Journal #journalItems .journalrow .journalitem > p .authorname",
+                  ".EDS_footer-bg .EDS_footer p"
+                ],
+                "name": "Normal",
+                "forbidden": [
+                  "size",
+                  "style",
+                  "lineHeight",
+                  "transform",
+                  "decorations"
+                ]
+              }
+            ]
+          },
+          "contentFont": {
+            "type": "text",
+            "name": "Content",
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Vision",
+                  ".EasyDNNSkin_Vision .Normal",
+                  ".EasyDNNSkin_Vision .NormalDisabled",
+                  ".EasyDNNSkin_Vision .NormalDeleted",
+                  ".EasyDNNSkin_Vision pre",
+                  ".EasyDNNSkin_Vision blockquote, .EasyDNNSkin_Vision q",
+                  ".EasyDNNSkin_Vision .EDS_header-bg .EDS_header .login-wrapper #login ul"
+                ],
+                "name": "Normal",
+                "forbidden": [
+                  "style",
+                  "weight",
+                  "transform",
+                  "decorations",
+                  "shadows",
+                  "lineHeight"
+                ]
+              }
+            ]
+          }
+        },
+        "sections": {
+          "headingsWithBorder": {
+            "name": "Headings With Border",
+            "properties": {
+              "text": {
+                "type": "text",
+                "name": "Text",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision h1.withBorder",
+                      ".EasyDNNSkin_Vision h2.withBorder",
+                      ".EasyDNNSkin_Vision h3.withBorder",
+                      ".EasyDNNSkin_Vision h4.withBorder",
+                      ".EasyDNNSkin_Vision h5.withBorder"
+                    ],
+                    "name": "default",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  }
+                ]
+              },
+              "border": {
+                "type": "border",
+                "name": "Border",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Vision h1.withBorder",
+                      ".EasyDNNSkin_Vision h2.withBorder",
+                      ".EasyDNNSkin_Vision h3.withBorder",
+                      ".EasyDNNSkin_Vision h4.withBorder",
+                      ".EasyDNNSkin_Vision h5.withBorder"
+                    ],
+                    "name": "default",
+                    "forbidden": [
+                      "topSide",
+                      "rightSide",
+                      "leftSide"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "backToTopButton": {
+        "name": "Back To Top Button",
+        "properties": {
+          "border": {
+            "type": "border",
+            "name": "Border",
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".eds_backToTop"
+                ],
+                "name": "Normal"
+              },
+              {
+                "id": "hover",
+                "selectors": [
+                  ".eds_backToTop:hover"
+                ],
+                "name": "Hover",
+                "forbidden": [
+                  "width",
+                  "style"
+                ]
+              }
+            ]
+          },
+          "borderRadius": {
+            "type": "borderRadius",
+            "name": "Border Radius",
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".eds_backToTop"
+                ],
+                "name": "Normal",
+                "forbidden": [
+                  "second"
+                ]
+              },
+              {
+                "id": "hover",
+                "selectors": [
+                  ".eds_backToTop:hover"
+                ],
+                "name": "Hover",
+                "forbidden": [
+                  "second"
+                ]
+              }
+            ]
+          },
+          "background": {
+            "type": "background",
+            "name": "Background",
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".eds_backToTop"
+                ],
+                "name": "Normal",
+                "forbidden": [
+                  "attachment",
+                  "animation"
+                ]
+              },
+              {
+                "id": "hover",
+                "selectors": [
+                  ".eds_backToTop:hover"
+                ],
+                "name": "Hover",
+                "forbidden": [
+                  "attachment",
+                  "animation"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
