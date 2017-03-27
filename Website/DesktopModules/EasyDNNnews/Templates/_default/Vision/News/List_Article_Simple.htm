@@ -1,4 +1,4 @@
-<!--TemplateGroup:listArticleSimple-->
+﻿<!--TemplateGroup:listArticleSimple-->
 <!--ArticleTemplate-->
 <div class="EDN_article EDN_articleSimple">
 	[EasyDNNnews:HasArticlePermissions]
@@ -12,7 +12,7 @@
 	<a class="EDN_simpleArticleImage" href="[EasyDNNnews:ReadMore]" target="[EasyDNNnews:DetailTarget]"><img alt="[EasyDNNnews:Title]" src="[EasyDNNnews:Image]"/></a>
 	[EasyDNNnews:EndIf:Image]
 	[EasyDNNnews:IfNotExists:Event]
-	<span class="EDN_simpleDate">[EasyDNNnews:FormatedDate: d MMMM yyyy]</span>
+	<!-- <span class="EDN_simpleDate">[EasyDNNnews:FormatedDate: d MMMM yyyy]</span> -->
 	[EasyDNNnews:EndIf:Event]
 	[EasyDNNnews:IfExists:Event]
 	<span class="EDN_simpleDate">[EasyDNNnews:EventDate][EasyDNNnews:IfExists:EventRegistration] (<a href="[EasyDNNnews:ReadMore]">[EasyDNNnewsLocalizedText:Register]</a>)[EasyDNNnews:EndIf:EventRegistration]</span>
@@ -22,8 +22,12 @@
 	<h3 class="articleTitle articleSubTitle">[EasyDNNnews:SubTitle]</h3>
 	[EasyDNNnews:EndIf:SubTitle]
 	<div class="EDN_article_content">
-		[EasyDNNnews:Summary]
+		<!-- 
+        [EasyDNNnews:Summary] 
+        -->
+        [EasyDNNnews:Article]
 	</div>
+    [EasyDNNnews:DocumentList]
 </div>
 <!--ArticleEnd-->
 <!--ArticleRepeat:Before:-->

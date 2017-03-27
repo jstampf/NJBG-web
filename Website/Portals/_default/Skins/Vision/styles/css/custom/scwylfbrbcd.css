@@ -206,10 +206,10 @@
 
 .EasyDNNSkin_Vision .EDS_header-bg
 {
-	background-color: #2d7304;
-	background-image: url("../../images/sharedBackgrounds/background_pattern_image_noise_pattern_light.png");
+	background-color: #036002;
+	background-image: url("../../images/header/background/uploaded/background_pattern_sand.png");
 	background-repeat: repeat;
-	box-shadow: inset 0px 60px 60px 0px #3aa108;
+	box-shadow: none;
 }
 
 .EasyDNNSkin_Vision .EDS_header-bg,
@@ -408,7 +408,7 @@
 .EasyDNNSkin_Vision .EDS_bottom-content-bg
 {
 	background-color: #0f6100;
-	background-image: url("../../images/sharedBackgrounds/background_pattern_pixel_dots4_dark.png");
+	background-image: url("../../images/sharedBackgrounds/background_pattern_sand.png");
 	border-top-color: #429306;
 }
 

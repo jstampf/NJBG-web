@@ -1,0 +1,141 @@
+body, html {
+  direction: rtl;
+}
+
+.EasyDNNSkin_Firefly ul, .EasyDNNSkin_Firefly ol {
+  padding-left: 0;
+  padding-right: 15px;
+}
+.EasyDNNSkin_Firefly ul.link-list li {
+  padding: 0 20px 3px 0;
+  background-position: 99% 1px;
+}
+.EasyDNNSkin_Firefly ul.mini-gallery li {
+  float: right;
+}
+.EasyDNNSkin_Firefly ul.starBullet li {
+  padding: 0 22px 0 0;
+}
+.EasyDNNSkin_Firefly ul.starBullet li:before {
+  left: auto;
+  right: 3px;
+}
+.EasyDNNSkin_Firefly .Normal .info,
+.EasyDNNSkin_Firefly .Normal .success,
+.EasyDNNSkin_Firefly .Normal .warning,
+.EasyDNNSkin_Firefly .Normal .error,
+.EasyDNNSkin_Firefly .NormalDisabled .info,
+.EasyDNNSkin_Firefly .NormalDisabled .success,
+.EasyDNNSkin_Firefly .NormalDisabled .warning,
+.EasyDNNSkin_Firefly .NormalDisabled .error,
+.EasyDNNSkin_Firefly .NormalDeleted .info,
+.EasyDNNSkin_Firefly .NormalDeleted .success,
+.EasyDNNSkin_Firefly .NormalDeleted .warning,
+.EasyDNNSkin_Firefly .NormalDeleted .error {
+  padding: 13px 50px 13px 12px;
+  background-position: 99% center;
+}
+.EasyDNNSkin_Firefly .EDS_accordion .edsAccordion_section .edsAccordion_title {
+  padding: 15px 15px 15px 60px;
+  background-position: 4% center;
+}
+.EasyDNNSkin_Firefly .EDS_header .EDS_logo {
+  float: right;
+}
+.EasyDNNSkin_Firefly .EDS_header .EDS_search {
+  float: left;
+}
+@media handheld, only screen and (max-width: 768px), only screen and (max-device-width: 768px) {
+  .EasyDNNSkin_Firefly .EDS_header .EDS_search {
+    float: right;
+  }
+}
+@media handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+  .EasyDNNSkin_Firefly .EDS_header .EDS_search {
+    float: right;
+  }
+}
+.EasyDNNSkin_Firefly .EDS_header .EDS_search .SkinObject {
+  float: left;
+}
+.EasyDNNSkin_Firefly .EDS_header .EDS_loginLinks {
+  float: left;
+  margin-left: 0;
+  margin-right: 30px;
+}
+.EasyDNNSkin_Firefly .EDS_header .EDS_loginLinks .loginGroup {
+  float: left;
+}
+.EasyDNNSkin_Firefly .EDS_header .EDS_loginLinks .registerGroup {
+  float: left;
+}
+.EasyDNNSkin_Firefly .EDS_header .EDS_loginLinks .registerGroup ul {
+  float: right;
+}
+.EasyDNNSkin_Firefly .EDS_header .EDS_loginLinks .registerGroup ul li {
+  float: left;
+}
+.EasyDNNSkin_Firefly .EDS_header .EDS_loginLinks .EDS_headerLinks {
+  float: left;
+}
+.EasyDNNSkin_Firefly .EDS_header .EDS_loginLinks .EDS_headerLinks li {
+  float: right;
+}
+.EasyDNNSkin_Firefly .EDS_header .EDS_loginLinks .EDS_headerLinks li > div > a > a {
+  margin: 4px 0 0 4px;
+}
+.EasyDNNSkin_Firefly .EDS_header .EDS_loginLinks .EDS_headerLinks li.EDN_rss > a {
+  margin: 4px 4px 0 0;
+}
+.EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu > .raMenuTriggerWrapper .raMenuTrigger > span {
+  background-position: left center;
+}
+.EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu .raMenuWrapper #dnn_main_menu ul li ul {
+  left: auto;
+  right: 0;
+  box-shadow: -3px 3px 3px -1px rgba(0, 0, 0, 0.3);
+  border-radius: 4px 0 4px 4px;
+}
+@media handheld, only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
+  .EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu .raMenuWrapper #dnn_main_menu ul li ul {
+    box-shadow: none;
+  }
+}
+.EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu .raMenuWrapper #dnn_main_menu ul li ul ul {
+  left: auto;
+  right: 100%;
+}
+@media handheld, only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
+  .EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu .raMenuWrapper #dnn_main_menu ul li ul ul {
+    right: 0;
+  }
+}
+.EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu .raMenuWrapper #dnn_main_menu ul li.has_child > .edsmm_childIndicator {
+  right: auto;
+  left: 5px;
+}
+.EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu .raMenuWrapper #dnn_main_menu > ul > li {
+  float: right;
+}
+@media handheld, only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
+  .EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu .raMenuWrapper #dnn_main_menu > ul > li {
+    float: none;
+  }
+}
+.EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu .EDS_language {
+  text-align: right;
+}
+.EasyDNNSkin_Firefly .EDS_bottom-content-bg .EDS_bottom-content .EDS_bottom-box {
+  float: right;
+}
+@media handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+  .EasyDNNSkin_Firefly .EDS_bottom-content-bg .EDS_bottom-content .EDS_bottom-box {
+    float: none;
+  }
+}
+
+#EDS_toTop {
+  right: auto;
+  left: 3%;
+}
+

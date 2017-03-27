@@ -1,0 +1,273 @@
+2017-03-26 11:48:27,285 [IntelClone][Thread:25][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at EasyDNNSolutions.Modules.EasyDNNNews.Administration.AddEditArticle.Page_Init()
+   at System.Web.UI.Control.OnInit(EventArgs e)
+   at DotNetNuke.Entities.Modules.PortalModuleBase.OnInit(EventArgs e) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Entities\Modules\PortalModuleBase.cs:line 315
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Modules\ModuleHost.cs:line 197
+   at DotNetNuke.UI.Modules.ModuleHost.CreateChildControls() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Modules\ModuleHost.cs:line 519
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Containers\Container.cs:line 114
+   at DotNetNuke.UI.Containers.Container.ProcessModule() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Containers\Container.cs:line 371
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Skins\Pane.cs:line 539
+2017-03-26 11:48:27,326 [IntelClone][Thread:25][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.ModuleLoadException: Unhandled Error Adding Module to ContentPane. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at EasyDNNSolutions.Modules.EasyDNNNews.Administration.AddEditArticle.Page_Init()
+   at System.Web.UI.Control.OnInit(EventArgs e)
+   at DotNetNuke.Entities.Modules.PortalModuleBase.OnInit(EventArgs e) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Entities\Modules\PortalModuleBase.cs:line 315
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Modules\ModuleHost.cs:line 197
+   at DotNetNuke.UI.Modules.ModuleHost.CreateChildControls() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Modules\ModuleHost.cs:line 519
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Containers\Container.cs:line 114
+   at DotNetNuke.UI.Containers.Container.ProcessModule() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Containers\Container.cs:line 371
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Skins\Pane.cs:line 539
+   --- End of inner exception stack trace ---
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Skins\Pane.cs:line 560
+   at DotNetNuke.UI.Skins.Skin.InjectModule(Pane pane, ModuleInfo module) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Skins\Skin.cs:line 1010
+2017-03-26 11:48:27,487 [IntelClone][Thread:25][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EasyDNNSolutions.EasyDNNstyleWizard.StyleWizard.SkinObjects.Container.OnLoad(EventArgs onloadEvent)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-03-26 11:48:27,496 [IntelClone][Thread:25][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=72&error=Object+reference+not+set+to+an+instance+of+an+object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EasyDNNSolutions.EasyDNNstyleWizard.StyleWizard.SkinObjects.Container.OnLoad(EventArgs onloadEvent)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-03-26 11:51:33,325 [IntelClone][Thread:24][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at EasyDNNSolutions.Modules.EasyDNNNews.Administration.AddEditArticle.Page_Init()
+   at System.Web.UI.Control.OnInit(EventArgs e)
+   at DotNetNuke.Entities.Modules.PortalModuleBase.OnInit(EventArgs e) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Entities\Modules\PortalModuleBase.cs:line 315
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Modules\ModuleHost.cs:line 197
+   at DotNetNuke.UI.Modules.ModuleHost.CreateChildControls() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Modules\ModuleHost.cs:line 519
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Containers\Container.cs:line 114
+   at DotNetNuke.UI.Containers.Container.ProcessModule() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Containers\Container.cs:line 371
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Skins\Pane.cs:line 539
+2017-03-26 11:51:33,333 [IntelClone][Thread:24][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.ModuleLoadException: Unhandled Error Adding Module to ContentPane. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at EasyDNNSolutions.Modules.EasyDNNNews.Administration.AddEditArticle.Page_Init()
+   at System.Web.UI.Control.OnInit(EventArgs e)
+   at DotNetNuke.Entities.Modules.PortalModuleBase.OnInit(EventArgs e) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Entities\Modules\PortalModuleBase.cs:line 315
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Modules\ModuleHost.cs:line 197
+   at DotNetNuke.UI.Modules.ModuleHost.CreateChildControls() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Modules\ModuleHost.cs:line 519
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Containers\Container.cs:line 114
+   at DotNetNuke.UI.Containers.Container.ProcessModule() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Containers\Container.cs:line 371
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Skins\Pane.cs:line 539
+   --- End of inner exception stack trace ---
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Skins\Pane.cs:line 560
+   at DotNetNuke.UI.Skins.Skin.InjectModule(Pane pane, ModuleInfo module) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Skins\Skin.cs:line 1010
+2017-03-26 11:51:33,359 [IntelClone][Thread:24][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EasyDNNSolutions.EasyDNNstyleWizard.StyleWizard.SkinObjects.Container.OnLoad(EventArgs onloadEvent)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-03-26 11:51:33,361 [IntelClone][Thread:24][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=71&error=Object+reference+not+set+to+an+instance+of+an+object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EasyDNNSolutions.EasyDNNstyleWizard.StyleWizard.SkinObjects.Container.OnLoad(EventArgs onloadEvent)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-03-26 12:02:52,500 [IntelClone][Thread:41][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at EasyDNNSolutions.Modules.EasyDNNNews.Administration.AddEditArticle.Page_Init()
+   at System.Web.UI.Control.OnInit(EventArgs e)
+   at DotNetNuke.Entities.Modules.PortalModuleBase.OnInit(EventArgs e) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Entities\Modules\PortalModuleBase.cs:line 315
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Modules\ModuleHost.cs:line 197
+   at DotNetNuke.UI.Modules.ModuleHost.CreateChildControls() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Modules\ModuleHost.cs:line 519
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Containers\Container.cs:line 114
+   at DotNetNuke.UI.Containers.Container.ProcessModule() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Containers\Container.cs:line 371
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Skins\Pane.cs:line 539
+2017-03-26 12:02:52,511 [IntelClone][Thread:41][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.ModuleLoadException: Unhandled Error Adding Module to ContentPane. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at EasyDNNSolutions.Modules.EasyDNNNews.Administration.AddEditArticle.Page_Init()
+   at System.Web.UI.Control.OnInit(EventArgs e)
+   at DotNetNuke.Entities.Modules.PortalModuleBase.OnInit(EventArgs e) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Entities\Modules\PortalModuleBase.cs:line 315
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Modules\ModuleHost.cs:line 197
+   at DotNetNuke.UI.Modules.ModuleHost.CreateChildControls() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Modules\ModuleHost.cs:line 519
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Containers\Container.cs:line 114
+   at DotNetNuke.UI.Containers.Container.ProcessModule() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Containers\Container.cs:line 371
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Skins\Pane.cs:line 539
+   --- End of inner exception stack trace ---
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Skins\Pane.cs:line 560
+   at DotNetNuke.UI.Skins.Skin.InjectModule(Pane pane, ModuleInfo module) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Skins\Skin.cs:line 1010
+2017-03-26 12:02:52,537 [IntelClone][Thread:41][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EasyDNNSolutions.EasyDNNstyleWizard.StyleWizard.SkinObjects.Container.OnLoad(EventArgs onloadEvent)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-03-26 12:02:52,539 [IntelClone][Thread:41][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=71&error=Object+reference+not+set+to+an+instance+of+an+object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EasyDNNSolutions.EasyDNNstyleWizard.StyleWizard.SkinObjects.Container.OnLoad(EventArgs onloadEvent)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-03-26 12:06:27,262 [IntelClone][Thread:31][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at EasyDNNSolutions.Modules.EasyDNNNews.Administration.AddEditArticle.Page_Init()
+   at System.Web.UI.Control.OnInit(EventArgs e)
+   at DotNetNuke.Entities.Modules.PortalModuleBase.OnInit(EventArgs e) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Entities\Modules\PortalModuleBase.cs:line 315
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Modules\ModuleHost.cs:line 197
+   at DotNetNuke.UI.Modules.ModuleHost.CreateChildControls() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Modules\ModuleHost.cs:line 519
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Containers\Container.cs:line 114
+   at DotNetNuke.UI.Containers.Container.ProcessModule() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Containers\Container.cs:line 371
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Skins\Pane.cs:line 539
+2017-03-26 12:06:27,301 [IntelClone][Thread:31][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.ModuleLoadException: Unhandled Error Adding Module to ContentPane. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at EasyDNNSolutions.Modules.EasyDNNNews.Administration.AddEditArticle.Page_Init()
+   at System.Web.UI.Control.OnInit(EventArgs e)
+   at DotNetNuke.Entities.Modules.PortalModuleBase.OnInit(EventArgs e) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Entities\Modules\PortalModuleBase.cs:line 315
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Modules\ModuleHost.cs:line 197
+   at DotNetNuke.UI.Modules.ModuleHost.CreateChildControls() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Modules\ModuleHost.cs:line 519
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Containers\Container.cs:line 114
+   at DotNetNuke.UI.Containers.Container.ProcessModule() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Containers\Container.cs:line 371
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Skins\Pane.cs:line 539
+   --- End of inner exception stack trace ---
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Skins\Pane.cs:line 560
+   at DotNetNuke.UI.Skins.Skin.InjectModule(Pane pane, ModuleInfo module) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Skins\Skin.cs:line 1010
+2017-03-26 12:06:27,332 [IntelClone][Thread:31][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EasyDNNSolutions.EasyDNNstyleWizard.StyleWizard.SkinObjects.Container.OnLoad(EventArgs onloadEvent)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-03-26 12:06:27,340 [IntelClone][Thread:31][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=71&error=Object+reference+not+set+to+an+instance+of+an+object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EasyDNNSolutions.EasyDNNstyleWizard.StyleWizard.SkinObjects.Container.OnLoad(EventArgs onloadEvent)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-03-26 12:14:55,686 [IntelClone][Thread:27][ERROR] DotNetNuke.Framework.Reflection - EasyDNNSolutions.Modules.EasyDNNNewsUrlProvider.UrlProvider
+System.Web.HttpException (0x80004005): Could not load type 'EasyDNNSolutions.Modules.EasyDNNNewsUrlProvider.UrlProvider'.
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at DotNetNuke.Framework.Reflection.CreateType(String TypeName, String CacheKey, Boolean UseCache, Boolean IgnoreErrors) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Framework\Reflection.cs:line 305
+2017-03-26 12:16:44,387 [IntelClone][Thread:36][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at EasyDNNSolutions.Modules.EasyDNNNews.Administration.AddEditArticle.Page_Init()
+   at System.Web.UI.Control.OnInit(EventArgs e)
+   at DotNetNuke.Entities.Modules.PortalModuleBase.OnInit(EventArgs e) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Entities\Modules\PortalModuleBase.cs:line 315
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Modules\ModuleHost.cs:line 197
+   at DotNetNuke.UI.Modules.ModuleHost.CreateChildControls() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Modules\ModuleHost.cs:line 519
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Containers\Container.cs:line 114
+   at DotNetNuke.UI.Containers.Container.ProcessModule() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Containers\Container.cs:line 371
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Skins\Pane.cs:line 539
+2017-03-26 12:16:44,436 [IntelClone][Thread:36][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.ModuleLoadException: Unhandled Error Adding Module to ContentPane. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at EasyDNNSolutions.Modules.EasyDNNNews.Administration.AddEditArticle.Page_Init()
+   at System.Web.UI.Control.OnInit(EventArgs e)
+   at DotNetNuke.Entities.Modules.PortalModuleBase.OnInit(EventArgs e) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Entities\Modules\PortalModuleBase.cs:line 315
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Modules\ModuleHost.cs:line 197
+   at DotNetNuke.UI.Modules.ModuleHost.CreateChildControls() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Modules\ModuleHost.cs:line 519
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Containers\Container.cs:line 114
+   at DotNetNuke.UI.Containers.Container.ProcessModule() in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Containers\Container.cs:line 371
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Skins\Pane.cs:line 539
+   --- End of inner exception stack trace ---
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Skins\Pane.cs:line 560
+   at DotNetNuke.UI.Skins.Skin.InjectModule(Pane pane, ModuleInfo module) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\UI\Skins\Skin.cs:line 1010
+2017-03-26 12:16:44,501 [IntelClone][Thread:36][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EasyDNNSolutions.EasyDNNstyleWizard.StyleWizard.SkinObjects.Container.OnLoad(EventArgs onloadEvent)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-03-26 12:16:44,509 [IntelClone][Thread:36][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=71&error=Object+reference+not+set+to+an+instance+of+an+object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EasyDNNSolutions.EasyDNNstyleWizard.StyleWizard.SkinObjects.Container.OnLoad(EventArgs onloadEvent)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-03-26 21:41:25,454 [IntelClone][Thread:13][ERROR] DotNetNuke.Services.Exceptions.Exceptions - FriendlyMessage="Error:  is currently unavailable." ctrl="ASP.admin_modules_modulesettings_ascx" exc="System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at DotNetNuke.Modules.Admin.Modules.ModuleSettingsPage.OnInit(EventArgs e) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\Website\admin\Modules\Modulesettings.ascx.cs:line 318"

@@ -331,7 +331,7 @@
 {
 	background-color: #2fa302;
 	border-color: rgba(0, 0, 0, 0.2);
-	box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2);
+	box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, .2);
 }
 
 .EasyDNNSkin_Vision .EDS_content-bg
@@ -343,7 +343,7 @@
 
 .EasyDNNSkin_Vision .EDS_top-content-bg-above .EDS_top-content-above-pane
 {
-	background-color: #ffffff;
+	background-color: #fff;
 	background-image: none;
 	border-top-width: 1px;
 	border-top-style: solid;
@@ -514,7 +514,7 @@
 	font-family: "BenchNine";
 	color: #ffffff;
 	font-size: 22px;
-	background-color: #52bd23;
+	background-color: #52BD23;
 }
 
 .EasyDNNSkin_Vision input[type='text'],
@@ -607,7 +607,7 @@
 {
 	border-left-width: 1px;
 	border-left-style: solid;
-	border-left-color: #ababab;
+	border-left-color: #ABABAB;
 }
 
 .EasyDNNSkin_Vision .EDS_tabs > ul .edsTabulator_tabTrigger,
@@ -726,7 +726,7 @@
 
 .eds_floatingMenuStyle1 > ul > li > a
 {
-	color: #ffffff !important;
+	color: #fff !important;
 }
 
 .eds_floatingMenuStyle1 > ul > li > a:after,
@@ -744,7 +744,7 @@
 .eds_floatingMenuStyle1 > span:before,
 .eds_floatingMenuStyle1 > span:after
 {
-	color: #ffffff;
+	color: #fff;
 }
 
 .eds_floatingMenuStyle2 > ul > li:before
@@ -765,14 +765,14 @@
 
 .eds_floatingMenuStyle2 > ul > li > a
 {
-	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.7);
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.70);
 	color: #367f00;
 }
 
 .eds_floatingMenuStyle2 > ul > li:hover > a,
 .eds_floatingMenuStyle2 > ul > li.edsfnl_active > a
 {
-	color: #ffffff;
+	color: #fff;
 }
 
 .eds_floatingMenuStyle2 > ul > li > a:after
@@ -789,7 +789,7 @@
 .eds_floatingMenuStyle2 > span:before,
 .eds_floatingMenuStyle2 > span:after
 {
-	color: #ffffff;
+	color: #fff;
 }
 
 .eds_circularMenu > span
@@ -809,17 +809,17 @@
 
 .eds_circularMenu > span:before
 {
-	color: #ffffff;
+	color: #fff;
 }
 
 .eds_circularMenu > span:hover:before
 {
-	color: #ffffff;
+	color: #fff;
 }
 
 .eds_circularMenu.eds_floatingMenuActive > span:after
 {
-	color: #ffffff;
+	color: #fff;
 }
 
 .eds_circularMenu.eds_floatingMenuActive > span:hover:after
@@ -949,15 +949,15 @@
 .EasyDNNSkin_Vision h4.withBorder,
 .EasyDNNSkin_Vision h5.withBorder
 {
-	color: #8d8d8d;
-	border-bottom-color: #8d8d8d;
+	color: #8D8D8D;
+	border-bottom-color: #8D8D8D;
 }
 
 .eds_backToTop
 {
 	border-color: #848484;
 	border-radius: 50%;
-	background-color: rgba(0, 0, 0, 0.22);
+	background-color: rgba(0, 0, 0, .22);
 }
 
 .eds_backToTop:hover

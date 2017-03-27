@@ -378,3 +378,66 @@
 	font-size: 28px;
 }
 
+
+.eds_containers_Vision.eds_style_custom_sleyydvzgds.eds_templateGroup_default .EDC_container-title span
+{
+	font-family: "IM Fell English";
+	color: #25282a;
+	font-size: 30px;
+}
+
+.eds_containers_Vision.eds_style_custom_sleyydvzgds.eds_templateGroup_default .EDC_container-title
+{
+	border-bottom-color: #25282a;
+}
+
+.eds_containers_Vision.eds_style_custom_sleyydvzgds.eds_templateGroup_footerBox .EDC_container-title span
+{
+	text-shadow: -1px -1px 1px rgba(18, 18, 18, 0.7);
+	font-family: "BenchNine";
+	color: #92979a;
+	font-size: 30px;
+}
+
+.eds_containers_Vision.eds_style_custom_sleyydvzgds.eds_templateGroup_footerBox .EDC_container-title
+{
+	border-bottom-color: #5c6367;
+}
+
+.eds_containers_Vision.eds_style_custom_sleyydvzgds.eds_templateGroup_hilite.eds_templateGroup_hilite
+{
+	background-color: #e6e6e6;
+}
+
+.eds_containers_Vision.eds_style_custom_sleyydvzgds.eds_templateGroup_hilite .EDC_container-title span
+{
+	font-family: "BenchNine";
+	color: #25282a;
+	font-size: 26px;
+}
+
+.eds_containers_Vision.eds_style_custom_sleyydvzgds.eds_templateGroup_hilite .EDC_container-title
+{
+	border-bottom-color: #20272d;
+}
+
+.eds_containers_Vision.eds_style_custom_sleyydvzgds.eds_templateGroup_hilite .DNNModuleContent .Normal,
+.eds_containers_Vision.eds_style_custom_sleyydvzgds.eds_templateGroup_hilite .DNNModuleContent .NormalDisabled,
+.eds_containers_Vision.eds_style_custom_sleyydvzgds.eds_templateGroup_hilite .DNNModuleContent .NormalDeleted,
+.eds_containers_Vision.eds_style_custom_sleyydvzgds.eds_templateGroup_hilite .DNNModuleContent h1,
+.eds_containers_Vision.eds_style_custom_sleyydvzgds.eds_templateGroup_hilite .DNNModuleContent h2,
+.eds_containers_Vision.eds_style_custom_sleyydvzgds.eds_templateGroup_hilite .DNNModuleContent h3,
+.eds_containers_Vision.eds_style_custom_sleyydvzgds.eds_templateGroup_hilite .DNNModuleContent h4,
+.eds_containers_Vision.eds_style_custom_sleyydvzgds.eds_templateGroup_hilite .DNNModuleContent h5
+{
+	color: #3b3b3b;
+}
+
+.eds_containers_Vision.eds_style_custom_sleyydvzgds.eds_templateGroup_centerTitle .EDC_container-title span
+{
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
+	font-family: "BenchNine";
+	color: #a5a5a5;
+	font-size: 28px;
+}
+

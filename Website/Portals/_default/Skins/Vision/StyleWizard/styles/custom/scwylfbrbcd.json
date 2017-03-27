@@ -1,7 +1,8 @@
 {
+  "originalStyleId": "green",
   "templateGroups": {
     "default": {
-      "name": "Green Copy",
+      "name": "NJBG Styles",
       "colors": [
         "#53B823"
       ]
@@ -26,11 +27,11 @@
                 "position"
               ],
               "values": {
-                "color": "#2d7304",
+                "color": "#036002",
                 "image": {
-                  "completeUrl": "_-StyleAssetsClientRoot-_images/sharedBackgrounds/background_pattern_image_noise_pattern_light.png",
-                  "file": "background_pattern_image_noise_pattern_light.png",
-                  "type": "shared"
+                  "completeUrl": "_-StyleAssetsClientRoot-_images/header/background/uploaded/background_pattern_sand.png",
+                  "file": "background_pattern_sand.png",
+                  "type": "uploaded"
                 },
                 "repeat": "repeat",
                 "position": {
@@ -49,7 +50,7 @@
           "boxShadow": {
             "default": {
               "values": {
-                "show": true,
+                "show": false,
                 "list": [
                   {
                     "inset": true,
@@ -617,8 +618,8 @@
               "values": {
                 "color": "#0f6100",
                 "image": {
-                  "completeUrl": "_-StyleAssetsClientRoot-_images/sharedBackgrounds/background_pattern_pixel_dots4_dark.png",
-                  "file": "background_pattern_pixel_dots4_dark.png",
+                  "completeUrl": "_-StyleAssetsClientRoot-_images/sharedBackgrounds/background_pattern_sand.png",
+                  "file": "background_pattern_sand.png",
                   "type": "shared"
                 },
                 "repeat": "repeat",
@@ -3053,6 +3054,5 @@
         }
       }
     }
-  },
-  "originalStyleId": "green"
+  }
 }

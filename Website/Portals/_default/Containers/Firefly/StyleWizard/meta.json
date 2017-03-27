@@ -1,0 +1,318 @@
+{
+  "name": "Firefly",
+  "version": 1,
+  "customFontFamilies": [
+    {
+      "name": "Arvo",
+      "importUrl": "//fonts.googleapis.com/css?family=Arvo:400,700)"
+    },
+    {
+      "name": "Bree Serif",
+      "importUrl": "//fonts.googleapis.com/css?family=Bree+Serif&subset=latin,latin-ext"
+    },
+    {
+      "name": "Kite One",
+      "importUrl": "//fonts.googleapis.com/css?family=Kite+One&subset=latin,latin-ext"
+    },
+    {
+      "name": "Fauna One",
+      "importUrl": "//fonts.googleapis.com/css?family=Fauna+One&subset=latin,latin-ext"
+    },
+    {
+      "name": "Acme",
+      "importUrl": "//fonts.googleapis.com/css?family=Acme&subset=latin,latin-ext"
+    },
+    {
+      "name": "Oregano",
+      "importUrl": "//fonts.googleapis.com/css?family=Oregano:400,400italic&subset=latin,latin-ext"
+    },
+    {
+      "name": "Fjalla One",
+      "importUrl": "//fonts.googleapis.com/css?family=Fjalla+One&subset=latin,latin-ext"
+    },
+    {
+      "name": "Tauri",
+      "importUrl": "//fonts.googleapis.com/css?family=Tauri&subset=latin,latin-ext"
+    },
+    {
+      "name": "Shadows Into Light",
+      "importUrl": "//fonts.googleapis.com/css?family=Shadows+Into+Light&subset=latin,latin-ext"
+    },
+    {
+      "name": "Prosto One",
+      "importUrl": "//fonts.googleapis.com/css?family=Prosto+One&subset=latin,latin-ext"
+    },
+    {
+      "name": "Ubuntu Condensed",
+      "importUrl": "//fonts.googleapis.com/css?family=Ubuntu+Condensed&subset=latin,latin-ext"
+    },
+    {
+      "name": "Cutive",
+      "importUrl": "//fonts.googleapis.com/css?family=Cutive&subset=latin,latin-ext"
+    }
+  ],
+  "activeStyles": {},
+  "activeThemeObjectSettings": {},
+  "assetsClientPath": "",
+  "styleDefinitions": {
+    "properties": {
+      "background": {
+        "type": "background",
+        "name": "Background",
+        "show": [
+          "defaultWithShadow"
+        ],
+        "states": [
+          {
+            "id": "default",
+            "selectors": [
+              ".eds_templateGroup_defaultWithShadow"
+            ],
+            "name": "Normal",
+            "forbidden": [
+              "attachment"
+            ]
+          }
+        ]
+      },
+      "border": {
+        "type": "border",
+        "name": "Border Color",
+        "show": [
+          "default",
+          "defaultWithShadow"
+        ],
+        "states": [
+          {
+            "id": "default",
+            "selectors": [
+              " .EDC_title-container",
+              " .EDC_title-container:after",
+              ".eds_templateGroup_defaultWithShadow"
+            ],
+            "name": "Normal",
+            "forbidden": [
+              "width",
+              "style"
+            ]
+          }
+        ]
+      },
+      "boxShadow": {
+        "type": "boxShadow",
+        "name": "Shadow",
+        "show": [
+          "defaultWithShadow"
+        ],
+        "states": [
+          {
+            "id": "default",
+            "selectors": [
+              ".eds_templateGroup_defaultWithShadow"
+            ],
+            "name": "Normal"
+          }
+        ]
+      },
+      "titleFont": {
+        "type": "text",
+        "name": "Title Font",
+        "show": [
+          "default",
+          "defaultWithShadow"
+        ],
+        "states": [
+          {
+            "id": "default",
+            "selectors": [
+              " .EDC_title-container > h2 span"
+            ],
+            "name": "Normal"
+          }
+        ]
+      },
+      "titleBackground": {
+        "type": "background",
+        "name": "Title Background",
+        "show": [
+          "default",
+          "defaultWithShadow"
+        ],
+        "states": [
+          {
+            "id": "default",
+            "selectors": [
+              " .EDC_title-container",
+              " .EDC_title-container:after"
+            ],
+            "name": "Normal",
+            "forbidden": [
+              "repeat",
+              "attachment",
+              "position"
+            ]
+          }
+        ]
+      },
+      "titleFontDark": {
+        "type": "text",
+        "name": "Title Font",
+        "show": [
+          "dark"
+        ],
+        "states": [
+          {
+            "id": "default",
+            "selectors": [
+              ".eds_templateGroup_dark > h2 span"
+            ],
+            "name": "Normal"
+          }
+        ]
+      },
+      "titleBackgroundDark": {
+        "type": "background",
+        "name": "Title Background",
+        "show": [
+          "dark"
+        ],
+        "states": [
+          {
+            "id": "default",
+            "selectors": [
+              ".eds_templateGroup_dark > h2"
+            ],
+            "name": "Normal",
+            "forbidden": [
+              "attachment"
+            ]
+          }
+        ]
+      },
+      "titleborderDark": {
+        "type": "border",
+        "name": "Title Border",
+        "show": [
+          "dark"
+        ],
+        "states": [
+          {
+            "id": "default",
+            "selectors": [
+              ".eds_templateGroup_dark > h2"
+            ],
+            "name": "Normal"
+          }
+        ]
+      },
+      "titleFontFooter": {
+        "type": "text",
+        "name": "Title Font",
+        "show": [
+          "footer"
+        ],
+        "states": [
+          {
+            "id": "default",
+            "selectors": [
+              ".eds_templateGroup_footer > h2 span"
+            ],
+            "name": "Normal"
+          }
+        ]
+      }
+    },
+    "sections": {
+      "titleWithBorder": {
+        "name": "Title",
+        "properties": {
+          "text": {
+            "type": "text",
+            "name": "Text",
+            "show": [
+              "titleWithBorder"
+            ],
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".eds_templateGroup_titleWithBorder > h2 > span"
+                ],
+                "name": "Normal"
+              }
+            ]
+          },
+          "border": {
+            "type": "border",
+            "name": "Bottom Border",
+            "show": [
+              "titleWithBorder"
+            ],
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".eds_templateGroup_titleWithBorder > h2"
+                ],
+                "name": "Normal",
+                "forbidden": [
+                  "topSide",
+                  "rightSide",
+                  "leftSide"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "content": {
+        "name": "Content",
+        "properties": {
+          "headings": {
+            "type": "text",
+            "name": "Headings",
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  " h1",
+                  " h2",
+                  " h3",
+                  " h4",
+                  " h5"
+                ],
+                "name": "Normal",
+                "forbidden": [
+                  "size",
+                  "lineHeight",
+                  "decorations"
+                ]
+              }
+            ]
+          },
+          "text": {
+            "type": "text",
+            "name": "Text",
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  " .Normal",
+                  " .NormalDisabled",
+                  " .NormalDeleted"
+                ],
+                "name": "Normal",
+                "forbidden": [
+                  "style",
+                  "weight",
+                  "transform",
+                  "decorations"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -465,6 +465,10 @@ DNN [Pp]latform/Syndication/[Bb]in/*
 ## [Ww]ebsite/app_offline.htm
 ## -- end joe commented
 
+## -- joe added
+[Ww]ebsite/[Aa]pp_[Dd]ata/[Ss]earch/*
+## -- end joe added
+
 # ignore all other language resx files
 *.de-DE.resx
 *.es-ES.resx

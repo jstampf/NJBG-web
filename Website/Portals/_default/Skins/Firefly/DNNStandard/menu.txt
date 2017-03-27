@@ -1,0 +1,26 @@
+<div id="dnn_main_menu">
+	<ul>
+		[*>NODE]
+	</ul>
+</div>
+[>NODE]
+	[?ENABLED]
+		<li class="item[?FIRST] first[/?][?LAST] last[/?][?BREADCRUMB] active[/?][?NODE] has_child[/?]">
+			<a href="[=URL]"><span>[=TEXT]</span></a><span class="edsmm_childIndicator">Expand</span>
+			[?NODE]
+				<ul>
+					[*>NODE]
+				</ul>
+			[/?]
+		</li>
+	[?ELSE]
+		<li class="item[?FIRST] first[/?][?LAST] last[/?][?BREADCRUMB] active[/?] disabled">
+			<span>[=TEXT]</span>
+			[?NODE]
+				<ul>
+					[*>NODE]
+				</ul>
+			[/?]
+		</li>
+	[/?]
+[/>]

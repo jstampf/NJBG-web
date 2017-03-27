@@ -1,0 +1,2286 @@
+{
+  "name": "Firefly",
+  "activeStyles": {},
+  "assetsClientPath": "styles/",
+  "styleDefinitions": {
+    "sections": {
+      "background": {
+        "name": "Background",
+        "properties": {
+          "header-footer": {
+            "type": "background",
+            "name": "Header and Footer",
+            "sharedImageDirectories": [
+              "sharedBackgrounds/"
+            ],
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  "#Body"
+                ],
+                "name": "Normal"
+              }
+            ]
+          },
+          "topWideShadow": {
+            "type": "boxShadow",
+            "name": "Top Wide Shadow",
+            "show": [
+              "home"
+            ],
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_topWideBackground .EDS_topWide"
+                ],
+                "name": "Normal"
+              }
+            ]
+          },
+          "topPane3": {
+            "type": "background",
+            "name": "TopPane3",
+            "show": [
+              "home"
+            ],
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_top3"
+                ],
+                "name": "Normal"
+              }
+            ]
+          },
+          "contentWrapper": {
+            "type": "background",
+            "name": "Content Wrapper",
+            "sharedImageDirectories": [
+              "sharedBackgrounds/"
+            ],
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Firefly .EDS_content-bg"
+                ],
+                "name": "Normal"
+              }
+            ]
+          },
+          "contentWrapperShadow": {
+            "type": "boxShadow",
+            "name": "Content Wrapper Shadow",
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Firefly .EDS_content-bg"
+                ],
+                "name": "Normal"
+              }
+            ]
+          },
+          "bottomPane1": {
+            "type": "background",
+            "name": "BottomPane1",
+            "show": [
+              "home"
+            ],
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_bottom1"
+                ],
+                "name": "Normal"
+              }
+            ]
+          },
+          "bottomPane3": {
+            "type": "background",
+            "name": "BottomPane3",
+            "show": [
+              "home"
+            ],
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_bottom3"
+                ],
+                "name": "Normal"
+              }
+            ]
+          }
+        },
+        "sections": {
+          "topPane1": {
+            "name": "TopPane1",
+            "properties": {
+              "shadow": {
+                "type": "boxShadow",
+                "name": "Shadow",
+                "show": [
+                  "home"
+                ],
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_topWideBackground .EDS_top1"
+                    ],
+                    "name": "Normal"
+                  }
+                ]
+              },
+              "background": {
+                "type": "background",
+                "name": "Background",
+                "show": [
+                  "home"
+                ],
+                "sharedImageDirectories": [
+                  "sharedBackgrounds/"
+                ],
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_topWideBackground .EDS_top1"
+                    ],
+                    "name": "Normal"
+                  }
+                ]
+              }
+            }
+          },
+          "contentBackground": {
+            "name": "Content",
+            "properties": {
+              "background": {
+                "type": "background",
+                "name": "Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content .EDS_content-top",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content .EDS_panes-holder-invert",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content .EDS_content-bottom",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content .EDS_three-column-social-center"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "attachment",
+                      "image",
+                      "repeat",
+                      "position"
+                    ]
+                  }
+                ]
+              },
+              "border": {
+                "type": "border",
+                "name": "Border Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content .EDS_content-top",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content .EDS_panes-holder-invert",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content .EDS_content-bottom"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "width",
+                      "style"
+                    ]
+                  }
+                ]
+              },
+              "boxShadow": {
+                "type": "boxShadow",
+                "name": "Shadow",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content"
+                    ],
+                    "name": "Normal"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "userLogin": {
+        "name": "User Login Menu",
+        "properties": {
+          "userNameColor": {
+            "type": "text",
+            "name": "Username Color",
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Firefly .EDS_header .EDS_loginLinks .registerGroup ul li.userDisplayName a"
+                ],
+                "name": "Normal",
+                "forbidden": [
+                  "fontFamily",
+                  "size",
+                  "style",
+                  "weight",
+                  "lineHeight",
+                  "transform",
+                  "decorations"
+                ]
+              }
+            ]
+          }
+        },
+        "sections": {
+          "notifications": {
+            "name": "User Notifications",
+            "properties": {
+              "text": {
+                "type": "text",
+                "name": "Text",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_header .EDS_loginLinks .registerGroup ul li.userMessages a span",
+                      ".EasyDNNSkin_Firefly .EDS_header .EDS_loginLinks .registerGroup ul li.userNotifications a span",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content .dnnAdminTabNav li.ui-state-default > a > span"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  }
+                ]
+              },
+              "background": {
+                "type": "background",
+                "name": "Background",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_header .EDS_loginLinks .registerGroup ul li.userMessages a span",
+                      ".EasyDNNSkin_Firefly .EDS_header .EDS_loginLinks .registerGroup ul li.userNotifications a span",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content .dnnAdminTabNav li.ui-state-default > a > span"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "image",
+                      "repeat",
+                      "attachment",
+                      "position"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "mainMenu": {
+        "name": "Main menu",
+        "properties": {
+          "background": {
+            "type": "background",
+            "name": "Background",
+            "sharedImageDirectories": [
+              "sharedBackgrounds/"
+            ],
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu .raMenuWrapper #dnn_main_menu",
+                  ".EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu > .raMenuTriggerWrapper .raMenuTrigger"
+                ],
+                "name": "Normal",
+                "forbidden": [
+                  "attachment"
+                ]
+              }
+            ]
+          },
+          "border": {
+            "type": "border",
+            "name": "Border",
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu .raMenuWrapper",
+                  ".EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu > .raMenuTriggerWrapper"
+                ],
+                "name": "Normal",
+                "forbidden": [
+                  "topSide"
+                ]
+              }
+            ]
+          }
+        },
+        "sections": {
+          "rootItems": {
+            "name": "Root items",
+            "properties": {
+              "background": {
+                "type": "background",
+                "name": "Background",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu .raMenuWrapper #dnn_main_menu > ul > li > a",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu .raMenuWrapper #dnn_main_menu > ul > li > span"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "attachment"
+                    ]
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu .raMenuWrapper #dnn_main_menu > ul > li:hover > a",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu > .raMenuTriggerWrapper .raMenuTrigger:hover"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "attachment"
+                    ]
+                  }
+                ]
+              },
+              "text": {
+                "type": "text",
+                "name": "Text",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu .raMenuWrapper #dnn_main_menu > ul > li > a",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu .raMenuWrapper #dnn_main_menu > ul > li > span",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu > .raMenuTriggerWrapper .raMenuTrigger"
+                    ],
+                    "name": "Normal"
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu .raMenuWrapper #dnn_main_menu > ul > li:hover > a",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu > .raMenuTriggerWrapper .raMenuTrigger:hover"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "style",
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform"
+                    ]
+                  },
+                  {
+                    "id": "active",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu .raMenuWrapper #dnn_main_menu ul li.active > a",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu .raMenuWrapper #dnn_main_menu ul li.active > span",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu.raMenuOpened > .raMenuTriggerWrapper .raMenuTrigger"
+                    ],
+                    "name": "Active",
+                    "forbidden": [
+                      "style",
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "lineHeight",
+                      "transform"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "submenuItems": {
+            "name": "Submenu items",
+            "properties": {
+              "background": {
+                "type": "background",
+                "name": "Background",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu .raMenuWrapper #dnn_main_menu ul li ul"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "attachment"
+                    ]
+                  }
+                ]
+              },
+              "text": {
+                "type": "text",
+                "name": "Text",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu .raMenuWrapper #dnn_main_menu ul li ul li > a",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu .raMenuWrapper #dnn_main_menu ul li ul li > span"
+                    ],
+                    "name": "Normal"
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .responsAbilityMenu .raMenuWrapper #dnn_main_menu ul li ul li:hover > a"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "style",
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "lineHeight",
+                      "transform"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "text": {
+        "name": "Text",
+        "properties": {
+          "content": {
+            "type": "text",
+            "name": "Content",
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  "body",
+                  ".EasyDNNSkin_Firefly .Normal",
+                  ".EasyDNNSkin_Firefly .NormalDeleted",
+                  ".EasyDNNSkin_Firefly .NormalDisabled"
+                ],
+                "name": "Normal",
+                "forbidden": [
+                  "style",
+                  "weight",
+                  "transform",
+                  "decorations",
+                  "shadows"
+                ]
+              }
+            ]
+          }
+        },
+        "sections": {
+          "headings": {
+            "name": "Headings",
+            "properties": {
+              "text": {
+                "type": "text",
+                "name": "Text",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly h1",
+                      ".EasyDNNSkin_Firefly h2",
+                      ".EasyDNNSkin_Firefly h3",
+                      ".EasyDNNSkin_Firefly h4",
+                      ".EasyDNNSkin_Firefly h5"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "size",
+                      "lineHeight",
+                      "decorations"
+                    ]
+                  }
+                ]
+              },
+              "border": {
+                "type": "border",
+                "name": "Border",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly h1.withBorder",
+                      ".EasyDNNSkin_Firefly h2.withBorder",
+                      ".EasyDNNSkin_Firefly h3.withBorder",
+                      ".EasyDNNSkin_Firefly h4.withBorder",
+                      ".EasyDNNSkin_Firefly h5.withBorder"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "topSide",
+                      "rightSide",
+                      "leftSide"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "topPane1": {
+            "name": "TopPane1",
+            "properties": {
+              "headingsColor": {
+                "type": "text",
+                "name": "Headings Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_topWideBackground .EDS_top1 h1",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_topWideBackground .EDS_top1 h2",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_topWideBackground .EDS_top1 h3",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_topWideBackground .EDS_top1 h4",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_topWideBackground .EDS_top1 h5"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  }
+                ]
+              },
+              "textColor": {
+                "type": "text",
+                "name": "Text Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_topWideBackground .EDS_top1 .Normal",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_topWideBackground .EDS_top1 .NormalDisabled",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_topWideBackground .EDS_top1 .NormalDeleted"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "topPane3": {
+            "name": "TopPane3",
+            "properties": {
+              "headingsColor": {
+                "type": "text",
+                "name": "Headings Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_top3 h1",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_top3 h2",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_top3 h3",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_top3 h4",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_top3 h5"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  }
+                ]
+              },
+              "textColor": {
+                "type": "text",
+                "name": "Text Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_top3 .Normal",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_top3 .NormalDisabled",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_top3 .NormalDeleted"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "bottomPane1": {
+            "name": "BottomPane1",
+            "properties": {
+              "headingsColor": {
+                "type": "text",
+                "name": "Headings Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_bottom1 h1",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_bottom1 h2",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_bottom1 h3",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_bottom1 h4",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_bottom1 h5"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  }
+                ]
+              },
+              "textColor": {
+                "type": "text",
+                "name": "Text Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_bottom1 .Normal",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_bottom1 .NormalDisabled",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_bottom1 .NormalDeleted"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "bottomPane3": {
+            "name": "BottomPane3",
+            "properties": {
+              "headingsColor": {
+                "type": "text",
+                "name": "Headings Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_bottom3 h1",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_bottom3 h2",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_bottom3 h3",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_bottom3 h4",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_bottom3 h5"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  }
+                ]
+              },
+              "textColor": {
+                "type": "text",
+                "name": "Text Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_bottom3 .Normal",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_bottom3 .NormalDisabled",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_bottom3 .NormalDeleted"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "bottomBoxes": {
+            "name": "BottomBoxes",
+            "properties": {
+              "headingsColor": {
+                "type": "text",
+                "name": "Headings Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_bottom-content-bg .EDS_bottom-content h1",
+                      ".EasyDNNSkin_Firefly .EDS_bottom-content-bg .EDS_bottom-content h2",
+                      ".EasyDNNSkin_Firefly .EDS_bottom-content-bg .EDS_bottom-content h3",
+                      ".EasyDNNSkin_Firefly .EDS_bottom-content-bg .EDS_bottom-content h4",
+                      ".EasyDNNSkin_Firefly .EDS_bottom-content-bg .EDS_bottom-content h5"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  }
+                ]
+              },
+              "textColor": {
+                "type": "text",
+                "name": "Text Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_bottom-content-bg .EDS_bottom-content .Normal",
+                      ".EasyDNNSkin_Firefly .EDS_bottom-content-bg .EDS_bottom-content .NormalDisabled",
+                      ".EasyDNNSkin_Firefly .EDS_bottom-content-bg .EDS_bottom-content .NormalDeleted",
+                      ".EasyDNNSkin_Firefly .EDS_bottom-content-bg .EDS_bottom-content .link-list li a"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "footer": {
+        "name": "Footer",
+        "properties": {
+          "textColor": {
+            "type": "text",
+            "name": "Text Color",
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Firefly .EDS_footer .EDS_copyright",
+                  ".EasyDNNSkin_Firefly .EDS_footer .EDS_copyright .SkinObject"
+                ],
+                "name": "Normal",
+                "forbidden": [
+                  "fontFamily",
+                  "size",
+                  "style",
+                  "weight",
+                  "lineHeight",
+                  "transform",
+                  "decorations"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "elements": {
+        "name": "Elements",
+        "properties": {
+          "anchorColor": {
+            "type": "text",
+            "name": "Anchor color",
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Firefly a",
+                  ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content .dnnGroupDirectory .dgdMainContent .createGroup",
+                  ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content .dgdGroupQuickInfo h3 a:hover",
+                  ".EasyDNNSkin_Firefly .EDS_bottom-content-bg .EDS_bottom-content .link-list li a:hover"
+                ],
+                "name": "Normal",
+                "forbidden": [
+                  "fontFamily",
+                  "size",
+                  "style",
+                  "weight",
+                  "lineHeight",
+                  "transform",
+                  "shadows"
+                ]
+              },
+              {
+                "id": "hover",
+                "selectors": [
+                  ".EasyDNNSkin_Firefly a:hover"
+                ],
+                "name": "Hover",
+                "forbidden": [
+                  "fontFamily",
+                  "size",
+                  "style",
+                  "weight",
+                  "lineHeight",
+                  "transform",
+                  "shadows"
+                ]
+              }
+            ]
+          },
+          "bottomAnchorColor": {
+            "type": "text",
+            "name": "Bottom content anchor color",
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Firefly .EDS_bottom-content-bg .EDS_bottom-content a",
+                  ".EasyDNNSkin_Firefly .EDS_bottom-content-bg .EDS_bottom-content .menu-list li a:hover"
+                ],
+                "name": "Normal",
+                "forbidden": [
+                  "fontFamily",
+                  "size",
+                  "style",
+                  "weight",
+                  "lineHeight",
+                  "transform",
+                  "shadows"
+                ]
+              },
+              {
+                "id": "hover",
+                "selectors": [
+                  ".EasyDNNSkin_Firefly .EDS_bottom-content-bg .EDS_bottom-content a:hover"
+                ],
+                "name": "Hover",
+                "forbidden": [
+                  "fontFamily",
+                  "size",
+                  "style",
+                  "weight",
+                  "lineHeight",
+                  "transform",
+                  "shadows"
+                ]
+              }
+            ]
+          },
+          "linkListArrow": {
+            "type": "background",
+            "name": "Link List Arrow",
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Firefly ul.link-list li"
+                ],
+                "forbidden": [
+                  "color",
+                  "repeat",
+                  "attachment"
+                ]
+              }
+            ]
+          },
+          "starListBullet": {
+            "type": "text",
+            "name": "Star List Bullet",
+            "states": [
+              {
+                "id": "default",
+                "selectors": [
+                  ".EasyDNNSkin_Firefly ul.starBullet li:before"
+                ],
+                "name": "Normal",
+                "forbidden": [
+                  "fontFamily",
+                  "size",
+                  "style",
+                  "weight",
+                  "lineHeight",
+                  "transform",
+                  "decorations",
+                  "shadows"
+                ]
+              }
+            ]
+          }
+        },
+        "sections": {
+          "buttons": {
+            "name": "Buttons",
+            "sections": {
+              "primary": {
+                "name": "Primary",
+                "properties": {
+                  "text": {
+                    "type": "text",
+                    "name": "Text",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly input[type='submit']",
+                          ".EasyDNNSkin_Firefly .dnnPrimaryAction",
+                          ".EasyDNNSkin_Firefly .EDS_header .EDS_search .SkinObject",
+                          ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content .dgdGroupQuickInfo ul li.join-group-icn > a",
+                          ".EasyDNNSkin_Firefly #btnShare",
+                          ".EasyDNNSkin_Firefly .jcmt li.cmtbtn a"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "fontFamily",
+                          "size",
+                          "style",
+                          "weight",
+                          "lineHeight",
+                          "transform",
+                          "decorations"
+                        ]
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly input[type='submit']:hover",
+                          ".EasyDNNSkin_Firefly .dnnPrimaryAction:hover",
+                          ".EasyDNNSkin_Firefly .EDS_header .EDS_search .SkinObject:hover",
+                          ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content .dgdGroupQuickInfo ul li.join-group-icn > a:hover",
+                          ".EasyDNNSkin_Firefly #btnShare:hover",
+                          ".EasyDNNSkin_Firefly .jcmt li.cmtbtn a:hover"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "fontFamily",
+                          "size",
+                          "style",
+                          "weight",
+                          "lineHeight",
+                          "transform",
+                          "decorations"
+                        ]
+                      }
+                    ]
+                  },
+                  "background": {
+                    "type": "background",
+                    "name": "Background",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly input[type='submit']",
+                          ".EasyDNNSkin_Firefly .dnnPrimaryAction",
+                          ".EasyDNNSkin_Firefly .EDS_header .EDS_search .SkinObject",
+                          ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content .dgdGroupQuickInfo ul li.join-group-icn > a",
+                          ".EasyDNNSkin_Firefly #btnShare",
+                          ".EasyDNNSkin_Firefly .jcmt li.cmtbtn a",
+                          ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content #mdMemberList > li .mdMemberDetails .mdHoverActions li.mdComposeMessage a:hover",
+                          ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content .UserProfileControls > ul li > a",
+                          ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content .smListings > ul > li.active .ActiveToggle"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "image",
+                          "repeat",
+                          "attachment",
+                          "position"
+                        ]
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly input[type='submit']:hover",
+                          ".EasyDNNSkin_Firefly .dnnPrimaryAction:hover",
+                          ".EasyDNNSkin_Firefly .EDS_header .EDS_search .SkinObject:hover",
+                          ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content .dgdGroupQuickInfo ul li.join-group-icn > a:hover",
+                          ".EasyDNNSkin_Firefly #btnShare:hover",
+                          ".EasyDNNSkin_Firefly .jcmt li.cmtbtn a:hover"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "image",
+                          "repeat",
+                          "attachment",
+                          "position"
+                        ]
+                      }
+                    ]
+                  },
+                  "border": {
+                    "type": "border",
+                    "name": "Border",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly input[type='submit']",
+                          ".EasyDNNSkin_Firefly .dnnPrimaryAction",
+                          ".EasyDNNSkin_Firefly .EDS_header .EDS_search .SkinObject",
+                          ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content .dgdGroupQuickInfo ul li.join-group-icn > a",
+                          ".EasyDNNSkin_Firefly #btnShare",
+                          ".EasyDNNSkin_Firefly .jcmt li.cmtbtn a",
+                          ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content .smListings > ul > li.active .ActiveToggle"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "width",
+                          "style"
+                        ]
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly input[type='submit']:hover",
+                          ".EasyDNNSkin_Firefly .dnnPrimaryAction:hover",
+                          ".EasyDNNSkin_Firefly .EDS_header .EDS_search .SkinObject:hover",
+                          ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content .dgdGroupQuickInfo ul li.join-group-icn > a:hover",
+                          ".EasyDNNSkin_Firefly #btnShare:hover",
+                          ".EasyDNNSkin_Firefly .jcmt li.cmtbtn a:hover"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "width",
+                          "style"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "secondary": {
+                "name": "Secondary",
+                "properties": {
+                  "text": {
+                    "type": "text",
+                    "name": "Text",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .dnnSecondaryAction"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "fontFamily",
+                          "size",
+                          "style",
+                          "weight",
+                          "lineHeight",
+                          "transform",
+                          "decorations"
+                        ]
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .dnnSecondaryAction:hover"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "fontFamily",
+                          "size",
+                          "style",
+                          "weight",
+                          "lineHeight",
+                          "transform",
+                          "decorations"
+                        ]
+                      }
+                    ]
+                  },
+                  "background": {
+                    "type": "background",
+                    "name": "Background",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .dnnSecondaryAction"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "image",
+                          "repeat",
+                          "attachment",
+                          "position"
+                        ]
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .dnnSecondaryAction:hover"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "image",
+                          "repeat",
+                          "attachment",
+                          "position"
+                        ]
+                      }
+                    ]
+                  },
+                  "border": {
+                    "type": "border",
+                    "name": "Border",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .dnnSecondaryAction"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "width",
+                          "style"
+                        ]
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .dnnSecondaryAction:hover"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "width",
+                          "style"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "tertiary": {
+                "name": "Tertiary",
+                "properties": {
+                  "text": {
+                    "type": "text",
+                    "name": "Text",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .dnnTertiaryAction"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "fontFamily",
+                          "size",
+                          "style",
+                          "weight",
+                          "lineHeight",
+                          "transform",
+                          "decorations"
+                        ]
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .dnnTertiaryAction:hover"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "fontFamily",
+                          "size",
+                          "style",
+                          "weight",
+                          "lineHeight",
+                          "transform",
+                          "decorations"
+                        ]
+                      }
+                    ]
+                  },
+                  "background": {
+                    "type": "background",
+                    "name": "Background",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .dnnTertiaryAction"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "image",
+                          "repeat",
+                          "attachment",
+                          "position"
+                        ]
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .dnnTertiaryAction:hover"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "image",
+                          "repeat",
+                          "attachment",
+                          "position"
+                        ]
+                      }
+                    ]
+                  },
+                  "border": {
+                    "type": "border",
+                    "name": "Border",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .dnnTertiaryAction"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "width",
+                          "style"
+                        ]
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .dnnTertiaryAction:hover"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "width",
+                          "style"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "bigButton": {
+                "name": "Big Button",
+                "properties": {
+                  "border": {
+                    "type": "border",
+                    "name": "Border",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .bigButton"
+                        ],
+                        "name": "Normal"
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .bigButton:hover"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "width",
+                          "style"
+                        ]
+                      }
+                    ]
+                  },
+                  "boxShadow": {
+                    "type": "boxShadow",
+                    "name": "Shadows",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .bigButton"
+                        ],
+                        "name": "Normal"
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .bigButton:hover"
+                        ],
+                        "name": "Hover"
+                      }
+                    ]
+                  },
+                  "background": {
+                    "type": "background",
+                    "name": "Background",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .bigButton"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "attachment"
+                        ]
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .bigButton:hover"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "attachment"
+                        ]
+                      }
+                    ]
+                  },
+                  "text": {
+                    "type": "text",
+                    "name": "Text",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .bigButton"
+                        ],
+                        "name": "Normal"
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .bigButton:hover"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "fontFamily",
+                          "size",
+                          "style",
+                          "weight",
+                          "lineHeight",
+                          "transform"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "inputs": {
+            "name": "Inputs",
+            "properties": {
+              "border": {
+                "type": "border",
+                "name": "Border",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly input[type=\"text\"]",
+                      ".EasyDNNSkin_Firefly input[type=\"password\"]",
+                      ".EasyDNNSkin_Firefly select",
+                      ".EasyDNNSkin_Firefly textarea",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content .DnnModule-Journal .journalTools #journalEditor"
+                    ],
+                    "name": "Normal"
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly input[type=\"text\"]:hover",
+                      ".EasyDNNSkin_Firefly input[type=\"password\"]:hover",
+                      ".EasyDNNSkin_Firefly select:hover",
+                      ".EasyDNNSkin_Firefly textarea:hover"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "style",
+                      "width"
+                    ]
+                  },
+                  {
+                    "id": "focus",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly input[type=\"text\"]:focus",
+                      ".EasyDNNSkin_Firefly input[type=\"password\"]:focus",
+                      ".EasyDNNSkin_Firefly select:focus",
+                      ".EasyDNNSkin_Firefly textarea:focus"
+                    ],
+                    "name": "Focus",
+                    "forbidden": [
+                      "style",
+                      "width"
+                    ]
+                  }
+                ]
+              },
+              "background": {
+                "type": "background",
+                "name": "Background",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly input[type=\"text\"]",
+                      ".EasyDNNSkin_Firefly input[type=\"password\"]",
+                      ".EasyDNNSkin_Firefly select",
+                      ".EasyDNNSkin_Firefly textarea",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content .DnnModule-Journal .journalTools #journalEditor"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "attachment"
+                    ]
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly input[type=\"text\"]:hover",
+                      ".EasyDNNSkin_Firefly input[type=\"password\"]:hover",
+                      ".EasyDNNSkin_Firefly select:hover",
+                      ".EasyDNNSkin_Firefly textarea:hover"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "image",
+                      "repeat",
+                      "position",
+                      "attachment"
+                    ]
+                  },
+                  {
+                    "id": "focus",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly input[type=\"text\"]:focus",
+                      ".EasyDNNSkin_Firefly input[type=\"password\"]:focus",
+                      ".EasyDNNSkin_Firefly select:focus",
+                      ".EasyDNNSkin_Firefly textarea:focus"
+                    ],
+                    "name": "Focus",
+                    "forbidden": [
+                      "image",
+                      "repeat",
+                      "position",
+                      "attachment"
+                    ]
+                  }
+                ]
+              },
+              "shadows": {
+                "type": "boxShadow",
+                "name": "Shadows",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly input[type=\"text\"]",
+                      ".EasyDNNSkin_Firefly input[type=\"password\"]",
+                      ".EasyDNNSkin_Firefly select",
+                      ".EasyDNNSkin_Firefly textarea"
+                    ],
+                    "name": "Normal"
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly input[type=\"text\"]:hover",
+                      ".EasyDNNSkin_Firefly input[type=\"password\"]:hover",
+                      ".EasyDNNSkin_Firefly select:hover",
+                      ".EasyDNNSkin_Firefly textarea:hover"
+                    ],
+                    "name": "Hover"
+                  },
+                  {
+                    "id": "focus",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly input[type=\"text\"]:focus",
+                      ".EasyDNNSkin_Firefly input[type=\"password\"]:focus",
+                      ".EasyDNNSkin_Firefly select:focus",
+                      ".EasyDNNSkin_Firefly textarea:focus"
+                    ],
+                    "name": "Focus"
+                  }
+                ]
+              },
+              "text": {
+                "type": "text",
+                "name": "Text",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly input[type=\"text\"]",
+                      ".EasyDNNSkin_Firefly input[type=\"password\"]",
+                      ".EasyDNNSkin_Firefly select",
+                      ".EasyDNNSkin_Firefly textarea",
+                      ".EasyDNNSkin_Firefly .EDS_content-bg .EDS_content .DnnModule-Journal .journalTools #journalEditor #journalPlaceholder"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "style",
+                      "weight",
+                      "transform",
+                      "decorations"
+                    ]
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly input[type=\"text\"]:hover",
+                      ".EasyDNNSkin_Firefly input[type=\"password\"]:hover",
+                      ".EasyDNNSkin_Firefly select:hover",
+                      ".EasyDNNSkin_Firefly textarea:hover"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations",
+                      "shadows"
+                    ]
+                  },
+                  {
+                    "id": "focus",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly input[type=\"text\"]:focus",
+                      ".EasyDNNSkin_Firefly input[type=\"password\"]:focus",
+                      ".EasyDNNSkin_Firefly select:focus",
+                      ".EasyDNNSkin_Firefly textarea:focus"
+                    ],
+                    "name": "Focus",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations",
+                      "shadows"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "buttonWithGlyphicon": {
+            "name": "Button With Glyphicon",
+            "properties": {
+              "backgroundColor": {
+                "type": "background",
+                "name": "Background Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .iconButton .glyphicon"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "image",
+                      "position",
+                      "repeat",
+                      "attachment"
+                    ]
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .iconButton:hover .glyphicon"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "image",
+                      "position",
+                      "repeat",
+                      "attachment"
+                    ]
+                  }
+                ]
+              },
+              "shadow": {
+                "type": "boxShadow",
+                "name": "Shadow",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .iconButton .glyphicon"
+                    ],
+                    "name": "Normal"
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .iconButton:hover .glyphicon"
+                    ],
+                    "name": "Hover"
+                  }
+                ]
+              },
+              "glyphiconColor": {
+                "type": "text",
+                "name": "Glyphicon Color",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .iconButton .glyphicon:before"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .iconButton:hover .glyphicon:before"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations"
+                    ]
+                  }
+                ]
+              },
+              "glyphiconBorder": {
+                "type": "border",
+                "name": "Glyphicon Border",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .iconButton .glyphicon:before"
+                    ],
+                    "name": "Normal"
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .iconButton:hover .glyphicon:before"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "width",
+                      "style"
+                    ]
+                  }
+                ]
+              },
+              "glyphiconSize": {
+                "type": "text",
+                "name": "Glyphicon Size",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .iconButton .glyphicon:before"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "color",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations",
+                      "shadows"
+                    ]
+                  },
+                  {
+                    "id": "small",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .iconButton.small .glyphicon:before"
+                    ],
+                    "name": "Small",
+                    "forbidden": [
+                      "fontFamily",
+                      "color",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations",
+                      "shadows"
+                    ]
+                  },
+                  {
+                    "id": "large",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .iconButton.large .glyphicon:before"
+                    ],
+                    "name": "Large",
+                    "forbidden": [
+                      "fontFamily",
+                      "color",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform",
+                      "decorations",
+                      "shadows"
+                    ]
+                  }
+                ]
+              },
+              "text": {
+                "type": "text",
+                "name": "Text",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .iconButton .iconTitle"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "size",
+                      "lineHeight"
+                    ]
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .iconButton:hover .iconTitle"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "fontFamily",
+                      "size",
+                      "style",
+                      "weight",
+                      "lineHeight",
+                      "transform"
+                    ]
+                  }
+                ]
+              },
+              "textSize": {
+                "type": "text",
+                "name": "Text Size",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .iconButton .iconTitle"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "fontFamily",
+                      "color",
+                      "style",
+                      "weight",
+                      "transform",
+                      "decorations",
+                      "shadows"
+                    ]
+                  },
+                  {
+                    "id": "small",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .iconButton.small .iconTitle"
+                    ],
+                    "name": "Small",
+                    "forbidden": [
+                      "fontFamily",
+                      "color",
+                      "style",
+                      "weight",
+                      "transform",
+                      "decorations",
+                      "shadows"
+                    ]
+                  },
+                  {
+                    "id": "large",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .iconButton.large .iconTitle"
+                    ],
+                    "name": "Large",
+                    "forbidden": [
+                      "fontFamily",
+                      "color",
+                      "style",
+                      "weight",
+                      "transform",
+                      "decorations",
+                      "shadows"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "accordion": {
+            "name": "Accordion",
+            "properties": {
+              "accContent": {
+                "type": "text",
+                "name": "Content",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_accordion .edsAccordion_section .edsAccordion_contentWrapper .edsAccordion_content"
+                    ],
+                    "name": "Normal"
+                  }
+                ]
+              },
+              "accContentBottomBorder": {
+                "type": "border",
+                "name": "Content Bottom Border",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_accordion .edsAccordion_section .edsAccordion_contentWrapper .edsAccordion_content"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "topSide",
+                      "leftSide",
+                      "rightSide"
+                    ]
+                  }
+                ]
+              }
+            },
+            "sections": {
+              "expandableHead": {
+                "name": "Header",
+                "properties": {
+                  "text": {
+                    "type": "text",
+                    "name": "Text",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .EDS_accordion .edsAccordion_section .edsAccordion_title"
+                        ],
+                        "name": "Normal",
+                        "important": [
+                          "color",
+                          "shadows"
+                        ]
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .EDS_accordion .edsAccordion_section .edsAccordion_title:hover"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "fontFamily",
+                          "size",
+                          "style",
+                          "weight",
+                          "lineHeight",
+                          "transform"
+                        ],
+                        "important": [
+                          "color",
+                          "shadows"
+                        ]
+                      },
+                      {
+                        "id": "active",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .EDS_accordion .edsAccordion_section.edsAccordion_active .edsAccordion_title"
+                        ],
+                        "name": "Active",
+                        "forbidden": [
+                          "fontFamily",
+                          "size",
+                          "style",
+                          "weight",
+                          "lineHeight",
+                          "transform"
+                        ],
+                        "important": [
+                          "color",
+                          "shadows"
+                        ]
+                      }
+                    ]
+                  },
+                  "bottomborder": {
+                    "type": "border",
+                    "name": "Bottom Border",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .EDS_accordion .edsAccordion_section .edsAccordion_title"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "topSide",
+                          "leftSide",
+                          "rightSide"
+                        ]
+                      }
+                    ]
+                  },
+                  "background": {
+                    "type": "background",
+                    "name": "Background",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .EDS_accordion .edsAccordion_section .edsAccordion_title"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "attachment"
+                        ]
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .EDS_accordion .edsAccordion_section .edsAccordion_title:hover"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "attachment"
+                        ]
+                      },
+                      {
+                        "id": "active",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .EDS_accordion .edsAccordion_section.edsAccordion_active .edsAccordion_title"
+                        ],
+                        "name": "Active",
+                        "forbidden": [
+                          "attachment"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "tabs": {
+            "name": "Tabs",
+            "properties": {
+              "tabsContent": {
+                "type": "text",
+                "name": "Content",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      ".EasyDNNSkin_Firefly .EDS_tabs .edsTabulator_tabsWrapper"
+                    ],
+                    "name": "Normal"
+                  }
+                ]
+              }
+            },
+            "sections": {
+              "navigation": {
+                "name": "Navigation",
+                "properties": {
+                  "text": {
+                    "type": "text",
+                    "name": "Text",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .EDS_tabs > ul .edsTabulator_tabTrigger"
+                        ],
+                        "name": "default"
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .EDS_tabs > ul .edsTabulator_tabTrigger:hover"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "fontFamily",
+                          "size",
+                          "style",
+                          "weight",
+                          "lineHeight",
+                          "transform"
+                        ]
+                      },
+                      {
+                        "id": "active",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .EDS_tabs > ul .edsTabulator_tabTrigger.edsTabulator_active"
+                        ],
+                        "name": "Active",
+                        "forbidden": [
+                          "fontFamily",
+                          "size",
+                          "style",
+                          "weight",
+                          "lineHeight",
+                          "transform"
+                        ]
+                      }
+                    ]
+                  },
+                  "background": {
+                    "type": "background",
+                    "name": "Background",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .EDS_tabs > ul .edsTabulator_tabTrigger"
+                        ],
+                        "name": "default",
+                        "forbidden": [
+                          "attachment"
+                        ]
+                      },
+                      {
+                        "id": "hover",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .EDS_tabs > ul .edsTabulator_tabTrigger:hover"
+                        ],
+                        "name": "Hover",
+                        "forbidden": [
+                          "attachment"
+                        ]
+                      },
+                      {
+                        "id": "active",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .EDS_tabs > ul .edsTabulator_tabTrigger.edsTabulator_active"
+                        ],
+                        "name": "Active",
+                        "forbidden": [
+                          "attachment"
+                        ]
+                      }
+                    ]
+                  },
+                  "bottomBorderColor": {
+                    "type": "border",
+                    "name": "Bottom Border Color",
+                    "states": [
+                      {
+                        "id": "default",
+                        "selectors": [
+                          ".EasyDNNSkin_Firefly .EDS_tabs > ul"
+                        ],
+                        "name": "Normal",
+                        "forbidden": [
+                          "topSide",
+                          "leftSide",
+                          "rightSide",
+                          "width",
+                          "style"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "scrollToTop": {
+            "name": "Scroll To Top Button",
+            "properties": {
+              "border": {
+                "type": "border",
+                "name": "Border",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      "#EDS_toTop"
+                    ],
+                    "name": "Normal"
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      "#EDS_toTop:hover"
+                    ],
+                    "name": "Hover",
+                    "forbidden": [
+                      "width",
+                      "style"
+                    ]
+                  }
+                ]
+              },
+              "background": {
+                "type": "background",
+                "name": "Background",
+                "states": [
+                  {
+                    "id": "default",
+                    "selectors": [
+                      "#EDS_toTop"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "attachment"
+                    ]
+                  },
+                  {
+                    "id": "hover",
+                    "selectors": [
+                      "#EDS_toTop:hover"
+                    ],
+                    "name": "Normal",
+                    "forbidden": [
+                      "attachment"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "customFontFamilies": [
+    {
+      "name": "Arvo",
+      "importUrl": "//fonts.googleapis.com/css?family=Arvo:400,700)"
+    },
+    {
+      "name": "Bree Serif",
+      "importUrl": "//fonts.googleapis.com/css?family=Bree+Serif&subset=latin,latin-ext"
+    },
+    {
+      "name": "Kite One",
+      "importUrl": "//fonts.googleapis.com/css?family=Kite+One&subset=latin,latin-ext"
+    },
+    {
+      "name": "Fauna One",
+      "importUrl": "//fonts.googleapis.com/css?family=Fauna+One&subset=latin,latin-ext"
+    },
+    {
+      "name": "Acme",
+      "importUrl": "//fonts.googleapis.com/css?family=Acme&subset=latin,latin-ext"
+    },
+    {
+      "name": "Oregano",
+      "importUrl": "//fonts.googleapis.com/css?family=Oregano:400,400italic&subset=latin,latin-ext"
+    },
+    {
+      "name": "Fjalla One",
+      "importUrl": "//fonts.googleapis.com/css?family=Fjalla+One&subset=latin,latin-ext"
+    },
+    {
+      "name": "Tauri",
+      "importUrl": "//fonts.googleapis.com/css?family=Tauri&subset=latin,latin-ext"
+    },
+    {
+      "name": "Shadows Into Light",
+      "importUrl": "//fonts.googleapis.com/css?family=Shadows+Into+Light&subset=latin,latin-ext"
+    },
+    {
+      "name": "Prosto One",
+      "importUrl": "//fonts.googleapis.com/css?family=Prosto+One&subset=latin,latin-ext"
+    },
+    {
+      "name": "Ubuntu Condensed",
+      "importUrl": "//fonts.googleapis.com/css?family=Ubuntu+Condensed&subset=latin,latin-ext"
+    },
+    {
+      "name": "Cutive",
+      "importUrl": "//fonts.googleapis.com/css?family=Cutive&subset=latin,latin-ext"
+    }
+  ]
+}

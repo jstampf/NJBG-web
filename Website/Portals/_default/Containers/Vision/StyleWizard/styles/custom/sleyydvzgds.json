@@ -1,0 +1,254 @@
+{
+  "originalStyleId": "default",
+  "templateGroups": {
+    "default": {
+      "name": "NJBG Container Styles",
+      "colors": [
+        "#E6E6E6"
+      ]
+    },
+    "hilite": {
+      "name": "Default Copy",
+      "colors": [
+        "#E6E6E6"
+      ]
+    },
+    "footerBox": {
+      "name": "Default Copy",
+      "colors": [
+        "#92979a"
+      ]
+    },
+    "centerTitle": {
+      "name": "Default Copy",
+      "colors": [
+        "#E6E6E6"
+      ]
+    }
+  },
+  "values": {
+    "properties": {
+      "titleFont": {
+        "default": {
+          "disabled": [
+            "shadows",
+            "weight",
+            "lineHeight",
+            "transform",
+            "decorations",
+            "style"
+          ],
+          "values": {
+            "fontFamily": "IM Fell English",
+            "color": "#25282a",
+            "size": {
+              "value": 30,
+              "unit": "px"
+            },
+            "shadows": {
+              "show": true,
+              "list": []
+            },
+            "weight": "normal",
+            "lineHeight": {
+              "value": 1,
+              "unit": ""
+            },
+            "transform": "none",
+            "decorations": {
+              "underline": false
+            }
+          }
+        }
+      },
+      "titleBorderColor": {
+        "default": {
+          "values": {
+            "color": "#25282a"
+          }
+        }
+      },
+      "footerBoxtitleFont": {
+        "default": {
+          "disabled": [
+            "weight",
+            "lineHeight",
+            "transform",
+            "decorations",
+            "style"
+          ],
+          "values": {
+            "fontFamily": "BenchNine",
+            "color": "#92979a",
+            "size": {
+              "value": 30,
+              "unit": "px"
+            },
+            "shadows": {
+              "show": true,
+              "list": [
+                {
+                  "x": {
+                    "value": -1,
+                    "unit": "px"
+                  },
+                  "y": {
+                    "value": -1,
+                    "unit": "px"
+                  },
+                  "radius": {
+                    "value": 1,
+                    "unit": "px"
+                  },
+                  "color": "rgba(18, 18, 18, 0.7)"
+                }
+              ]
+            },
+            "weight": "normal",
+            "lineHeight": {
+              "value": 1,
+              "unit": ""
+            },
+            "transform": "none",
+            "decorations": {
+              "underline": false
+            }
+          }
+        }
+      },
+      "footerBoxtitleBorderColor": {
+        "default": {
+          "values": {
+            "color": "#5c6367"
+          }
+        }
+      },
+      "hilitebackground": {
+        "default": {
+          "disabled": [
+            "image",
+            "repeat",
+            "position"
+          ],
+          "values": {
+            "color": "#e6e6e6",
+            "image": {},
+            "repeat": "repeat",
+            "position": {
+              "horizontal": {
+                "value": 0,
+                "unit": "%"
+              },
+              "vertical": {
+                "value": 0,
+                "unit": "%"
+              }
+            }
+          }
+        }
+      },
+      "hiliteTitleFont": {
+        "default": {
+          "disabled": [
+            "shadows",
+            "weight",
+            "lineHeight",
+            "transform",
+            "decorations",
+            "style"
+          ],
+          "values": {
+            "fontFamily": "BenchNine",
+            "color": "#25282a",
+            "size": {
+              "value": 26,
+              "unit": "px"
+            },
+            "shadows": {
+              "show": true,
+              "list": []
+            },
+            "weight": "normal",
+            "lineHeight": {
+              "value": 1.2,
+              "unit": ""
+            },
+            "transform": "none",
+            "decorations": {
+              "underline": false
+            }
+          }
+        }
+      },
+      "hiliteTitleBorderColor": {
+        "default": {
+          "values": {
+            "color": "#20272d"
+          }
+        }
+      },
+      "hiliteTextColor": {
+        "default": {
+          "disabled": [
+            "shadows"
+          ],
+          "values": {
+            "color": "#3b3b3b",
+            "shadows": {
+              "show": true,
+              "list": []
+            }
+          }
+        }
+      },
+      "centerTitleFont": {
+        "default": {
+          "disabled": [
+            "weight",
+            "lineHeight",
+            "transform",
+            "decorations",
+            "style"
+          ],
+          "values": {
+            "fontFamily": "BenchNine",
+            "color": "#a5a5a5",
+            "size": {
+              "value": 28,
+              "unit": "px"
+            },
+            "shadows": {
+              "show": true,
+              "list": [
+                {
+                  "x": {
+                    "value": 1,
+                    "unit": "px"
+                  },
+                  "y": {
+                    "value": 1,
+                    "unit": "px"
+                  },
+                  "radius": {
+                    "value": 0,
+                    "unit": "px"
+                  },
+                  "color": "rgba(255, 255, 255, 0.5)"
+                }
+              ]
+            },
+            "weight": "bold",
+            "lineHeight": {
+              "value": 1,
+              "unit": ""
+            },
+            "transform": "none",
+            "decorations": {
+              "underline": false
+            }
+          }
+        }
+      }
+    }
+  }
+}

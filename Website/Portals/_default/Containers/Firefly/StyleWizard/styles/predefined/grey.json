@@ -1,0 +1,65 @@
+{
+  "templateGroups": {
+    "footer": {
+      "name": "Grey",
+      "colors": [
+        "#545454"
+      ]
+    }
+  },
+  "show": [
+    "footer"
+  ],
+  "values": {
+    "properties": {
+      "titleFontFooter": {
+        "default": {
+          "disabled": [
+            "transform",
+            "decorations",
+            "style",
+            "weight"
+          ],
+          "values": {
+            "fontFamily": "Arvo",
+            "color": "#ffffff",
+            "size": {
+              "value": 26,
+              "unit": "px"
+            },
+            "shadows": {
+              "show": true,
+              "list": [
+                {
+                  "x": {
+                    "value": -1,
+                    "unit": "px"
+                  },
+                  "y": {
+                    "value": -1,
+                    "unit": "px"
+                  },
+                  "radius": {
+                    "value": 1,
+                    "unit": "px"
+                  },
+                  "color": "rgba(0, 0, 0, 0.5)"
+                }
+              ]
+            },
+            "style": "normal",
+            "weight": "normal",
+            "lineHeight": {
+              "value": 1,
+              "unit": ""
+            },
+            "transform": "none",
+            "decorations": {
+              "underline": false
+            }
+          }
+        }
+      }
+    }
+  }
+}

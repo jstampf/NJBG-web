@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica|IM+Fell+English|Roboto|Roboto+Condensed:300');
+/* joe added google fonts */
+
 .chameleon_slider.NewsOne {
   font-family: Verdana, Helvetica, sans-serif;
   background: #ededed;
@@ -132,16 +135,18 @@
   color: #fff;
 }
 .chameleon_slider.NewsOne .scrollable_box .viewport h2 {
-  font-size: 14px;
+  font-size: 32px;  /* joe chg from 14px */
   color: #fff;
-  font-weight: bold;
-  font-family: Verdana, Helvetica, sans-serif;
+  font-weight: 300;  /* joe changed from bold; */
+  font-family: Roboto Condensed, Verdana, Helvetica, sans-serif;  /* Joe chgd font to roboto */
+  text-shadow: 2px 2px 2px black;   /* joe added text shadow */
 }
 .chameleon_slider.NewsOne .scrollable_box .viewport .overview, .chameleon_slider.NewsOne .scrollable_box .viewport p {
-  font-size: 11px;
-  line-height: 18px;
+  font-size: 18px;          /* joe chgd from 11px */
+  line-height: 24px;        /* joe chgd from 18px */
   color: #fff;
-  font-family: Verdana, Helvetica, sans-serif;
+  font-family: Roboto Condensed, Verdana, Helvetica, sans-serif;  /* Joe chgd font to roboto */
+  text-shadow: 2px 2px 2px black;   /* joe added text shadow */
 }
 .chameleon_slider.NewsOne .scrollable_box.item_info {
   background: url(images/transparent_black_2.png) repeat;
