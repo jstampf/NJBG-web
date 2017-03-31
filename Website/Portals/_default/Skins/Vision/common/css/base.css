@@ -903,7 +903,8 @@ ol li ol li ol li {
 .EasyDNNSkin_Vision .EDS_header-bg .EDS_header .logo img {
   max-width: 100%;
   height: auto;
-  height: 40px;
+  height: 50px;                     /* joe changed from 40px */
+  box-shadow: 5px 5px 3px #114411;  /* joe added shadow */
 }
 .EasyDNNSkin_Vision .EDS_header-bg .EDS_header .login-wrapper {
   padding-top: 7px;
@@ -4504,3 +4505,11 @@ ol li ol li ol li {
   margin-top: 33px;
 }
 
+/* ------------------ JOE megamenu styles  ---------------------*/
+
+li.edsmm_megaMenu:hover div.megaVisit {
+    background-color: white;
+    margin: 2px;
+    padding: 8px;
+    border: 2px solid green;
+}

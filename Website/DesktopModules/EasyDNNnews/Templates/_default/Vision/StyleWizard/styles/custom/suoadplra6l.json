@@ -325,7 +325,7 @@
             "shadows"
           ],
           "values": {
-            "color": "#25282a",
+            "color": "#6c604f",
             "size": {
               "value": 35,
               "unit": "px"
@@ -567,7 +567,7 @@
           ],
           "values": {
             "fontFamily": "BenchNine",
-            "color": "#919191",
+            "color": "#63584a",
             "size": {
               "value": 22,
               "unit": "px"
@@ -725,7 +725,7 @@
           ],
           "values": {
             "fontFamily": "Roboto",
-            "color": "#3b3b3b",
+            "color": "#714040",
             "size": {
               "value": 15,
               "unit": "px"
@@ -740,7 +740,7 @@
               "value": 1.2,
               "unit": ""
             },
-            "transform": "none"
+            "transform": ""
           }
         }
       },

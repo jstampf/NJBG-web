@@ -1,5 +1,17 @@
 {
   "0/Default": {
+    "type": "custom",
+    "id": "sleyydvzgds"
+  },
+  "0/FooterBox": {
+    "type": "predefined",
+    "id": "default"
+  },
+  "0/Hilite": {
+    "type": "predefined",
+    "id": "default"
+  },
+  "0/Center_title": {
     "type": "predefined",
     "id": "default"
   }
