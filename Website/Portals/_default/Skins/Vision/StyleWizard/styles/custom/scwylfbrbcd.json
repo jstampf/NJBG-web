@@ -385,7 +385,11 @@
               ],
               "values": {
                 "color": "#ffffff",
-                "image": {},
+                "image": {
+                  "completeUrl": "_-StyleAssetsClientRoot-_images/sharedBackgrounds/background_pattern_image_noise_pattern_light.png",
+                  "file": "background_pattern_image_noise_pattern_light.png",
+                  "type": "shared"
+                },
                 "position": {
                   "horizontal": {
                     "value": 0,
@@ -422,7 +426,11 @@
                   ],
                   "values": {
                     "color": "#ffffff",
-                    "image": {},
+                    "image": {
+                      "completeUrl": "_-StyleAssetsClientRoot-_images/sharedBackgrounds/background_pattern_image_noise_pattern_light.png",
+                      "file": "background_pattern_image_noise_pattern_light.png",
+                      "type": "shared"
+                    },
                     "repeat": "repeat",
                     "position": {
                       "horizontal": {
@@ -496,7 +504,6 @@
                   ],
                   "values": {
                     "color": "#e6e6e6",
-                    "image": {},
                     "repeat": "repeat",
                     "position": {
                       "horizontal": {
@@ -618,8 +625,8 @@
               "values": {
                 "color": "#0f6100",
                 "image": {
-                  "completeUrl": "_-StyleAssetsClientRoot-_images/sharedBackgrounds/background_pattern_sand.png",
-                  "file": "background_pattern_sand.png",
+                  "completeUrl": "_-StyleAssetsClientRoot-_images/sharedBackgrounds/background_pattern_image_noise2_pattern_dark.png",
+                  "file": "background_pattern_image_noise2_pattern_dark.png",
                   "type": "shared"
                 },
                 "repeat": "repeat",

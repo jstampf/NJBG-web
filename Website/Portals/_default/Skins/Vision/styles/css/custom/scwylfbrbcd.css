@@ -337,14 +337,14 @@
 .EasyDNNSkin_Vision .EDS_content-bg
 {
 	background-color: #ffffff;
-	background-image: none;
+	background-image: url("../../images/sharedBackgrounds/background_pattern_image_noise_pattern_light.png");
 	border-bottom-color: #1d7300;
 }
 
 .EasyDNNSkin_Vision .EDS_top-content-bg-above .EDS_top-content-above-pane
 {
 	background-color: #ffffff;
-	background-image: none;
+	background-image: url("../../images/sharedBackgrounds/background_pattern_image_noise_pattern_light.png");
 	border-top-width: 1px;
 	border-top-style: solid;
 	border-top-color: #b6b6b6;
@@ -408,7 +408,7 @@
 .EasyDNNSkin_Vision .EDS_bottom-content-bg
 {
 	background-color: #0f6100;
-	background-image: url("../../images/sharedBackgrounds/background_pattern_sand.png");
+	background-image: url("../../images/sharedBackgrounds/background_pattern_image_noise2_pattern_dark.png");
 	border-top-color: #429306;
 }
 

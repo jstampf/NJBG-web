@@ -1,0 +1,36 @@
+2017-04-01 14:40:49,059 [Lenovo-PC][Thread:16][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.IO.IOException: The file 'C:\Local\Projects\NJBG-gis\Website\Portals\0\EasyDNNNews\5\GAnn-DSC04364-Annlfall-200.jpg' already exists.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at EasyDNNSolutions.Modules.EasyDNNNews.Administration.AddEditArticle.XerCc47N3(Int32  )
+   at EasyDNNSolutions.Modules.EasyDNNNews.Administration.AddEditArticle.gvArticleMediaList_RowCommand(Object sender, GridViewCommandEventArgs e)
+   at System.Web.UI.WebControls.GridView.OnRowCommand(GridViewCommandEventArgs e)
+   at System.Web.UI.WebControls.GridView.HandleEvent(EventArgs e, Boolean causesValidation, String validationGroup)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.WebControls.GridViewRow.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-04-01 14:40:49,091 [Lenovo-PC][Thread:16][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=71&error=An unexpected error has occurred
+System.IO.IOException: The file 'C:\Local\Projects\NJBG-gis\Website\Portals\0\EasyDNNNews\5\GAnn-DSC04364-Annlfall-200.jpg' already exists.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at EasyDNNSolutions.Modules.EasyDNNNews.Administration.AddEditArticle.XerCc47N3(Int32  )
+   at EasyDNNSolutions.Modules.EasyDNNNews.Administration.AddEditArticle.gvArticleMediaList_RowCommand(Object sender, GridViewCommandEventArgs e)
+   at System.Web.UI.WebControls.GridView.OnRowCommand(GridViewCommandEventArgs e)
+   at System.Web.UI.WebControls.GridView.HandleEvent(EventArgs e, Boolean causesValidation, String validationGroup)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.WebControls.GridViewRow.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-04-01 14:45:48,272 [Lenovo-PC][Thread:31][ERROR] DotNetNuke.Services.Exceptions.Exceptions - FriendlyMessage="Error:  is currently unavailable." ctrl="ASP.admin_modules_modulesettings_ascx" exc="System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at DotNetNuke.Modules.Admin.Modules.ModuleSettingsPage.OnInit(EventArgs e) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\Website\admin\Modules\Modulesettings.ascx.cs:line 318"
+2017-04-01 17:25:36,140 [Lenovo-PC][Thread:26][ERROR] DotNetNuke.Services.Exceptions.Exceptions - FriendlyMessage="Error:  is currently unavailable." ctrl="ASP.admin_modules_modulesettings_ascx" exc="System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at DotNetNuke.Modules.Admin.Modules.ModuleSettingsPage.OnInit(EventArgs e) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\Website\admin\Modules\Modulesettings.ascx.cs:line 318"
+2017-04-01 17:50:52,978 [Lenovo-PC][Thread:9][ERROR] DotNetNuke.Services.Exceptions.Exceptions - FriendlyMessage="Error:  is currently unavailable." ctrl="ASP.admin_modules_modulesettings_ascx" exc="System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at DotNetNuke.Modules.Admin.Modules.ModuleSettingsPage.OnInit(EventArgs e) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\Website\admin\Modules\Modulesettings.ascx.cs:line 318"
