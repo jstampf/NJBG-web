@@ -1,0 +1,32 @@
+2017-04-09 18:33:48,477 [IntelClone][Thread:17][ERROR] DotNetNuke.Common.Utilities.FileSystemUtils - System.Exception: Error on 'E:\Joe\Projects\NJBG\DNN8\Website\Portals\0-System\Cache\Pages\111_12501F292E5A603685E3125A20F9FDC5BC468018D1CD219CABAB93D3EFC7C5A9.data.resources': See InnerException for details. ---> System.ComponentModel.Win32Exception: The process cannot access the file because it is being used by another process
+   --- End of inner exception stack trace ---
+   at SchwabenCode.QuickIO.Internal.InternalQuickIOCommon.NativeExceptionMapping(String path, Int32 errorCode)
+   at SchwabenCode.QuickIO.Internal.InternalQuickIO.DeleteFile(String path)
+   at SchwabenCode.QuickIO.Internal.InternalQuickIO.DeleteFile(QuickIOPathInfo pathInfo)
+   at DotNetNuke.Common.Utilities.FileSystemUtils.DeleteFileWithWait(String filename, Int16 waitInMilliseconds, Int16 maxAttempts) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Common\Utilities\FileSystemUtils.cs:line 665
+2017-04-09 21:16:18,780 [IntelClone][Thread:27][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2017-04-09 21:16:18,781 [IntelClone][Thread:32][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2017-04-09 21:16:19,344 [IntelClone][Thread:29][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2017-04-09 21:16:19,453 [IntelClone][Thread:28][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2017-04-09 21:16:56,990 [IntelClone][Thread:28][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2017-04-09 21:53:37,569 [IntelClone][Thread:22][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: Could not find file 'E:\Joe\Projects\NJBG\DNN8\Website\App_Data\_imagecache\8CA8B79449596A4B2EB090FF67517D3BD5D39EC5.tmp'.
+File name: 'E:\Joe\Projects\NJBG\DNN8\Website\App_Data\_imagecache\8CA8B79449596A4B2EB090FF67517D3BD5D39EC5.tmp'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Web.HttpResponse.TransmitFile(String filename, Int64 offset, Int64 length)
+   at System.Web.HttpResponseWrapper.TransmitFile(String filename)
+   at DotNetNuke.Services.GeneratedImage.DiskImageStore.TryTransmitIfContains(String id, HttpResponseBase response) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Services\GeneratedImage\DiskImageStore.cs:line 230
+   at DotNetNuke.Services.GeneratedImage.ImageHandlerInternal.HandleImageRequest(HttpContextBase context, Func`2 imageGenCallback, String uniqueIdStringSeed) in C:\TeamCity\buildAgent\work\DNN_Platform_804_Public\Packaging\DNN.Platform\DNN Platform\Library\Services\GeneratedImage\ImageHandlerInternal.cs:line 260
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
